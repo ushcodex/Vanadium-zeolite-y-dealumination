@@ -1,0 +1,11 @@
+# Stage 2: W-PRC restart from last frame (nearly converged)
+# Job ID: W-PRC-T1-V02
+! XTB2 OPT FREQ
+
+%geom
+  MaxIter 200
+end
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 W-PRC-T1-V01.xyz

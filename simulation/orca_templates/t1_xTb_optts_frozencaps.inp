@@ -1,0 +1,31 @@
+# TIER 1 - DIAGNOSTIC: band D OptTS with peripheral cap hydrogens frozen
+# Purpose: test whether the multi-mode imaginary spectrum of the stall region
+# is produced by rotation/bending of the terminal capping Si-H/O-H groups.
+# RULES:
+#   * Freeze ONLY the peripheral cap H atoms listed below. Replace the
+#     placeholder indices with the true 0-BASED indices from the canonical
+#     cluster (ORCA counts atoms starting at 0 for the * xyzfile block).
+#   * One { C n end } line per atom.
+#   * NEVER freeze the Bronsted Al-O(H) proton, the water molecule atoms, or
+#     any framework atom of the reacting site.
+#   * Diagnosis only: if the mode count collapses to about one, cap floppiness
+#     was the noise source and we add the same constraints to all four bands.
+# Launch only through cmd:
+#   cmd /c "D:\ORCA_6.1.0\orca.exe optts_bandD_frozencaps.inp > optts_bandD_frozencaps.out"
+
+! XTB2 OPTTS FREQ
+
+%geom
+  Calc_Hess true
+  MaxIter 300
+  Constraints
+    { C 18 end }   # PLACEHOLDER cap H index, replace with real indices
+    { C 19 end }   # PLACEHOLDER
+    { C 20 end }   # PLACEHOLDER
+    { C 21 end }   # PLACEHOLDER
+  end
+end
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 neb_ts_bandD_NEB-CI_converged.xyz

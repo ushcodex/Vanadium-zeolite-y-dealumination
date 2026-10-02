@@ -1,0 +1,11 @@
+# Stage 3 - Step 4: W-PRC -> W-P relaxed surface scan at GFN2-xTB
+# Scanning breaking Al(0) - O(1) bond distance from 1.75 A to 3.05 A
+! XTB2 OPT
+
+%pal nprocs 1 end
+
+%geom
+  Scan B 0 1 = 1.75, 3.05, 14 end
+end
+
+* xyzfile 0 1 W-PRC_start.xyz

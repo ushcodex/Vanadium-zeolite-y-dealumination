@@ -1,0 +1,32 @@
+# TIER 1 FALLBACK - IDPP NEB with an inserted transition-state guess (ORCA 6.1)
+# Use ONLY if OptTS-from-seed fails on two genuine attempts.
+# Two documented ORCA 6.1 features are used here that the first-pass runs did not:
+#   Interpolation IDPP : image-dependent pair potential path between endpoints,
+#                        avoids the atom-overlap artifacts of linear interpolation.
+#   TS "guessfile"     : the curated seed saddle is inserted into the path, so the
+#                        band is built reactant -> seed -> product instead of
+#                        blindly across the whole rearrangement.
+# All three files (reactant.xyz, V-TSn_start.xyz, product.xyz) must share the
+# same atom order (they do; all derive from the same molfiles).
+
+! NEB-TS XTB2
+
+%pal nprocs 3 end
+
+%neb
+  Product "product.xyz"        # the optimized product minimum of THIS step
+  NImages 8
+  Interpolation IDPP
+  TS "V-TSn_start.xyz"         # curated seed saddle for THIS step
+end
+
+* xyzfile 0 1 reactant.xyz     # the optimized reactant minimum of THIS step
+
+# After the run:
+#   1) NEB-TS ends with an OptTS pass on the climbing image; check for exactly
+#      ONE imaginary frequency in the frequency printout;
+#   2) animate that mode; it must describe the reacting bond reorganization;
+#   3) run t1_xTb_irc.inp from the converged saddle;
+#   4) optimize both IRC endpoint geometries; they must land on the claimed
+#      reactant and product minima;
+#   5) only then record the barrier in the register as Verified.

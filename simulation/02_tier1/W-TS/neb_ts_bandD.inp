@@ -1,0 +1,12 @@
+# Phase B Round 3: Band D (W-PRC -> W-P) NEB-TS
+! NEB-TS XTB2
+
+%pal nprocs 1 end
+
+%neb
+  Product "W-P_canonical.xyz"
+  NImages 10
+  Interpolation IDPP
+end
+
+* xyzfile 0 1 W-PRC_canonical.xyz

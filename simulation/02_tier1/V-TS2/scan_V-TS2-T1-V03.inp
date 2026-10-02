@@ -1,0 +1,11 @@
+# Phase B: V-TS2 relaxed surface scan from V-I1
+# Job ID: scan_V-TS2-T1-V03
+! XTB2 OPT
+
+%geom
+  Scan B 0 2 = 1.75, 3.05, 14 end
+end
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 V-I1_canonical.xyz

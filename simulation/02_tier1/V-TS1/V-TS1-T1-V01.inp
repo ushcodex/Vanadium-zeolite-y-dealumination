@@ -1,0 +1,9 @@
+# Stage 2: V-TS1 seed optimization at GFN2-xTB (for V-I1 generation)
+# Job ID: V-TS1-T1-V01 (optimized as a minimum first to see where it relaxes)
+# Note: This is a MINIMUM optimization of the TS guess to get converged geometry
+# that we can perturb for V-I1. The actual TS search comes in Stage 3.
+! XTB2 OPT FREQ
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 V-TS1_start.xyz

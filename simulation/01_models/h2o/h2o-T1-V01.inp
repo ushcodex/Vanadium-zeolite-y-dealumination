@@ -1,0 +1,7 @@
+# Stage 1: H2O optimization + frequency at GFN2-xTB (formal register entry)
+# Job ID: h2o-T1-V01
+! XTB2 OPT FREQ
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 H2O.xyz

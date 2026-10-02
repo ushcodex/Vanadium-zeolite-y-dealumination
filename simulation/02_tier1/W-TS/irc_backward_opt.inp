@@ -1,0 +1,10 @@
+# Phase B: D6 IRC backward endpoint optimization for W-TS
+! XTB2 OPT FREQ
+
+%geom
+  MaxIter 300
+end
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 irc_backward_displaced.xyz

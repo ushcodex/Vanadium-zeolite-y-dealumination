@@ -1,0 +1,7 @@
+# Phase B Round 3: FREQ check on Band B CI-NEB converged saddle (V-I1 -> V-I2)
+# Job ID: freq_bandB_ci
+! XTB2 FREQ
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 neb_ts_bandB_NEB-CI_converged.xyz

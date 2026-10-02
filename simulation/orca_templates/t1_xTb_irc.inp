@@ -1,0 +1,26 @@
+# TIER 1 - Intrinsic Reaction Coordinate verification of a converged saddle
+# (ORCA 6.1). Run this AFTER the OptTS + FREQ run is accepted (exactly one
+# imaginary mode showing the correct bond reorganization). Start from the
+# converged TS geometry file (e.g. V-TSn_accepted.xyz).
+# Purpose: prove that the saddle actually connects the claimed reactant and
+# product minima. A saddle without this proof is not a barrier.
+
+! XTB2 IRC
+
+%pal nprocs 3 end
+
+%irc
+  InitHess calc_anfreq     # cheap analytic Hessian at the xTB level
+  hessMode 0               # mode 0 = the imaginary (reaction) mode
+  Direction both           # walk forward and backward from the saddle
+  MaxIter 200
+end
+
+* xyzfile 0 1 ts_converged.xyz
+
+# After the run:
+#   1) ORCA writes *_IRC_F.xyz and *_IRC_B.xyz (last geometry of each walk);
+#   2) optimize EACH of those with t1_xTb_opt_freq.inp;
+#   3) the two re-optimized structures must reproduce the energies of the
+#      claimed reactant and product minima within about 5 kJ/mol;
+#   4) record the IRC confirmations in the register alongside the barrier.

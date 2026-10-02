@@ -1,0 +1,11 @@
+# Stage 2: V-TS2 relaxation V03 (from displaced geometry to achieve 0-imaginary V-I2 candidate)
+# Job ID: V-TS2-T1-V03
+! XTB2 OPT FREQ
+
+%geom
+  MaxIter 200
+end
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 V-TS2-displaced.xyz

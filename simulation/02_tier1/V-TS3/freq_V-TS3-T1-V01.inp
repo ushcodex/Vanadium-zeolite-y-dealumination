@@ -1,0 +1,7 @@
+# Stage 3: Frequency confirmation for V-TS3 saddle point candidate
+# Job ID: freq_V-TS3-T1-V01
+! XTB2 FREQ
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 V-TS3_peak.xyz

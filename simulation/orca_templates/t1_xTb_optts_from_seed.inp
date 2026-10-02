@@ -1,0 +1,23 @@
+# TIER 1 - saddle-point refinement from a CURATED seed geometry (local laptop)
+# Use this after first-pass NEB paths show artifact barriers.
+# Start directly from the curated seed (xyz_seeds/V-TSn_start.xyz), NOT from a
+# raw NEB peak frame. Calc_Hess builds the initial Hessian; the run must end
+# with exactly ONE imaginary frequency, verified by the FREQ keyword here.
+
+! XTB2 OPTTS FREQ
+
+%geom
+  Calc_Hess true
+  MaxIter 200
+end
+
+%pal nprocs 3 end
+
+* xyzfile 0 1 ../xyz_seeds/V-TS1_start.xyz
+
+# After convergence:
+#   1) confirm the single imaginary mode animates along the reacting bonds;
+#   2) displace the saddle +-0.01 nm along that mode (both signs);
+#   3) optimize both displaced structures; they must fall into the intended
+#      reactant and product of the step;
+#   4) only then record the barrier in the register.

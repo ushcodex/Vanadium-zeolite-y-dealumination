@@ -1,0 +1,12 @@
+# Phase B Round 3: Band B (V-I1 -> V-I2) NEB-TS
+! NEB-TS XTB2
+
+%pal nprocs 1 end
+
+%neb
+  Product "V-I2_canonical.xyz"
+  NImages 8
+  Interpolation IDPP
+end
+
+* xyzfile 0 1 V-I1_canonical.xyz

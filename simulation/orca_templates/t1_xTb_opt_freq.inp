@@ -1,0 +1,10 @@
+# TIER 1 - GFN2-xTB optimization + frequency (local laptop)
+# Requires the xtb interface: install xtb (conda: conda install -c conda-forge xtb)
+# Atom numbering inside ORCA blocks is ZERO-based.
+# line 1: keywords. line 2: parallel cores = 3 on the laptop (keep 1 core free).
+
+! XTB2 OPT FREQ
+
+%pal nprocs 3 end
+
+* xyzfile 0 1 input.xyz

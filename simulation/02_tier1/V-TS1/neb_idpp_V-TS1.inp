@@ -1,0 +1,13 @@
+# Phase B5: IDPP NEB-TS for V-TS1 with seed inserted
+! NEB-TS XTB2
+
+%pal nprocs 1 end
+
+%neb
+  Product "V-I1_canonical.xyz"
+  NImages 8
+  Interpolation IDPP
+  TS "V-TS1_start.xyz"
+end
+
+* xyzfile 0 1 V-PRC_canonical.xyz

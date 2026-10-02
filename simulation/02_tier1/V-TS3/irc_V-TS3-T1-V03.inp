@@ -1,0 +1,14 @@
+# Phase B: D6 IRC verification for V-TS3
+! XTB2 IRC
+
+%pal nprocs 1 end
+
+%irc
+  InitHess read
+  Hess_Filename "optts_V-TS3-T1-V03.hess"
+  hessMode 0
+  Direction both
+  MaxIter 200
+end
+
+* xyzfile 0 1 optts_V-TS3-T1-V03.xyz

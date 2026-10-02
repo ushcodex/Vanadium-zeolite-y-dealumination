@@ -1,0 +1,16 @@
+# TIER 1 - relaxed surface scan at GFN2-xTB (local laptop)
+# Scan the bond being broken or formed. Examples for this project (ZERO-based indexing):
+#   first Al-O cleavage (V-TS2, W-TS):    Scan B 0 1 = 1.75, 3.05, 14 end
+#   chemisorption Al-O(V) (V-TS1):        Scan B 0 23 = 1.85, 3.05, 13 end
+#   final Al-O cleavage (V-TS3):          Scan B 0 4 = 1.75, 3.05, 14 end
+# Adjust atom numbers to the actual final XYZ file.
+
+! XTB2 OPT
+
+%pal nprocs 3 end
+
+%geom
+  Scan B 0 1 = 1.75, 3.05, 14 end
+end
+
+* xyzfile 0 1 input.xyz

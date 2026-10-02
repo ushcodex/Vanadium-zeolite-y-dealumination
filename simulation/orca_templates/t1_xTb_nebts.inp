@@ -1,0 +1,14 @@
+# TIER 1 - NEB + transition-state search at GFN2-xTB (local laptop)
+# reactant.xyz = state before the step, product.xyz = state after the step.
+# NEB_end_XYZFile points to the product geometry file.
+
+! NEB-TS XTB2
+
+%pal nprocs 3 end
+
+%neb
+  NImages 8
+  NEB_end_XYZFile "product.xyz"
+end
+
+* xyzfile 0 1 reactant.xyz

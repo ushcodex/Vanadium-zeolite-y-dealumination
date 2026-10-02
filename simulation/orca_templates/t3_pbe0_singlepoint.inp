@@ -1,0 +1,9 @@
+# TIER 3 - final single-point energy (cloud instance)
+# Final energy level of the thesis: PBE0-D3(BJ)/def2-TZVP on the Tier 2 geometry.
+
+! PBE0 D3BJ def2-TZVP RIJCOSX TightSCF DefGrid3
+
+%pal nprocs 12 end
+%maxcore 4000
+
+* xyzfile 0 1 t2_state.xyz

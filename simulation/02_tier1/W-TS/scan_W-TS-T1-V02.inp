@@ -1,0 +1,11 @@
+# Phase B4: W-TS relaxed surface scan from W-PRC
+# Job ID: scan_W-TS-T1-V02
+! XTB2 OPT
+
+%geom
+  Scan B 0 1 = 1.75, 3.05, 14 end
+end
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 W-PRC-T1-V02.xyz

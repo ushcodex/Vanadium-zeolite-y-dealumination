@@ -1,0 +1,1139 @@
+
+                                 *****************
+                                 * O   R   C   A *
+                                 *****************
+
+                                            #,                                       
+                                            ###                                      
+                                            ####                                     
+                                            #####                                    
+                                            ######                                   
+                                           ########,                                 
+                                     ,,################,,,,,                         
+                               ,,#################################,,                 
+                          ,,##########################################,,             
+                       ,#########################################, ''#####,          
+                    ,#############################################,,   '####,        
+                  ,##################################################,,,,####,       
+                ,###########''''           ''''###############################       
+              ,#####''   ,,,,##########,,,,          '''####'''          '####       
+            ,##' ,,,,###########################,,,                        '##       
+           ' ,,###''''                  '''############,,,                           
+         ,,##''                                '''############,,,,        ,,,,,,###''
+      ,#''                                            '''#######################'''  
+     '                                                          ''''####''''         
+             ,#######,   #######,   ,#######,      ##                                
+            ,#'     '#,  ##    ##  ,#'     '#,    #''#        ,####,    ,#,          
+            ##       ##  ##   ,#'  ##            #'  '#       #'       ,# #          
+            ##       ##  #######   ##           ,######,      #####,      #          
+            '#,     ,#'  ##    ##  '#,     ,#' ,#      #,     #,   #      #          
+             '#######'   ##     ##  '#######'  #'      '#     '####' #    #          
+
+
+
+                #########################################################
+                #                        -***-                          #
+                #          Department of theory and spectroscopy        #
+                #                                                       #
+                #                      Frank Neese                      #
+                #                                                       #
+                #     Directorship, Architecture, Infrastructure        #
+                #                    SHARK, DRIVERS                     #
+                #        Core code/Algorithms in most modules           #
+                #                                                       #
+                #        Max Planck Institute fuer Kohlenforschung      #
+                #                Kaiser Wilhelm Platz 1                 #
+                #                 D-45470 Muelheim/Ruhr                 #
+                #                      Germany                          #
+                #                                                       #
+                #                  All rights reserved                  #
+                #                        -***-                          #
+                #########################################################
+
+
+                         Program Version 6.1.0  -  RELEASE   -
+
+
+ With contributions from (in alphabetic order):
+[Max-Planck-Institut fuer Kohlenforschung]                               
+  Daniel Aravena         : Magnetic Suceptibility                        
+  Michael Atanasov       : Ab Initio Ligand Field Theory (pilot matlab implementation)
+  Alexander A. Auer      : GIAO ZORA, VPT2 properties, NMR spectrum      
+  Ute Becker             : All parallelization in ORCA, NUMFREQ, NUMCALC 
+  Giovanni Bistoni       : ED, misc. LED, open-shell LED, HFLD           
+  Dmytro Bykov           : pre 5.0 version of the SCF Hessian            
+  Marcos Casanova-Páez   : Triplet and SCS-CIS(D). UHF-(DLPNO)-IP/EA/STEOM-CCSD. UHF-CVS-IP/STEOM-CCSD   
+  Vijay G. Chilkuri      : MRCI spin determinant printing, contributions to CSF-ICE 
+  Pauline Colinet        : FMM embedding                                 
+  Dipayan Datta          : RHF DLPNO-CCSD density                        
+  Achintya Kumar Dutta   : EOM-CC, STEOM-CC                              
+  Nicolas Foglia         : Exact transition moments, OPA infrastructure, MCD improvements    
+  Dmitry Ganyushin       : Spin-Orbit,Spin-Spin,Magnetic field MRCI      
+  Miquel Garcia-Rates    : C-PCM and meta-GGA Hessian, CCSD/C-PCM, Gaussian charge scheme 
+  Tiago L. C. Gouveia    : GS-ROHF, GS-ROCIS                             
+  Yang Guo               : DLPNO-NEVPT2, F12-NEVPT2, CIM, IAO-localization        
+  Andreas Hansen         : Spin unrestricted coupled pair/coupled cluster methods 
+  Ingolf Harden          : AUTO-CI MPn and infrastructure                
+  Benjamin Helmich-Paris : MC-RPA, TRAH-(SCF,CASSCF), AVAS, COSX integrals, SCF dyn. polar., MC-PDFT, srDFT 
+  Lee Huntington         : MR-EOM, pCC                                   
+  Robert Izsak           : Overlap fitted RIJCOSX, COSX-SCS-MP3, EOM     
+  Riya Kayal             : Wick's Theorem for AUTO-CI, AUTO-CI UHF-CCSDT 
+  Emily Kempfer          : AUTO-CI RHF CISDT and CCSDT, approximate NEVPT4
+  Christian Kollmar      : KDIIS, OOCD, Brueckner-CCSD(T), CCSD density, CASPT2, CASPT2-K, improved NEVPT2 
+  Axel Koslowski         : Symmetry handling                             
+  Simone Kossmann        : meta-GGA functionals, TD-DFT gradient, OOMP2, (MP2 Hessian; deprecated post 5.0) 
+  Lucas Lang             : DCDCAS, Hyperfine gauge corrections, ICE-SOC+SSC
+  Marvin Lechner         : AUTO-CI (C++ implementation), FIC-MRCC        
+  Spencer Leger          : CASSCF response                               
+  Dagmar Lenk            : GEPOL surface, SMD, ORCA-2-JSON               
+  Dimitrios Liakos       : Extrapolation schemes; Compound Job, Property file
+  Dimitrios Manganas     : Further ROCIS development; embedding schemes. LFT, Crystal Embedding 
+  Dimitrios Pantazis     : SARC Basis sets                               
+  Anastasios Papadopoulos: AUTO-CI, single reference methods and gradients 
+  Taras Petrenko         : pre 6.0 DFT Hessian and TD-DFT gradient,  ECA, NRVS 
+  Petra Pikulova         : Analytic Raman intensities                    
+  Peter Pinski           : DLPNO-MP2, DLPNO-MP2 Gradient                 
+  Shashank Vittal Rao    : ES-AILFT, MagRelax                            
+  Christoph Reimann      : Effective Core Potentials                     
+  Marius Retegan         : Local ZFS, SOC                                
+  Christoph Riplinger    : Optimizer, TS searches, QM/MM, DLPNO-CCSD(T), (RO)-DLPNO pert. Triples 
+  Michael Roemelt        : Original ROCIS implementation, recursive CI coupling coefficients
+  Masaaki Saitow         : Open-shell DLPNO-CCSD energy and density      
+  Barbara Sandhoefer     : DKH picture change effects                    
+  Yorick L. A. Schmerwitz: GMF and freeze-and-release deltaSCF, NEB S-IDPP initial path                    
+  Kantharuban Sivalingam : CASSCF convergence/infrastructure, NEVPT2, NEVPT3, NEVPT4(SD), FIC-MRCI and CEPA variants
+  Bernardo de Souza      : ESD, SOC TD-DFT                               
+  Georgi L. Stoychev     : AutoAux, RI-MP2 NMR, DLPNO-MP2 response, X2C  
+  Van Anh Tran           : RI-MP2 g-tensors                              
+  Willem Van den Heuvel  : Paramagnetic NMR                              
+  Zikuan Wang            : NOTCH, Electric field optimization            
+  Frank Wennmohs         : Technical directorship and infrastructure     
+  Hang Xu                : AUTO-CI-Response properties                   
+                                                                         
+[FACCTs GmbH]                                                            
+  Markus Bursch, Nicolas Foglia, Miquel Garcia-Rates, Ingolf Harden, Hagen Neugebauer, Anastasios Papadopoulos, 
+  Christoph Riplinger, Bernardo de Souza, Georgi L. Stoychev                                                    
+                                                                 
+  APM, various basis sets, CI-OPT, improved COSX, DLPNO-Multilevel,           
+  DOCKER, DRACO, updates on ESD, Fragmentator, GOAT, IRC, LR-CPCM, L-BFGS, MBIS, meta-GGA TD-DFT gradient, ML-optimized integration grids, 
+  MM, NACMEs, nearIR, NEB, NEB-TS, NL-DFT gradient (VV10), 2- and 3-layer-ONIOM, interface openCOSMO-RS, QMMM,   
+  Crystal-QMMM, RESP, rigid body optimization, SF, symmetry and pop. for TD-DFT, various functionals, SOLVATOR                                   
+                                                                         
+[Other institutions]                                                     
+  V. Asgeirsson          : NEB                                           
+  Christoph Bannwarth    : sTDA-DFT, sTD-DFT, PBEh-3c, B97-3c, D3        
+  Giovanni Bistoni       : ETS/NOCV, ADLD/ADEX, COVALED                  
+  Martin Brehm           : Molecular dynamics                            
+  Ronald Cardenas        : ETS/NOCV                                      
+  Martina Colucci        : COVALED                                       
+  Sebastian Ehlert       : rSCAN, r2SCAN, r2SCAN-3c, D4, dhf basis sets  
+  Marvin Friede          : D4 for Fr, Ra, Ac-Lr                          
+  Lars Goerigk           : TD-DFT with DH, B97 family of functionals     
+  Stefan Grimme          : VdW corrections, initial TS optimization, DFT functionals, gCP, sTDA/sTD-DF 
+  Waldemar Hujo          : DFT-NL                                        
+  H. Jonsson             : NEB                                           
+  Holger Kruse           : gCP                                           
+  Marcel Mueller         : wB97X-3c, vDZP basis set                      
+  Hagen Neugebauer       : wr2SCAN, Native XTB                           
+  Gianluca Regni         : ADLD/ADEX                                     
+  Tobias Risthaus        : pre 6.0 range-separated hybrid DFT and stability analysis
+  Lukas Wittmann         : regularized MP2, r2SCAN double-hybrids, wr2SCAN        
+                                                                         
+We gratefully acknowledge several colleagues who have allowed us to      
+interface, adapt or use parts of their codes:                            
+  Ed Valeev, F. Pavosevic, A. Kumar             : LibInt (2-el integral package), F12 methods 
+  Garnet Chan, S. Sharma, J. Yang, R. Olivares  : DMRG                   
+  Ulf Ekstrom                                   : XCFun DFT Library      
+  Mihaly Kallay                                 : mrcc  (arbitrary order and MRCC methods)
+  Frank Weinhold                                : gennbo (NPA and NBO analysis)           
+  Simon Mueller                                 : openCOSMO-RS                            
+  Christopher J. Cramer and Donald G. Truhlar   : smd solvation model                     
+  S Lehtola, MJT Oliveira, MAL Marques          : LibXC Library                           
+  Liviu Ungur et al                             : ANISO software                          
+
+
+ Your calculation uses the libint2 library for the computation of 2-el integrals
+ For citations please refer to: http://libint.valeyev.net
+
+ Your ORCA version has been built with support for libXC version: 7.0.0
+ For citations please refer to: https://libxc.gitlab.io
+
+ This ORCA versions uses:
+   CBLAS   interface :  Fast vector & matrix operations
+   LAPACKE interface :  Fast linear algebra routines
+   Shared memory     :  Shared parallel matrices
+
+
+  ***********************************
+  * Starting time: Mon Jul 27 05:09:23 2026
+  * Host name:     DESKTOP-G9QFHTE
+  * Process ID:    15076
+  * Working dir.:  C:\Users\ushcodex\Downloads\thesis\simulation\02_tier1\V-TS3
+  ***********************************
+
+
+
+***************************************
+The coordinates will be read from file: V-I2_start.xyz
+***************************************
+
+
+Your calculation utilizes the semiempirical GFN2-xTB method
+Please cite in your paper:
+Bannwarth, C.; Ehlert S.; Grimme, S. J. Chem. Theory Comput. 2019, 15, 1652.
+   
+
+Your calculation utilizes a Nudged-Elastic-Band implementation
+by V. Ásgeirsson, C. Riplinger & H. Jónsson
+Please cite in your paper:
+Ásgeirsson, V.; Birgisson, B. O.; Bjornsson, R.; Becker, U.; Neese, F.; Riplinger, R.;
+Jónsson H. J. Chem. Theory Comput. 2021, 17, 4929-4945
+   
+
+================================================================================
+
+================================================================================
+                                        WARNINGS
+                       Please study these warnings very carefully!
+================================================================================
+
+
+WARNING: Geometry Optimization
+  ===> : Switching off AutoStart
+         For restart on a previous wavefunction, please use MOREAD
+
+WARNING: Found dipole moment calculation with XTB calculation
+  ===> : Switching off dipole moment calculation
+
+Environment variable XTBEXE for xtb has been set!
+
+================================================================================
+                                       INPUT FILE
+================================================================================
+NAME = neb_V-TS3-T1-V01.inp
+|  1> # Stage 3 - Step 3: NEB-TS for V-I2 -> V-P at GFN2-xTB
+|  2> # Reactant: V-I2_start.xyz, Product: V-P_start.xyz
+|  3> ! NEB-TS XTB2
+|  4> 
+|  5> %pal nprocs 1 end
+|  6> 
+|  7> %neb
+|  8>   NImages 8
+|  9>   NEB_end_XYZFile "V-P_start.xyz"
+| 10> end
+| 11> 
+| 12> * xyzfile 0 1 V-I2_start.xyz
+| 13> 
+| 14>                          ****END OF INPUT****
+================================================================================
+
+
+--------------------------------------------------------------------------------
+                        Nudged Elastic Band Calculation
+--------------------------------------------------------------------------------
+
+Number of images (incl. end points)     ....  10
+Number of intermediate images           ....  8
+Number of optimized images              ....  8
+Optimization of end points before NEB   ....  NO
+Use existing gbw files for MO input     ....  NO
+Number of atoms                         ....  30
+Number of (active) degrees of freedom   ....  90
+Constrained atoms                       ....  None
+
+-----------------------------------------
+  REACTANT (ANGSTROEM)
+-----------------------------------------
+Al    -0.535006     0.213348     0.487338 
+O     -2.000299    -0.277183    -0.365405 
+O     -0.684433    -2.278904     0.235383 
+O      0.883379    -0.002304    -0.401913 
+O     -0.759370     1.897184     0.772059 
+Si    -2.245483    -1.979672    -0.716041 
+Si     0.408173    -3.457647     0.385542 
+Si     2.410934    -0.158288    -0.878542 
+Si     0.378781     2.499805     1.719511 
+H     -1.462526    -2.289143    -1.918485 
+H     -2.931370    -2.562812     0.455488 
+H     -3.530261    -1.682778    -1.465808 
+H      0.983496    -3.780655    -0.920828 
+H      1.430182    -2.981134     1.345920 
+H      2.321721    -1.715130     4.136693 
+H      2.765231     1.062447    -1.617145 
+H      2.461552    -1.338398    -1.757506 
+H      3.280913    -0.346080     0.312738 
+H     -1.658612     5.392559     0.328037 
+H     -0.068293     3.015757     3.857420 
+H      1.345872     3.299603     0.993088 
+H     -2.643731     0.304456    -0.768730 
+V      0.807397    -0.304834     2.662443 
+O      1.197356     1.217393     2.371732 
+O     -0.691722    -0.645404     2.049813 
+O     -0.277295     3.298424     2.968720 
+O      1.752811    -1.192461     3.568067 
+H     -0.694316    -1.408396     1.365217 
+H     -1.243923     4.804531     0.629816 
+H     -0.302045    -4.631257     0.923400 
+
+-----------------------------------------
+  PRODUCT (ANGSTROEM)
+-----------------------------------------
+Al     2.482600     2.013000     3.778200 
+O     -1.444000    -0.708800    -1.086200 
+O      0.686900    -1.390500     1.168900 
+O      1.409900     0.633300    -1.168900 
+O     -0.452800     1.263500     0.891000 
+Si    -1.752800    -1.752800    -1.772300 
+Si     0.000000    -2.159400     2.159400 
+Si     2.178900     0.000000    -2.178900 
+Si     0.000000     2.154500     2.154500 
+H     -0.658700    -2.200300    -2.662800 
+H     -2.151300    -2.865400    -0.881400 
+H     -2.913600    -1.336900    -2.590900 
+H     -1.143700    -2.974100     1.691600 
+H      1.112600    -3.050400     2.557900 
+H     -0.416000    -1.340800     3.320100 
+H      1.364200    -0.467800    -3.322500 
+H      3.069400    -1.094100    -1.731400 
+H      2.997400     1.160700    -2.594900 
+H     -1.143700     2.969200     2.622300 
+H      0.447500     1.264000     3.248700 
+H      1.112600     3.045500     1.756100 
+H     -2.044000    -0.108800    -1.486200 
+V      3.500000     3.500000     5.500000 
+O      2.300000     2.900000     4.400000 
+O      3.400000     2.200000     4.400000 
+O      3.500000     4.800000     6.400000 
+O      4.800000     3.500000     6.400000 
+H      1.186900    -1.890500     1.668900 
+H      2.009900     1.233300    -1.568900 
+H     -0.550000    -1.400000     2.820000 
+
+
+
+----------------------
+NEB settings
+----------------------
+Method type                             ....  climbing image
+Threshold for climbing image            ....  2.00e-02 Eh/Bohr 
+Free endpoints                          ....  off 
+Tangent type                            ....  improved 
+Number of intermediate images           ....  8 
+Number of images free to move           ....  8 
+Spring type for image distribution      ....  distance between adjacent images 
+Spring constant                         ....  energy weighted (0.0100 -to- 0.1000) Eh/Bohr^2 
+Spring force perp. to the path          ....  none 
+Generation of initial path              ....  image dependent pair potential 
+Initial path via TS guess               ....  off 
+
+Minimization of RMSD: Rotation          ....  always 
+Minimization of RMSD: Translation type  ....  centroid 
+Center fixed to origin                  ....  true 
+Remove external force                   ....  true 
+
+Reparametrization of the path           ....  off 
+Convergence thresholds:
+Convergence monitored for               ....  all images
+Scaling factor                          ....  10.00
+
+Convergence parameters for regular images:
+               Max(|Fp|)                ....  2.00e-02 Eh/Bohr
+               RMS(Fp)                  ....  1.00e-02 Eh/Bohr
+
+Convergence parameters for climbing image:
+               Max(|F|)                 ....  2.00e-03 Eh/Bohr
+               RMS(F)                   ....  1.00e-03 Eh/Bohr
+Optimization method:
+Method                                  ....  L-BFGS
+Max. iterations                         ....  500 
+Step size                               ....  1.00 
+Maximum allowed step size               ....  0.10 Bohr
+
+LBFGS parameters: 
+               Memory                   ....  20 
+               Initial step size        ....  0.0010 
+               Estimate curvature       ....  YES 
+               Reset on maxmove         ....  YES 
+               Reparam. on reset        ....  NO 
+Generation of  the initial path:
+Two fragments detected in initial structure. Preparing initial structure... Done
+Minimize RMSD between reactant and product configurations     .... done
+       RMSD before minimization         ....  3.3500 Bohr
+       RMSD after minimization          ....  3.1363 Bohr
+Performing linear interpolation         ....  done
+Generating initial path 1 out of 129 -> Success!
+Displacement along initial path:             34.3947 Bohr
+Writing initial trajectory to file      ....  neb_V-TS3-T1-V01_initial_path_trj.xyz
+
+
+
+----------------------
+NEB OPTIMIZATION      
+----------------------
+
+Following output files will be written:
+Energy profile during opt. written to    ....  neb_V-TS3-T1-V01.interp
+Optimization log-file                    ....  neb_V-TS3-T1-V01.NEB.log
+Current trajectory will be written to    ....  neb_V-TS3-T1-V01_MEP_trj.xyz
+       and to allxyz file                ....  neb_V-TS3-T1-V01_MEP.allxyz
+       and individual images to xyz file ....  neb_V-TS3-T1-V01_im{NIm}.xyz
+Trajectory history will be written to    ....  neb_V-TS3-T1-V01_MEP_ALL_trj.xyz
+Converged CI will be written to          ....  neb_V-TS3-T1-V01_NEB-CI_converged.xyz
+Converged TS will be written to          ....  neb_V-TS3-T1-V01_NEB-TS_converged.xyz
+
+Single point energy and gradient calculation of reactant and
+product configurations (have to be performed only once)
+Properties of fixed NEB end points:
+               Reactant:
+                         E               ....    -51.251028 Eh
+                         RMS(F)          ....      0.000038 Eh/Bohr
+                         MAX(|F|)        ....      0.000174 Eh/Bohr
+               Product:
+                         E               ....    -48.351992 Eh
+                         RMS(F)          ....      0.612546 Eh/Bohr
+                         MAX(|F|)        ....      3.381032 Eh/Bohr
+      Warning: Product seems to be less converged than convergence tolerances.
+               You might want to use free end NEB or preopt_ends true.
+
+
+
+Starting iterations:
+
+Optim.  Iteration  HEI  E(HEI)-E(0)  max(|Fp|)   RMS(Fp)    dS
+Switch-on CI threshold               0.020000 
+Warning: path is strictly increasing in energy   LBFGS     0      9    2.899037    1.759352   0.116901  34.3947       
+Warning: path is strictly increasing in energy   LBFGS     1      9    2.899037    0.986311   0.078949  34.4037       
+   LBFGS     2      9    2.899037    0.544650   0.050396  34.4168       
+   LBFGS     3      9    2.899037    0.286284   0.035841  34.4375       
+   LBFGS     4      9    2.899037    0.152599   0.023383  34.4495       
+   LBFGS     5      9    2.899037    0.121457   0.018529  34.4726       
+   LBFGS     6      9    2.899037    0.109290   0.016304  34.4793       
+   LBFGS     7      9    2.899037    0.088930   0.014557  34.5073       
+   LBFGS     8      9    2.899037    0.065518   0.013239  34.5523       
+   LBFGS     9      9    2.899037    0.073441   0.012380  34.6560       
+   LBFGS    10      9    2.899037    0.080183   0.012108  34.7865       
+   LBFGS    11      9    2.899037    0.080565   0.011961  34.9116       
+   LBFGS    12      9    2.899037    0.076549   0.011698  35.0794       
+   LBFGS    13      9    2.899037    0.075348   0.011165  35.2706       
+   LBFGS    14      9    2.899037    0.069792   0.010538  35.4604       
+   LBFGS    15      9    2.899037    0.074383   0.009530  35.6888       
+   LBFGS    16      9    2.899037    0.078510   0.009113  35.8726       
+   LBFGS    17      9    2.899037    0.080946   0.008916  36.0174       
+   LBFGS    18      9    2.899037    0.078759   0.008712  36.1362       
+   LBFGS    19      9    2.899037    0.067290   0.008299  36.2847       
+   LBFGS    20      9    2.899037    0.062885   0.007941  36.4239       
+   LBFGS    21      9    2.899037    0.066308   0.007494  36.6076       
+   LBFGS    22      9    2.899037    0.069467   0.007358  36.7710       
+   LBFGS    23      9    2.899037    0.071948   0.007259  36.9108       
+   LBFGS    24      9    2.899037    0.072649   0.007178  37.0588       
+   LBFGS    25      9    2.899037    0.069355   0.007041  37.2083       
+   LBFGS    26      9    2.899037    0.058540   0.006819  37.3633       
+   LBFGS    27      9    2.899037    0.050952   0.006457  37.5607       
+   LBFGS    28      9    2.899037    0.050359   0.006223  37.7843       
+   LBFGS    29      9    2.899037    0.048740   0.005969  37.9995       
+   LBFGS    30      9    2.899037    0.047909   0.005748  38.2262       
+   LBFGS    31      9    2.899037    0.051295   0.005673  38.4521       
+   LBFGS    32      9    2.899037    0.055381   0.005773  38.6840       
+   LBFGS    33      9    2.899037    0.056785   0.005839  38.7895       
+   LBFGS    34      9    2.899037    0.056785   0.005839  38.7895       
+   LBFGS    35      9    2.899037    0.057540   0.005900  38.9012       
+   LBFGS    36      9    2.899037    0.057540   0.005900  38.9012       
+   LBFGS    37      9    2.899037    0.057523   0.005928  39.0197       
+   LBFGS    38      9    2.899037    0.057523   0.005928  39.0197       
+   LBFGS    39      9    2.899037    0.057863   0.005908  39.1448       
+   LBFGS    40      9    2.899037    0.054493   0.005721  39.3643       
+   LBFGS    41      9    2.899037    0.046493   0.005316  39.6101       
+   LBFGS    42      9    2.899037    0.037191   0.004925  39.8643       
+   LBFGS    43      9    2.899037    0.030747   0.004633  40.1679       
+   LBFGS    44      9    2.899037    0.035122   0.004679  40.4977       
+   LBFGS    45      9    2.899037    0.093069   0.007090  40.6061       
+
+Possible intermediate minimum found at image(s): 7 
+  => have a look at the .interp file.
+  => it is often a good idea to divide the path calculation into smaller fragments. 
+
+   LBFGS    46      9    2.899037    0.053888   0.006489  40.8544       
+   LBFGS    47      9    2.899037    0.036593   0.004913  41.0168       
+   LBFGS    48      9    2.899037    0.038244   0.004842  41.2009       
+   LBFGS    49      9    2.899037    0.070679   0.006159  41.4677       
+   LBFGS    50      9    2.899037    0.031065   0.003814  41.4596       
+   LBFGS    51      9    2.899037    0.035306   0.003969  41.5784       
+   LBFGS    52      9    2.899037    0.039716   0.004474  41.7828       
+   LBFGS    53      9    2.899037    0.040830   0.003695  41.9556       
+   LBFGS    54      9    2.899037    0.048709   0.004210  42.0944       
+   LBFGS    55      9    2.899037    0.061661   0.005287  42.3840       
+   LBFGS    56      9    2.899037    0.019590   0.002797  42.3643       
+   LBFGS    57      9    2.899037    0.026045   0.003056  42.4425       
+   LBFGS    58      9    2.899037    0.035095   0.004157  42.6923       
+   LBFGS    59      9    2.899037    0.046532   0.003873  42.8712       
+   LBFGS    60      9    2.899037    0.045893   0.004636  43.0382       
+   LBFGS    61      9    2.899037    0.058402   0.005677  43.2493       
+   LBFGS    62      9    2.899037    0.041028   0.003425  43.2635       
+   LBFGS    63      9    2.899037    0.030852   0.003594  43.4113       
+   LBFGS    64      9    2.899037    0.055269   0.004171  43.6913       
+   LBFGS    65      9    2.899037    0.037432   0.004141  43.9089       
+   LBFGS    66      9    2.899037    0.051522   0.004218  44.2281       
+   LBFGS    67      9    2.899037    0.018672   0.002664  44.2389       
+   LBFGS    68      9    2.899037    0.019452   0.002611  44.3828       
+   LBFGS    69      9    2.899037    0.024711   0.002906  44.6992       
+   LBFGS    70      9    2.899037    0.025745   0.003000  44.9720       
+   LBFGS    71      9    2.899037    0.077160   0.004736  45.4180       
+   LBFGS    72      9    2.899037    0.018306   0.002536  45.4740       
+   LBFGS    73      9    2.899037    0.017301   0.002631  45.6353       
+   LBFGS    74      9    2.899037    0.027334   0.003315  45.9628       
+   LBFGS    75      9    2.899037    0.020178   0.002863  46.1555       
+   LBFGS    76      9    2.899037    0.036039   0.003417  46.4368       
+   LBFGS    77      9    2.899037    0.095242   0.005423  46.9759       
+   LBFGS    78      9    2.899037    0.022002   0.002734  47.0395       
+   LBFGS    79      9    2.899037    0.019281   0.002413  47.1842       
+   LBFGS    80      9    2.899037    0.029494   0.003490  47.5435       
+   LBFGS    81      9    2.899037    0.031973   0.003738  47.7648       
+   LBFGS    82      9    2.899037    0.049032   0.004592  48.0883       
+   LBFGS    83      9    2.899037    0.040997   0.003955  48.2563       
+   LBFGS    84      9    2.899037    0.040875   0.004393  48.5312       
+
+Possible intermediate minimum found at image(s): 6 
+  => have a look at the .interp file.
+  => it is often a good idea to divide the path calculation into smaller fragments. 
+
+   LBFGS    85      9    2.899037    0.032779   0.003935  48.7332       
+   LBFGS    86      9    2.899037    0.036677   0.004205  49.0258       
+   LBFGS    87      9    2.899037    0.036284   0.003929  49.2802       
+   LBFGS    88      9    2.899037    0.058958   0.004697  49.6052       
+   LBFGS    89      9    2.899037    0.024930   0.002731  49.7041       
+   LBFGS    90      9    2.899037    0.021993   0.002648  49.8477       
+   LBFGS    91      9    2.899037    0.029008   0.003195  50.1487       
+   LBFGS    92      9    2.899037    0.036062   0.003654  50.3399       
+   LBFGS    93      9    2.899037    0.028356   0.003348  50.4954       
+   LBFGS    94      9    2.899037    0.037788   0.004089  50.7984       
+   LBFGS    95      9    2.899037    0.057635   0.004461  50.8872       
+   LBFGS    96      9    2.899037    0.033927   0.003182  50.9592       
+   LBFGS    97      9    2.899037    0.032307   0.003036  51.1349       
+   LBFGS    98      9    2.899037    0.023572   0.002669  51.2813       
+   LBFGS    99      9    2.899037    0.024230   0.002458  51.4402       
+   LBFGS   100      9    2.899037    0.024243   0.002370  51.7040       
+   LBFGS   101      9    2.899037    0.017793   0.002053  51.7856       
+   LBFGS   102      9    2.899037    0.022742   0.002284  51.9355       
+   LBFGS   103      9    2.899037    0.025337   0.002899  52.2480       
+   LBFGS   104      9    2.899037    0.043738   0.003181  52.3564       
+   LBFGS   105      9    2.899037    0.013772   0.001775  52.4336       
+   LBFGS   106      9    2.899037    0.024186   0.002275  52.5972       
+   LBFGS   107      9    2.899037    0.039575   0.003444  52.8924       
+   LBFGS   108      9    2.899037    0.050945   0.004338  53.2952       
+   LBFGS   109      9    2.899037    0.032329   0.002499  53.3090       
+   LBFGS   110      9    2.899037    0.009137   0.001424  53.3347       
+   LBFGS   111      9    2.899037    0.011124   0.001577  53.4275       
+   LBFGS   112      9    2.899037    0.026076   0.002489  53.6625       
+   LBFGS   113      9    2.899037    0.037938   0.003508  54.1489       
+   LBFGS   114      9    2.899037    0.042870   0.003046  54.2174       
+   LBFGS   115      9    2.899037    0.011738   0.001528  54.2564       
+
+Possible intermediate minimum found at image(s): 6 
+  => have a look at the .interp file.
+  => it is often a good idea to divide the path calculation into smaller fragments. 
+
+   LBFGS   116      9    2.899037    0.010228   0.001383  54.3760       
+   LBFGS   117      9    2.899037    0.024540   0.001980  54.5366       
+   LBFGS   118      9    2.899037    0.043390   0.003199  55.0030       
+   LBFGS   119      9    2.899037    0.025112   0.002022  55.0305       
+   LBFGS   120      9    2.899037    0.007949   0.001263  55.0669       
+   LBFGS   121      9    2.899037    0.012514   0.001388  55.2087       
+   LBFGS   122      9    2.899037    0.031426   0.002541  55.5658       
+   LBFGS   123      9    2.899037    0.040040   0.003428  56.1772       
+   LBFGS   124      9    2.899037    0.047375   0.003446  56.2462       
+   LBFGS   125      9    2.899037    0.012403   0.001626  56.2960       
+   LBFGS   126      9    2.899037    0.014707   0.001374  56.4103       
+   LBFGS   127      9    2.899037    0.022053   0.001811  56.5431       
+   LBFGS   128      9    2.899037    0.030640   0.002623  56.8677       
+   LBFGS   129      9    2.899037    0.029125   0.002157  56.9135       
+   LBFGS   130      9    2.899037    0.015257   0.001464  56.9536       
+   LBFGS   131      9    2.899037    0.017115   0.001634  57.1904       
+   LBFGS   132      9    2.899037    0.029533   0.002421  57.4757       
+   LBFGS   133      9    2.899037    0.043079   0.002766  57.5475       
+   LBFGS   134      9    2.899037    0.016223   0.001451  57.6003       
+   LBFGS   135      9    2.899037    0.029206   0.001780  57.7675       
+   LBFGS   136      9    2.899037    0.023628   0.001868  57.9141       
+   LBFGS   137      9    2.899037    0.028791   0.002188  58.2487       
+   LBFGS   138      9    2.899037    0.025826   0.001869  58.2947       
+   LBFGS   139      9    2.899037    0.013794   0.001326  58.3307       
+   LBFGS   140      9    2.899037    0.013566   0.001488  58.6109       
+   LBFGS   141      9    2.899037    0.023286   0.002274  58.9600       
+   LBFGS   142      9    2.899037    0.033834   0.002954  59.4936       
+   LBFGS   143      9    2.899037    0.041269   0.002684  59.5422       
+   LBFGS   144      9    2.899037    0.014422   0.001392  59.5798       
+   LBFGS   145      9    2.899037    0.013143   0.001237  59.7075       
+   LBFGS   146      9    2.899037    0.014185   0.001526  59.8636       
+
+Possible intermediate minimum found at image(s): 6 
+  => have a look at the .interp file.
+  => it is often a good idea to divide the path calculation into smaller fragments. 
+
+   LBFGS   147      9    2.899037    0.021728   0.001899  60.1563       
+   LBFGS   148      9    2.899037    0.030248   0.002046  60.2088       
+   LBFGS   149      9    2.899037    0.017681   0.001429  60.2527       
+   LBFGS   150      9    2.899037    0.014226   0.001538  60.5412       
+   LBFGS   151      9    2.899037    0.016136   0.001804  60.7828       
+   LBFGS   152      9    2.899037    0.025284   0.002159  61.2517       
+   LBFGS   153      9    2.899037    0.033247   0.002189  61.2996       
+   LBFGS   154      9    2.899037    0.016883   0.001395  61.3372       
+   LBFGS   155      9    2.899037    0.012662   0.001357  61.5294       
+   LBFGS   156      9    2.899037    0.018644   0.001860  61.7544       
+   LBFGS   157      9    2.899037    0.032940   0.002732  62.2366       
+   LBFGS   158      9    2.899037    0.044009   0.002861  62.2873       
+   LBFGS   159      9    2.899037    0.019187   0.001669  62.3236       
+   LBFGS   160      9    2.899037    0.009471   0.001435  62.4997       
+   LBFGS   161      9    2.899037    0.015645   0.001764  62.6753       
+   LBFGS   162      9    2.899037    0.026710   0.002427  63.1163       
+   LBFGS   163      9    2.899037    0.040070   0.002579  63.1720       
+   LBFGS   164      9    2.899037    0.018977   0.001624  63.2161       
+   LBFGS   165      9    2.899037    0.010987   0.001712  63.4396       
+   LBFGS   166      9    2.899037    0.027123   0.002458  63.7585       
+   LBFGS   167      9    2.899037    0.038003   0.002972  64.1454       
+   LBFGS   168      9    2.899037    0.044256   0.002932  64.1736       
+   LBFGS   169      9    2.899037    0.017271   0.001620  64.1938       
+   LBFGS   170      9    2.899037    0.007921   0.001104  64.2808       
+   LBFGS   171      9    2.899037    0.010742   0.001231  64.3737       
+   LBFGS   172      9    2.899037    0.017020   0.001901  64.8054       
+   LBFGS   173      9    2.899037    0.029740   0.001961  64.8521       
+   LBFGS   174      9    2.899037    0.012376   0.001160  64.8894       
+   LBFGS   175      9    2.899037    0.008047   0.001101  65.0002       
+   LBFGS   176      9    2.899037    0.016218   0.001508  65.1586       
+   LBFGS   177      9    2.899037    0.024725   0.002374  65.5573       
+
+Possible intermediate minimum found at image(s): 6 
+  => have a look at the .interp file.
+  => it is often a good idea to divide the path calculation into smaller fragments. 
+
+   LBFGS   178      9    2.899037    0.029573   0.002330  65.5799       
+   LBFGS   179      9    2.899037    0.015810   0.001550  65.6014       
+   LBFGS   180      9    2.899037    0.009432   0.001141  65.7211       
+   LBFGS   181      9    2.899037    0.014208   0.001387  65.8148       
+   LBFGS   182      9    2.899037    0.033990   0.002461  66.1141       
+   LBFGS   183      9    2.899037    0.010233   0.001191  66.1377       
+   LBFGS   184      9    2.899037    0.008287   0.001013  66.1578       
+   LBFGS   185      9    2.899037    0.009947   0.001363  66.4539       
+   LBFGS   186      9    2.899037    0.020818   0.001702  66.4969       
+   LBFGS   187      9    2.899037    0.012690   0.001305  66.5392       
+   LBFGS   188      9    2.899037    0.013653   0.001595  66.7897       
+   LBFGS   189      9    2.899037    0.028486   0.002433  67.0719       
+   LBFGS   190      9    2.899037    0.039790   0.002964  67.4864       
+   LBFGS   191      9    2.899037    0.038720   0.002483  67.5176       
+   LBFGS   192      9    2.899037    0.014422   0.001356  67.5392       
+   LBFGS   193      9    2.899037    0.006087   0.000867  67.6217       
+   LBFGS   194      9    2.899037    0.010192   0.001052  67.7161       
+   LBFGS   195      9    2.899037    0.018660   0.002034  68.1620       
+   LBFGS   196      9    2.899037    0.018831   0.001874  68.1848       
+   LBFGS   197      9    2.899037    0.012743   0.001367  68.2075       
+   LBFGS   198      9    2.899037    0.011276   0.001216  68.3633       
+   LBFGS   199      9    2.899037    0.024818   0.001882  68.4995       
+   LBFGS   200      9    2.899037    0.036492   0.002464  68.7300       
+   LBFGS   201      9    2.899037    0.047106   0.003050  69.1410       
+   LBFGS   202      9    2.899037    0.024541   0.001814  69.1704       
+   LBFGS   203      9    2.899037    0.008946   0.001215  69.1901       
+   LBFGS   204      9    2.899037    0.013101   0.001241  69.3093       
+   LBFGS   205      9    2.899037    0.023065   0.001686  69.4834       
+   LBFGS   206      9    2.899037    0.024296   0.002574  69.8662       
+   LBFGS   207      9    2.899037    0.024400   0.002451  69.8988       
+   LBFGS   208      9    2.899037    0.021562   0.002167  69.9340       
+
+Possible intermediate minimum found at image(s): 6 
+  => have a look at the .interp file.
+  => it is often a good idea to divide the path calculation into smaller fragments. 
+
+   LBFGS   209      9    2.899037    0.026613   0.002339  70.1218       
+   LBFGS   210      9    2.899037    0.041019   0.003000  70.1899       
+   LBFGS   211      9    2.899037    0.058046   0.003821  70.2910       
+   LBFGS   212      9    2.899037    0.058046   0.003821  70.2910       
+   LBFGS   213      9    2.899037    0.081718   0.004902  70.3441       
+   LBFGS   214      9    2.899037    0.030340   0.002609  70.3596       
+   LBFGS   215      9    2.899037    0.021380   0.001835  70.4495       
+   LBFGS   216      9    2.899037    0.047868   0.003605  70.5592       
+   LBFGS   217      9    2.899037    0.016146   0.001507  70.5544       
+   LBFGS   218      9    2.899037    0.016048   0.001293  70.5592       
+   LBFGS   219      9    2.899037    0.024013   0.001924  70.5904       
+Warning: path is strictly increasing in energy   LBFGS   220      9    2.899037    0.029853   0.002307  70.6343       
+Warning: path is strictly increasing in energy   LBFGS   221      9    2.899037    0.028985   0.002524  70.6690       
+Warning: path is strictly increasing in energy   LBFGS   222      9    2.899037    0.016097   0.001366  70.6696       
+Warning: path is strictly increasing in energy   LBFGS   223      9    2.899037    0.014370   0.001285  70.6790       
+Warning: path is strictly increasing in energy   LBFGS   224      9    2.899037    0.017549   0.001568  70.7425       
+Warning: path is strictly increasing in energy   LBFGS   225      9    2.899037    0.024977   0.001645  70.7494       
+Warning: path is strictly increasing in energy   LBFGS   226      9    2.899037    0.014890   0.001304  70.7557       
+Warning: path is strictly increasing in energy   LBFGS   227      9    2.899037    0.024789   0.002215  70.8235       
+Warning: path is strictly increasing in energy   LBFGS   228      9    2.899037    0.017254   0.001376  70.8233       
+Warning: path is strictly increasing in energy   LBFGS   229      9    2.899037    0.009160   0.001101  70.8281       
+Warning: path is strictly increasing in energy   LBFGS   230      9    2.899037    0.017220   0.001724  70.8512       
+Warning: path is strictly increasing in energy   LBFGS   231      9    2.899037    0.033449   0.002902  70.9259       
+Warning: path is strictly increasing in energy   LBFGS   232      9    2.899037    0.040674   0.002340  70.9415       
+Warning: path is strictly increasing in energy   LBFGS   233      9    2.899037    0.008165   0.001105  70.9503       
+Warning: path is strictly increasing in energy   LBFGS   234      9    2.899037    0.010412   0.001280  70.9631       
+Warning: path is strictly increasing in energy   LBFGS   235      9    2.899037    0.032321   0.002280  71.0068       
+Warning: path is strictly increasing in energy   LBFGS   236      9    2.899037    0.052356   0.003427  71.0956       
+Warning: path is strictly increasing in energy   LBFGS   237      9    2.899037    0.036873   0.002339  71.0993       
+Warning: path is strictly increasing in energy   LBFGS   238      9    2.899037    0.010335   0.001210  71.1043       
+   LBFGS   239      9    2.899037    0.010198   0.001205  71.1210       
+   LBFGS   240      9    2.899037    0.019752   0.001720  71.1583       
+   LBFGS   241      9    2.899037    0.033285   0.002437  71.2589       
+   LBFGS   242      9    2.899037    0.035291   0.002080  71.2762       
+   LBFGS   243      9    2.899037    0.014030   0.001165  71.2884       
+   LBFGS   244      9    2.899037    0.011798   0.001170  71.3333       
+   LBFGS   245      9    2.899037    0.018567   0.001575  71.3907       
+   LBFGS   246      9    2.899037    0.039157   0.002472  71.5976       
+   LBFGS   247      9    2.899037    0.027244   0.001729  71.6145       
+   LBFGS   248      9    2.899037    0.012299   0.001073  71.6281       
+   LBFGS   249      9    2.899037    0.009105   0.001070  71.6884       
+   LBFGS   250      9    2.899037    0.018468   0.001545  71.7775       
+   LBFGS   251      9    2.899037    0.032485   0.002269  71.9856       
+   LBFGS   252      9    2.899037    0.039824   0.002259  72.0146       
+   LBFGS   253      9    2.899037    0.017896   0.001361  72.0358       
+   LBFGS   254      9    2.899037    0.015338   0.001651  72.1318       
+   LBFGS   255      9    2.899037    0.031536   0.002499  72.2609       
+   LBFGS   256      9    2.899037    0.050796   0.003449  72.4437       
+   LBFGS   257      9    2.899037    0.052440   0.003143  72.4821       
+   LBFGS   258      9    2.899037    0.024968   0.001869  72.5118       
+   LBFGS   259      9    2.899037    0.017454   0.001737  72.6339       
+   LBFGS   260      9    2.899037    0.044176   0.002688  72.7540       
+   LBFGS   261      9    2.899037    0.016960   0.001782  72.8458       
+   LBFGS   262      9    2.899037    0.019737   0.001954  72.9478       
+   LBFGS   263      9    2.899037    0.035833   0.002382  73.2090       
+   LBFGS   264      9    2.899037    0.026466   0.001731  73.2299       
+   LBFGS   265      9    2.899037    0.012048   0.001110  73.2498       
+   LBFGS   266      9    2.899037    0.007806   0.001150  73.3514       
+   LBFGS   267      9    2.899037    0.019726   0.001592  73.5091       
+   LBFGS   268      9    2.899037    0.030555   0.002102  73.8404       
+
+Possible intermediate minimum found at image(s): 7 
+  => have a look at the .interp file.
+  => it is often a good idea to divide the path calculation into smaller fragments. 
+
+   LBFGS   269      9    2.899037    0.031363   0.001817  73.8839       
+   LBFGS   270      9    2.899037    0.014525   0.001103  73.9143       
+   LBFGS   271      9    2.899037    0.010186   0.001223  74.0417       
+   LBFGS   272      9    2.899037    0.021425   0.001726  74.1841       
+   LBFGS   273      9    2.899037    0.039381   0.002577  74.5264       
+   LBFGS   274      9    2.899037    0.034075   0.002054  74.5533       
+   LBFGS   275      9    2.899037    0.015817   0.001224  74.5783       
+   LBFGS   276      9    2.899037    0.007809   0.001016  74.6856       
+   LBFGS   277      9    2.899037    0.017239   0.001345  74.8417       
+   LBFGS   278      9    2.899037    0.028123   0.001874  75.1883       
+   LBFGS   279      9    2.899037    0.033883   0.001957  75.2417       
+   LBFGS   280      9    2.899037    0.019067   0.001304  75.2809       
+   LBFGS   281      9    2.899037    0.012218   0.001518  75.5147       
+   LBFGS   282      9    2.899037    0.026193   0.001965  75.7114       
+   LBFGS   283      9    2.899037    0.039321   0.002557  76.1042       
+   LBFGS   284      9    2.899037    0.038268   0.002284  76.1520       
+   LBFGS   285      9    2.899037    0.020220   0.001464  76.1920       
+   LBFGS   286      9    2.899037    0.006678   0.001059  76.3888       
+   LBFGS   287      9    2.899037    0.021049   0.001548  76.6270       
+   LBFGS   288      9    2.899037    0.034314   0.002148  77.1255       
+   LBFGS   289      9    2.899037    0.049323   0.002622  77.1983       
+   LBFGS   290      9    2.899037    0.025070   0.001558  77.2424       
+   LBFGS   291      9    2.899037    0.014663   0.001385  77.4924       
+   LBFGS   292      9    2.899037    0.022692   0.001687  77.6857       
+   LBFGS   293      9    2.899037    0.035372   0.002351  78.2474       
+   LBFGS   294      9    2.899037    0.040567   0.002376  78.3216       
+   LBFGS   295      9    2.899037    0.021290   0.001514  78.3773       
+   LBFGS   296      9    2.899037    0.010143   0.001208  78.6703       
+   LBFGS   297      9    2.899037    0.024416   0.001779  79.0392       
+   LBFGS   298      9    2.899037    0.037133   0.002473  79.6226       
+   LBFGS   299      9    2.899037    0.067291   0.003500  79.7139       
+
+Possible intermediate minimum found at image(s): 7 
+  => have a look at the .interp file.
+  => it is often a good idea to divide the path calculation into smaller fragments. 
+
+   LBFGS   300      9    2.899037    0.029929   0.001836  79.7633       
+   LBFGS   301      9    2.899037    0.015027   0.001471  80.0067       
+   LBFGS   302      9    2.899037    0.025192   0.001958  80.2330       
+   LBFGS   303      9    2.899037    0.040402   0.003053  80.8023       
+   LBFGS   304      9    2.899037    0.055557   0.003280  80.9061       
+   LBFGS   305      9    2.899037    0.023117   0.001872  80.9823       
+   LBFGS   306      9    2.899037    0.012755   0.001634  81.2738       
+   LBFGS   307      9    2.899037    0.031516   0.002434  81.7205       
+   LBFGS   308      9    2.899037    0.043136   0.003175  82.1846       
+   LBFGS   309      9    2.899037    0.100881   0.005275  82.3006       
+   LBFGS   310      9    2.899037    0.037448   0.002499  82.3523       
+   LBFGS   311      9    2.899037    0.018545   0.002071  82.5957       
+   LBFGS   312      9    2.899037    0.038432   0.002874  82.9009       
+   LBFGS   313      9    2.899037    0.064039   0.003673  83.0107       
+   LBFGS   314      9    2.899037    0.031579   0.002115  83.0874       
+   LBFGS   315      9    2.899037    0.011011   0.001504  83.4212       
+   LBFGS   316      9    2.899037    0.024384   0.001932  83.7491       
+   LBFGS   317      9    2.899037    0.034856   0.002402  84.2028       
+   LBFGS   318      9    2.899037    0.056040   0.002988  84.2558       
+   LBFGS   319      9    2.899037    0.026338   0.001706  84.2933       
+   LBFGS   320      9    2.899037    0.015660   0.001744  84.5024       
+   LBFGS   321      9    2.899037    0.032146   0.002454  84.7549       
+   LBFGS   322      9    2.899037    0.048773   0.003396  85.2150       
+   LBFGS   323      9    2.899037    0.064374   0.003752  85.3098       
+   LBFGS   324      9    2.899037    0.026561   0.001994  85.3693       
+   LBFGS   325      9    2.899037    0.011172   0.001344  85.6074       
+   LBFGS   326      9    2.899037    0.022811   0.001760  85.8736       
+   LBFGS   327      9    2.899037    0.034821   0.002384  86.3535       
+   LBFGS   328      9    2.899037    0.057730   0.003090  86.4161       
+   LBFGS   329      9    2.899037    0.027618   0.001783  86.4556       
+   LBFGS   330      9    2.899037    0.017602   0.001766  86.6954       
+
+Possible intermediate minimum found at image(s): 7 
+  => have a look at the .interp file.
+  => it is often a good idea to divide the path calculation into smaller fragments. 
+
+   LBFGS   331      9    2.899037    0.033763   0.002552  86.9818       
+   LBFGS   332      9    2.899037    0.048397   0.003536  87.4594       
+   LBFGS   333      9    2.899037    0.068938   0.003970  87.5612       
+   LBFGS   334      9    2.899037    0.026693   0.001999  87.6256       
+   LBFGS   335      9    2.899037    0.009254   0.001363  87.8556       
+   LBFGS   336      9    2.899037    0.022853   0.001795  88.1402       
+   LBFGS   337      9    2.899037    0.035452   0.002492  88.6518       
+   LBFGS   338      9    2.899037    0.063067   0.003361  88.7242       
+   LBFGS   339      9    2.899037    0.028693   0.001833  88.7673       
+   LBFGS   340      9    2.899037    0.015863   0.001701  89.0056       
+   LBFGS   341      9    2.899037    0.032106   0.002486  89.2960       
+   LBFGS   342      9    2.899037    0.046722   0.003618  89.7751       
+   LBFGS   343      9    2.899037    0.074335   0.004234  89.9183       
+   LBFGS   344      9    2.899037    0.028118   0.002086  90.0082       
+   LBFGS   345      9    2.899037    0.010599   0.001555  90.3183       
+   LBFGS   346      9    2.899037    0.027013   0.002160  90.7336       
+   LBFGS   347      9    2.899037    0.039199   0.002863  91.2893       
+   LBFGS   348      9    2.899037    0.084062   0.004475  91.4154       
+   LBFGS   349      9    2.899037    0.034263   0.002240  91.4748       
+   LBFGS   350      9    2.899037    0.017196   0.001916  91.7851       
+   LBFGS   351      9    2.899037    0.039691   0.003098  92.2262       
+   LBFGS   352      9    2.899037    0.053194   0.004064  92.7340       
+   LBFGS   353      9    2.899037    0.085657   0.004845  92.8840       
+   LBFGS   354      9    2.899037    0.028977   0.002200  92.9676       
+   LBFGS   355      9    2.899037    0.012498   0.001542  93.2492       
+   LBFGS   356      9    2.899037    0.028108   0.002215  93.6474       
+   LBFGS   357      9    2.899037    0.039405   0.002816  94.1309       
+   LBFGS   358      9    2.899037    0.084902   0.004556  94.2486       
+   LBFGS   359      9    2.899037    0.035803   0.002316  94.3016       
+   LBFGS   360      9    2.899037    0.018633   0.001934  94.6095       
+   LBFGS   361      9    2.899037    0.041047   0.003285  95.0264       
+
+Possible intermediate minimum found at image(s): 7 
+  => have a look at the .interp file.
+  => it is often a good idea to divide the path calculation into smaller fragments. 
+
+   LBFGS   362      9    2.899037    0.079979   0.004495  95.1758       
+   LBFGS   363      9    2.899037    0.034544   0.002302  95.2642       
+   LBFGS   364      9    2.899037    0.012440   0.001749  95.6364       
+   LBFGS   365      9    2.899037    0.032591   0.002534  96.0879       
+   LBFGS   366      9    2.899037    0.094920   0.005050  96.2130       
+   LBFGS   367      9    2.899037    0.041924   0.002534  96.2729       
+   LBFGS   368      9    2.899037    0.017341   0.002323  96.6014       
+   LBFGS   369      9    2.899037    0.041407   0.003544  96.9780       
+   LBFGS   370      9    2.899037    0.085134   0.004814  97.1166       
+   LBFGS   371      9    2.899037    0.034035   0.002296  97.2050       
+   LBFGS   372      9    2.899037    0.012116   0.001849  97.4881       
+   LBFGS   373      9    2.899037    0.032552   0.002655  97.8559       
+   LBFGS   374      9    2.899037    0.113221   0.006061  97.9547       
+   LBFGS   375      9    2.899037    0.046105   0.002851  97.9988       
+   LBFGS   376      9    2.899037    0.018027   0.002223  98.1748       
+   LBFGS   377      9    2.899037    0.019833   0.001905  98.3563       
+   LBFGS   378      9    2.899037    0.022731   0.001973  98.5180       
+   LBFGS   379      9    2.899037    0.027901   0.002171  98.6268       
+   LBFGS   380      9    2.899037    0.033649   0.002656  98.7397       
+   LBFGS   381      9    2.899037    0.043623   0.003363  98.8370       
+   LBFGS   382      9    2.899037    0.057007   0.004187  98.9356       
+   LBFGS   383      9    2.899037    0.082391   0.005231  99.0126       
+   LBFGS   384      9    2.899037    0.056219   0.004164  99.0690       
+   LBFGS   385      9    2.899037    0.058742   0.003808  99.1546       
+   LBFGS   386      9    2.899037    0.053449   0.003382  99.2262       
+   LBFGS   387      9    2.899037    0.039970   0.003259  99.3003       
+   LBFGS   388      9    2.899037    0.080308   0.004644  99.3778       
+   LBFGS   389      9    2.899037    0.029816   0.002509  99.4132       
+   LBFGS   390      9    2.899037    0.037135   0.002628  99.5266       
+   LBFGS   391      9    2.899037    0.032992   0.002351  99.5868       
+   LBFGS   392      9    2.899037    0.036747   0.002509  99.7032       
+
+Possible intermediate minimum found at image(s): 7 
+  => have a look at the .interp file.
+  => it is often a good idea to divide the path calculation into smaller fragments. 
+
+   LBFGS   393      9    2.899037    0.037672   0.002770  99.8681       
+   LBFGS   394      9    2.899037    0.017165   0.001923  99.9678       
+   LBFGS   395      9    2.899037    0.044181   0.003244  100.0944       
+   LBFGS   396      9    2.899037    0.061493   0.004489  100.2715       
+   LBFGS   397      9    2.899037    0.013288   0.001724  100.2821       
+   LBFGS   398      9    2.899037    0.015882   0.001739  100.3266       
+   LBFGS   399      9    2.899037    0.029492   0.002653  100.5225       
+   LBFGS   400      9    2.899037    0.033927   0.002984  100.6557       
+   LBFGS   401      9    2.899037    0.032544   0.002934  100.7516       
+   LBFGS   402      9    2.899037    0.029515   0.003142  101.0205       
+   LBFGS   403      9    2.899037    0.021477   0.002335  101.0736       
+   LBFGS   404      9    2.899037    0.022969   0.002579  101.1784       
+   LBFGS   405      9    2.899037    0.031569   0.003169  101.3920       
+   LBFGS   406      9    2.899037    0.048387   0.004412  101.5687       
+   LBFGS   407      9    2.899037    0.027605   0.003029  101.6431       
+   LBFGS   408      9    2.899037    0.033689   0.003143  101.8450       
+   LBFGS   409      9    2.899037    0.043079   0.003592  101.9479       
+   LBFGS   410      9    2.899037    0.036108   0.003302  102.0825       
+   LBFGS   411      9    2.899037    0.047650   0.003972  102.2814       
+   LBFGS   412      9    2.899037    0.050277   0.003440  102.4116       
+   LBFGS   413      9    2.899037    0.041378   0.003856  102.5590       
+   LBFGS   414      9    2.899037    0.052203   0.004820  102.7496       
+   LBFGS   415      9    2.899037    0.033680   0.002744  102.8011       
+   LBFGS   416      9    2.899037    0.023573   0.002491  102.8823       
+   LBFGS   417      9    2.899037    0.034476   0.003348  103.0849       
+   LBFGS   418      9    2.899037    0.043648   0.003522  103.2693       
+   LBFGS   419      9    2.899037    0.051028   0.004524  103.4647       
+   LBFGS   420      9    2.899037    0.061325   0.005496  103.6838       
+   LBFGS   421      9    2.899037    0.033296   0.002764  103.7409       
+   LBFGS   422      9    2.899037    0.019454   0.002339  103.8202       
+   LBFGS   423      9    2.899037    0.031607   0.003267  104.0642       
+
+Possible intermediate minimum found at image(s): 7 
+  => have a look at the .interp file.
+  => it is often a good idea to divide the path calculation into smaller fragments. 
+
+   LBFGS   424      9    2.899037    0.022741   0.002816  104.2652       
+   LBFGS   425      9    2.899037    0.050207   0.004210  104.5097       
+   LBFGS   426      9    2.899037    0.021786   0.002533  104.6006       
+   LBFGS   427      9    2.899037    0.025978   0.002842  104.7580       
+   LBFGS   428      9    2.899037    0.034022   0.003668  105.0393       
+   LBFGS   429      9    2.899037    0.065164   0.004199  105.2477       
+   LBFGS   430      9    2.899037    0.050843   0.004249  105.4451       
+   LBFGS   431      9    2.899037    0.059754   0.005320  105.7393       
+   LBFGS   432      9    2.899037    0.053208   0.003501  105.8310       
+   LBFGS   433      9    2.899037    0.018337   0.002380  105.9268       
+   LBFGS   434      9    2.899037    0.031307   0.003623  106.2427       
+   LBFGS   435      9    2.899037    0.081670   0.004979  106.4701       
+   LBFGS   436      9    2.899037    0.047393   0.003870  106.6576       
+   LBFGS   437      9    2.899037    0.059349   0.005124  106.9743       
+   LBFGS   438      9    2.899037    0.057157   0.003706  107.0838       
+   LBFGS   439      9    2.899037    0.019363   0.002457  107.2001       
+   LBFGS   440      9    2.899037    0.032765   0.003871  107.5510       
+   LBFGS   441      9    2.899037    0.086419   0.005187  107.7830       
+   LBFGS   442      9    2.899037    0.041489   0.003560  107.9674       
+   LBFGS   443      9    2.899037    0.057933   0.004938  108.2931       
+   LBFGS   444      9    2.899037    0.069920   0.006075  108.6624       
+   LBFGS   445      9    2.899037    0.052482   0.003649  108.7757       
+   LBFGS   446      9    2.899037    0.017504   0.002373  108.8864       
+   LBFGS   447      9    2.899037    0.030494   0.003672  109.2824       
+   LBFGS   448      9    2.899037    0.059974   0.004249  109.5463       
+   LBFGS   449      9    2.899037    0.052377   0.004367  109.8524       
+   LBFGS   450      9    2.899037    0.069626   0.005712  110.2503       
+   LBFGS   451      9    2.899037    0.034010   0.002945  110.3742       
+   LBFGS   452      9    2.899037    0.017225   0.002658  110.5701       
+   LBFGS   453      9    2.899037    0.034043   0.004050  111.0024       
+   LBFGS   454      9    2.899037    0.021772   0.002832  111.2613       
+
+Possible intermediate minimum found at image(s): 7 
+  => have a look at the .interp file.
+  => it is often a good idea to divide the path calculation into smaller fragments. 
+
+   LBFGS   455      9    2.899037    0.046895   0.004293  111.6718       
+   LBFGS   456      9    2.899037    0.043484   0.003290  111.8657       
+   LBFGS   457      9    2.899037    0.028647   0.003511  112.1737       
+   LBFGS   458      9    2.899037    0.047320   0.004827  112.6458       
+   LBFGS   459      9    2.899037    0.045985   0.003440  112.8550       
+   LBFGS   460      9    2.899037    0.036213   0.003880  113.1570       
+   LBFGS   461      9    2.899037    0.064001   0.005595  113.6174       
+   LBFGS   462      9    2.899037    0.035119   0.002914  113.7715       
+   LBFGS   463      9    2.899037    0.020500   0.003034  114.0291       
+   LBFGS   464      9    2.899037    0.047883   0.004475  114.4848       
+   LBFGS   465      9    2.899037    0.034845   0.003022  114.6840       
+   LBFGS   466      9    2.899037    0.041923   0.004119  115.0447       
+   LBFGS   467      9    2.899037    0.061855   0.005629  115.4757       
+   LBFGS   468      9    2.899037    0.028009   0.002666  115.6340       
+   LBFGS   469      9    2.899037    0.029511   0.003392  115.9106       
+   LBFGS   470      9    2.899037    0.050196   0.004453  116.2224       
+   LBFGS   471      9    2.899037    0.049167   0.003500  116.3974       
+   LBFGS   472      9    2.899037    0.045135   0.003768  116.6779       
+   LBFGS   473      9    2.899037    0.057294   0.004877  116.9793       
+   LBFGS   474      9    2.899037    0.017855   0.002474  117.1272       
+   LBFGS   475      9    2.899037    0.030815   0.003134  117.3717       
+   LBFGS   476      9    2.899037    0.028341   0.003100  117.6179       
+   LBFGS   477      9    2.899037    0.048425   0.003872  117.8714       
+   LBFGS   478      9    2.899037    0.019553   0.002788  117.9979       
+   LBFGS   479      9    2.899037    0.053816   0.004019  118.2176       
+   LBFGS   480      9    2.899037    0.018279   0.002783  118.3257       
+   LBFGS   481      9    2.899037    0.049631   0.004035  118.5531       
+   LBFGS   482      9    2.899037    0.018655   0.002831  118.6417       
+   LBFGS   483      9    2.899037    0.063505   0.004594  118.8169       
+   LBFGS   484      9    2.899037    0.017683   0.002906  118.8840       
+   LBFGS   485      9    2.899037    0.049364   0.004336  119.0438       
+   LBFGS   486      9    2.899037    0.071989   0.005663  119.2236       
+   LBFGS   487      9    2.899037    0.024794   0.003392  119.2444       
+   LBFGS   488      9    2.899037    0.037411   0.003908  119.2971       
+   LBFGS   489      9    2.899037    0.026795   0.003688  119.3519       
+   LBFGS   490      9    2.899037    0.054061   0.005172  119.4266       
+   LBFGS   491      9    2.899037    0.026604   0.003440  119.4213       
+   LBFGS   492      9    2.899037    0.065091   0.005181  119.4415       
+   LBFGS   493      9    2.899037    0.024060   0.003201  119.4446       
+   LBFGS   494      9    2.899037    0.041229   0.004645  119.4406       
+   LBFGS   495      9    2.899037    0.060807   0.006106  119.4466       
+   LBFGS   496      9    2.899037    0.029182   0.003580  119.4187       
+   LBFGS   497      9    2.899037    0.042298   0.004328  119.4010       
+   LBFGS   498      9    2.899037    0.091073   0.006426  119.3906       
+   LBFGS   499      9    2.899037    0.024836   0.003168  119.3810       
+
+                                .--------------------.
+          ----------------------|   NEB convergence  |-------------------------
+          Item                value                   Tolerance       Converged
+          ---------------------------------------------------------------------
+          RMS(Fp)             0.0031679103            0.0100000000      YES
+          MAX(|Fp|)           0.0248363192            0.0200000000      NO
+          ---------------------------------------------------------------------
+
+Unable to converge in 500 iterations
+
+---------------------------------------------------------------
+                         PATH SUMMARY              
+---------------------------------------------------------------
+All forces in Eh/Bohr.
+
+Image Dist.(Ang.)    E(Eh)   dE(kcal/mol)  max(|Fp|)  RMS(Fp)
+  0     0.000     -51.25103      0.00       0.00018   0.00004
+  1     4.953     -51.24912      1.20       0.00067   0.00020
+  2     9.952     -51.22412     16.89       0.00100   0.00037
+  3    15.052     -51.10295     92.92       0.00276   0.00082
+  4    20.315     -50.97841    171.07       0.00968   0.00291
+  5    26.707     -50.83471    261.24       0.01727   0.00465
+  6    34.710     -50.78247    294.02       0.02484   0.00689
+  7    44.940     -50.88403    230.29       0.01467   0.00438
+  8    54.279     -51.00055    157.18       0.00618   0.00166
+  9    63.174     -48.35199    1819.17       3.34140   0.61116 <= CI
+
+Straight line distance between images along the path:
+        D( 0- 1) =   4.9534 Ang.
+        D( 1- 2) =   4.9981 Ang.
+        D( 2- 3) =   5.1007 Ang.
+        D( 3- 4) =   5.2631 Ang.
+        D( 4- 5) =   6.3914 Ang.
+        D( 5- 6) =   8.0029 Ang.
+        D( 6- 7) =  10.2308 Ang.
+        D( 7- 8) =   9.3383 Ang.
+        D( 8- 9) =   8.8950 Ang.
+
+---------------------------------------------------------------
+               INFORMATION ABOUT SADDLE POINT     
+---------------------------------------------------------------
+
+Climbing image                            ....  9 
+Energy                                    ....  -48.35199155 Eh
+Max. abs. force                           ....  3.3810e+00 Eh/Bohr
+
+-----------------------------------------
+  SADDLE POINT (ANGSTROEM)
+-----------------------------------------
+Al     1.664583     0.823613     3.096437 
+O     -2.116910    -0.142345    -2.495558 
+O     -0.211717    -1.591602    -0.406299 
+O      0.835146     0.893333    -2.084574 
+O     -1.111498     1.140566    -0.020187 
+Si    -2.459832    -0.936379    -3.448663 
+Si    -1.026574    -2.522653     0.310599 
+Si     1.619959     0.474473    -3.189883 
+Si    -0.678393     1.622962     1.454856 
+H     -1.345167    -1.239300    -4.374252 
+H     -3.008591    -2.199431    -2.905754 
+H     -3.522963    -0.211123    -4.180269 
+H     -2.196640    -3.072873    -0.410190 
+H     -0.020086    -3.589994     0.508909 
+H     -1.456028    -1.999173     1.626838 
+H      0.852644     0.402242    -4.453645 
+H      2.385755    -0.779357    -3.008849 
+H      2.556800     1.619225    -3.243110 
+H     -1.782994     2.393804     2.068921 
+H     -0.382276     0.438598     2.292146 
+H      0.527925     2.475653     1.360465 
+H     -2.637010     0.596385    -2.748901 
+V      2.674913     1.704460     5.197854 
+O      1.510712     1.531004     3.922885 
+O      2.548147     0.752422     3.787769 
+O      2.716326     2.718364     6.410696 
+O      3.904268     1.344076     6.125105 
+H      0.209958    -2.250728    -0.034699 
+H      1.508366     1.516321    -2.281928 
+H     -1.558822    -1.912542     1.123280 
+
+-----------------------------------------
+  FORCES (Eh/Bohr)
+-----------------------------------------
+Al    -1.204395    -2.134522    -3.381032 
+O      0.147682     0.618437     0.599663 
+O      0.028065     0.241215    -0.187138 
+O     -0.175124     0.047883     0.216001 
+O      0.016340     0.019194     0.071291 
+Si    -0.133204    -0.647264    -0.606085 
+Si     0.009222    -0.481084    -0.222590 
+Si     0.170879    -0.164475    -0.271960 
+Si    -0.046162    -0.009398    -0.097904 
+H     -0.003102    -0.005197    -0.001850 
+H     -0.000083    -0.005264    -0.002687 
+H     -0.007301    -0.013170    -0.015044 
+H      0.003734    -0.000712     0.006559 
+H     -0.002585    -0.023153     0.021069 
+H      0.073094     0.001865     0.451599 
+H      0.006352     0.000187     0.001236 
+H     -0.000771     0.002277    -0.001702 
+H      0.024442     0.005139    -0.022241 
+H      0.007378    -0.001408     0.008010 
+H      0.014718    -0.014860     0.021753 
+H      0.010955     0.001542     0.010026 
+H     -0.002142     0.050827     0.028070 
+V      0.018913     0.070900     0.097516 
+O     -0.731253     1.908706     1.935927 
+O      1.926714     0.194518     1.397330 
+O     -0.062032     0.019668    -0.027702 
+O      0.045334    -0.059262    -0.029508 
+H      0.248255    -0.005420    -0.006959 
+H     -0.024447     0.108324     0.077591 
+H     -0.359475     0.274507    -0.069240 
+
+-----------------------------------------
+  UNIT TANGENT
+-----------------------------------------
+Al    -0.081769    -0.174384    -0.101319 
+O      0.004330    -0.034890     0.128264 
+O      0.095175     0.010484     0.129831 
+O      0.012342    -0.082595     0.093982 
+O      0.077847     0.065253     0.018429 
+Si     0.005639     0.017458     0.060381 
+Si     0.070114    -0.017601    -0.006973 
+Si     0.020665    -0.025002     0.063324 
+Si     0.057904     0.125759    -0.010549 
+H      0.017454     0.035601     0.074586 
+H     -0.012091     0.016260     0.010696 
+H      0.030462     0.052826     0.075603 
+H      0.201363     0.051513    -0.089177 
+H      0.028109    -0.032810     0.030661 
+H     -0.035870     0.232059     0.049590 
+H      0.001497     0.030947     0.088503 
+H     -0.006224    -0.034532     0.016192 
+H      0.029926    -0.037870     0.089484 
+H      0.034775     0.059739    -0.008692 
+H     -0.069044    -0.073563     0.002464 
+H     -0.000478     0.169584    -0.039397 
+H      0.103274    -0.024218     0.191006 
+V     -0.085225    -0.063979    -0.219877 
+O     -0.072898    -0.197495     0.000901 
+O     -0.043367    -0.166133    -0.025700 
+O     -0.224127    -0.079739    -0.436630 
+O     -0.084402     0.071974    -0.309746 
+H      0.082953     0.193007    -0.059945 
+H     -0.145208    -0.032905     0.207913 
+H     -0.013125    -0.054749    -0.023803 
+ => Unit tangent is an approximation to the TS mode at the saddle point
+NEB not converged. Skipping NEB-TS run here.
+----------
+STATISTICS
+----------
+
+For the individual parts of the NEB, NEB-CI or NEB-TS run:
+
+Number of iterations:
+     NEB                               ... 500  100.0%
+Number of SCF / gradient calculations:
+     NEB                               ... 5194  100.0%
+
+----------
+ TIMINGS
+----------
+
+For the individual parts of the NEB, NEB-CI or NEB-TS run:
+
+Total                                  ...   156293.253 sec
+NEB                                    ...   156293.253 sec  100.0%
+
+[file orca_main/run.cpp, line 1547]: ORCA finished with error return - aborting the run

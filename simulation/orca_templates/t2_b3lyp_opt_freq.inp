@@ -1,0 +1,9 @@
+# TIER 2 - hybrid DFT re-optimization + analytic frequencies (cloud instance)
+# Geometry level of the thesis: B3LYP-D3(BJ)/def2-SVP.
+
+! B3LYP D3BJ def2-SVP RIJCOSX TightSCF TightOpt DefGrid3 FREQ
+
+%pal nprocs 12 end
+%maxcore 4000
+
+* xyzfile 0 1 t1_state.xyz

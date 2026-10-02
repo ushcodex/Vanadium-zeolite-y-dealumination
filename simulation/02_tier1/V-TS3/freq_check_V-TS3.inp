@@ -1,0 +1,3 @@
+! XTB2 FREQ
+%pal nprocs 1 end
+* xyzfile 0 1 neb_idpp_V-TS3_im2.xyz

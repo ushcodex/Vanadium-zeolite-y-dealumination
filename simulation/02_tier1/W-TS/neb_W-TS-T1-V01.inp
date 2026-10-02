@@ -1,0 +1,12 @@
+# Stage 3 - Step 4: NEB-TS for W-PRC -> W-P at GFN2-xTB
+# Reactant: W-PRC_start.xyz, Product: W-P_start.xyz
+! NEB-TS XTB2
+
+%pal nprocs 1 end
+
+%neb
+  NImages 8
+  NEB_end_XYZFile "W-P_start.xyz"
+end
+
+* xyzfile 0 1 W-PRC_start.xyz

@@ -1,0 +1,7 @@
+# Stage 2: V-TS2 seed optimization at GFN2-xTB (for V-I2 generation)
+# Job ID: V-TS2-T1-V01
+! XTB2 OPT FREQ
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 V-TS2_start.xyz

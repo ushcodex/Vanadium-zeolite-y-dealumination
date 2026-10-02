@@ -1,0 +1,12 @@
+# Phase B Round 3: OptTS from Band D CI-NEB converged image
+# Job ID: optts_bandD_ci
+! XTB2 OptTS FREQ
+
+%geom
+  Calc_Hess true
+  MaxIter 300
+end
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 neb_ts_bandD_NEB-CI_converged.xyz

@@ -1,0 +1,7 @@
+# Stage 1: H3VO4 (vanadic acid) optimization + frequency at GFN2-xTB
+# Job ID: h3vo4-T1-V01
+! XTB2 OPT FREQ
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 H3VO4.xyz

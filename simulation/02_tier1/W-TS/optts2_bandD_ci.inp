@@ -1,0 +1,11 @@
+# TIER 1 - Step E1: Continuation of Band D OptTS from frame 300
+! XTB2 OPTTS FREQ
+
+%geom
+  Calc_Hess true
+  MaxIter 300
+end
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 optts_bandD_ci.xyz

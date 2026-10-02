@@ -1,0 +1,18 @@
+# Archives (excluded per user preference due to GitHub file size limits)
+archive/
+
+# Quantum chemistry intermediate scratch / temporary files
+*.tmp
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+desktop.ini
+.DS_Store
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/

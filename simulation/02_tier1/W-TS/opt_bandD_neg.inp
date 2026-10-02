@@ -1,0 +1,6 @@
+# Phase B Round 3: Band D W-TS negative displacement optimization
+! XTB2 Opt FREQ
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 w_ts_bandD_neg.xyz

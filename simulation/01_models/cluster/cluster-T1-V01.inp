@@ -1,0 +1,7 @@
+# Stage 1: Cluster AlSi4O4H13 optimization + frequency at GFN2-xTB
+# Job ID: cluster-T1-V01
+! XTB2 OPT FREQ
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 cluster_AlSi4O4H13.xyz

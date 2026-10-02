@@ -1,0 +1,38 @@
+Job ID,State,Tier,Input File,Source Log,Software,Cores,Status,Imag Freqs,Energy (Eh),Rel Energy (kJ/mol),Verified,Notes
+cluster-T1-V02,cluster,Tier 1,cluster-T1-V02.inp,cluster-T1-V02.out,ORCA 6.1 (xTB2),1,Accepted,0,-31.34551236,-,yes,Isolated FAU cluster minimum
+h3vo4-T1-V01,H3VO4,Tier 1,h3vo4-T1-V01.inp,h3vo4-T1-V01.out,ORCA 6.1 (xTB2),1,Accepted,0,-19.77512769,-,yes,Isolated H3VO4 minimum
+h2o-T1-V01,H2O,Tier 1,h2o-T1-V01.inp,h2o-T1-V01.out,ORCA 6.1 (xTB2),1,Accepted,0,-5.07054445,-,yes,Isolated H2O minimum (exact: -5.070544447500 Eh)
+V-R-T1-V02,V-R,Tier 1,V-R-T1-V02.inp,V-R-T1-V02.out,ORCA 6.1 (xTB2),1,Accepted,0,-51.19563631,-196.9,yes,Sanity check - collapsed to PRC basin (Al-O contact 0.1925 nm)
+V-PRC-T1-V01,V-PRC,Tier 1,V-PRC-T1-V01.inp,V-PRC-T1-V01.out,ORCA 6.1 (xTB2),1,Superseded (see canonical rows),0,-51.19461241,-194.21,no,First pass unconverged run restored per no-deletion rule
+V-PRC_canonical,V-PRC,Tier 1,V-PRC_canonical.xyz,V-R-T1-V02.out,ORCA 6.1 (xTB2),1,Accepted,0,-51.19563631,-196.9,yes,H-bonded pre-reaction complex minimum
+V-TS1-T1-V01,V-TS1,Tier 1,neb_V-TS1-T1-V01.inp,freq_V-TS1-T1-V01.out,ORCA 6.1 (xTB2),1,"Artifact, excluded",5,-50.88659123,614.5,no,"First-pass NEB artifact (source: freq_V-TS1-T1-V01.out, 5 imag)"
+V-TS1-T1-V02,V-TS1,Tier 1,neb_ts_bandA.inp,freq_bandA_ci.out,ORCA 6.1 (xTB2),1,"Candidate, under refinement",3,-51.0582055,163.92,no,CI image estimate (+360.82 kJ/mol vs V-PRC); Step 0 freqs reported
+V-TS1-T1-V03,V-TS1,Tier 1,optts_bandA_ci.inp,optts_bandA_ci.out,ORCA 6.1 (xTB2),1,"Candidate, under refinement",3,-51.081329,103.21,no,OptTS Pass 1 from CI (+300.12 kJ/mol vs V-PRC); Step 0 freqs reported
+V-TS1-T1-V04,V-TS1,Tier 1,optts2_bandA_ci.inp,optts2_bandA_ci.out,ORCA 6.1 (xTB2),1,Slid to minimum,0,-51.0813337,103.2,no,OptTS continuation converged to 0 imag minimum basin
+V-TS1-T1-V05,V-TS1,Tier 1,V-TS1_ci_pos_disp.inp,V-TS1_ci_pos_disp.out,ORCA 6.1 (xTB2),1,Diagnostic run,0,-51.08139865,103.03,no,Band A CI +0.01nm displacement converged to +300 kJ/mol basin (0 imag)
+V-TS1-T1-V06,V-TS1,Tier 1,V-TS1_ci_neg_disp.inp,V-TS1_ci_neg_disp.out,ORCA 6.1 (xTB2),1,Diagnostic run,0,-51.0813839,103.07,no,Band A CI -0.01nm displacement converged to same +300 kJ/mol basin (0 imag)
+V-I1-T1-V01,V-I1,Tier 1,V-TS1-T1-V02.inp,V-I1-T1-V01.out,ORCA 6.1 (xTB2),1,Accepted,0,-51.26731716,-385.1,yes,Chemisorbed intermediate minimum
+V-TS2-T1-V01,V-TS2,Tier 1,neb_V-TS2-T1-V01.inp,freq_V-TS2-T1-V01.out,ORCA 6.1 (xTB2),1,"Artifact, excluded",5,-50.84621402,720.51,no,"First-pass NEB artifact (source: freq_V-TS2-T1-V01.out, 5 imag)"
+V-TS2-T1-V02,V-TS2,Tier 1,neb_ts_bandB.inp,freq_bandB_ci.out,ORCA 6.1 (xTB2),1,"Candidate, under refinement",9,-51.10991869,28.15,no,CI image estimate (+413.25 kJ/mol vs V-I1); Step 0 freqs reported
+V-TS2-T1-V03,V-TS2,Tier 1,optts_bandB_ci.inp,optts_bandB_ci.out,ORCA 6.1 (xTB2),1,"Candidate, under refinement",9,-51.190714,-183.98,no,OptTS Pass 1 from CI (+201.12 kJ/mol vs V-I1); Step 0 freqs reported
+V-TS2-T1-V04,V-TS2,Tier 1,optts2_bandB_ci.inp,optts2_bandB_ci.out,ORCA 6.1 (xTB2),1,"Candidate, under refinement",1,-51.20596103,-224.01,no,OptTS continuation 1 (+161.09 kJ/mol vs V-I1); Step 0 freqs: 1 imag
+V-TS2-T1-V05,V-TS2,Tier 1,optts3_bandB_ci.inp,optts3_bandB_ci.out,ORCA 6.1 (xTB2),1,Accepted,1,-51.20610884,-224.4,yes,OptTS continuation 2 CONVERGED (+160.70 kJ/mol vs V-I1); 1 imag (-78.21 cm-1); A1-A5 passed
+V-TS2-T1-V06,V-TS2,Tier 1,V-TS2_ts_pos_disp.inp,V-TS2_ts_pos_disp.out,ORCA 6.1 (xTB2),1,Diagnostic run (A4),0,-51.24508512,-326.73,no,"Mode 6 +0.01nm displacement converged to V-I2 well (+15.64 kJ/mol vs V-I2, 0 imag)"
+V-TS2-T1-V07,V-TS2,Tier 1,V-TS2_ts_neg_disp.inp,V-TS2_ts_neg_disp.out,ORCA 6.1 (xTB2),1,Diagnostic run (A4),0,-51.22653425,-278.02,no,"Mode 6 -0.01nm displacement converged to V-I1 well (+107.08 kJ/mol vs V-I1, 0 imag)"
+V-I2-T1-V03,V-I2,Tier 1,V-TS2-T1-V03.inp,V-TS2-T1-V03.out,ORCA 6.1 (xTB2),1,Superseded (see canonical rows),1,-51.25102836,-342.33,no,First pass run with imag mode -118.68 cm-1 restored per no-deletion rule
+V-I2-T1-V04,V-I2,Tier 1,V-I2-T1-V04_pos.inp,V-I2-T1-V04_pos.out,ORCA 6.1 (xTB2),1,Accepted,0,-51.25104052,-342.36,yes,Hydrolysed intermediate minimum (mode-displaced 0 imag)
+V-TS3-T1-V01,V-TS3,Tier 1,neb_V-TS3-T1-V01.inp,freq_V-TS3-T1-V01.out,ORCA 6.1 (xTB2),1,"Artifact, excluded",5,-50.6057601,1351.82,no,"First-pass NEB artifact (source: freq_V-TS3-T1-V01.out, 5 imag)"
+V-TS3-T1-V02,V-TS3,Tier 1,neb_ts_bandC.inp,freq_bandC_ci.out,ORCA 6.1 (xTB2),1,"Candidate, under refinement",3,-51.0536985,175.76,no,CI image estimate (+518.12 kJ/mol vs V-I2); Step 0 freqs reported
+V-TS3-T1-V03,V-TS3,Tier 1,optts_bandC_ci.inp,optts_bandC_ci.out,ORCA 6.1 (xTB2),1,"Candidate, under refinement",3,-51.066211,142.91,no,OptTS Pass 1 from CI (+485.27 kJ/mol vs V-I2); Step 0 freqs reported
+V-TS3-T1-V04,V-TS3,Tier 1,optts2_bandC_ci.inp,optts2_bandC_ci.out,ORCA 6.1 (xTB2),1,"Candidate, under refinement",3,-51.06676972,141.44,no,OptTS continuation 1 (+483.80 kJ/mol vs V-I2); Step 0 freqs: 3 imag
+V-TS3-T1-V05,V-TS3,Tier 1,optts3_bandC_ci.inp,optts3_bandC_ci.out,ORCA 6.1 (xTB2),1,"Candidate, under refinement",1,-51.0649656,146.17,no,OptTS continuation 2 (+488.54 kJ/mol vs V-I2); Step 0 freqs: 1 imag (-40.33 cm-1)
+V-P-T1-V01,V-P,Tier 1,V-TS3-T1-V02.inp,V-TS3-T1-V02.out,ORCA 6.1 (xTB2),1,Accepted,0,-51.15221675,-82.9,yes,Dealuminated product state minimum
+W-PRC-T1-V02,W-PRC,Tier 1,W-PRC-T1-V02.inp,W-PRC-T1-V02.out,ORCA 6.1 (xTB2),1,Accepted,0,-36.44256091,-69.59,yes,Water H-bonded complex minimum
+W-TS-T1-V01,W-TS,Tier 1,neb_W-TS-T1-V01.inp,neb_W-TS-T1-V01.out,ORCA 6.1 (xTB2),1,Superseded,1,-36.40334386,33.38,no,Old CI-NEB run restored for audit trail
+W-TS-T1-V02,W-TS,Tier 1,neb_ts_bandD.inp,freq_bandD_ci.out,ORCA 6.1 (xTB2),1,"Candidate, under refinement",6,-36.41774965,-4.44,no,CI image estimate (+65.14 kJ/mol vs W-PRC); Step 0 freqs reported
+W-TS-T1-V03,W-TS,Tier 1,optts_bandD_ci.inp,optts_bandD_ci.out,ORCA 6.1 (xTB2),1,"Candidate, under refinement",6,-36.43115234,-39.63,no,OptTS Pass 1 from CI (+29.95 kJ/mol vs W-PRC); Step 0 freqs reported
+W-TS-T1-V04,W-TS,Tier 1,optts2_bandD_ci.inp,optts2_bandD_ci.out,ORCA 6.1 (xTB2),1,Candidate (pending A4),1,-36.43140308,-40.29,no,OptTS continuation 1 CONVERGED (+29.29 kJ/mol vs W-PRC); EXACTLY 1 imag (-226.10 cm-1)
+W-TS-T1-V05,W-TS,Tier 1,optts_bandD_frozencaps.inp,optts_bandD_frozencaps.out,ORCA 6.1 (xTB2),1,Diagnostic run,5,-36.41883009,-7.28,no,Step E2 frozen caps (+62.31 kJ/mol vs W-PRC); 5 imag modes
+W-TS-T1-V06,W-TS,Tier 1,W-TS_pos_disp.inp,W-TS_pos_disp.out,ORCA 6.1 (xTB2),1,Diagnostic run,0,-36.44204682,-68.24,no,"Mode 6 +0.01nm displacement converged to W-PRC well (+1.35 kJ/mol vs W-PRC, 0 imag)"
+W-TS-T1-V07,W-TS,Tier 1,W-TS_neg_disp.inp,W-TS_neg_disp.out,ORCA 6.1 (xTB2),1,Diagnostic run,0,-36.44204971,-68.25,no,"Mode 6 -0.01nm displacement converged to W-PRC well (+1.34 kJ/mol vs W-PRC, 0 imag)"
+W-P-T1-V01,W-P,Tier 1,W-P-T1-V01.inp,W-P-T1-V01.out,ORCA 6.1 (xTB2),1,Accepted,0,-36.44113826,-65.85,yes,Water dealuminated product minimum

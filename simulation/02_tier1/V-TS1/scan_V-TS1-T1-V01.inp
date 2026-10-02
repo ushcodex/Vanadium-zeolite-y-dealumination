@@ -1,0 +1,11 @@
+# Stage 3 - Step 1: V-PRC -> V-I1 relaxed surface scan at GFN2-xTB
+# Scanning chemisorption Al(0) - O(23) bond distance from 3.05 A to 1.75 A
+! XTB2 OPT
+
+%pal nprocs 1 end
+
+%geom
+  Scan B 0 23 = 3.05, 1.75, 14 end
+end
+
+* xyzfile 0 1 V-PRC_start.xyz

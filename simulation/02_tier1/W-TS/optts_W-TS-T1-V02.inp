@@ -1,0 +1,12 @@
+# Phase B4: OptTS for W-TS from relaxed scan peak
+# Job ID: optts_W-TS-T1-V02
+! XTB2 OptTS FREQ
+
+%geom
+  Calc_Hess true
+  MaxIter 300
+end
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 W-TS_scan_peak.xyz

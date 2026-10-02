@@ -1,0 +1,7 @@
+# Stage 2: V-P (dealuminated product) optimization + frequency at GFN2-xTB
+# Job ID: V-P-T1-V01
+! XTB2 OPT FREQ
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 V-P_start.xyz

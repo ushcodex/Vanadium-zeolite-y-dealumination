@@ -1,0 +1,7 @@
+# Stage 1: Cluster re-optimization from displaced geometry (fix imaginary mode)
+# Job ID: cluster-T1-V02
+! XTB2 OPT FREQ
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 cluster_displaced.xyz

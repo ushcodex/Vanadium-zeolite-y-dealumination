@@ -1,0 +1,11 @@
+# Stage 2: V-TS3 seed relaxation optimization at GFN2-xTB
+# Job ID: V-TS3-T1-V01
+! XTB2 OPT FREQ
+
+%geom
+  MaxIter 200
+end
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 V-TS3_start.xyz

@@ -1,0 +1,12 @@
+# Stage 3 - Step 3: NEB-TS for V-I2 -> V-P at GFN2-xTB
+# Reactant: V-I2_start.xyz, Product: V-P_start.xyz
+! NEB-TS XTB2
+
+%pal nprocs 1 end
+
+%neb
+  NImages 8
+  NEB_end_XYZFile "V-P_start.xyz"
+end
+
+* xyzfile 0 1 V-I2_start.xyz

@@ -1,0 +1,11 @@
+# Stage 2: V-I2 re-optimization from positive mode displacement (Phase A3)
+# Job ID: V-I2-T1-V04_pos
+! XTB2 OPT FREQ
+
+%geom
+  MaxIter 300
+end
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 V-I2_displaced_pos.xyz

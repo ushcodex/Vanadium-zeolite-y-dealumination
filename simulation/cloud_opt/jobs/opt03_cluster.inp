@@ -1,0 +1,11 @@
+! B3LYP def2-TZVP D3BJ RIJCOSX def2/J TightSCF DEFGRID3 Opt KDIIS SOSCF
+%pal nprocs 4 end
+%maxcore 3000
+%scf
+  MaxIter 500
+  Convergence Tight
+end
+%geom
+  MaxIter 200
+end
+* xyzfile 0 1 cluster-T1-V02.xyz

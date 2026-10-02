@@ -1,0 +1,12 @@
+nohup: ignoring input
+=== OPT Tue Aug 25 01:34:45 UTC 2026: opt01_h2o ===
+PASS opt01_h2o E=-76.426623125197 opt=YES
+=== OPT Tue Aug 25 01:35:04 UTC 2026: opt02_h3vo4 ===
+PASS opt02_h3vo4 E=-1246.825013958827 opt=YES
+=== OPT Tue Aug 25 01:46:59 UTC 2026: opt03_cluster ===
+FAIL opt03_cluster
+=== OPT Tue Aug 25 01:59:34 UTC 2026: opt04_vprc ===
+PASS opt04_vprc E=-2956.254445175078 opt=YES
+=== OPT Tue Aug 25 11:51:50 UTC 2026: opt05_wprc ===
+PASS opt05_wprc E=-1785.850531808839 opt=YES
+=== OPT COMPLETE Tue Aug 25 15:25:43 UTC 2026 ===

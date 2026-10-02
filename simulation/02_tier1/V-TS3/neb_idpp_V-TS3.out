@@ -1,0 +1,889 @@
+
+                                 *****************
+                                 * O   R   C   A *
+                                 *****************
+
+                                            #,                                       
+                                            ###                                      
+                                            ####                                     
+                                            #####                                    
+                                            ######                                   
+                                           ########,                                 
+                                     ,,################,,,,,                         
+                               ,,#################################,,                 
+                          ,,##########################################,,             
+                       ,#########################################, ''#####,          
+                    ,#############################################,,   '####,        
+                  ,##################################################,,,,####,       
+                ,###########''''           ''''###############################       
+              ,#####''   ,,,,##########,,,,          '''####'''          '####       
+            ,##' ,,,,###########################,,,                        '##       
+           ' ,,###''''                  '''############,,,                           
+         ,,##''                                '''############,,,,        ,,,,,,###''
+      ,#''                                            '''#######################'''  
+     '                                                          ''''####''''         
+             ,#######,   #######,   ,#######,      ##                                
+            ,#'     '#,  ##    ##  ,#'     '#,    #''#        ,####,    ,#,          
+            ##       ##  ##   ,#'  ##            #'  '#       #'       ,# #          
+            ##       ##  #######   ##           ,######,      #####,      #          
+            '#,     ,#'  ##    ##  '#,     ,#' ,#      #,     #,   #      #          
+             '#######'   ##     ##  '#######'  #'      '#     '####' #    #          
+
+
+
+                #########################################################
+                #                        -***-                          #
+                #          Department of theory and spectroscopy        #
+                #                                                       #
+                #                      Frank Neese                      #
+                #                                                       #
+                #     Directorship, Architecture, Infrastructure        #
+                #                    SHARK, DRIVERS                     #
+                #        Core code/Algorithms in most modules           #
+                #                                                       #
+                #        Max Planck Institute fuer Kohlenforschung      #
+                #                Kaiser Wilhelm Platz 1                 #
+                #                 D-45470 Muelheim/Ruhr                 #
+                #                      Germany                          #
+                #                                                       #
+                #                  All rights reserved                  #
+                #                        -***-                          #
+                #########################################################
+
+
+                         Program Version 6.1.0  -  RELEASE   -
+
+
+ With contributions from (in alphabetic order):
+[Max-Planck-Institut fuer Kohlenforschung]                               
+  Daniel Aravena         : Magnetic Suceptibility                        
+  Michael Atanasov       : Ab Initio Ligand Field Theory (pilot matlab implementation)
+  Alexander A. Auer      : GIAO ZORA, VPT2 properties, NMR spectrum      
+  Ute Becker             : All parallelization in ORCA, NUMFREQ, NUMCALC 
+  Giovanni Bistoni       : ED, misc. LED, open-shell LED, HFLD           
+  Dmytro Bykov           : pre 5.0 version of the SCF Hessian            
+  Marcos Casanova-Páez   : Triplet and SCS-CIS(D). UHF-(DLPNO)-IP/EA/STEOM-CCSD. UHF-CVS-IP/STEOM-CCSD   
+  Vijay G. Chilkuri      : MRCI spin determinant printing, contributions to CSF-ICE 
+  Pauline Colinet        : FMM embedding                                 
+  Dipayan Datta          : RHF DLPNO-CCSD density                        
+  Achintya Kumar Dutta   : EOM-CC, STEOM-CC                              
+  Nicolas Foglia         : Exact transition moments, OPA infrastructure, MCD improvements    
+  Dmitry Ganyushin       : Spin-Orbit,Spin-Spin,Magnetic field MRCI      
+  Miquel Garcia-Rates    : C-PCM and meta-GGA Hessian, CCSD/C-PCM, Gaussian charge scheme 
+  Tiago L. C. Gouveia    : GS-ROHF, GS-ROCIS                             
+  Yang Guo               : DLPNO-NEVPT2, F12-NEVPT2, CIM, IAO-localization        
+  Andreas Hansen         : Spin unrestricted coupled pair/coupled cluster methods 
+  Ingolf Harden          : AUTO-CI MPn and infrastructure                
+  Benjamin Helmich-Paris : MC-RPA, TRAH-(SCF,CASSCF), AVAS, COSX integrals, SCF dyn. polar., MC-PDFT, srDFT 
+  Lee Huntington         : MR-EOM, pCC                                   
+  Robert Izsak           : Overlap fitted RIJCOSX, COSX-SCS-MP3, EOM     
+  Riya Kayal             : Wick's Theorem for AUTO-CI, AUTO-CI UHF-CCSDT 
+  Emily Kempfer          : AUTO-CI RHF CISDT and CCSDT, approximate NEVPT4
+  Christian Kollmar      : KDIIS, OOCD, Brueckner-CCSD(T), CCSD density, CASPT2, CASPT2-K, improved NEVPT2 
+  Axel Koslowski         : Symmetry handling                             
+  Simone Kossmann        : meta-GGA functionals, TD-DFT gradient, OOMP2, (MP2 Hessian; deprecated post 5.0) 
+  Lucas Lang             : DCDCAS, Hyperfine gauge corrections, ICE-SOC+SSC
+  Marvin Lechner         : AUTO-CI (C++ implementation), FIC-MRCC        
+  Spencer Leger          : CASSCF response                               
+  Dagmar Lenk            : GEPOL surface, SMD, ORCA-2-JSON               
+  Dimitrios Liakos       : Extrapolation schemes; Compound Job, Property file
+  Dimitrios Manganas     : Further ROCIS development; embedding schemes. LFT, Crystal Embedding 
+  Dimitrios Pantazis     : SARC Basis sets                               
+  Anastasios Papadopoulos: AUTO-CI, single reference methods and gradients 
+  Taras Petrenko         : pre 6.0 DFT Hessian and TD-DFT gradient,  ECA, NRVS 
+  Petra Pikulova         : Analytic Raman intensities                    
+  Peter Pinski           : DLPNO-MP2, DLPNO-MP2 Gradient                 
+  Shashank Vittal Rao    : ES-AILFT, MagRelax                            
+  Christoph Reimann      : Effective Core Potentials                     
+  Marius Retegan         : Local ZFS, SOC                                
+  Christoph Riplinger    : Optimizer, TS searches, QM/MM, DLPNO-CCSD(T), (RO)-DLPNO pert. Triples 
+  Michael Roemelt        : Original ROCIS implementation, recursive CI coupling coefficients
+  Masaaki Saitow         : Open-shell DLPNO-CCSD energy and density      
+  Barbara Sandhoefer     : DKH picture change effects                    
+  Yorick L. A. Schmerwitz: GMF and freeze-and-release deltaSCF, NEB S-IDPP initial path                    
+  Kantharuban Sivalingam : CASSCF convergence/infrastructure, NEVPT2, NEVPT3, NEVPT4(SD), FIC-MRCI and CEPA variants
+  Bernardo de Souza      : ESD, SOC TD-DFT                               
+  Georgi L. Stoychev     : AutoAux, RI-MP2 NMR, DLPNO-MP2 response, X2C  
+  Van Anh Tran           : RI-MP2 g-tensors                              
+  Willem Van den Heuvel  : Paramagnetic NMR                              
+  Zikuan Wang            : NOTCH, Electric field optimization            
+  Frank Wennmohs         : Technical directorship and infrastructure     
+  Hang Xu                : AUTO-CI-Response properties                   
+                                                                         
+[FACCTs GmbH]                                                            
+  Markus Bursch, Nicolas Foglia, Miquel Garcia-Rates, Ingolf Harden, Hagen Neugebauer, Anastasios Papadopoulos, 
+  Christoph Riplinger, Bernardo de Souza, Georgi L. Stoychev                                                    
+                                                                 
+  APM, various basis sets, CI-OPT, improved COSX, DLPNO-Multilevel,           
+  DOCKER, DRACO, updates on ESD, Fragmentator, GOAT, IRC, LR-CPCM, L-BFGS, MBIS, meta-GGA TD-DFT gradient, ML-optimized integration grids, 
+  MM, NACMEs, nearIR, NEB, NEB-TS, NL-DFT gradient (VV10), 2- and 3-layer-ONIOM, interface openCOSMO-RS, QMMM,   
+  Crystal-QMMM, RESP, rigid body optimization, SF, symmetry and pop. for TD-DFT, various functionals, SOLVATOR                                   
+                                                                         
+[Other institutions]                                                     
+  V. Asgeirsson          : NEB                                           
+  Christoph Bannwarth    : sTDA-DFT, sTD-DFT, PBEh-3c, B97-3c, D3        
+  Giovanni Bistoni       : ETS/NOCV, ADLD/ADEX, COVALED                  
+  Martin Brehm           : Molecular dynamics                            
+  Ronald Cardenas        : ETS/NOCV                                      
+  Martina Colucci        : COVALED                                       
+  Sebastian Ehlert       : rSCAN, r2SCAN, r2SCAN-3c, D4, dhf basis sets  
+  Marvin Friede          : D4 for Fr, Ra, Ac-Lr                          
+  Lars Goerigk           : TD-DFT with DH, B97 family of functionals     
+  Stefan Grimme          : VdW corrections, initial TS optimization, DFT functionals, gCP, sTDA/sTD-DF 
+  Waldemar Hujo          : DFT-NL                                        
+  H. Jonsson             : NEB                                           
+  Holger Kruse           : gCP                                           
+  Marcel Mueller         : wB97X-3c, vDZP basis set                      
+  Hagen Neugebauer       : wr2SCAN, Native XTB                           
+  Gianluca Regni         : ADLD/ADEX                                     
+  Tobias Risthaus        : pre 6.0 range-separated hybrid DFT and stability analysis
+  Lukas Wittmann         : regularized MP2, r2SCAN double-hybrids, wr2SCAN        
+                                                                         
+We gratefully acknowledge several colleagues who have allowed us to      
+interface, adapt or use parts of their codes:                            
+  Ed Valeev, F. Pavosevic, A. Kumar             : LibInt (2-el integral package), F12 methods 
+  Garnet Chan, S. Sharma, J. Yang, R. Olivares  : DMRG                   
+  Ulf Ekstrom                                   : XCFun DFT Library      
+  Mihaly Kallay                                 : mrcc  (arbitrary order and MRCC methods)
+  Frank Weinhold                                : gennbo (NPA and NBO analysis)           
+  Simon Mueller                                 : openCOSMO-RS                            
+  Christopher J. Cramer and Donald G. Truhlar   : smd solvation model                     
+  S Lehtola, MJT Oliveira, MAL Marques          : LibXC Library                           
+  Liviu Ungur et al                             : ANISO software                          
+
+
+ Your calculation uses the libint2 library for the computation of 2-el integrals
+ For citations please refer to: http://libint.valeyev.net
+
+ Your ORCA version has been built with support for libXC version: 7.0.0
+ For citations please refer to: https://libxc.gitlab.io
+
+ This ORCA versions uses:
+   CBLAS   interface :  Fast vector & matrix operations
+   LAPACKE interface :  Fast linear algebra routines
+   Shared memory     :  Shared parallel matrices
+
+
+  ***********************************
+  * Starting time: Wed Jul 29 00:18:17 2026
+  * Host name:     DESKTOP-G9QFHTE
+  * Process ID:    23408
+  * Working dir.:  C:\Users\ushcodex\Downloads\thesis\simulation\02_tier1\V-TS3
+  ***********************************
+
+
+
+***************************************
+The coordinates will be read from file: V-I2_canonical.xyz
+***************************************
+
+
+Your calculation utilizes the semiempirical GFN2-xTB method
+Please cite in your paper:
+Bannwarth, C.; Ehlert S.; Grimme, S. J. Chem. Theory Comput. 2019, 15, 1652.
+   
+
+Your calculation utilizes a Nudged-Elastic-Band implementation
+by V. Ásgeirsson, C. Riplinger & H. Jónsson
+Please cite in your paper:
+Ásgeirsson, V.; Birgisson, B. O.; Bjornsson, R.; Becker, U.; Neese, F.; Riplinger, R.;
+Jónsson H. J. Chem. Theory Comput. 2021, 17, 4929-4945
+   
+
+================================================================================
+
+================================================================================
+                                        WARNINGS
+                       Please study these warnings very carefully!
+================================================================================
+
+
+WARNING: Geometry Optimization
+  ===> : Switching off AutoStart
+         For restart on a previous wavefunction, please use MOREAD
+
+WARNING: Found dipole moment calculation with XTB calculation
+  ===> : Switching off dipole moment calculation
+
+Environment variable XTBEXE for xtb has been set!
+
+================================================================================
+                                       INPUT FILE
+================================================================================
+NAME = neb_idpp_V-TS3.inp
+|  1> # Phase B5: IDPP NEB-TS for V-TS3 with seed inserted
+|  2> ! NEB-TS XTB2
+|  3> 
+|  4> %pal nprocs 1 end
+|  5> 
+|  6> %neb
+|  7>   Product "V-P_canonical.xyz"
+|  8>   NImages 8
+|  9>   Interpolation IDPP
+| 10>   TS "V-TS3_start.xyz"
+| 11> end
+| 12> 
+| 13> * xyzfile 0 1 V-I2_canonical.xyz
+| 14> 
+| 15>                          ****END OF INPUT****
+================================================================================
+
+
+--------------------------------------------------------------------------------
+                        Nudged Elastic Band Calculation
+--------------------------------------------------------------------------------
+
+Number of images (incl. end points)     ....  10
+Number of intermediate images           ....  8
+Number of optimized images              ....  8
+Optimization of end points before NEB   ....  NO
+Use existing gbw files for MO input     ....  NO
+Number of atoms                         ....  30
+Number of (active) degrees of freedom   ....  90
+Constrained atoms                       ....  None
+
+-----------------------------------------
+  REACTANT (ANGSTROEM)
+-----------------------------------------
+Al    -0.531024     0.215674     0.495172 
+O     -1.998940    -0.269909    -0.354830 
+O     -0.686124    -2.276902     0.235315 
+O      0.885827    -0.000133    -0.396997 
+O     -0.748746     1.900397     0.779180 
+Si    -2.246402    -1.970738    -0.711890 
+Si     0.404700    -3.457794     0.379844 
+Si     2.410506    -0.158387    -0.881291 
+Si     0.390295     2.490969     1.729955 
+H     -1.465367    -2.273962    -1.917489 
+H     -2.932599    -2.557538     0.457806 
+H     -3.531836    -1.669942    -1.459269 
+H      0.976845    -3.778093    -0.928644 
+H      1.429562    -2.985325     1.339091 
+H      2.330380    -1.728833     4.132217 
+H      2.765011     1.063853    -1.617509 
+H      2.455482    -1.335965    -1.763826 
+H      3.285522    -0.351315     0.305489 
+H     -1.647663     5.368281     0.304074 
+H      0.088774     3.238095     3.825791 
+H      1.369162     3.282448     1.005988 
+H     -2.645163     0.313730    -0.750795 
+V      0.816349    -0.308670     2.667748 
+O      1.213624     1.214658     2.385625 
+O     -0.682294    -0.647680     2.054085 
+O     -0.315476     3.271644     2.961684 
+O      1.763215    -1.200849     3.566681 
+H     -0.692039    -1.408845     1.368309 
+H     -1.241492     4.775217     0.607535 
+H     -0.305703    -4.632114     0.915797 
+
+-----------------------------------------
+  PRODUCT (ANGSTROEM)
+-----------------------------------------
+Al     0.977178     0.131912     0.731021 
+O     -0.803307    -0.284803    -0.658469 
+O      0.462412    -1.485715     1.266609 
+O      1.118770     0.256961    -2.749979 
+O      0.288730     2.587152    -0.175741 
+Si    -2.343997    -0.837969    -0.488275 
+Si     0.573000    -3.084253     1.320061 
+Si     2.110581    -0.885665    -2.174805 
+Si    -0.541648     2.500421     1.239194 
+H     -2.407208    -2.096284    -1.246532 
+H     -2.582930    -0.982531     0.949406 
+H     -3.200019     0.170703    -1.133765 
+H      0.795023    -3.550615    -0.058702 
+H      1.714172    -3.503624     2.157033 
+H      0.430728    -2.007355     4.755823 
+H      1.566838    -2.117960    -2.740117 
+H      2.036139    -0.852465    -0.681459 
+H      3.494257    -0.666508    -2.596895 
+H     -1.945741     2.664821     0.866261 
+H     -1.510512     0.050190     3.626706 
+H      0.042786     3.432358     2.209720 
+H     -0.474593    -0.093706    -1.545282 
+V     -0.182338    -0.268713     3.013468 
+O     -0.326511     0.998803     1.819678 
+O      2.315241     0.236576     1.772541 
+O      1.156404     1.498723    -0.428250 
+O      0.201719    -1.342459     4.103696 
+H      3.131000     0.702787     1.904055 
+H      1.095353     1.050730    -2.187520 
+H     -0.708330    -3.579712     1.862315 
+
+
+
+----------------------
+NEB settings
+----------------------
+Method type                             ....  climbing image
+Threshold for climbing image            ....  2.00e-02 Eh/Bohr 
+Free endpoints                          ....  off 
+Tangent type                            ....  improved 
+Number of intermediate images           ....  8 
+Number of images free to move           ....  8 
+Spring type for image distribution      ....  distance between adjacent images 
+Spring constant                         ....  energy weighted (0.0100 -to- 0.1000) Eh/Bohr^2 
+Spring force perp. to the path          ....  none 
+Generation of initial path              ....  image dependent pair potential 
+Initial path via TS guess (as image #)  ....  V-TS3_start.xyz (determined on-the-fly)
+Minimization of RMSD: Rotation          ....  always 
+Minimization of RMSD: Translation type  ....  centroid 
+Center fixed to origin                  ....  true 
+Remove external force                   ....  true 
+
+Reparametrization of the path           ....  off 
+Convergence thresholds:
+Convergence monitored for               ....  all images
+Scaling factor                          ....  10.00
+
+Convergence parameters for regular images:
+               Max(|Fp|)                ....  2.00e-02 Eh/Bohr
+               RMS(Fp)                  ....  1.00e-02 Eh/Bohr
+
+Convergence parameters for climbing image:
+               Max(|F|)                 ....  2.00e-03 Eh/Bohr
+               RMS(F)                   ....  1.00e-03 Eh/Bohr
+Optimization method:
+Method                                  ....  L-BFGS
+Max. iterations                         ....  500 
+Step size                               ....  1.00 
+Maximum allowed step size               ....  0.10 Bohr
+
+LBFGS parameters: 
+               Memory                   ....  20 
+               Initial step size        ....  0.0010 
+               Estimate curvature       ....  YES 
+               Reset on maxmove         ....  YES 
+               Reparam. on reset        ....  NO 
+Generation of  the initial path:
+Two fragments detected in initial structure. Preparing initial structure... Done
+Minimize RMSD between reactant and TS configurations          .... done
+       RMSD (R-TS) before minimization  ....  2.4549 Bohr
+       RMSD (R-TS) after minimization   ....  2.4143 Bohr
+Minimize RMSD between TS and product configurations           .... done
+       RMSD (TS-P) before minimization  ....  2.0562 Bohr
+       RMSD (TS-P) after minimization   ....  1.8981 Bohr
+Optimal image number for TS guess       ....  5
+Performing linear interpolation         ....  done
+Generating initial path 1 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 2 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 3 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 4 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 5 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 6 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 7 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 8 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 9 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 10 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 11 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 12 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 13 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 14 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 15 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 16 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 17 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 18 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 19 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 20 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 21 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 22 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 23 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 24 out of 129Running IDPP from reactant to TS guess structure:
+ -> Did not converge
+Generating initial path 25 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 26 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 27 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 28 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 29 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 30 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 31 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 32 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 33 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 34 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 35 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 36 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 37 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 38 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 39 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 40 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 41 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 42 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 43 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 44 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 45 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 46 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 47 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 48 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 49 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 50 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 51 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 52 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 53 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 54 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 55 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 56 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 57 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 58 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 59 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 60 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 61 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 62 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 63 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 64 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 65 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 66 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 67 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 68 out of 129Running IDPP from reactant to TS guess structure:
+ -> Did not converge
+Generating initial path 69 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 70 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 71 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 72 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 73 out of 129Running IDPP from reactant to TS guess structure:
+ -> Did not converge
+Generating initial path 74 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 75 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 76 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 77 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 78 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 79 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 80 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 81 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 82 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 83 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 84 out of 129Running IDPP from reactant to TS guess structure:
+ -> Did not converge
+Generating initial path 85 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 86 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 87 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 88 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 89 out of 129Running IDPP from reactant to TS guess structure:
+ -> Did not converge
+Generating initial path 90 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 91 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 92 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 93 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 94 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 95 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 96 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 97 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 98 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 99 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 100 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 101 out of 129Running IDPP from reactant to TS guess structure:
+ -> Did not converge
+Generating initial path 102 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 103 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 104 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 105 out of 129Running IDPP from reactant to TS guess structure:
+ -> Did not converge
+Generating initial path 106 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 107 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 108 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 109 out of 129Running IDPP from reactant to TS guess structure:
+ -> Did not converge
+Generating initial path 110 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 111 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 112 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 113 out of 129Running IDPP from reactant to TS guess structure:
+ -> Did not converge
+Generating initial path 114 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 115 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 116 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 117 out of 129Running IDPP from reactant to TS guess structure:
+ -> Did not converge
+Generating initial path 118 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 119 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 120 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 121 out of 129Running IDPP from reactant to TS guess structure:
+ -> Did not converge
+Generating initial path 122 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 123 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 124 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 125 out of 129Running IDPP from reactant to TS guess structure:
+ -> Did not converge
+Generating initial path 126 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 127 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 128 out of 129Running IDPP from reactant to TS guess structure:
+Running IDPP from TS guess structure to product:
+ -> Connectivity violation
+Generating initial path 129 out of 129Running IDPP from reactant to TS guess structure:
+ -> Did not converge
+Warning: Hyperparameter search did not find an IDPP initial path consistent
+with the connectivity changes between the initial and final
+endpoint structures. The minimum number of connectivity violations
+is 42. We will continue with the NEB with this best initial path,
+but it is a good idea to inspect it.
+Displacement along initial path:             49.4671 Bohr
+Writing initial trajectory to file      ....  neb_idpp_V-TS3_initial_path_trj.xyz
+
+
+
+----------------------
+NEB OPTIMIZATION      
+----------------------
+
+Following output files will be written:
+Energy profile during opt. written to    ....  neb_idpp_V-TS3.interp
+Optimization log-file                    ....  neb_idpp_V-TS3.NEB.log
+Current trajectory will be written to    ....  neb_idpp_V-TS3_MEP_trj.xyz
+       and to allxyz file                ....  neb_idpp_V-TS3_MEP.allxyz
+       and individual images to xyz file ....  neb_idpp_V-TS3_im{NIm}.xyz
+Trajectory history will be written to    ....  neb_idpp_V-TS3_MEP_ALL_trj.xyz
+Converged CI will be written to          ....  neb_idpp_V-TS3_NEB-CI_converged.xyz
+Converged TS will be written to          ....  neb_idpp_V-TS3_NEB-TS_converged.xyz
+
+Single point energy and gradient calculation of reactant and
+product configurations (have to be performed only once)
+Properties of fixed NEB end points:
+               Reactant:
+                         E               ....    -51.251041 Eh
+                         RMS(F)          ....      0.000078 Eh/Bohr
+                         MAX(|F|)        ....      0.000392 Eh/Bohr
+               Product:
+                         E               ....    -51.152217 Eh
+                         RMS(F)          ....      0.000058 Eh/Bohr
+                         MAX(|F|)        ....      0.000252 Eh/Bohr
+
+
+
+Starting iterations:
+
+Optim.  Iteration  HEI  E(HEI)-E(0)  max(|Fp|)   RMS(Fp)    dS
+Switch-on CI threshold               0.020000 
+   LBFGS     0      5    87.810944    265.647438   12.708907  49.4671       
+   LBFGS     1      5    48.814213    135.191556   6.568130  49.4363       
+   LBFGS     2      5    28.359392    72.611670   3.636233  49.4068       
+   LBFGS     3      5    17.243597    39.671970   2.114265  49.3823       
+   LBFGS     4      5    11.065553    21.676466   1.222350  49.3531       
+   LBFGS     5      5    7.641914    11.712338   0.742022  49.3292       
+   LBFGS     6      5    5.571862    6.348668   0.428619  49.2903       
+   LBFGS     7      5    4.398258    3.509383   0.274243  49.2563       
+   LBFGS     8      5    3.532188    2.093606   0.170188  49.1871       
+   LBFGS     9      5    3.027666    1.283248   0.119429  49.1293       
+   LBFGS    10      5    2.574213    0.929076   0.085709  49.0214       
+   LBFGS    11      5    2.283834    0.640671   0.066997  48.9353       
+   LBFGS    12      5    1.987395    0.516694   0.053734  48.7907       
+   LBFGS    13      5    1.783823    0.373663   0.044762  48.6828       
+   LBFGS    14      5    1.575070    0.318112   0.038209  48.5229       
+   LBFGS    15      5    1.420779    0.235403   0.032891  48.4015       
+   LBFGS    16      5    1.281160    0.205037   0.029321  48.2508       
+   LBFGS    17      5    1.158790    0.154039   0.025571  48.1199       
+   LBFGS    18      5    1.049881    0.133473   0.022883  47.9621       
+   LBFGS    19      5    0.947796    0.113753   0.019995  47.8242       
+   LBFGS    20      5    0.858251    0.113863   0.017943  47.6741       
+   LBFGS    21      5    0.782590    0.100855   0.015935  47.5521       
+   LBFGS    22      5    0.721161    0.082679   0.014443  47.4245       
+   LBFGS    23      5    0.672660    0.077675   0.013334  47.3345       
+   LBFGS    24      5    0.638657    0.078250   0.012521  47.2753       
+   LBFGS    25      5    0.609253    0.075806   0.011887  47.2489       
+   LBFGS    26      5    0.586107    0.068626   0.011218  47.2473       
+   LBFGS    27      5    0.565143    0.061356   0.010790  47.2706       
+   LBFGS    28      5    0.546931    0.055823   0.010271  47.3431       
+   LBFGS    29      5    0.531175    0.053746   0.009883  47.4389       
+   LBFGS    30      5    0.518436    0.052772   0.009642  47.5390       
+   LBFGS    31      5    0.505599    0.050470   0.009323  47.6620       
+   LBFGS    32      5    0.495039    0.051051   0.009161  47.7644       
+   LBFGS    33      5    0.484178    0.049046   0.008867  47.8989       
+   LBFGS    34      5    0.474958    0.050176   0.008739  48.0071       
+   LBFGS    35      5    0.465540    0.048657   0.008480  48.1415       
+   LBFGS    36      5    0.457078    0.050013   0.008350  48.2565       
+   LBFGS    37      5    0.448686    0.050522   0.008188  48.3809       
+   LBFGS    38      5    0.440642    0.052029   0.008084  48.4947       
+   LBFGS    39      5    0.432645    0.053563   0.007995  48.6071       
+   LBFGS    40      5    0.424575    0.054926   0.007927  48.7164       
+   LBFGS    41      5    0.416291    0.055887   0.007886  48.8120       
+   LBFGS    42      5    0.407686    0.056743   0.007874  48.9042       
+   LBFGS    43      2    0.400828    0.056892   0.007925  48.9658       
+   LBFGS    44      2    0.403326    0.054074   0.007980  49.0180       
+   LBFGS    45      2    0.404684    0.048001   0.007726  49.0960       
+   LBFGS    46      2    0.403785    0.044572   0.007544  49.2152       
+   LBFGS    47      2    0.400422    0.052748   0.007311  49.3474       
+   LBFGS    48      2    0.391441    0.060961   0.007157  49.5210       
+   LBFGS    49      2    0.377248    0.069522   0.007096  49.7320       
+   LBFGS    50      2    0.359205    0.089788   0.007233  49.9415       
+   LBFGS    51      2    0.341647    0.106717   0.007459  50.1075       
+   LBFGS    52      2    0.341647    0.106717   0.007459  50.1075       
+   LBFGS    53      2    0.320415    0.121004   0.007679  50.2861       
+   LBFGS    54      2    0.320415    0.121004   0.007679  50.2861       
+   LBFGS    55      5    0.314908    0.126487   0.007718  50.4667       
+   LBFGS    56      5    0.311566    0.121160   0.007466  50.6608       
+   LBFGS    57      5    0.308329    0.099316   0.006814  50.8838       
+   LBFGS    58      5    0.304320    0.055436   0.005825  51.1640       
+   LBFGS    59      5    0.299303    0.044423   0.005426  51.4929       
+   LBFGS    60      5    0.294322    0.044767   0.005350  51.8189       
+   LBFGS    61      5    0.289915    0.043426   0.005347  52.0722       
+   LBFGS    62      5    0.285708    0.047849   0.005534  52.3493       
+   LBFGS    63      5    0.281980    0.037767   0.005223  52.6375       
+   LBFGS    64      5    0.278471    0.034488   0.005162  52.9398       
+   LBFGS    65      5    0.275977    0.041161   0.005379  53.1763       
+   LBFGS    66      5    0.275977    0.041161   0.005379  53.1763       
+   LBFGS    67      5    0.273634    0.046791   0.005589  53.3973       
+   LBFGS    68      5    0.273634    0.046791   0.005589  53.3973       
+   LBFGS    69      5    0.271552    0.051780   0.005790  53.6001       
+   LBFGS    70      5    0.271552    0.051780   0.005790  53.6001       
+   LBFGS    71      5    0.269761    0.055463   0.005955  53.7859       
+   LBFGS    72      5    0.269761    0.055463   0.005955  53.7859       
+
+Possible intermediate minimum found at image(s): 4 
+  => have a look at the .interp file.
+  => it is often a good idea to divide the path calculation into smaller fragments. 
+
+   LBFGS    73      5    0.268170    0.057989   0.006093  53.9639       
+   LBFGS    74      5    0.268170    0.057989   0.006093  53.9639       
+   LBFGS    75      5    0.266728    0.059445   0.006207  54.1393       
+   LBFGS    76      5    0.266728    0.059445   0.006207  54.1393       
+   LBFGS    77      5    0.265404    0.063167   0.006299  54.3155       
+   LBFGS    78      5    0.265404    0.063167   0.006299  54.3155       
+   LBFGS    79      3    0.265878    0.066461   0.006368  54.4954       
+   LBFGS    80      3    0.268278    0.068407   0.006392  54.6841       
+   LBFGS    81      3    0.269662    0.068384   0.006396  54.8808       
+   LBFGS    82      3    0.269668    0.066066   0.006365  55.0978       
+   LBFGS    83      3    0.269750    0.061566   0.006256  55.3272       
+   LBFGS    84      3    0.268762    0.058716   0.006203  55.5916       
+   LBFGS    85      3    0.267646    0.059063   0.005981  55.8747       
+   LBFGS    86      3    0.265877    0.054787   0.005752  56.2147       
+   LBFGS    87      3    0.264021    0.047487   0.005406  56.6021       
+   LBFGS    88      3    0.261978    0.039565   0.005078  57.0986       
+   LBFGS    89      3    0.260946    0.038250   0.004998  57.3635       
+   LBFGS    90      3    0.258304    0.035569   0.004883  58.0908       
+   LBFGS    91      3    0.257119    0.033903   0.004851  58.3812       
+   LBFGS    92      3    0.257119    0.033903   0.004851  58.3812       
+   LBFGS    93      3    0.255907    0.032554   0.004825  58.6777       
+   LBFGS    94      3    0.255907    0.032554   0.004825  58.6777       
+   LBFGS    95      3    0.254679    0.031350   0.004801  58.9822       
+   LBFGS    96      3    0.254679    0.031350   0.004801  58.9822       
+   LBFGS    97      3    0.253441    0.030263   0.004778  59.2948       
+   LBFGS    98      3    0.253441    0.030263   0.004778  59.2948       
+   LBFGS    99      3    0.252198    0.029260   0.004756  59.6155       
+   LBFGS   100      3    0.252198    0.029260   0.004756  59.6155       

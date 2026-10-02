@@ -1,0 +1,12 @@
+# Phase B5: IDPP NEB-TS for W-TS
+! NEB-TS XTB2
+
+%pal nprocs 1 end
+
+%neb
+  Product "W-P_canonical.xyz"
+  NImages 8
+  Interpolation IDPP
+end
+
+* xyzfile 0 1 W-PRC_canonical.xyz

@@ -1,0 +1,10 @@
+# Band B A4 Two-Sided Test (- direction)
+! XTB2 OPT FREQ
+
+%geom
+  MaxIter 300
+end
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 V-TS2_ts_neg_disp.xyz

@@ -1,0 +1,12 @@
+# Phase B3: OptTS for V-TS3 from curated seed
+# Job ID: optts_V-TS3-T1-V02
+! XTB2 OptTS FREQ
+
+%geom
+  Calc_Hess true
+  MaxIter 300
+end
+
+%pal nprocs 1 end
+
+* xyzfile 0 1 V-TS3_start.xyz
