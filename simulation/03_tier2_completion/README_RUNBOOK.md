@@ -340,9 +340,10 @@ transfer) needs a Mulliken/Hirshfeld analysis on the new wavefunctions
 
 ```
 03_tier2_completion/
+├── UPLOAD_AND_RUN.md            one-page checklist: upload, smoke test, Stage A+B+C, pull back
 ├── README_RUNBOOK.md            this file
 ├── AUDIT_FINDINGS.md            what was verified in the repository, with the arithmetic
-├── run_scope.sh                 resumable runner (scopes 1, 2, 3, 4, all)
+├── run_scope.sh                 resumable runner (scopes 1, 2, 3, 4, all; ONLY= filters jobs)
 ├── plan/JOB_PLAN.csv            the 30 jobs, their purpose, cost bracket and gate
 ├── xyz/                         13 input geometries, atom order identical to Tier 1
 │   ├── cluster-crashed-frame.xyz   the unconverged DFT frame, kept for the record
