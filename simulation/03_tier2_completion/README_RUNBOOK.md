@@ -191,20 +191,39 @@ The eight Tier 1 geometries are **already inside** `xyz/` (`v-i1.xyz`, `v-i2.xyz
 `v-p.xyz`, `w-p.xyz`, `v-ts2.xyz`, `v-ts3.xyz`, `w-ts.xyz`, `v-ts1.xyz`), copied
 from `02_tier1/`; there is no separate upload step for them.
 
-On the machine:
+On the machine, the agreed campaign is **Stage A + B + C** (scopes 1, 2, 3 and the
+first five jobs of scope 4; the Stage D jobs `s4_06`–`s4_08` are left in place but
+not run):
 
 ```bash
 cd ~/03_tier2_completion
 export ORCA=/opt/orca/orca
-bash run_scope.sh 1                 # Stage A, first part
-bash run_scope.sh 2
-bash run_scope.sh 3
-bash run_scope.sh 4 40              # Stage B, stop after 40 h of this session
-bash run_scope.sh 3                 # re-run: regenerates and adds the new states
+
+# ---- Stage A : reference minima, counterpoise, first single-point pass --------
+bash run_scope.sh 1                        # 5 opt+freq jobs, ~10-20 h
+bash run_scope.sh 2                        # 4 counterpoise jobs, ~2-4 h
+bash run_scope.sh 3                        # PBE0 single points on the relaxed geometries
+
+# ---- Stage B : the four missing minima ---------------------------------------
+ONLY='s4_0[1-4]*.inp' bash run_scope.sh 4  # V-I1, V-I2, V-P, W-P  (~40-110 h)
+
+# ---- Stage C : the V-TS2 saddle refinement -----------------------------------
+ONLY='s4_05*.inp' bash run_scope.sh 4      # V-TS2 OptTS + freq    (~10-40 h)
+
+# ---- close out ---------------------------------------------------------------
+bash run_scope.sh 3                        # re-run: adds PBE0 single points for
+                                           # the Stage B/C geometries; old rows are skipped
 ```
 
-`bash run_scope.sh all 60` chains 1 → 2 → 4 → 3 in one session if you would
-rather not babysit it. Every job's output, energy and wall time land in
+Every command is resumable and safe to interrupt: a job whose
+`results/<job>.out` already says `ORCA TERMINATED NORMALLY` is skipped, a repeated
+job is written as `results/<job>_V02.out` rather than overwritten, and a failed job
+never stops the queue. Add a per-session wall-clock ceiling by passing it as the
+second argument (e.g. `bash run_scope.sh 1 40`) or set `BUDGET_HOURS`.
+
+`bash run_scope.sh all 60` chains 1 → 2 → 4 → 3 (all eight scope-4 jobs) in one
+session if you would rather not babysit it; `all` does not take the `ONLY` filter
+into account for ordering, so for Stage A+B+C use the five numbered commands above. Every job's output, energy and wall time land in
 `results/manifest_scope<N>.csv`; every finished job is skipped on a re-run; a
 failed job never stops the queue. To stop the queue cleanly after the job that is
 running, `touch results/STOP`. To keep it alive across disconnections,

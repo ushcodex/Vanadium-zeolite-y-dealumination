@@ -14,6 +14,12 @@
 #     ORCA=/opt/orca/orca   path to the binary (default /opt/orca/orca)
 #     BUDGET_HOURS=40       same as the second argument
 #     DRYRUN=1              print what would run, execute nothing
+#     ONLY='s4_0[1-4]*.inp' only run inputs whose file name matches this find(1)
+#                           pattern.  Examples (quoting matters):
+#                             ONLY='s4_0[1-4]*.inp' bash run_scope.sh 4   # stage B minima
+#                             ONLY='s4_05*.inp'     bash run_scope.sh 4   # stage C (V-TS2)
+#                           Jobs already finished are skipped as usual, so a
+#                           filtered re-run never repeats work.
 #
 #  BEHAVIOUR (deliberate, read once)
 #     * Resumable   - a job whose results/<job>.out already shows
@@ -38,6 +44,7 @@ PKG="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$PKG"
 
 ORCA="${ORCA:-/opt/orca/orca}"
+ONLY="${ONLY:-*.inp}"
 DRYRUN="${DRYRUN:-0}"
 SCOPE="${1:-}"
 BUDGET_HOURS="${2:-${BUDGET_HOURS:-0}}"
@@ -172,7 +179,7 @@ run_job() {  # scope, input-file
 run_dir() {  # scope, directory
   local scope="$1" d="$2" rc=0
   local files=()
-  while IFS= read -r f; do files+=("$f"); done < <(find "$d" -maxdepth 1 -name '*.inp' | sort)
+  while IFS= read -r f; do files+=("$f"); done < <(find "$d" -maxdepth 1 -name "$ONLY" | sort)
   if [ ${#files[@]} -eq 0 ]; then
     echo "  (no inputs in ${d#$PKG/})"; return 0
   fi
@@ -207,6 +214,7 @@ generate_scope3() {
 echo "=============================================================="
 echo " Tier 2/3 completion run - scope $SCOPE - $(date -u '+%Y-%m-%d %H:%M UTC')"
 echo " budget: ${BUDGET_HOURS}h of this session (0 = unlimited)"
+echo " filter: ${ONLY}"
 echo "=============================================================="
 
 rc=0
