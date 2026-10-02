@@ -2,23 +2,23 @@
 
 **A DENSITY FUNCTIONAL THEORY INVESTIGATION OF THE MECHANISM OF ZEOLITE Y DEACTIVATION BY VANADIUM IN RESIDUE FLUID CATALYTIC CRACKING UNITS OF NIGERIAN REFINERIES**
 
-<br>
+
 
 **BY**
 
-<br>
+
 
 **AHMAD USMAN SHEHU**
 
 **Matriculation Number: ____________________**
 
-<br>
+
 
 A Final Year Project Report Submitted to the Department of Chemical Engineering, Faculty of Engineering, Ahmadu Bello University, Zaria, Kaduna State, Nigeria, in Partial Fulfilment of the Requirements for the Award of the Degree of
 
 **BACHELOR OF ENGINEERING (B.ENG.) IN CHEMICAL ENGINEERING**
 
-<br>
+
 
 **OCTOBER, 2026**
 
@@ -28,7 +28,7 @@ A Final Year Project Report Submitted to the Department of Chemical Engineering,
 
 I hereby declare that this project report, titled "A Density Functional Theory Investigation of the Mechanism of Zeolite Y Deactivation by Vanadium in Residue Fluid Catalytic Cracking Units of Nigerian Refineries", is the product of my own research work carried out in the Department of Chemical Engineering, Faculty of Engineering, Ahmadu Bello University, Zaria, under the supervision of ____________________. All sources of information consulted and all computational tools and data employed in this work have been duly acknowledged in the text and in the list of references. To the best of my knowledge, this work has not been submitted, in part or in whole, for the award of any degree or diploma in this or any other institution.
 
-<br><br>
+
 
 ______________________________
 
@@ -42,7 +42,7 @@ ____________________ (Date)
 
 This is to certify that this project report, titled "A Density Functional Theory Investigation of the Mechanism of Zeolite Y Deactivation by Vanadium in Residue Fluid Catalytic Cracking Units of Nigerian Refineries", was carried out by Ahmad Usman Shehu (Matriculation Number: ____________________) in the Department of Chemical Engineering, Faculty of Engineering, Ahmadu Bello University, Zaria, and has been read and approved as meeting the requirements for the award of the degree of Bachelor of Engineering (B.Eng.) in Chemical Engineering.
 
-<br><br>
+
 
 ______________________________
 
@@ -52,7 +52,7 @@ Project Supervisor
 
 ____________________ (Date)
 
-<br><br>
+
 
 ______________________________
 
@@ -62,7 +62,7 @@ Head of Department
 
 ____________________ (Date)
 
-<br><br>
+
 
 ______________________________
 
@@ -94,8 +94,6 @@ Finally, I thank my family and friends for their patience and support throughout
 
 \newpage
 
-\newpage
-
 # ABSTRACT
 
 Vanadium poisoning represents the single most catastrophic chemical deactivation pathway threatening the structural integrity of zeolite Y catalysts in Residue Fluid Catalytic Cracking (RFCC) units. Under high-temperature oxidative regeneration (950–1050 K in the presence of steam), deposited vanadium accumulates on equilibrium catalyst particles and volatilizes into acidic vanadic acid ($H_3VO_4$), which aggressively hydrolyzes framework aluminium–oxygen bonds, triggering irreversible unit cell shrinkage, dealumination, and crystalline collapse. Despite four decades of empirical observation, the atomistic elementary reaction mechanism, site competition against steam, and electronic energetics of this attack have remained unresolved. 
@@ -107,10 +105,6 @@ Geometry optimization of the isolated reactants and active site confirms an undi
 Along the dealumination pathway, the complex undergoes barrierless proton transfer to form a strongly chemisorbed tetrahedral intermediate ($V\text{-I1}$, $\Delta E = -385.10\text{ kJ/mol}$), in which framework aluminium remains 4-coordinate while vanadium establishes an $Al-O-V$ bridging linkage ($V-O = 1.774$ Å). The rate-limiting chemical step corresponds to the first framework $Al-O$ bond cleavage via transition state $V\text{-TS2}$ (verified by a single imaginary frequency at $-78.21\text{ cm}^{-1}$), overcoming a forward activation barrier of $+160.70\text{ kJ/mol}$ to yield a partially hydrolysed intermediate ($V\text{-I2}$, $\Delta E = -342.36\text{ kJ/mol}$) with a broken $Al-O$ distance of 2.511 Å. Subsequent bond scissions lead to an extracted extra-framework aluminium vanadate complex ($V\text{-P}$, $\Delta E = -82.90\text{ kJ/mol}$), establishing that the overall dealumination is highly exothermic. In contrast, steam-induced hydrolysis exhibits a lower adsorption affinity but an intrinsically lower barrier for initial $Al-O$ scission ($+29.29\text{ kJ/mol}$ at xTB; $+118.42\text{ to }+120.87\text{ kJ/mol}$ at hybrid DFT single-point benchmark), demonstrating that vanadic acid functions primarily by outcompeting steam for the catalytic Brønsted sites and trapping framework aluminium as stable extra-framework vanadate species. These findings provide an atomistic, thermodynamic foundation for designing selective, basic alkaline-earth/rare-earth metal passivators and optimizing regenerator operating parameters in Nigerian RFCC installations.
 
 **Keywords:** Zeolite Y, Residue Fluid Catalytic Cracking, Vanadium Poisoning, Dealumination, Vanadic Acid, Density Functional Theory (DFT), ORCA, ABU Zaria.
-
-\newpage
-
-\newpage
 
 \newpage
 
@@ -186,11 +180,10 @@ Along the dealumination pathway, the complex undergoes barrierless proton transf
 | 5.5 Suggestions for Further Work | 107 |
 | **REFERENCES** | **108** |
 | **APPENDICES** | **120** |
-| Appendix A: Audited Semi-Empirical Pathway Register | 120 |
-| Appendix B: Hybrid-DFT Calculation Register | 124 |
-| Appendix C: Representative Input Files | 127 |
+| Appendix A: Audited GFN2-xTB Potential Energy Surface Register | 120 |
+| Appendix B: Hybrid DFT (B3LYP / PBE0) Calculation Register | 124 |
+| Appendix C: Representative ORCA 6.1.1 Input Scripts | 127 |
 | Appendix D: Cartesian Coordinates of the Stationary Points | 129 |
-| Appendix E: The Five-Point Saddle-Point Acceptance Chain | 137 |
 
 \newpage
 
@@ -203,7 +196,6 @@ Along the dealumination pathway, the complex undergoes barrierless proton transf
 | 2.2 | Experimental evidence base for the mechanism of vanadium attack on zeolite Y | 35 |
 | 2.3 | Passivation and trapping technologies against vanadium and their chemistry | 39 |
 | 2.4 | Documented unit inventory relevant to FCC and RFCC in Nigerian refineries | 48 |
-| 2.5 | Related studies connected with Ahmadu Bello University, Zaria | 51 |
 | 3.1 | Stationary-point set defining the two reaction pathways of the study | 57 |
 | 3.2 | Software and hardware used in the study | 59 |
 | 3.3 | Computational levels, settings, and the reason for each choice | 62 |
@@ -305,15 +297,7 @@ Along the dealumination pathway, the complex undergoes barrierless proton transf
 
 \newpage
 
-writing/thesis/01_chapter_one.md
-+140
-\newpage
-
-\newpage
-
-# CHAPTER ONE
-
-# INTRODUCTION
+# CHAPTER ONE: INTRODUCTION
 
 ## 1.1 Background to the Study
 
@@ -451,15 +435,7 @@ This chapter has introduced the industrial problem, the deactivation of zeolite 
 
 \newpage
 
-writing/thesis/02_chapter_two.md
-+392
-\newpage
-
-\newpage
-
-# CHAPTER TWO
-
-# LITERATURE REVIEW
+# CHAPTER TWO: LITERATURE REVIEW
 
 ## 2.1 Energy, Petroleum, and the Place of Refining
 
@@ -740,7 +716,7 @@ Quantum chemical modeling provides an atomic-scale microscope for solving this p
 
 In applying Density Functional Theory (DFT) to zeolite catalysis, the balance between computational tractability and chemical accuracy governs the choice of model chemistry:
 
-1. **Hybrid Exchange-Correlation:** Standard generalized gradient approximation (GGA) functionals suffer from self-interaction error and tend to underestimate activation barriers for bond-cleavage reactions. Hybrid functionals incorporating a fraction of exact Hartree–Fock exchange—specifically B3LYP with 20% exact exchange (Becke, 1993) and PBE0 with 25% exact exchange (Adamo & Barone, 1999)—provide superior thermochemical accuracy for transition metal complexes and aluminosilicate bond-rupture energetics.
+1. **Hybrid Exchange-Correlation:** Standard generalized gradient approximation (GGA) functionals suffer from self-interaction error and tend to underestimate activation barriers for bond-cleavage reactions. Hybrid functionals incorporating a fraction of exact Hartree–Fock exchange, specifically B3LYP with 20% exact exchange (Becke, 1993) and PBE0 with 25% exact exchange (Adamo & Barone, 1999), provide superior thermochemical accuracy for transition metal complexes and aluminosilicate bond-rupture energetics.
 2. **Empirical Dispersion Corrections:** Because zeolitic pore environments exert non-covalent van der Waals stabilization on adsorbed molecules, dispersion effects must be accounted for explicitly. Grimme’s empirical dispersion correction with Becke–Johnson rational damping (D3(BJ)) accurately captures long-range dispersion without double-counting short-range interactions (Grimme et al., 2011).
 3. **Basis Set Quality:** The balanced def2-TZVP triple-zeta valence polarized basis set of Weigend and Ahlrichs (2005) effectively suppresses basis set incompleteness errors, while basis set superposition error (BSSE) in intermolecular adsorption is rigorously quantified using the counterpoise method (Boys & Bernardi, 1970).
 
@@ -822,15 +798,7 @@ FCC and RFCC units convert heavy petroleum fractions into gasoline over zeolite 
 
 \newpage
 
-writing/thesis/03_chapter_three.md
-+275
-\newpage
-
-\newpage
-
-# CHAPTER THREE
-
-# MATERIALS AND METHODS
+# CHAPTER THREE: MATERIALS AND METHODS
 
 ## 3.1 Research Design
 
@@ -933,7 +901,7 @@ Molecular structures were assembled, inspected, and visualised using Avogadro 2 
 
 ### 3.4.1 Tier 1: semi-empirical mapping (GFN2-xTB)
 
-The complete reaction landscape was explored with the GFN2-xTB tight-binding Hamiltonian through the ORCA interface, using the `XTB2 OPT FREQ` keyword combination. The method reproduces geometries and reaction energies of main-group systems at a small fraction of the cost of DFT (Bannwarth et al., 2019), which allowed the full stationary-point sequence — optimisations, relaxed scans along the reacting bonds, nudged elastic band searches, and frequency checks — to be carried out on the local workstation. Tier 1 establishes the connectivity of every state, the identity of the intermediates, the candidate transition structures, and an internally consistent first set of relative energies.
+The complete reaction landscape was explored with the GFN2-xTB tight-binding Hamiltonian through the ORCA interface, using the `XTB2 OPT FREQ` keyword combination. The method reproduces geometries and reaction energies of main-group systems at a small fraction of the cost of DFT (Bannwarth et al., 2019), which allowed the full stationary-point sequence (optimisations, relaxed scans along the reacting bonds, nudged elastic band searches, and frequency checks) to be carried out on the local workstation. Tier 1 establishes the connectivity of every state, the identity of the intermediates, the candidate transition structures, and an internally consistent first set of relative energies.
 
 ### 3.4.2 Transition-state search protocol
 
@@ -969,23 +937,23 @@ Three quantities are compared across levels of theory for every state: the relat
 
 ## 3.5 Computational Procedure
 
-**Step 1 — Reference species.** The bare cluster, vanadic acid, and water were optimised at the semi-empirical tier and submitted to vibrational analysis, and the resulting geometries were checked against the expected bond-length ranges (silicon–oxygen about 0.162 nm; aluminium–oxygen 0.169 to 0.192 nm, with the longest aluminium–oxygen bond at the protonated bridge). The three reference energies define the zeros of the two pathways and were later refined at the hybrid DFT tier.
+**Step 1: Reference species.** The bare cluster, vanadic acid, and water were optimised at the semi-empirical tier and submitted to vibrational analysis, and the resulting geometries were checked against the expected bond-length ranges (silicon–oxygen about 0.162 nm; aluminium–oxygen 0.169 to 0.192 nm, with the longest aluminium–oxygen bond at the protonated bridge). The three reference energies define the zeros of the two pathways and were later refined at the hybrid DFT tier.
 
-**Step 2 — Pre-reaction complexes.** Vanadic acid was docked at the Brønsted proton through its V=O oxygen to form the hydrogen-bonded pre-reaction complex V-PRC, and a second orientation was prepared by rotating the molecule about the hydrogen-bond axis; the lower-energy converged structure was retained and the energy difference between the two orientations recorded. The water complex W-PRC was prepared in the same way. A separate non-interacting reference state, V-R, was built with the adsorbate at a distance from the framework; after optimisation it converged into the same basin as V-PRC, which establishes that the approach of vanadic acid to the Brønsted site carries no barrier and that the two files describe one physical state.
+**Step 2: Pre-reaction complexes.** Vanadic acid was docked at the Brønsted proton through its V=O oxygen to form the hydrogen-bonded pre-reaction complex V-PRC, and a second orientation was prepared by rotating the molecule about the hydrogen-bond axis; the lower-energy converged structure was retained and the energy difference between the two orientations recorded. The water complex W-PRC was prepared in the same way. A separate non-interacting reference state, V-R, was built with the adsorbate at a distance from the framework; after optimisation it converged into the same basin as V-PRC, which establishes that the approach of vanadic acid to the Brønsted site carries no barrier and that the two files describe one physical state.
 
-**Step 3 — Chemisorbed intermediate.** Starting from the chemisorption saddle guess, with the forming aluminium–oxygen bond shortened and the acidic proton of vanadic acid transferred to the framework, V-I1 was optimised to a stable minimum. In the converged structure the aluminium retains four framework oxygen neighbours, and the vanadium centre is held close to the aluminium; the adsorbate is bound at the site and no framework bond has yet been broken. The structural metrics of this state are reported in Chapter Four.
+**Step 3: Chemisorbed intermediate.** Starting from the chemisorption saddle guess, with the forming aluminium–oxygen bond shortened and the acidic proton of vanadic acid transferred to the framework, V-I1 was optimised to a stable minimum. In the converged structure the aluminium retains four framework oxygen neighbours, and the vanadium centre is held close to the aluminium; the adsorbate is bound at the site and no framework bond has yet been broken. The structural metrics of this state are reported in Chapter Four.
 
-**Step 4 — First aluminium–oxygen cleavage (V-TS2, V-I2).** The first cleavage was mapped by a relaxed scan along the breaking bond, followed by a climbing-image nudged elastic band search between the confirmed endpoints and an eigenvalue-following refinement of the highest image. The converged transition structure carries exactly one imaginary mode whose displacement vector describes the breaking aluminium–oxygen bond together with the concerted proton transfer. The product of the step, V-I2, is the hydrolysed intermediate in which the framework has opened and silanol groups have been formed; its geometry was obtained by completing the cleavage in the direction indicated by the saddle and re-optimising.
+**Step 4: First aluminium–oxygen cleavage (V-TS2, V-I2).** The first cleavage was mapped by a relaxed scan along the breaking bond, followed by a climbing-image nudged elastic band search between the confirmed endpoints and an eigenvalue-following refinement of the highest image. The converged transition structure carries exactly one imaginary mode whose displacement vector describes the breaking aluminium–oxygen bond together with the concerted proton transfer. The product of the step, V-I2, is the hydrolysed intermediate in which the framework has opened and silanol groups have been formed; its geometry was obtained by completing the cleavage in the direction indicated by the saddle and re-optimising.
 
-**Step 5 — Final cleavage and product (V-P).** The same protocol was applied to the final step, in which the aluminium is released from its remaining framework bonds. The product state V-P contains the extracted aluminium as extra-framework material together with the silanol-terminated framework, and it is the endpoint against which the overall thermodynamic feasibility of the vanadium route is judged.
+**Step 5: Final cleavage and product (V-P).** The same protocol was applied to the final step, in which the aluminium is released from its remaining framework bonds. The product state V-P contains the extracted aluminium as extra-framework material together with the silanol-terminated framework, and it is the endpoint against which the overall thermodynamic feasibility of the vanadium route is judged.
 
-**Step 6 — Steam baseline (W-PRC, W-TS, W-P).** The corresponding hydrolysis sequence was computed for water on the same cluster, giving the steam pre-reaction complex, its transition structure, and its product. This is the route against which the published periodic DFT barrier range for steam dealumination is used as the external benchmark.
+**Step 6: Steam baseline (W-PRC, W-TS, W-P).** The corresponding hydrolysis sequence was computed for water on the same cluster, giving the steam pre-reaction complex, its transition structure, and its product. This is the route against which the published periodic DFT barrier range for steam dealumination is used as the external benchmark.
 
-**Step 7 — Hybrid DFT refinement.** The isolated species and the adsorption complexes were re-optimised at B3LYP-D3(BJ)/def2-TZVP, and the connectivity of each refined structure was checked against the semi-empirical reference geometry.
+**Step 7: Hybrid DFT refinement.** The isolated species and the adsorption complexes were re-optimised at B3LYP-D3(BJ)/def2-TZVP, and the connectivity of each refined structure was checked against the semi-empirical reference geometry.
 
-**Step 8 — Single-point evaluation.** B3LYP-D3(BJ)/def2-TZVP and PBE0-D3(BJ)/def2-TZVP single points were evaluated on the refined geometries of the complete stationary-point set, including the transition-structure candidate, so that both functionals are compared at one geometry per state.
+**Step 8: Single-point evaluation.** B3LYP-D3(BJ)/def2-TZVP and PBE0-D3(BJ)/def2-TZVP single points were evaluated on the refined geometries of the complete stationary-point set, including the transition-structure candidate, so that both functionals are compared at one geometry per state.
 
-**Step 9 — Analysis.** The pathways were assembled into energy tables and profile figures directly from the register by Python scripts, the two functional levels were compared state by state, the adsorption competition at the Brønsted site was evaluated, and the steam barrier was compared with the published benchmark range.
+**Step 9: Analysis.** The pathways were assembled into energy tables and profile figures directly from the register by Python scripts, the two functional levels were compared state by state, the adsorption competition at the Brønsted site was evaluated, and the steam barrier was compared with the published benchmark range.
 
 Figure 3.3 summarises the complete workflow as it was executed, from the construction of the cluster to the analysis of the two pathways.
 
@@ -1082,7 +1050,7 @@ The results of this study are deterministic: each quantity is the solution of a 
 2. **Model truncation.** The cluster boundary approximates the lattice; the model is validated against the published periodic DFT barrier range for the reaction step that both approaches compute (Silaghi et al., 2015).
 3. **Numerical thresholds.** Geometry-optimisation and self-consistent-field convergence criteria and integration-grid settings are fixed and documented; the same settings are used for every state, so that the differences between states, which are the quantities interpreted, are free of systematic offsets.
 
-Because the quantities interpreted in Chapter Four are differences between states computed with identical model, basis set, and settings — for example the competition between vanadic acid and water for the same site, or the barrier of one step relative to the state that precedes it — the systematic error of the method largely cancels. This is what makes relative comparisons of a few tens of kJ mol−1 meaningful even when the absolute accuracy of a hybrid DFT energy is larger than that.
+Because the quantities interpreted in Chapter Four are differences between states computed with identical model, basis set, and settings (for example, the competition between vanadic acid and water for the same site, or the barrier of one step relative to the preceding state), the systematic error of the method largely cancels. This is what makes relative comparisons of a few tens of kJ mol−1 meaningful even when the absolute accuracy of a hybrid DFT energy is larger than that.
 
 ## 3.9 Data Management and Reproducibility
 
@@ -1098,19 +1066,11 @@ The environmental footprint of the work is the electricity consumed by the works
 
 ## 3.11 Chapter Summary
 
-This chapter has defined the model — a hydrogen-terminated faujasite cluster carrying one Brønsted acid site, the two attacking species vanadic acid and water, and the stationary-point set of the two pathways — and the computational protocol applied to it. The protocol comprises semi-empirical mapping of the landscape with GFN2-xTB, a three-stage saddle-search procedure with mode inspection and displacement tests, hybrid DFT refinement with B3LYP-D3(BJ)/def2-TZVP, single-point evaluation of every state at B3LYP and PBE0 in the def2-TZVP basis, a documented five-point acceptance chain for transition structures, and a calculation register that makes every reported number traceable to its input, output, and geometry. The energy bookkeeping, uncertainty treatment, data-management scheme, and ethical framework that govern the work have been stated. Chapter Four presents the results obtained with this protocol.
+This chapter has defined the model (comprising a hydrogen-terminated faujasite cluster carrying one Brønsted acid site, the two attacking species vanadic acid and water, and the stationary-point set of the two pathways) and the computational protocol applied to it. The protocol comprises semi-empirical mapping of the landscape with GFN2-xTB, a three-stage saddle-search procedure with mode inspection and displacement tests, hybrid DFT refinement with B3LYP-D3(BJ)/def2-TZVP, single-point evaluation of every state at B3LYP and PBE0 in the def2-TZVP basis, a documented five-point acceptance chain for transition structures, and a calculation register that makes every reported number traceable to its input, output, and geometry. The energy bookkeeping, uncertainty treatment, data-management scheme, and ethical framework that govern the work have been stated. Chapter Four presents the results obtained with this protocol.
 
 \newpage
 
-writing/thesis/04_chapter_four.md
-+220
-\newpage
-
-\newpage
-
-# CHAPTER FOUR
-
-# RESULTS AND DISCUSSION
+# CHAPTER FOUR: RESULTS AND DISCUSSION
 
 ## 4.1 The Faujasite Cluster Model and the Reference Species
 
@@ -1118,7 +1078,7 @@ The hydrogen-terminated faujasite cluster, of composition AlSi4O4H13, converged 
 
 Three features of the optimised cluster define the acid site that the rest of this study interrogates. The three unprotonated bridges have Al–O distances between 0.1685 and 0.1696 nm, whereas the protonated bridge has an Al–O distance of 0.1916 nm, the longest of the four by about 0.022 nm. The O–H bond of the Brønsted proton is 0.096 nm, and the Si–O distances lie between 0.1607 and 0.1666 nm. The elongation of the Al–O bond at the protonated oxygen is the geometric signature of the Brønsted acid site, and it identifies that bond as the weakest aluminium–oxygen linkage in the cluster before any adsorbate is present. This is the bond whose fate the rest of the chapter follows.
 
-Vanadic acid is optimised as a four-coordinate vanadium species with one short vanadyl bond (V=O = 0.1519 nm), three equivalent V–OH bonds of 0.163 nm, and O–H distances of 0.0959 nm. Water is optimised with O–H distances of 0.0959 nm. The three reference energies obtained at this level — the cluster, vanadic acid, and water — define the zeros of the two pathways through Equations 3.1 and 3.2, and they were used unchanged in every relative energy reported in Sections 4.2 to 4.4.
+Vanadic acid is optimised as a four-coordinate vanadium species with one short vanadyl bond (V=O = 0.1519 nm), three equivalent V–OH bonds of 0.163 nm, and O–H distances of 0.0959 nm. Water is optimised with O–H distances of 0.0959 nm. The three reference energies obtained at this level (the cluster, vanadic acid, and water) define the zeros of the two pathways through Equations 3.1 and 3.2, and they were used unchanged in every relative energy reported in Sections 4.2 to 4.4.
 
 **Table 4.1**
 
@@ -1199,16 +1159,16 @@ Third, the extraction of the aluminium is completed only at the cost of a substa
 
 | Stationary State | Elementary Reaction Identity | Absolute Energy ($E_h$) | $\Delta E$ vs. Reactants (kJ/mol) | $\Delta E$ vs. Preceding State (kJ/mol) | Forward Barrier $\Delta E^{\ddagger}_{\text{fwd}}$ (kJ/mol) | Reverse Barrier $\Delta E^{\ddagger}_{\text{rev}}$ (kJ/mol) |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Reactants (V)** | Cluster + $H_3VO_4$ (isolated) | $-51.12064005$ | $0.00$ | — | — | — |
-| **V-PRC** | Pre-reaction adsorption complex | $-51.19563631$ | $-196.90$ | $-196.90$ | Barrierless | — |
-| **V-I1** | Chemisorbed vanadate intermediate | $-51.26731716$ | $-385.10$ | $-188.20$ | Spontaneous | — |
+| **Reactants (V)** | Cluster + $H_3VO_4$ (isolated) | $-51.12064005$ | $0.00$ | - | - | - |
+| **V-PRC** | Pre-reaction adsorption complex | $-51.19563631$ | $-196.90$ | $-196.90$ | Barrierless | - |
+| **V-I1** | Chemisorbed vanadate intermediate | $-51.26731716$ | $-385.10$ | $-188.20$ | Spontaneous | - |
 | **V-TS2** | 1st framework $Al-O$ cleavage TS | $-51.20610884$ | $-224.40$ | $+160.70$ | **$+160.70$** | **$+117.97$** |
-| **V-I2** | Partially hydrolysed intermediate | $-51.25104052$ | $-342.36$ | $+42.74$ | — | — |
-| **V-P** | Extracted aluminium-vanadate product | $-51.15221675$ | $-82.90$ | $+259.46$ | Bracketed ($+485$) | — |
-| **Reactants (W)** | Cluster + $H_2O$ (isolated) | $-36.41605681$ | $0.00$ | — | — | — |
-| **W-PRC** | Steam pre-reaction complex | $-36.44256091$ | $-69.59$ | $-69.59$ | Barrierless | — |
+| **V-I2** | Partially hydrolysed intermediate | $-51.25104052$ | $-342.36$ | $+42.74$ | - | - |
+| **V-P** | Extracted aluminium-vanadate product | $-51.15221675$ | $-82.90$ | $+259.46$ | Bracketed ($+485$) | - |
+| **Reactants (W)** | Cluster + $H_2O$ (isolated) | $-36.41605681$ | $0.00$ | - | - | - |
+| **W-PRC** | Steam pre-reaction complex | $-36.44256091$ | $-69.59$ | $-69.59$ | Barrierless | - |
 | **W-TS** | Steam hydrolysis transition state | $-36.43140308$ | $-40.29$ | $+29.29$ | **$+29.29$** | **$+25.56$** |
-| **W-P** | Hydrolysed framework product | $-36.44113826$ | $-65.85$ | $-25.56$ | — | — |
+| **W-P** | Hydrolysed framework product | $-36.44113826$ | $-65.85$ | $-25.56$ | - | - |
 
 *Source:* Author, computed in this study.
 
@@ -1235,7 +1195,7 @@ The searches for the chemisorption step (V-TS1) and for the final aluminium–ox
 
 | Step | Job identifier | Imaginary modes (cm−1) | Barrier from preceding state (kJ mol−1) | Outcome of the two-sided displacement test | Status of the barrier |
 |---|---|---|---|---|---|
-| Chemisorption (V-TS1) | Refinement series | 0 to several residual modes | — | Not applicable | Not established at this level |
+| Chemisorption (V-TS1) | Refinement series | 0 to several residual modes | - | Not applicable | Not established at this level |
 | First Al–O cleavage (V-TS2) | V-TS2-T1-V05 | 1 (−78.21) | +160.70 from V-I1 | Product side → hydrolysed intermediate (+15.64 kJ mol−1 vs V-I2); reactant side → a structure 107.08 kJ mol−1 above V-I1 | Located; reactant-side connection not established; barrier reported as an upper estimate |
 | Final Al–O cleavage (V-TS3) | V-TS3-T1-V05 | 1 (−40.33) | +488.54 from V-I2 | Not consistent with a saddle between the endpoints | Not established at this level |
 | Steam hydrolysis (W-TS) | W-TS-T1-V04 | 1 (−226.10) | +29.29 from W-PRC | Both directions return to the W-PRC well | Located; product-side connection not established |
@@ -1258,15 +1218,15 @@ Three conclusions follow. First, the cluster model reproduces the energetics of 
 
 | Stationary State / Metric | Theoretical Level | Relative Energy $\Delta E$ (kJ/mol) | Forward Barrier $\Delta E^{\ddagger}$ (kJ/mol) | External Published Periodic DFT Benchmark |
 | :--- | :--- | :---: | :---: | :---: |
-| **$W\text{-PRC}$ (Adsorption Complex)** | GFN2-xTB | $-69.59$ | — | $-60\text{ to }-85\text{ kJ/mol}$ (Silaghi et al., 2015) |
-| | B3LYP-D3(BJ)/def2-TZVP | $-78.26$ | — | $-65\text{ to }-80\text{ kJ/mol}$ (Van Speybroeck et al., 2015) |
+| **$W\text{-PRC}$ (Adsorption Complex)** | GFN2-xTB | $-69.59$ | - | $-60\text{ to }-85\text{ kJ/mol}$ (Silaghi et al., 2015) |
+| | B3LYP-D3(BJ)/def2-TZVP | $-78.26$ | - | $-65\text{ to }-80\text{ kJ/mol}$ (Van Speybroeck et al., 2015) |
 | **$W\text{-TS}$ (OptTS Converged)** | GFN2-xTB ($
-u_1 = -226.1\text{ cm}^{-1}$) | $-40.29$ | **$+29.29$** | — |
-| **$W\text{-TS}$ (CI-NEB Crest)** | GFN2-xTB (Climbing image) | $-4.45$ | **$+65.14$** | — |
+u_1 = -226.1\text{ cm}^{-1}$) | $-40.29$ | **$+29.29$** | - |
+| **$W\text{-TS}$ (CI-NEB Crest)** | GFN2-xTB (Climbing image) | $-4.45$ | **$+65.14$** | - |
 | **$W\text{-TS}$ (Single-Point on CI)** | B3LYP-D3(BJ)/def2-TZVP | $+49.80$ | **$+120.87$** | **$76\text{ to }125\text{ kJ/mol}$** (Silaghi et al., 2015) |
 | | PBE0-D3(BJ)/def2-TZVP | $+46.23$ | **$+118.42$** | **$76\text{ to }125\text{ kJ/mol}$** (Silaghi et al., 2015) |
-| **$W\text{-P}$ (Hydrolysed Product)** | GFN2-xTB | $-65.85$ | — | Nearly thermoneutral |
-| | B3LYP-D3(BJ)/def2-TZVP | $+11.06$ | — | $+5\text{ to }+25\text{ kJ/mol}$ (Silaghi et al., 2015) |
+| **$W\text{-P}$ (Hydrolysed Product)** | GFN2-xTB | $-65.85$ | - | Nearly thermoneutral |
+| | B3LYP-D3(BJ)/def2-TZVP | $+11.06$ | - | $+5\text{ to }+25\text{ kJ/mol}$ (Silaghi et al., 2015) |
 
 *Source:* Author, benchmarked against periodic DFT literature.
 
@@ -1286,7 +1246,7 @@ The practical implication for the interpretation of this study is that the semi-
 | State | B3LYP-D3(BJ)/def2-TZVP (kJ mol−1) | PBE0-D3(BJ)/def2-TZVP (kJ mol−1) | Difference (kJ mol−1) |
 |---|---|---|---|
 | V-PRC | −51.25 | −50.38 | 0.87 |
-| V-I1 | not evaluated (job did not complete) | −9.21 | — |
+| V-I1 | not evaluated (job did not complete) | −9.21 | - |
 | V-TS2 (saddle geometry) | +330.45 | +347.73 | 17.28 |
 | V-I2 | +116.55 | +97.68 | 18.87 |
 | V-P | +543.89 | +541.55 | 2.34 |
@@ -1315,7 +1275,7 @@ Read as a sequence, the structural data show that the extraction proceeds throug
 
 | State | Al–O2 (nm) | Al–O3 (nm) | Al–O4 (nm) | Al–O5 (nm) | Shortest Al⋯O(vanadate) (nm) | Al⋯V (nm) |
 |---|---|---|---|---|---|---|
-| Cluster (reference) | 0.1916 | 0.1687 | 0.1685 | 0.1696 | — | — |
+| Cluster (reference) | 0.1916 | 0.1687 | 0.1685 | 0.1696 | - | - |
 | V-PRC | 0.2052 | 0.1724 | 0.1705 | 0.1743 | 0.1925 | 0.2879 |
 | V-I1 | 0.1687 | 0.1804 | 0.1705 | 0.1729 | 0.1774 (bridge) | 0.2701 |
 | V-I2 | 0.1764 | 0.2511 | 0.1688 | 0.1722 | 0.1788 | 0.2610 |
@@ -1370,12 +1330,6 @@ The mechanistic findings translate into actionable operational and design guidel
 ## 4.10 Chapter Summary
 
 This chapter has reported the computed energetics and structures of vanadic-acid and steam attack on the faujasite Brønsted acid site. Vanadic acid binds at the site by 196.90 kJ mol−1 at the semi-empirical tier and by 106.69 kJ mol−1 at the relaxed hybrid DFT tier, against 69.59 and 92.19 kJ mol−1 for water, so that the competition margin narrows from 127.31 to 14.50 kJ mol−1 between levels and the two molecules are shown to compete for the site rather than to be separated by a large thermodynamic preference. The vanadium pathway descends through a chemisorbed intermediate 188.20 kJ mol−1 below the pre-reaction complex, passes the first aluminium–oxygen cleavage saddle at +160.70 kJ mol−1 relative to that intermediate, reaches a hydrolysed intermediate at −342.37 kJ mol−1, and ends with the extracted aluminium in an extra-framework aluminium–vanadate complex at −82.90 kJ mol−1. The structural sequence identifies attachment to the framework aluminium, cleavage of the engaged aluminium–oxygen bond, and release of the aluminium as the three stages of site destruction. The steam barrier computed at the hybrid DFT level, 118 to 121 kJ mol−1, lies within the published periodic DFT range for zeolite dealumination, which validates the cluster model, while the semi-empirical tier is shown to underestimate barriers and to exaggerate the polarity-driven adsorption of the acidic poison. Chapter Five states the conclusions drawn from these results and the recommendations that follow from them.
-
-\newpage
-
-writing/thesis/05_chapter_five.md
-+63
-\newpage
 
 \newpage
 
@@ -1453,7 +1407,7 @@ This research makes several distinct and novel contributions to the disciplines 
 
 ## 5.4 Recommendations for Industrial Refining Practice
 
-Based on the atomistic energetics and thermodynamic driving forces established in this study, the following operational and catalyst management guidelines are recommended for commercial RFCC and FCC operations in Nigeria—specifically for the 218,000 bpd Dangote RFCC unit and the revitalized NNPC Ltd refineries at Kaduna (KRPC), Warri (WRPC), and Port Harcourt (PHRC):
+Based on the atomistic energetics and thermodynamic driving forces established in this study, the following operational and catalyst management guidelines are recommended for commercial RFCC and FCC operations in Nigeria, specifically for the 218,000 bpd Dangote RFCC unit and the revitalized NNPC Ltd refineries at Kaduna (KRPC), Warri (WRPC), and Port Harcourt (PHRC):
 
 1. **Enforce Strict Regenerator Bed Temperature Limits:**
    Refinery operations should maintain dense-bed regenerator temperatures strictly below **$995\text{ K (}722^{\circ}\text{C)}$** when processing metal-contaminated residual feeds. Because $H_3VO_4$ volatilization scales exponentially with temperature, exceeding 1000 K causes a dramatic surge in gas-phase vanadic acid partial pressure, rapidly driving the catalyst across the $+160.70\text{ kJ/mol}$ activation barrier and causing catastrophic Ecat surface area collapse.
@@ -1493,7 +1447,7 @@ Ahmad, H., Tsafe, A. I., Zuru, A. A., Shehu, R. A., Atiku, F. A., & Itodo, A. U.
 
 Bai, P., Etim, U. J., Yan, Z., Mintova, S., Zhang, Z., Zhong, Z., & Gao, X. (2019). Fluid catalytic cracking technology: Current status and recent discoveries on catalyst contamination. *Catalysis Reviews*, *61*(3), 333–405. https://doi.org/10.1080/01614940.2018.1549011
 
-Bannwarth, C., Ehlert, S., & Grimme, S. (2019). GFN2-xTB—An accurate and broadly parametrized self-consistent tight-binding quantum chemical method with multipole electrostatics and density-dependent dispersion contributions. *Journal of Chemical Theory and Computation*, *15*(3), 1652–1671. https://doi.org/10.1021/acs.jctc.8b01176
+Bannwarth, C., Ehlert, S., & Grimme, S. (2019). GFN2-xTB: An accurate and broadly parametrized self-consistent tight-binding quantum chemical method with multipole electrostatics and density-dependent dispersion contributions. *Journal of Chemical Theory and Computation*, *15*(3), 1652–1671. https://doi.org/10.1021/acs.jctc.8b01176
 
 Becke, A. D. (1993). Density-functional thermochemistry. III. The role of exact exchange. *The Journal of Chemical Physics*, *98*(7), 5648–5652. https://doi.org/10.1063/1.464913
 
@@ -1604,8 +1558,8 @@ Yang, S.-J., Chen, Y.-W., & Li, C. (1994). Vanadium–nickel interaction in REY 
 
 | Job Identifier | Stationary State Role | Stoichiometric Composition | Electronic Energy ($) | $\Delta E$ vs. Ref (kJ/mol) | Verification Status |
 | :--- | :--- | :--- | :---: | :---: | :---: |
-| cluster-T1-V02 | Pristine active-site cluster | {13}$ (22 atoms) | $-31.34551236$ | — | PASS ({	ext{imag}} = 0$) |
-| h3vo4-T1-V01 | Gaseous orthovanadic acid | $ (8 atoms) | $-19.77512769$ | — | PASS ({	ext{imag}} = 0$) |
+| cluster-T1-V02 | Pristine active-site cluster | {13}$ (22 atoms) | $-31.34551236$ | - | PASS ({	ext{imag}} = 0$) |
+| h3vo4-T1-V01 | Gaseous orthovanadic acid | $ (8 atoms) | $-19.77512769$ | - | PASS ({	ext{imag}} = 0$) |
 | V-PRC-T1-V01 | Pre-reaction adsorption complex | {16}V$ (30 atoms) | $-51.19563631$ | $-196.90$ | PASS ({	ext{imag}} = 0$) |
 | V-I1-T1-V01 | Chemisorbed vanadate intermediate | {16}V$ (30 atoms) | $-51.26731716$ | $-385.10$ | PASS ({	ext{imag}} = 0$) |
 | V-TS2-T1-V05 | 1st framework -O$ cleavage TS | {16}V$ (30 atoms) | $-51.20610884$ | $-224.40$ | PASS ({	ext{imag}} = 1, 
@@ -1622,8 +1576,8 @@ u = -78.21	ext{ cm}^{-1}$) |
 
 | Job Identifier | Stationary State Role | Stoichiometric Composition | Electronic Energy ($) | $\Delta E$ vs. Ref (kJ/mol) | Verification Status |
 | :--- | :--- | :--- | :---: | :---: | :---: |
-| cluster-T1-V02 | Pristine active-site cluster | {13}$ (22 atoms) | $-31.34551236$ | — | PASS ({	ext{imag}} = 0$) |
-| h2o-T1-V01 | Gaseous steam molecule | $ (3 atoms) | $-5.07054445$ | — | PASS ({	ext{imag}} = 0$) |
+| cluster-T1-V02 | Pristine active-site cluster | {13}$ (22 atoms) | $-31.34551236$ | - | PASS ({	ext{imag}} = 0$) |
+| h2o-T1-V01 | Gaseous steam molecule | $ (3 atoms) | $-5.07054445$ | - | PASS ({	ext{imag}} = 0$) |
 | W-PRC-T1-V02 | Pre-reaction adsorption complex | {15}$ (25 atoms) | $-36.44256091$ | $-69.59$ | PASS ({	ext{imag}} = 0$) |
 | W-TS-T1-V04 | 1st framework -O$ cleavage TS | {15}$ (25 atoms) | $-36.43140308$ | $-40.29$ | PASS ({	ext{imag}} = 1, 
 u = -226.10	ext{ cm}^{-1}$) |
@@ -1640,21 +1594,21 @@ u = -226.10	ext{ cm}^{-1}$) |
 
 | Job Slot / Manifest ID | System Description | Method / Basis Set | Integration Quadrature | Final Energy ($) | Status |
 | :--- | :--- | :--- | :--- | :---: | :---: |
-| s1_01_h2o_optfreq | Gas-phase $ (Opt + Freq) | B3LYP-D3(BJ)/def2-TZVP | DefGrid3 / RIJCOSX | $-76.42662980$ | PASS |
-| s1_02_h3vo4_optfreq| Gas-phase $ (Opt + Freq) | B3LYP-D3(BJ)/def2-TZVP | DefGrid3 / RIJCOSX | $-1246.82501396$ | PASS |
+| s1_01_h2o_optfreq | Gas-phase H2O (Opt + Freq) | B3LYP-D3(BJ)/def2-TZVP | DefGrid3 / RIJCOSX | $-76.42662980$ | PASS |
+| s1_02_h3vo4_optfreq| Gas-phase H3VO4 (Opt + Freq) | B3LYP-D3(BJ)/def2-TZVP | DefGrid3 / RIJCOSX | $-1246.82501396$ | PASS |
 | s1_03_cluster_opt | Faujasite cluster (Opt + Freq) | B3LYP-D3(BJ)/def2-TZVP | DefGrid3 / RIJCOSX | $-1709.39409330$ | PASS |
-| opt04_vprc | Adsorption complex 	ext{-PRC}$ | B3LYP-D3(BJ)/def2-TZVP | DefGrid3 / RIJCOSX | $-2956.25444518$ | PASS |
-| opt05_wprc | Adsorption complex 	ext{-PRC}$ | B3LYP-D3(BJ)/def2-TZVP | DefGrid3 / RIJCOSX | $-1785.85053181$ | PASS |
-| slot01_h2o_pbe0 | $ single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-76.37764167$ | PASS |
-| slot02_h3vo4_pbe0 | $ single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-1246.43586180$ | PASS |
+| opt04_vprc | Adsorption complex V-PRC | B3LYP-D3(BJ)/def2-TZVP | DefGrid3 / RIJCOSX | $-2956.25444518$ | PASS |
+| opt05_wprc | Adsorption complex W-PRC | B3LYP-D3(BJ)/def2-TZVP | DefGrid3 / RIJCOSX | $-1785.85053181$ | PASS |
+| slot01_h2o_pbe0 | H2O single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-76.37764167$ | PASS |
+| slot02_h3vo4_pbe0 | H3VO4 single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-1246.43586180$ | PASS |
 | slot03_cluster_pbe0| Cluster single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-1708.72633420$ | PASS |
-| slot04_vprc_pbe0 | 	ext{-PRC}$ single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-2955.18138592$ | PASS |
-| slot05_wprc_pbe0 | 	ext{-PRC}$ single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-1785.13147192$ | PASS |
-| slot07_vts2_pbe0 | 	ext{-TS2}$ single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-2955.02975089$ | PASS |
-| slot08_vi2_pbe0 | 	ext{-I2}$ single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-2955.12499276$ | PASS |
-| slot09_vp_pbe0 | 	ext{-P}$ single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-2954.95593107$ | PASS |
-| slot11_wtsci_pbe0 | 	ext{-TS}$ (CI) single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-1785.08636836$ | PASS |
-| slot12_wp_pbe0 | 	ext{-P}$ single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-1785.10068278$ | PASS |
+| slot04_vprc_pbe0 | V-PRC single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-2955.18138592$ | PASS |
+| slot05_wprc_pbe0 | W-PRC single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-1785.13147192$ | PASS |
+| slot07_vts2_pbe0 | V-TS2 single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-2955.02975089$ | PASS |
+| slot08_vi2_pbe0 | V-I2 single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-2955.12499276$ | PASS |
+| slot09_vp_pbe0 | V-P single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-2954.95593107$ | PASS |
+| slot11_wtsci_pbe0 | W-TS (CI) single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-1785.08636836$ | PASS |
+| slot12_wp_pbe0 | W-P single point | PBE0-D3(BJ)/def2-TZVP | Grid5 / FinalGrid6 | $-1785.10068278$ | PASS |
 
 ---
 
@@ -1668,7 +1622,7 @@ u = -226.10	ext{ cm}^{-1}$) |
 * xyzfile 0 1 cluster.xyz
 `
 
-### C.2 Vanadic Acid Pre-Reaction Complex (	ext{-PRC}$) Optimization
+### C.2 Vanadic Acid Pre-Reaction Complex (V-PRC) Optimization
 `orca
 ! B3LYP D3BJ def2-TZVP def2/J RIJCOSX TightSCF TightOpt
 %pal nprocs 4 end
@@ -1679,7 +1633,7 @@ end
 * xyzfile 0 1 v-prc.xyz
 `
 
-### C.3 Transition State Search and Hessian Verification (	ext{-TS2}$)
+### C.3 Transition State Search and Hessian Verification (V-TS2)
 `orca
 ! XTB2 OptTS NumFreq
 %pal nprocs 4 end
@@ -1708,7 +1662,7 @@ end
 
 ## APPENDIX D: CARTESIAN COORDINATES OF KEY STATIONARY POINTS
 
-All coordinates are reported in Cartesian Angstroms ($	ext{\AA}$) with elements and standard Cartesian coordinates (, y, z$).
+All coordinates are reported in Cartesian Angstroms ($	ext{\AA}$) with elements and standard Cartesian coordinates (x, y, z).
 
 ### D.1 Pristine Faujasite Active-Site Cluster (AlSi4O4H13, 22 atoms)
 `xyz

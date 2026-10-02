@@ -18,7 +18,7 @@ Baerlocher, C., & McCusker, L. B. (n.d.). *Database of zeolite structures*. Inte
 
 Bai, P., Etim, U. J., Yan, Z., Mintova, S., Zhang, Z., Zhong, Z., & Gao, X. (2019). Fluid catalytic cracking technology: Current status and recent discoveries on catalyst contamination. *Catalysis Reviews*, *61*(3), 333–405. https://doi.org/10.1080/01614940.2018.1549011
 
-Bannwarth, C., Ehlert, S., & Grimme, S. (2019). GFN2-xTB—An accurate and broadly parametrized self-consistent tight-binding quantum chemical method with multipole electrostatics and density-dependent dispersion contributions. *Journal of Chemical Theory and Computation*, *15*(3), 1652–1671. https://doi.org/10.1021/acs.jctc.8b01176
+Bannwarth, C., Ehlert, S., & Grimme, S. (2019). GFN2-xTB: An accurate and broadly parametrized self-consistent tight-binding quantum chemical method with multipole electrostatics and density-dependent dispersion contributions. *Journal of Chemical Theory and Computation*, *15*(3), 1652–1671. https://doi.org/10.1021/acs.jctc.8b01176
 
 Bawa, S. G., Ahmed, A. S., & Okonkwo, P. C. (2017). Alumina phase transformation from thermal decomposition of ammonium alum synthesized from Kankara kaolin. *Nigerian Journal of Technology*, *36*(3), 822–828. https://doi.org/10.4314/njt.v36i3.23
 

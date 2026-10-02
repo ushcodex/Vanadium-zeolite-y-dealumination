@@ -72,7 +72,7 @@ This research makes several distinct and novel contributions to the disciplines 
 
 ## 5.4 Recommendations for Industrial Refining Practice
 
-Based on the atomistic energetics and thermodynamic driving forces established in this study, the following operational and catalyst management guidelines are recommended for commercial RFCC and FCC operations in Nigeria—specifically for the 218,000 bpd Dangote RFCC unit and the revitalized NNPC Ltd refineries at Kaduna (KRPC), Warri (WRPC), and Port Harcourt (PHRC):
+Based on the atomistic energetics and thermodynamic driving forces established in this study, the following operational and catalyst management guidelines are recommended for commercial RFCC and FCC operations in Nigeria, specifically for the 218,000 bpd Dangote RFCC unit and the revitalized NNPC Ltd refineries at Kaduna (KRPC), Warri (WRPC), and Port Harcourt (PHRC):
 
 1. **Enforce Strict Regenerator Bed Temperature Limits:**
    Refinery operations should maintain dense-bed regenerator temperatures strictly below **$995\text{ K (}722^{\circ}\text{C)}$** when processing metal-contaminated residual feeds. Because $H_3VO_4$ volatilization scales exponentially with temperature, exceeding 1000 K causes a dramatic surge in gas-phase vanadic acid partial pressure, rapidly driving the catalyst across the $+160.70\text{ kJ/mol}$ activation barrier and causing catastrophic Ecat surface area collapse.

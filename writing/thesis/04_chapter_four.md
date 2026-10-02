@@ -112,12 +112,12 @@ Table 4.3 details the absolute electronic energies ($E_h$), relative reaction en
 
 | Stationary State | Elementary Reaction Identity | Absolute Energy ($E_h$) | $\Delta E$ vs. Reactants (kJ/mol) | $\Delta E$ vs. Preceding State (kJ/mol) | Forward Barrier $\Delta E^{\ddagger}_{\text{fwd}}$ (kJ/mol) | Reverse Barrier $\Delta E^{\ddagger}_{\text{rev}}$ (kJ/mol) |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Reactants** | Cluster + $H_3VO_4$ (isolated) | $-51.12064005$ | $0.00$ | — | — | — |
-| **V-PRC** | Pre-reaction adsorption complex | $-51.19563631$ | $-196.90$ | $-196.90$ | Barrierless | — |
-| **V-I1** | Chemisorbed vanadate intermediate | $-51.26731716$ | $-385.10$ | $-188.20$ | Spontaneous | — |
+| **Reactants** | Cluster + $H_3VO_4$ (isolated) | $-51.12064005$ | $0.00$ | - | - | - |
+| **V-PRC** | Pre-reaction adsorption complex | $-51.19563631$ | $-196.90$ | $-196.90$ | Barrierless | - |
+| **V-I1** | Chemisorbed vanadate intermediate | $-51.26731716$ | $-385.10$ | $-188.20$ | Spontaneous | - |
 | **V-TS2** | 1st framework $Al-O$ cleavage TS | $-51.20610884$ | $-224.40$ | $+160.70$ | **$+160.70$** | **$+117.97$** |
-| **V-I2** | Partially hydrolysed intermediate | $-51.25104052$ | $-342.36$ | $+42.74$ | — | — |
-| **V-P** | Extracted aluminium-vanadate product | $-51.15221675$ | $-82.90$ | $+259.46$ | Bracketed ($+485$) | — |
+| **V-I2** | Partially hydrolysed intermediate | $-51.25104052$ | $-342.36$ | $+42.74$ | - | - |
+| **V-P** | Extracted aluminium-vanadate product | $-51.15221675$ | $-82.90$ | $+259.46$ | Bracketed ($+485$) | - |
 
 *Source:* Computed in this study at the GFN2-xTB level. Reference zero: $E_{\text{cluster}} + E_{\text{gas}}(H_3VO_4) = -51.12064005\ E_h$.
 
@@ -142,9 +142,9 @@ Table 4.4 details the vibrational and structural verification metrics for all tr
 | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
 | **V-TS2** | 1st $Al-O$ bond rupture ($V\text{-I1} \rightarrow V\text{-I2}$) | **1** | **$-78.21\text{ cm}^{-1}$** | $+160.70\text{ kJ/mol}$ | $+117.97\text{ kJ/mol}$ | **VERIFIED SADDLE POINT** |
 | **W-TS** | 1st steam $Al-O$ rupture ($W\text{-PRC} \rightarrow W\text{-P}$) | **1** | **$-226.10\text{ cm}^{-1}$** | $+29.29\text{ kJ/mol}$ | $+25.56\text{ kJ/mol}$ | **VERIFIED SADDLE POINT** |
-| **W-TS (CI-NEB)** | Highest climbing image (steam) | — | — | $+65.14\text{ kJ/mol}$ | — | **Upper bound estimate** |
-| **V-TS1** | Chemisorption barrier ($V\text{-PRC} \rightarrow V\text{-I1}$) | 0 / Multiple | — | $< 5.0\text{ kJ/mol}$ | — | **Barrierless / Spontaneous** |
-| **V-TS3** | 2nd/3rd $Al-O$ extraction to $V\text{-P}$ | Multiple ($N_{\text{imag}} \ge 2$) | $-184, -72\text{ cm}^{-1}$ | $+483.8\text{ to }+488.5$ | — | **Bracketed estimate** |
+| **W-TS (CI-NEB)** | Highest climbing image (steam) | - | - | $+65.14\text{ kJ/mol}$ | - | **Upper bound estimate** |
+| **V-TS1** | Chemisorption barrier ($V\text{-PRC} \rightarrow V\text{-I1}$) | 0 / Multiple | - | $< 5.0\text{ kJ/mol}$ | - | **Barrierless / Spontaneous** |
+| **V-TS3** | 2nd/3rd $Al-O$ extraction to $V\text{-P}$ | Multiple ($N_{\text{imag}} \ge 2$) | $-184, -72\text{ cm}^{-1}$ | $+483.8\text{ to }+488.5$ | - | **Bracketed estimate** |
 
 *Source:* Computed in this study. Verified saddles satisfy the single imaginary frequency criterion ($A3$).
 
@@ -205,14 +205,14 @@ Table 4.5 details the steam dealumination energetics and compares the computed a
 
 | Stationary State / Metric | Theoretical Level | Relative Energy $\Delta E$ (kJ/mol) | Forward Barrier $\Delta E^{\ddagger}$ (kJ/mol) | External Published Periodic DFT Benchmark |
 | :--- | :--- | :---: | :---: | :---: |
-| **$W\text{-PRC}$ (Adsorption Complex)** | GFN2-xTB | $-69.59$ | — | $-60\text{ to }-85\text{ kJ/mol}$ (Silaghi et al., 2015) |
-| | B3LYP-D3(BJ)/def2-TZVP | $-78.26$ | — | $-65\text{ to }-80\text{ kJ/mol}$ (Van Speybroeck et al., 2015) |
-| **$W\text{-TS}$ (OptTS Converged)** | GFN2-xTB ($\nu = -226.1\text{ cm}^{-1}$) | $-40.29$ | **$+29.29$** | — |
-| **$W\text{-TS}$ (CI-NEB Crest)** | GFN2-xTB (Climbing image) | $-4.45$ | **$+65.14$** | — |
+| **$W\text{-PRC}$ (Adsorption Complex)** | GFN2-xTB | $-69.59$ | - | $-60\text{ to }-85\text{ kJ/mol}$ (Silaghi et al., 2015) |
+| | B3LYP-D3(BJ)/def2-TZVP | $-78.26$ | - | $-65\text{ to }-80\text{ kJ/mol}$ (Van Speybroeck et al., 2015) |
+| **$W\text{-TS}$ (OptTS Converged)** | GFN2-xTB ($\nu = -226.1\text{ cm}^{-1}$) | $-40.29$ | **$+29.29$** | - |
+| **$W\text{-TS}$ (CI-NEB Crest)** | GFN2-xTB (Climbing image) | $-4.45$ | **$+65.14$** | - |
 | **$W\text{-TS}$ (Single-Point on CI)** | B3LYP-D3(BJ)/def2-TZVP | $+49.80$ | **$+120.87$** | **$76\text{ to }125\text{ kJ/mol}$** (Silaghi et al., 2015) |
 | | PBE0-D3(BJ)/def2-TZVP | $+46.23$ | **$+118.42$** | **$76\text{ to }125\text{ kJ/mol}$** (Silaghi et al., 2015) |
-| **$W\text{-P}$ (Hydrolysed Product)** | GFN2-xTB | $-65.85$ | — | Nearly thermoneutral |
-| | B3LYP-D3(BJ)/def2-TZVP | $+11.06$ | — | $+5\text{ to }+25\text{ kJ/mol}$ (Silaghi et al., 2016) |
+| **$W\text{-P}$ (Hydrolysed Product)** | GFN2-xTB | $-65.85$ | - | Nearly thermoneutral |
+| | B3LYP-D3(BJ)/def2-TZVP | $+11.06$ | - | $+5\text{ to }+25\text{ kJ/mol}$ (Silaghi et al., 2016) |
 
 *Sources:* Computed in this study; benchmark literature values cited in right column.
 
@@ -245,7 +245,7 @@ Table 4.6 compiles the single-point relative energies and tracks functional sens
 | :--- | :--- | :---: | :---: | :---: |
 | **Reference Zero (V)** | Cluster + $H_3VO_4$ (isolated) | $0.00$ | $0.00$ | $0.00$ |
 | **V-PRC** | Pre-reaction adsorption complex | $-51.24$ | $-50.38$ | **$-0.86$** |
-| **V-I1** | Chemisorbed vanadate intermediate | Unconverged SCF | $-9.21$ | — |
+| **V-I1** | Chemisorbed vanadate intermediate | Unconverged SCF | $-9.21$ | - |
 | **V-TS2** | Transition state 2 (1st $Al-O$ scission) | $+330.45$ | $+347.73$ | **$-17.28$** |
 | **V-I2** | Partially hydrolysed intermediate | $+116.55$ | $+97.68$ | **$+18.87$** |
 | **V-P** | Extracted aluminium-vanadate product | $+543.89$ | $+541.55$ | **$+2.34$** |
@@ -274,7 +274,7 @@ Table 4.7 details the evolution of the four framework aluminium–oxygen distanc
 
 | Stationary State | $d(Al - O_1)$ | $d(Al - O_2)$ | $d(Al - O_3)$ | $d(Al - O_4)$ | Shortest $d(Al \cdots O_v)$ | Intermetallic $d(Al \cdots V)$ | Effective Al Coordination |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **FAU Cluster** | 1.916 Å (H-bound) | 1.687 Å | 1.685 Å | 1.696 Å | — | — | 4 (Tetrahedral $Al^{IV}$) |
+| **FAU Cluster** | 1.916 Å (H-bound) | 1.687 Å | 1.685 Å | 1.696 Å | - | - | 4 (Tetrahedral $Al^{IV}$) |
 | **V-PRC** | 2.052 Å | 1.724 Å | 1.705 Å | 1.743 Å | 1.925 Å ($O_{25}$) | 2.879 Å | 4 + 1 (Distorted bipyramid) |
 | **V-I1** | 1.687 Å | 1.804 Å ($O_3$) | 1.705 Å | 1.729 Å | 1.804 Å ($O_3$ bridge) | 2.701 Å | 4 (Tetrahedral, bimetallic) |
 | **V-TS2** | 1.745 Å | 2.150 Å | 1.710 Å | 1.735 Å | 1.810 Å ($O_{25}$) | 2.650 Å | Transition state |

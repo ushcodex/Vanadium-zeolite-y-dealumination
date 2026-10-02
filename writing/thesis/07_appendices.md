@@ -7,8 +7,8 @@
 
 | Job Identifier | Stationary State Role | Stoichiometric Composition | Electronic Energy ($) | $\Delta E$ vs. Ref (kJ/mol) | Verification Status |
 | :--- | :--- | :--- | :---: | :---: | :---: |
-| cluster-T1-V02 | Pristine active-site cluster | {13}$ (22 atoms) | $-31.34551236$ | — | PASS ({	ext{imag}} = 0$) |
-| h3vo4-T1-V01 | Gaseous orthovanadic acid | $ (8 atoms) | $-19.77512769$ | — | PASS ({	ext{imag}} = 0$) |
+| cluster-T1-V02 | Pristine active-site cluster | {13}$ (22 atoms) | $-31.34551236$ | - | PASS ({	ext{imag}} = 0$) |
+| h3vo4-T1-V01 | Gaseous orthovanadic acid | $ (8 atoms) | $-19.77512769$ | - | PASS ({	ext{imag}} = 0$) |
 | V-PRC-T1-V01 | Pre-reaction adsorption complex | {16}V$ (30 atoms) | $-51.19563631$ | $-196.90$ | PASS ({	ext{imag}} = 0$) |
 | V-I1-T1-V01 | Chemisorbed vanadate intermediate | {16}V$ (30 atoms) | $-51.26731716$ | $-385.10$ | PASS ({	ext{imag}} = 0$) |
 | V-TS2-T1-V05 | 1st framework -O$ cleavage TS | {16}V$ (30 atoms) | $-51.20610884$ | $-224.40$ | PASS ({	ext{imag}} = 1, 
@@ -25,8 +25,8 @@ u = -78.21	ext{ cm}^{-1}$) |
 
 | Job Identifier | Stationary State Role | Stoichiometric Composition | Electronic Energy ($) | $\Delta E$ vs. Ref (kJ/mol) | Verification Status |
 | :--- | :--- | :--- | :---: | :---: | :---: |
-| cluster-T1-V02 | Pristine active-site cluster | {13}$ (22 atoms) | $-31.34551236$ | — | PASS ({	ext{imag}} = 0$) |
-| h2o-T1-V01 | Gaseous steam molecule | $ (3 atoms) | $-5.07054445$ | — | PASS ({	ext{imag}} = 0$) |
+| cluster-T1-V02 | Pristine active-site cluster | {13}$ (22 atoms) | $-31.34551236$ | - | PASS ({	ext{imag}} = 0$) |
+| h2o-T1-V01 | Gaseous steam molecule | $ (3 atoms) | $-5.07054445$ | - | PASS ({	ext{imag}} = 0$) |
 | W-PRC-T1-V02 | Pre-reaction adsorption complex | {15}$ (25 atoms) | $-36.44256091$ | $-69.59$ | PASS ({	ext{imag}} = 0$) |
 | W-TS-T1-V04 | 1st framework -O$ cleavage TS | {15}$ (25 atoms) | $-36.43140308$ | $-40.29$ | PASS ({	ext{imag}} = 1, 
 u = -226.10	ext{ cm}^{-1}$) |
