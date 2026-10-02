@@ -1,0 +1,20 @@
+# SCOPE 1  |  minima, re-optimised to TightOpt and analysed by FREQ at the Tier 2 level
+# State: H2O reference  |  register row: h2o-T2-V02
+# Why: the Tier 2 reference zero. Cheap (seconds) but must exist at the same level and
+#      grid as everything else, and must carry ZPE + Gibbs corrections.
+# Gate: ORCA TERMINATED NORMALLY, THE OPTIMIZATION HAS CONVERGED, 0 imaginary modes.
+
+! B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF DefGrid3 Opt Freq TightOpt
+
+%pal nprocs 4 end
+%maxcore 3000
+
+%scf
+  MaxIter 300
+end
+
+%freq
+  Temp 298.15, 1003.15
+end
+
+* xyzfile 0 1 xyz/h2o.xyz

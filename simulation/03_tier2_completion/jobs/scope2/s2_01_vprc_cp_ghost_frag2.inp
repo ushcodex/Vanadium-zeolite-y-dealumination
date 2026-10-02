@@ -1,0 +1,38 @@
+# SCOPE 2  |  Boys-Bernardi counterpoise correction, PBE0-D3(BJ)/def2-TZVP
+# Complex: V-PRC (framework cluster + H3VO4, 30 atoms)
+# Why: the 14.49 kJ/mol vanadium-over-water margin rests on one number each; BSSE is
+#      the first thing an external examiner will ask about. One job per fragment.
+# Fragment 1 = the 22-atom FAU cluster (atoms 0-21), fragment 2 = H3VO4 (atoms 22-29).
+# How to use the results (same level, same geometry for all four terms):
+#    E(supermolecule)  = final energy of s1_04_vprc_optfreq.out
+#    E(cluster, full basis)   = Final energy of ..._ghost_frag2.out
+#    E(H3VO4, full basis)     = Final energy of ..._ghost_frag1.out
+#    BSSE = [E(cluster,full) + E(H3VO4,full)] - [E(cluster,own) + E(H3VO4,own)]
+#    CP-corrected interaction = E(complex) - E(cluster,full) - E(H3VO4,full)
+# Syntax note: ORCA does NOT have a 'Counterpoise' keyword. The ORCA 6.1 route is
+#    %frag Definition + %geom GhostFrags (see ORCA 6.1.1 manual section 2.11.1).
+#    The older orca_templates/t3_pbe0_counterpoise.inp uses the wrong syntax.
+# Gate: TERMINATED NORMALLY for both jobs; the two ghost energies are far below zero
+#    and their sum is only a few kJ/mol above the supermolecule energy.
+# Variant: GhostFrags {2} end -> fragment 2 becomes basis functions only.
+
+! PBE0 D3BJ def2-TZVP RIJCOSX def2/J TightSCF DefGrid3
+
+%pal nprocs 4 end
+%maxcore 3000
+
+%scf
+  MaxIter 300
+end
+
+%frag
+  Definition
+    1 {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21} end
+    2 {22 23 24 25 26 27 28 29} end
+  end
+end
+%geom
+  GhostFrags {2} end
+end
+
+* xyzfile 0 1 xyz/relaxed/v-prc.xyz

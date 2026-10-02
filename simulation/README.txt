@@ -41,6 +41,27 @@ TIER1_CLEANUP.md / TIER1_CLEANUP.docx
   barriers are artifacts, audits every existing result, and fixes the four
   saddles via OptTS from the curated seeds plus IRC verification.
 
+03_tier2_completion/
+  The completion package for the cloud DFT work: the four agreed scopes
+  (frequencies, counterpoise, PBE0 single points on relaxed geometries, and
+  optimisations for the eight states the Tier 2 plan never ran).
+
+    README_RUNBOOK.md   what to run, in what order, with what budget, and the
+                        decision rules written down BEFORE each job
+    AUDIT_FINDINGS.md   what the repository actually contains, with the
+                        arithmetic behind every corrected number
+    run_scope.sh        resumable runner (skips finished jobs, records a
+                        manifest per scope, stops cleanly on a budget or a
+                        results/STOP file, never overwrites a result)
+    xyz/                the 13 input geometries, atom order identical to Tier 1
+    jobs/               ORCA inputs, split by scope
+    tools/              gen_inputs.py (scope 3, ghost fallback, A4
+                        displacements), audit_tier2.py (audit + level tables +
+                        counterpoise), pull_results.sh
+    plan/JOB_PLAN.csv   the 30 planned jobs with purposes, cost brackets, gates
+
+  Nothing may be judged from the raw XYZ bond perception; see the rules above.
+
 verify_tier1.py
   Standard-library audit script for ORCA outputs on the laptop:
     python verify_tier1.py 02_tier1

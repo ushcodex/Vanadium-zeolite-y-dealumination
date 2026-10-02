@@ -1,0 +1,19 @@
+# SCOPE 1  |  minima, re-optimised to TightOpt and analysed by FREQ at the Tier 2 level
+# State: H3VO4 reference  |  register row: h3vo4-T2-V02
+# Why: second half of the vanadium reference zero E(cluster) + E(H3VO4).
+# Gate: ORCA TERMINATED NORMALLY, convergence string present, 0 imaginary modes.
+
+! B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF DefGrid3 Opt Freq TightOpt
+
+%pal nprocs 4 end
+%maxcore 3000
+
+%scf
+  MaxIter 300
+end
+
+%freq
+  Temp 298.15, 1003.15
+end
+
+* xyzfile 0 1 xyz/h3vo4.xyz

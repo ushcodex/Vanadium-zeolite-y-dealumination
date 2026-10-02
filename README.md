@@ -29,6 +29,10 @@ The primary goal of this research is to resolve the atomistic pathway through wh
 │   ├── cloud_bus/           # Cloud calculation submission and transfer scripts
 │   ├── cloud_opt/           # Optimization calculation configurations
 │   ├── cloud_results/       # Completed optimization outputs
+│   ├── 03_tier2_completion/ # Resumable completion package: frequencies, counterpoise,
+│   │                        #   PBE0 single points on relaxed geometries, and the eight
+│   │                        #   states the Tier 2 plan never ran. Start at
+│   │                        #   README_RUNBOOK.md; evidence in AUDIT_FINDINGS.md
 │   ├── local_results/       # Local workstation calculations
 │   ├── molfiles/            # Curated molecular structures with explicit covalent connectivity
 │   ├── orca_templates/      # Calculation input templates for ORCA

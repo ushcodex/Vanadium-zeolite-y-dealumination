@@ -1,0 +1,26 @@
+# SCOPE 4  |  Tier 2 minima: B3LYP-D3(BJ)/def2-TZVP, TightOpt + FREQ
+# State: V-I1 chemisorbed intermediate  |  register row: V-I1-T2-V02
+# Start: TIER 1 accepted V-I1_canonical (Al four-coordinate, framework intact - the
+#      self-correction recorded in the project memos).
+# Why: this is the deep trap that makes the vanadium route thermodynamically distinct;
+#      its Tier 2 energy is needed for the 188 kJ/mol chemisorption step.
+# Expected: converges as a minimum, 0 imaginary modes.
+# Gate: TERMINATED NORMALLY + 'THE OPTIMIZATION HAS CONVERGED' + 0 imaginary modes.
+# Wall-time: the closest measured job (opt04 V-PRC, 30 atoms, 4 cores) took 9 h 52 m
+#      for the optimisation alone; budget FREQ at 1.5-3x that. The 25-atom jobs are
+#      roughly 3x cheaper. Run these before the OptTS jobs.
+
+! B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF DefGrid3 Opt Freq TightOpt
+
+%pal nprocs 4 end
+%maxcore 3000
+
+%scf
+  MaxIter 300
+end
+
+%freq
+  Temp 298.15, 1003.15
+end
+
+* xyzfile 0 1 xyz/v-i1.xyz

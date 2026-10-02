@@ -1,3 +1,19 @@
+# *** DO NOT RUN THIS FILE AS IT STANDS - IT USES A KEYWORD ORCA DOES NOT HAVE ***
+# ORCA has no "Counterpoise" keyword, and a %geom Fragments block is not the
+# supported way to define the fragments. The working counterpoise inputs are
+#   ../../03_tier2_completion/jobs/scope2/*.inp
+# and they use the construction from the ORCA 6.1.1 manual (section 2.11.1):
+#   %frag
+#     Definition
+#       1 {0 1 2 ... 21} end
+#       2 {22 ... 29} end
+#     end
+#   end
+#   %geom
+#     GhostFrags {1} end      # the other job uses {2}
+#   end
+# This file is kept only as a record of what was planned before the audit.
+
 # TIER 3 - counterpoise-corrected adsorption energy, single point (cloud instance)
 # Fragment 1 = framework cluster (atoms 0:21), fragment 2 = adsorbate.
 # For V-PRC: adsorbate atoms 22:29 (H3VO4). For W-PRC: atoms 22:24 (H2O).

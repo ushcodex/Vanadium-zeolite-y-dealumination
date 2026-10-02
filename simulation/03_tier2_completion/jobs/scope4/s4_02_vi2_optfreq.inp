@@ -1,0 +1,25 @@
+# SCOPE 4  |  Tier 2 minima: B3LYP-D3(BJ)/def2-TZVP, TightOpt + FREQ
+# State: V-I2 hydrolysed intermediate  |  register row: V-I2-T2-V05
+# Start: TIER 1 accepted V-I2_canonical (first Al-O bond broken, two silanols).
+# Why: pins the depth of the opened-framework state (342 kJ/mol below the zero).
+# Expected: minimum, 0 imaginary modes. If a low-frequency imaginary mode appears,
+#      watch whether it is a silanol rotation rather than the reacting coordinate.
+# Gate: TERMINATED NORMALLY + 'THE OPTIMIZATION HAS CONVERGED' + 0 imaginary modes.
+# Wall-time: the closest measured job (opt04 V-PRC, 30 atoms, 4 cores) took 9 h 52 m
+#      for the optimisation alone; budget FREQ at 1.5-3x that. The 25-atom jobs are
+#      roughly 3x cheaper. Run these before the OptTS jobs.
+
+! B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF DefGrid3 Opt Freq TightOpt
+
+%pal nprocs 4 end
+%maxcore 3000
+
+%scf
+  MaxIter 300
+end
+
+%freq
+  Temp 298.15, 1003.15
+end
+
+* xyzfile 0 1 xyz/v-i2.xyz
