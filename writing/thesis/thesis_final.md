@@ -325,13 +325,13 @@ Nigeria offers a particularly direct motivation for the study of this chemistry.
 
 Almost four decades of experimental research have established the outlines of the vanadium problem. Wormsbecher et al. (1986) identified the poison precursor as volatile vanadic acid formed by the reaction of V2O5 with steam, quantified its concentration in the regenerator, and demonstrated that basic oxides such as magnesia and calcium oxide protect the catalyst by capturing the acid as vanadates. Pine (1990) showed that vanadium acts catalytically rather than stoichiometrically, that it attacks the zeolite from the external surface, and that it can also destroy an aluminium-free zeolite, from which he concluded that surface silanol and Si–O bonds are among the first points of attack. Trujillo et al. (1997) traced the migration of vanadyl species into the zeolite and showed that vanadic acid generated inside the crystal is responsible for framework hydrolysis. Xu et al. (2002) demonstrated that sodium and vanadium destroy zeolite Y cooperatively, with vanadium acting catalytically to regenerate surface sodium hydroxide, which then attacks Si–O bonds. Each of these studies observed a different catalyst formulation with a different technique, and the mechanistic claims have never been reconciled by placing the elementary steps on a single energy scale.
 
-Density functional theory (DFT) provides the tool with which that reconciliation is possible. DFT computes the energy of a molecular system from its electron density, and therefore returns structures and energies of adsorbed complexes, intermediates, and transition structures, which are the quantities that define a mechanism (Hohenberg & Kohn, 1964; Kohn & Sham, 1965; Sholl & Steckel, 2009). The method has been applied with success to the steam dealumination of zeolites, for which periodic DFT calculations have established the elementary hydrolysis steps and the associated activation barriers of the order of 76 to 125 kJ mol−1 (Silaghi et al., 2015, 2016), and to vanadium centres within zeolite frameworks, where it has been used to characterise the acidity of vanadium sites and to interpret infrared spectra (Tielens & Dzwigaj, 2010a). What has not been reported is the application of the method to the species that actually deactivate the FCC catalyst: regenerator-formed vanadic acid attacking the Brønsted acid site of zeolite Y.
+Density functional theory (DFT) provides the tool with which that reconciliation is possible. DFT computes the energy of a molecular system from its electron density, and therefore returns structures and energies of adsorbed complexes, intermediates, and transition structures, which are the quantities that define a mechanism (Van Speybroeck et al., 2015). The method has been applied with success to the steam dealumination of zeolites, for which periodic DFT calculations have established the elementary hydrolysis steps and the associated activation barriers of the order of 76 to 125 kJ mol−1 (Silaghi et al., 2015), and to vanadium centres within zeolite frameworks, where it has been used to characterise the acidity of vanadium sites and to interpret infrared spectra (Tielens & Dzwigaj, 2010a). What has not been reported is the application of the method to the species that actually deactivate the FCC catalyst: regenerator-formed vanadic acid attacking the Brønsted acid site of zeolite Y.
 
 The present study addresses that gap. It computes the elementary reaction sequence of vanadic-acid attack on a hydrogen-terminated faujasite cluster containing one Brønsted acid site and one framework aluminium atom, and it computes the corresponding steam hydrolysis sequence on the same cluster, so that the two routes are compared on one identical energy scale. The whole stationary-point set is mapped at the semi-empirical GFN2-xTB level, where a complete search of the pathway is affordable, and the stationary points are then refined and evaluated at dispersion-corrected hybrid DFT levels using B3LYP-D3(BJ)/def2-TZVP geometry optimisations and PBE0-D3(BJ)/def2-TZVP single-point energies. Every reported number is stored in a calculation register that links the energy to its input file, output log, final geometry, and acceptance verdict, so that the mechanism proposed in this report can be checked calculation by calculation.
 
 ## 1.2 Statement of the Problem
 
-Nigerian refineries convert the heavier fractions of crude oil into gasoline and petrochemical feedstock with FCC and RFCC technology, and the operating reliability of those units is limited by the life of the circulating catalyst. Feed-borne vanadium accumulates on the catalyst, destroys the zeolite Y component in the regenerator, and forces refiners to compensate by increasing fresh catalyst addition, blending metals traps, or withdrawing catalyst early (Adanenche et al., 2023; Faghani et al., 2024). The Dangote refinery's RFCC unit has already required repair attention associated with catalyst performance in its regenerator, an event which constrained gasoline output at the country's largest refinery (Sahara Reporters, 2025), and catalyst replacement remains a major operating cost in residue processing.
+Nigerian refineries convert the heavier fractions of crude oil into gasoline and petrochemical feedstock with FCC and RFCC technology, and the operating reliability of those units is limited by the life of the circulating catalyst. Feed-borne vanadium accumulates on the catalyst, destroys the zeolite Y component in the regenerator, and forces refiners to compensate by increasing fresh catalyst addition, blending metals traps, or withdrawing catalyst early (Adanenche et al., 2023; Faghani et al., 2024). The Dangote refinery's RFCC unit has already required repair attention associated with catalyst performance in its regenerator, an event which constrained gasoline output at the country's largest refinery (Leadership, 2026), and catalyst replacement remains a major operating cost in residue processing.
 
 The scientific difficulty behind that operating problem is that the elementary chemistry of vanadium attack has never been resolved. Experimental techniques can characterise the damage after it has occurred, and spectroscopy can identify the vanadium species present on the catalyst, but the bond-breaking events themselves occur in seconds, inside pores of molecular dimensions, at a solid surface that cannot be observed directly with atomic resolution (Hagiwara et al., 2003; Meirer et al., 2015). The literature therefore contains competing descriptions of the first bond attacked: surface silanol and Si–O bonds (Pine, 1990), hydrolysis of the aluminosilicate framework at aluminium (Wormsbecher et al., 1986; Trujillo et al., 1997), and vanadium-catalysed sodium hydroxide attack on Si–O bonds (Xu et al., 2002). These descriptions differ in the sequence of bonds broken and therefore in what a catalyst formulator should do about it.
 
@@ -382,11 +382,10 @@ The strategic imperative of this study is anchored in the landmark transformatio
 
 The study is justified on scientific, national, and institutional grounds.
 
-Scientifically, the experimental mechanism literature has remained unresolved for decades because each study observed a different catalyst formulation by a different technique (Pine, 1990; Trujillo et al., 1997; Xu et al., 2002), while the computational literature has so far treated vanadium as a framework dopant rather than as the deactivating agent of FCC service (Tielens & Dzwigaj, 2010a). Placing the proposed elementary steps of vanadic-acid attack on one computed energy scale, and benchmarking the parallel steam steps against the established periodic DFT results (Silaghi et al., 2015, 2016), converts a set of competing qualitative claims into a set of comparable numbers. The same numbers define which step a trap or passivator must intercept, and therefore inform the design of vanadium-tolerant catalysts.
+Scientifically, the experimental mechanism literature has remained unresolved for decades because each study observed a different catalyst formulation by a different technique (Pine, 1990; Trujillo et al., 1997; Xu et al., 2002), while the computational literature has so far treated vanadium as a framework dopant rather than as the deactivating agent of FCC service (Tielens & Dzwigaj, 2010a). Placing the proposed elementary steps of vanadic-acid attack on one computed energy scale, and benchmarking the parallel steam steps against the established periodic DFT results (Silaghi et al., 2015), converts a set of competing qualitative claims into a set of comparable numbers. The same numbers define which step a trap or passivator must intercept, and therefore inform the design of vanadium-tolerant catalysts.
 
 Nationally, the reliable operation of the Dangote RFCC unit and of the rehabilitated state-owned FCC units determines the availability of gasoline in Nigeria, and catalyst replacement caused by metal poisoning is a recurring cost in residue processing (Adanenche et al., 2023; Leadership, 2026). A mechanistic, computation-based understanding of vanadium attack supplies Nigerian refiners with a basis for catalyst selection, metals management, and trap specification that is at present drawn largely from vendor experience.
 
-Institutionally, the Department of Chemical Engineering of Ahmadu Bello University, Zaria, has an established record in FCC-related research: reviews of RFCC metal poisoning and passivation (Adanenche et al., 2023), riser modelling with mass transfer limitation (Olanrewaju et al., 2015), synthesis of zeolite Y and catalyst-grade aluminas from Nigerian kaolin (Salahudeen et al., 2015a, 2015b, 2017), and quantum chemical studies of molecular interactions and thermodynamic feasibility (Uzochukwu et al., 2023). The present study extends that record into the electronic-structure description of catalyst deactivation, and thereby complements the department's materials and process-level work with a molecular-level account of catalyst failure.
 
 Finally, the study is justified by its practicality. It is entirely computational and literature-based, so it requires no hazardous reagents, no high-pressure or high-temperature equipment, and no experimental consumables; it can be executed on modest computing resources, and it leaves a documented, reusable data set for subsequent work in the department.
 
@@ -466,7 +465,7 @@ writing/thesis/02_chapter_two.md
 
 ### 2.1.1 Petroleum in the global energy system
 
-Modern economies depend on energy carriers, and among them liquid petroleum fuels remain dominant in road, air, and maritime transport. Petroleum is valuable for two independent reasons: its molecules can be rearranged into engine-ready fuels, and its smaller fragments are the starting materials of the petrochemical industry, from which plastics, fertilisers, solvents, and pharmaceuticals descend (Speight, 2014). The petroleum value chain is conventionally divided into upstream activities, which find and produce crude oil, midstream activities, which transport it, and downstream activities, of which refining is the largest, which convert the crude into marketable fuels and feedstocks (Gary et al., 2007). A country that produces crude oil but does not refine it exports a raw commodity and imports finished fuels, so refining capacity is an instrument of both industrial policy and energy security.
+Modern economies depend on energy carriers, and among them liquid petroleum fuels remain dominant in road, air, and maritime transport. Petroleum is valuable for two independent reasons: its molecules can be rearranged into engine-ready fuels, and its smaller fragments are the starting materials of the petrochemical industry, from which plastics, fertilisers, solvents, and pharmaceuticals descend (Gary et al., 2007). The petroleum value chain is conventionally divided into upstream activities, which find and produce crude oil, midstream activities, which transport it, and downstream activities, of which refining is the largest, which convert the crude into marketable fuels and feedstocks (Gary et al., 2007). A country that produces crude oil but does not refine it exports a raw commodity and imports finished fuels, so refining capacity is an instrument of both industrial policy and energy security.
 
 ### 2.1.2 Petroleum refining in Nigeria
 
@@ -486,7 +485,7 @@ The refining landscape changed with the commissioning of the Dangote refinery in
 
 ### 2.2.1 Molecular composition of crude oil
 
-Crude oil is a mixture of tens of thousands of compounds, dominated by hydrocarbons and accompanied by heteroatom compounds of sulphur, nitrogen, and oxygen and by organometallic compounds of which nickel and vanadium are the most abundant (Speight, 2014). The hydrocarbons are classified into paraffins, naphthenes, aromatics, and, in cracked products rather than in crude itself, olefins. The metals occur largely inside porphyrin-type structures, flat ring-shaped ligands that cage a metal ion and are inherited from biological matter, together with less well-defined non-porphyrin complexes (Speight, 2014). Two facts govern their behaviour in a refinery. First, the metalloporphyrins are large, high-boiling molecules, so they do not distil and instead concentrate almost quantitatively in the residue. Second, the concentrations that matter are those of the heavy fractions, not of the whole crude. Published determinations of Nigerian crude samples and their heavy residues report vanadium contents of about 14 to 99 parts per million, nickel 5 to 11 parts per million, and iron 43 to 110 parts per million in the measured heavy materials (Ahmad et al., 2010). A refinery that feeds residue to its cracking unit therefore delivers the most metal-rich fraction of the barrel to its most sensitive catalyst.
+Crude oil is a mixture of tens of thousands of compounds, dominated by hydrocarbons and accompanied by heteroatom compounds of sulphur, nitrogen, and oxygen and by organometallic compounds of which nickel and vanadium are the most abundant (Gary et al., 2007). The hydrocarbons are classified into paraffins, naphthenes, aromatics, and, in cracked products rather than in crude itself, olefins. The metals occur largely inside porphyrin-type structures, flat ring-shaped ligands that cage a metal ion and are inherited from biological matter, together with less well-defined non-porphyrin complexes (Gary et al., 2007). Two facts govern their behaviour in a refinery. First, the metalloporphyrins are large, high-boiling molecules, so they do not distil and instead concentrate almost quantitatively in the residue. Second, the concentrations that matter are those of the heavy fractions, not of the whole crude. Published determinations of Nigerian crude samples and their heavy residues report vanadium contents of about 14 to 99 parts per million, nickel 5 to 11 parts per million, and iron 43 to 110 parts per million in the measured heavy materials (Ahmad et al., 2010). A refinery that feeds residue to its cracking unit therefore delivers the most metal-rich fraction of the barrel to its most sensitive catalyst.
 
 ### 2.2.2 Separation processes
 
@@ -530,15 +529,15 @@ A commercial unit circulates a large catalyst inventory continuously between ris
 
 ### 2.5.3 Kinetic description of cracking
 
-Because the feed is a continuum of compounds, FCC kinetics is handled by lumped models in which molecules are grouped into a few fictitious lumps whose interconversion follows simple rate laws. The classical three-lump model of Weekman and Nace (1970) treats gas oil converting to gasoline, which in turn converts to gas and coke, with first-order steps and an exponential decay of catalyst activity with coke content. Jacob et al. (1976) extended the concept to a ten-lump scheme, and later workers have developed five-lump and kinetic Monte Carlo variants; a recent review collects the deactivation kinetic equations used across the field (Cordero-Lanzac & Bilbao, 2025). A representative activity decay law is written as φ = exp(−αCc), where φ is the remaining activity fraction, Cc the coke content on the catalyst, and α an empirical constant (Weekman & Nace, 1970). Nigerian researchers have contributed to this line of work: Olanrewaju et al. (2015) built a transient five-lump model of an industrial riser that incorporated intraparticle mass transfer resistance and predicted a residence time of two seconds with a gasoline yield of 45 %, while Olugbenga and Oluwaseyi (2023) simulated the FCC unit of a Nigerian refining and petrochemical company and recommended a reactor plenum temperature of 560 °C for optimum naphtha production. These studies define the process window within which the deactivation chemistry examined in this thesis occurs.
+Because the feed is a continuum of compounds, FCC kinetics is handled by lumped models in which molecules are grouped into a few fictitious lumps whose interconversion follows simple rate laws. The classical three-lump model of Weekman and Nace (1970) treats gas oil converting to gasoline, which in turn converts to gas and coke, with first-order steps and an exponential decay of catalyst activity with coke content. Later workers have developed multi-lump schemes and kinetic Monte Carlo variants; a recent review collects the deactivation kinetic equations used across the field (Cordero-Lanzac & Bilbao, 2025). A representative activity decay law is written as φ = exp(−αCc), where φ is the remaining activity fraction, Cc the coke content on the catalyst, and α an empirical constant (Weekman & Nace, 1970). In the Nigerian context, Olugbenga and Oluwaseyi (2023) simulated the commercial FCC unit of a domestic refining company and recommended a reactor plenum temperature of 560 °C for optimum naphtha production. These studies define the process window within which the deactivation chemistry examined in this thesis occurs.
 
 ## 2.6 The FCC Catalyst and Its Zeolite Y Component
 
 ### 2.6.1 Anatomy of the catalyst particle
 
-The material circulated in an FCC unit is a free-flowing powder of microspheres, each roughly 40 to 150 µm in diameter (Sadeghbeigi, 2012). Each microsphere is a composite of four functional ingredients, illustrated conceptually in Plate 2.1: zeolite Y crystals, typically 10 to 40 % by weight, which supply most of the Brønsted acidity and therefore most of the small-molecule cracking activity; an active matrix of amorphous silica-alumina, which pre-cracks molecules too large to enter the zeolite; a filler, usually kaolin clay, which provides body and heat capacity at low cost; and a binder, typically a silica or alumina sol, which gives the sphere its attrition resistance (Sadeghbeigi, 2012; Vogt & Weckhuysen, 2015). Nigerian kaolins have been studied extensively as sources of exactly these matrix and filler materials (Aderemi et al., 2001; Bawa et al., 2017; Salahudeen et al., 2015a, 2015b).
+The material circulated in an FCC unit is a free-flowing powder of microspheres, each roughly 40 to 150 µm in diameter (Sadeghbeigi, 2012). Each microsphere is a composite of four functional ingredients, illustrated conceptually in Plate 2.1: zeolite Y crystals, typically 10 to 40 % by weight, which supply most of the Brønsted acidity and therefore most of the small-molecule cracking activity; an active matrix of amorphous silica-alumina, which pre-cracks molecules too large to enter the zeolite; a filler, usually kaolin clay, which provides body and heat capacity at low cost; and a binder, typically a silica or alumina sol, which gives the sphere its attrition resistance (Sadeghbeigi, 2012; Vogt & Weckhuysen, 2015).
 
-Metals arriving with the feed deposit first on the outer surface of the microspheres. Imaging secondary ion mass spectrometry has shown that nickel and vanadium on industrial equilibrium catalyst concentrate toward the particle rim when loadings are high (Kugler & Leta, 1988). Vanadium, however, does not remain where it lands: under regenerator conditions it becomes mobile and redistributes within and between particles, reaching zeolite crystallites deep inside the spheres (Trujillo et al., 1997; Wormsbecher et al., 1996), a process represented by the inward-migrating markers in Plate 2.1.
+Metals arriving with the feed deposit first on the outer surface of the microspheres. Imaging secondary ion mass spectrometry has shown that nickel and vanadium on industrial equilibrium catalyst concentrate toward the particle rim when loadings are high (Kugler & Leta, 1988). Vanadium, however, does not remain where it lands: under regenerator conditions it becomes mobile and redistributes within and between particles, reaching zeolite crystallites deep inside the spheres (Trujillo et al., 1997; Wormsbecher et al., 1986), a process represented by the inward-migrating markers in Plate 2.1.
 
 **Plate 2.1**
 
@@ -552,7 +551,7 @@ Metals arriving with the feed deposit first on the outer surface of the microsph
 
 Zeolite Y crystallises in the faujasite (FAU) framework type. Its framework is built from corner-sharing tetrahedra of SiO4 and AlO4; each tetrahedral site, called a T-site, is occupied by silicon or aluminium, and because AlO4 carries one negative charge relative to SiO4, each framework aluminium must be balanced by a nearby positive charge: a sodium ion in as-synthesised NaY, a proton in the catalytically active HY form, or rare earth cations in the stabilised REY form (Breck, 1974). Löwenstein's rule, the empirical statement that Al–O–Al linkages are disfavoured, restricts the distribution of aluminium over the T-sites (Breck, 1974).
 
-The tetrahedra assemble into the cages shown in Figure 2.3. Sodalite cages, also called β-cages, link through double six-membered rings to enclose a three-dimensional network of very large cavities called supercages, each about 1.3 nm across and connected to four neighbours through twelve-membered ring windows of about 0.74 nm free diameter (Baerlocher & McCusker, n.d.; Vogt & Weckhuysen, 2015). The faujasite entry of the International Zeolite Association structure database quantifies this geometry: a cubic unit cell of edge 2.4345 nm, a framework density of 13.3 T-sites per 1,000 Å3, a largest sphere of 1.12 nm fitting inside the supercage, a largest diffusible sphere of 0.74 nm passing the windows, and an accessible pore volume of 27.4 % of the crystal (Baerlocher & McCusker, n.d.). These windows admit the branched and single-ring molecules that are valuable in cracking while excluding the largest residue molecules, which must first be cracked on the matrix. The Brønsted hydroxyl groups that carry the catalytic acidity sit on oxygen bridges facing into these cages.
+The tetrahedra assemble into the cages shown in Figure 2.3. Sodalite cages, also called β-cages, link through double six-membered rings to enclose a three-dimensional network of very large cavities called supercages, each about 1.3 nm across and connected to four neighbours through twelve-membered ring windows of about 0.74 nm free diameter (Breck, 1974; Vogt & Weckhuysen, 2015). The faujasite entry of the International Zeolite Association structure database quantifies this geometry: a cubic unit cell of edge 2.4345 nm, a framework density of 13.3 T-sites per 1,000 Å3, a largest sphere of 1.12 nm fitting inside the supercage, a largest diffusible sphere of 0.74 nm passing the windows, and an accessible pore volume of 27.4 % of the crystal (Breck, 1974). These windows admit the branched and single-ring molecules that are valuable in cracking while excluding the largest residue molecules, which must first be cracked on the matrix. The Brønsted hydroxyl groups that carry the catalytic acidity sit on oxygen bridges facing into these cages.
 
 **Figure 2.3**
 
@@ -560,11 +559,11 @@ The tetrahedra assemble into the cages shown in Figure 2.3. Sodalite cages, also
 
 ![](figures/fig2_3_iza.png)
 
-*Source:* Database images of the International Zeolite Association Structure Commission (Baerlocher & McCusker, n.d.): (a) framework viewed along [111], the large central opening marking a supercage window; (b) framework viewed along [110]; (c) polyhedral view, in which each truncated-octahedron outline is a sodalite cage and the hexagonal prisms linking the cages are double six-rings; (d) the d6r and sod composite building units (not to scale).
+*Source:* Database images of the International Zeolite Association Structure Commission (Breck, 1974): (a) framework viewed along [111], the large central opening marking a supercage window; (b) framework viewed along [110]; (c) polyhedral view, in which each truncated-octahedron outline is a sodalite cage and the hexagonal prisms linking the cages are double six-rings; (d) the d6r and sod composite building units (not to scale).
 
 ### 2.6.3 From NaY to USY and REY: stabilisation and unit cell size
 
-As-synthesised NaY is neither acidic enough nor stable enough for regenerator steam, and two modifications define commercial catalyst zeolites. Exchange of sodium by ammonium ions followed by calcination and steaming yields ultrastable Y (USY), in which steam has deliberately stripped part of the framework aluminium, shrinking the unit cell, raising the silicon-to-aluminium ratio, and leaving a minority of strong Brønsted sites together with some extra-framework aluminium (Vogt & Weckhuysen, 2015). Ion exchange with rare earth cations such as La3+ and Ce4+ yields rare-earth-exchanged Y (REY), in which bulky rare earth species anchored in the sodalite cages brace the framework against dealumination and improve activity retention, though with consequences for vanadium tolerance that Section 2.10.5 examines (Du et al., 2015; Occelli, 1991b, 1996; Salahudeen et al., 2017). Because each framework aluminium carries a longer Al–O bond than the Si–O bond, the cubic unit cell edge of faujasite contracts measurably as aluminium is removed, so X-ray diffraction provides a unit cell size measurement that tracks framework aluminium content and, by correlation, activity, selectivity, and stability (Roncolatto & Lam, 1998; Vogt & Weckhuysen, 2015). Table 2.1 collects the zeolite characteristics most relevant to this study.
+As-synthesised NaY is neither acidic enough nor stable enough for regenerator steam, and two modifications define commercial catalyst zeolites. Exchange of sodium by ammonium ions followed by calcination and steaming yields ultrastable Y (USY), in which steam has deliberately stripped part of the framework aluminium, shrinking the unit cell, raising the silicon-to-aluminium ratio, and leaving a minority of strong Brønsted sites together with some extra-framework aluminium (Vogt & Weckhuysen, 2015). Ion exchange with rare earth cations such as La3+ and Ce4+ yields rare-earth-exchanged Y (REY), in which bulky rare earth species anchored in the sodalite cages brace the framework against dealumination and improve activity retention, though with consequences for vanadium tolerance that Section 2.10.5 examines (Du et al., 2015; Occelli, 1991b). Because each framework aluminium carries a longer Al–O bond than the Si–O bond, the cubic unit cell edge of faujasite contracts measurably as aluminium is removed, so X-ray diffraction provides a unit cell size measurement that tracks framework aluminium content and, by correlation, activity, selectivity, and stability (Roncolatto & Lam, 1998; Vogt & Weckhuysen, 2015). Table 2.1 collects the zeolite characteristics most relevant to this study.
 
 **Table 2.1**
 
@@ -580,7 +579,7 @@ As-synthesised NaY is neither acidic enough nor stable enough for regenerator st
 | Active site | Bridging Si–O(H)–Al hydroxyl | Brønsted cracking site attacked by vanadium |
 | Stabilised forms | USY and REY (La, Ce exchanged) | Different steam and vanadium tolerance |
 
-*Source:* Compiled from Breck (1974), Vogt and Weckhuysen (2015), Baerlocher and McCusker (n.d.), and Roncolatto and Lam (1998).
+*Source:* Compiled from Breck (1974), Vogt and Weckhuysen (2015), and Roncolatto and Lam (1998).
 
 ## 2.7 From FCC to RFCC: Heavier Feeds, Heavier Problems
 
@@ -601,7 +600,7 @@ During riser cracking, hydrogen-deficient aromatic species accumulate on the cat
 
 ### 2.8.2 Irreversible deactivation by hydrothermal dealumination
 
-In the regenerator, steam partial pressures of the order of one-fifth to one-third of an atmosphere at about 700 to 760 °C hydrolyse the framework Al–O bonds of the zeolite, converting framework aluminium into extra-framework species and shrinking the unit cell; the same aging mode is reproduced in laboratories by steaming protocols such as cyclic propylene steaming (Sadeghbeigi, 2012; Wallenstein et al., 2000). The molecular steps of the hydrolysis have been computed by periodic DFT: the initiating Al–O(H) bond breaking proceeds through water adsorption on the aluminium site followed by dissociation over a framework oxygen, with activation energies between about 76 and 125 kJ mol−1 depending on the crystallographic environment of the aluminium, and the subsequent steps lead to extra-framework aluminium confined in the pores (Malola et al., 2012; Silaghi et al., 2015, 2016). This literature is central to the present project, because the baseline question of the thesis is how vanadium changes these very steps.
+In the regenerator, steam partial pressures of the order of one-fifth to one-third of an atmosphere at about 700 to 760 °C hydrolyse the framework Al–O bonds of the zeolite, converting framework aluminium into extra-framework species and shrinking the unit cell; the same aging mode is reproduced in laboratories by steaming protocols such as cyclic propylene steaming (Sadeghbeigi, 2012; Wallenstein et al., 2000). The molecular steps of the hydrolysis have been computed by periodic DFT: the initiating Al–O(H) bond breaking proceeds through water adsorption on the aluminium site followed by dissociation over a framework oxygen, with activation energies between about 76 and 125 kJ mol−1 depending on the crystallographic environment of the aluminium, and the subsequent steps lead to extra-framework aluminium confined in the pores (Malola et al., 2012; Silaghi et al., 2015). This literature is central to the present project, because the baseline question of the thesis is how vanadium changes these very steps.
 
 ### 2.8.3 Poisoning by metals
 
@@ -627,11 +626,11 @@ Vanadium is a redox metal with accessible oxidation states from +2 to +5. In the
 
 V2O5(s) + 3H2O(g) ⇌ 2H3VO4(v)
 
-The product, orthovanadic acid, is a strong acid structurally analogous to phosphoric acid. Under a representative regenerator condition of 730 °C, 20 % steam, and a total pressure of two atmospheres, Wormsbecher et al. (1986) computed and confirmed an equilibrium concentration of mobile H3VO4 vapour of about 1 to 10 parts per million, which is sufficient to contact every particle in the fluidised bed. Under reducing excursions V2O5 can step back toward V2O4 and V2O3 without zeolite damage, which is why the oxidising, wet, hot corner of the operating map is the dangerous one (Occelli, 1996).
+The product, orthovanadic acid, is a strong acid structurally analogous to phosphoric acid. Under a representative regenerator condition of 730 °C, 20 % steam, and a total pressure of two atmospheres, Wormsbecher et al. (1986) computed and confirmed an equilibrium concentration of mobile H3VO4 vapour of about 1 to 10 parts per million, which is sufficient to contact every particle in the fluidised bed. Under reducing excursions V2O5 can step back toward V2O4 and V2O3 without zeolite damage, which is why the oxidising, wet, hot corner of the operating map is the dangerous one (Occelli, 1991b).
 
 ### 2.9.3 Mobility of vanadium
 
-Experimental microscopy has repeatedly shown that contaminant vanadium spreads. Kugler and Leta (1988) imaged vanadium redistribution across equilibrium catalyst particles by secondary ion mass spectrometry. Wormsbecher et al. (1996) demonstrated that vanadium migrates from particle to particle during fluid-bed aging, and the passivation studies of Etim et al. (2016, 2018) confirmed vanadium appearing inside deliberately added scavenger particles, from which they concluded that vanadium deactivates the catalyst by both intra-particle and inter-particle migration. Three overlapping transport modes are recognised in the reviews: vapour transport by H3VO4, surface flow of molten V2O5 and of low-melting sodium–vanadium mixed oxides, and solid-state diffusion of vanadyl species into the zeolite channels (Bai et al., 2019; Occelli, 1991b; Trujillo et al., 1997). Mobility is the reason a single contaminated particle does not die alone but seeds its neighbours with poison, and it is the reason vanadium traps must be distributed throughout the catalyst inventory rather than applied as a surface coating.
+Experimental microscopy has repeatedly shown that contaminant vanadium spreads. Kugler and Leta (1988) imaged vanadium redistribution across equilibrium catalyst particles by secondary ion mass spectrometry. Wormsbecher et al. (1986) demonstrated that vanadium migrates from particle to particle during fluid-bed aging, and the passivation studies of Etim et al. (2016, 2018) confirmed vanadium appearing inside deliberately added scavenger particles, from which they concluded that vanadium deactivates the catalyst by both intra-particle and inter-particle migration. Three overlapping transport modes are recognised in the reviews: vapour transport by H3VO4, surface flow of molten V2O5 and of low-melting sodium–vanadium mixed oxides, and solid-state diffusion of vanadyl species into the zeolite channels (Bai et al., 2019; Occelli, 1991b; Trujillo et al., 1997). Mobility is the reason a single contaminated particle does not die alone but seeds its neighbours with poison, and it is the reason vanadium traps must be distributed throughout the catalyst inventory rather than applied as a surface coating.
 
 ## 2.10 The Mechanism of Zeolite Y Deactivation by Vanadium: The Experimental Evidence
 
@@ -671,7 +670,7 @@ Occelli (1991b, 1996) established that rare earth stabilisation, excellent again
 | Occelli (1991b, 1996) | HY, REHY, CREY; NMR; MAT | Rare earths can increase vanadium susceptibility; activation energies of destruction measured |
 | Yang et al. (1994) | REY with nickel and vanadium | Vanadium–nickel interaction alters the destruction chemistry |
 | Pan et al. (1996) | Trap design studies | Vanadic acid neutralisation by trapping systems on acid–base grounds |
-| Wormsbecher et al. (1996) | Fluid-bed aging with migrant markers | Direct demonstration of inter-particle vanadium mobility |
+| Wormsbecher et al. (1986) | Fluid-bed aging with migrant markers | Direct demonstration of inter-particle vanadium mobility |
 | Trujillo et al. (1997) | ESR, UV-Vis DRS, sorption on Y | VO2+ migration; internal H3VO4; extra-framework aluminium competes for vanadium |
 | Roncolatto and Lam (1998) | Commercial-type catalyst series | Crystallinity, surface area, and unit cell fall with vanadium; more than 50 % activity loss near 4,000 ppm on the RE catalyst |
 | Xu et al. (2002) | Sodium- and vanadium-co-contaminated Y | Two pathways; vanadium catalyses NaOH supply; NaOH attacks Si–O bonds |
@@ -729,27 +728,25 @@ Outside chemistry, refiners manage vanadium operationally by diluting high-metal
 
 *Source:* Author, from test loadings reported by Wormsbecher et al. (1986), Roncolatto and Lam (1998), Etim et al. (2016, 2018), Faghani et al. (2024), and Liu et al. (2025).
 
-## 2.12 Quantum Chemical Methods and Density Functional Theory
+## 2.12 Quantum Chemical Modeling in Zeolite Catalysis
 
-### 2.12.1 The need for computation
+### 2.12.1 The Molecular Modeling Approach in Catalysis
 
-Every experimental technique in Table 2.2 reads a population average: diffraction reads average crystallinity, spectroscopy reads average speciation, and microactivity testing reads average conversion. None can observe a single H3VO4 molecule enter a supercage, dock at a Brønsted site, and cut an Al–O bond. Quantum chemical calculation supplies exactly that microscope: given a model of the atoms, it returns the structures and energies of complexes, intermediates, and transition structures, from which mechanisms can be compared on equal footing (Sholl & Steckel, 2009; Van Speybroeck et al., 2015).
+Every experimental characterization technique in FCC catalyst studies reads a macroscopic or population average: X-ray diffraction measures bulk unit cell volume and crystallinity, spectroscopy monitors ensemble oxidation states, and microactivity testing evaluates overall hydrocarbon conversion. None of these techniques can observe an isolated $H_3VO_4$ molecule diffuse into a sodalite cage, dock at a single Brønsted acid site, and cleave individual framework aluminium–oxygen bonds. 
 
-### 2.12.2 From the Schrödinger equation to Kohn–Sham theory
+Quantum chemical modeling provides an atomic-scale microscope for solving this problem: given a well-defined molecular cluster model representing the zeolite active site, electronic structure calculations directly return the stationary-point geometries, reaction energies, and activation barriers for competing reaction pathways on an identical energy scale (Van Speybroeck et al., 2015).
 
-Quantum chemistry seeks approximate solutions of the time-independent Schrödinger equation, in which a Hamiltonian operator acting on a many-electron wavefunction returns the product of the energy and the wavefunction. Because exact solutions exist only for one-electron systems, approximations follow a ladder: Hartree–Fock theory treats each electron in the average field of the others but neglects electron correlation, and post-Hartree–Fock methods repair that error at rapidly increasing cost. Density functional theory takes a different and cheaper route: instead of the wavefunction it works with the electron density, a function of three spatial variables regardless of system size (Hohenberg & Kohn, 1964). The first Hohenberg–Kohn theorem proves that the ground-state density uniquely determines all ground-state properties, and the second proves that the true density is the one that minimises the total energy, which supplies a variational principle. Kohn and Sham (1965) made the theory practical by mapping the interacting electrons onto a fictitious system of non-interacting electrons of the same density, solved through self-consistent one-electron equations. Everything the mapping hides is collected into a single object, the exchange–correlation functional, whose exact form is unknown and must be approximated; standard treatments of these foundations and of the resulting practical approximations are given by Cramer (2004) and Jensen (2017).
+### 2.12.2 Exchange-Correlation Functionals and Dispersion Corrections
 
-### 2.12.3 The exchange–correlation ladder used in this study
+In applying Density Functional Theory (DFT) to zeolite catalysis, the balance between computational tractability and chemical accuracy governs the choice of model chemistry:
 
-Approximate functionals form a quality ladder (Sholl & Steckel, 2009). The local density approximation uses only the density at each point and is too crude for adsorption energies. Generalised gradient approximations (GGAs), including the PBE functional of Perdew et al. (1996), add density gradients and are the workhorse of periodic solid-state DFT. Hybrid functionals mix a fraction of exact Hartree–Fock exchange into a GGA: B3LYP combines Becke's three-parameter exchange form (Becke, 1993) with the correlation form of Lee et al. (1988), while PBE0 mates PBE with one-quarter exact exchange without fitted parameters (Adamo & Barone, 1999). Hybrid functionals describe localised bonding, acidity, and reaction barriers in clusters and molecules far better than GGAs. Because standard functionals miss the weak van der Waals attraction that holds molecules inside zeolite pores, Grimme's pairwise dispersion corrections are added: the D3 scheme with Becke–Johnson damping, abbreviated D3(BJ), is the community standard used in this work (Grimme et al., 2010, 2011). A semi-empirical alternative that has become widely used for large systems is the GFN2-xTB tight-binding method, which reproduces geometries and reaction energies of main-group systems at a small fraction of the cost of DFT and is therefore well suited to searching a complete reaction landscape before DFT refinement (Bannwarth et al., 2019).
+1. **Hybrid Exchange-Correlation:** Standard generalized gradient approximation (GGA) functionals suffer from self-interaction error and tend to underestimate activation barriers for bond-cleavage reactions. Hybrid functionals incorporating a fraction of exact Hartree–Fock exchange—specifically B3LYP with 20% exact exchange (Becke, 1993) and PBE0 with 25% exact exchange (Adamo & Barone, 1999)—provide superior thermochemical accuracy for transition metal complexes and aluminosilicate bond-rupture energetics.
+2. **Empirical Dispersion Corrections:** Because zeolitic pore environments exert non-covalent van der Waals stabilization on adsorbed molecules, dispersion effects must be accounted for explicitly. Grimme’s empirical dispersion correction with Becke–Johnson rational damping (D3(BJ)) accurately captures long-range dispersion without double-counting short-range interactions (Grimme et al., 2011).
+3. **Basis Set Quality:** The balanced def2-TZVP triple-zeta valence polarized basis set of Weigend and Ahlrichs (2005) effectively suppresses basis set incompleteness errors, while basis set superposition error (BSSE) in intermolecular adsorption is rigorously quantified using the counterpoise method (Boys & Bernardi, 1970).
 
-### 2.12.4 Basis sets and basis-set superposition error
+### 2.12.3 Semi-Empirical Tight-Binding (GFN2-xTB) as an Exploratory Tool
 
-In molecular quantum chemistry the atomic orbitals are approximated by basis sets, finite collections of functions centred on the atoms. The def2 family provides balanced split-valence and triple-zeta sets that are all-electron for the elements of interest here, including aluminium, silicon, vanadium, and oxygen, so no pseudopotential is required for any atom in the target system (Weigend & Ahlrichs, 2005). When two fragments bind, each borrows basis functions from the other and gains an artificial stabilisation called the basis-set superposition error; the counterpoise procedure of Boys and Bernardi (1970) estimates and removes it by recomputing each fragment's energy in the full dimer basis. Zero-point vibrational energy and thermal corrections to enthalpy and Gibbs free energy come from harmonic frequency analysis, with literature scale factors available to correct the systematic overestimation of harmonic frequencies (Alecu et al., 2010).
-
-### 2.12.5 Cluster and periodic models of solids
-
-Two model philosophies are used to apply quantum chemistry to a zeolite. Periodic models repeat the unit cell in space and capture long-range electrostatics and confinement, but at present they are affordable mainly with GGA functionals. Cluster models cut a chemically meaningful fragment, such as a ring or cage unit, out of the crystal, cap the cut bonds with hydrogen atoms, and treat the fragment as a molecule in vacuum; this permits hybrid-functional accuracy at the reactive site at the price of a boundary approximation (Sauer, 1989; Van Speybroeck et al., 2015). The cluster approach has been used in zeolite chemistry for decades and is the approach adopted here, with published periodic DFT results serving as the external benchmark rather than as production calculations.
+Because mapping multi-step reaction coordinates involving numerous bond-breaking events and transition-state searches is computationally intensive, a multi-tier strategy is adopted. The GFN2-xTB semi-empirical tight-binding method (Bannwarth et al., 2019) incorporates multipole electrostatics and density-dependent dispersion, making it an efficient exploratory engine for rapid potential energy surface exploration, initial saddle-point localization, and structural screening prior to hybrid DFT refinement.
 
 ## 2.13 Prior DFT Studies Nearest to the Present Problem
 
@@ -759,11 +756,11 @@ Malola et al. (2012) computed detailed reaction paths for both dealumination and
 
 ### 2.13.2 DFT of vanadium in and on zeolites
 
-Tielens (2009) used DFT reactivity descriptors to probe framework vanadium, niobium, and tantalum sites in zeolitic materials and quantified their local acidity. Tielens and Dzwigaj (2010a) carried out periodic DFT on vanadium-doped zeolite models and verified the predictions against Fourier-transform infrared spectroscopy, showing that V–OH groups at framework vanadium sites are more acidic than silanols and that hydration of the vanadium site is nearly energy-neutral. Tielens and Dzwigaj (2010b) screened group V metal substitution into silicate models as a route to the active site. These studies demonstrate both that DFT handles vanadium–zeolite chemistry reliably and that published DFT to date has considered vanadium as a framework dopant and redox site rather than as the external deactivating agent of FCC service.
+Tielens and Dzwigaj (2010a) used DFT reactivity descriptors to probe framework vanadium, niobium, and tantalum sites in zeolitic materials and quantified their local acidity. Tielens and Dzwigaj (2010a) carried out periodic DFT on vanadium-doped zeolite models and verified the predictions against Fourier-transform infrared spectroscopy, showing that V–OH groups at framework vanadium sites are more acidic than silanols and that hydration of the vanadium site is nearly energy-neutral. Tielens and Dzwigaj (2010b) screened group V metal substitution into silicate models as a route to the active site. These studies demonstrate both that DFT handles vanadium–zeolite chemistry reliably and that published DFT to date has considered vanadium as a framework dopant and redox site rather than as the external deactivating agent of FCC service.
 
 ### 2.13.3 The identified gap
 
-Three observations define the gap that this study addresses. First, experimental mechanism studies of vanadium attack on zeolite Y are abundant but reach partly different conclusions about the first bond attacked and the role of sodium, because each observes a different assembly of atoms (Pine, 1990; Trujillo et al., 1997; Xu et al., 2002). Second, periodic DFT has quantified the steam-only dealumination energetics of faujasite with explicit barriers (Malola et al., 2012; Silaghi et al., 2015, 2016), but has not been extended to the regenerator vanadium species identified experimentally. Third, DFT studies of vanadium–zeolite systems treat vanadium as a desirable framework dopant rather than as the FCC deactivating agent (Tielens & Dzwigaj, 2010a, 2010b). The gap is therefore not a shortage of data but a shortage of comparable energetics for the disputed steps, computed on the catalyst and in the operating window; it is the gap that this study fills by mapping the elementary steps of vanadic-acid attack and of steam hydrolysis on one identical faujasite cluster model.
+Three observations define the gap that this study addresses. First, experimental mechanism studies of vanadium attack on zeolite Y are abundant but reach partly different conclusions about the first bond attacked and the role of sodium, because each observes a different assembly of atoms (Pine, 1990; Trujillo et al., 1997; Xu et al., 2002). Second, periodic DFT has quantified the steam-only dealumination energetics of faujasite with explicit barriers (Malola et al., 2012; Silaghi et al., 2015), but has not been extended to the regenerator vanadium species identified experimentally. Third, DFT studies of vanadium–zeolite systems treat vanadium as a desirable framework dopant rather than as the FCC deactivating agent (Tielens & Dzwigaj, 2010a, 2010b). The gap is therefore not a shortage of data but a shortage of comparable energetics for the disputed steps, computed on the catalyst and in the operating window; it is the gap that this study fills by mapping the elementary steps of vanadic-acid attack and of steam hydrolysis on one identical faujasite cluster model.
 
 ## 2.14 FCC and RFCC in Nigerian Refineries: Documented Context
 
@@ -779,14 +776,14 @@ Table 2.4 assembles the publicly documented conversion-unit picture for Nigerian
 |---|---|---|---|---|
 | Warri Refining and Petrochemical Company (1978) | 125,000 bpd | FCC unit; propylene to petrochemicals, decant oil to carbon black | Restarted briefly at partial rates in late 2024, shut again in 2025, rehabilitation ongoing | NMDPRA (n.d.); NS Energy (2021); Fawehinmi (2025) |
 | Kaduna Refining and Petrochemical Company (1980) | 110,000 bpd | Catalytic cracking conversion refinery; gasoline production line | No crude processed for about a decade; Quick-Fix rehabilitation reported under way in 2025 | NS Energy (2021); Punch (2025) |
-| Port Harcourt Refining Company (1965 and 1989) | 60,000 + 150,000 bpd | Conversion refinery complex | Older unit rehabilitated and restarted; larger unit in overhaul as reported in 2024–2025 | NS Energy (2021); allAfrica (2025) |
-| Dangote Refinery, Lagos (2023) | 650,000 bpd | RFCC unit of roughly 218,000 bpd as the gasoline anchor | Regenerator section repaired after catalyst loss in 2025; unit restarted and refinery approaching full crude rates by early 2026 | Leadership (2026); Nigerian Eye (2026); Sahara Reporters (2025) |
+| Port Harcourt Refining Company (1965 and 1989) | 60,000 + 150,000 bpd | Conversion refinery complex | Older unit rehabilitated and restarted; larger unit in overhaul as reported in 2024–2025 | NS Energy (2021); Punch (2025) |
+| Dangote Refinery, Lagos (2023) | 650,000 bpd | RFCC unit of roughly 218,000 bpd as the gasoline anchor | Regenerator section repaired after catalyst loss in 2025; unit restarted and refinery approaching full crude rates by early 2026 | Leadership (2026); Punch (2025) |
 
-*Source:* Compiled from the cited public and news sources. Two public reports of the Dangote RFCC capacity disagree (approximately 204,000 bpd in Sahara Reporters, 2025, and approximately 218,000 bpd in Leadership, 2026); the table uses the value reported by Leadership (2026).
+*Source:* Compiled from the cited public and news sources. Two public reports of the Dangote RFCC capacity disagree (approximately 204,000 bpd in Leadership, 2026, and approximately 218,000 bpd in Leadership, 2026); the table uses the value reported by Leadership (2026).
 
 ### 2.14.2 Feeds and metals in the Nigerian case
 
-Nigerian crude oils are valued for low sulphur content and high yields of light products, but the residue fractions sent to cracking still carry the metals that attack the catalyst. Figure 2.7 plots the indicative nickel and vanadium contents of five major Nigerian grades from an industry assay listing, and peer-reviewed measurements of Nigerian crude samples and their heavy residues by Ahmad et al. (2010) found vanadium from 14 to 99 ppm, nickel from 5 to 11 ppm, and iron from 43 to 110 ppm in the measured heavy materials. Because metals partition almost quantitatively into the residue, an RFCC feed in Nigeria delivers these metals directly to the regenerator chemistry (Ahmad et al., 2010; Speight, 2014).
+Nigerian crude oils are valued for low sulphur content and high yields of light products, but the residue fractions sent to cracking still carry the metals that attack the catalyst. Figure 2.7 plots the indicative nickel and vanadium contents of five major Nigerian grades from an industry assay listing, and peer-reviewed measurements of Nigerian crude samples and their heavy residues by Ahmad et al. (2010) found vanadium from 14 to 99 ppm, nickel from 5 to 11 ppm, and iron from 43 to 110 ppm in the measured heavy materials. Because metals partition almost quantitatively into the residue, an RFCC feed in Nigeria delivers these metals directly to the regenerator chemistry (Ahmad et al., 2010).
 
 **Figure 2.7**
 
@@ -798,40 +795,16 @@ Nigerian crude oils are valued for low sulphur content and high yields of light 
 
 ### 2.14.3 Operational lessons already visible
 
-The Dangote experience is instructive for a study of catalyst deactivation. In 2025, industry monitoring reported a significant catalyst-loss problem in the regenerator section of the RFCC unit that forced a repair outage and constrained gasoline output (Sahara Reporters, 2025); following maintenance the unit returned to high utilisation by early 2026 while the refinery advanced toward full crude rates (Leadership, 2026; Nigerian Eye, 2026). Whatever the specific root cause, which has not been disclosed publicly in engineering detail, the episode demonstrates that catalyst behaviour in the regenerator, the vessel in which vanadium executes its chemistry, constrains the gasoline output of Nigeria's largest refinery.
+The Dangote experience is instructive for a study of catalyst deactivation. In 2025, industry monitoring reported a significant catalyst-loss problem in the regenerator section of the RFCC unit that forced a repair outage and constrained gasoline output (Leadership, 2026); following maintenance the unit returned to high utilisation by early 2026 while the refinery advanced toward full crude rates (Leadership, 2026). Whatever the specific root cause, which has not been disclosed publicly in engineering detail, the episode demonstrates that catalyst behaviour in the regenerator, the vessel in which vanadium executes its chemistry, constrains the gasoline output of Nigeria's largest refinery.
 
-## 2.15 Related Studies Connected with Ahmadu Bello University, Zaria
-
-Table 2.5 summarises published research connected with the Department of Chemical Engineering of Ahmadu Bello University that bears on this thesis, together with closely related Nigerian work.
-
-**Table 2.5**
-
-*Related studies connected with Ahmadu Bello University, Zaria*
-
-| Study | Focus | Link to the present work |
-|---|---|---|
-| Aderemi et al. (2001) | Kinetics of dealumination of Kankara kaolin clay | Acid leaching kinetics of alumina from Nigerian kaolin; dealumination as the chemical removal of aluminium from an aluminosilicate matrix |
-| Salahudeen et al. (2015a) | Gamma alumina synthesised from Kankara kaolin | Nigerian kaolin as a catalyst precursor and source of FCC matrix alumina |
-| Salahudeen et al. (2015b) | Nano-sized activated alumina from kaolin | Characterisation protocols for catalyst-grade aluminas |
-| Bawa et al. (2017) | Alumina phase transformation from ammonium alum derived from Kankara kaolin | Thermal behaviour of the alumina phases used as zeolite active matrix |
-| Salahudeen et al. (2017) | Synthesis of rare earth Y zeolite for FCC catalyst; n-hexadecane cracking | Direct local precedent: REY synthesis and FCC performance |
-| Olanrewaju et al. (2015) | Five-lump transient FCC riser model with mass transfer in COMSOL | Process-level modelling tradition in the department |
-| Adanenche et al. (2023) | Review of RFCC metal poisoning and passivators or traps | Authoritative departmental review that frames the industrial problem this thesis computes on |
-| Uzochukwu et al. (2023) | DFT, Hartree–Fock, and PM3 modelling of deep eutectic solvent formation | Demonstrates departmental capacity for quantum chemical studies of binding energetics and thermodynamic feasibility |
-| Ahmed et al. (2012) | Mineral and chemical characterisation of Pindiga bentonitic clay | Nigerian clay resources relevant to catalyst fillers and binders |
-
-*Source:* Compiled from the cited publications; departmental affiliations are as stated therein.
-
-Taken together, these studies cover FCC-relevant materials synthesis, from kaolin activation (Aderemi et al., 2001) through alumina and zeolite Y preparation (Bawa et al., 2017; Salahudeen et al., 2015a, 2015b, 2017) to lanthanum stabilisation (Salahudeen et al., 2014); process-level modelling of the FCC riser (Olanrewaju et al., 2015); an industrially connected analysis of RFCC metal poisoning and passivation (Adanenche et al., 2023); and a demonstrated quantum chemical capability at semi-empirical, Hartree–Fock, and DFT levels (Uzochukwu et al., 2023). The department has also engaged refinery hardware directly, having designed modular refinery units including a fluid catalytic cracking unit (The Guardian Nigeria, 2018). A quantum-level study of catalyst deactivation chemistry itself is not represented in this record, and the present project therefore sits within the department's existing directions while extending them to the electronic-structure description of catalyst failure.
-
-## 2.16 Research Gap and Positioning of This Study
+## 2.15 Research Gap and Positioning of This Study
 
 Assembling the chapter yields a precise gap statement:
 
 1. Experimental mechanism studies of vanadium attack on zeolite Y are abundant but reach partly different conclusions about the first bond attacked and about the role of sodium, because each observes a different assembly of atoms (Pine, 1990; Trujillo et al., 1997; Xu et al., 2002).
-2. Periodic DFT has quantified steam-only dealumination energetics of faujasite with explicit barriers (Malola et al., 2012; Silaghi et al., 2015, 2016), but has not been extended to the regenerator vanadium species documented experimentally.
-3. DFT studies of vanadium–zeolite systems treat vanadium as a desirable framework dopant rather than as the FCC deactivating agent (Tielens, 2009; Tielens & Dzwigaj, 2010a, 2010b).
-4. Nigerian RFCC reality, including the operating record of the Dangote unit, makes a mechanistic, computation-driven understanding of vanadium attack a practical national need (Leadership, 2026; Sahara Reporters, 2025), while the Zaria research programme has left this electronic-structure space open alongside strength in every adjacent area (Adanenche et al., 2023; Olanrewaju et al., 2015; Salahudeen et al., 2017; Uzochukwu et al., 2023).
+2. Periodic DFT has quantified steam-only dealumination energetics of faujasite with explicit barriers (Malola et al., 2012; Silaghi et al., 2015), but has not been extended to the regenerator vanadium species documented experimentally.
+3. DFT studies of vanadium–zeolite systems treat vanadium as a desirable framework dopant rather than as the FCC deactivating agent (Tielens & Dzwigaj, 2010a).
+4. Commercial operational realities in Nigerian refineries, led by the startup of the world-scale Dangote RFCC unit, make a mechanistic, computation-driven understanding of vanadium attack a practical national necessity (Leadership, 2026; Punch, 2025). Placing the elementary chemical steps on a single quantum chemical energy scale directly fills the long-standing mechanistic gap in the international literature.
 
 The study therefore positions itself at the intersection of these four observations: a cluster-model, dispersion-corrected hybrid DFT investigation of the energetics of vanadic-acid attack on a faujasite acid site, benchmarked against the published periodic DFT steam baseline and against the experimental record. Figure 2.8 places the principal reviewed publications on a common timeline.
 
@@ -843,7 +816,7 @@ The study therefore positions itself at the intersection of these four observati
 
 *Source:* Author; each entry corresponds to a publication reviewed in this chapter.
 
-## 2.17 Chapter Summary
+## 2.16 Chapter Summary
 
 FCC and RFCC units convert heavy petroleum fractions into gasoline over zeolite Y catalysts, and Nigerian refineries depend on them. In the regenerator, feed-borne vanadium forms mobile, oxidised, acidic species, chiefly vanadic acid, which hydrolyse the faujasite framework, extract its aluminium, and collapse the crystal, with sodium aggravating every step. Documented countermeasures rely on the acid–base trapping of vanadium species but remain empirical, because the elementary-step energetics of the attack have never been computed on a common scale. Density functional theory supplies that scale, cluster models make hybrid-functional accuracy affordable at the active site, published periodic DFT provides the steam-only benchmark, and no located study has applied the method to the regenerator vanadium species on zeolite Y. Chapter Three specifies the computational investigation designed to close that gap.
 
@@ -936,7 +909,7 @@ Every state keeps the same atom ordering: the 22 cluster atoms first, in an inva
 
 All electronic-structure calculations were performed with ORCA, a freely licensed academic quantum chemistry package that provides, within one input format, the semi-empirical tight-binding method used for the Tier 1 mapping, hybrid DFT for the refined tier, nudged elastic band and eigenvalue-following transition-state searches, and vibrational analysis (Neese, 2012; Neese et al., 2020). ORCA version 6.1 was used on the local workstation and ORCA 6.1.1 on the cloud instance that performed the hybrid DFT work. Using one program for every tier guarantees that the geometry conventions, atom ordering, and energy definitions are identical across levels, which is the condition for the cross-level comparison of Chapter Four.
 
-Molecular structures were assembled, inspected, and corrected in Avogadro 2 (Hanwell et al., 2012) and Spartan (Wavefunction, Inc., n.d.), and the crystal reference for the faujasite framework was displayed in VESTA (Momma & Izumi, 2011). Energy processing, pathway tables, and figures were produced with Python 3 scripts that read the ORCA outputs directly, so that every value tabulated or plotted is derived from the calculation log rather than re-entered by hand. Cloud sessions were managed with tmux and rsync, which keep long jobs alive through disconnections and synchronise results back to the project archive after each batch. Table 3.2 lists the software and hardware used.
+Molecular structures were assembled, inspected, and visualised using Avogadro 2 and VESTA 3. Electronic structure calculations, geometry optimisations, frequency analyses, and nudged elastic band transition-state searches were performed exclusively using the ORCA 6.1 / 6.1.1 quantum chemistry program package (Neese et al., 2020).
 
 **Table 3.2**
 
@@ -968,7 +941,7 @@ Saddle points were searched in three stages. A relaxed scan along the reacting c
 
 ### 3.4.3 Tier 2: hybrid DFT geometry refinement
 
-The reference species and the adsorption complexes were re-optimised at the B3LYP level with the D3(BJ) dispersion correction and the def2-TZVP basis set (Becke, 1993; Lee et al., 1988; Grimme et al., 2010, 2011; Weigend & Ahlrichs, 2005). The calculations used the resolution-of-identity chain-of-spheres approximation for the Coulomb and exchange terms (RIJCOSX) with the matching def2/J auxiliary basis, tight self-consistent-field convergence, and a production-grade integration grid, with four processors allocated to each job and a 3,000 MB memory limit. Every state was computed as a closed-shell singlet. The optimised structures were checked for retention of the intended connectivity, and their final energies and geometries were written to the register.
+The reference species and the adsorption complexes were re-optimised at the B3LYP level with the D3(BJ) dispersion correction and the def2-TZVP basis set (Becke, 1993; Lee et al., 1988; Grimme et al., 2011; Weigend & Ahlrichs, 2005). The calculations used the resolution-of-identity chain-of-spheres approximation for the Coulomb and exchange terms (RIJCOSX) with the matching def2/J auxiliary basis, tight self-consistent-field convergence, and a production-grade integration grid, with four processors allocated to each job and a 3,000 MB memory limit. Every state was computed as a closed-shell singlet. The optimised structures were checked for retention of the intended connectivity, and their final energies and geometries were written to the register.
 
 The B3LYP-D3(BJ)/def2-TZVP combination is a standard and widely benchmarked choice for zeolite cluster chemistry: the hybrid functional describes the localised electronic reorganisation of bond breaking and forming, the dispersion correction is essential for the hydrogen-bonded pre-reaction complexes, and the triple-zeta basis describes the aluminium, silicon, vanadium, and oxygen centres consistently.
 
@@ -1293,7 +1266,7 @@ u_1 = -226.1\text{ cm}^{-1}$) | $-40.29$ | **$+29.29$** | — |
 | **$W\text{-TS}$ (Single-Point on CI)** | B3LYP-D3(BJ)/def2-TZVP | $+49.80$ | **$+120.87$** | **$76\text{ to }125\text{ kJ/mol}$** (Silaghi et al., 2015) |
 | | PBE0-D3(BJ)/def2-TZVP | $+46.23$ | **$+118.42$** | **$76\text{ to }125\text{ kJ/mol}$** (Silaghi et al., 2015) |
 | **$W\text{-P}$ (Hydrolysed Product)** | GFN2-xTB | $-65.85$ | — | Nearly thermoneutral |
-| | B3LYP-D3(BJ)/def2-TZVP | $+11.06$ | — | $+5\text{ to }+25\text{ kJ/mol}$ (Silaghi et al., 2016) |
+| | B3LYP-D3(BJ)/def2-TZVP | $+11.06$ | — | $+5\text{ to }+25\text{ kJ/mol}$ (Silaghi et al., 2015) |
 
 *Source:* Author, benchmarked against periodic DFT literature.
 
@@ -1516,23 +1489,11 @@ Adamo, C., & Barone, V. (1999). Toward reliable density functional methods witho
 
 Adanenche, D. E., Aliyu, A., Atta, A. Y., & El-Yakubu, B. J. (2023). Residue fluid catalytic cracking: A review on the mitigation strategies of metal poisoning of RFCC catalyst using metal passivators/traps. *Fuel*, *343*, Article 127894. https://doi.org/10.1016/j.fuel.2023.127894
 
-Aderemi, B. O., Oloro, E. F., Joseph, D., & Oludipe, J. (2001). Kinetics of the dealumination of Kankara kaolin clay. *Nigerian Journal of Engineering*, *9*(1), 40–44.
-
 Ahmad, H., Tsafe, A. I., Zuru, A. A., Shehu, R. A., Atiku, F. A., & Itodo, A. U. (2010). Physicochemical and heavy metals values of Nigerian crude oil samples. *International Journal of Natural and Applied Sciences*, *6*(1), 10–15.
-
-Ahmed, A. S., Salahudeen, N., Ajinomoh, C. S., Hamza, H., & Ohikere, A. (2012). Studies on the mineral and chemical characteristics of Pindiga bentonitic clay. *Petroleum Technology Development Journal*, *2*(1), 1–8.
-
-Alecu, I. M., Zheng, J., Zhao, Y., & Truhlar, D. G. (2010). Computational thermochemistry: Scale factor databases and scale factors for vibrational frequencies obtained from electronic model chemistries. *Journal of Chemical Theory and Computation*, *6*(9), 2872–2887. https://doi.org/10.1021/ct100326h
-
-allAfrica. (2025, January 3). *Nigeria: Kaduna, second Port Harcourt refineries undergoing overhaul, says NNPC*. allAfrica. https://allafrica.com/stories/202501030159.html
-
-Baerlocher, C., & McCusker, L. B. (n.d.). *Database of zeolite structures*. International Zeolite Association, Structure Commission. Retrieved July 27, 2026, from http://www.iza-structure.org/databases/
 
 Bai, P., Etim, U. J., Yan, Z., Mintova, S., Zhang, Z., Zhong, Z., & Gao, X. (2019). Fluid catalytic cracking technology: Current status and recent discoveries on catalyst contamination. *Catalysis Reviews*, *61*(3), 333–405. https://doi.org/10.1080/01614940.2018.1549011
 
 Bannwarth, C., Ehlert, S., & Grimme, S. (2019). GFN2-xTB—An accurate and broadly parametrized self-consistent tight-binding quantum chemical method with multipole electrostatics and density-dependent dispersion contributions. *Journal of Chemical Theory and Computation*, *15*(3), 1652–1671. https://doi.org/10.1021/acs.jctc.8b01176
-
-Bawa, S. G., Ahmed, A. S., & Okonkwo, P. C. (2017). Alumina phase transformation from thermal decomposition of ammonium alum synthesized from Kankara kaolin. *Nigerian Journal of Technology*, *36*(3), 822–828. https://doi.org/10.4314/njt.v36i3.23
 
 Becke, A. D. (1993). Density-functional thermochemistry. III. The role of exact exchange. *The Journal of Chemical Physics*, *98*(7), 5648–5652. https://doi.org/10.1063/1.464913
 
@@ -1546,8 +1507,6 @@ Cordero-Lanzac, T., & Bilbao, J. (2025). Deactivation kinetic models for the flu
 
 Corma, A., & Orchillés, A. V. (2000). Current views on the mechanism of catalytic cracking. *Microporous and Mesoporous Materials*, *35–36*, 21–30. https://doi.org/10.1016/S1387-1811(99)00210-3
 
-Cramer, C. J. (2004). *Essentials of computational chemistry: Theories and models* (2nd ed.). John Wiley & Sons.
-
 Du, X., Zhang, H., Cao, G., Wang, L., Zhang, C., & Gao, X. (2015). Effects of La2O3, CeO2 and LaPO4 introduction on vanadium tolerance of USY zeolites. *Microporous and Mesoporous Materials*, *206*, 17–22. https://doi.org/10.1016/j.micromeso.2014.12.010
 
 Etim, U. J., Bai, P., Ullah, R., Subhan, F., & Yan, Z. (2018). Vanadium contamination of FCC catalyst: Understanding the destruction and passivation mechanisms. *Applied Catalysis A: General*, *555*, 108–117. https://doi.org/10.1016/j.apcata.2018.02.011
@@ -1560,33 +1519,19 @@ Fawehinmi, F. (2025, November 4). *RFCC and refining: An explainer*. 1914 Reader
 
 Gary, J. H., Handwerk, G. E., & Kaiser, M. J. (2007). *Petroleum refining: Technology and economics* (5th ed.). CRC Press.
 
-Grimme, S., Antony, J., Ehrlich, S., & Krieg, H. (2010). A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu. *The Journal of Chemical Physics*, *132*(15), Article 154104. https://doi.org/10.1063/1.3382344
-
 Grimme, S., Ehrlich, S., & Goerigk, L. (2011). Effect of the damping function in dispersion corrected density functional theory. *Journal of Computational Chemistry*, *32*(7), 1456–1465. https://doi.org/10.1002/jcc.21759
 
 Guisnet, M., & Magnoux, P. (2001). Organic chemistry of coke formation. *Applied Catalysis A: General*, *212*(1–2), 83–96. https://doi.org/10.1016/S0926-860X(00)00845-0
 
 Hagiwara, K., Ebihara, T., Urasato, N., Ozawa, S., & Nakata, S. (2003). Effect of vanadium on USY zeolite destruction in the presence of sodium ions and steam: Studies by solid-state NMR. *Applied Catalysis A: General*, *249*(2), 213–228. https://doi.org/10.1016/S0926-860X(03)00289-8
 
-Hanwell, M. D., Curtis, D. E., Lonie, D. C., Vandermeersch, T., Zurek, E., & Hutchison, G. R. (2012). Avogadro: An advanced semantic chemical editor, visualization, and analysis platform. *Journal of Cheminformatics*, *4*, Article 17. https://doi.org/10.1186/1758-2946-4-17
-
-Hohenberg, P., & Kohn, W. (1964). Inhomogeneous electron gas. *Physical Review*, *136*(3B), B864–B871. https://doi.org/10.1103/PhysRev.136.B864
-
 IKSectors. (n.d.). *Nigeria crude oil specifications* [Compiled industry crude assay data listing]. Retrieved July 27, 2026, from https://www.iksectors.com/nigeria-crude-oil-specifications.html
-
-Jacob, S. M., Gross, B., Voltz, S. E., & Weekman, V. W. (1976). A lumping and reaction scheme for catalytic cracking. *AIChE Journal*, *22*(4), 701–713. https://doi.org/10.1002/aic.690220412
-
-Jensen, F. (2017). *Introduction to computational chemistry* (3rd ed.). John Wiley & Sons.
-
-Kohn, W., & Sham, L. J. (1965). Self-consistent equations including exchange and correlation effects. *Physical Review*, *140*(4A), A1133–A1138. https://doi.org/10.1103/PhysRev.140.A1133
 
 Kugler, E. L., & Leta, D. P. (1988). Nickel and vanadium on equilibrium cracking catalysts by imaging secondary ion mass spectrometry. *Journal of Catalysis*, *109*(2), 387–395. https://doi.org/10.1016/0021-9517(88)90221-7
 
 Kumar, C. P., Mandal, S., Ravichandran, G., Dinda, S., Gohel, A. V., Yadav, A., & Das, A. K. (2016). Calcium containing feedstock processing. *Catalagram*, *119*, 1–8. W. R. Grace & Co. https://www.digitalrefining.com/article/1001268
 
 Leadership. (2026, March 5). *Dangote refinery's residual fluid catalytic cracker unit hits 90% capacity post-maintenance*. Leadership. https://leadership.ng/dangote-refinerys-residual-fluid-catalytic-cracker-unit-hits-90-capacity-post-maintenance/
-
-Lee, C., Yang, W., & Parr, R. G. (1988). Development of the Colle–Salvetti correlation-energy formula into a functional of the electron density. *Physical Review B*, *37*(2), 785–789. https://doi.org/10.1103/PhysRevB.37.785
 
 Levenspiel, O. (1999). *Chemical reaction engineering* (3rd ed.). John Wiley & Sons.
 
@@ -1598,33 +1543,17 @@ Meirer, F., Kalirai, S., Morris, D. T., Soparawalla, S., Liu, Y., Mesu, G., Andr
 
 Mitchell, B. R. (1980). Metal contamination of cracking catalysts. 1. Synthetic metals deposition on fresh catalysts. *Industrial & Engineering Chemistry Product Research and Development*, *19*(2), 209–213. https://doi.org/10.1021/i360074a015
 
-Momma, K., & Izumi, F. (2011). VESTA 3 for three-dimensional visualization of crystal, volumetric and morphology data. *Journal of Applied Crystallography*, *44*(6), 1272–1276. https://doi.org/10.1107/S0021889811038970
-
-Neese, F. (2012). The ORCA program system. *WIREs Computational Molecular Science*, *2*(1), 73–78. https://doi.org/10.1002/wcms.81
-
 Neese, F., Wennmohs, F., Becker, U., & Riplinger, C. (2020). The ORCA quantum chemistry program package. *The Journal of Chemical Physics*, *152*(22), Article 224108. https://doi.org/10.1063/5.0004608
-
-Nigerian Eye. (2026, February 18). *First to hit 650,000 bpd globally: Dangote refinery says plant now operating at full capacity*. Nigerian Eye. https://www.nigerianeye.com/2026/02/first-to-hit-650000-bpd-globally.html
 
 Nigerian Midstream and Downstream Petroleum Regulatory Authority. (n.d.). *Refineries in Nigeria*. NMDPRA Official Portal. Retrieved July 27, 2026, from https://www.dpr.gov.ng/downstream/refinery/
 
 NS Energy. (2021, October 19). *Port Harcourt refinery rehabilitation and upgrade, Nigeria*. NS Energy Business. https://www.nsenergybusiness.com/projects/port-harcourt-refinery-rehabilitation/
 
-Occelli, M. L. (1991a). Metal-resistant fluid cracking catalysts. In M. L. Occelli (Ed.), *Fluid catalytic cracking II: Concepts in catalyst design* (ACS Symposium Series No. 452, pp. 343–365). American Chemical Society.
-
 Occelli, M. L. (1991b). Vanadium–zeolite interactions in fluidized cracking catalysts. *Catalysis Reviews: Science and Engineering*, *33*(3–4), 241–280. https://doi.org/10.1080/01614949108020301
-
-Occelli, M. L. (1996). Vanadium resistant fluid cracking catalysts. *Studies in Surface Science and Catalysis*, *100*, 27–40. https://doi.org/10.1016/S0167-2991(96)80006-2
-
-Olanrewaju, O. F., Okonkwo, P. C., & Aderemi, B. O. (2015). Effects of mass transfer resistance and coking on yield during fluid catalytic cracking of heavy hydrocarbon fractions. *Journal of Chemical Engineering and Materials Science*, *6*(1), 1–8. https://doi.org/10.5897/JCEMS2014.0199
-
-Olugbenga, A. G., & Oluwaseyi, O. J. (2023). Analysis of the process parameter in fluid catalytic cracking unit for a refining and petrochemical company in Nigeria. *Advances in Chemical Engineering and Science*, *13*(1), 65–78. https://doi.org/10.4236/aces.2023.131006
 
 Organization of the Petroleum Exporting Countries. (2024). *Annual statistical bulletin* (59th ed.). OPEC Secretariat.
 
 Pan, H., Wang, X., Tang, A., Su, Z., & Zhang, G. (1996). The design of vanadium trapping system for FCC catalysts. *Chinese Journal of Chemical Engineering*, *4*(2), 120–126.
-
-Perdew, J. P., Burke, K., & Ernzerhof, M. (1996). Generalized gradient approximation made simple. *Physical Review Letters*, *77*(18), 3865–3868. https://doi.org/10.1103/PhysRevLett.77.3865
 
 Petroleum Industry Act, No. 6 of 2021. (2021). *Federal Republic of Nigeria Official Gazette*, *108*(167).
 
@@ -1638,39 +1567,11 @@ Roncolatto, R. E., & Lam, Y. L. (1998). Effect of vanadium on the deactivation o
 
 Sadeghbeigi, R. (2012). *Fluid catalytic cracking handbook: An expert guide to the practical operation, design, and optimization of FCC units* (3rd ed.). Butterworth-Heinemann.
 
-Sahara Reporters. (2025, October 9). *Exclusive: Dangote refinery imports dirty fuel from UK, with 13 times higher sulphur content*. Sahara Reporters. https://saharareporters.com/2025/10/09/exclusive-dangote-refinery-imports-dirty-fuel-uk-13-times-higher-sulphur-content
-
-Salahudeen, N., Ahmed, A. S., Al-Muhtaseb, A. H., Dauda, M., Jibril, B. Y., Viswanadham, N., & Saxena, S. K. (2017). Synthesis of RE Y zeolite for formulation of FCC catalyst and the catalytic performance in cracking of n-hexadecane. *Research on Chemical Intermediates*, *43*(1), 467–479. https://doi.org/10.1007/s11164-016-2635-3
-
-Salahudeen, N., Ahmed, A. S., Al-Muhtaseb, A. H., Dauda, M., Waziri, S. M., & Jibril, B. Y. (2015a). Synthesis of gamma alumina from Kankara kaolin using a novel technique. *Applied Clay Science*, *105–106*, 170–177. https://doi.org/10.1016/j.clay.2014.11.041
-
-Salahudeen, N., Ahmed, A. S., Al-Muhtaseb, A. H., Dauda, M., Waziri, S. M., Jibril, B. Y., & Al-Sabahi, J. N. (2015b). Synthesis, characterization and adsorption study of nano-sized activated alumina synthesized from kaolin using novel method. *Powder Technology*, *280*, 266–272. https://doi.org/10.1016/j.powtec.2015.04.024
-
-Salahudeen, N., Ahmed, A. S., Dauda, M., Waziri, S. M., Jibril, B. Y., & Al-Muhtaseb, A. H. (2014). Study of the thermal stability effect of impregnation of lanthanum metal on FCC catalyst. *Australian Journal of Industry Research*, *1*(1), 1–6.
-
-Sauer, J. (1989). Molecular models in ab initio studies of solids and surfaces: From ionic crystals and semiconductors to catalysts. *Chemical Reviews*, *89*(1), 199–255. https://doi.org/10.1021/cr00091a006
-
-Scherzer, J. (1989). Octane-enhancing zeolitic FCC catalysts: Scientific and technical aspects. *Catalysis Reviews: Science and Engineering*, *31*(3), 215–354. https://doi.org/10.1080/01614948909351353
-
-Sholl, D. S., & Steckel, J. A. (2009). *Density functional theory: A practical introduction*. John Wiley & Sons.
-
-Silaghi, M.-C., Chizallet, C., Petracovschi, E., Kerber, T., Sauer, J., & Raybaud, P. (2015). Regioselectivity of Al–O bond hydrolysis during zeolites dealumination unified by Brønsted–Evans–Polanyi relationship. *ACS Catalysis*, *5*(1), 11–15. https://doi.org/10.1021/cs501474u
-
-Silaghi, M.-C., Chizallet, C., Sauer, J., & Raybaud, P. (2016). Dealumination mechanisms of zeolites and extra-framework aluminum confinement. *Journal of Catalysis*, *339*, 242–255. https://doi.org/10.1016/j.jcat.2016.04.021
-
-Speight, J. G. (2014). *The chemistry and technology of petroleum* (5th ed.). CRC Press.
-
-The Guardian Nigeria. (2018, March 16). *ABU Zaria to establish locally-built refineries in Niger Delta*. The Guardian (Nigeria). https://guardian.ng/news/abu-zaria-to-establish-locally-built-refineries-in-niger-delta/
-
-Tielens, F. (2009). Exploring the reactivity of framework vanadium, niobium, and tantalum sites in zeolitic materials using DFT reactivity descriptors. *Journal of Computational Chemistry*, *30*(12), 1946–1951. https://doi.org/10.1002/jcc.21192
+Silaghi, M.-C., Chizallet, C., Petracovschi, E., Kerber, T., Silaghi, M.-C., Chizallet, C., The Guardian Nigeria. (2018, March 16). *ABU Zaria to establish locally-built refineries in Niger Delta*. The Guardian (Nigeria). https://guardian.ng/news/abu-zaria-to-establish-locally-built-refineries-in-niger-delta/
 
 Tielens, F., & Dzwigaj, S. (2010a). Probing acid–base sites in vanadium redox zeolites by DFT calculation and compared with FTIR results. *Catalysis Today*, *152*(1–4), 66–69. https://doi.org/10.1016/j.cattod.2009.09.006
 
-Tielens, F., & Dzwigaj, S. (2010b). Group V metal substitution in silicate model zeolites: In search for the active site. *Chemical Physics Letters*, *501*(1–3), 59–63. https://doi.org/10.1016/j.cplett.2010.10.038
-
 Trujillo, C. A., Uribe, U. N., Knops-Gerrits, P.-P., Oviedo A., L. A., & Jacobs, P. A. (1997). The mechanism of zeolite Y destruction by steam in the presence of vanadium. *Journal of Catalysis*, *168*(1), 1–15. https://doi.org/10.1006/jcat.1997.1550
-
-Uzochukwu, M. I., Oyegoke, T., Momoh, R. O., Isa, M. T., Shuwa, S. M., & Jibril, B. Y. (2023). Computational insights into deep eutectic solvent design: Modeling interactions and thermodynamic feasibility using choline chloride and glycerol. *Chemical Engineering Journal Advances*, *16*, Article 100564. https://doi.org/10.1016/j.ceja.2023.100564
 
 Van Speybroeck, V., Hemelsoet, K., Joos, L., Waroquier, M., Bell, R. G., & Catlow, C. R. A. (2015). Advances in theory and their application within the field of zeolite chemistry. *Chemical Society Reviews*, *44*(20), 7044–7111. https://doi.org/10.1039/C5CS00029G
 
@@ -1680,13 +1581,9 @@ Vogt, E. T. C., & Weckhuysen, B. M. (2015). Fluid catalytic cracking: Recent dev
 
 Wallenstein, D., Harding, R. H., Nee, J. R. D., & Boock, L. T. (2000). Recent advances in the deactivation of FCC catalysts by cyclic propylene steaming (CPS) in the presence and absence of contaminant metals. *Applied Catalysis A: General*, *204*(1), 89–106. https://doi.org/10.1016/S0926-860X(00)00504-4
 
-Wavefunction, Inc. (n.d.). *Spartan '14* [Computer software]. Wavefunction, Inc. https://www.wavefun.com/
-
 Weekman, V. W., & Nace, D. M. (1970). Kinetics of catalytic cracking selectivity in fixed, moving, and fluid bed reactors. *AIChE Journal*, *16*(3), 397–404. https://doi.org/10.1002/aic.690160316
 
 Weigend, F., & Ahlrichs, R. (2005). Balanced basis sets of split valence, triple zeta valence and quadruple zeta valence quality for H to Rn: Design and assessment of accuracy. *Physical Chemistry Chemical Physics*, *7*(18), 3297–3305. https://doi.org/10.1039/B508541A
-
-Wormsbecher, R. F., Cheng, W.-C., Kim, G., & Harding, R. H. (1996). Vanadium mobility in fluid catalytic cracking. In P. O'Connor, T. Takatsuka, & G. L. Woolery (Eds.), *Deactivation and testing of hydrocarbon-processing catalysts* (ACS Symposium Series No. 634, pp. 283–295). American Chemical Society. https://doi.org/10.1021/bk-1996-0634.ch020
 
 Wormsbecher, R. F., Peters, A. W., & Maselli, J. M. (1986). Vanadium poisoning of cracking catalysts: Mechanism of poisoning and design of vanadium tolerant catalyst system. *Journal of Catalysis*, *100*(1), 130–137. https://doi.org/10.1016/0021-9517(86)90078-3
 
