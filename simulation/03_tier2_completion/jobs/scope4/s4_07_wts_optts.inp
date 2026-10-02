@@ -1,0 +1,33 @@
+# SCOPE 4  |  Tier 2 saddle points: B3LYP-D3(BJ)/def2-TZVP, OptTS + FREQ
+# State: W-TS steam hydrolysis saddle  |  register row: W-TS-T2-V05
+# Start: TIER 1 candidate optts2_bandD_ci (1 imaginary mode, -226.10 cm-1; barrier
+#      +29.29 kJ/mol vs W-PRC, still pending A4).
+# Why: the steam baseline is the one pathway with a published benchmark range
+#      (76-125 kJ/mol, Silaghi et al. 2015). A Tier 2 barrier inside that range is a
+#      strong validation statement for the whole model.
+# Pre-registered rule: same A4 test as V-TS2; if it fails, say so.
+# Cost warning: OptTS with an exact initial Hessian (%geom Calc_Hess true) on 30
+#      atoms is the most expensive job class in this package; treat 10-60 h per job
+#      as the honest bracket and run them one at a time with a budget stop.
+# Gate: TERMINATED NORMALLY + converged + exactly 1 imaginary mode animating the
+#      reacting bond; then the A4 displacement test.
+
+! B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF DefGrid3 OptTS Freq
+
+%pal nprocs 4 end
+%maxcore 3000
+
+%scf
+  MaxIter 300
+end
+
+%geom
+  Calc_Hess true
+  MaxIter 200
+end
+
+%freq
+  Temp 298.15, 1003.15
+end
+
+* xyzfile 0 1 xyz/w-ts.xyz

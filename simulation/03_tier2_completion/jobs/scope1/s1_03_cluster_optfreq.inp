@@ -1,0 +1,28 @@
+# SCOPE 1  |  *** THE CLUSTER MUST BE FIXED BEFORE ANY BINDING ENERGY IS QUOTED ***
+# State: bare FAU cluster  |  register row: cluster-T2-V02
+# Why: as the repository stands the only cluster output (cloud_results/opt_results/
+#      results/opt03_cluster.out) died by error termination in SCF gradient after 2
+#      geometry cycles (RMS gradient 3.4e-3, no convergence string) even though
+#      opt_manifest.csv records PASS. Every pathway zero and every binding energy in
+#      the thesis is referenced to this one number, so it is re-run here with FREQ.
+#      The crash looks like an MPI/IO failure at the gradient step, not chemistry.
+# Gate: TERMINATED NORMALLY + converged + 0 imaginary modes.
+# Retry rule: if it dies again in 'SCF gradient' with epoll warnings, set
+#             %pal nprocs 2 and re-run; that error is transport, not chemistry.
+# Start geometry: the TightOpt of the TiER 1 xTB minimum (xyz/cluster.xyz).
+#             xyz/cluster-crashed-frame.xyz is the un-converged DFT frame kept for the record.
+
+! B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF DefGrid3 Opt Freq TightOpt KDIIS SOSCF
+
+%pal nprocs 4 end
+%maxcore 3000
+
+%scf
+  MaxIter 300
+end
+
+%freq
+  Temp 298.15, 1003.15
+end
+
+* xyzfile 0 1 xyz/cluster.xyz

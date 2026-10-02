@@ -1,0 +1,38 @@
+# SCOPE 4  |  Tier 2 saddle points: B3LYP-D3(BJ)/def2-TZVP, OptTS + FREQ
+# State: V-TS2 first Al-O cleavage saddle  |  register row: V-TS2-T2-V06
+# Start: TIER 1 accepted saddle optts3_bandB_ci (1 imaginary mode, -78.21 cm-1,
+#      barrier +160.70 kJ/mol vs V-I1) - the one properly converged Tier 1 saddle.
+# Why: it is the only barrier in the vanadium route that carries the mechanism, and
+#      the A4 two-sided test FAILED at Tier 1 (the +0.01 nm displacement fell 107 kJ/mol
+#      away from V-I1 instead of within 5). The Tier 2 job is the make-or-break test.
+# Pre-registered decision rule (write it in the register BEFORE you look):
+#    ACCEPT only if TERMINATED NORMALLY + converged OptTS + exactly 1 imaginary mode
+#    AND the two +/-0.1 A mode-displacement OPT jobs (tools/gen_inputs.py --displace)
+#    land within 5 kJ/mol of V-I2 and V-I1 respectively.
+#    Anything else = 'not established at this level'; report the electronic barrier
+#    bracket instead and say so in the limitations.
+# Cost warning: OptTS with an exact initial Hessian (%geom Calc_Hess true) on 30
+#      atoms is the most expensive job class in this package; treat 10-60 h per job
+#      as the honest bracket and run them one at a time with a budget stop.
+# Gate: TERMINATED NORMALLY + converged + exactly 1 imaginary mode animating the
+#      reacting bond; then the A4 displacement test.
+
+! B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF DefGrid3 OptTS Freq
+
+%pal nprocs 4 end
+%maxcore 3000
+
+%scf
+  MaxIter 300
+end
+
+%geom
+  Calc_Hess true
+  MaxIter 200
+end
+
+%freq
+  Temp 298.15, 1003.15
+end
+
+* xyzfile 0 1 xyz/v-ts2.xyz

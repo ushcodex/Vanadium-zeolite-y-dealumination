@@ -1,0 +1,30 @@
+# SCOPE 4  |  Tier 2 minima: B3LYP-D3(BJ)/def2-TZVP, TightOpt + FREQ
+# State: V-TS1 chemisorption saddle (diagnostic)  |  register row: V-TS1-T2-V01 (previous version V07 only if you rerun it)
+# Start: the best band A candidate (optts_bandA_ci) - NOT a verified saddle.
+# Why: at the TIER 1 level every band A candidate slid into the same minimum and the
+#      +300 kJ/mol basin was reproduced from both displacement signs, i.e. the
+#      chemisorption barrier could not be established. This job is run as a plain
+#      OPT on purpose: if it slides to V-I1 or V-PRC at the Tier 2 level, that is the
+#      result to report ('chemisorption is barrierless'), not a failure.
+# Do NOT run this as OptTS. An OptTS on a non-saddle start burns days and returns a
+#      number that cannot be defended.
+# Expected: relaxed to a nearby minimum; identify which one by eye and by energy.
+# Gate: TERMINATED NORMALLY + 'THE OPTIMIZATION HAS CONVERGED' + 0 imaginary modes.
+# Wall-time: the closest measured job (opt04 V-PRC, 30 atoms, 4 cores) took 9 h 52 m
+#      for the optimisation alone; budget FREQ at 1.5-3x that. The 25-atom jobs are
+#      roughly 3x cheaper. Run these before the OptTS jobs.
+
+! B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF DefGrid3 Opt Freq TightOpt
+
+%pal nprocs 4 end
+%maxcore 3000
+
+%scf
+  MaxIter 300
+end
+
+%freq
+  Temp 298.15, 1003.15
+end
+
+* xyzfile 0 1 xyz/v-ts1.xyz

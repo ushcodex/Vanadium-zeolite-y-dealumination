@@ -1,0 +1,25 @@
+# SCOPE 4  |  Tier 2 minima: B3LYP-D3(BJ)/def2-TZVP, TightOpt + FREQ
+# State: V-P dealuminated product  |  register row: V-P-T2-V02
+# Start: TIER 1 accepted V-P_canonical (framework Al extracted as EFAL).
+# Why: the end-point of the whole pathway; its sign decides whether the extraction
+#      is exothermic at the Tier 2 level, which is the thesis headline.
+# Expected: minimum, 0 imaginary modes.
+# Gate: TERMINATED NORMALLY + 'THE OPTIMIZATION HAS CONVERGED' + 0 imaginary modes.
+# Wall-time: the closest measured job (opt04 V-PRC, 30 atoms, 4 cores) took 9 h 52 m
+#      for the optimisation alone; budget FREQ at 1.5-3x that. The 25-atom jobs are
+#      roughly 3x cheaper. Run these before the OptTS jobs.
+
+! B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF DefGrid3 Opt Freq TightOpt
+
+%pal nprocs 4 end
+%maxcore 3000
+
+%scf
+  MaxIter 300
+end
+
+%freq
+  Temp 298.15, 1003.15
+end
+
+* xyzfile 0 1 xyz/v-p.xyz

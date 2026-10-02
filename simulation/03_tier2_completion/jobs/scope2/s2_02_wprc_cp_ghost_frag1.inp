@@ -1,0 +1,29 @@
+# SCOPE 2  |  Boys-Bernardi counterpoise correction, PBE0-D3(BJ)/def2-TZVP
+# Complex: W-PRC (framework cluster + H2O, 25 atoms)
+# Why: the water side of the same comparison. Fragment 2 = H2O (atoms 22-24).
+#    E(supermolecule)  = final energy of s1_05_wprc_optfreq.out
+#    E(cluster, full basis) = Final energy of ..._ghost_frag2.out
+#    E(H2O, full basis)     = Final energy of ..._ghost_frag1.out
+# Gate: TERMINATED NORMALLY for both jobs.
+# Variant: GhostFrags {1} end -> fragment 1 becomes basis functions only.
+
+! PBE0 D3BJ def2-TZVP RIJCOSX def2/J TightSCF DefGrid3
+
+%pal nprocs 4 end
+%maxcore 3000
+
+%scf
+  MaxIter 300
+end
+
+%frag
+  Definition
+    1 {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21} end
+    2 {22 23 24} end
+  end
+end
+%geom
+  GhostFrags {1} end
+end
+
+* xyzfile 0 1 xyz/relaxed/w-prc.xyz

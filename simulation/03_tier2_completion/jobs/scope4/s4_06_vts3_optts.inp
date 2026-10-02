@@ -1,0 +1,33 @@
+# SCOPE 4  |  Tier 2 saddle points: B3LYP-D3(BJ)/def2-TZVP, OptTS + FREQ
+# State: V-TS3 final Al-O cleavage saddle  |  register row: V-TS3-T2-V06
+# Start: TIER 1 candidate optts3_bandC_ci (1 imaginary mode, -40.33 cm-1; barrier
+#      bracketed 483.80 - 488.54 kJ/mol vs V-I2).
+# Why: least urgent of the three saddles - the barrier is so large that the qualitative
+#      conclusion (the third cleavage is prohibitive) survives without it. Run last.
+# Watch: a -40 cm-1 imaginary mode is close to flat-mode noise. If it grows or the
+#      count changes at Tier 2, treat the saddle as not established.
+# Cost warning: OptTS with an exact initial Hessian (%geom Calc_Hess true) on 30
+#      atoms is the most expensive job class in this package; treat 10-60 h per job
+#      as the honest bracket and run them one at a time with a budget stop.
+# Gate: TERMINATED NORMALLY + converged + exactly 1 imaginary mode animating the
+#      reacting bond; then the A4 displacement test.
+
+! B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF DefGrid3 OptTS Freq
+
+%pal nprocs 4 end
+%maxcore 3000
+
+%scf
+  MaxIter 300
+end
+
+%geom
+  Calc_Hess true
+  MaxIter 200
+end
+
+%freq
+  Temp 298.15, 1003.15
+end
+
+* xyzfile 0 1 xyz/v-ts3.xyz
