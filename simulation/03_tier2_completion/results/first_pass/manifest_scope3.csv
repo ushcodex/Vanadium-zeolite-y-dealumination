@@ -1,0 +1,16 @@
+job,scope,status,final_energy_Eh,runtime_s,output_file
+pbe0_cluster,3,PASS,-1708.736038466437,138,results/pbe0_cluster.out
+pbe0_h2o,3,PASS,-76.377725397537,3,results/pbe0_h2o.out
+pbe0_h3vo4,3,PASS,-1246.479597897213,47,results/pbe0_h3vo4.out
+pbe0_v-prc,3,PASS,-2955.251083282212,434,results/pbe0_v-prc.out
+pbe0_w-prc,3,PASS,-1785.143710125366,177,results/pbe0_w-prc.out
+pbe0_cluster,3,SKIP,,0,results/pbe0_cluster.out
+pbe0_h2o,3,SKIP,,0,results/pbe0_h2o.out
+pbe0_h3vo4,3,SKIP,,0,results/pbe0_h3vo4.out
+pbe0_v-i1,3,PASS,-2955.261392548875,435,results/pbe0_v-i1.out
+pbe0_v-i2,3,PASS,-2955.261524727712,416,results/pbe0_v-i2.out
+pbe0_v-p,3,PASS,-2955.058281714289,570,results/pbe0_v-p.out
+pbe0_v-prc,3,SKIP,,0,results/pbe0_v-prc.out
+pbe0_v-ts2,3,PASS,-2955.086361526575,650,results/pbe0_v-ts2.out
+pbe0_w-p,3,PASS,-1785.122480008438,181,results/pbe0_w-p.out
+pbe0_w-prc,3,SKIP,,0,results/pbe0_w-prc.out

@@ -1,0 +1,6 @@
+job,scope,status,final_energy_Eh,runtime_s,output_file
+s1_01_h2o_optfreq,1,PASS,-76.426629795556,35,results/s1_01_h2o_optfreq.out
+s1_02_h3vo4_optfreq,1,PASS,-1246.825013958827,1098,results/s1_02_h3vo4_optfreq.out
+s1_03_cluster_optfreq,1,PASS,-1709.394093303452,10902,results/s1_03_cluster_optfreq.out
+s1_04_vprc_optfreq,1,PASS,-2956.254531846348,19703,results/s1_04_vprc_optfreq.out
+s1_05_wprc_optfreq,1,PASS,-1785.850554383119,12859,results/s1_05_wprc_optfreq.out

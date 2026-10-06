@@ -1,0 +1,8 @@
+# Minima completion: restart from cycle-90 geometry
+! B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF DefGrid3 Opt TightOpt Freq
+%pal nprocs 4 end
+%maxcore 3000
+%scf MaxIter 300 end
+%geom MaxIter 60 end
+%freq Temp 298.15, 1003.15 end
+* xyzfile 0 1 results/geom/v-i1.xyz

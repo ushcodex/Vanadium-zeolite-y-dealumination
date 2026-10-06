@@ -1,0 +1,23 @@
+==============================================================
+ Starting Tier 2 Completion Phase 2 on orca-bus at 2026-10-05 23:40:59Z
+ ORCA: /opt/orca/orca
+==============================================================
+
+>>> [Phase 2.1] Counterpoise fallback calculations (ghost atoms)
+  RUN   v-prc_cp_ghost-cluster  ->  results/v-prc_cp_ghost-cluster.out   (2026-10-05 23:40 UTC)
+        FAIL  see results/v-prc_cp_ghost-cluster.out
+  RUN   v-prc_cp_ghost-h3vo4  ->  results/v-prc_cp_ghost-h3vo4.out   (2026-10-05 23:42 UTC)
+        PASS  E=-1708.714841090478
+  RUN   w-prc_cp_ghost-cluster  ->  results/w-prc_cp_ghost-cluster.out   (2026-10-05 23:47 UTC)
+        PASS  E=-76.378622223824
+  RUN   w-prc_cp_ghost-h2o  ->  results/w-prc_cp_ghost-h2o.out   (2026-10-05 23:49 UTC)
+        PASS  E=-1708.730926698051
+
+>>> [Phase 2.2] Minima completion with frequencies (cluster, v-i1, v-i2, v-p)
+  RUN   s1_03_cluster_optfreq  ->  results/s1_03_cluster_optfreq.out   (2026-10-05 23:51 UTC)
+        PASS  E=-1709.394093884281
+  RUN   s4_01_vi1_optfreq  ->  results/s4_01_vi1_optfreq.out   (2026-10-06 00:22 UTC)
+        PASS  E=-2956.263052028540
+  RUN   s4_02_vi2_optfreq  ->  results/s4_02_vi2_optfreq.out   (2026-10-06 04:40 UTC)
+        PASS  E=-2956.266391730287
+  RUN   s4_03_vp_optfreq  ->  results/s4_03_vp_optfreq.out   (2026-10-06 11:26 UTC)

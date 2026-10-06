@@ -1,0 +1,316 @@
+==============================================================
+ Starting Tier 2/3 campaign on orca-bus at 2026-10-02 11:59:02Z
+ ORCA: /opt/orca/orca
+==============================================================
+
+>>> [Stage A.1] Scope 1: Frequency and Opt+Freq on reference molecules and clusters
+ORCA binary : /opt/orca/orca
+This program requires the name of a parameterfile as argument
+For example ORCA TEST.INP 
+==============================================================
+ Tier 2/3 completion run - scope 1 - 2026-10-02 11:59 UTC
+ budget: 0h of this session (0 = unlimited)
+ filter: *.inp
+==============================================================
+  RUN   s1_01_h2o_optfreq  ->  results/s1_01_h2o_optfreq.out   (2026-10-02 11:59 UTC)
+        PASS  E=-76.426629795556  wall=0h0m
+        geometry -> results/geom/h2o.xyz
+  RUN   s1_02_h3vo4_optfreq  ->  results/s1_02_h3vo4_optfreq.out   (2026-10-02 11:59 UTC)
+        PASS  E=-1246.825013958827  wall=0h18m
+        geometry -> results/geom/h3vo4.xyz
+  RUN   s1_03_cluster_optfreq  ->  results/s1_03_cluster_optfreq.out   (2026-10-02 12:17 UTC)
+        PASS  E=-1709.394093303452  wall=3h1m
+        geometry -> results/geom/cluster.xyz
+  RUN   s1_04_vprc_optfreq  ->  results/s1_04_vprc_optfreq.out   (2026-10-02 15:19 UTC)
+        PASS  E=-2956.254531846348  wall=5h28m
+        geometry -> results/geom/v-prc.xyz
+  RUN   s1_05_wprc_optfreq  ->  results/s1_05_wprc_optfreq.out   (2026-10-02 20:48 UTC)
+        PASS  E=-1785.850554383119  wall=3h34m
+        geometry -> results/geom/w-prc.xyz
+--------------------------------------------------------------
+ scope 1 finished: 5 passed, 0 failed, 0 skipped
+ session wall clock: 12h 23m
+ manifest: results/manifest_scope1.csv
+ next: python3 tools/audit_tier2.py results
+--------------------------------------------------------------
+
+>>> [Stage A.2] Scope 2: Counterpoise calculations on relaxed geometries
+ORCA binary : /opt/orca/orca
+This program requires the name of a parameterfile as argument
+For example ORCA TEST.INP 
+==============================================================
+ Tier 2/3 completion run - scope 2 - 2026-10-03 00:22 UTC
+ budget: 0h of this session (0 = unlimited)
+ filter: *.inp
+==============================================================
+scope 2: geometry check
+  xyz/relaxed/v-prc.xyz  <-  results/geom/v-prc.xyz (scope 1 output)
+  xyz/relaxed/w-prc.xyz  <-  results/geom/w-prc.xyz (scope 1 output)
+  RUN   s2_01_vprc_cp_ghost_frag1  ->  results/s2_01_vprc_cp_ghost_frag1.out   (2026-10-03 00:22 UTC)
+        FAIL  see results/s2_01_vprc_cp_ghost_frag1.out  (last 5 lines:)
+          Error: fragments (in COORDS) should come after the geometry input
+          [file orca_tools/Tool-Scanner/qcscan2.cpp, line 61]:        Reorder the input!
+          
+          [file orca_tools/Tool-Scanner/qcscan2.cpp, line 61]:        Reorder the input!
+          
+        queue continues; nothing is deleted
+  RUN   s2_01_vprc_cp_ghost_frag2  ->  results/s2_01_vprc_cp_ghost_frag2.out   (2026-10-03 00:22 UTC)
+        FAIL  see results/s2_01_vprc_cp_ghost_frag2.out  (last 5 lines:)
+          Error: fragments (in COORDS) should come after the geometry input
+          [file orca_tools/Tool-Scanner/qcscan2.cpp, line 61]:        Reorder the input!
+          
+          [file orca_tools/Tool-Scanner/qcscan2.cpp, line 61]:        Reorder the input!
+          
+        queue continues; nothing is deleted
+  RUN   s2_02_wprc_cp_ghost_frag1  ->  results/s2_02_wprc_cp_ghost_frag1.out   (2026-10-03 00:22 UTC)
+        FAIL  see results/s2_02_wprc_cp_ghost_frag1.out  (last 5 lines:)
+          Error: fragments (in COORDS) should come after the geometry input
+          [file orca_tools/Tool-Scanner/qcscan2.cpp, line 61]:        Reorder the input!
+          
+          [file orca_tools/Tool-Scanner/qcscan2.cpp, line 61]:        Reorder the input!
+          
+        queue continues; nothing is deleted
+  RUN   s2_02_wprc_cp_ghost_frag2  ->  results/s2_02_wprc_cp_ghost_frag2.out   (2026-10-03 00:22 UTC)
+        FAIL  see results/s2_02_wprc_cp_ghost_frag2.out  (last 5 lines:)
+          Error: fragments (in COORDS) should come after the geometry input
+          [file orca_tools/Tool-Scanner/qcscan2.cpp, line 61]:        Reorder the input!
+          
+          [file orca_tools/Tool-Scanner/qcscan2.cpp, line 61]:        Reorder the input!
+          
+        queue continues; nothing is deleted
+--------------------------------------------------------------
+ scope 2 finished: 0 passed, 4 failed, 0 skipped
+ session wall clock: 0h 0m
+ manifest: results/manifest_scope2.csv
+ next: python3 tools/audit_tier2.py results
+--------------------------------------------------------------
+
+>>> [Stage A.3] Scope 3: PBE0 single points on Stage A relaxed geometries
+ORCA binary : /opt/orca/orca
+This program requires the name of a parameterfile as argument
+For example ORCA TEST.INP 
+==============================================================
+ Tier 2/3 completion run - scope 3 - 2026-10-03 00:22 UTC
+ budget: 0h of this session (0 = unlimited)
+ filter: *.inp
+==============================================================
+scope 3: generating PBE0 single points from the relaxed geometries found
+  wrote jobs/scope3/pbe0_cluster.inp
+  wrote jobs/scope3/pbe0_h2o.inp
+  wrote jobs/scope3/pbe0_h3vo4.inp
+  wrote jobs/scope3/pbe0_v-prc.inp
+  wrote jobs/scope3/pbe0_w-prc.inp
+
+  5 scope-3 input(s) written.
+  not yet available (still to be relaxed): v-i1, v-i2, v-p, w-p, v-ts2, w-ts, v-ts3, v-ts1
+  run them with:  bash run_scope.sh 3
+  RUN   pbe0_cluster  ->  results/pbe0_cluster.out   (2026-10-03 00:22 UTC)
+        PASS  E=-1708.736038466437  wall=0h2m
+  RUN   pbe0_h2o  ->  results/pbe0_h2o.out   (2026-10-03 00:24 UTC)
+        PASS  E=-76.377725397537  wall=0h0m
+  RUN   pbe0_h3vo4  ->  results/pbe0_h3vo4.out   (2026-10-03 00:24 UTC)
+        PASS  E=-1246.479597897213  wall=0h0m
+  RUN   pbe0_v-prc  ->  results/pbe0_v-prc.out   (2026-10-03 00:25 UTC)
+        PASS  E=-2955.251083282212  wall=0h7m
+  RUN   pbe0_w-prc  ->  results/pbe0_w-prc.out   (2026-10-03 00:32 UTC)
+        PASS  E=-1785.143710125366  wall=0h2m
+--------------------------------------------------------------
+ scope 3 finished: 5 passed, 0 failed, 0 skipped
+ session wall clock: 0h 13m
+ manifest: results/manifest_scope3.csv
+ next: python3 tools/audit_tier2.py results
+--------------------------------------------------------------
+
+>>> [Stage B] Scope 4 Minima: V-I1, V-I2, V-P, W-P
+ORCA binary : /opt/orca/orca
+This program requires the name of a parameterfile as argument
+For example ORCA TEST.INP 
+==============================================================
+ Tier 2/3 completion run - scope 4 - 2026-10-03 00:35 UTC
+ budget: 0h of this session (0 = unlimited)
+ filter: s4_0[1-4]*.inp
+==============================================================
+  RUN   s4_01_vi1_optfreq  ->  results/s4_01_vi1_optfreq.out   (2026-10-03 00:35 UTC)
+        PASS  E=-2956.263018916367  wall=11h21m
+        geometry -> results/geom/v-i1.xyz
+  RUN   s4_02_vi2_optfreq  ->  results/s4_02_vi2_optfreq.out   (2026-10-03 11:57 UTC)
+        PASS  E=-2956.265622148671  wall=11h12m
+        geometry -> results/geom/v-i2.xyz
+  RUN   s4_03_vp_optfreq  ->  results/s4_03_vp_optfreq.out   (2026-10-03 23:09 UTC)
+        PASS  E=-2956.059257215445  wall=12h36m
+        geometry -> results/geom/v-p.xyz
+  RUN   s4_04_wp_optfreq  ->  results/s4_04_wp_optfreq.out   (2026-10-04 11:46 UTC)
+        PASS  E=-1785.829873927753  wall=4h37m
+        geometry -> results/geom/w-p.xyz
+--------------------------------------------------------------
+ scope 4 finished: 4 passed, 0 failed, 0 skipped
+ session wall clock: 39h 48m
+ manifest: results/manifest_scope4.csv
+ next: python3 tools/audit_tier2.py results
+--------------------------------------------------------------
+
+>>> [Stage C] Scope 4 Transition State: V-TS2 OptTS + freq
+ORCA binary : /opt/orca/orca
+This program requires the name of a parameterfile as argument
+For example ORCA TEST.INP 
+==============================================================
+ Tier 2/3 completion run - scope 4 - 2026-10-04 16:23 UTC
+ budget: 0h of this session (0 = unlimited)
+ filter: s4_05*.inp
+==============================================================
+  RUN   s4_05_vts2_optts  ->  results/s4_05_vts2_optts.out   (2026-10-04 16:23 UTC)
+        PASS  E=-2956.095843864606  wall=28h12m
+        geometry -> results/geom/v-ts2.xyz
+--------------------------------------------------------------
+ scope 4 finished: 1 passed, 0 failed, 0 skipped
+ session wall clock: 28h 12m
+ manifest: results/manifest_scope4.csv
+ next: python3 tools/audit_tier2.py results
+--------------------------------------------------------------
+
+>>> [Close Out] Scope 3: Updating PBE0 single points for new geometries
+ORCA binary : /opt/orca/orca
+This program requires the name of a parameterfile as argument
+For example ORCA TEST.INP 
+==============================================================
+ Tier 2/3 completion run - scope 3 - 2026-10-05 20:36 UTC
+ budget: 0h of this session (0 = unlimited)
+ filter: *.inp
+==============================================================
+scope 3: generating PBE0 single points from the relaxed geometries found
+  wrote jobs/scope3/pbe0_cluster.inp
+  wrote jobs/scope3/pbe0_h2o.inp
+  wrote jobs/scope3/pbe0_h3vo4.inp
+  wrote jobs/scope3/pbe0_v-prc.inp
+  wrote jobs/scope3/pbe0_w-prc.inp
+  wrote jobs/scope3/pbe0_v-i1.inp
+  wrote jobs/scope3/pbe0_v-i2.inp
+  wrote jobs/scope3/pbe0_v-p.inp
+  wrote jobs/scope3/pbe0_w-p.inp
+  wrote jobs/scope3/pbe0_v-ts2.inp
+
+  10 scope-3 input(s) written.
+  not yet available (still to be relaxed): w-ts, v-ts3, v-ts1
+  run them with:  bash run_scope.sh 3
+  SKIP  pbe0_cluster   (already finished: results/pbe0_cluster.out)
+  SKIP  pbe0_h2o   (already finished: results/pbe0_h2o.out)
+  SKIP  pbe0_h3vo4   (already finished: results/pbe0_h3vo4.out)
+  RUN   pbe0_v-i1  ->  results/pbe0_v-i1.out   (2026-10-05 20:36 UTC)
+        PASS  E=-2955.261392548875  wall=0h7m
+  RUN   pbe0_v-i2  ->  results/pbe0_v-i2.out   (2026-10-05 20:43 UTC)
+        PASS  E=-2955.261524727712  wall=0h6m
+  RUN   pbe0_v-p  ->  results/pbe0_v-p.out   (2026-10-05 20:50 UTC)
+        PASS  E=-2955.058281714289  wall=0h9m
+  SKIP  pbe0_v-prc   (already finished: results/pbe0_v-prc.out)
+  RUN   pbe0_v-ts2  ->  results/pbe0_v-ts2.out   (2026-10-05 21:00 UTC)
+        PASS  E=-2955.086361526575  wall=0h10m
+  RUN   pbe0_w-p  ->  results/pbe0_w-p.out   (2026-10-05 21:11 UTC)
+        PASS  E=-1785.122480008438  wall=0h3m
+  SKIP  pbe0_w-prc   (already finished: results/pbe0_w-prc.out)
+--------------------------------------------------------------
+ scope 3 finished: 5 passed, 0 failed, 5 skipped
+ session wall clock: 0h 37m
+ manifest: results/manifest_scope3.csv
+ next: python3 tools/audit_tier2.py results
+--------------------------------------------------------------
+
+>>> [Audit] Generating Tier 2 summary and CSV table
+output                             term conv  type   imaginary modes (cm-1)           final E (Eh)  runtime
+-----------------------------------------------------------------------------------------------------------
+pbe0_cluster.out                   yes  -     SP     -                              -1708.73603847  0 days 0 hours 2 minutes 17 seconds 388 msec
+pbe0_h2o.out                       yes  -     SP     -                                -76.37772540  0 days 0 hours 0 minutes 3 seconds 837 msec
+pbe0_h3vo4.out                     yes  -     SP     -                              -1246.47959790  0 days 0 hours 0 minutes 46 seconds 444 msec
+pbe0_v-i1.out                      yes  -     SP     -                              -2955.26139255  0 days 0 hours 7 minutes 15 seconds 665 msec
+pbe0_v-i2.out                      yes  -     SP     -                              -2955.26152473  0 days 0 hours 6 minutes 56 seconds 55 msec
+pbe0_v-p.out                       yes  -     SP     -                              -2955.05828171  0 days 0 hours 9 minutes 29 seconds 203 msec
+pbe0_v-prc.out                     yes  -     SP     -                              -2955.25108328  0 days 0 hours 7 minutes 13 seconds 924 msec
+pbe0_v-ts2.out                     yes  -     SP     -                              -2955.08636153  0 days 0 hours 10 minutes 50 seconds 911 msec
+pbe0_w-p.out                       yes  -     SP     -                              -1785.12248001  0 days 0 hours 3 minutes 0 seconds 613 msec
+pbe0_w-prc.out                     yes  -     SP     -                              -1785.14371013  0 days 0 hours 2 minutes 56 seconds 708 msec
+s1_01_h2o_optfreq.out              yes  yes   MIN    -                                -76.42662980  0 days 0 hours 0 minutes 34 seconds 855 msec
+s1_02_h3vo4_optfreq.out            yes  yes   MIN    -                              -1246.82501396  0 days 0 hours 18 minutes 17 seconds 595 msec
+s1_03_cluster_optfreq.out          yes  -     SP     -                              -1709.39409330  0 days 3 hours 1 minutes 41 seconds 755 msec
+s1_04_vprc_optfreq.out             yes  yes   MIN    -                              -2956.25453185  0 days 5 hours 28 minutes 23 seconds 861 msec
+s1_05_wprc_optfreq.out             yes  yes   MIN    -                              -1785.85055438  0 days 3 hours 34 minutes 18 seconds 376 msec
+s2_01_vprc_cp_ghost_frag1.out      NO   -     SP     -                                           -  ?
+s2_01_vprc_cp_ghost_frag2.out      NO   -     SP     -                                           -  ?
+s2_02_wprc_cp_ghost_frag1.out      NO   -     SP     -                                           -  ?
+s2_02_wprc_cp_ghost_frag2.out      NO   -     SP     -                                           -  ?
+s4_01_vi1_optfreq.out              yes  yes   MIN    -                              -2956.26301892  0 days 11 hours 21 minutes 45 seconds 558 msec
+s4_02_vi2_optfreq.out              yes  yes   MIN    -                              -2956.26562215  0 days 11 hours 12 minutes 8 seconds 284 msec
+s4_03_vp_optfreq.out               yes  yes   MIN    -                              -2956.05925722  0 days 12 hours 36 minutes 34 seconds 108 msec
+s4_04_wp_optfreq.out               yes  yes   MIN    -                              -1785.82987393  0 days 4 hours 37 minutes 41 seconds 660 msec
+s4_05_vts2_optts.out               yes  -     freq   -566.60, -411.82, -245.76, -   -2956.09584386  1 days 4 hours 12 minutes 55 seconds 3 msec
+
+rule for minima : terminated + converged + 0 imaginary modes
+rule for saddles: terminated + converged + exactly 1 imaginary mode,
+                  then the A4 two-sided test (tools/gen_inputs.py --displace)
+
+======================================================================================
+  LEVEL TABLE - B3LYP / def2-TZVP   (kJ/mol relative to the reference zero)
+  dE = electronic only; dE+ZPE, dG(298K), dG(1003K) need FREQ data for
+  every state in the row, including both reference species.
+======================================================================================
+  B3LYP   zero = cluster + H3VO4
+  state     imag             E (Eh)        dE    dE+ZPE   dG(298K)  dG(1003K)
+  V-PRC        0     -2956.25453185     -93.0         -          -          -
+  V-I1         0     -2956.26301892    -115.3         -          -          -
+  V-TS2       14     -2956.09584386     323.6         -          -          -
+  V-I2         0     -2956.26562215    -122.1         -          -          -
+  V-TS3        -            not run         -         -          -          -
+  V-P          0     -2956.05925722     419.7         -          -          -
+  V-TS1        -            not run         -         -          -          -
+
+  B3LYP   zero = cluster + H2O
+  state     imag             E (Eh)        dE    dE+ZPE   dG(298K)  dG(1003K)
+  W-PRC        0     -1785.85055438     -78.3         -          -          -
+  W-TS         -            not run         -         -          -          -
+  W-P          0     -1785.82987393     -24.0         -          -          -
+
+  reference: E(cluster) = -1709.39409330 Eh
+
+======================================================================================
+  LEVEL TABLE - PBE0 / def2-TZVP   (kJ/mol relative to the reference zero)
+  dE = electronic only; dE+ZPE, dG(298K), dG(1003K) need FREQ data for
+  every state in the row, including both reference species.
+======================================================================================
+  PBE0   zero = cluster + H3VO4
+  state     imag             E (Eh)        dE    dE+ZPE   dG(298K)  dG(1003K)
+  V-PRC        0     -2955.25108328     -93.1         -          -          -
+  V-I1         0     -2955.26139255    -120.1         -          -          -
+  V-TS2        0     -2955.08636153     339.4         -          -          -
+  V-I2         0     -2955.26152473    -120.5         -          -          -
+  V-TS3        -            not run         -         -          -          -
+  V-P          0     -2955.05828171     413.1         -          -          -
+  V-TS1        -            not run         -         -          -          -
+
+  PBE0   zero = cluster + H2O
+  state     imag             E (Eh)        dE    dE+ZPE   dG(298K)  dG(1003K)
+  W-PRC        0     -1785.14371013     -78.6         -          -          -
+  W-TS         -            not run         -         -          -          -
+  W-P          0     -1785.12248001     -22.9         -          -          -
+
+  reference: E(cluster) = -1708.73603847 Eh
+
+======================================================================================
+  COUNTERPOISE - Boys-Bernardi, single geometry, PBE0-D3(BJ)/def2-TZVP
+======================================================================================
+  All four energies must come from the same level and the same geometry:
+    E(complex)              <- pbe0_<complex>            (scope 3)
+    E(cluster, full basis)  <- ..._cp_ghost_frag2        (scope 2)
+    E(adsorbate, full basis)<- ..._cp_ghost_frag1        (scope 2)
+    E(isolated monomers)    <- pbe0_cluster, pbe0_h3vo4 / pbe0_h2o (scope 3)
+
+  V-PRC
+    E(complex, full basis)        = -2955.25108328 Eh
+Traceback (most recent call last):
+  File "/home/azureuser/03_tier2_completion/tools/audit_tier2.py", line 312, in <module>
+    main()
+  File "/home/azureuser/03_tier2_completion/tools/audit_tier2.py", line 279, in main
+    print("    E(cluster, full basis)        = %.8f Eh" % e_clu_full)
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+TypeError: must be real number, not NoneType
+
+==============================================================
+ Campaign finished at 2026-10-05 21:14:16Z
+==============================================================

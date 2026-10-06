@@ -1,0 +1,6 @@
+job,scope,status,final_energy_Eh,runtime_s,output_file
+s4_01_vi1_optfreq,4,PASS,-2956.263018916367,40905,results/s4_01_vi1_optfreq.out
+s4_02_vi2_optfreq,4,PASS,-2956.265622148671,40329,results/s4_02_vi2_optfreq.out
+s4_03_vp_optfreq,4,PASS,-2956.059257215445,45394,results/s4_03_vp_optfreq.out
+s4_04_wp_optfreq,4,PASS,-1785.829873927753,16661,results/s4_04_wp_optfreq.out
+s4_05_vts2_optts,4,PASS,-2956.095843864606,101575,results/s4_05_vts2_optts.out

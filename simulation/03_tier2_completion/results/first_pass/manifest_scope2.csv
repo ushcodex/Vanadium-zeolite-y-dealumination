@@ -1,0 +1,5 @@
+job,scope,status,final_energy_Eh,runtime_s,output_file
+s2_01_vprc_cp_ghost_frag1,2,FAIL,,0,results/s2_01_vprc_cp_ghost_frag1.out
+s2_01_vprc_cp_ghost_frag2,2,FAIL,,0,results/s2_01_vprc_cp_ghost_frag2.out
+s2_02_wprc_cp_ghost_frag1,2,FAIL,,0,results/s2_02_wprc_cp_ghost_frag1.out
+s2_02_wprc_cp_ghost_frag2,2,FAIL,,0,results/s2_02_wprc_cp_ghost_frag2.out

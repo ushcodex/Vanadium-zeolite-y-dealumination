@@ -1,0 +1,25 @@
+file,terminated,converged,type,imag_count,imag_cm-1,energy_Eh,runtime
+pbe0_cluster.out,True,False,SP,0,"",-1708.7360384664,0 days 0 hours 2 minutes 17 seconds 388 msec
+pbe0_h2o.out,True,False,SP,0,"",-76.3777253975,0 days 0 hours 0 minutes 3 seconds 837 msec
+pbe0_h3vo4.out,True,False,SP,0,"",-1246.4795978972,0 days 0 hours 0 minutes 46 seconds 444 msec
+pbe0_v-i1.out,True,False,SP,0,"",-2955.2613925489,0 days 0 hours 7 minutes 15 seconds 665 msec
+pbe0_v-i2.out,True,False,SP,0,"",-2955.2615247277,0 days 0 hours 6 minutes 56 seconds 55 msec
+pbe0_v-p.out,True,False,SP,0,"",-2955.0582817143,0 days 0 hours 9 minutes 29 seconds 203 msec
+pbe0_v-prc.out,True,False,SP,0,"",-2955.2510832822,0 days 0 hours 7 minutes 13 seconds 924 msec
+pbe0_v-ts2.out,True,False,SP,0,"",-2955.0863615266,0 days 0 hours 10 minutes 50 seconds 911 msec
+pbe0_w-p.out,True,False,SP,0,"",-1785.1224800084,0 days 0 hours 3 minutes 0 seconds 613 msec
+pbe0_w-prc.out,True,False,SP,0,"",-1785.1437101254,0 days 0 hours 2 minutes 56 seconds 708 msec
+s1_01_h2o_optfreq.out,True,True,MIN,0,"",-76.4266297956,0 days 0 hours 0 minutes 34 seconds 855 msec
+s1_02_h3vo4_optfreq.out,True,True,MIN,0,"",-1246.8250139588,0 days 0 hours 18 minutes 17 seconds 595 msec
+s1_03_cluster_optfreq.out,True,False,SP,0,"",-1709.3940933035,0 days 3 hours 1 minutes 41 seconds 755 msec
+s1_04_vprc_optfreq.out,True,True,MIN,0,"",-2956.2545318463,0 days 5 hours 28 minutes 23 seconds 861 msec
+s1_05_wprc_optfreq.out,True,True,MIN,0,"",-1785.8505543831,0 days 3 hours 34 minutes 18 seconds 376 msec
+s2_01_vprc_cp_ghost_frag1.out,False,False,SP,0,"",,?
+s2_01_vprc_cp_ghost_frag2.out,False,False,SP,0,"",,?
+s2_02_wprc_cp_ghost_frag1.out,False,False,SP,0,"",,?
+s2_02_wprc_cp_ghost_frag2.out,False,False,SP,0,"",,?
+s4_01_vi1_optfreq.out,True,True,MIN,0,"",-2956.2630189164,0 days 11 hours 21 minutes 45 seconds 558 msec
+s4_02_vi2_optfreq.out,True,True,MIN,0,"",-2956.2656221487,0 days 11 hours 12 minutes 8 seconds 284 msec
+s4_03_vp_optfreq.out,True,True,MIN,0,"",-2956.0592572154,0 days 12 hours 36 minutes 34 seconds 108 msec
+s4_04_wp_optfreq.out,True,True,MIN,0,"",-1785.8298739278,0 days 4 hours 37 minutes 41 seconds 660 msec
+s4_05_vts2_optts.out,True,False,freq,14,"-566.60 -411.82 -245.76 -197.29 -173.25 -172.88 -150.89 -130.21 -110.47 -97.12 -79.80 -62.88 -56.03 -24.26",-2956.0958438646,1 days 4 hours 12 minutes 55 seconds 3 msec

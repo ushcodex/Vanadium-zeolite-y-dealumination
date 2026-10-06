@@ -16,3 +16,7 @@ __pycache__/
 *$py.class
 .venv/
 venv/
+
+# Temporary office lock files and archives
+~$*
+*.tar.gz
