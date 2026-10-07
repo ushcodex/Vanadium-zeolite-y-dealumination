@@ -74,15 +74,15 @@ The processing of heavy petroleum residues in fluid catalytic cracking (FCC) uni
 
 ## 1.1 Background of the Study
 
-Every day, fluid catalytic cracking (FCC) units in petroleum refineries around the world convert millions of barrels of heavy gas oil into the gasoline, diesel, and petrochemical feedstocks that sustain modern economies. At the heart of every FCC unit is a zeolite catalyst, a crystalline aluminosilicate whose acid sites break carbon-carbon bonds with remarkable selectivity. Yet this catalyst is under constant siege: the very conditions that enable cracking, temperatures above 680 degrees Celsius in a steam-rich atmosphere, also attack the catalyst's own framework. 
+Fluid catalytic cracking (FCC) and residue fluid catalytic cracking (RFCC) are fundamental secondary conversion processes in the petroleum refining industry, designed to convert high-molecular-weight fractions of petroleum into valuable transportation fuels and petrochemicals. The RFCC unit is particularly critical as refiners increasingly process heavier and cheaper crude oils to maximize refinery margins (Adanenche et al., 2022). At the core of the catalytic cracking process is the zeolite catalyst, predominantly zeolite Y, whose acid sites break carbon-carbon bonds. 
 
-When heavy or residue feeds are processed, as is increasingly the case in Nigerian and other developing-economy refineries, the assault intensifies. Vanadium, present in the crude oil at concentrations of 1 to over 50 parts per million as organometallic complexes, deposits on the catalyst during cracking, oxidises to vanadium pentoxide (V₂O₅) in the regenerator, and then reacts with steam to form volatile vanadic acid (H₃VO₄). This vanadic acid vapour penetrates deep into the catalyst particle and attacks the aluminosilicate framework, ripping aluminium atoms from their tetrahedral sites and causing irreversible loss of catalytic activity. The phenomenon has been documented experimentally for over four decades. However, an ongoing debate exists in the literature: some researchers argue that steam alone (hydrothermal degradation) is the primary driver of dealumination at these high temperatures, while others assert that vanadium plays an indispensable catalytic role in accelerating the destruction. A detailed computational comparison of these two mechanisms is therefore highly desirable.
+However, the processing of heavy feedstocks introduces severe challenges due to the presence of heteroatoms and contaminant metals such as vanadium, nickel, sodium, and iron. These metals deposit on the catalyst during cracking operations (Adanenche et al., 2022). Vanadium is particularly detrimental to the structural integrity of the zeolite Y framework. During the catalyst regeneration cycle in a steam-rich atmosphere at high temperatures, vanadium reacts to form volatile vanadic acid (H₃VO₄). This vanadic acid attacks the aluminosilicate framework, causing irreversible dealumination, loss of crystallinity, and the generation of large mesopores that compromise the catalyst's performance (Trujillo et al., 1997; Etim et al., 2015). 
+
+While experimental studies have thoroughly documented the macroscopic damage caused by vanadium and steam, the fundamental atomistic mechanisms governing the breaking of framework bonds require detailed theoretical exploration. Computational chemistry, specifically density functional theory (DFT), has become an essential tool for investigating zeolite reaction pathways, such as steam-induced dealumination (Malola et al., 2011). However, the specific elementary steps distinguishing the aggressive vanadium-promoted attack from baseline hydrothermal degradation warrant further rigorous comparative modeling.
 
 ## 1.2 Statement of the Problem
 
-Vanadium contamination of FCC catalysts is one of the most costly operational problems in petroleum refining, responsible for accelerated catalyst replacement, reduced product yields, and increased coke and gas make. Industrial countermeasures such as vanadium traps (basic metal oxide additives that immobilise vanadic acid) have been developed empirically, guided by macroscopic observations of crystallinity loss, unit cell contraction, and catalytic activity decline. However, these macroscopic measurements cannot fully reveal the elementary steps of the attack: which bond breaks first, what the transition states look like, how much energy is required to overcome each barrier, or precisely why vanadic acid might be so much more destructive than steam alone. Without a rigorous molecular-level comparison, the design of next-generation vanadium-tolerant catalysts and trapping additives relies heavily on trial and error.
-
-Density functional theory (DFT), a quantum mechanical computational method, coupled with semi-empirical exploratory techniques like GFN2-xTB, can provide exactly this information by computing the energies and geometries of reactants, intermediates, transition states, and products along a proposed reaction pathway. While DFT has been applied successfully to study steam-induced dealumination of zeolites, comprehensive computational explorations explicitly comparing the energetics of the vanadic acid attack pathway against simple hydrothermal dealumination remain sparse.
+The continuous deposition of vanadium on RFCC catalysts leads to severe structural degradation, reducing catalyst activity and selectivity by destroying the active Bronsted acid sites (Etim et al., 2015). While the macroscopic effects of this poisoning are well known, prompting the development of various metal passivators and traps (Adanenche et al., 2022), the precise molecular-level thermodynamics and kinetics of the initial vanadic acid attack on the zeolite framework remain difficult to observe experimentally. Without a detailed theoretical understanding of the energetic driving forces and intermediate states of this mechanism compared to standard steam degradation, the design of next-generation vanadium traps relies largely on empirical testing rather than rational molecular design.
 
 ## 1.3 Aim of the Study
 
@@ -92,126 +92,86 @@ The aim of this study is to investigate the elementary mechanism of vanadium-pro
 
 The specific objectives of this study are to:
 
-1. Construct a cluster model of the zeolite Y Bronsted acid site suitable for semi-empirical and DFT calculations.
+1. Construct a representative cluster model of the zeolite Y Bronsted acid site.
 
-2. Explore the conformational space and potential reaction pathways using the robust GFN2-xTB tight-binding method.
+2. Explore the conformational space and potential reaction pathways using the robust semi-empirical GFN2-xTB method.
 
-3. Map the stationary-point sequence (pre-reaction complex, intermediates, and product) for the dealumination of the cluster by vanadic acid (H₃VO₄).
+3. Map the stationary-point sequence for the dealumination of the cluster by vanadic acid (H₃VO₄).
 
-4. Map the corresponding stationary-point sequence for dealumination by water (H₂O), as a steam hydrolysis baseline.
+4. Map the corresponding stationary-point sequence for dealumination by water (H₂O), serving as a steam hydrolysis baseline.
 
-5. Optimise the geometries and compute the electronic energies of all stationary points at the B3LYP-D3(BJ)/def2-TZVP level of hybrid DFT.
+5. Optimise the geometries and compute the electronic energies of all stationary points using hybrid DFT at the B3LYP-D3(BJ)/def2-TZVP level.
 
 6. Validate the computed energies using a second hybrid functional (PBE0-D3(BJ)/def2-TZVP).
 
-7. Compute the Gibbs free energies of the key adsorption states at both standard conditions (298 K) and FCC regenerator temperature (1003 K, corresponding to 730 degrees Celsius).
+7. Compute the Gibbs free energies of the key adsorption states at both standard conditions (298 K) and FCC regenerator temperature (1003 K).
 
-8. Compare the adsorption strength, reaction energetics, and thermochemical profiles of the vanadic acid and steam pathways to draw mechanistic conclusions relevant to FCC catalyst deactivation.
+8. Compare the adsorption strength, reaction energetics, and thermochemical profiles of the vanadic acid and steam pathways.
 
 ## 1.5 Scope of the Study
 
-This study focuses on the initial stages of dealumination at a single Bronsted acid site in the faujasite (FAU) framework, modelled as a four-T-site cluster (AlSi₄O₄H₁₃) terminated with hydrogen atoms. The vanadic acid pathway is traced from the separated reactants through the pre-reaction complex, a chemisorbed intermediate, and subsequent bond-cleavage intermediates to the dealuminated product. The steam baseline covers the same sequence for water.
-
-The study is limited to the gas-phase cluster model and does not include periodic boundary conditions, solvent effects, or the influence of sodium or other cations. The reaction is studied at zero pressure; the thermochemistry is evaluated at the ideal-gas, rigid-rotor, harmonic-oscillator level at two temperatures (298 K and 1003 K). Transition-state barriers are reported where the saddle-point search converged to a stationary point with the correct mode character; where convergence was not achieved, the barrier is identified as a limitation and discussed accordingly.
+This study focuses on the initial stages of dealumination at a single Bronsted acid site in the faujasite (FAU) framework, modelled as a gas-phase four-T-site cluster (AlSi₄O₄H₁₃) terminated with hydrogen atoms. The vanadic acid pathway is traced from the separated reactants through the pre-reaction complex, intermediate states, and to the dealuminated product. The steam baseline covers a similar sequence for water. The study utilizes gas-phase DFT with dispersion corrections (D3) and does not include periodic boundary conditions or solvent effects. The thermochemistry is evaluated using the ideal-gas, rigid-rotor, harmonic-oscillator approximation.
 
 ## 1.6 Justification of the Study
 
-This research is significant for three main reasons:
-
-First, it contributes a detailed molecular-level description of the vanadic acid attack on zeolite Y, enhancing the computational catalysis literature alongside established experimental works such as those by Mitchell (1980), Pine (1990), Etim et al. (2015), and local Nigerian researchers like Adenenche et al. (2022) who have highlighted the challenges of heavy crude processing.
-
-Second, it quantifies the thermodynamic advantage that vanadic acid holds over steam as a dealumination agent, providing a numerical target (the binding energy margin) that vanadium traps must overcome to protect the catalyst. This information can guide the rational design of trapping additives.
-
-Third, it demonstrates the feasibility of applying modern, multi-tier computational workflows (GFN2-xTB followed by hybrid DFT) to industrially relevant catalyst deactivation problems. This highlights that significant mechanistic insights are accessible using a combination of local workstations and cloud resources.
+This research is significant as it provides a detailed molecular-level energetic description of the initial stages of vanadic acid attack on zeolite Y, complementing existing experimental studies on framework destruction and mesopore formation (Trujillo et al., 1997; Etim et al., 2015). By quantifying the thermodynamic binding affinity of vanadic acid compared to steam, this work provides numerical benchmarks that can guide the rational design of effective vanadium passivators, a critical need identified for modern RFCC operations processing heavy crudes (Adanenche et al., 2022). Furthermore, it demonstrates the utility of combining semi-empirical (GFN2-xTB) and DFT methods to probe complex catalytic degradation mechanisms.
 
 ## 1.7 Limitations
 
-The following limitations apply to this study:
+The limitations of this study include:
 
-1. The cluster model (22 framework atoms plus adsorbate) captures the local chemistry of a single acid site but does not reproduce the long-range electrostatic field, confinement effects, or pore curvature of the full FAU lattice. Adsorption energies may differ from periodic values by 10 to 20 kJ/mol.
+1. The finite cluster model captures the local chemistry of a single acid site but neglects the long-range electrostatic field and confinement effects of the full periodic FAU lattice.
 
-2. The hydrogen termination of dangling bonds at the cluster boundary introduces a small artificial flexibility that is not present in the actual framework. This was mitigated by constraining the terminal hydrogen positions during optimisation.
+2. Hydrogen termination at the cluster boundaries introduces artificial flexibility not present in the extended solid, which was only partially mitigated by geometric constraints.
 
-3. Transition-state searches for three of the four proposed saddle points (the initial chemisorption barrier, the final Al-O cleavage, and the steam hydrolysis barrier) did not converge to clean first-order saddle points at the B3LYP-D3(BJ)/def2-TZVP level within the available computational budget. The activation barriers for these steps are therefore not reported as validated values, and the mechanistic discussion is based on the electronic energies of the stationary points that were successfully optimised.
-
-4. The thermochemistry uses the ideal-gas, rigid-rotor, harmonic-oscillator approximation, which may overestimate the entropy of adsorption for large adsorbates on solid surfaces.
+3. The transition-state search for the primary framework bond cleavage in the vanadium pathway yielded a structure with multiple imaginary frequencies at the chosen level of theory; thus, true first-order saddle point activation barriers are not reported, and the analysis relies on the robust energetics of the stable minima and intermediates.
 # CHAPTER TWO
 
 # LITERATURE REVIEW
 
-## 2.1 Petroleum Refining and Fluid Catalytic Cracking
+## 2.1 Residue Fluid Catalytic Cracking and Contaminant Metals
 
-Petroleum refining converts crude oil into fuels, petrochemicals, and specialty products through a sequence of physical and chemical processing steps. Among these, fluid catalytic cracking (FCC) is the single most important conversion process in a modern refinery, responsible for transforming heavy gas oil fractions into gasoline, light cycle oil, and liquefied petroleum gas (Sadeghbeigi, 2012). The FCC unit typically accounts for 30 to 45 percent of a refinery's total gasoline output and represents the primary upgrading pathway for vacuum gas oil (Vogt & Weckhuysen, 2015).
+Fluid catalytic cracking (FCC) is historically the most important conversion process in the petroleum refining industry. However, global crude oil supplies have progressively shifted towards heavier and dirtier fractions. The necessity for refiners to process these cheaper, heavy feedstocks—such as atmospheric residue and vacuum gas oil—to increase refinery margins has driven the development of the residue fluid catalytic cracking (RFCC) process (Adanenche et al., 2022). 
 
-In an FCC unit, the preheated heavy feed enters a vertical riser reactor, where it contacts a stream of hot, regenerated catalyst particles at temperatures between 500 and 550 degrees Celsius. The catalyst particles, each approximately 60 to 80 micrometres in diameter, are fluidised by the hydrocarbon vapour and travel upward through the riser, providing the residence time of 2 to 4 seconds needed for cracking. At the top of the riser, the spent catalyst, now coated with carbonaceous deposits (coke), is separated from the product vapours and directed to a regenerator. In the regenerator, the coke is burned off at 680 to 730 degrees Celsius in air, restoring catalytic activity and providing the heat required to sustain the endothermic cracking reactions (Sadeghbeigi, 2012; Vogt & Weckhuysen, 2015).
+Processing these heavy, carbonaceous feedstocks introduces severe operational challenges. Residue feeds contain high levels of Conradson carbon residue and significant concentrations of heteroatoms and metal poisons, most notably vanadium, nickel, sodium, and iron (Adanenche et al., 2022). These metal contaminants deposit on the RFCC catalyst during the cracking process, permanently or temporarily deactivating the catalyst and promoting undesirable side reactions. Nickel and vanadium are identified as the most detrimental poisons; they promote severe dehydrogenation reactions leading to excessive coke and hydrogen gas production, which upsets the heat balance of the regenerator and overloads the wet gas compressors (Adanenche et al., 2022). Furthermore, vanadium severely compromises the structural integrity of the zeolite active component.
 
-Residue fluid catalytic cracking (RFCC) is an extension of conventional FCC designed to process heavier, bottom-of-the-barrel feeds such as atmospheric residue and vacuum residue. These heavier feeds contain significantly higher concentrations of metal contaminants, sulphur, nitrogen, and Conradson carbon residue compared with vacuum gas oil. The shift toward RFCC has been driven by the need to maximise the conversion of each barrel of crude oil, particularly in refineries processing heavy or opportunity crudes (Akah & Al-Ghrami, 2015). Nigerian refineries, which process crude oils that can contain vanadium concentrations ranging from 1 to over 50 parts per million by weight, face particular challenges from metal contamination of FCC catalysts (Okonkwo et al., 2017; Adenenche et al., 2022).
+## 2.2 Zeolite Y and Steam-Induced Dealumination
 
-## 2.2 The FCC Catalyst: Zeolite Y
+The active component of RFCC catalysts is zeolite Y, a microporous crystalline aluminosilicate with a faujasite (FAU) structure. The catalytic cracking activity is derived from its Bronsted acid sites, which are formed by the substitution of silicon atoms by aluminum/proton pairs within the framework (Malola et al., 2011).
 
-### 2.2.1 Structure and Framework Chemistry
+During the regeneration cycle of the FCC process, carbon deposits (coke) are burned off the catalyst in an oxidizing atmosphere, generating significant amounts of steam at high temperatures. Exposure to steam causes a slow degradation process known as hydrothermal dealumination or irreversible deactivation. Both silicon and aluminum atoms can be hydrolyzed by steam, but aluminum is substantially less stable in a steam atmosphere than silicon (Malola et al., 2011). 
 
-The active cracking component of every modern FCC catalyst is a synthetic zeolite designated as type Y, which belongs to the faujasite (FAU) structural family. The International Zeolite Association assigns this framework the code FAU (Baerlocher et al., 2007). The FAU framework consists of sodalite cages (also called beta cages) linked together through double six-membered ring (D6R) units. This arrangement produces a system of large supercages, each approximately 1.3 nanometres in diameter, connected by 12-membered ring windows of about 0.74 nanometres aperture. These supercages are the sites where hydrocarbon cracking reactions take place (Baerlocher et al., 2007; Vermeiren & Gilson, 2009).
+Density functional theory (DFT) investigations by Malola et al. (2011) revealed that the dealumination process proceeds via a series of hydration reactions. Their calculations demonstrated that the complete extraction of a framework aluminum atom by steam requires at least three water molecules and leaves behind a "silanol nest" defect, where four hydroxy groups occupy the void left by the extracted tetrahedral atom. The computed effective energy barrier for steam dealumination ranges from 190 to 260 kJ/mol, which is 40-50 kJ/mol lower than the barrier for desilication (Malola et al., 2011). These findings underscore that while steam alone is capable of extracting framework aluminum and causing catalyst deactivation, it is a highly activated process requiring significant thermal energy.
 
-![Figure 2.1: FAU Zeolite Structure](../../figures/fig2_3_fau_structure.png)
+## 2.3 The Mechanism of Vanadium Poisoning
 
-The framework is built from corner-sharing TO₄ tetrahedra, where T represents either silicon or aluminium. Each aluminium atom in a tetrahedral site (T-site) carries a formal negative charge, which is balanced by a proton on a bridging oxygen atom, creating a Bronsted acid site of the form Si-O(H)-Al. These Bronsted acid sites are the catalytically active centres responsible for the carbocation-mediated cracking of carbon-carbon bonds in hydrocarbons (Corma, 1995).
+When vanadium is present in the feedstock, the destruction of the zeolite framework is dramatically accelerated. The mechanism of vanadium-induced destruction has been a subject of extensive investigation.
 
-### 2.2.2 The Role of Framework Aluminium
+Trujillo et al. (1997) utilized electron spin resonance (ESR), UV-VIS diffuse reflectance, and sorption measurements to elucidate the dynamics of vanadium on zeolite Y. They observed that vanadium initially deposits on the external surface of the zeolite but migrates into the internal channels upon heating in an oxidizing atmosphere. While water assists in transporting vanadium to the acid sites, it is not strictly required for the migration itself (Trujillo et al., 1997).
 
-The catalytic activity of zeolite Y is directly proportional to the number of framework aluminium atoms, because each framework aluminium generates one Bronsted acid site (Corma, 1995). However, the strength of individual acid sites also depends on the local environment: isolated aluminium atoms produce stronger acid sites than aluminium atoms with aluminium neighbours. 
+Crucially, Trujillo et al. (1997) established that although the strongest acid sites can stabilize vanadium in the V(IV) oxidation state (as VO²⁺ cations), experimental evidence indicates that V(IV) does not play a direct role in the destruction of the zeolite framework. Instead, under the steam-rich conditions of the regenerator, vanadium in the V(V) oxidation state forms volatile vanadic acid. The governing reaction within the zeolite is described as:
 
-Any process that removes aluminium from the framework, termed dealumination, directly reduces the number of acid sites and therefore the cracking activity. The extracted aluminium relocates as extra-framework aluminium (EFAL) species, which can exist as cationic species such as Al(OH)²⁺, neutral species such as Al(OH)₃, or as separate amorphous alumina phases (Corma, 1995; Scherzer, 1989).
+VO²⁺-Y + 2 H₂O ⇌ H⁺-Y + H₃VO₄         (2.1)
 
-## 2.3 Catalyst Deactivation in FCC Units
+Because vanadic acid (H₃VO₄) is a strong acid formed in the presence of steam, it attacks the SiO₂/Al₂O₃ framework, accelerating the hydrolysis of the framework bonds. In this manner, vanadium effectively acts as a catalyst for the steam-induced destruction of the zeolite (Trujillo et al., 1997).
 
-FCC catalysts undergo deactivation through four principal mechanisms: (1) hydrothermal dealumination by steam in the regenerator, (2) poisoning by deposited metals, primarily vanadium and nickel, (3) coke deposition during the cracking cycle, and (4) attrition and loss of fines. Of these, hydrothermal dealumination and vanadium poisoning are the most significant irreversible deactivation pathways (Cerqueira et al., 2008).
+## 2.4 Structural Damage and Mesopore Evolution
 
-### 2.3.1 The Steam vs. Vanadium Debate
+The macroscopic consequence of this vanadic acid attack is severe structural degradation. Etim et al. (2015) investigated the specific effects of vanadium contamination on the framework and micropore structure of ultra-stable Y (USY) zeolite. Using a combination of X-ray diffraction, nitrogen adsorption, transmittance electron microscopy (TEM), and solid-state NMR, they demonstrated that in the presence of steam, vanadium causes massive structural damage to the zeolite framework.
 
-A major point of contention in catalyst deactivation literature is the relative contribution of steam (hydrothermal degradation) versus vanadium to the destruction of the zeolite framework. At the regenerator temperature of 680 to 730 degrees Celsius, steam generated from the combustion of coke hydrogen attacks the Si-O(H)-Al bridges in the zeolite framework. The hydrolysis reaction can be represented as:
+A key finding by Etim et al. (2015) was the excessive evolution of non-inter-crystalline mesopores driven by vanadium contamination. At a vanadium loading of just 0.5 wt.%, the evolved mesopore size averaged approximately 25.0 nm. This is significantly larger than the standard mesopore sizes found in hydrothermally stable zeolitic materials optimized for FCC performance. The formation of these massive mesopores is a direct result of the accelerated, unregulated dealumination catalyzed by the mobile vanadic acid species penetrating the inner cavities of the zeolite (Etim et al., 2015).
 
-Si-O(H)-Al(framework) + H₂O → Si-OH + HO-Al(EFAL)         (2.1)
+## 2.5 Mitigation Strategies and Metal Passivators
 
-Some researchers, notably evaluating operations with lower metal feeds, argue that steam alone is the primary driver of dealumination, asserting that vanadium merely exacerbates an already aggressive hydrothermal environment (Silaghi et al., 2015). Conversely, studies focused on heavy residue feeds, such as the evaluations by Adenenche et al. (2022) on local crude fractions, indicate that vanadium takes on a distinct, aggressively catalytic role in breaking framework bonds, overshadowing simple steam hydrolysis. Understanding whether vanadium merely acts alongside steam, or whether it provides a uniquely lower-energy pathway for destruction, is critical for catalyst design.
+To combat the deleterious effects of vanadium and other metals, refineries employ metal passivators and trapping agents. Adanenche et al. (2022) reviewed recent advances in the passivation of RFCC catalysts. While antimony and bismuth have historically been used to mitigate the dehydrogenating effects of nickel, controlling vanadium requires different strategies. 
 
-## 2.4 Vanadium Poisoning of FCC Catalysts
+Compounds based on tin, rare earth metals (such as cerium and lanthanum), and basic alkaline earth metals (such as magnesium) have attracted significant attention for their ability to trap and passivate vanadium (Adanenche et al., 2022). Etim et al. (2015) noted that the interaction of vanadium with a passivator limits its mobility and decreases its effective acidity, thereby preventing the vanadic acid from reaching the inner cavities of the zeolite where it causes massive structural breakdown. However, as the industry shifts towards processing increasingly heavy feeds, there remains a pressing need to develop RFCC catalysts with improved, environmentally friendly metal tolerance while maintaining intrinsic cracking properties (Adanenche et al., 2022).
 
-### 2.4.1 The Mobility of Vanadium Under Regenerator Conditions
+## 2.6 Computational Investigation of Reaction Mechanisms
 
-Heavy petroleum feeds contain organometallic compounds of vanadium and nickel. During cracking, these metals deposit on the catalyst surface. As the catalyst circulates through the regenerator, vanadium is oxidised to V₂O₅, which is mobile under regenerator conditions (Occelli, 1991; Pine, 1990).
+As demonstrated by Malola et al. (2011), computational modeling using density functional theory is highly effective for elucidating the reaction paths and activation barriers of zeolite dealumination. While their work provided crucial insights into baseline steam hydrolysis, understanding the specific energetic differences introduced by the catalytic action of vanadic acid (Trujillo et al., 1997) requires a comparative computational approach. 
 
-The destructive power of vanadium arises from the formation of volatile vanadic acid (ortho-vanadic acid, H₃VO₄) in the steam-rich regenerator atmosphere. The reaction can be written as:
-
-V₂O₅(l) + 3 H₂O(g) → 2 H₃VO₄(g)         (2.2)
-
-Wormsbecher et al. (1986) detected H₃VO₄ vapour in simulated regenerator gas at 730 degrees Celsius. This vapour-phase mobility allows vanadium to migrate from the external surface of the catalyst particle deep into the zeolite micropores.
-
-### 2.4.2 Experimental Evidence of Vanadium-Accelerated Dealumination
-
-Pine (1990) demonstrated through systematic steaming experiments that vanadium dramatically accelerates the destruction of USY zeolite compared to steam alone. Trujillo (1997) extended this work by distinguishing between the roles of steam and vanadium, demonstrating that the mechanism involves two sequential processes: vanadic acid formation in the gas phase, followed by acid-catalysed hydrolysis of framework aluminium-oxygen bonds by the vanadic acid acting at Bronsted acid sites. 
-
-Etim et al. (2015) further characterised the structural damage to USY zeolite after vanadium impregnation and steam deactivation, showing a strong correlation between the loss of framework aluminium (measured by unit cell contraction) and the loss of Bronsted acid site density.
-
-## 2.5 Computational Studies of Zeolite Reactivity
-
-### 2.5.1 Cluster Models for Zeolite Active Sites
-
-Direct experimental observation of individual bond-breaking events in zeolites is not possible with current techniques. Computational chemistry, particularly density functional theory (DFT), provides access to these atomistic details (van Santen & Kramer, 1995). A practical approach is the cluster model, in which a small fragment of the framework surrounding the active site is extracted from the periodic structure and the dangling bonds at the cluster boundary are terminated with hydrogen atoms. Cluster models containing 4 to 8 tetrahedral sites have been used successfully to study acid-catalysed reactions in zeolites (Zheng et al., 2020; Silaghi et al., 2015).
-
-### 2.5.2 Semi-Empirical Methods: The GFN2-xTB Approach
-
-Before investing in expensive DFT geometry optimisations, it is advantageous to explore the potential energy surface at a lower level of theory to identify plausible reaction pathways. The GFN2-xTB (Geometry, Frequency, Noncovalent interaction, eXtended Tight Binding) method, developed by Grimme and co-workers (Bannwarth et al., 2019), is a robust semi-empirical tight-binding method. It includes sophisticated corrections for dispersion, hydrogen bonding, and halogen bonding at a computational cost roughly three orders of magnitude lower than hybrid DFT. GFN2-xTB has been extensively validated for geometry optimisations and conformational screenings across a broad range of inorganic and organic systems, making it highly suitable as a Tier-1 screening tool for mapping zeolite interaction pathways before DFT refinement.
-
-### 2.5.3 Density Functional Theory in Catalysis
-
-The accuracy of a DFT calculation depends on the choice of exchange-correlation functional. Hybrid functionals that mix a fraction of Hartree-Fock exact exchange with generalised gradient approximation (GGA) exchange have proven most reliable. B3LYP (Becke, 1993) has been the most widely used functional in zeolite computational chemistry for over two decades. PBE0 (Adamo & Barone, 1999) provides a useful internal consistency check with no empirical parameters.
-
-To capture London dispersion interactions, which are critical in zeolite chemistry, Grimme's D3 dispersion correction with Becke-Johnson (BJ) damping is applied (Grimme et al., 2011). Combined with the def2-TZVP basis set (Weigend & Ahlrichs, 2005), this represents the current standard of practice for DFT studies of zeolite catalysis (Goerigk et al., 2017).
-
-## 2.6 Summary and Identification of Research Gap
-
-The literature establishes the consensus that vanadium is oxidised to V₂O₅ in the regenerator, which reacts with steam to form volatile H₃VO₄. This vanadic acid migrates into the zeolite micropores and accelerates the hydrolytic removal of framework aluminium. However, a significant gap remains: the elementary mechanism of the vanadic acid attack, the specific energetics of each intermediate and transition state, and a rigorous computational comparison of these energetics against the simple steam hydrolysis baseline. This study addresses this gap by constructing a cluster model of the zeolite Y Bronsted acid site and comparing the pathways using GFN2-xTB and hybrid DFT.
+To manage computational cost while exploring complex reaction coordinates, modern studies often employ a tiered approach. Semi-empirical tight-binding methods, such as GFN2-xTB, offer robust initial geometry optimization and pathway screening. Subsequently, higher-level hybrid DFT methods, incorporating dispersion corrections (e.g., B3LYP-D3(BJ)), are utilized to refine the geometries and provide accurate thermodynamic and kinetic energies for the proposed stationary points. This computational strategy is adopted in the present study to quantify the thermodynamic driving forces of vanadic acid attack versus baseline steam hydrolysis.
 # CHAPTER THREE
 
 # METHODOLOGY
@@ -442,72 +402,22 @@ The computational study of catalyst deactivation is a complex undertaking, and s
 
 Adamo, C., & Barone, V. (1999). Toward reliable density functional methods without adjustable parameters: The PBE0 model. *The Journal of Chemical Physics*, *110*(13), 6158-6170.
 
-Adenenche, E., et al. (2022). Evaluation of fluid catalytic cracking catalysts in the processing of Nigerian heavy crude fractions: The role of steam and vanadium on structural deactivation. *Local Engineering Journal (Placeholder)*, *12*(4), 112-125.
-
-Akah, A., & Al-Ghrami, M. (2015). Maximizing propylene production via FCC technology. *Applied Petrochemical Research*, *5*(4), 377-392.
-
-Baerlocher, C., McCusker, L. B., & Olson, D. H. (2007). *Atlas of zeolite framework types* (6th ed.). Elsevier.
-
-Bai, P., Etim, U. J., Yan, Z., Mintova, S., Zhang, Z., Zhong, Z., & Gao, X. (2019). Fluid catalytic cracking technology: current status and recent discoveries on catalyst contamination. *Catalysis Reviews*, *61*(3), 333-405.
+Adanenche, D. E., Aliyu, A., Atta, A. Y., & El-Yakubu, B. J. (2022). Residue fluid catalytic cracking: A review on the mitigation strategies of metal poisoning of RFCC catalyst using metal passivators. *FUEL* (Review Draft).
 
 Bannwarth, C., Ehlert, S., & Grimme, S. (2019). GFN2-xTB—An accurate and broadly parametrized self-consistent tight-binding quantum chemical method with multipole electrostatics and density-dependent dispersion contributions. *Journal of Chemical Theory and Computation*, *15*(3), 1652-1671.
 
 Becke, A. D. (1993). Density-functional thermochemistry. III. The role of exact exchange. *The Journal of Chemical Physics*, *98*(7), 5648-5652.
 
-Cerqueira, H. S., Caeiro, G., Costa, L., & Ribeiro, F. R. (2008). Deactivation of FCC catalysts. *Journal of Molecular Catalysis A: Chemical*, *292*(1-2), 1-13.
-
-Corma, A. (1995). Inorganic solid acids and their use in acid-catalyzed hydrocarbon reactions. *Chemical Reviews*, *95*(3), 559-614.
-
-Etim, U. J., Bai, P., Liu, Y., Xing, W., & Yan, Z. (2015). Vanadium and nickel deposition on FCC catalyst: Influence of residual catalyst acidity on catalytic products. *Applied Catalysis A: General*, *505*, 536-545.
-
-Etim, U. J., Bai, P., Xing, W., & Yan, Z. (2018). Role of rare earth-containing acid sites on suppressing vanadium-induced deactivation of FCC catalyst. *Catalysis Today*, *314*, 46-55.
-
-Faghani, M., Zare, M., & Kazemeini, M. (2024). Vanadium passivation in FCC catalysts: A comprehensive review of mechanisms and mitigation strategies. *Fuel Processing Technology*, *254*, 108035.
-
-Garcia-Serrano, L. A., Gomez-Balderas, R., Martinez-Magadan, J. M., & Santamaria, R. (2003). Density functional theory study of vanadium species in zeolite frameworks. *The Journal of Physical Chemistry B*, *107*(34), 8963-8968.
+Etim, U. J., Xu, B., Ullah, R., & Yan, Z. (2015). Effect of vanadium contamination on the framework and micropore structure of ultra stable Y-zeolite. *Journal of Colloid and Interface Science*.
 
 Goerigk, L., Hansen, A., Bauer, C., Ehrlich, S., Najibi, A., & Grimme, S. (2017). A look at the density functional theory zoo with the advanced GMTKN55 database for general main group thermochemistry, kinetics and noncovalent interactions. *Physical Chemistry Chemical Physics*, *19*(48), 32184-32215.
 
 Grimme, S., Ehrlich, S., & Goerigk, L. (2011). Effect of the damping function in dispersion corrected density functional theory. *Journal of Computational Chemistry*, *32*(7), 1456-1465.
 
-Hohenberg, P., & Kohn, W. (1964). Inhomogeneous electron gas. *Physical Review*, *136*(3B), B864.
-
-Kohn, W., & Sham, L. J. (1965). Self-consistent equations including exchange and correlation effects. *Physical Review*, *140*(4A), A1133.
-
-Lee, C., Yang, W., & Parr, R. G. (1988). Development of the Colle-Salvetti correlation-energy formula into a functional of the electron density. *Physical Review B*, *37*(2), 785.
-
-Mardirossian, N., & Head-Gordon, M. (2017). Thirty years of density functional theory in computational chemistry: an overview and extensive assessment of 200 density functionals. *Molecular Physics*, *115*(19), 2315-2372.
-
-Mitchell, B. R. (1980). Metal contaminants of catalytic cracking. *Industrial & Engineering Chemistry Product Research and Development*, *19*(2), 209-213.
-
-Occelli, M. L. (1991). Fluid catalytic cracking with zeolite catalysts. *Catalysis Reviews: Science and Engineering*, *33*(3-4), 241-270.
-
-Okonkwo, P. C., Shitu, A., & Ogbuefi, U. C. (2017). Characterisation of Nigerian crude oils and their implications for refining processes. *Journal of Petroleum Exploration and Production Technology*, *7*(1), 183-191.
+Malola, S., Svelle, S., Lønstad Bleken, F., & Swang, O. (2011). Detailed Reaction Paths for Zeolite Dealumination and Desilication From Density Functional Calculations. *Angewandte Chemie*, *51*, 652-655.
 
 Perdew, J. P., Burke, K., & Ernzerhof, M. (1996). Generalized gradient approximation made simple. *Physical Review Letters*, *77*(18), 3865.
 
-Pine, L. A. (1990). The mechanism of vanadium poisoning of FCC catalysts. *Journal of Catalysis*, *125*(2), 514-524.
-
-Sadeghbeigi, R. (2012). *Fluid catalytic cracking handbook: An expert guide to the practical operation, design, and optimization of FCC units* (3rd ed.). Butterworth-Heinemann.
-
-Scherzer, J. (1989). Dealuminated faujasite-type structures with SiO2/Al2O3 ratios over 100. *Journal of Catalysis*, *115*(1), 100-111.
-
-Silaghi, M. C., Chizallet, C., & Raybaud, P. (2015). Challenges on molecular aspects of dealumination and desilication of zeolites. *Microporous and Mesoporous Materials*, *211*, 68-86.
-
-Stephens, P. J., Devlin, F. J., Chabalowski, C. F., & Frisch, M. J. (1994). Ab initio calculation of vibrational absorption and circular dichroism spectra using density functional force fields. *The Journal of Physical Chemistry*, *98*(45), 11623-11627.
-
-Trujillo, C. (1997). The mechanism of vanadium poisoning of fluid catalytic cracking catalysts: Deactivation of USY and RE-USY zeolites. *Applied Catalysis A: General*, *165*(1-2), 19-35.
-
-van Santen, R. A., & Kramer, G. J. (1995). Reactivity theory of zeolitic Bronsted acidic sites. *Chemical Reviews*, *95*(3), 637-660.
-
-Vermeiren, W., & Gilson, J. P. (2009). Impact of zeolites on the petroleum and petrochemical industry. *Topics in Catalysis*, *52*(9), 1131-1161.
-
-Vogt, E. T., & Weckhuysen, B. M. (2015). Fluid catalytic cracking: recent developments on the grand old lady of zeolite catalysis. *Chemical Society Reviews*, *44*(20), 7342-7370.
+Trujillo, C. A., Navarro Uribe, U., Knops-Gerrits, P.-P., Oviedo A., L. A., & Jacobs, P. A. (1997). The Mechanism of Zeolite Y Destruction by Steam in the Presence of Vanadium. *Journal of Catalysis*, *168*, 1-15.
 
 Weigend, F., & Ahlrichs, R. (2005). Balanced basis sets of split valence, triple zeta valence and quadruple zeta valence quality for H to Rn: Design and assessment of accuracy. *Physical Chemistry Chemical Physics*, *7*(18), 3297-3305.
-
-Wormsbecher, R. F., Peters, A. W., & Maselli, J. M. (1986). Vanadium poisoning of cracking catalysts: Mechanism of poisoning and design of vanadium tolerant catalyst system. *Journal of Catalysis*, *100*(1), 130-137.
-
-Xu, M., Yan, Z., & Yang, Z. (2002). The effect of sodium on vanadium poisoning of FCC catalysts. *Applied Catalysis A: General*, *232*(1-2), 197-203.
-
-Zheng, Y., Wang, X., & Zhang, X. (2020). Cluster models for computational studies of zeolite catalysis: A critical review. *ACS Catalysis*, *10*(15), 8415-8438.
