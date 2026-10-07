@@ -1,0 +1,1665 @@
+
+<<<PAGE 1>>>
+This article was downloaded by: [Michigan State University]
+On: 13 June 2013, At: 12:12
+Publisher: Taylor & Francis
+Informa Ltd Registered in England and Wales Registered Number: 1072954
+Registered office: Mortimer House, 37-41 Mortimer Street, London W1T 3JH,
+UK
+Catalysis Reviews: Science and
+Engineering
+Publication details, including instructions for
+authors and subscription information:
+http://www.tandfonline.com/loi/lctr20
+Vanadium-Zeolite Interactions
+in Fluidized Cracking Catalysts
+Mario L. Occelli a
+a Unocal Corporation, P.O. Box 76, Brea, California,
+92621
+Published online: 23 Sep 2006.
+To cite this article: Mario L. Occelli (1991): Vanadium-Zeolite Interactions in
+Fluidized Cracking Catalysts, Catalysis Reviews: Science and Engineering, 33:3-4,
+241-280
+To link to this article:  http://dx.doi.org/10.1080/01614949108020301
+PLEASE SCROLL DOWN FOR ARTICLE
+Full terms and conditions of use: http://www.tandfonline.com/page/terms-
+and-conditions
+This article may be used for research, teaching, and private study purposes.
+Any substantial or systematic reproduction, redistribution, reselling, loan,
+sub-licensing, systematic supply, or distribution in any form to anyone is
+expressly forbidden.
+The publisher does not give any warranty express or implied or make any
+representation that the contents will be complete or accurate or up to
+date. The accuracy of any instructions, formulae, and drug doses should be
+independently verified with primary sources. The publisher shall not be liable
+for any loss, actions, claims, proceedings, demand, or costs or damages
+whatsoever or howsoever caused arising directly or indirectly in connection
+with or arising out of the use of this material.
+
+<<<PAGE 2>>>
+CATAL . REV.-SCI. 
+ENG., 33(3&4). 241-280 (1991) 
+Vanadium-Zeolite Interactions 
+in Fluidized Cracking Catalysts* 
+MARIO L . OCCELLI 
+Unocal Corporation 
+P.O. Box 76 
+Brea . California 92621 
+I . INTRODUCTION .................................. 
+242 
+I1 . 
+EXPERIMENTAL .................................. 
+245 
+A . Catalyst Preparation and Testing .................. 
+245 
+B . Vanadium Analysis ............................ 
+246 
+C . Powder Diffraction Measurements ................ 
+246 
+D . Raman Spectroscopy ........................... 
+246 
+E . Si and A1 NMR Measurements ................... 
+247 
+F . Vanadium-51 NMR ............................ 
+248 
+111 . RESULTS AND DISCUSSION ....................... 
+248 
+A . NMR Characterization .......................... 
+248 
+B . Vanadium-HY Interactions ...................... 
+253 
+C . Interactions of Supported Vanadium with Water ..... 
+258 
+D . Vanadium-REY Interactions ..................... 
+265 
+THE PRESERVATION OF ZEOLITE CRYSTALLINITY 
+AND CRACKING PROPERTIES ..................... 
+269 
+IV . 
+*Based on a paper presented at the Fourth Symposium on Advances in Catalytic Chemistry. 
+Snowbird. Utah. October 1989 . 
+241 
+Copyright 0 1991 by Marcel Dekker. Inc . 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 3>>>
+242 
+OCCELLI 
+V. 
+SUMMARY AND CONCLUSIONS ................... 
+275 
+ACKNOWLEDGMENTS ............................ 
+278 
+REFERENCES .................................... 
+278 
+I. INTRODUCTION 
+Metal levels on equilibrium fluidized cracking catalysts (FCC) have been 
+increasing through the years (Fig. l), indicating that the study of the physi- 
+cochemical properties of metal resistant FCC has remained an important topic 
+to refiners [l]. After the crude oil price collapse of 1986, Ni levels on equi- 
+librium FCC have remained fairly constant whereas V levels have somewhat 
+decreased owing to the greater availability (and lower cost) of high-quality 
+crudes; Fig. 2. At the metals levels shown in Fig. 1, Ni and V catalyze the 
+undesirable cracking of hydrocarbons in the gasoline boiling range, thus 
+increasing coke and hydrogen yields. Vanadium-induced activity losses can 
+be easily circumvented with the proper catalyst management and increased 
+makeup rates. However, should refiners in the future undertake the cracking 
+of residual oils or crack certain readily available crudes from Venezuela and 
+Mexico, metals (especially V) will probably increase well above the levels 
+shown in Fig. 1 and novel FCC will have to be found to negate the severe 
+effects of V on cracking activity. 
+It is well known that Ni (like Fe) does not quench cracking activity even 
+when present at the 2-3% level [2-91. In contrast, above 0.5% V loading, 
+catalyst properties deteriorate rapidly and at 1% V a near total loss of surface 
+area and (useful) cracking activity is expected [7, lo]. At microactivity test 
+conditions, it has been shown that addition of diluents capable of selectively 
+sorbing metal contaminants from gas oils can form dual function cracking 
+catalysts (DFCC) mixtures that retain most of their useful cracking activity 
+even in the presence of 1.0-1.5% V [lo-131. The deleterious effects of V 
+on cracking activity can be inhibited also by incorporating metal traps, such 
+as sepiolite [14], titanates [15, 161, and sacrificial zeolites [17, 181 into the 
+FCC matrix. 
+There is another reason that justifies interest in studying FCC contaminated 
+with metal levels above values currently found on equilibrium FCC. The 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 4>>>
+VANADIUM-ZEOLITE INTERACTIONS 
+243 
+1600 
+1500 
+1400 
+n 
+W rj :: 
+* 1100 
+I4 9 1000 
+3 900 
+2 800 
+ti 700 
+2600 
+6 
+5 i 5 O 0 
+400 
+300 
+0 NICKEL 
+0 VANADIUM 
+1
+1
+1
+1
+1
+1
+1
+ I
+I
+ I 
+198081 82 83 84 85 86 87 88 89 1990 
+CALENDAR YEAR 
+FIG. 1. Metal level trends in equilibrium fluid cracking catalysts (FCC). 
+Data based on Davison analysis of samples from 96% of fluid units in the 
+USA and Canada. 
+metal loadings shown in Fig. 2 would preclude (or greatly complicate) the 
+study of metals-surface interaction in FCC by some of the more readily 
+available characterization techniques such as x-ray diffraction (XRD), x-ray 
+photoelectron spectroscopy (XPS), nuclear magnetic resonance (NMR), lu- 
+minescence, laser raman spectroscopy (LRS), and secondary ion mass spec- 
+trometry (SIMS). Thus, most of the research has been conducted with ma- 
+terials containing 0.5% to 5.0% metals deposited using rapid methods of 
+artificially contaminating catalysts that employ solutions of Ni or V naphthen- 
+ates in benzene (or toluene) [ 19, 201. The catalysts are calcined (500-600°C) 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 5>>>
+244 
+OCCELLI 
+0 
+m 
+d 
+(3 
+0 
+(3 
+1 i 
+I 
+I 
+. . . 
+I , 
+0 
+w n 
+0 
+! I 
+\ 
+. . 
+0 
+m 
+0 
+m 
+0 
+cu 
+cu 
+r 
+r 
+v) 
+13UUV8 U3d $ 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 6>>>
+VANADIUM-ZEOLITE INTERACTIONS 
+245 
+in air to remove the organics and then (to reduce their properties to those 
+found in equilibrium FCC) exposed to a flow of steam at 700-800°C for a 
+From materials thus prepared, luminescence and electron paramagnetic 
+resonance (EPR) data [21, 221 have indicated that after V loading a FCC 
+cracking component (a zeolite with the faujasite structure) or an FCC matrix 
+(an aluminosilicate gel of the type used in FCC preparations) V02+ ions are 
+formed. Following the oxidative decomposition of the naphthenate (54O0C/1O 
+h in air), V on the gel is oxidized mainly to V2O5 whereas in the zeolite, it 
+remains present mainly as vanadyl cations. Only after steaming is V present 
+on the zeolite, mostly as a V5+ specie [21-231. 
+Steam-aging (at 760"C/5 h) causes the collapse of a V-loaded zeolite Y 
+by two different mechanisms. In HY crystals [free of rare earth (RE) cations], 
+after lattice collapse, the formation of V2O5, mullite, and silica (tridymite) 
+is observed [ 1 11. In the presence of RE ions, the faujasite structure collapse 
+with formation of rare earth vanadates (REVOJ [ 113; The formation of these 
+compounds has been proposed (or observed) by several other workers [25- 
+291. It is the purpose of this paper to review and to further examine the 
+interaction of V with zeolites (HY or CREY) usually employed as cracking 
+components in FCC formulations. 
+5- to 10-h period. 
+11. 
+EXPERIMENTAL 
+A . Catalyst Preparation and Testing 
+The sample of calcined rare earth (RE) exchanged zeolite Y (CREY) and 
+the high-activity cracking catalyst (GRZ-1) used in the present study were 
+obtained from the Davison Company. Davison's GRZ-1 is an FCC that con- 
+tains an estimated 35% CREY and after steam-aging has a BET surface area 
+of 161 m2/g. The CREY sample had a Si02/A1203 ratio of 5.0; contained 
+7.6% Ce2O3, 4.0% La20, 2.8% Nd203, and 0.9% Pr203; and had a BET 
+surface area of 749 m2/g. A residual 3.5% Na20 is present in these crystals. 
+The low (0.16%) Na20 REHY sample had BET surface area of 560 m2/g 
+and SiO2/AI2O3 = 4.7. The crystals contained 0.91% Ce203, 5.2% La203, 
+2.0% Nd203 and 0.71% Pr203. The HY sample (Linde LZY-82) had a 
+SiO2/AI2O3 ratio of 5.4, its BET surface area was 761 m2/g, and it contained 
+0.14% Na20. LaY (containing 8.1% La203) was obtained by reacting this 
+HY with 1 M LaC13 solutions (prepared using Lac& * 7H20 crystals, from 
+GFS Chemicals). The silicon-enriched HY crystals used (Linde LZ-210) had 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 7>>>
+246 
+OCCELLI 
+BET surface area of 746 m2/g and a Si02/A1203 ratio of 6.5, and contained 
+0.18% Na20. 
+Catalyst evaluation was performed with a microactivity test (MAT) using 
+conditions described elsewhere [9]. Conversions are on a vol% fresh feed 
+(FF) basis and have been defined as [V, - VdV,] X 100, where V, is the 
+volume of feed and V, is the volume of product with bp > 204°C. 
+Solutions of vanadyl naphthenate in benzene were used to metal load the 
+various materials according to an established procedure [ 191; the naphthenate 
+was obtained from Pfaltz and Bauer, Inc., and contained 2.9 wt% V. The 
+metal-loaded materials were first air-dried for 10 h, slowly brought to 540°C 
+(in flowing air), and then kept at this temperature for 10 h. Steam-aging was 
+accomplished by passing steam at 760°C over the calcined catalysts for 5 h. 
+B. Vanadium Analysis 
+Vanadium in several aqueous extracts was determined by flame atomic 
+emission spectrometry. The extracts were diluted with distilled water and 
+potassium chloride was added as an ionization buffer. Atomic emission at 
+437.92 nm was measured after aspirating the solutions into a fuel-rich nitrous 
+oxide-acetylene flame. Quantitation was accomplished by comparing the sam- 
+ple emission intensities with a calibration curve which was prepared from 
+aqueous standard vanadium solutions. A polynomial regression was used to 
+fit the vanadium standards to the calibration curve. 
+C. Powder Diflraction Measurements 
+Powder diffraction measurements were obtained with a Siemens D-500 
+diffractometer at a scan rate of O.Ol"/step using 3 sec/step monochromatic 
+CuK, radiation; CaF2 was used as an internal standard for angle calibration. 
+Peak positions of the mullite samples were determined using computer pro- 
+grams supplied by the instrument vendor and corrected to JCPDS CaF, p- 
+sitions. Lattice parameters and cell volume were determined using a PC 
+version of the Appleman refinement program as supplied by Benoit. Only 10 
+to 15 reflections were used in the refinement due to the somewhat poor 
+crystallinity and weak reflections present in some samples. 
+D . Raman Spectroscopy 
+Raman spectra were recorded on a Spex Ramalog 1403 spectrometer (Spec 
+Industries, Metuchen, NJ) equipped with a cooled RCA GaAs photomultiplier 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 8>>>
+VANADIUM-ZEOLITE INTERACTIONS 
+247 
+tube (CA 31034-02). The 4880 A line of a model 165 Ar+ laser (Spectra 
+Physics, Mountain View, CA) was used to generate Raman scattered light. 
+The laser power impinging on the sample was limited to approximately 50 
+mW. All spectra were recorded with a spectral resolution of 5 cm-' (350 pm 
+slit width). Signal pulses from the photomultiplier tube were passed through 
+a model 1 182 amplifier/discriminator (Princeton Applied Research, Princeton, 
+NJ) and counted by a Nicolet 1280 data system (Nicolet Instrument Corp., 
+Madison, WI). Typically, 50-100 scans per sample were averaged in order 
+to obtain spectra with adequate signal-to-noise ratios. A data point was ac- 
+quired every 0.7 cm-'. Samples were prepared for Raman measurements by 
+grinding the catalysts in an agate mortar and pestle. Samples containing KN03 
+(the internal standard) were prepared by grinding about 90% catalyst and 10% 
+KN03 mixtures. The powdered samples were then pressed into 1 cm diameter 
+wafers under a pressure of approximately 1000 psi. Each wafer was mounted 
+in a spinning sample holder and placed in the sample chamber of the spec- 
+trometer. The angle between the incident laser beam and the sample surface 
+was 30"; samples were spun at approximately 500 rpm to minimize thermal 
+modifications. 
+E. Si and A1 NMR Measurements 
+Silicon-29 NMR spectra were recorded at 53.7 MHz on an IBM AF-270 
+FTNMR spectrometer equipped with Doty Scientific MAS solids probe. Sam- 
+ples were spun in cylindrical 7 mm alumina (saphire) rotors equipped with 
+vespel caps at 3.0 to 3.5 kHz. Since neither high-power proton decoupling 
+nor cross-polarization (CP) was employed, the observed signal intensities are 
+uncorrected for the possible presence of Si-OH groups. A 60" pulse (6 ps) 
+and 5 sec recycle delay was used in all cases. 2K data points were acquired 
+during a 51 msec acquisition time (corresponding to 20 kHz spectral width) 
+and zero filled to 4K data points with apodization equivalent to 20- to 50-Hz 
+line broadening applied prior to Fourier transformation. Chemical shifts were 
+referenced to external TMS (taken as 0.0 ppm) by sample exchange using a 
+secondary standard (set to - 108.2 ppm). 
+Experimental Silicon-29 NMR signals were deconvoluted into Gaussian 
+components using the LINESIM program (courtesy of Dr. Peter Barron, 
+Griffith University, Natham, Australia) that was written for an ASPECT-3000 
+computer. The best fitting simulated spectra were obtained using an iterative 
+simplex routine. The Si/Al ratios were calculated from the derived line in- 
+tensities using the relation [3 11: 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 9>>>
+248 
+OCCELLI 
+Si/Al = IToT 
+0.25 n I S , [ ~ A I J 
+/ n I 1 
+where 
+is the total intensity of the spectrum and Isi[nAl] is the intensity 
+contributions from Si atoms with nAl neighbors in their second coordination 
+sphere. 
+The same spectrometer was also used to record aluminum-27 MAS NMR 
+spectra at 70.4 mHz. Typical scan conditions involved 18" (1 psec) pulse with 
+a recycle delay of 2 secs to obtain near quantitative results. In calculating 
+Al(VI)/Al(IV) ratios, it was assumed that spinning side bands (SSB) were of 
+equal intensities. 2K data points were acquired over 3 1 msec acquisition time 
+(corresponding to a sweep width of 33.3 kHz). Data was zero filled to 4K and 
+exponential apodization equivalent to 50 Hz line broadening applied before 
+Fourier transformation. Left shifting was not performed on the acquired data. 
+Samples were spun in 7 mm zirconia rotors fitted with vespel end caps, at 3.0 
+to 3.5 kHz. Chemical shifts reported are referenced to external aqueous 
+Ai3+(H20)6 (set to 0.0 ppm). 
+F . Vanadium-51 NMR 
+Spectra at a resonance frequency of 23.51 MHz were obtained at ambient 
+temperature using a JEOL FX-900 FTNMR spectrometer equipped with a 10 
+rnm mutinuclear probe and an external 2H reference lock frequency. The data 
+were acquired over a spectral width 20 kHz using 4K data points, a 45 pulse, 
+and a recycle delay of 10 msecs. An exponential multiplication equivalent to 
+a line broadening of 20-30 Hz was applied prior to Fourier transformation. 
+Rolling baselines were often observed, requiring the use of baseline correction 
+routine available with the standard JEOL system software. The chemical shifts 
+are reported with respect to an external V0Cl3 standard set to 0.0 ppm. 
+111. 
+RESULTS AND DISCUSSION 
+A. NMR Characterization 
+The silicon-29 MASNMR spectra of the low NazO HY crystals (Linde LZY- 
+82) after calcination in air at 540°C for 10h exhibit resonances at - 107.8 ppm, 
+- 102.1 ppm, -96.Oppm, and -91.1 ppm, correspondingtoSi[OAl], Si[lAl], 
+Si[2Al] and Si[3Al] units, respectively, Fig. S t r a c e A; the computed Si/Al 
+ratio from peak intensities is 5.3. After steaming, dealumination occurs and 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 10>>>
+VANADIUM-ZEOLITE INTERACTIONS 
+249 
+-20 
+-60 
+-100 
+-140 
+-180 
+-20 
+-60 
+-100 
+-140 
+-180 
+-20 
+-60 
+-1- 
+-140 
+-180 
+-20 
+-80 
+-100 
+-140 
+-180 
+CHEMICAL SHIFTS (ppm) 
+FIG. 3. Silicon-29 NMR Spectra from HY (Linde’s LZY-82), silicon- 
+enriched HY (Linde’s LZ-210), REHY, and CREY crystals after calcination: 
+traces A, C, E, and G; and after steam-aging: traces B, D, F, and H. 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 11>>>
+250 
+OCCELLI 
+only one resonance at - 108.6 ppm is seen in the corresponding spectrum; the 
+shoulder at about - 115 ppm suggest formation of some SiO, resulting from 
+lattice degradation, Fig. 3-B. 
+By contrast, the spectrum of the silicon-en- 
+riched HY crystals (Linde's LZ-2 10) does not change appreciably during steam 
+aging and only one peak at - 109 ppm, owing to the presence of Si[OAl] units, 
+can be seen, Fig. u, 
+3-D. 
+The silicon-29 NMR spectrum of calcined REHY 
+is similar to that obtained for the HY crystals under study, Fig. 3-E 
+and 3- 
+F. Notwithstanding the presence of RE ions, the signal intensities in Fig. 3-E 
+reflect a framework Si/Al ratio of 4.8. Dealumination in the calcined samples 
+is responsible for computed Si/Al ratios almost twice as large as those measured 
+from chemical analysis. As expected, steam-induced dealumination cause the 
+resonances in the - 103 ppm to - 90 ppm range to disappear, thus generating 
+a spectrum similar to that of the two steam-aged HY crystals, Fig. 3. The spec- 
+trum of calcined CREY is featureless owing to the paramagnetic broadening 
+effects of the high (-15% Re203) rare earths levels present in these crystals, 
+Fig. 4 4 . After steaming the peak maxima at - 100.9 ppm shifts to - 107.3 
+ppm, indicating dealumination, Fig. 4-H. 
+The corresponding aluminum-27 NMR spectra of these zeolites are shown 
+in Fig. 4. As seen in the 29Si NMR spectra, calcination of 540°C/10 h in air 
+induce some dealumination in all the samples and the presence of RE ions 
+seems to improve lattice stability. The spectra in Fig. 4 contain an intense 
+asymmetric peak in the 55- to 57-ppm region associated with framework A1 
+atoms and one near 0 pprn associated with extra lattice AI(V1). The presence 
+of extra framework A1 in the calcined samples is best observed by recording 
+*'A1 NMR spectra at 400 mHz (instead of 70.4 mHz) and by spinning the 
+samples at 7.0 kHz (instead of 3.0 kHz); see Fig. 4-E 
+and 4 4 . In the 
+calcined HY zeolite studied, a shoulder near 30 ppm can now be observed. 
+This shoulder becomes a well-resolved peak in the NMR spectra of the cal- 
+cined Si-enriched HY crystals, Fig. 4-43. The calcined HY-type crystals 
+seem to contain the most extra framework Al, Fig. 4-A, 
+4 4 , 4-E, 
+and 
+4 4 . Lesser amounts of Al(V1) are detected in the RE-containing zeolites 
+with the CREY crystals showing the least amounts of Al(VI), Fig. 4-1-4- 
+M. 
+Steaming (760°C/ 10 h) increases dealumination and a contraction of the 
+crystal's unit cell dimensions is observed: 
+Treatment 
+LZ-2 10 
+LZY-82 
+REHY 
+CREY 
+Calcination 
+24.303 
+24.480 
+24.412 
+24.695 
+Steaming 
+24.260 
+24.235 
+24.407 
+24.599 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 12>>>
+200 
+100 
+0 
+-100 
+-200 
+200 
+100 
+0 
+-100 
+-200 
+------- 
+200 
+100 
+0 
+-100 
+-200 
+200 
+100 
+0 
+-100 
+-200 
+200 
+100 
+0 
+-100 
+-200 
+200 
+100 
+0 
+-100 
+-200 
+CHEMICAL SHIFTS (ppm) 
+FIG. 4. Aluminum-27 NMR spectra at 70.4 mHz from HY (linde's LZY- 
+82), silicon-enriched HY (Linde's LZ-210), REHY, and CREY crystals after 
+calcination: A, C, I, and M; and after steam-aging: B, D, L, and N. Spectra 
+at 400 mHz for Linde's LZY-82 and LZ-210 after calcination and after steam- 
+ing are shown in E, G, F, and H, respectively. 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 13>>>
+0 262.5\ 
+* 225.0 
+P 187.5 
+0 
++ 150.0 
+c 
+$ 112.5 
+w 
+F 
+G? 
+U 
+I 
+OCCELLI 
+0 . o i 
+, 
+I--- 
+4 
+8 
+12 
+16 
+20 
+24 
+28 
+32 
+36 
+40 
+44 
+48 
+TWO - THETA (DEGREES) 
+FIG. 5. X-ray diffractograms of HY crystals with 5% V calcined at (A) 
+54O0C/1O h in air; (B) 760°C/5 h air; and (C) 760°C/5 h, steam. At 760°C 
+. , 
+the faujasite structure collapses and formation of mullite occurs. 
+Furthermore, a third peak near 30 ppm appews in the two HY samples under 
+study, Fig. 4-B 
+and 4-D; 
+these spectra are similar to that obtained for the 
+steam-aged gel under study. A line near 30 ppm has been attributed to the 
+presence of highly distorted extra framework Al(1V) [30] or to pentacoordi- 
+nated A1 nuclei [31]. In the two RE-containing zeolites, peaks associated with 
+AI(V1) are less intense and broader relative to the corresponding peaks seen 
+in spectra of HY samples, indicating that steam-induced dealumination is less 
+severe when RE ions are present. After calcination and steam-aging, extra- 
+framework A1 levels (as indicated by NMR) thus seem to decrease in the 
+following order: 
+CREY < REHY < HY(LZY-82) S HY (LZ-210) 
+Extra-framework A1 could complex V impurities thereby enhancing the zeolite 
+V tolerance. 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 14>>>
+VANADIUM-ZEOLITE INTERACTIONS 
+253 
+0 
+0 
+0 
+8 
+16 
+24 
+32 
+40 
+48 
+56 
+64 
+72 
+80 
+88 
+TWO - THETA (DEGREES) 
+FIG. 6. X-ray diffractograms of an amorphous aluminosilicate gel after 
+loading with 5% V and heating at: (A) 760°C in air and (B) 760°C/5 h in 
+100% steam. 
+B . Vanadium-HY Interactions 
+Since the Environmental Protection Agency (EPA) first proposed the lead 
+phaseout from gasoline in late 1984, siliceous HY zeolites have replaced rare 
+earth (RE) exchanged zeolite Y crystals in importance when manufacturing 
+fluidized cracking catalysts. The presence or absence of lanthanide ions (to- 
+gether with extra-framework A1 and Na+ ions) may affect V-zeolite inter- 
+actions as well as the hydrothermal stability of V-loaded zeolites. HY crystals 
+(with framework Si/AI = 5.3) are thermally stable when heated in air at 
+760"C/5 h even in the presence of 3-4% V [ll]. With 5% V, the crystals 
+are stable at 540°C (Fig. 5-trace 
+A); however, when the calcination tem- 
+perature is raised to 760"C, the faujasite structure collapses, and some mullite 
+is formed, Fig. 5-B. 
+Thus, even in the absence of steam, V-loaded Y zeolites 
+collapse with an ease dependent largely on calcination temperatures and V 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 15>>>
+254 
+OCCELLI 
+T g 
+G 
+5: 
+c z 
+Y 
+I 
+u) 
+w 
+z
+m
+ 
+2 % 
+c o 
+I 
+v) 
+r 
+0 
+4 
+8 
+12 
+16 
+20 
+24 
+28 
+32 
+36 
+40 
+44 
+1 
+TWO - THETA (DEGREES) 
+8 
+FIG. 7. X-ray diffractograms of an amorphous aluminosilicate gel (A) 
+and HY (B) crystals calcined at 1200"C/2 h in air. 
+levels. In the presence of steam, the ease with which V destabilizes the 
+faujasite lattice increases drastically. In fact, after the steam-aging (76OoC/5 
+h) step, HY crystals with only 2% V lose their crystallinity, and formation 
+of mullite (and tridymite) occurs [ 111. 
+Mullite formation can be observed also after calcining (760°C/5 h, air) an 
+amorphous aluminosilicate gel (AAA-alumina) containing 5% V [ 1 11. As 
+observed with HY crystals, steaming (760°C/5 h) enhances mullite formation, 
+Fig. 6. In the 1% to 5% V range, mullite formation in steam-aged gels 
+increases with V levels. Without V, HY crystals (and the gel) form mullite 
+only when heated at much higher temperatures. The x-ray diffractograms in 
+Fig. 7 were obtained after calcining in air at 12OO0C/2 h. Thus, it appears 
+that V acts as a mineralizing agent decreasing by more than 400°C the tem- 
+perature needed to form this mineral. 
+The silicon-enriched HY crystals (Linde's LZ-2 10) used appear to be more 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 16>>>
+VANADIUM-ZEOLITE INTERACTIONS 
+255 
+TABLE 1 
+Unit Cell Dimensions for Several Mullites" 
+Cell edge 
+Sample 
+a (a.u.) 
+b (a.u.) 
+c (a.u.) 
+V ( a . ~ . ~ ) 
+HY at 120O0C, air 
+7.567 
+7.686 
+2.884 
+167.73 
+HY at 760" C, 5% V, air 
+7.576 
+7.698 
+2.892 
+168.66 
+HY at 76OoC, 5% V, steam 
+7.585 
+7.702 
+2.890 
+168.85 
+Gel at 120O0C, air 
+7.550 
+7.690 
+2.888 
+167.68 
+Gel at 760°C, 5% V, steam 
+7.578 
+7.698 
+2.887 
+168.41 
+7.5563 
+7.6874 
+2.8842 
+167.54 
+7.5686 
+7.6865 
+2.8858 
+167.89 
+"The presence of an amorphous residue in these samples may affect the accuracy of 
+the measured cell sizes, and the uncertainty of these data may be significantly higher 
+than that associated with well-crystallized mullites free of phase impurities [33]. 
+"From Ref. 1 9. 
+resistant to V attack at hydrothermal conditions than HY (Linde's LZY-82). 
+In fact, with 2% V, these crystals retained 40% of their initial surface area 
+(164 m2/g) and crystallinity; 3% V is required to fully collapse the faujasite 
+structure and to form some mullite, Fig. 8. The high extra-framework A1 
+level present in these crystals could react with V02+ (or VO;) 
+cations and 
+form [2 > Al-OH + V02+ = (>Al-O),-VO + 2H+] complexes capable 
+of sequestering V, thus enhancing the crystals' V resistance. In addition to 
+mullite (and sometimes tridymite) an (x-ray amorphous) V205 phase can be 
+seen in the laser Raman (LR) spectra for V-loaded HY crystals, Fig. 9-A. 
+The bands at 997, 710, 530, 485, and 410 cm-' in Fig. 9-A 
+are typical of 
+a supported V205 phase. These bands broaden considerably for V-loaded Si- 
+enriched HY, indicating that when supported on these crystals (after steam 
+aging), V is probably in a highly distorted octahedral environment, Fig. !L- 
+B. 
+Mullite is an aluminosilicate consisting of chains of octahedral aluminum 
+atoms parallel to the c axis crosslinked by silicon or aluminum atoms in 
+tetrahedral coordination [32]. A variety of synthetic mullites can be prepared 
+from solid solutions (melts) of silica and alumina. The silica-rich 
+- 
+2Si02) and alumina-rich (2A1203 * SO2) phases are called a- and p-mullite, 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 17>>>
+256 
+OCCELLI 
+500.0 
+437.5 
+375.0 
+2 312.5 
+0 
++ 250.0 
+F 
+187.5 
+w 5 125.0 
+62.5 
+0 
+n 
+U 
+I 
+I 
+I 
+8 
+12 
+16 
+20 
+24 
+28 
+32 
+36 
+40 
+44 
+48 
+0.0; 
+TWO - THETA (DEGREES) 
+FIG. 8. X-ray diffractograms of silicon-enriched HY crystals (Linde LZ- 
+210) steam-aged in the presence of (A) 1.25%, (B) 2.0%, (C) 3.0%, (D) 
+4%, and (E) 5% vanadium. 
+respectively [32]. During synthesis, iron, titanium, and manganese [32] can 
+be incorporated into the lattice [32, 331. Iron-and titanium-bearing natural 
+mullite are also known [34]. Substitution of aluminum in mullites can cause 
+an expansion of the unit cell parameters and cell volume [32, 331. However, 
+in the case of Mn-substituted mullite, distortion of the unit cell dimensions 
+did not change the crystals’ unit cell volume [35]. 
+The calculated orthorhombic unit cell parameters for several mullites, 
+crystallized with and without V, are shown in Table 1. Efforts to remove the 
+amorphous residue with HF/HCl solutions (and improve sample crystallinity) 
+were not undertaken to avoid V leaching from the crystals. The cell dimensions 
+shown in Table 1 indicate that (in a qualitative sense) V causes an expansion 
+of the unit cell volume resulting mainly from an increase in the Q dimension. 
+Thus, V incorporation into these mullites probably occurs mainly by substi- 
+tution of Si or A1 atoms in the crosslinking tetrahedra. At the high temperatures 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 18>>>
+VANADIUM-ZEOLITE INTERACTIONS 
+I \ 
+1, 
+257 
+L 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+200 300 400 
+500 
+600 
+700 
+800 
+900 1000 1100 
+WAVENUMBER (CM - 1) 
+FIG. 9. Laser Raman spectra of steam-aged crystals containing 5% V: 
+(A) HY (Linde’s LZY-82), (B) silicon-enriched HY (Linde’s LZ-210), and 
+(C) REHY. 
+(T > 700°C) used in FCC regeneration, the V02+ cations are probably 
+oxidized to VO: 
+and these oxycations could then attack the 0-Al(1V) 
+bond 
+in HY. Reaction with extra-framework aluminum could then form A
+l
+U
+ 
+V complexes that, when incorporated into the mullite structure cause the 
+expansion along the a axis, and the increase in the unit cell volume shown 
+in Table 1. Excess V forms V,O,; in samples containing more than 2% V, 
+V205 can be easily identified by LRS, Fig. 9. In the presence of steam, 
+hydroxovanadyl ions (V02+ + H20 = VO(OH)+ + H+) and other pro- 
+tonated species resulting from hydrolysis of supported V205 or VO: 
+ions, 
+could accelerate A1 removal and lattice collapse, thus increasing the ease of 
+mullite formation indicated in Fig. 5 and elsewhere [ 111. Electronic inter- 
+actions between vanadyl species and framework A1 in HZSM-5 have been 
+discussed by Kucherov and Slinkin [36]. Oxygenation kinetics of V02+ 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 19>>>
+258 
+OCCELLI 
+cations on 6-A1203 in the presence of water (at 25°C) have been reported by 
+Wehrli and Stumm [37]. 
+C . Interactions of Supported Vanadium with Water 
+During the accelerated steam-aging procedure used in the laboratory to 
+reduce the properties of newly prepared catalysts to those of equilibrium FCC, 
+intraparticle transport of V has been shown to occur [lo]. Vanadium mobility 
+has also been observed at pilot plant test conditions [38]. Furthermore, Kugler 
+and Leta [39], using data from imaging secondary ion mass spectrometry 
+(SlMS), have observed recently that an equilibrium FCC containing alumina 
+granules accumulates V preferentially on the alumina particulates, thus sup- 
+porting laboratory and pilot plant results that have indicated that V-contam- 
+inated surfaces can react with steam and from volatile compounds capable of 
+migrating from particle to particle. 
+In order to obtain information that could help provide some insight on the 
+nature of the interaction between supported V compounds and steam, several 
+V-loaded material have been allowed to react with water and the nature of 
+the soluble vanadate formed investigated using vanadium-5 1 NMR. 
+Amorphous V205 is thought to be a three-dimensional network of chains 
+containing V
+4
+ 
+linkages. At room temperature this oxide sorbs water, form- 
+ing a viscous gel and, in contrast to crystalline V205, it readily dissolves in 
+water [40]. The nature of the species formed in V-containing solutions is still 
+somewhat controversial [41-481, see Fig. 10. In strongly alkaline solutions, 
+VOi- ions are present [41, 45, 461. As the pH of the solution is decreased, 
+HVOZ- ions are formed, which then condense to form stable V,O:- 
+ions 
+(2HVOi- = VzO;- + H,O; log K = + 1.68). In the 9.5-11.9 pH range, 
+V20;- is protonated to form HV20:- 
+ions [41]. At lower pH, the exact 
+nature of the vanadate species present in solution is uncertain. Brito [48] has 
+proposed that V30%-, V40f;, HV60:g, HV,,O&, and H2VloO& ions are 
+the main species present in the 2-8 pH range at 40°C. 
+By adding (at room temperature) small amounts of (calcined) V-contam- 
+inated materials to water (0.25 g/10 cc HzO) after periods of 5-10 h, the 
+hydrolysis of surface V generates liquids having different pH values and 
+coloration. The pH of liquid containing HY (LZY-82 grade) and a dealu- 
+minated HY (LZ-210) crystals decreased from 5.8 to 3.6 and 4.4, respectively, 
+when the V level on the zeolite increased from 0.5% to 5.0%, imparting a 
+yellowish coloration to the liquid. The pH of liquids containing REHY crys- 
+tals, by contrast, decreased only to 6.0 from 6.3 over the same V concentration 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 20>>>
+VANADIUM-ZEOLITE INTERACTIONS 
+259 
+0 
+1 
+2 
+I 
+m 
+0 
+C 
+" 3 
+2 
+o? 
+0 
+I 
+4 
+5 
+6 
+\ 
+\ 
+\ 
+\ 
+\ 
+\ 
+\ 
+\ 
+\ 
+\ 
+4, 
+------- 
+\ 
+HV042- 
+\ \ 
+Y 
+H2VOi 
+I 
+I 
+1 
+I 
+I 
+I 
+I 
+I 
+I , 
+12 
+10 
+8 
+6 
+4 
+I vO,+ 
+H3V04? 
+/{ V(OH),? 
+111 
+2 
+PH 
+FIG. 10. Vanadate species in aqueous solution as a function of pH and 
+total vanadium concentration (in g-atodl) prepared by Pope and Dale [41]. 
+Dashed lines represent uncertain demarcations. 
+I 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 21>>>
+260 
+OCCELLI 
+range. Similarly prepared CREY crystals also gave solutions in the 6.0-6.7 
+pH range. 
+The 51V NMR spectra for several V-containing solutions are shown in 
+Figs. 11-14. The chemical shifts observed in these figures, together with 
+published results [42, 43, 451, allow the identification of the major diamag- 
+netic V5+ specie present. At low (20 mg V/L) V concentration, 51V NMR 
+spectra of these liquids exhibit a major resonance in the - 555 to - 561 ppm 
+region (attributed to H2V0g), A traces in Figs. 11-13. Minor resonances 
+near - 570 ppm (attributed H2V20:-) can be seen in liquids exposed to RE- 
+containing zeolites, Fig. 13-A. 
+As the V concentration of the solids in- 
+creases, a proportional increase in the liquid total V content (V,) is observed 
+and new signals in the - 410 to - 530 ppm region appear, indicating polym- 
+erization of VO, and V207 to V10028 units. Signals in the -2:4:4 ratio near 
+- 425 ppm, - 505 ppm, and - 525 pprn (and the liquid deep orange color- 
+ation) indicate the presence of a decavanadate specie (probably H2V100& , 
+Figs. 11-F, 
+12-D, 
+13-D. 
+Additional signals near -575 ppm and near 
+-565 pprn (attributed to HV20:-) are also present, see Figs. 12-D 
+and 
+13-D. 
+Spectra of liquids from steam-aged samples seem to contain mainly 
+peaks characteristics of the presence of decavanadate ions, Fig. 11-F. 
+The 
+good signal to noise (S/N) ratio observed in solutions obtained from steam- 
+aged samples, reflect the high amount of V present in the + 5 oxidation state. 
+Since "V NMR can detect only V5+ ions, V compounds different from those 
+indicated in Figs. 11-14 may also be present in these solutions. Liquids from 
+V-loaded CREY crystals gave spectra (not shown) similar to that in Fig. 13- 
+A with a major peak near - 555 ppm and a weaker one near - 567 ppm. 
+This spectrum remained essentially unchanged even when the V loading on 
+CREY was raised to 5%. 
+After calcination, V-loaded metal scavengers (such as alumina, sepiol- 
+ite, attapulgite) react with water to give liquids with pH >7 even when 
+loaded with as much as 5% V. A weak band near -560 pprn (attributed 
+to H2V04) is seen in spectra for liquid containing 5% V on Catapal SB 
+alumina (pH = 7.Q Fig. 14-A. 
+A single major peak near -579 pprn 
+(attributed to H2V20:-) is seen instead in spectra for liquids containing 5% 
+V on sepiolite or attapulgite (pH = 6.7-7.3), Fig. 1". 
+The spectrum 
+in Fig. 1 4 - C is similar to the one obtained from liquid containing p- 
+Mg2V207 crystals or attapulgite. The pH decreased to 4.3 from 7.8 in liq- 
+uid containing steamed 5% V on AI2O3 and formation of decavanadate ions 
+occurred, Fig. 14-B. 
+In contrast, the pH increased to 8.6 from 7.3 in 
+liquid exposed to granules of steamed sepiolite containing 5% V; their 51V 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 22>>>
+VANADIUM-ZEOLITE INTERACTIONS 
+A 
+261 
+C 
+4 
+$l 
+1 
+D 
+E 
+0 
+ri :; 
+I " 
+, 
+F 
+I 
+CHEMICAL SHIFT (ppm) 
+FIG. 1 1. Vanadium-5 1 NMR spectra of liquids obtained by exposing to 
+water calcined HY crystals containing: (A) 0.4% V,(B) 0.8% V, (C) 1.0% 
+V, (D) 2% V, (E) 5% V. F is the spectrum obtained using steamed HY with 
+5% v. 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 23>>>
+262 
+A 
+OCCELLI 
+6 
+I 
+f 
+ul 
+ul 
+C 
+c1 
+ul f 
+D 
+CHEMICAL SHIFT (ppm) 
+FIG. 12. Vanadium-51 NMR spectra of liquids obtained by exposing to 
+water calcined LZ-210 crystals containing (A) 0.5% V, (B) 1.0% V, (C) 
+2.0% V, (D) 5.0% V. 
+NMR spectra exhibit a new (and sharp) resonance near -545 ppm as- 
+signed to HVO2- species. Evidence of V10028- units could not be ob- 
+served in liquid containing V-loaded clays, see Fig. 14. Liquids obtained 
+by adding to water 2% V-loaded aluminosilicate gel (containing -75% SiOz 
+and 25% A120,) give spectra (not shown) similar to that shown in Fig. 
+12-A. 
+After increasing the V level on the gel to 5%, formation of deca- 
+vanadate ions occurred. 
+In summary, these results suggest that when exposed to water, vanadium 
+(supported on components of FCC) undergoes complex hydrolysis-polym- 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 24>>>
+VANADIUM-ZEOLITE INTERACTIONS 
+14 
+h 
+u) 
+I 
+263 
+A 
+9 
+r 
+0 
+ln 
+I 
+B 
+'9 
+c 
+9 
+u) 
+I 
+CHEMICAL SHIFT (ppm) 
+FIG. 13. Vanadium-51 NMR spectra of liquids obtained by exposing to 
+water calcined REHY crystals containing: (A) 0.4% V, (B) 0.8% V,(C) 1 .O% 
+V, (D) 2% V. 
+enzation reactions in which V concentration, surface composition, and liquid 
+pH control the nature of the polyanions formed and their degree of protonation. 
+These data cannot predict the exact nature of the gaseous metallic hy- 
+droxides formed when a spent catalyst (V-contaminated and carbon-coated) 
+goes from the reaction zone to the steam-stripping zone of an FCC unit. 
+However, it is believed that the same parameters (such as surface composi- 
+tions, V levels, and residence times) that influence the nature of those V 
+compounds formed when a V-contaminated FCC is exposed to water, will 
+also affect the nature of the volatile V compound formed when the same 
+catalyst is exposed to steam. 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 25>>>
+264 
+OCCELLI 
+Y 
+0 
+0 
+In 
+I 
+B 
+C 
+E! a 
+I 
+In 
+s R 
+CUI 
+In 
+D 
+CHEMICAL SHIFT (ppm) 
+FIG. 14. Vanadium-51 NMR spectra of liquids obtained by exposing to 
+water alumina with 5% V: (A) calcined and (B) steamed; or Sepiolite with 
+5% V: (C) calcined and (D) steamed. 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 26>>>
+VANADIUM-ZEOLITE INTERACTIONS 
+265 
+Experimental data on the formation of volatile V compounds is scarce. 
+The transpiration study of Glemser and Muller [49] suggest that at 527"C, 
+the following reaction between V205 and oxygen-enriched steam occurs: 
+VzOsc,, + 2H20(g) = H4V207(g). In contrast, the transpiration study of Yan- 
+nopoulos [50] has indicated that in the 327-627°C temperature range, the 
+heterogeneous equilibrium V20s(s,l) + 3H& 
+= 2H3VO4(,, may exist if 
+only 1 V atom is assumed present in the gaseous molecule. Vanadic acid was 
+believed capable of leaching A1 from the zeolite framework in the form of 
+AIV04, thus causing reduction in crystallinity and therefore cracking activity 
+[29]. However, experimental evidence for AlV04 formation was not be pre- 
+sented. This vanadate is not thermally stable at test conditions. In fact, the 
+DTA profile of a reference (unsupported) AlV04 has indicated that this com- 
+pound begins to decompose at about 650°C [ 12). 
+Transport experiments at microactivity test conditions have shown that in 
+dual function FCC (DFCC) mixtures containing sepiolite, V is stabilized on 
+the metal scavenger mainly as P-Mg,V2O7 [51]. Furthermore, formation of 
+[V20,] units was also observed in a steam-aged DFCC when alumina was 
+used in place of sepiolite particles [12]. These results support the study of 
+Glemser and Muller 1491 and their conclusion that the major product of a 
+high-temperature reaction between VzOs(s.i) and steam is most likely H4V2O7. 
+D . Vanadium-REY Interactions 
+Vanadium-loaded CREY and HY crystals have similar thermal stability 
+(at 760°C/5 h, air) and 5% V loading is required to collapse the crystal 
+structure. A new phase then appears that gives an x-ray diffractogram in 
+excellent agreement with JCPDS pattern No. 12-757 for CeV04. Vanadate 
+formation in the calcined sample can be readily identified by LRS, see Figs. 
+9-42 
+and 15-A. 
+Although the CREY crystals used contained 4% La203, 
+La compounds could not be observed by XRD nor by LRS [ 1 11. In the presence 
+of steam (at 760°C) and V, these commercially available CREY crystals are 
+less stable than HY crystals; with 0.4% V there is a total loss of crystallinity 
+and surface properties [ 1 I]. Formation of CeV04 can be observed near or 
+above - 1 .O% V by XRD (and LRS) in steamed samples, Fig. 15-B; vanadate 
+formation increases with V loading [ 1 I]. As observed in a calcined samples, 
+La-compounds were not detected. However LaY crystals containing 8.1% 
+Laz03 (when steam aged in the presence of V) collapse with formation of a 
+phase that gives a LR spectrum similar to that for LaV04 prepared by heating 
+to 800°C a La203-V20s 
+mixture, see Fig. 16. 
+REHY (containing 0.16% Na,)) crystals are more resistant to V attack (at 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 27>>>
+266 
+OCCELLI 
+1
+1
+1
+1
+1
+1
+ I
+I
+I
+I
+I
+I
+ 1
+1
+1
+1
+1
+1
+L
+ 
+200 
+300 
+400 
+500 
+600 
+700 
+800 
+900 
+1000 
+1100 
+WAVENUMBER (CM-l) 
+FIG. 15. Laser Raman spectra of several materials loaded with 5% V 
+and steam-aged: (A) REHY, (B) CREY, (C) Davison’s GFU-1, a commerical 
+FCC. The spectra for the reference unsupported CeVO, is shown in D. 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 28>>>
+VANADIUM-ZEOLITE INTERACTIONS 
+267 
+200 
+300 
+400 
+500 
+600 
+700 
+800 
+900 
+1000 
+1100 
+WAVENUMBER (CM- 1) 
+FIG. 16. Laser Raman spectra of (A) LaY with 5% V, steamed; and (B) 
+reference LaV04. 
+hydrothermal conditions) than CREY crystals containing 3.5% Na20. Van- 
+adium could react with charge compensating Na+ ions (to form the corre- 
+sponding vanadate), thus contributing to the destabilization of the faujasite 
+structure. With 0.5% V, REHY retains about 50% of its initial surface area 
+(372 m2/g) and crystallinity after steam aging, Fig. 17. In the 0.5-1.0% V 
+range, there is a drastic reduction in surface properties and at 1.25% V, 
+evidence of the faujasite structure is lost, Fig. 17. Then, at 2% V, growth of 
+CeV04 can be observed, Fig. 17. 
+In RE-containing Y crystals (and in REY containing FCC) it is believed 
+that Ce4 + , present as an oxycerium complex is preferentially loaded near the 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 29>>>
+INTENSITY (CPS) *10 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 30>>>
+VANADIUM-ZEOLITE INTERACTIONS 
+269 
+supercages where it can more readily react with the stable (V=O)2+ cations 
+and form CeVO, by the following redox reaction: 
+[Ce<8>Cel4+ + 2V02+ + 4H20 = 2CeV04 + 8H' 
+Removal of lanthanides (and charge-compensating Na+ ions) and vanadate 
+formation, together with the enhanced framework dealumination owing to the 
+acidity generated during steaming, are probably the main causes that can be 
+used to rationalize the rapid and total collapse of the CREY crystals when 
+steam-aged in the presence of V impurities. 
+Laser Raman spectroscopy is diagnostic of vanadate formation in CREY 
+crystal containing more than 0.7% V. The LRS spectrum in Fig. 15-B 
+exhibits bands near 869,803,786, and 370 cm-' seen for unsupported CeV04, 
+Fig. 15-D; 
+the band near 470 cm-' could be due to unreacted Ce02. These 
+spectral features are retained in a V-contaminated commercial FCC (Davison 
+GRZ-1) containing an estimated 35% CREY, Fig. 1 5 4 . Furthermore, in 
+the V range investigated, there is a linear dependence between the V04 
+stretching vibrational band near 870 cm-' and V levels in both the CREY 
+and the CREY-containing FCC, Fig. 18-A 
+and 18-B. 
+Thus, Ce-V inter- 
+action continues to occur even after the zeolite structure collapse, and CeV04 
+formation is not inhibited by crystallinity losses. In samples containing less 
+than 1% V, XRD and LRS cannot identify CeV04. Nonetheless, it is believed 
+that vanadates formation is not dependent on VOz 
++ concentration. Further- 
+more, the rapid collapse at 760°C (in the presence of steam) of CREY crystals 
+with only 0.4% V is attributed mainly to vanadate formation, owing to the 
+ease with which V can interact with the RE ions and other charge compensating 
+cations (such as Na+) present. 
+IV. THE PRESERVATION OF ZEOLITE CRYSTALLINITY AND 
+CRACKING PROPERTIES 
+At the microactivity test (MAT) conditions used to test newly prepared 
+FCC, transport experiments have shown that steam-aging induces intraparticle 
+transport of V [lo]. Addition of certain diluents to the FCC microspheres 
+generated dual-function cracking catalyst (DFCC) mixtures that exhibit tol- 
+erance to high (1 .&I .5%) V levels. The ability of the additive to selectively 
+sorb migrating V as heat-stable V compounds is thought responsible for the 
+DFCC system's high V resistance reported in the patent literature and else- 
+where [lo, 51-53]. 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 31>>>
+270 
+OCCELLI 
+0 
+1 
+2 
+3 
+4 
+5 
+6 
+WT% VANADIUM 
+FIG. 18. The formation of CeVO, as a function of V loading in (A) 
+CREY and (B) Davison's GRZ-1. 
+Metal scavengers reported to date have few cracking properties. Thus, 
+when these materials are added to a commercial FCC, they act initially as 
+diluents and decrease cracking activity, Fig. 19. However, 2s metals are 
+selectively deposited on the scavenger surface, deactivation rates are signif- 
+icantly reduced and a cross-over point is reached at which the DFCC mixture 
+is more active (in the presence of high metals) than the parent (undiluted) 
+FCC, see Fig. 19. Cross-over points depend on gas oil composition, feed 
+metal levels, zeolite concentration (and type) in the host FCC, and on the 
+properties of the diluent. At the MAT conditions used to test FCC, DFCC 
+mixtures containing sepiolite or aluminas, this cross-over point was observed 
+for V loading in the 0.2-0.5% V range, Fig. 20. The activity of the zeolite- 
+rich (35% CREY) FCC monotonically decreases with V, and for V levels in 
+the 0.75-1 .O% range it loses most of its useful cracking activity and gasoline 
+make. However, addition of sepiolite or alumina prevents (limits) migrating 
+V from reaching the FCC microsphere, thus preserving cracking activity. As 
+a result, these DFCC mixtures retain a high cracking activity (70-75% con- 
+version) and gasoline make ( 5 5 6 5 % ) even when metals loaded with as much 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 32>>>
+I 
+I 
+1 
+z 
+0 
+u, 
+K 
+W > 
+z 
+0 
+0 
+- 
+METALS (Ni AND V) 
+FlG. 19. The enhanced preservation of cracking activity in a DFCC 
+mixture (A) is attributed to the metal scavenger’s (MS) ability to irreversibly 
+sorb migrating V (B). 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 33>>>
+272 
+OCCELLI 
+1 
+I
+I
+I
+/
+I
+,
+l
+j
+'
+l
+ 
+VANADIUM (WT%) 
+0.5 
+1.0 
+1.5 
+2.0 
+L ~ ~ L 
+1-
+J 
+0.5 
+1.0 
+1.5 
+2.0 
+VANADIUM (WT%I 
+FIG. 20. An FCC retention of cracking activity in the presence of V after 
+addition of a metal scavenger: (A) Sepiolite and (B) alumina [7, 81. 
+as I .O-1.5% V; see Figs. 20 and 21. The corresponding selectivity plots are 
+shown in Fig. 22. As the catalyst activity increases (following reduction in 
+V levels), the heavy fractions (SO and LCGO) are cracked to produce more 
+gasoline and light gases. Thus, liquid products distribution (and light gas 
+make) changes in a manner controlled by catalyst activity and not by selectivity 
+effects due to the presence of V-loaded sepiolite or alumina granules. How- 
+ever, the metal scavenger seems to affect the DFCC carbon (and hydrogen) 
+make [lo-121. 
+In cracking catalysts (with or without V), plots of cokekonverison ratio 
+versus conversion gives curves that monotonically increase with cracking 
+activity [51, 54, 551, see Fig. 23-A. 
+In contrast, DFCC generate selectivity 
+plots in which the hydrogen make and the cokeiconversion ratios decrease 
+with increasing conversion levels, that is, when V concentration levels on the 
+FCC surface are decreased, Figs. 23-B-232 
+[lo-121. During steam- 
+aging, V preferentially migrates to the metal scavenger particles [lo]. Al- 
+though materials used as metal scavengers have negligible cracking activity, 
+when loaded with V they could form dehydrogenation centers, thus converting 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 34>>>
+I 
+80 
+n 
+0 DFCC 
+0 FCC 
+0 DFCC 
+0 FCC 
+A 80 t 
+0.5 
+1.0 
+1.5 
+2.0 
+VANADIUM (WTo/o) 
+0.5 
+1.0 
+1.5 
+2.0 
+VANADIUM (Wlo/o) 
+FIG. 21. An FCC retention of gasoline make in the presence of V after addition of a metal 
+scavenger: (A) Sepiolite and (B) alumina [7, 81. 
+Y 
+u 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 35>>>
+7 0 , 
+LEGENO 
+1
+-
+1
+ 
+-- t '" 
+1 
+~- 
+so: 
+8
+0
+ 
+1 GASOLINE: 
+LCGO: 
+A 
+0 
+A 
+0 1 / 
+20 
+30 
+40 
+50 
+60 
+70 
+80 
+90 
+C 0 N VE R S I 0 N (V%FF) 
+FIG. 22. Vanadium effects on liquid product selectivity in DFCC mix- 
+tures containing: (A) Sepiolite and (B) alumina [7, 81. 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 36>>>
+VANADIUM-ZEOLITE INTERACTIONS 
+275 
+m 0 
+x 
+r 
+c 
+z 
+0 
+v) 
+U 
+w > 
+z 
+0 
+0 
+Y 
+0 
+0 
+- 
+iii 
+Y 
+look 
+90 
+"a. 
+\" 
+60 
+70 
+80 
+90 
+C 0 NVE R S I 0 N (Vo/oFF) 
+FIG. 23. Vanadium effects on carbon generation before (A) and after 
+addition of a metal scavenger: (B) Sepiolite and (C) alumina [7, 81. 
+into coke and hydrogen, components that could be upgraded to gasoline-range 
+hydrocarbons [ 101. Ifi fact, when loaded with 0-2% V, the sepiolite cracking 
+activity remained unchanged (30% conversion) whereas carbon and H2 gen- 
+eration increased threefold. In Fig. 23, the DFCC high coke make at 1.0- 
+1.5% V (60-70% conversion) is therefore attributed to the dehydrogenation 
+activity of the V-enriched metal scavenger particles present. The higher carbon 
+make observed when using alumina (see Fig. 2 3 4 ) is attributed to this 
+diluent's strong Lewis acidity, which favors the sorption of aromatics that 
+are then retained as coke [ 121. 
+V. 
+SUMMARY AND CONCLUSIONS 
+In a FCC unit, the catalyst from the regenerator, containing mainly V5+ 
+compounds (such as supported V205), is admixed with fresh makeup catalyst 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 37>>>
+276 
+OCCELLI 
+and then recycled to the reactor zone (the riser) where gas oil cracking occurs 
+and more V (probably as V02 +) and coke are deposited on the catalyst surface. 
+From the riser, the spent catalyst goes to the steam-stripping zone where 
+occluded hydrocarbons are removed from the catalyst surface. In the presence 
+of steam, at 500-550°C, V impurities form volatile V compounds and other 
+hydrolysis products which can react with the components (the matrix, clay, 
+and zeolite) of an FCC, thus reducing catalyst activity and product selectiv- 
+ities. 
+In the hope of obtaining some insight into the possible nature of the 
+reactions that may occur when V contaminated FCC are exposed to steam, 
+the hydrolysis products of the reaction between water (at 25OC) and V con- 
+taminated (and calcined) zeolites [such as HY (Linde’s LZY-82), silicon- 
+enriched HY (Linde LZ-210), REHY, and CREY] have been examined by 
+51V NMR. Results have indicated that formation of anions such as H2V04 
+and HVOi-; condensation reaction products such as H2V20:-, HV20:-, 
+and H2V20:-; and polyanions such as H2VI00& depend on contact times, 
+catalyst composition, V concentration, and the pH of the liquid examined. 
+During the time (30 to 60 sec) that spent catalysts spend in the steam- 
+stripping zone, different reaction mechanisms and compounds are expected 
+from the reaction between supported vanadium species and steam. However, 
+it is believed that the same parameters (such as contact time, the FCC surface 
+composition, and V loadings) that determine the nature of the vanadate formed 
+in the liquid phase when deposited V impurities react with water, could also 
+determine the nature of the volatile compounds (responsible for intraparticle 
+V transport) formed during steam regeneration of spent FCC. 
+LRS characterization of DFCC systems, tested at MAT conditions, has 
+indicated that in steam-aged catalysts containing more than 1% V, [V,O,] 
+units are formed, lending support to the experimental work of Glemser and 
+Muller [49] in which the reaction V205(s,l) + 2H20(g) = H4V207(g) was 
+reported. Thus it is believed that H4V207 is one of the volatile V compounds 
+that can be formed in the steam-stripping zone of an FCC unit. 
+29Si and 27Al MASNMR spectroscopy has shown that on calcination, FCC 
+cracking components such as HY, Si-enriched HY, REHY, and CREY undergo 
+dealumination, and that steam-aging increases the presence of extra-frame- 
+work A1 in these zeolites; dealumination is more severe in HY-type materials. 
+The interactions between V impurities and the FCC cracking components (the 
+zeolite) during the regeneration cycle of an FCCU are affected by the presence 
+or absence of RE ions in the zeolite. 
+Faujasite crystals (with or without RE ions) are thermally stable at 76OoC/5 
+h in air for V loading up to -4%. When the V on catalyst levels are raised 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 38>>>
+VANADIUM-ZEOLITE INTERACTIONS 
+277 
+to 5%, the crystal structure collapses, indicating that, at this V concentration 
+and temperature, the presence of steam is not required to induce zeolite 
+destruction. However, when the same thermal treatment is repeated in the 
+presence of steam (at 1 atm), the ease with which V destroys the zeolite 
+crystallinity greatly increases; CREY crystals (in the presence of 3.5% Na20) 
+collapse with only 0.4% V. The zeolite V resistance seems to decrease when 
+RE ions are present and to increase with increasing extra-framework A1 (gen- 
+erated during steam-aging) in the following order: 
+HY (Linde's LZ-210) > HY (Linde's LZY-82) > E H Y > CREY 
+Extra-framework A1 in HY-type zeolites could directly react with V02+ 
+cations and form stable complexes, thus increasing the crystal tolerance to 
+V. 
+HY-type crystals as well as x-ray amorphous aluminosilicate gels (AAA 
+alumina), form mullite when heated at 1200°C in air. In the presence of V, 
+these materials form mullite at lower temperatures (760"C), indicating that V 
+acts as a mineralizing agent. In addition to mullite and tridymite, an x-ray 
+amorphous V205 phase is also formed. Calculations of the orthorombic unit 
+cell parameter have indicated that an expansion in the a dimension occurs 
+when mullite is formed in the presence of V, suggesting that the observed 
+expansion in the unit cell volume is probably due to V incorporation into the 
+crystal lattice. At the high temperatures used for FCC regeneration, oxycations 
+of vanadium (VO: or V02+) could attack the A l U S i bond in HY and 
+cause lattice collapse. The amorphous product recrystallizes then into mullite 
+and the excess silica forms tridymite; excess V will form a supported V2OS 
+phase. In the presence of steam, hydroxy vanadyl ions and other protonated 
+species resulting from the interaction of V compounds (such as V205) with 
+steam, could accelerate A1 removal from the faujasite structure, thus increasing 
+the ease of mullite formation. 
+In REHY and CREY crystals it is believed that Ce4+ ions present as an 
+oxycerium complex undergo a redox reaction with oxyvanadyi cations (V02 
++ ) 
+and form a stable orthovanadate. Removal of other charge-compensating 
+cations (such as Na+ ions) in the form of vanadates further destabilizes the 
+crystal lattice, thus promoting zeolite destruction. In fact, whereas with 0.4% 
+V CREY (containing 3.5% Na20) became essentially x-ray amorphous after 
+steaming, REHY (containing 0.16% Na2)) required three times as much V 
+for total lattice destruction. Vanadate formation, together with framework 
+dealumination resulting from the acidity generated by the hydrolysis of V 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 39>>>
+278 
+OCCELLI 
+compounds during steaming, is believed responsible for the greater ease with 
+which V impurities can destabilize RE-containing faujasite crystals. The ef- 
+fects of Na impurities (and of Si/Al ratios) on the V tolerance of a zeolite 
+with the faujasite structure have been described in a recent paper [56]. 
+The deleterious effects of V deposits on zeolite-containing FCC can be 
+greatly reduced by addition of certain materials (metal scavengers) capable 
+of minimizing V-FCC interactions by selectively (and irreversibly) sorbing 
+migrating V compounds such as H4V207. Dual-function cracking catalysts 
+(DFCC) mixtures have been prepared that can retain most of their useful 
+cracking activity (at MAT condition) even in the presence of 1.0-1.5% V. 
+Thus, DFCC systems appear to have the necessary metal tolerance necessary 
+to crack residual oil as well as V-contaminated crudes and may offer cost (as 
+well as coke selectivity) advantages over conventional FCC. 
+ACKNOWLEDGMENTS 
+The many useful discussions and support received from Mr. M. Bell, Ms. 
+E. Rivette, Dr. P. Ritz, Dr. P. S. Iyer, and Dr. R. Lukasiewicz for x-ray, 
+Raman, NMR, and vandium measurements are gratefully acknowledged. Spe- 
+cial thanks are due to Dr. G. J. Ray (Ammo) for providing NMR data at 
+400 mHz. Without the help and generous support of these colleagues, the 
+preparation of this paper would not have been possible. 
+REFERENCES 
+M. L. Occelli, Fluid Catalytic Cracking: Role in Modern Re$ning, ACS Symp. 
+Ser. Vol. 375 (M. L. Occelli, ed.), ACS, Washington, DC, 1989, p. 1 
+G. H. Dale and D. L. McKay, Hydroprocessing 56(9), 97-102 (September 
+1977). 
+R. G. Meisenheirner, J . Catul., 1, 356 (1962). 
+R. N. Cimbalo, R. L. Foster, and S. J. Wachtel, Oil Gas J., 112 (1972). 
+J. S. Magee, R. E. Ritter, and L. Rheurne, Hydrocarbon Process, 123 (1979). 
+R. E. Ritter, L. Rheurne, W. A. Welsh, and J. S. Magee, Oil Gas J., 103, 
+(1 98 1). 
+M. L. Occelli, D. Psaras, and S. L. Suib, J. Cutal., 96, 336 (1986). 
+M. L. Occelli, D. Psaras, and S. L. Suib, in Proc. fnt. Symp. Zeo. Caral., 
+Siofok, Hungary, 1985, p. 423. 
+M. L. Occelli and J. M. Stencel, in Proc. 9th fnr. Congress Catalysts, (M. J. 
+Phillips and M. Ternan, eds.), 1988, Vol. I , p. 214. 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 40>>>
+VANADIUM-ZEOLITE INTERACTIONS 
+279 
+1291 
+I301 
+r321 
+[331 
+M. L. Occelli, in Fluid Catalytic Cracking: Role in Modern Refining, ACS 
+Symp. Ser. Vol. 375 (M. L. Occelli, ed.), ACS, Washington, DC, 1989, p. 
+162. 
+M. L. Occelli and J. M. Stencel, in Zeolites as Catalysts, Sorbents and De- 
+tergent Builders, (H. G. Karge and J. Weitkamp, eds.), Elsevier, 1989, p. 127. 
+M. L. Occelli and J. M. Stencel, in Zeolites: Facts, Figures, Future, Proc. 
+8th IZA Meeting, Amsterdam, The Netherlands (P. A. Jacobs and R. A. Van 
+Santen, eds.), 1989, p. 131 1. 
+L. F. Flanders and C. E. Rudy, U.S. Patent 3,409,541 (1968). 
+J. DeJong, U.S. Patent 4,519,897 (1985). 
+B. R. Mitchell and R. F. Vogel, U.S. Patent 4,520,120 (1985). 
+D. J. Rawlence, K. Gosling, L. Steel, and A. P. Chapple, in Sci. Bases Prep. 
+Het. Catalysts, 5th Int. Symp. Preprints, 1990, p. 279. 
+M. L. Occelli, G.B. Patent 2,145,345A (1985). 
+W. P. Hettinger, in Fluid Catalytic Cracking: Role in Modern Refining, ACS 
+Symp. Ser., Vol. 375 (M. L. Occelli, ed.), ACS, Washington, DC 1989, p. 
+308. 
+B. R. Mitchell, Znd. Chem. Prod. Res. Dev., 19, 209 (1980). 
+A. W. Chester, Znd. Eng. Chem. Res., 26(5), 863 (1987). 
+M. W. Anderson, M. L. Occelli, and S. L. Suib, J . Catal., 118, 31 (1989). 
+M. W. Anderson, M. L. Occelli, and S. L. Suib, J . Catal., 122, 374 (1990). 
+G. L. Woolery, A. A. Chin, G. W. Kirker, and A. M. Huss, in Fluid Catalytic 
+Cracking: Role in Modern Refining, ACS Symp. Ser. Vol. 375 (M. L. Occelli, 
+ed.), ACS, Washington, D.C, 1989, p. 215. 
+S. Jaras, Appl. Catal., 2, 207 (1982). 
+L. Upson, S. Jaras, and I. Dalin, Oil Gas J., 135 (1982). 
+R. Pompe, S. Jaras, and N. Vannenberg, Appl. Catal., 13, 171 (1984). 
+F. Mauge, J. C. Courcelle, Ph. Engelhard, P. Gallezot, and J. Grosmangin, 
+Zeolites, 6, 261 (1986). 
+F. Mauge, J. C. Courcelle, Ph. Engelhard, P. Gallezot, and J. Grosmangin, 
+in New Developments in Zeolite Science and Technology (Y. Murakami, 
+A. Iijima, and J. W. Ward, eds.), Kodansha-Elsevier, Tokyo, 1986, 
+p. 803. 
+R. F. Wormsbecher, A, W. Peters, and J. M . Maselli, J. Catal., 100, 130 
+(1986). 
+J. P. Gilson, G. C. Edwards, A. K. Peters, K. Rajagopalan, R. F. Worms- 
+becher, T. G. Robene, M. P. Shatlock, J. Chem. SOC. Chem. Commun., 91 
+(1987). 
+A. Samoson, E. Lippmaa, G. Engelhardt, D. Lohse, and H. G. Jerschwitz, 
+Chem. Phys. Lett. 134, 589 (1987). 
+S. 0. Agrell and J. V. Smith, J . Am. Ceram. Soc.. 69 (1960). 
+P. Das, and R. Choudhury, Am. Ceram. SOC. Bull., 188 (1988). 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 
+
+<<<PAGE 41>>>
+280 
+OCCELLI 
+1341 W. A. Deer, R. A. Howie, and J. Zussrnan, in An Introduction to the Rock 
+Forming Minerals, Langrnan, 1973, p. 37. 
+H. Schneider and R. Vasudevan, N. Jb. Mineral Mh., 4, 165 (1989). 
+A. V. Kucherov and A. A. Slinkin, Zeolites, 7, 583 (1987). 
+B. Wehrli and W. Sturnm, Langmiur, 4, 753 (1988). 
+M. L. Occelli, unpublished results (1982). 
+E. L. Kugler and D. D. Leta, J. Catal., 109, 387 (1988). 
+C. Sanchez, J. Livage, and G. Lucazeau, $. Raman Specr., 12(1), 68 (1980). 
+M. T. Pope and B. W. Dale, Rev. (London), 22, 527 (1968). 
+S. E. O’Donnell, M. T. Pope, J . Chem. SOC., Dalton Trans., 21 (1976). 
+E. Heath, and 0. W. Howarth, J . Chem. Soc.. Dalton Trans., 23 (1981). 
+L. R. Le Coustumer, B. Taouk, M. Le Meur, E. Payen, M. Guelton, and J. 
+Grirnblot, J. Phys. Chem., 92, 1230 (1988). 
+B. Taouk, M. Guelton, J. Grimblot, and J. P. Bonnelle, J . Phys. Chem., 
+92(23), 6700 (1988). 
+F. G. Vilchez and W. P. Griffith, J. Chem. Soc., Dalton Trans., 1416 (1972). 
+W. P. Griffith and P. J. B. Lesniak, J. Chem. SOC. A, 1066 (1969). 
+F. Brito, Acra Chem. Scand, 21, 1968 (1967). 
+0. Glemser and A. Muller, 2. Anorg. Allg. Chem., 325, 220 (1963). 
+L. N. Yannopoulos, J . Phys. Chem., 72(9), 3293 (1968). 
+M. L. Occelli and J. M. Stencel, in Fluid Catalytic Cracking: Role in Modern 
+Refining, ACS Syrnp. Ser. Vol. 375 (M. L. Occelli, ed.), ACS, Washington, 
+DC, 1989, p. 195. 
+M. L. Occelli and J. V. Kennedy, U.S. Patent 4,465,588 (1984). 
+M. L. Occelli and H. E. Swift, U.S. Patent 4,466,884 (1984). 
+R. N. Cirnbalo, R. L. Foster, and S. J. Wachtel, Symposium on New Devel- 
+opments in FCC, 37th Meeting of the API Division of Refining, Preprint No. 
+87-72, New York, (1972). 
+M. L. Occelli, D. C. Kowalczyk, and C. L. Kibby, Appl. Caral., 16, 227 
+(1985). 
+M. L. Occelli, to be presented at the AKZO Catalyst Symposium, Scheven- 
+ingen, The Netherlands, June 1991. 
+Downloaded by [Michigan State University] at 12:12 13 June 2013 

@@ -1,0 +1,802 @@
+
+<<<PAGE 1>>>
+Ind. Eng. Chem. Prod. Res. Dev. 1980, 79, 209-213 
+209 
+Metal Contamination of Cracking Catalysts. 1. Synthetic Metals 
+Deposition on Fresh Catalysts 
+Bruce IR. Mitchell 
+Gulf Research & Development Company, Pittsburgh, Pennsylvania 15230 
+Metal contamination of cracking catalysts is a problem of growing concern due to the increasing interest in residual 
+feedstocks for FCC units. In the past, investigations of the effects of metal contaminants were limited to lengthy 
+pilot plant studies or difficult and inaccurate bench-scale studies. These problems have been overcome by the 
+combined use of a microactivity test unit and a new synthetic method of contaminating fresh cracking catalysts. 
+Several different techniques for synthetic contamination were investigated by comparing catalytic activities of fresh 
+contaminated catalysts to the activities of equilibrium catalysts containing comparable metal levels. Excellent 
+agreement with the equilibrium catalysts was obtained by heat shocking fresh catalysts at 1100 O F , impregnating 
+nickel and vanadium to the point of incipient wetness with metal naphthenates in a benzene solution, and finally, 
+steam purging the catalysts at 1350 OF. With this technique, a rapid yet accurate method of evaluating the metals 
+tolerance of cracking catalysts is now available. 
+Introduction 
+In the catalytic cracking of gas oils and other feedstocks, 
+metal contaminants such as nickel, vanadium, iron, copper, 
+etc. are continuously deposited upon the catalyst surface. 
+Due to their ability to catalyze dehydrogenation reactions, 
+these deposited metalr, soon alter the product distribution 
+obtained from FCC units if they are allowed to reach 
+certain maximum levels. As the level of metal contami- 
+nants increases, the yields of carbon and hydrogen increase 
+at the expense of gasoline production. 
+Presently, it is common practice for refineries to rou- 
+tinely add fresh catalyst and withdraw equilibrium catalyst 
+from FCC inventories to maintain activity and prevent 
+high metal levels on the catalyst. Due to a continually 
+increasing demand for gasoline coupled with shrinking 
+supplies of normally used cracking stocks, more attention 
+is now being directed to the catalytic cracking of heavier 
+charge stocks such as residuals. One of the major problems 
+with these heavier stocks is that they contain considerably 
+higher levels of metal (contaminants and require such high 
+catalyst make-up rates that processing them is often 
+uneconomical with present catalysts. Highly contaminated 
+gas oils, such as derived from California crudes, typically 
+contain 1 ppm of nickel which is considered near the upper 
+limit for today’s catalysts. In contrast, California residuals 
+contain over 100 ppm of nickel and would obviously de- 
+posit metal contaminants at a very rapid rate. Zeolitic 
+cracking catalysts currently available commercially are 
+more tolerant of metal contaminants than the older clay 
+or amorphous catalysts, but they are still inadequate for 
+residual processing. Also, at the present time, there is no 
+economical means of removing the metal contaminants 
+from the catalyst. Thus, there is an urgent need for an 
+improved cracking catalyst that can tolerate high levels 
+of metal contaminanis. 
+Numerous articles and patents have dealt with the 
+problem of metal contamination of nonzeolitic cracking 
+catalysts (McEvoy et id., 1957; Mills, 1950; Meisenheimer, 
+1962; Foster et al., 1963; Adams and Sterba, 1963; Dilli- 
+plane et al., 1963; Leum and Conner, 1962). Past studies 
+have also dealt with the effect of various metals upon 
+activity (Mills, 1950: Duffy and Hart, 1952; McIntosh, 
+1954), mechanistic studies (McEvoy et al., 1957; Meisen- 
+heimer, 1962), and methods of removing metals from 
+contaminated catalysts (Foster et al., 1963; Dilliplane et 
+al., 1963). 
+0196-4321/80/1219-0209$01.00/0 
+In several articles a method of synthetically contami- 
+nating fresh nonzeolitic catalysts was discussed (Rothrock 
+et al., 1957; Conner et al., 1957; Grane, et al., 1961). In 
+these studies, metal naphthenates were dissolved in either 
+furnace oil or gas oil and then passed over a fluidized bed 
+of the fresh catalyst at elevated temperatures. This 
+technique in itself was inadequate for reproducing actual 
+equilibrium catalysts, since the metals were more active 
+than naturally deposited metal contaminants. A deacti- 
+vation of the synthetically deposited metals was achieved 
+by treating the final catalyst alternately with oil or hy- 
+drogen and air to simulate the environment of circulating 
+equilibrium catalyst. After approximately 20 cycles of this 
+treatment at 900 OF, the activity of the catalyst lined out 
+at levels similar to those of naturally contaminated cata- 
+lysts. Thus, even though good correlation is obtained, this 
+method is time consuming and requires large catalyst 
+samples. More recently, this technique has been applied 
+to zeolitic cracking catalysts (Cimbalo et al., 1972). 
+The need for a more metals tolerant catalyst is well 
+established, but development of such a catalyst requires 
+extensive studies of the type that only bench-scale 
+equipment can provide. In this manner, one may more 
+quickly gain a better understanding of the poisoning 
+mechanism and the role of various catalyst components. 
+Pilot-plant tests, though certainly useful for final evalua- 
+tions, are handicapped by their lengthy nature. These 
+shortcomings of former test procedures have now been 
+overcome by the combined use of a microactivity test unit 
+and a new synthetic method of contaminating fresh 
+cracking catalysts. Realistic results have been obtained 
+from synthetically contaminated catalysts which are in 
+excellent agreement, with equilibrium catalysts. This study 
+has been confined to an evaluation of nickel and vanadium 
+metals, since these are the major contaminants in FCC 
+feedstocks. 
+Apparatus and Procedure 
+A modified microactivity test unit (MAT) was used to 
+evaluate all catalysts. This unit is similar to the original 
+MAT unit (Henderson and Ciapetta, 1967) except that 
+feed is injected through a hypodermic needle permanently 
+mounted in the reactor head and the liquid product re- 
+covery is established by weighing instead of volumetric 
+measurements. A Kuwait gas oil with a boiling range of 
+500 to 800 O F was used as feed. The catalyst charge was 
+2.5 g of 10-20 mesh sized granules. All catalysts were 
+0 
+1980 American Chemical Society 
+
+<<<PAGE 2>>>
+210 
+Table I. Inspections of Standard Samples of Catalyst Y 
+Ind. Eng. Chem. Prod. Res. Dev., Vol. 19, No. 2, 1980 
+__ 
+catalyst 
+Y A 
+YB 
+Y C 
+YD 
+YE 
+Y F 
+history 
+fresh 
+equilibrium equilibrium equilibrium equilibrium equilibrium 
+pretreatmentu 
+heat shocked and steamed calcined 
+calcined 
+calcined 
+calcined 
+calcined 
+chemical composition, wt % 
+Ni 
+0.020 
+0.04 5 
+0.073 
+0.129 
+0.170 
+V 
+0.030 
+0.075 
+0.080 
+0.129 
+0.106 
+Fe 
+0.34 
+0.33 
+0.51 
+0.34 
+Na 
+0.44 
+0.56 
+0.47 
+0.48 
+cu 
+0.018 
+0.019 
+0.022 
+e 
+0.019 
+0.003 
+nickel equivalent, ppmb 
+0 
+26 0 
+600 
+890 
+1548 
+1912 
+surface area, m'/g 
+102 
+84.9 
+87.0 
+89.7 
+87.2 
+Heat shock at 1100 OF, steam purged at 1350 "F, and calcination at 1000 O F . 
+Nickel equivalent = ppm Ni + '/, ppm V. 
+formed identically by pressing 10 cm3 of powder in a 1-in. 
+die at 8000 psi and then broken and sized by passing 
+through sieves. In this manner uniformity of catalysts was 
+ensured and skin effects were minimized. Other reaction 
+conditions were 900 O F , 80 s catalyst contact time, 14 
+WHSV, and a total feed throughput of 1 cm3. Prior to 
+testing but after forming, all fresh catalysts were pretreated 
+to simulate equilibrium catalysts. This pretreatment 
+consisted of a heat shock treatment at 1100 or 1200 O F for 
+1 h followed by a 10-h steam purge at 1350 OF at atmos- 
+pheric pressure with 100% steam. Equilibrium catalysts 
+were calcined 10 h at 1000 O F prior to evaluation. 
+A series of regenerated equilibrium catalyst samples 
+were obtained from commercial FCC units and pilot plant 
+units. These were samples of the same commercial FCC 
+catalyst, designated catalyst Y, with the only difference 
+being the amounts of metal contaminants on the catalyst. 
+Fresh samples of catalyst Y were contaminated syn- 
+thetically by three different techniques. In one, nickel 
+nitrate and vanadium oxalate salts were dissolved in water 
+and impregnated on the catalysts to the point of incipient 
+wetness. These samples were then treated in a variety of 
+ways which will be discussed later. In a second method, 
+metal naphthenates were used to impregnate nickel and 
+vanadium from a benzene solvent. The naphthenates are 
+derived from a mixture of naphthenic acids which are 
+monocarboxylic, monocyclic, and completely saturated 
+hydrocarbons. The metal content of the nickel na- 
+phthenate was 6 wt 70 and the vanadium naphthenate was 
+3 wt % . Thirdly, the metals were deposited by dissolving 
+the naphthenates in kerosene and passing this solution 
+over a fluidized bed of the sample for 1 h at 650 O F . For 
+the most part, the metal contaminants were synthetically 
+deposited after the heat shock treatment, but before the 
+steam treatment. A few samples were prepared by metal 
+deposition after the steam treatment. 
+The amount of metal contaminants on the catalyst is 
+expressed in terms of nickel equivalent which is defined 
+as the nickel content in ppm plus one-fifth the vanadium 
+content in ppm. This definition arises from the fact that 
+vanadium as a metal contaminant has approximately 
+one-fifth the effect of nickel as a dehydrogenating agent 
+(Hildebrand et al., 1973). 
+Results and Discussion 
+With the present concern over high metals FCC content 
+feedstocks and the advent of commercial residual cracking, 
+it is desirable to establish the level of metal contaminants 
+which results in deactivation of a typical zeolitic com- 
+mercial catalyst. In addition, a standard set of data for 
+comparison was needed before various methods of syn- 
+thetically contaminating fresh cracking catalysts could be 
+investigated. For these purposes, a series of equilibrium, 
+L A 
+0 
+400 
+800 
+1200 
+1600 
+7000 
+0 
+'600 
+2000 
+400 
+a00 
+1200 ,
+o a I--- 
+, 
+3 
+400 
+800 
+1200 
+1600 
+2000 
+NICKEL 
+E Q U I V A L E N T 
+ppm 
+Figure 1. Effect of Ni and V Upon cracking characteristics of an 
+equilibrium zeolitic catalyst. 
+naturally contaminated catalyst samples were obtained 
+which contained varying amounts of nickel and vanadium 
+contaminants. These were all samples of the same com- 
+mercial zeolitic catalyst, designated catalyst Y. The de- 
+scriptions and inspections of each equilibrium sample are 
+shown in Table I, column YB through YF. In addition to 
+the equilibrium catalysts, a fresh sample of catalyst Y was 
+heat shocked and steam purged to simulate an equilibrium 
+catalyst without metal contaminants; this is designated 
+catalyst YA in Table I. The equilibrium samples range 
+from 260 to 1912 ppm of nickel equivalent. However, 
+surface areas and iron, sodium, copper, and carbon levels 
+vary only slightly within the series except for the surface 
+area of the fresh, steamed sample which is noticeably 
+higher. Apparently, a more severe pretreatment of fresh 
+samples is necessary to more effectively simulate an 
+equilibrium catalyst. 
+The microactivities of these samples are shown in Figure 
+1 where conversion, gasoline yield, coke production, and 
+hydrogen production are plotted as a function of nickel 
+equivalent. As can be seen, the catalyst's activity is fairly 
+
+<<<PAGE 3>>>
+Ind. Eng. Chem. Prod. Res. Dev., Vol. 19, No. 2, 1980 211 
+Table 11. Metal Levels of Synthetically 
+Contaminated Fresh Cracking Catalysts 
+nickel, 
+vanadium, 
+nickel 
+w t % 
+w t % 
+equiv, ppm 
+0.020 
+0.030 
+26 0 
+0.045 
+0.075 
+600 
+0.060 
+0.125 
+850 
+0.075 
+0.225 
+1200 
+0.090 
+0.300 
+1500 
+0.170 
+0.106 
+1912 
+- 
+constant up to approximately 900 ppm of nickel equiva- 
+lent. At higher metal levels, coke and hydrogen produc- 
+tions increase while conversion and C5+ gasoline yield 
+decrease. The absence of sharp breaks in the curves makes 
+it difficult to determine the er act point at which the metals 
+first take effect, but it seems safe to conclude that the 
+upper limit of metals tolerance for this particular catalyst 
+is approximately 1000 ppm of nickel equivalent. Addi- 
+tional studies have shown that this is generally the upper 
+limit for most of the zeolitic cracking catalysts in use today. 
+At metal levels above 1000 ppm of nickel equivalent, metal 
+deactivation becomes quite pronounced. These conclusions 
+are in agreement with observations made during com- 
+mercial operation. The higher conversion observed with 
+fresh catalyst is due to its higher surface area relative to 
+the equilibrium samples as discussed earlier. 
+Development of a residua cracking catalyst or a more 
+metal tolerant catalyst requires extensive investigations. 
+Pilot plant evaluations require large catalyst inventories, 
+and appropriate metal levels are obtained only after 
+lengthy on-stream peieiods. Accelerated metal deposition 
+methods have been used, but even these are extremely time 
+consuming (Cimbalo et al., 1972). Obviously, a reliable, 
+yet rapid, means of contam lnating and evaluating fresh 
+cracking catalysts would expedite these studies. Several 
+synthetic approaches have bcben examined, and the results 
+are compared to the equilibrium samples shown in Figure 
+1. The levels of nickel and kanadium used for this study 
+are shown in Table 11. 
+In one approach a large hatch of catalyst Y was heat 
+shocked at 1200 "F (severe treatment) and steam purged 
+prior to metal deposition. Samples from this batch were 
+impregnated with aqueous s#olutions of nickel and vana- 
+dium salts and then given v,arious post-treatments. The 
+results, shown in Figures 2 and 3, are compared to the 
+standard catalyst samples discussed earlier. In these and 
+later figures, the data points have been omitted for clarity. 
+The critical naturl: of calcination temperature after 
+metal deposition is shown in Figure 2. With a post- 
+treatment temperatuire of 1000 "F, the metals are consid- 
+erably more active on the slmthetic samples than on the 
+equilibrium samples. A more severe temperature treat- 
+ment (1350 or 1500 OF) deactivates the metals to some 
+extent and the data more closely approximate those of the 
+standard catalyst samples. Agreement is still, however, 
+far from acceptable ecen with the most severe temperature 
+treatment. Heat treatment,j above 1500 "F were not at- 
+tempted since struc1,ural collapse of the zeolite would 
+probably have occurred. 
+Two synthetically contaminated samples which had been 
+given a 1000 "F post-treatment were also treated alter- 
+nately with hydrogen and oxygen at 900 "F. The purpose 
+of this treatment watj to simulate the environment com- 
+mercial catalysts are exposed to during processing. In 
+Figure 3 the activities of these samples are compared to 
+the standard catalysts and the synthetic samples without 
+the hydrogen-oxygen treatment. As can be seen, the 
+cracking characteristics of the hydrogen-oxygen-treated 
+70 7 
+, 
+0 
+0 
+430 
+BOO 
+1203 
+1600 
+2000 
+I
+I
+I
+l
+l
+!
+ 
+0 
+a00 
+303 
+1230 
+160C 
+2 C Q 0 
+0 e r--- 
+- 
+0 
+400 
+802 
+ILOC 
+1600 
+2003 
+NICKEL 
+E C L I I V A L E N T 
+ppm 
+Figure 2. Metal salts impregnated on severely heat shocked, 
+steamed samples of fresh catalyst Y: - - -, equilibrium samples; -, 
+synthetically contaminated samples. Temperatures refer to final 
+calcination temperature. 
+70 I 
+I 
+8 
+0 
+400 
+800 
+1200 
+1600 
+2000 
+5 
+20- 
+' 
+' 
+' 
+' 
+' 
+' 
+' 
+1 
+0 
+400 
+800 
+1200 
+1600 
+2000 
+0 
+400 
+800 
+1200 
+1600 
+2 000 
+N I C K E L EQUIVALENT 
+ppm 
+Figure 3. Effect of hydrogen-oxygen cyclic treatments at 900 OF: 
+- - -, equilibrium samples; -, synthetically contaminated samples. 
+samples were essentially the same as the untreated catalyst 
+and, therefore, in poor agreement with the equilibrium 
+catalysts. 
+Thus, it appears that fresh cracking catalysts which have 
+been heat shocked and steam purged prior to metal im- 
+
+<<<PAGE 4>>>
+212 
+Ind. Eng. Chem. Prod. Res. Dev., Vol. 19, No. 2, 1980 
+g 
+- 0 7
+0
+7
+ 
+-1 
+- - - - _ 
+2: 
+6 0 c \ - , _ 
+LT LL 
+I STEAMED BEFORE D E P 0 S I T l O N 
+STEAMED AFTER 
+CEPOSITION 
+STEAMED BEFORE 3EPOSITION 
+I 
+1 
+/
+'
+ 
+Z L L 
+1 /--! 
+!k 
+, o r 
+STEAMED AFTER 
+DEPOSITION - 
+I 
+/ 
+u z 
+/ - 
+I 
+, 
+1
+I
+l
+l
+l
+l
+l
+l
+!
+~
+ 
+0 
+400 
+800 
+1 2 0 0 
+1600 
+2 0 0 0 
+O B , 
+i 
+0 0 6 e 
+STEAMED BEFORE DEPOSITION -- 
+/ , 
+Z Y 
+Y
+W
+ 
+I 
+m u . 
+/ 
+i 
+1- - - - -- 
+1
+l
+I
+l
+I
+I
+I
+I
+l
+ 
+0 
+4 0 0 
+8 0 0 
+1200 
+1600 
+2 0 0 0 
+N I C K E L E O U I V A L E N T 
+pvm 
+Figure 4. Effect of steaming before and after synthetic metal de- 
+position: - - -, equilibrium samples; -, synthetically contaminated 
+samples. 
+pregnation do not give realistic cracking patterns regardless 
+of the final treatment. The impregnated metals are overly 
+active and produce more coke and hydrogen than observed 
+with naturally contaminated catalyst samples. 
+The effect of steaming after synthetic metal deposition 
+is shown in Figure 4. A less severe heat shock treatment 
+(1100 O F ) was used for these samples. Because of this 
+variation, data for samples pretreated identically, except 
+that the steam treatment was done prior to metals de- 
+position, are included in Figure 4 for comparison. The 
+results show conclusively that the order of metal impreg- 
+nation and steam purging is a critical factor. The cracking 
+characteristics of the synthetically contaminated fresh 
+catalysts were very similar to the equilibrium samples 
+when the fresh catalyst was treated in the following 
+manner: (1) heat shock at 1100 O F ; (2) impregnation of 
+nickel and vanadium salts; (3) calcination at 1000 OF; (4) 
+steam purge at 1350 O F . It has already been shown that 
+the final calcination treatment does not properly deactivate 
+the metals. Therefore, the key to realistically synthesizing 
+metal contaminated cracking catalysts lies in treating the 
+catalyst with steam after metals deposition. 
+It is obvious from Figures 2 and 3 that the metals de- 
+posited on catalysts in situ during commercial processing 
+are not as active as comparable metal levels impregnated 
+on the fresh catalysts. It is felt that the severe conditions 
+encountered in cyclic FCC units cause partial deactivation 
+of the metal contaminants. In addition, the steam treat- 
+ment of fresh, impregnated catalysts deactivates the fresh 
+metals in a similar manner resulting in very good agree- 
+ment with the activity of the metal contaminated equi- 
+librium catalyst. The mechanism by which metal deac- 
+tivation occurs both in commercial operation and by lab- 
+oratory steam treatment is not known, but a number of 
+processes could account for this observation, namely: (1) 
+slight structural collapse to mask metal contaminants; (2) 
+formation of mixed metal oxides such as nickel aluminate 
+7 
+Y 
+70 I 
+L U d - d 
+0 
+400 
+aco 
+1203 
+650 
+Z3CC 
+0 
+400 
+8 00 
+122: 
+I F L J 
+233J 
+N I C K E L E Q U I V A L E N T 
+ppm 
+Figure 5. Metal naphthenates impregnated on fresh catalyst Y 
+before steam treatment: - - -, equilibrium catalysts; -, synthetically 
+contaminated samples. 
+or silicate which may be less active; (3) migration and 
+agglomeration of metal crystallites with reduction in ef- 
+fective metal surface area; (4) migration of metal to less 
+active sites such as found on the matrix material. The 
+occurrence of any one or combination of the above during 
+high-temperature processing or steaming could result in 
+decreased activity of the freshly deposited metal contam- 
+inants. 
+Though fairly good agreement was obtained with metal 
+deposition before steam purging, the use of metal salts in 
+water as a means of metal impregnation is not very real- 
+istic. Thus, several samples of catalyst Y were contami- 
+nated by impregnation with benzene solutions of nickel 
+and vanadium naphthenates. Prior to evaluation in the 
+MAT, these catalysts were steam purged. The cracking 
+characteristics of samples contaminated by this technique 
+are compared to those of the equilibrium catalyst samples 
+in Figure 5. The agreement is quite satisfactory and is 
+obviously better than all other synthetic methods of metal 
+deposition. A few samples were impregnated with metal 
+naphthenates after steaming, and the results were poor, 
+which again emphasizes the importance of steam treating 
+after metal deposition. 
+Finally, a synthetic method was evaluated which more 
+closely simulates metal deposition during commercial op- 
+eration than any other method in this study. Appropriate 
+amounts of the metal naphthenates were dissolved in ke- 
+rosene and the solution passed over a fluidized bed of fresh 
+catalyst Y at 650 O F . This technique is similar to one 
+reported earlier (Cimbalo et al., 1972) except that the final 
+alternating treatments with hydrogen and oxygen were 
+omitted. Samples were steamed either before or after the 
+synthetic metal deposition. A comparison of the standard 
+equilibrium catalyst samples and the fresh samples 
+steamed after synthetic metal contamination is shown in 
+Figure 6. Contrary to expectations, the metal effect with 
+catalysts contaminated by this technique was much more 
+
+<<<PAGE 5>>>
+Ind. Eng. Chem. Prod. Res. Dev., Vol. 19, No. 2, 1980 
+213 
+Table 111. Description and Rating of Synthetic Methods Evaluated 
+source of metals .- 
+metal salts 
+metal salts 
+metal salts 
+metal salts 
+metal salts 
+metal salts 
+metal naphthenate,s 
+metal naphthenates 
+metal naphthenate,s 
+metal naphthenate,s 
+solvent 
+water 
+water 
+water 
+water 
+water 
+water 
+benzene 
+benzene 
+kerosene 
+kerosene 
+a HS = heat shock; S?' = steam purge. 
+treatment 
+before deposition 
+severe HS-STa 
+severe HS-ST 
+severe HS-ST 
+severe HS-ST 
+mild HS-ST 
+mild HS 
+mild HS-ST 
+mild HS 
+mild HS-ST 
+HS 
+c 
+400 
+800 
+12c0 
+1600 
+20C0 
+--7, 
+I 
+a 
+w 
+6 0 r 
+3 
+400 
+800 
+I200 
+1600 
+2000 
+1 
+-- 
+I 
+l
+l
+l
+l
+l
+l
+,
+i
+l
+ 
+d 
+0 
+400 
+800 
+1200 
+1600 
+2 0 0 ~ 
+NICKEL E Q U I V A L E N T 
+ppm 
+Figure 6. Metal naphthtsnates deposited on fresh catalyst Y in a 
+fluidized bed at 650 O F : - - -, equilibrium samples; -, synthetically 
+contaminated samples. 
+pronounced than the equilibrium catalysts and the im- 
+pregnated catalysts. As expected, samples steamed prior 
+to the fluidized deposition showed even poorer agreement. 
+Conclusions 
+A description of the techniques evaluated for synthetic 
+metal contamination and the results are summarized in 
+Table 111. The most critical factor in synthetic metal 
+contamination of fresh1 catalysts is a post-steam treatment. 
+Thus, after synthetic metal deposition by impregnation, 
+the fresh catalyst must be steam purged at 1350 OF to 
+deactivate the metals, to levels comparable to naturally 
+type of 
+deposition 
+impregnation 
+impregnation 
+impregnation 
+impregnation 
+impregnation 
+impregnation 
+impregnation 
+impregnation 
+fluidized bed 
+fluidized bed 
+treatment 
+after deposition 
+calcined at 1000 "F 
+calcined at 1350 "F 
+calcined at 1500 "F 
+5 cycles H,-0, at 900 "F 
+calcined at 1000 "F 
+ST 
+calcined at 1000 "F 
+ST 
+calcined at 1000 "F 
+ST 
+rating 
+very poor 
+poor 
+fair 
+very poor 
+very poor 
+good 
+poor-fair 
+very good 
+poor 
+poor 
+I_____ 
+contaminated equilibrium catalysts. It was also found that 
+the most realistic results were obtained using nickel and 
+vanadium naphthenates in a benzene solvent for impreg- 
+nation of the metal contaminants. 
+Because of the synthetic technique developed in this 
+study, it is now possible to rapidly and accurately evaluate 
+the metals tolerances of large numbers of cracking catalysts 
+without relying solely upon lengthy pilot plant runs. In 
+addition, only small samples of catalysts are required since 
+a microactivity test is used to obtain cracking activities. 
+Several pilot plant aging runs have confirmed the validity 
+of this technique. The rates of catalyst deactivation with 
+synthetic contamination and MAT evaluation are in good 
+agreement with pilot plant aging runs using identical 
+catalysts. In addition, it has been found that a ranking 
+of several catalysts for metal tolerances by the synthetic 
+technique is in excellent agreement with pilot plant data. 
+Acknowledgment 
+The author would like to acknowledge Mr. P. C. Ross 
+for construction and operation of the MAT units, Dr. H. 
+E. Swift for his advice, Mr. J. A. Tabacek and Mr. A. D. 
+Kinzer for catalyst preparation, and Gulf Research &, 
+Development Company for pertnission to publish this 
+work. 
+Literature Cited 
+Adams, N. R., Sterba, M. S., OilGas J., 61, 127 (1963). 
+Cimbalo, R. N., Foster, R. L., Wachtel, S. J., Oil Gas J , , 70, 112 (1972). 
+Conner, J. E., Rothrock, J. J., Birkhimer, E. R., Leum. L. N., Ind. Eng. Chem., 
+Dilliplane, R. J., Middlebrooks. G. P. Hicks, R. C., Bradley. E. P., Oil Gas J., 61, 
+Duffy, B. J., Jr., Hart, W. M.. Chem. Eng. Prog.. 46, 344 (1952). 
+Foster, R. L., Russell, H. G. Erikson, H., Sanford, R. A., Ind. Eng. Chem. Prod. 
+Grane, H. R., Conner, J. E. Masologites, G. P., Pet. Refiner, 40, 168 (1961). 
+Henderson, D. S. Ciapetta, F. G., Od Gas J , 65, 88 (1967). 
+Hildebrand, R., Huling, G. P., Ondish, G. F., Oil Gas J., 71. 112 (1973). 
+Leum, L. N.. Conner, J. E., Ind. Eng. Chem. Prod. Res. Dev. 1, 145 (1982). 
+McEvoy, J. E., Miiliken, T. H., Mills, G. A,. Ind, Eng. Chem., 49, 865 j1957j. 
+McIntosh, C. H., presented ar the Division of Petroieum Chemistry, 126th 
+National Meeting of the American Chemical Society, Naw York, N. Y , Sept. 
+1954. 
+Meisenheimer, R. G.. J. Catal.. 1. 356 (1962). 
+Mills, G. A,. Ind. Eng. Chem., 42, 182 (1950). 
+Rothrock, J. J., Birkhimer, E. R., Leum, L. N., Ind. Dig. Chem., 49, 272 (1957). 
+Received for rerieu: December 5, 1973 
+Accepted December 20, I979 
+49, 276 (1957). 
+119 (1963). 
+Res. Dev., 2 , 328 (1963). 

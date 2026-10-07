@@ -1,0 +1,1622 @@
+
+<<<PAGE 1>>>
+Calcium containing feedstock 
+processing
+R
+efiners 
+continually 
+find 
+ways to improve refining 
+margin 
+by 
+processing 
+cheaper feedstocks, such as 
+heavy oil, resid and opportu­
+nity crudes in their FCC units. 
+Whenever processing of resid 
+or some cheaper feedstock is 
+increased in the FCC unit, 
+plant 
+operating 
+severity 
+is 
+adjusted. Both metals and basic 
+nitrogen 
+compounds, 
+which 
+are known to poison FCC cata­
+lysts, are concentrated in the 
+heavier end of gas oils and 
+resids. These poisons, mostly 
+present in the heavier hydro­
+carbon molecules, deposit on 
+the catalyst during cracking 
+reactions. 
+Each type of poison affects 
+the FCC catalyst differently. 
+Refiners are conversant with 
+the detrimental effects of vana­
+dium, basic nitrogen, nickel 
+and their treatments. Vanadium 
+deactivates Y-zeolite by the 
+formation of vanadic acid in 
+the presence of steam at high 
+temperature and sodium facili­
+tates the dealumination reaction 
+by forming a low eutectic with 
+the rare earth metals present in 
+Y 
+zeolite. 
+Nickel 
+promotes 
+dehydrogenation 
+reactions 
+Development of a FCC catalyst/additive combination with high tolerance to 
+calcium contamination from lower cost feedstock
+CHINTHALA PRAVEEN KUMAR, SUKUMAR MANDAL, GOPAL RAVICHANDRAN, SRIKANTA DINDA, AMIT V GOHEL, 
+ASHWANI YADAV and ASIT KUMAR DAS
+Reliance Industries Limited
+www.eptq.com                                                                                                                                       Catalysis 2016   1
+leading to high fuel gas make 
+and coke formation and hence 
+reduces 
+the 
+selectivity 
+of 
+desired 
+products. 
+Iron 
+and 
+calcium metals deposit on the 
+catalyst surface and cause a 
+loss of diffusivity, which leads 
+to a loss in conversion and an 
+increase in coke and bottoms. 
+Deposition of iron on FCC cata­
+lyst reduces accessibility to the 
+catalyst pore and consequently 
+reduces the catalyst’s activity. 
+Researchers have studied the 
+effect of calcium and iron on 
+coke formation over ultra-stable 
+Y-zeolite catalyst in the absence 
+and presence of nickel and 
+vanadium 
+metal.1 
+Different 
+zeolite samples are prepared by 
+impregnating nickel and vana­
+dium on ultra-stable Y-zeolite, 
+previously 
+exchanged 
+with 
+calcium. The catalyst samples 
+are used for cracking n-hexane 
+at 500°C. The study showed 
+that catalyst containing calcium 
+in combination with nickel and 
+vanadium reduces coke forma­
+tion significantly and increases 
+the olefin to paraffin ratio. 
+There is plenty of reported 
+information on the effects of 
+contaminant nickel, vanadium, 
+sodium and other metals in the 
+FCC.2 Guthrie et al described 
+passivating the reactivity of 
+contaminant metals, such as 
+nickel and vanadium, which 
+deposited on a catalytic crack­
+ing catalyst, by adding to a 
+cracking catalyst a mixture of a 
+calcium 
+containing 
+material 
+and a magnesium containing 
+material in a separate reactor in 
+the presence of steam.2 The 
+preferred calcium containing 
+material was dolomite and the 
+preferred magnesium contain­
+ing material was sepiolite. The 
+cheaper 
+feedstock 
+contains 
+metal 
+contaminants, 
+which 
+contribute to lower conversion 
+and the production of more 
+fuel gas and coke. The higher 
+fuel gas yield often touches the 
+reactor cyclone velocity limits, 
+which results in lower severity 
+operation in the FCC unit, such 
+as lower riser temperature. 
+Similarly, higher coke yield 
+leads to a higher regenerator 
+temperature that lowers unit 
+conversion. 
+However, there have not 
+been many studies focused 
+specifically on calcium contam­
+inants and their effect on the 
+performance of FCC catalysts/
+additives. Some crude samples 
+
+<<<PAGE 2>>>
+  2   Catalysis 2016                                           	
+ www.eptq.com
+All calcium doped catalyst 
+and additive samples were 
+then hydrothermally deacti­
+vated at 800°C for 20 hours 
+using 100% steam at atmos­
+pheric 
+pressure 
+before 
+the 
+cracking reaction took place.
+ 
+BET surface area and pore 
+volume measurements
+Nitrogen gas adsorption/deso­
+rption 
+isotherms 
+were 
+obtained using a Micromeritics 
+ASAP 2020 unit. The catalysts 
+were degassed for two hours 
+at 300°C prior to adsorption. 
+Nitrogen gas was dosed very 
+precisely for both adsorption 
+and desorption processes to 
+generate 
+highly 
+accurate 
+isotherm 
+data. 
+The 
+BET 
+surface area was determined 
+by considering relative pres­
+sure (P/P0) between 0.05 to 
+0.20 and pore volume at 0.98 
+relative pressure. The t-plot 
+was used to calculate the 
+external surface area of the 
+catalyst particles (calculated as 
+the surface area of pores larger 
+than micropores).
+NH3-TPD measurements
+Ammonia 
+temperature 
+programmed desorption (TPD) 
+experiments were carried out 
+on a Micrometrics Autochem 
+2920 unit equipped with a ther­
+mal 
+conductivity 
+detector 
+(TCD). 
+The 
+sample 
+was 
+pre-treated at 600°C under a 
+flow of helium gas for an hour. 
+The sample was saturated with 
+ammonia 
+at 
+120°C 
+for 
+30 
+minutes and ammonia was 
+flushed out subsequently at the 
+same temperature in a helium 
+flow for an hour to remove 
+weakly 
+adsorbed 
+ammonia. 
+TPD analysis was carried out 
+from 100°C to 600°C at a heat­
+ing rate of 10°C/min. The 
+have a higher concentration of 
+calcium, alone or with other 
+conventional 
+contaminant 
+metals (Na, Ni and V). Hence, 
+a study was undertaken on the 
+effects of calcium on FCC cata­
+lyst/additive 
+on 
+their 
+performance in a fixed fluid­
+ised bed reactor. The catalyst 
+and additive were optimised 
+with high zeolite and matrix 
+components to resist the effects 
+of contaminants like calcium in 
+the 
+feed. 
+The 
+performance 
+results 
+are 
+correlated 
+with 
+physico-chemical characterisa­
+tions 
+to 
+gain 
+a 
+better 
+understandings of the effect of 
+calcium 
+on 
+catalyst 
+and 
+additive.
+Experimental 
+Catalyst preparation
+FCC 
+catalyst 
+and 
+additive 
+were prepared according to 
+procedu 
+res 
+mentioned 
+in 
+earlier 
+patent 
+disclosures.3 
+ZSM-5 additive was prepared 
+by mixing the required quanti­
+ties of kaolin clay, boehmite 
+alumina, 
+phosphate 
+salt, 
+ZSM-5 zeolite and colloidal 
+silica with a suitable disper­
+sant to obtain a free flowing 
+slurry, 
+which 
+was 
+then 
+subjected to spray drying to 
+form 
+catalyst 
+microspheres. 
+Two 
+kinds 
+of 
+phosphorus 
+source, H3PO4 and monoam­
+monium hydrogen phosphate 
+were used to introduce phos­
+phorus to the ZSM-5 additive 
+formulation. The composition 
+details of the catalyst and 
+additive are shown in Table 1. 
+The 
+obtained 
+spray 
+dried 
+microsphere 
+particles 
+were 
+calcined at 500°C for one hour 
+prior 
+to 
+hydrothermal 
+deactivation. 
+The 
+FCC 
+catalyst 
+was 
+prepared 
+by 
+mixing 
+the 
+required quantities of kaolin 
+clay, 
+peptised 
+boehmite 
+alumina, 
+USY-zeolite 
+and 
+colloidal silica with a suitable 
+dispersant to obtain a free 
+flowing slurry, which was then 
+subjected to spray drying to 
+form 
+catalyst 
+microspheres. 
+The spray dried catalyst was 
+exchanged 
+with 
+lanthanum 
+nitrate (a rare earth salt) and 
+then the sample was calcined 
+at 500°C for one hour prior to 
+hydrothermal deactivation. 
+A modified Mitchell method4 
+was followed for the impregna­
+tion of calcium on catalyst and 
+additive separately, followed by 
+calcination at 590°C for three 
+hours. 
+The 
+calcium 
+content 
+varied from 0 ppm to 10 000 
+ppm using calcium naphthenate 
+as the source of calcium precur­
+sor since calcium is present in 
+crude mostly in the form of 
+calcium naphthenate. 
+Additive/catalyst composition	
+Catalyst	
+Additive
+USY, wt%	
+33	
+0
+ZSM-5, wt%	
+0	
+45
+P2O5, wt%	
+0	
+11
+Alumina, wt%	
+12	
+5
+Silica sol, wt%	
+23	
+23
+REO, wt%	
+0.5	
+0
+	
+Balance clay	
+Balance clay
+Typical compositions of catalyst and ZSM-5 additive formulations
+Table 1
+
+<<<PAGE 3>>>
+desorbed ammonia was quanti­
+fied with TCD and the signal 
+was 
+plotted 
+against 
+time/ 
+temperature. 
+Cracking reaction
+The advanced cracking evalua­
+tion (ACE) unit is a fixed fluid 
+bed reactor for the evaluation 
+of 
+catalysts 
+and 
+additives, 
+feedstocks and process devel­
+opment. It is downflow with 
+respect to feed injection, an 
+isothermal 
+tubular 
+reactor 
+equipped with a central ther­
+mowell 
+to 
+measure 
+temperature in the catalyst 
+bed. The reactor is heated by 
+an electric furnace with a 
+minimum of three separate 
+heating sections, which allow 
+fine 
+control 
+for 
+isothermal 
+operation. It includes control 
+system hardware and software 
+that enables accurate multiple 
+runs without operator inter­
+vention.5 Cracking reactions in 
+the ACE reactor take place in 
+conditions 
+that 
+simulate 
+a 
+commercial 
+FCC 
+riser 
+(see 
+Table 2). The conversion is 
+varied by changing the cata­
+lyst loading at constant feed 
+rate.
+The 
+calcium 
+impregnated 
+catalyst and additive were 
+hydrothermally deactivated at 
+800ºC for 20 hours prior to 
+performance evaluation. The 
+catalyst and additive are used 
+as a mixture of 75% catalyst 
+and 25% additive for evalua­
+tion. Reaction was carried out 
+at four different catalyst to oil 
+ratios (from 4 to 10) to gener­
+ate a wide range of conversion 
+data. The reaction temperature 
+was 
+maintained 
+at 
+545°C. 
+Product gas and liquid were 
+analysed in an Agilent 3000A 
+micro GC and a Varian 450 
+GC SIMDIST respectively.
+www.eptq.com                                                                                                                                      Catalysis 2016   3
+Results and discussion
+Physico-chemical properties of 
+the FCC catalyst
+The spray dried catalyst after 
+rare earth exchange and calci­
+nation is analysed by various 
+physico-chemical 
+techniques 
+and the results are summarised 
+in Table 3. 
+The total surface area of 
+prepared FCC catalyst is 336 
+m2/g, which decreases to 165 
+m2/g after hydrothermal deac­
+tivation at 800ºC for 20 hours 
+(see Tables 3 and 4). The 
+decrease in surface area of 
+steamed FCC catalyst is mainly 
+due to dealumination of the 
+zeolite, resulting in a loss of 
+Al-OH-Si groups responsible 
+for Bronsted acidity; hydro­
+thermal 
+treatment 
+leads 
+to 
+partial 
+destruction 
+of 
+the 
+Y-zeolite structure and thereby 
+a significant decrease in surface 
+area, pore volume and acidity 
+is anticipated. The decrease 
+further depends on the severity 
+of the hydrothermal deactiva­
+tion conditions and stability of 
+zeolite, which is formulation 
+specific. Exchange of rare earth 
+retards 
+destruction 
+of 
+the 
+Y-zeolite during hydrothermal 
+treatment, which also results in 
+an increase in the strength of 
+the acid sites. The average 
+particle size (APS) and attrition 
+index (AI) results (see Table 3) 
+are 
+within 
+the 
+range 
+of 
+required 
+specifications 
+of 
+commercial catalyst. 
+Acidity measurements were 
+Parameter	
+ACE protocol
+Feed injection time	
+Fixed at 30 seconds
+C/O range	
+4 to 10
+Feed rate, gm/min	
+2.0
+Rx temp., °C	
+545
+Rx. pressure, kg/cm2(g)	
+Atmospheric 
+	
+operation
+ACE operating conditions 
+Table 2
+Surface area and pore volume
+Total surface area 	
+336 m2/g
+Zeolite surface area 	
+226 m2/g
+Matrix surface area 	
+110 m2/g
+Total pore volume 	
+0.203 cc/g
+Zeolite pore volume 	
+0.049 cc/g
+Chemical analysis and acidity
+Al2O3, wt%	
+29.4
+Na2O, wt%	
+0.28
+RE2O3, wt%	
+0.54
+Total acidity, mmol/g	
+706
+Average particle size distribution 
+and attrition index
+APS, µ	
+71
+Fines (<40 µ), %	
+4
+Attrition Index (ASTM D5757)
+(wt% loss in 5 hrs)	
+3
+Physico-chemical properties of 
+prepared FCC catalyst (without 
+calcium impregnation)
+Table 3
+Parameters	                                                             FCC catalyst (hydrothermally deactivated)
+Calcium concentration on catalyst, ppm	
+0	
+5000	
+10 000
+Total surface area, m2/g	
+165	
+149	
+137
+Zeolite surface area, m2/g	
+107	
+107	
+92
+Matrix surface area, m2/g	
+58	
+42	
+45
+Total pore volume, cc/g	
+0.203	
+0.187	
+0.180
+Zeolite pore volume, cc/g	
+0.049	
+0.049	
+0.042
+Total pore volume reduction, %	
+Base	
+7.9	
+11.3
+Total acidity, mmol/g	
+0.044	
+0.044	
+0.036
+Acidity reduction, mmol/g	
+Base	
+Nil	
+18
+Surface area, pore volume and acidity of hydrothermally deactivated FCC 
+catalyst samples having calcium contents from 0 to 1 wt%
+Table 4
+
+<<<PAGE 4>>>
+carried out by the ammonia 
+TPD method. The ammonia 
+TPD profile of prepared FCC 
+catalyst before and after hydro­
+thermal deactivation is shown 
+in Figure 1. It can be seen from 
+Figure 1 that the acidic sites are 
+distributed in two regions: one 
+is due to weak acidic sites 
+(Tmax1: ~230ºC) and the other is 
+due to strong acidic sites (Tmax1: 
+~350ºC). The total acidity of 
+catalyst prior to hydrothermal 
+deactivation 
+is 
+about 
+0.706 
+mmol/g, decreasing to 0.044 
+mmol/g after steaming. The 
+decrease in acidity (both weak 
+and strong acidic sites) is very 
+rapid in FCC catalyst and the 
+amount of acid sites present in 
+the catalyst are minimal (0.044 
+mmol/g) after hydrothermal 
+deactivation.
+The calcium impregnated (0, 
+5000 and 10 000 ppm) FCC 
+catalyst samples are hydrother­
+mally deactivated and their 
+physical properties are shown 
+in Table 4. The total surface 
+area of calcium impregnated 
+catalyst samples reduces to 137 
+m2/gm from 165 m2/gm with 
+an increase in calcium level 
+from 0 to 10 000 ppm. The 
+decrease in total pore volumes 
+are also similar. The question is 
+whether the decrease in these 
+properties is due to zeolite 
+pore blockage or blockage of 
+matrix pores (mesopores) by 
+calcium. 
+To 
+understand 
+further, a t-plot was used to 
+calculate the matrix surface 
+area (pores larger than micro­
+pores) and acidity (ammonia 
+TPD) of the catalyst particles.
+It is interesting to note that 
+the zeolite surface area (107 
+m2/g), zeolite pore volume 
+(0.049 cc/g) and total acidity 
+(0.044 mmol/g) are the same 
+and did not change when 
+calcium is present in the cata­
+lyst up to 5000 ppm (see Table 
+4). The decrease in matrix 
+surface area from 58 m2/g to 42 
+m2/g with no change in zeolite 
+surface 
+area 
+suggests 
+that 
+impregnated calcium is mostly 
+deposited in the catalyst matrix 
+and possibly has not blocked 
+the zeolite pores. However, 
+when the calcium content is 
+increased to 10 000 ppm, then 
+the calcium partially filled both 
+zeolite 
+and 
+matrix 
+pores, 
+revealed in the decrease in 
+zeolite surface area, zeolite pore 
+volume and acidity. Hence the 
+prepared FCC catalyst is capa­
+ble of capturing calcium up to 
+5000 ppm. Figure 2 shows the 
+NH3-TPD profiles of hydrother­
+mally 
+deactivated 
+catalysts 
+with calcium contents from 0 to 
+10 000 ppm. Similar to the 
+surface area results, the total 
+acidity (weak acid sites) is also 
+comparable, 
+or 
+not 
+much 
+changed, when the calcium 
+content is 0 ppm to 5000 ppm; 
+acidity 
+drops 
+thereafter 
+as 
+zeolite surface area is affected 
+by an increasing calcium level 
+at 10 000 ppm. 
+Physico-chemical properties of 
+ZSM-5 additive
+The spray dried catalyst addi­
+tive 
+after 
+calcination 
+is 
+analysed and various physi­
+co-chemical 
+properties 
+are 
+summarised in Table 5. 
+The total surface area of 
+  4   Catalysis 2016                                           	
+ www.eptq.com
+TCD signal, a.u.
+100
+200
+300
+400
+500
+600
+Temperature, ºC
+After steaming
+Before steaming
+Tmax1
+Tmax2
+Figure 1 Ammonia TPD profile of FCC catalyst before and after hydrothermal 
+deactivation
+Surface area and pore volume
+Total surface area 	
+140 m2/g
+Zeolite surface area 	
+110 m2/g
+Matrix surface area 	
+30 m2/g
+Total pore volume (cc/g)	
+0.134
+Zeolite pore volume (cc/g)	
+0.053
+Chemical analysis and acidity
+Al2O3, wt%	
+18.7
+Na2O, wt%	
+0.11
+P2O5, wt%	
+11.9
+Total acidity, mmol/g	
+0.240
+Average particle size distribution and 
+attrition index
+APS, µ	
+77
+Fines (<40 µ), %	
+6
+Attrition Index (ASTM D5757)
+(wt% loss in 5 hrs)	
+4
+Physico-chemical properties of 
+prepared ZSM-5 additive (without 
+calcium impregnation)
+Table 5
+
+<<<PAGE 5>>>
+prepared ZSM-5 additive is 140 
+m2/g which increases to 170 
+m2/g after hydrothermal deac­
+tivation at 800ºC for 20 hours 
+(see Tables 5 and 6). The 
+behaviour of steamed ZSM-5 
+additive is different to that of 
+FCC 
+catalyst 
+containing 
+Y-zeolite. In contrast to FCC 
+catalyst, steaming of ZSM-5 
+additive results in either an 
+increase in total surface area or 
+the same total surface area, 
+depending on the relocation of 
+aluminum/phosphate sites in 
+the 
+zeolite 
+framework 
+and 
+matrix. The surface area also 
+depends on the severity of 
+hydrothermal 
+deactivation 
+conditions and the stability of 
+the zeolite. It is well known in 
+prior art that the hydrothermal 
+stability of ZSM-5 zeolites in 
+FCC additive is stabilised by 
+phosphates. Although dealumi­
+nation occurs in ZSM-5 zeolite, 
+its 
+crystal 
+structure 
+is 
+quite stable under hydrother­
+mal deactivations, hence not 
+much crystallinity and surface 
+area loss is observed. In fact, 
+the 
+surface 
+area 
+increases, 
+particularly that of the matrix 
+in ZSM-5 additives after hydro­
+thermal deactivation. This is 
+due to relocation of aluminum 
+and phosphorous sites outside 
+the framework. The zeolite 
+surface area also decreases if 
+the sample undergoes severe 
+hydrothermal 
+deactivations, 
+leading to dealumination. The 
+zeolite structure too collapses 
+and this can be seen in a lower 
+zeolite surface area and crystal­
+linity. The surface area further 
+depends 
+on 
+the 
+phosphate 
+contents and binders used in 
+the 
+formulation. 
+In 
+the 
+prepared ZSM-5 additive, the 
+zeolite surface area decreased 
+to 93 m2/g from 110 m2/g and 
+www.eptq.com                                                                                                                                       Catalysis 2016   5
+present in steamed additive are 
+higher 
+(0.100 
+mmol/g) 
+in 
+comparison to steamed catalyst 
+(0.044 mmol/g). The acid sites 
+present in fresh additive are 
+mostly weak acids with some 
+strong acid sites. However, 
+only weak acid sites are pres­
+ent 
+in 
+both 
+catalyst 
+and 
+additive after steaming.
+The calcium impregnated (0, 
+5000 and 10 000 ppm) ZSM-5 
+additive samples are hydro­
+thermally deactivated and their 
+physical properties are shown 
+in Table 6. The results show 
+that the physical properties of 
+the 
+matrix 
+surface 
+area 
+increased to 77 m2/g from 30 
+m2/g. The average particle size 
+and attrition index results are 
+within the range of desired 
+specifications.
+Figure 3 shows the ammonia 
+TPD profile of prepared ZSM-5 
+additive 
+before 
+and 
+after 
+hydrothermal deactivation. The 
+total acidity of ZSM-5 additive 
+is 
+observed 
+to 
+be 
+0.240 
+mmol/g, which decreases to 
+0.100 mmol/g. Unlike FCC 
+catalyst, the decrease in acidity 
+of ZSM-5 additive is not signif­
+icant. 
+The 
+total 
+acid 
+sites 
+TCD signal, a.u.
+100
+200
+300
+400
+500
+600
+Temperature, ºC
+5000 ppm
+10 000 ppm
+0 ppm
+Figure 2 Ammonia TPD profile of hydrothermally deactivated catalyst with 
+calcium contents from 0 to 10 000 ppm
+Parameters	                                                               ZSM-5 additive (hydrothermally deactivated)
+Calcium concentration on additive, ppm	
+0	
+5000	
+10 000
+Total surface area, m2/g	
+170	
+166	
+148
+Zeolite surface area, m2/g	
+93	
+88	
+77
+Matrix surface area, m2/g	
+77	
+78	
+61
+Total pore volume, cc/g	
+0.153	
+0.151	
+0.136
+Zeolite pore volume, cc/g	
+0.042	
+0.040	
+0.035
+Total pore volume reduction, %	
+Base	
+1.3	
+11.1
+Total acidity, mmol/g	
+0.100	
+0.090	
+0.062
+Acidity reduction, mmol/g	
+Base	
+10	
+38
+Surface area, pore volume and acidity of hydrothermally deactivated ZSM-
+5     additive samples with calcium content of 0-1 wt%
+Table 6
+
+<<<PAGE 6>>>
+the 
+FCC 
+additive 
+are 
+not 
+changed appreciably when the 
+calcium 
+concentration 
+is 
+between 0.0 ppm and 5000 
+ppm. A marginal decrease in 
+zeolite surface area and acidity 
+are observed in 5000 ppm 
+calcium 
+containing 
+additive. 
+This 
+indicates 
+calcium 
+is 
+partially filling zeolite pores at 
+lower 
+concentration 
+levels 
+(<5000 
+ppm). 
+However, 
+at 
+higher concentrations (>5000 
+ppm), calcium fills in both the 
+zeolite and matrix pores of the 
+ZSM-5 
+additive. 
+The 
+total 
+surface area reduced from 166 
+m2/g to 148 m2/g due to a 
+decrease in zeolite surface area, 
+as well as matrix surface area 
+in 
+a 
+10000 
+ppm 
+calcium 
+containing additive. Similarly, 
+pore volumes and acidities 
+decrease significantly when the 
+calcium level is 10 000 ppm. 
+Figure 4 shows the NH3-TPD 
+profiles 
+of 
+hydrothermally 
+deactivated ZSM-5 additives 
+with calcium contents from 0 
+ppm to 10000 ppm. Similar to 
+the surface area results, the 
+acidity 
+is 
+also 
+marginal 
+decrease in 5000 ppm Ca and 
+the fall in acidity is much 
+higher 
+when 
+the 
+calcium 
+content is 10 000 ppm. 
+Fluid catalytic cracking of 
+hydrotreated VGO on calcium 
+impregnated catalyst/additive 
+Calcium impregnated, steam 
+deactivated catalyst and addi­
+tive were evaluated in the ACE 
+at 545°C using hydrotreated 
+VGO feed. Conversion at a 
+C/O ratio of 8.2 and product 
+selectivities at a conversion 
+level of 76 wt% are shown in 
+Figures 5 to 8. Conversion vs 
+calcium concentration is plotted 
+in Figure 5, which shows that 
+the catalyst has lost its activity 
+by 1 wt% and 1.7 wt% when 
+the calcium level was increased 
+to 5000 ppm and 10 000 ppm, 
+respectively. 
+Escobar 
+et 
+al 
+reported monometallic catalysts 
+containing iron or calcium were 
+less active than a USY-zeolite 
+sample.1 Both iron and calcium 
+favour the olefin to paraffin 
+ratio compared to the metal 
+free 
+sample. 
+These 
+metals 
+increase olefin formation and 
+poison acid sites. The effect of 
+calcium concentration on fuel 
+gas, coke and CSO yields are 
+shown in Figure 6. The results 
+show the decrease in fuel gas 
+yield with increase in calcium 
+  6   Catalysis 2016                                       	
+ www.eptq.com
+TCD signal, a.u.
+100
+200
+300
+400
+500
+600
+Temperature, ºC
+Steamed
+Fresh
+Tmax1
+Tmax2
+Figure 3 Ammonia TPD profile of ZSM-5 additive before and after hydrothermal 
+deactivation
+TCD signal, a.u.
+100
+200
+300
+400
+500
+600
+Temperature, ºC
+5000 ppm
+10 000 ppm
+0 ppm
+Figure 4 Ammonia TPD profile of hydrothermally deactivated ZSM-5 additive 
+with calcium content from 0 to 10 000 ppm
+
+<<<PAGE 7>>>
+level. It is interesting to note 
+that fuel gas make reduces to 
+2.9 wt% from a base level of 
+4.75 wt% when the calcium 
+level 
+on 
+catalyst/additive 
+increases to 10 000 ppm. The 
+coke selectivity plot shows that 
+coke yield increases with an 
+increase in calcium level and 
+the increment is significant at 
+10 000 ppm. These findings 
+contrast with the nickel effect. 
+Nickel makes more coke and 
+more fuel gas, whereas calcium 
+also shows more coke but 
+reduces fuel gas considerably. 
+In 
+the 
+current 
+study, 
+the 
+decrease in fuel gas yield can 
+be attributed to lower mono­
+molecular 
+and 
+bimolecular 
+reactions, which is also related 
+to a decrease in acid sites. 
+Propylene and LPG yields were 
+also 
+lower 
+in 
+10 000 
+ppm 
+calcium containing samples. 
+The effect of calcium on 
+propylene yield is shown in 
+Figure 7. The plot shows that up 
+to 5000 ppm calcium level, there 
+was 
+not 
+much 
+change 
+in 
+propylene yield, but an appreci­
+able decrease in propylene yield 
+was observed when the calcium 
+concentration was increased to 
+10 000 ppm. Figure 8 shows the 
+effect of calcium on the yield of 
+LPG, gasoline and LCO. The 
+decrease in LPG and increase in 
+gasoline yields at 10 000 ppm 
+calcium level could be attrib­
+uted to reduced catalyst activity 
+of the additive. 
+Estimated heat balanced yields 
+For prediction of heat balanced 
+plant yield based on ACE data, 
+conversion and coke factors are 
+fed to the FCC models to 
+obtain heat balanced conver­
+sion for the calcium doped 
+catalyst/additive. 
+Selectivity 
+deltas, thereafter, are imposed 
+www.eptq.com                                                                                                                                      Catalysis 2016   7
+75.5
+76.5
+76.0
+75.0
+74.5
+Conversion, wt%
+74.0
+0
+2000
+4000
+6000
+8000
+10 000
+12 000
+Calcium concentration, ppm
+Figure 5 Conversion vs calcium loading from 0 to 10 000 ppm in FCC catalyst 
+and additive 
+4.0
+5.0
+4.5
+3.5
+3.0
+Selectivity: dry gas and coke, 
+wt%
+2.5
+7.6
+8.0
+7.8
+7.4
+7.2
+Selectivity: CSO, wt%
+7.0
+0
+2000
+4000
+6000
+8000
+10 000
+12 000
+Calcium concentration, ppm
+Dry gas
+Coke
+CSO
+Figure 6 Effect of calcium concentration on dry gas, coke and CSO yields in the 
+FCC 
+75.5
+76.0
+75.0
+74.5
+Propylene selectivity, wt%
+74.0
+0
+2000
+4000
+6000
+8000
+10 000
+12 000
+Calcium concentration, ppm
+Figure 7 Effect of calcium concentration on propylene yield in the FCC
+
+<<<PAGE 8>>>
+at 
+the 
+new 
+conversion 
+to 
+predict final yield shifts with 
+the calcium impregnated cata­
+lyst/additive. The estimated 
+heat balanced yields are shown 
+in Table 7. It can be concluded 
+that 
+the 
+catalyst 
+loses 
+its 
+conversion by 1.2 wt% and 2.1 
+wt% when the calcium level on 
+the catalyst was increased to 
+5000 ppm and 10 000 ppm 
+respectively. 
+K Bryden et al studied the 
+detailed characterisation of tight 
+oils and cracking of these feed­
+stocks under different operating 
+conditions.6 Tight oils are gener­
+ally light, sweet and easy to 
+crack and contain sediments 
+with high levels of iron and 
+alkali metals. Iron in combina­
+tion 
+with 
+calcium 
+and/or 
+sodium has a stronger negative 
+effect on catalyst performance 
+than iron alone. It is reported 
+that iron and calcium poisoning 
+results in a loss of bottom crack­
+ing 
+due 
+to 
+pore 
+blockage, 
+leading to a drop in conversion. 
+However, the calcium tolerance 
+of these catalysts for FCC feed­
+stocks 
+in 
+general 
+are 
+not 
+reported.
+The fuel gas make reduces to 
+half of the base level as the 
+calcium 
+level 
+on 
+catalyst 
+increases to 10 000 ppm. LPG as 
+well as propylene selectivity for 
+the base case and the 5000 ppm 
+calcium case is almost the same. 
+However, when the calcium 
+level increases to 10 000 ppm, 
+the drop in LPG and propylene 
+is significant. As per the heat 
+balance yield, LPG and propyl­
+ene make drop by 3.2% and 
+1.18% at the 10 000 ppm calcium 
+level. Gasoline make increases 
+to 43.7% from a base value of 
+39.9 wt%. The secondary crack­
+ing 
+of 
+gasoline 
+to 
+lighter 
+products including LPG and 
+propylene 
+is 
+significantly 
+reduced at the 10 000 ppm 
+calcium level. The change in 
+LCO and CSO make is not 
+much at 5000 ppm calcium. 
+However, LCO yield with 10 
+000 ppm calcium, increases to 
+14.2% from a base value of 
+13.4%. Similarly, CSO make 
+increases to 8.12 wt% from 
+7.38% in the presence of 10 000 
+ppm calcium. 
+Conclusions
+The catalyst and additive in 
+this 
+study 
+are 
+tolerant 
+to 
+calcium metal contamination 
+up to 5000 ppm without affect­
+ing 
+the 
+product 
+yields 
+of 
+propylene and LPG. The cata­
+lysts lower the additional fuel 
+gas by 12% and 50% when the 
+calcium concentration is 5000 
+ppm and 10 000 ppm respec­
+tively. 
+Coke 
+yields 
+are 
+observed 
+to 
+increase 
+with 
+calcium level and the incre­
+ment is significant at 10 000 
+ppm 
+calcium. 
+The 
+calcium 
+effect is similar to the nickel 
+  8  Catalysis 2016                                     	
+ www.eptq.com
+34.5
+40.5
+37.5
+31.5
+28.5
+Yield: LPG and gasoline, wt%
+25.5
+16.6
+17.0
+16.8
+16.4
+16.2
+Yield: LCO, wt%
+16.0
+0
+2000
+4000
+6000
+8000
+10 000
+12 000
+Calcium concentration, ppm
+LPG
+Gasoline
+LCO
+Figure 8 Effect of calcium concentration on yields of LPG, gasoline and LCO in 
+the FCC
+Parameters	
+Base case 	                                 Ca doped case
+Calcium , ppm	
+0	
+5000	
+10 000
+Yield pattern, wt%	
+	
+	
+Fuel gas	
+4.09	
+3.59	
+2.0
+Total LPG	
+29.84	
+29.88	
+26.60
+LPG (excluding C3=)	
+20.12	
+20.09	
+18.06
+Propylene	
+9.72	
+9.79	
+8.54
+Gasoline	
+39.89	
+39.70	
+43.74
+LCO	
+13.37	
+13.74	
+14.20
+CSO	
+7.38	
+7.69	
+8.12
+Coke	
+5.44	
+5.41	
+5.32
+Conversion	
+79.8	
+78.6	
+77.7
+Process conditions	
+	
+	
+Riser outlet temp, °C	
+545	
+545	
+545
+Reactor pressure, kg/cm2(g)	
+2.82	
+2.82	
+2.82
+Cat/oil	
+10.28	
+10.25	
+9.96
+Estimated heat balanced yields at constant ROT of 545°C
+Table 7
+
+<<<PAGE 9>>>
+groups in the Refining R&D Division of 
+RIL. He has 25 years of experience in 
+refining processes with several patents 
+and publications to his credit. He 
+holds degrees in chemical engineering 
+(MTech) 
+from 
+IIT, 
+Kanpur. 
+Email: 
+sukumar.k.mandal@ril.com
+Gopal Ravichandran is Assistant Vice 
+President, Lead FCC catalyst group in the 
+Refining R&D Division of RIL. He has 20 
+years of experience in refining catalysis 
+with several patents and publications to 
+his credit. He holds degrees in chemistry 
+(MSc and PhD) from IIT Mumbai and 
+engineering (MTech) from IIT, Kharagpur, 
+respectively. 
+Email: ravichandran.gopal@ril.com
+Srikanta Dinda is an Associate Professor 
+with BITS Pilani, Hyderabad. He has four 
+years of experience in FCC processes at 
+the Refining R&D division of RIL. He holds 
+degrees in chemical engineering and 
+chemistry (MTech, PhD) from Calcutta 
+University and IIT Kharagpur, respectively. 
+Email: srikanta.dinda@gmail.com
+Amit V Gohel is a Manager in the 
+Refining R&D Division of RIL. He has nine 
+years of experience in FCC processes and 
+holds a degree in chemical engineering 
+(BTech) from V.V.P. Engg. College, Rajkot, 
+Gujarat University. 
+Email: av_gohel@yahoo.co.in
+Ashwani Yadav is a Manager in the 
+Refining R&D Division of RIL. He has 10 
+years of experience in R&D in fluid bed 
+and coking process development and 
+holds a chemical engineering degree 
+(Diploma and B.tech) from Government 
+Polytechnic Sonepat and Rajasthan 
+Vedyapeeth 
+University, 
+respectively. 
+Email: Ashwani.h.Yadav@ril.com
+Asit Kumar Das heads the Refining R&D 
+division at RIL, Jamnagar. He has 30 
+years of experience in refining research 
+with several publications and patents to 
+his credit. He holds degrees in chemical 
+engineering (BTech, MTech and PhD 
+from Jadhapur University, IIT Kanpur, and 
+University of Gent, Belgium, respectively. 
+Email: asit.das@ril.com
+desirable yields. The reduction 
+in activity and product selectivi­
+ties could be explained due to 
+an 
+appreciable 
+amount 
+of 
+reduced acid sites in the ZSM-5 
+additive 
+and 
+catalyst 
+when 
+calcium 
+concentration 
+was 
+>5000 ppm. Hence, the catalyst 
+and additive of the current 
+study has a potential to process 
+calcium containing feedstock in 
+the FCC. These catalysts may 
+also be employed in FCC units 
+where fuel gas is the major 
+constraint.
+ 
+References
+1	Escobar A S, Pereira M M, Cerqueira H S, 
+Appl. Cat. A: Gen. 339, 2008, 61.
+2	Guthrie C F, Jossens L W, Kennedy J 
+V, Paraskos J A, US patent no. 5260240, 
+1993.
+3	S Dinda, Kumar Ch. P, Gohel A V, Yadav 
+A, Mandal S, Ravichandran G, Das A K, 
+Application 
+nos. WO2013005225A1, 
+US2014/0116923 A1, EP2729553A1.
+4	Mitchell B R, Ind. Eng. Chem. Prod. Res. 
+Dev., 19, 1980, 209.
+5	Kayser J C, US patent No. 6069012, 
+2000.
+6	Bryden K, Federspiel M, Habib E T, Jr., 
+Schiller R, Catalagram 114, W R Grace & 
+Co., 2014.
+Chinthala Praveen Kumar is a General 
+Manager in the Refining R&D Division 
+of Reliance Industries Limited (RIL). He 
+has 16 years of experience in FCC and 
+heterogeneous catalysis with several 
+patents and publications to his credit. 
+He holds degrees in chemistry (MSc and 
+PhD) from Osmania University and IICT, 
+Hyderabad, respectively. 
+Email: praveen.chinthala@ril.com
+Sukumar Mandal is Assistant Vice 
+President, Lead FCC and coker process 
+effect with respect to coke 
+make; however, it contrasts 
+with nickel with respect to fuel 
+gas. Therefore the catalyst and 
+additive provide the feasibility 
+for processing inferior quality 
+hydrocarbon 
+feedstock 
+of 
+higher boiling point. The cata­
+lyst was found to lose activity 
+by 1.2% and 2.1 wt% when the 
+calcium level on the catalyst 
+increases to 5000 ppm and 
+10 000 
+ppm 
+respectively. 
+Further, LPG and propylene 
+yields were found to decrease 
+considerably at the 10 000 ppm 
+calcium 
+level 
+and 
+gasoline 
+make increased to 43.7% from 
+a base value of 39.9 wt%. 
+Surface 
+area 
+and 
+pore 
+volume results show that initial 
+pore blockage is not much in 
+the catalyst and additive up to 
+the 5000 ppm calcium level. At 
+higher calcium loading (10 000 
+ppm), both zeolite and matrix 
+pores are affected in the cata­
+lyst 
+and 
+additive, 
+with 
+a 
+decrease in surface area and 
+pore volume. This is due to 
+calcium filling zeolite as well 
+as matrix pores in the catalyst 
+and additive at higher concen­
+trations (>5000 ppm). 
+Acidity measurements further 
+confirm the observations of 
+surface area and pore volume. 
+The decrease in acidity of cata­
+lyst and additive was marginal 
+or the same up to the 5000 ppm 
+calcium 
+level 
+and 
+acidity 
+decreased when calcium was 
+>5000 ppm. Therefore, it can be 
+concluded that up to 5000 ppm 
+calcium on catalyst/additive, 
+there was negligible effect on 
+www.eptq.com                                                                                                                                      Catalysis 2016   9

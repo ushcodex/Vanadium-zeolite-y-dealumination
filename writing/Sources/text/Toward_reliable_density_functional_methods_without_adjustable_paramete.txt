@@ -1,0 +1,2389 @@
+
+<<<PAGE 1>>>
+Toward reliable density functional methods without adjustable parameters:
+The PBE0 model
+Carlo Adamo and Vincenzo Barone 
+ 
+Citation: J. Chem. Phys. 110, 6158 (1999); doi: 10.1063/1.478522 
+View online: http://dx.doi.org/10.1063/1.478522 
+View Table of Contents: http://jcp.aip.org/resource/1/JCPSA6/v110/i13 
+Published by the American Institute of Physics. 
+ 
+Additional information on J. Chem. Phys.
+Journal Homepage: http://jcp.aip.org/ 
+Journal Information: http://jcp.aip.org/about/about_the_journal 
+Top downloads: http://jcp.aip.org/features/most_downloaded 
+Information for Authors: http://jcp.aip.org/authors 
+Downloaded 07 May 2012 to 129.215.149.92. Redistribution subject to AIP license or copyright; see http://jcp.aip.org/about/rights_and_permissions
+
+<<<PAGE 2>>>
+Toward reliable density functional methods without adjustable parameters:
+The PBE0 model
+Carlo Adamo
+Dipartimento di Chimica, Universita` della Basilicata, via N. Sauro 85, I-85100 Potenza Italy
+Vincenzo Baronea)
+Dipartimento di Chimica, Universita` ‘‘Federico II,’’ via Mezzocannone 4, I-80134 Napoli, Italy
+~Received 8 September 1998; accepted 29 December 1998!
+We present an analysis of the performances of a parameter free density functional model ~PBE0!
+obtained combining the so called PBE generalized gradient functional with a predeﬁned amount of
+exact exchange. The results obtained for structural, thermodynamic, kinetic and spectroscopic
+~magnetic, infrared and electronic! properties are satisfactory and not far from those delivered by the
+most reliable functionals including heavy parameterization. The way in which the functional is
+derived and the lack of empirical parameters ﬁtted to speciﬁc properties make the PBE0 model a
+widely applicable method for both quantum chemistry and condensed matter physics.
+© 1999
+American Institute of Physics. @S0021-9606~99!30513-4#
+I. INTRODUCTION
+Computational models rooted in the density functional
+~DF! theory 1 are nowadays considered valuable tools for the
+study of molecular electronic structure. As a matter of fact,
+for closed shell molecules formed by main row atoms the
+performances of current DF models using the so called gen-
+eralized gradient approximations ~GGA! are comparable to
+the results obtained by low-order many body perturbation
+techniques, such as the second order Mo¨ller–Plesset ~MP2!
+approach.2,3 However, contrary to MP2, DF models deliver
+essentially the same precision also for open shell systems
+and for molecules containing atoms belonging to the whole
+Periodic Table.4 While DF methods provide per se thermo-
+chemical data of remarkable accuracy,5 the reliability of ge-
+ometries and harmonic force ﬁelds is particularly signiﬁcant
+since several recent extrapolation procedures ~belonging,
+e.g., to the G2 or CBS families6–9! have replaced HF or MP2
+geometries and frequencies by DF ones.
+Despite these remarkable features, it remains true that
+the exact density functional is unknown, and approximations
+must be introduced. In the Kohn–Sham ~KS! approach to DF
+theory, the exact kinetic-energy operator is used together
+with a density functional for the exchange-correlation en-
+ergy, Exc.1 Although strictly speaking exchange and corre-
+lation need not be separated in a DF context, it is customary
+to develop formally separate functionals for Ex and Ec .
+Since Ec is typically around 10% of Ex , it would seem most
+important that the exchange functional be accurate.10 How-
+ever, since the whole Exc is usually developed and param-
+eterized, there is some error compensation between both
+partners and combination of Ex and Ec functionals issuing
+from different sources could be dangerous.
+A number of GGA and beyond GGA functionals have
+been developed in the last years and are being incorporated
+in several computer codes.11–33 They are based on some
+combination of two limiting strategies, namely, ~1! ﬁtting of
+some set of experimental data and ~2! fulﬁllment of a num-
+ber of well known physical constraints. Although most ex-
+isting functionals combine both approaches, attention is be-
+ing shifted to the ﬁrst aspect with the risk, in our opinion, of
+overemphasizing the thermochemistry of organic molecules
+34 at the expense of other systems and/or properties for which
+the free electron gas limit and other basic physical con-
+straints could be more important.35–38 On the other side, Per-
+dew, Burke and Ernzerhof have recently introduced a GGA
+functional ~hereafter referred to as PBE! in which all the
+parameters ~other than those in its local spin density, LSD,
+component! are fundamental constants.22 This is obtained us-
+ing the Perdew–Wang ~PW! correlation functional,13 and a
+new exchange contribution:
+Ex
+PBE5
+bx2
+11ax2 ,
+~1!
+with b50.00336, a50.00449 and x5u“ru/r4/3, r and “r
+being the electron density and its gradient. Due this choice,39
+the PBE functional is expected to provide results of compa-
+rable quality for widely different chemical systems.40
+Several benchmarks have already been published on this
+functional with remarkable results,41–45 and some modiﬁca-
+tion of parameters has been suggested to further improve its
+accuracy.46 However, a better avenue toward increased reli-
+ability is provided, in our opinion, by hybrid HF/DF
+models.47,48 These methods are rooted in the adiabatic con-
+nection formula:49
+Exc5E
+0
+1
+dl Exc,l ,
+~2!
+where
+a!Electronic mail: enzo@chemna.dichi.unina.it
+JOURNAL OF CHEMICAL PHYSICS
+VOLUME 110, NUMBER 13
+1 APRIL 1999
+6158
+0021-9606/99/110(13)/6158/13/$15.00
+© 1999 American Institute of Physics
+Downloaded 07 May 2012 to 129.215.149.92. Redistribution subject to AIP license or copyright; see http://jcp.aip.org/about/rights_and_permissions
+
+<<<PAGE 3>>>
+Exc,l5^CluVeeuCl&2
+1
+2E d3rE d3r8
+r~r!2r~r8!
+ur2r8u
+,
+~3!
+which connects the noninteracting KS reference system (l
+50) to the fully interacting real system (l51), through a
+continuum of partially interacting real systems, all sharing a
+common density r.49 Starting from this formula, several hy-
+brid schemes have been proposed, the most widely used
+~hereafter referred to collectively as ACM3! including three
+empirical parameters to rule the mixing of HF exchange and
+DF exchange and correlation:50–52
+Exc
+ACM35Exc
+LSD1a1~Ex
+HF2Ex
+LSD!1a2 DEx
+GGA1a3 DEc
+GGA.
+~4!
+More recently, Becke has suggested53 that just one coefﬁ-
+cient is sufﬁcient to rule the HF/DF exchange ratio according
+to
+Exc
+ACM15Exc
+GGA1a1~Ex
+HF2Ex
+GGA!.
+~5!
+These methods ~collectively referred to as ACM1! are quite
+successful,54–56 and it has been shown that hybrid nonempiri-
+cal schemes employing a system- and property-dependent
+mixing coefﬁcient can be approximated quite accurately by
+Eq. ~5!.57
+Perdew and co-workers have next shown that the opti-
+mum value of the a1 coefﬁcient can be ﬁxed a priori taking
+into account that fourth-order perturbation theory is sufﬁ-
+cient to get accurate numerical results for molecular
+systems.58 This leads to a family of adiabatic connection
+functionals ~hereafter referred to as ACM0! with the same
+number of adjustable parameters as their GGA’s constitu-
+ents:
+Exc
+ACM05Exc
+GGA1
+1
+4 ~Ex
+HF2Ex
+GGA!.
+~6!
+We have recently shown that the B0LYP variant ~i.e., Becke
+exchange and Lee–Yang–Parr correlation functionals50!
+gives results comparable to those of current 3-parameter hy-
+brids like B3LYP,59,60 whereas the PW0PW model ~which
+uses
+the
+Perdew–Wang
+exchange
+and
+correlation
+functionals50! leads to disappointing results. Further studies
+showed that, starting from the original PW exchange func-
+tional,
+Ex
+PW5
+bx22~b2b!x2 exp~2cx2!21026xd
+116bx sinh21 x2
+1026xd
+Ax
+~7!
+~with b50.0042, b55(36p)25/3; c51.6455; d54.0!, opti-
+mization of b and d parameters ~to b50.0046, d53.73;
+hereafter referred to as mPW! is sufﬁcient to obtain an
+ACM0 model ~mPW0! competitive with the B0LYP ap-
+proach for the covalent interactions, but characterized by a
+signiﬁcantly improved long range behavior.29 In particular,
+while both B and PW exchange functionals have a correct
+asymptotic behavior, this does not apply to the intermediate
+region characterizing noncovalent interactions. Thus the dif-
+ferential exchange energies ~i.e., the exchange energies of
+dimers minus those of the constituting fragments! provided
+by B and PW exchange functionals are quite poor16 and only
+purposely tailored functionals behave properly.16,29,60
+Since the ACM0 models contain, by deﬁnition, only the
+adjustable parameters used in their GGA component, we
+have thought it interesting to analyze the performances of the
+ACM0 model issuing from the PBE GGA ~hereafter PBE0!,
+which does not contain any adjustable parameter. Since the
+PW and PBE correlation functionals are very similar, another
+interesting aspect is whether the PBE exchange functional is
+closer to the original PW model or to our modiﬁed version
+~mPW!. Together with standard organic molecules, we have
+analyzed also a number of other aspects, including organo-
+metallic systems, noncovalent interactions, reactivity, struc-
+ture and magnetic properties of open shell systems and spec-
+troscopic properties. Furthermore, thermodynamic properties
+have been evaluated by a fully coherent approach in which
+geometries, harmonic frequencies and electronic energies are
+obtained at the same computational level without resorting to
+HF or MP2 geometries and frequencies. Note that, since the
+second derivatives of the functional are needed in the evalu-
+ation of analytical second derivatives and of excitation ener-
+gies by the time-dependent density functional ~TD-DF! ap-
+proach, we have derived and implemented both ﬁrst and
+second derivatives of the PBE exchange and correlation
+functionals in a fully self-consistent model.
+II. COMPUTATIONAL DETAILS
+All the DF computations were carried out within the
+Kohn–Sham ~UKS! formalism, as implemented in the devel-
+opment version of the GAUSSIAN 98 code.61 In this particular
+implementation, the exchange-correlation contribution to the
+total electronic energy is evaluated using a self-consistent
+procedure which avoids the evaluation of the Hessians of the
+electronic density.62 As a consequence, the cost of the
+exchange-correlation part of the electronic calculation scales
+linearly with the size of the atomic basis set used in the
+expansion of the molecular orbitals.63 Of course, the evalua-
+tion of the Hessian of electron density cannot be avoided
+when computing analytical gradients, or second derivatives.
+This task is, however, performed only once in each optimi-
+zation step. We have added the PBE and PBE0 functionals to
+those already available in the GAUSSIAN package50 so that
+all the standard features for geometry optimization, calcula-
+tion of harmonic frequencies, properties and excitation
+energies50 are also available for these methods. Note that, in
+analogy with our previous implementations,10,29 the Gaussian
+keyword for the PBE functional is PBEPBE while both
+PBE0
+and
+PBE1PBE
+are
+recognized
+for
+the
+ACM0
+version.50
+A number of different basis sets have been used. In par-
+ticular, the 6-311G(d,p) basis set of Pople and co-workers64
+has been used to optimize all the molecular geometries, since
+previous experience showed that a polarized valence triple-z
+basis set generally provides nearly converged structural pa-
+rameters by DF methods.9,65 Diffuse functions on heavy at-
+oms have been added for anionic species. An extended basis
+set, namely the 6-31111G(3df,3pd) one,66 has next been
+used to evaluate all the energetic parameters ~atomization
+and dissociation energies! and electronic properties ~dipole
+moments! at the above geometries. The situation is more
+6159
+J. Chem. Phys., Vol. 110, No. 13, 1 April 1999
+C. Adamo and V. Barone
+Downloaded 07 May 2012 to 129.215.149.92. Redistribution subject to AIP license or copyright; see http://jcp.aip.org/about/rights_and_permissions
+
+<<<PAGE 4>>>
+involved for the van der Waals complexes, where, to avoid
+basis-set converge problems, we have used for He the
+~8,3,2,1! primitives of the so called cc-PV5Z basis set, with-
+out any contraction.67 For Ne and Ar we have used the
+(15s,9p) or (20s,12p) primitives from the corresponding
+aug-cc-pV5Z basis set together with 3d, 2 f, 1g polarization
+functions from the cc-pVQZ basis set.68 Then general con-
+tractions of the ﬁrst (6s,2p) or (11s,6p) primitives were
+used for describing inner parts of the core orbitals, whereas
+all the other primitives were left uncontracted. We have pre-
+viously veriﬁed that these basis sets provides converged re-
+sults in DF computations.29 Finally magnetic parameters of
+the open shell systems have been evaluated with the EPR-III
+basis set, which has been purposely tailored for the evalua-
+tion of magnetic properties in DF computations.69–72
+All the molecular geometries have been fully optimized
+and the nature of stationary points has been characterized by
+computing harmonic wave numbers. When necessary, inter-
+action energies have been corrected for Basis Set Superposi-
+tion Error ~BSSE!73 and Zero Point Energy ~ZPE! effects.
+The calculations of NMR chemical shifts were carried
+out within the gauge-including atomic orbital ~GIAO!
+method.74,75 We refer the reader to the original paper of
+Frisch and co-workers75 for details about the Gaussian
+implementation. Following previous suggestions,75 we use
+the 6-3111G(2d,p) basis set64 for computing chemical
+shifts.
+Time-dependent DF theory ~TD-DF! provides a formally
+rigorous extension of Hohenberg–Kohn–Sham DF theory,
+which is time independent, to the situation where a system,
+initially in its ground stationary state, is subject to a time-
+dependent perturbation modifying its external potential, n.76
+A stationary action principle may be derived, analogous to
+the minimum energy principle of Hohenberg–Kohn theory,
+and this can be used to derive the time-dependent KS
+equations.76 Since the dynamic polarizability describes the
+response of the dipole moment to a time-dependent electric
+ﬁeld, it may be calculated from the response of the charge
+density obtained from TD-DF. This allows the determina-
+tions of the electronic excitation spectrum in the usual dipole
+approximation, because the poles of the dynamic polarizabil-
+ity determine the excitations energies.77 Here we follow the
+TD-DF formalism as reported by Scuseria and co-workers78
+and the 6-311G(d) basis set of Foresman et al.79 success-
+fully validated in previous studies.78,80
+III. RESULTS AND DISCUSSION
+In the following we analyze a number of test cases, cho-
+sen in order to cover the widest possible class of chemical
+interesting systems. These systems include typical organic
+molecules, like those included in the G2 data set, noncova-
+lent interactions, some prototypical organometallic systems,
+free radicals, hydrogen-bonded and van der Waals ~vdW!
+complexes. A number of molecular properties, other than
+geometries and frequencies, have been considered in order to
+make our data set more representative.
+The examples analyzed in this work can be roughly di-
+vided into two classes: the ﬁrst class includes all those sys-
+tems whose properties are accurately described by the MP2
+approach ~i.e., essentially closed shell organic molecules!,
+whereas the second class is formed by all the other systems
+and/or properties whose accurate description requires more
+sophisticated post-HF methods.
+Even if a systematic study on the performances of the
+pure PBE approach has not yet been published, several par-
+tial tests have been carried out,40–45 giving a good deﬁnition
+of the strengths and limits of this functional. So, we do not
+discuss our results at this level, except to say that we have
+veriﬁed the correctness of our implementation of the func-
+tional and its ﬁrst derivatives, recomputing a number of mol-
+ecules reported in the above references. Second derivatives
+of the functional have been then veriﬁed by evaluation of
+harmonic frequencies by both ﬁnite differences of analytical
+gradients and by a completely analytical procedure. We re-
+mark that, while the results of both procedures are very close
+for rigid molecules, analytical second derivatives are much
+more reliable for ﬂexible systems and allow a signiﬁcant
+saving of computer time.
+A. Covalent interactions
+In Table I are reported the atomization energies for 32
+molecules belonging to the G2 data set, computed using the
+PBE0 model.
+This subset has become a standard for the validation of
+new density functional approaches.63 A comparison with the
+mPW0 results well underlines the signiﬁcant numerical im-
+provement obtained with the PBE0 model. It is also interest-
+ing to note that both absolute mean and maximum deviations
+are smaller at the PBE0 level with respect to the mPW0
+results.
+In Tables II and III are reported the geometrical param-
+eters of the same molecules, which can be considered quite
+satisfactory. Zhang and Yang obtained a signiﬁcant improve-
+ment of the atomization energies provided by the PBE func-
+tional, relaxing one of the theoretical constraints of the ex-
+change
+contribution.46
+In
+contrast,
+this
+empirical
+modiﬁcation worsens the bond lengths of some model
+molecules.39 A comparative analysis of Tables I–III shows
+that the inclusion of some exact exchange signiﬁcantly im-
+proves at the same time as geometrical parameters and at-
+omization energies, without introducing any additional em-
+pirical parameter.
+An even better deﬁnition of the performance of the
+PBE0 protocol can be done by a full comparison with some
+of the most common DF approaches. Table IV collects an
+error statistic for the most signiﬁcant molecular properties of
+the G2 data set, computed at different levels of theory.
+Since the data reported in this table are sufﬁciently self-
+explanatory, we add only a few comments. First, it is not
+surprising that the pure PBE model performs as well as the
+PW approach, since both functionals share the same theoret-
+ical background. However, both approaches provide devia-
+tions that are signiﬁcantly higher than that obtained with the
+pure mPW method, especially concerning atomization ener-
+gies. In contrast, the three functionals give different results
+when cast in a parameter-free ACM approach. In particular,
+the absolute average error for the atomization energies is
+quite high for PW0 ~5.0 kcal/mol!, while the lowest value is
+6160
+J. Chem. Phys., Vol. 110, No. 13, 1 April 1999
+C. Adamo and V. Barone
+Downloaded 07 May 2012 to 129.215.149.92. Redistribution subject to AIP license or copyright; see http://jcp.aip.org/about/rights_and_permissions
+
+<<<PAGE 5>>>
+provided by the PBE0 protocol ~2.6 kcal/mol!. Anyway, the
+performances of the PBE0 and mPW0 models are very close
+to that provided by ACM3 and other ACM0 methods, like
+B3LYP or B0LYP.9,29 It must also be noted that the devia-
+tion provided by the MP2 method over the same data set is
+signiﬁcantly higher.3
+Since the rationalization discussed in the introduction for
+the ACM approaches is, in general, not applicable to ioniza-
+tion and electron capture processes, ionization potentials and
+electron afﬁnities obtained at the PBE0 level are very close
+to their PBE counterparts. Thus, in order to save space, we
+do not show these results in detail.
+The geometries and harmonic frequencies of the above
+G2 set are relatively well described by different quantum
+mechanical methods, and the most discriminating property is
+the atomization energy. There are, however, well known mo-
+lecular systems ~e.g., ozone, Cr2! which are much more de-
+manding. Among them, we have selected cis-FONO, which
+has been recently investigated in detail using several post-HF
+and DF methods.81 The results collected in Table V show
+that the PBE0 model provides results which are comparable
+to those obtained by the MP2 approach. In particular, the
+average error in the frequencies is close to the MP2 value,
+while the maximum deviation is only half the corresponding
+MP2 value.
+It must be also noted that mPW0 and PBE0 approaches
+provide close results, whereas conventional DF and ACM3
+methods perform quite poorly.29
+B. Systems containing heavier atoms: NiCO, CuCO
+and lanthanide halides
+The performances of the PBE0 model along the whole
+periodic table have been checked by considering some small
+systems containing transition metals and lanthanides.
+The NiCO and CuCO molecules were chosen since they
+represent two limiting bonding situations ~covalent and van
+der Waals, respectively! for an open shell and a closed shell
+system.82–91 The essential results on these two systems are
+summarized in Table VI.
+There is a remarkable agreement between the geometri-
+cal parameters obtained by ACM0 methods and by the most
+reﬁned post-HF procedures: actually PBE0 and mPW0 mod-
+els give very similar values and outperform the B3LYP ap-
+proach. It must be also pointed out that for CuCO, the MP2
+approach predicts a very short Cu–C distance.88 The same
+general behavior is also found for the harmonic frequencies,
+with the PBE0 results close to the post-HF values. The situ-
+ation is a little more complicated concerning dissociation
+energies. The value predicted by the PBE0 model for NiCO
+~31 kcal/mol! is close to that provided by a sophisticated
+post-HF method ~33.0 kcal/mol at the CAS-CI level!85 or by
+the B3LYP approach ~32.8 kcal/mol!89 and well within the
+experimental range (29615 kcal/mol).83 In contrast, the
+CuCO dissociation energy is somewhat overestimated ~10.0
+kcal/mol at the PBE0 level! with respect the experimental
+ﬁndings (6.061.2 kcal/mol).87 Anyway, this last value is in-
+termediate between CCSD~T! ~5.2 kcal/mol! and MP2 ~12.5
+kcal/mol! results.88
+Lanthanide trihalides are good candidates for investigat-
+ing whether the PBE0 approach provides a sufﬁciently reli-
+TABLE I. Theoretical and experimental atomization energies ~kcal/mol! of
+32 molecules belonging to the reduced G2 data set. All theoretical values
+were obtained using the 6-31111G(3df,3pd) basis set with 6-311G(d,p)
+geometries and including ZPE corrections.
+Molecule
+mPW0
+PBE0
+expa
+H2
+98.7
+99.0
+103.3
+LiH
+51.3
+51.7
+56.0
+BeH
+53.6
+53.7
+46.9
+CH
+78.9
+79.6
+79.9
+CH2~3B1!
+182.8
+183.5
+179.6
+CH2~1A1!
+165.8
+167.2
+170.6
+CH3
+289.5
+291.0
+289.2
+CH4
+389.1
+391.2
+392.5
+NH
+80.3
+81.1
+79.0
+NH2
+170.7
+172.2
+170.0
+NH3
+272.7
+274.7
+276.7
+OH
+100.3
+101.1
+101.3
+OH2
+213.6
+214.7
+219.3
+FH
+131.3
+131.9
+135.2
+Li2
+18.8
+19.3
+24.0
+LiF
+131.1
+131.7
+137.6
+HCCH
+385.5
+388.1
+388.9
+H2CCH2
+530.0
+533.3
+531.9
+H3CCH3
+660.6
+664.2
+666.3
+CN
+173.5
+175.8
+176.6
+HCN
+299.0
+301.7
+301.8
+CO
+250.5
+253.0
+256.2
+HCO
+271.4
+273.4
+270.3
+H2CO
+355.1
+357.3
+357.2
+H3COH
+477.3
+479.7
+480.8
+N2
+219.2
+221.9
+225.1
+H2NNH2
+402.8
+405.7
+405.4
+NO
+148.7
+150.7
+150.1
+O2
+119.9
+121.4
+118.0
+HOOH
+245.8
+247.3
+252.3
+F2
+31.3
+32.3
+36.9
+CO2
+382.7
+385.3
+381.9
+Abs. mean dev.
+3.5
+2.6
+Max dev.
+6.5
+5.0
+aFrom Ref. 33.
+TABLE II. Theoretical and experimental bond lengths ~Å! of the biatomic
+molecules belonging to the reduced G2 data set. All theoretical values were
+obtained with the 6-311G(d,p) basis set.
+Molecule
+PBE
+mPW0
+PBE0
+exp.a
+H2
+0.749
+0.744
+0.745
+0.742
+LiH
+1.604
+1.591
+1.597
+1.595
+BeH
+1.355
+1.342
+1.347
+1.343
+CH
+1.140
+1.126
+1.126
+1.120
+NH
+1.053
+1.043
+1.040
+1.045
+OH
+0.983
+0.973
+0.971
+0.971
+FH
+0.928
+0.919
+0.916
+0.917
+Li2
+2.726
+2.700
+2.705
+2.67
+LiF
+1.569
+1.553
+1.559
+1.564
+CN
+1.177
+1.163
+1.163
+1.172
+CO
+1.138
+1.125
+1.125
+1.128
+N2
+1.05
+1.093
+1.093
+1.098
+NO
+1.160
+1.146
+1.143
+1.151
+O2
+1.221
+1.202
+1.194
+1.207
+F2
+1.420
+1.402
+1.401
+1.412
+aFrom Ref. 33.
+6161
+J. Chem. Phys., Vol. 110, No. 13, 1 April 1999
+C. Adamo and V. Barone
+Downloaded 07 May 2012 to 129.215.149.92. Redistribution subject to AIP license or copyright; see http://jcp.aip.org/about/rights_and_permissions
+
+<<<PAGE 6>>>
+TABLE III. Theoretical and experimental geometries of the polyatomic molecules belonging to the reduced G2 data set. Bond lengths in Å, angles in degrees.
+All theoretical values were obtained with the 6-311G(d,p) basis set.
+Molecule
+Parameter
+PBE
+mPW0
+PBE0
+exp
+CH2
+d(CH)
+1.086/1.126
+1.079/1.113
+1.079/1.114
+1.075/1.107
+(3B1 /1A1)
+a(HCH)
+135.1/99.7
+134.7/101.2
+134.5/100.9
+133.9/102.4
+CH3
+d(CH)
+1.087
+1.079
+1.080
+1.079
+CH4
+d(CH)
+1.097
+1.090
+1.089
+1.086
+NH2
+d(NH)
+1.040
+1.029
+1.028
+1.024
+a(HNH)
+101.2
+102.3
+102.2
+103.4
+NH3
+d(NH)
+1.023
+1.015
+1.013
+1.012
+a(HNH)
+105.6
+106.5
+106.4
+106.0
+H2O
+d(OH)
+0.970
+0.961
+0.958
+0.957
+a(HOH)
+102.9
+103.9
+103.8
+104.5
+HCCH
+d(CC)
+1.208
+1.197
+1.198
+1.203
+d(CH)
+1.070
+1.063
+1.063
+1.062
+H2CCH2
+d(CC)
+1.334
+1.325
+1.325
+1.334
+d(CH)
+1.092
+1.084
+1.085
+1.081
+a(HCH)
+116.5
+116.6
+116.6
+117.4
+H3CCH3
+d(CC)
+1.519
+1.510
+1.510
+1.526
+d(CH)
+1.102
+1.094
+1.095
+1.088
+a(HCH)
+108.1
+108.3
+108.2
+107.4
+HCN
+d(CN)
+1.160
+1.147
+1.147
+1.153
+d(CH)
+1.074
+1.066
+1.067
+1.065
+HCO
+d(CO)
+1.184
+1.170
+1.171
+1.175
+d(CH)
+1.138
+1.124
+1.125
+1.122
+a(HCO)
+123.6
+124.4
+124.4
+124.6
+H2CO
+d(CO)
+1.209
+1.196
+1.197
+1.203
+d(CH)
+1.120
+1.109
+1.109
+1.099
+a(HCH)
+115.3
+115.6
+115.6
+116.4
+H3COH
+d(CO)
+1.426
+1.409
+1.410
+1.421
+d(CHa)
+1.099
+1.090
+1.091
+1.093
+d(CHb)
+1.107
+1.098
+1.098
+1.093
+d(OH)
+0.969
+0.957
+0.957
+0.963
+a(OCHa)
+106.7
+107.1
+107.0
+107.0
+a(COH)
+107.8
+107.8
+107.7
+108.0
+a(HaCHb)
+108.4
+108.5
+108.5
+108.5
+H2NNH2
+d(NN)
+1.442
+1.420
+1.419
+1.447
+d(NH)
+1.023
+1.015
+1.012
+1.008
+a(NNH)
+109.2
+109.4
+109.3
+109.2
+a(HNH)
+107.0
+113.4
+113.4
+113.3
+d(HNNH)
+85.3
+87.3
+87.7
+88.9
+HOOH
+d(OO)
+1.473
+1.430
+1.431
+1.475
+d(OH)
+0.975
+0.962
+0.962
+0.950
+a(OOH)
+99.2
+100.6
+100.7
+94.8
+d(HOOH)
+120.4
+118.0
+118.5
+120.0
+CO2
+d(CO)
+1.165
+1.156
+1.157
+1.160
+aFrom Ref. 33.
+TABLE IV. Absolute mean deviations obtained by different methods for
+some properties of 32 molecules of the G2 data set. Bond lengths, bond
+angles, and harmonic frequencies are computed using the 6-311G(d,p) ba-
+sis set, while atomization energies and dipole moments are evaluated by the
+6-31111G(3df,3pd) extended basis set.
+Method
+Bond lengths
+~Å!
+D0
+~kcal/mol!
+Dip. mom.
+~D!
+Harm. freq
+~cm21!
+PW
+0.012
+9.5
+0.12
+66
+PBE
+0.012
+9.5
+0.12
+66
+mPW
+0.012
+6.7
+0.11
+65
+PW0
+0.011
+5.0
+0.10
+52
+PBE0
+0.010
+2.6
+0.10
+42
+mPW0
+0.010
+3.5
+0.10
+39
+TABLE V. Geometrical parameters ~bond lengths in Å and valence angles
+in degrees! and harmonic frequencies ~cm21! computed for cis-FONO by
+different methods.
+CCSD@T#a,b
+MP2a,b
+mPW0
+PBE0
+FO
+1.433
+1.414
+1.417
+1.419
+ON
+1.445
+1.488
+1.371
+1.39
+NO
+1.162
+1.155
+1.157
+1.157
+FON
+110.4
+108.4
+113.0
+113.1
+ONO
+115.8
+114.6
+118.0
+118.0
+v1(a8)
+1747
+1744
+1805
+1802
+v2(a8)
+933
+977
+968
+961
+v3(a8)
+787
+799
+847
+840
+v4(a8)
+441
+329
+485
+470
+v5(a8)
+381
+366
+447
+440
+v6(a8)
+277
+267
+267
+255
+Abs. mean dev.
+33
+46
+41
+Max dev.
+112
+66
+59
+aTZ2P basis set.
+bReference 81.
+6162
+J. Chem. Phys., Vol. 110, No. 13, 1 April 1999
+C. Adamo and V. Barone
+Downloaded 07 May 2012 to 129.215.149.92. Redistribution subject to AIP license or copyright; see http://jcp.aip.org/about/rights_and_permissions
+
+<<<PAGE 7>>>
+able description of bonding in very heavy-transition metal
+compounds since they have been the subject of a number of
+theoretical92–96 and experimental investigations.96–99 In par-
+ticular, we have focused our attention on the trichloride com-
+pounds, namely LaCl3, GdCl3 and LuCl3, which do not ex-
+hibit ﬁrst-order spin–orbit coupling. Following previous DF
+studies,2,96 our computations have been carried out using the
+relativistic effective core potentials ~RECP! of Cundari and
+Stevens.100,101 Table VII collects the PBE0 results, together
+with other DF and post-HF values.
+The structures and properties provided by the PBE0
+model are in good agreement with the experimental ﬁndings.
+TABLE VI. Bond lengths ~Å!, valence angles ~degrees!, harmonic wave numbers ~cm21! and dissociation
+energies ~kcal/mol! for NiCo and CuCO.
+Method
+d(M–C)
+d(C–O)
+Angle
+D0
+a
+Ã~CO!
+NiCO
+exp
+41.666b
+2028d
+29615c
+CAS-CIe
+1.698
+1.158
+180.0
+33.0
+2010
+B3LYPf
+1.666
+1.152
+180.0
+32.8
+2073
+mPW0
+1.675
+1.147
+180.0
+30.0
+2119
+PBE0
+1.675
+1.148
+180.0
+30.9
+2118
+CuCO
+exp.
+6.061.2g
+2042h
+MP2i
+1.783
+1.137
+180.0
+12.5
+2103
+CCSD~T!i
+1.910
+1.140
+152.5
+5.2
+2094
+B3LYPf
+1.957
+1.142
+138.8
+8.4
+2036
+mPW0
+1.945
+1.140
+140.2
+9.7
+2084
+PBE0
+1.948
+1.140
+140.3
+10.0
+2085
+aDissociation energy including ZPE corrections.
+bReference 82.
+cReference 83.
+dReference 84 corrected for anharmonicity and matrix effects ~132 cm21!.
+eReference 85.
+fReference 86.
+gReference 87.
+hReference 84 corrected for anharmonicity and matrix effects ~132 cm21!.
+iReference 88.
+TABLE VII. Bond lengths ~Å!, harmonic wave numbers ~cm21! and atomization energies ~eV! for the LnCl3
+series.
+CISD1Qa
+MCSCFb
+MP2c
+B3LYPd
+mPW0
+PBE0
+expe
+LaCl3
+d(LaCl)
+2.612
+2.643
+2.65
+2.634
+2.611
+2.609
+2.62
+DE
+13.80
+15.18
+15.25
+15.23
+15.88
+n2
+323
+294
+317
+3.29
+332
+335
+n2
+26
+16
+43
+28
+26
+51
+n3
+301
+317
+316
+311
+312
+300
+n4
+72
+67
+76
+76
+75
+72
+GdCl3
+d(GdCl)
+2.511
+2.528
+2.53
+2.519
+2.501
+2.498
+2.528
+DE
+13.24
+15.97
+15.85
+15.83
+15.14
+n2
+336
+304
+333
+332
+335
+338
+n2
+45
+35
+43
+40
+42
+56
+n3
+314
+328
+331
+331
+329
+326
+n4
+77
+66
+77
+75
+76
+84
+LuCl3
+d(LuCl)
+2.428
+2.440
+2.43
+2.447
+2.429
+2.429
+2.417
+DE
+16.02
+15.88
+15.79
+15.10
+n2
+305
+341
+338
+339
+342
+n2
+60
+75
+71
+70
+60
+n3
+327
+318
+325
+326
+331
+n4
+80
+78
+87
+80
+88
+aReference 92.
+bReference 93.
+cReference 95.
+dReference 94.
+eReferences 97–99.
+6163
+J. Chem. Phys., Vol. 110, No. 13, 1 April 1999
+C. Adamo and V. Barone
+Downloaded 07 May 2012 to 129.215.149.92. Redistribution subject to AIP license or copyright; see http://jcp.aip.org/about/rights_and_permissions
+
+<<<PAGE 8>>>
+In particular, the errors on bond lengths ~,0.02 Å! and on
+harmonic frequencies ~,14 cm21! are very small. Further-
+more, the PBE0 model performs slightly better than the MP2
+approach when using similar RECP.95 The larger error found
+for the atomization energies might be due to the not-
+complete inclusion of relativistic effects by RECP.96 In this
+connection, it is noteworthy that CI/RECP computations pro-
+vide an even larger error.92 The better performances of PBE0
+with respect to B3LYP are also remarkable since they con-
+ﬁrm that functionals respecting the free electron gas limit
+provide more reliable results for heavy metals96 and that the
+performances of the PBE0 model should be very close over a
+wide range of electronic densities.
+C. Noncovalent interactions
+We turn next to noncovalent interactions, where the
+spread of results obtained by different functionals is particu-
+larly signiﬁcant. We have chosen different prototypical sys-
+tems, namely the He, Ne, Ar, hydrogen ﬂuoride, and water
+dimers, representative of very weak van der Waals and of
+hydrogen–bond interactions.
+van der Waals complexes are very difﬁcult to handle in
+the framework of the DF approach. In particular, the most
+common DF methods, including some hybrid HF/DF ap-
+proaches, signiﬁcantly underestimate the stability of these
+complexes,102,103 whereas the PW model has just the oppo-
+site behavior.29,41,42 Only the mPW0 approach provides ac-
+curate results for both He2 and Ne2 complexes due to the
+optimization
+of
+parameters
+shortly
+described
+in
+the
+Introduction.29
+The numerical values for the energy minima of He, Ne
+and Ar dimers obtained by several functionals and corrected
+for BSSE effects are collected in Table VIII, while the over-
+all trends of different functional are shown in Figs. 1 and 2
+for He2 and Ne2.
+From these data it is quite apparent that both the PBE
+and PBE0 models predict interaction energies and equilib-
+rium distances which are sufﬁciently close to the experimen-
+tal values.104 In particular, the PBE0 functional gives an in-
+teratomic distance for the He dimer ~2.78 Å! which is
+slightly lower than the experimental value ~2.97 Å!, while
+the interaction energy is overestimated ~0.002 vs 0.001 eV!.
+Anyway, similar small errors are found by the mPW0 proto-
+col, which has been speciﬁcally parameterized to reproduce
+long-range interactions.29
+The situation is even better for Ne and Ar dimers, where
+the PBE0 model signiﬁcantly outperforms the mPW0 one. It
+must be noted, anyway, that the PBE0 results for Ne2 are in
+very good agreement with experiment, whereas for Ar2 the
+interatomic distance is slightly overestimated and the inter-
+action energy is about one half of the experimental value ~see
+Table VIII!.
+Let us next consider the water dimer. It is behind the
+scope of this paper to make a complete review of the huge
+amount of results available for this system, but we refer,
+instead, to a more detailed discussion and references in-
+cluded in previous works.105,106 Even if this system has been
+studied in considerable detail, some problems still remain,
+FIG. 1. Potential-energy curves for the interaction of two He atoms. The
+curve labeled ‘‘exact’’ has been computed using the analytical expression of
+Ref. 104.
+FIG. 2. Potential-energy curves for the interaction of two Ne atoms. The
+curve labeled ‘‘exact’’ has been computed using the analytical expression of
+Ref. 104.
+TABLE VIII. Bond lengths and interaction energies for He2, Ne2 and Ar2
+computed by different methods using the modiﬁed cc basis sets discussed in
+the main text and corrected for BSSE effects.
+Dimer
+Method
+d
+~Å!
+Dint
+~eV!
+He2
+PW
+2.78
+0.010
+PBE
+2.73
+0.003
+mPW
+3.14
+0.003
+mPW0
+3.11
+0.002
+PBE0
+2.78
+0.002
+exacta
+2.97
+0.001
+Ne2
+PW
+2.94
+0.014
+PBE
+3.13
+0.005
+mPW
+3.25
+0.004
+mPW0
+3.23
+0.003
+PBE0
+3.04
+0.003
+exacta
+3.09
+0.004
+Ar2
+PW
+3.90
+0.014
+PBE
+4.00
+0.007
+mPW
+4.45
+0.005
+mPW0
+4.42
+0.003
+PBE0
+4.04
+0.006
+exacta
+3.76
+0.012
+aReference 104.
+6164
+J. Chem. Phys., Vol. 110, No. 13, 1 April 1999
+C. Adamo and V. Barone
+Downloaded 07 May 2012 to 129.215.149.92. Redistribution subject to AIP license or copyright; see http://jcp.aip.org/about/rights_and_permissions
+
+<<<PAGE 9>>>
+especially concerning the experimental determination of the
+binding
+energy.
+The
+currently
+accepted
+value
+is
+5.4
+60.7 kcal/mol,107 even if reﬁned post-HF computations sug-
+gest that the interaction energy is close to 4.7 kcal/mol ~see,
+for instance, the discussion in Ref. 106!. At the same time,
+the most important geometrical parameter, namely the OO
+distance, is inﬂuenced by strong effects of anharmonicity,
+which obscure the precise experimental estimate of the equi-
+librium geometry. The current experimental value, taking
+into account anharmonicity effects in a model fashion, is
+2.952 Å,108 whereas a shorter distance, 2.910 Å is predicted
+by reﬁned post-HF methods.109 In Fig. 3 are reported the
+computed OO intermolecular distances and the correspond-
+ing binding energies corrected for both ZPE and BSSE ef-
+fects.
+As is already well documented,110–112 the equilibrium
+geometry of the water dimer is quite accurately reproduced
+by standard DF methods, all the predicted OO distances fall-
+ing between 2.87 and 2.92 Å, i.e., close to the MP2
+estimate.110–112 Also, the PBE distance ~2.88 Å! falls in the
+same range and, as already found for the van der Waals
+dimers, this value is negligibly modiﬁed by the inclusion of
+exact exchange ~the PBE0 value is 2.88 Å!. In contrast, a
+signiﬁcant difference is found for the binding energy be-
+tween the PBE ~2.9 kcal/mol! and the PBE0 ~3.4 kcal/mol!
+results. An extension of the basis set plays a not negligible
+role,
+the
+binding
+energy
+being
+4.3
+kcal/mol
+at
+the
+PBE0/6-31111G(3df,3pd) level. This last result is close to
+the mPW0 value ~4.5 kcal/mol!, to the best theoretical esti-
+mate ~4.7 kcal/mol!, and is also in the range of experimental
+determinations.
+An even more difﬁcult test is represented by the hydro-
+gen ﬂuoride dimer, a molecule studied for many years by
+both experimentalists and theoreticians.113–116 The best cur-
+rent estimate of the experimental dissociation energy is
+3.0660.01 kcal/mol,113,114 while the best theoretical value is
+2.3 kcal/mol ~including ZPE and BSSE corrections!, ob-
+tained at the CCSD~T! level by Racine and Davidson115 ~see
+Fig. 4!.
+There is a signiﬁcant basis set effect on the geometrical
+parameters of (HF)2 . In particular, up to the 6-311G(d,p)
+level all the KS methods, including PBE0, predict an energy
+minimum characterized by an antiparallel disposition of the
+two HF moieties. In contrast, the energy minimum obtained
+at the PBE0/6-31111G(3df,3pd) level is characterized by
+a Cs symmetry with an almost linear F–H–F arrangement.
+Furthermore, the geometrical parameters are now quite close
+to those of the reference structure of Racine and Davidson.115
+For
+instance,
+the
+F–F
+distance
+is
+2.56
+Å
+at
+the
+PBE0/6-311G(d,p) level and increases up to 2.71 Å with the
+extended 6-31111G(d,p) basis set, not far from the best
+theoretical estimate of 2.76 Å.115
+The binding energy is signiﬁcantly underestimated by
+the PBE functional ~1.2 kcal/mol!, and also the inclusion of
+some exact HF exchange does not introduce a signiﬁcant
+improvement, the PBE0 value being 1.4 kcal/mol. In con-
+trast, the effect of basis set extension is more signiﬁcant than
+in a water dimer, the binding energy increasing up to 2.8
+kcal/mol at the PBE0/6-31111G(3df,3pd) level ~including
+BSSE and ZPE corrections!. This last result is close to the
+mPW0 estimate ~2.6 kcal/mol! and close to the experimental
+value ~3.06 kcal/mol!.
+In summary, judging from both energy and geometry
+results, the nonempirical PBE0 approach seems to perform
+as well as the purposely tailored mPW0 model over such a
+difﬁcult playground represented by noncovalent interactions.
+D. Reactivity: Walden inversion and proton transfer
+in malonaldehyde
+As a further signiﬁcant test, we have chosen a SN2 reac-
+tion, whose importance in organic chemistry is well evi-
+denced by the accumulation of a large body of experimental
+and theoretical data.117–122 From a theoretical point of view,
+several studies have shown that these reactions are extremely
+sensitive to the theoretical model used.119,120 Already the
+thermodynamics of the simple Walden inversion:
+Cl21CH3Cl→ClCH31Cl2
+FIG. 3. The intermolecular O¯O distance and binding energy of the water
+dimer obtained by different methods. All values have been corrected for
+BSSE and ZPE effects ~see the text for details!.
+FIG. 4. The intermolecular F¯F distance and binding energy of the hydro-
+gen ﬂuoride dimer obtained by different methods. All values have been
+corrected for BSSE and ZPE effects ~see the text for details!.
+6165
+J. Chem. Phys., Vol. 110, No. 13, 1 April 1999
+C. Adamo and V. Barone
+Downloaded 07 May 2012 to 129.215.149.92. Redistribution subject to AIP license or copyright; see http://jcp.aip.org/about/rights_and_permissions
+
+<<<PAGE 10>>>
+is difﬁcult to describe by quantum mechanical methods. This
+is particularly true at the DF level, where all the methods,
+including the B3LYP protocol, fail in predicting some ther-
+modynamic quantities.120 This reaction is characterized, in
+the gas-phase, by a double-well energetic proﬁle, with two
+minima corresponding to the formation of a pre- and a post-
+reaction ion–molecule complex (Cl2...CH3Cl) and a saddle
+point ~SP! with D3h symmetry (ClCH3Cl2). The most sig-
+niﬁcant thermodynamic quantities are the complexation en-
+ergy of the ion–molecule complex (DHcomp), the activation
+energy, i.e., the relative energy of the D3h saddle point with
+respect to the ion–molecule complex (DH♯) and the overall
+barrier (DHovr
+♯), deﬁned as the difference between these two
+energies. The computed energies collected in Table IX show
+a good agreement between MP2 and the PBE0 results con-
+cerning both DHcomp and DH♯, even if this latter barrier is
+slightly underestimated. Anyway, all the computed PBE0
+values fall in the range of the experimental estimation.121,122
+The situation is more involved for the overall barrier,
+because standard DF methods, including the popular B3LYP
+approach, give a negative energy. This effect is probably
+related to the overstabilization of compact ~saddle point, SP!
+with respect to looser ~minimum! structures by current DF
+methods.60 The right trend can be restored only using func-
+tionals with a correct long-range behavior, like the mPW0
+one.29 So, it is reassuring that the PBE0 predictions are very
+close to the results obtained with this functional ~0.6 vs 0.5
+kcal/mol!.
+As a second representative organic reaction, we have
+chosen the proton transfer ~PT!, which, despite its apparent
+simplicity, represents a severe challenge both for post-HF
+and DF approaches. In particular, several authors have ex-
+plored the applicability of DF methods to the study of PT
+processes,
+showing that standard DF approaches provide very low acti-
+vation energies.9,123–129 The situation is even more involved
+when the motion of the proton is coupled with a rearrange-
+ment of the p electronic system, as happens in malonalde-
+hyde. In this case, the underestimation of the PT activation
+energy by DF methods is augmented by the overestimation
+of correlation energy which produces an excessive degree of
+conjugation in the molecular backbone.9 The results obtained
+by the PBE0 functional are reported in Table X.
+From these data it is quite apparent that the PBE0 pro-
+tocol underestimates the activation energy, the computed
+value being 2.1 kcal/mol, very close to the mPW0 result ~2.2
+kcal/mol!. The reference MP2 value is 0.7 kcal/mol higher,
+while the more parameterized B3LYP functional predicts an
+even larger value ~3.0 kcal/mol!.9
+As concerns the H-bond geometrical parameters, subtle
+effects rule the relationship between the O–O distance and
+energy barrier, so that a direct connection between these two
+factors cannot be drawn. For instance, the O–O distance in
+the SP is very similar at the PBE0 ~2.354 Å! and at the MP2
+~2.355 Å! levels, whereas the barrier height is signiﬁcantly
+different. In contrast, this distance is underestimated in the
+minimum structure ~2.534 Å! with respect to the MP2 result
+~2.581 Å!.
+E. Open shell systems: methyl and vinyl radicals
+Free radicals are generally short-lived, highly reactive
+species, usually characterized by an experimental point of
+view only by their magnetic properties ~especially isotropic
+hyperﬁne splittings, hfs!.69 Thus a successful theoretical ap-
+proach must be able to provide at the same time reliable
+structural and magnetic properties.
+The methyl radical is well characterized by both experi-
+mental and theoretical points of view ~e.g., Refs. 130–132!
+thus providing the most natural benchmark for the study of
+p-radicals. Some results are shown in Table XI. It is quite
+apparent that all the ACM approaches are remarkably accu-
+rate and this is also the case for the MP2 method. Note,
+however, that conventional density functionals provide com-
+parable hyperﬁne splittings for the hydrogen atom, but dis-
+appointing results for carbon.69
+As is always the case for unsaturated s radicals, the
+theoretical reproduction of the hyperﬁne structure of vinyl
+radical133,134 is particularly demanding.69,135 It provides,
+therefore, a signiﬁcant benchmark for new computational
+TABLE
+IX.
+Complexation
+energies
+of
+the
+ion–molecule
+complex
+(DHcomp), activation energy (DH#) and overall activation energy relative to
+reactants (DHovr) for the Walden inversion, computed at various computa-
+tional levels. All energies are in kcal/mol and include BSSE and ZPE cor-
+rections.
+G21~MP2!a
+B3LYPa
+mPW0
+PBE0
+expb
+DHcomp
+10.6
+9.4
+10.0
+9.6
+12.262
+DH#
+13.0
+8.2
+10.5
+10.2
+13.362
+DHovr
+2.5
+21.2
+0.5
+0.6
+161
+aReference 106.
+bReferences 108, 109.
+TABLE X. Main H-bond geometrical parameters ~Å! and relative energies ~kcal/mol! for the minimum ~M! and
+saddle point ~SP! of malonaldehyde. The relative energies are computed at the 6-31111G(3df,3pd) level
+using 6-311G(d,p) geometries.
+MP2a
+B3LYPb
+mPW0
+PBE0
+M
+SP
+M
+SP
+M
+SP
+M
+SP
+d(OO)
+2.581
+2.355
+2.559
+2.370
+2.537
+2.353
+2.534
+2.354
+d(H..O)
+1.678
+1.197
+1.656
+1.207
+1.631
+1.200
+1.662
+1.200
+d(OH)
+0.991
+1.197
+0.969
+1.211
+1.001
+1.200
+1.003
+1.200
+DE
+0.0
+2.8
+0.0
+3.0
+0.0
+2.2
+0.0
+2.1
+aFrom Ref. 9.
+bReference 60.
+6166
+J. Chem. Phys., Vol. 110, No. 13, 1 April 1999
+C. Adamo and V. Barone
+Downloaded 07 May 2012 to 129.215.149.92. Redistribution subject to AIP license or copyright; see http://jcp.aip.org/about/rights_and_permissions
+
+<<<PAGE 11>>>
+models. As shown in Table XII, the ACM0 and MP2 geo-
+metrical parameters are quite close and not far from those
+obtained by the much more expensive CCSD model.
+The difﬁculties met by standard methods for the compu-
+tation of isotropic hfs in unsaturated s radicals are well re-
+ﬂected by the data of Table XII. For instance, the UMP2
+coupling constant of Cb has the wrong sign ~14 vs 28.6! and
+the hfs of Hsyn is about 30 G below the experimental value.
+Even the very reﬁned coupled cluster methods are not com-
+pletely accurate for these systems. On the other hand, ACM3
+and ACM0 models provide remarkable results, the difference
+between different implementations being only marginal.
+Note that conventional DFT models and all the ACM imple-
+mentations including the original PW functional136,137 are
+much less successful for nonhydrogen atoms.
+The limits of conventional post-HF methods for open
+shell systems are reﬂected, of course, also on the prediction
+of kinetic parameters. Therefore it is particularly signiﬁcant
+to develop a relatively cheap model for treating these sys-
+tems. As an example of the performances of the PBE0 model
+in this connection we have considered the isomerization of
+the formaldehyde radical cation H2C5O1 ~FRC! to its dis-
+tonic form HCOH1 ~HMRC!. It is well known that the MP2
+method incorrectly predicts that the FRMC/HMRC isomer-
+ization is endothermic ~by about 2 kcal/mol! and signiﬁ-
+cantly underestimates the activation energy ~about 40
+kcal/mol!.69 On the other hand, the PBE0 model restores the
+correct stability order and gives reaction energies ~6.4 vs 6.6
+kcal/mol! and activation energies ~48.2 vs 49.0 kcal/mol!
+very close to those provided by the much more expensive
+coupled cluster ~CCSD! approach.69 Also the geometrical
+structures and vibration frequencies obtained at the PBE0
+and CCSD levels are very close, thus further conﬁrming the
+reliability of this ACM0 approach.138
+F. Molecular properties: NMR chemical shifts
+A number of DF based methods for the computation of
+NMR properties have been developed and implemented
+recently.139–144 Among others, the GIAO method seems to be
+particularly effective.74,75 Anyway, it has been recently
+pointed out that the MP2 method predicts chemical shifts
+which are closer to experiment than those obtained using DF
+approaches, including the ACM3 method.75 It is so natural to
+include, as a stringent test, the computation of chemical
+shieldings. In particular, we have selected some examples
+representative of the different possible hybridization of car-
+bon atoms. We have next added the ozone molecule, which
+is a particularly difﬁcult test for NMR properties.143,145 The
+results are collected in Table XIII.
+Let us ﬁrst analyze the results for 13C. From the data
+reported in the table, it is apparent that all the computational
+methods provide reliable results for chemical shieldings of
+sp3 carbons. For instance the PBE0 value for the methyl
+carbon of formaldehyde is 156 PPM, whereas the MP2 value
+is 163 PPM, both values being close to the experimental
+ﬁnding ~153 PPM!. In going to sp2 carbon atoms, like the
+TABLE XI. Geometrical parameter ~Å! and isotropic hyperﬁne coupling constants ~a, in G! computed for the
+methyl radical by different methods. Density functional methods have been carried out using the EPR-III basis
+set.
+Parameter
+CCSD@T#a
+B3LYP
+mPW0
+PBE0
+expb,c
+d(CH)
+1.079
+1.079
+1.078
+1.078
+1.079
+a(C)
+27.8
+29.8
+26.9
+29.2
+28.4
+a(H)
+224.6
+223.3
+226.9
+226.1
+225.1
+aReference 132.
+bReference 130.
+cReference 131.
+TABLE XII. Geometrical parameter ~Å! and isotropic hyperﬁne coupling constants ~a, in G! computed for the
+vinyl radical by different methods. Density functional methods have been carried out using the EPR-III basis
+set.
+Parameter
+MP2
+CCSD~T!
+B3LYP
+mPW0
+PBE0
+expa
+CbCa
+1.299
+1.330
+1.302
+1.301
+1.301
+CaHa
+1.086
+1.087
+1.077
+1.078
+1.078
+CbHsyn
+1.090
+1.090
+1.084
+1.085
+1.086
+CbHanti
+1.095
+1.094
+1.089
+1.090
+1.091
+HantiCbHsyn
+116.9
+117.3
+116.1
+116.3
+116.2
+HantiCbCa
+121.1
+121.0
+121.7
+121.6
+121.7
+HaCaCb
+135.8
+135.3
+138.3
+138.1
+138.2
+a(Ca)
+115
+121
+113.1
+108.6
+110.2
+107.6
+a(Cb)
+14
+28
+25.8
+27.0
+26.9
+28.6
+a(Ha)
+23
+9
+17.8
+12.9
+13.3
+13.3
+a(Hanti
+b )
+19
+28
+41.9
+40.2
+40.2
+34.2
+a(Hsyn
+b )
+40
+48
+65.6
+62.3
+62.2
+68.5
+aReferences 133, 134.
+6167
+J. Chem. Phys., Vol. 110, No. 13, 1 April 1999
+C. Adamo and V. Barone
+Downloaded 07 May 2012 to 129.215.149.92. Redistribution subject to AIP license or copyright; see http://jcp.aip.org/about/rights_and_permissions
+
+<<<PAGE 12>>>
+carboxylic one in the same molecule, a dramatic change is
+observed. In particular, both MP2 and B3LYP methods fail
+in predicting the shielding constants, the computed values
+being 1 and 227 PPM, respectively. In contrast, both the
+mPW0 and PBE0 approaches give results close to the experi-
+mental value. Finally, the chemical shifts of the sp carbon, in
+CH2CO, is well reproduced by the PBE0 model ~213 PPM!,
+which gives values close to MP2 ~211 PPM! and to experi-
+ment ~28 PPM!. In contrast a dramatic difference is ob-
+served for the B3LYP value ~238 PPM!.
+It must be noted that for chemical shifts of ﬁrst-row
+nuclei, and carbon in particular, the inclusion of HF ex-
+change has a small effect. For instance GIAO-BLYP and
+GIAO-B3LYP chemical shifts have been shown to differ by
+few PPM.75,144 So the differences found in the present study
+can be attributed to the underlying GGA functional, rather
+than to the quantity of exact exchange.148
+A more stringent test is represented by ozone, since cor-
+relation effects play a huge role both on the structure and on
+the NMR properties of such a molecule. The results obtained
+by our PBE0 model are compared in Table XIII to those
+obtained by HF and MP2 methods.145 The most striking fea-
+ture of these data is the poor performance of the MP2 ap-
+proach in predicting the shielding constants of both oxygen
+atoms, giving high values and the wrong signs.146,147 In con-
+trast, all the ACM methods, including the PBE0 one, give the
+right trend, even if the absolute values are signiﬁcantly un-
+derestimated with respect to experimental data. It must be
+emphasized, anyway, that quantitative accuracy cannot be
+expected from single-reference calculations, as the DF ones,
+in the case of ozone, where the preferred choice is repre-
+sented by multiconﬁguration methods.145 Furthermore, the
+role played in this case by the neglected current dependency
+of the exchange correlation functional139 could be particu-
+larly signiﬁcant.
+G. Electronic excitation energies
+There is a growing interest in the application of TD-DF
+to the calculation of adiabatic excitation energies.77–79,149,150
+The results obtained for low excitation energies are usually
+superior to the those obtained by HF-based methods, like the
+Random Phase Approximation ~RPA!,151 or the Conﬁgura-
+tion Interaction Singles ~CIS! approach.79,149,152 In addition,
+given that the time-dependent HF ~TDHF! scheme can be
+derived along the same lines as TDDF, Bauernschmitt and
+Ahlrichs79 have also included the ACM3 model in the calcu-
+lation of energies, showing that the B3LYP functional repre-
+sents a further improvement over conventional DF methods.
+In this connection, it has been suggested that the numerical
+performances of the different functionals strongly depend on
+their ability to predict reliable molecular ionization potentials
+~IP!.77 This points out that, like in ground-state computa-
+tions, the domain of applicability of TDDF rests on the de-
+velopment and validation of suitable functionals. We expect
+that the PBE0 functional gives results at least comparable
+with those provided by ACM3 approaches, because it pro-
+vides comparable IP’s, but has an improved long-range be-
+havior.
+In Table XIV are collected our PBE0 and mPW0 results
+together with HF-based and experimental data from Ref. 79.
+The chosen molecular set, even if quite limited, is in our
+TABLE XIII. Absolute isotropic NMR shielding constant ~ppm! for carbon atoms computed for different
+molecules. All the values are computed using the 6-3111G(2d,2p) basis set and the PBE0/6-311G(d,p)
+geometries.
+Molecule
+Atom
+HF
+MP2
+B3LYP
+mPW0
+PBE0
+expb
+O3
+Ocentral
+22767a
+2875a
+21010
+21046
+21040
+2724
+Oterminal
+22861a
+1248a
+21426
+21459
+21453
+21290
+CH3CHO
+CH3
+162
+163
+148
+154
+156
+153
+CvO
+215
+1
+227
+214
+213
+214
+CH2CO
+CH2
+177
+190
+174
+189
+189
+188
+CvO
+238
+211
+238
+210
+213
+28
+CH3CH2OH
+CH2
+174
+178
+164
+170
+171
+170
+CH2
+136
+134
+118
+127
+128
+132
+aReference 140.
+bReference 143; the chemical shifts have been converted to absolute shieldings using s~17O, liq H2O!
+5307.9 ppm and s~13C,CH4!5344.0 ppm.
+TABLE XIV.
+Vertical excitation energies ~eV!, computed at different theoretical levels using the
+6-311G(d,p) basis set and 6-31G(d,p) geometries.
+Molecule
+transition
+CISa
+RPAa
+B3LYP
+mPW0
+PBE0
+exp
+N2
+1Pg
+sg→pg
+10.02
+9.77
+9.36
+9.35
+9.31
+9.3
+H2CO
+1A2
+n→p*
+4.55
+4.37
+4.12
+4.13
+4.08
+4.1
+C2H4
+1B1u
+p→p*
+7.71
+7.75
+8.51
+8.54
+8.38
+8.0
+C5H5N
+1B2
+p→p*
+6.10
+5.85
+5.07
+5.15
+4.99
+5.0
+1A2
+n→p*
+6.79
+6.79
+5.26
+5.38
+5.31
+5.4
+aReference 144.
+6168
+J. Chem. Phys., Vol. 110, No. 13, 1 April 1999
+C. Adamo and V. Barone
+Downloaded 07 May 2012 to 129.215.149.92. Redistribution subject to AIP license or copyright; see http://jcp.aip.org/about/rights_and_permissions
+
+<<<PAGE 13>>>
+opinion quite representative, since it includes p→p*, s
+→p* and n→p* transitions.
+The remarkable quality of PBE0 results is quite apparent
+since this model is slightly more reliable than B3LYP, and
+both methods represent a signiﬁcant improvement over CIS
+or RPA approaches. It is interesting to note that the largest
+deviation is found for C2H4 ~10.38 eV at the PBE0 level!,
+whose IP is one of the less accurately predicted by PBE0, the
+error being 20.22 eV.
+IV. CONCLUDING REMARKS
+In the present work we have explored the behavior of a
+parameter free density functional approach ~PBE0! using the
+PBE functional and HF exchange with predeﬁned coefﬁ-
+cients. The results obtained for a number of systems are sat-
+isfactory and at least competitive with those delivered by the
+parent mPW0 functional, which includes parameters speciﬁ-
+cally optimized for improving its long range behavior. Under
+such circumstances the PBE0 model is probably the best
+functional currently available which couples a good accuracy
+for molecular structures and properties along the whole pe-
+riodic table to a direct connection to physical principles. The
+same functional can be used in the adiabatic approximation
+of time-dependent DF theory to obtain remarkable excitation
+energies. From a computational point of view, the availabil-
+ity of linear scaling implementations of this model allows the
+study of very large systems, whereas very accurate energetic
+predictions for relatively small molecules can be obtained by
+extrapolation techniques ~e.g., G2 or CBS! using geometries
+and vibration frequencies computed at the PBE0 level. The
+whole computational protocol is or will be shortly available
+to other researchers in the ﬁeld through a standard quantum
+chemical package.
+After completion of this work we became aware of an
+independent implementation of the PBE and PBE0 function-
+als by Ernzerhof and Scuseria.153
+ACKNOWLEDGMENT
+We thank the Italian Research Council ~CNR! for ﬁnan-
+cial support.
+1R. G. Parr and W. Yang, Density Functional Theory of Atoms and Mol-
+ecules ~Oxford University Press, New York, 1989!.
+2B. G. Johnson, P. M. W. Gill, and J. A. Pople, J. Chem. Phys. 98, 5612
+~1993!.
+3C. Adamo, A. di Matteo, and V. Barone, Adv. Quantum Chem. ~in press!.
+4T. Ziegler, Chem. Rev. 91, 651 ~1991!.
+5L. A. Curtiss, K. Raghavachari, P. C. Redfern, and J. A. Pople, J. Chem.
+Phys. 106, 1063 ~1997!.
+6C. W. Bauschlicher and H. Partridge, J. Chem. Phys. 103, 1788 ~1995!.
+7A. M. Mebel, K. Morokuma, and M. C. Lin, J. Chem. Phys. 103, 7414
+~1995!.
+8L. A. Curtiss, K. Raghavachari, and J. A. Pople, J. Chem. Phys. 98, 1293
+~1993!.
+9~a! V. Barone and C. Adamo, J. Chem. Phys. 105, 11007 ~1996!; ~b! V.
+Barone and R. Arnaud, ibid. 106, 8727 ~1997!.
+10C. Adamo and V. Barone, Chem. Phys. Lett. 272, 242 ~1997!.
+11A. D. Becke, J. Chem. Phys. 84, 4524 ~1986!.
+12A. D. Becke, J. Chem. Phys. 85, 7184 ~1986!.
+13J. P. Perdew and Y. Wang, Phys. Rev. B 33, 8800 ~1986!.
+14A. D. Becke, Phys. Rev. A 38, 3098 ~1988!.
+15J. P. Perdew, in Proceedings of the 21st Annual International Symposium
+on the Electronic Structure of Solids, edited by P. Ziesche and H. Eschrig
+~Akademie-Verlage, Berlin, 1991!.
+16D. J. Lacks and R. G. Gordon, Phys. Rev. A 47, 4681 ~1993!.
+17G. J. Laming, V. Termath, and N. C. Handy, J. Chem. Phys. 99, 8765
+~1993!.
+18P. M. W. Gill and J. A. Pople, Phys. Rev. A 47, 2383 ~1993!.
+19A. Lembarki, F. Rogemond, and H. Chermette, Phys. Rev. A 52, 3704
+~1995!.
+20P. M. W. Gill, Mol. Phys. 89, 433 ~1996!.
+21R. Neumann, R. H. Nobes, and N. C. Handy, Mol. Phys. 87, 1 ~1996!.
+22J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 77, 3865
+~1996!; ibid. 78, 1396 ~1997! ~E!.
+23T. van Voorhis and G. E. Scuseria, Mol. Phys. 92, 601 ~1997!.
+24R. Neumann and N. C. Handy, Chem. Phys. Lett. 266, 16 ~1997!.
+25A. D. Becke, J. Chem. Phys. 107, 8554 ~1997!.
+26M. Filatov and W. Thiel, Mol. Phys. 91, 847 ~1997!.
+27S. Liu and R. G. Parr, Phys. Rev. A 55, 1791 ~1997!.
+28R. D. Adamson, P. M. W. Gill, and J. A. Pople, Chem. Phys. Lett. 284,
+6 ~1998!.
+29C. Adamo and V. Barone, J. Chem. Phys. 108, 664 ~1998!.
+30~a! N. C. Handy and D. J. Trozer, J. Chem. Phys. 108, 2545 ~1998!; ~b!
+F. A. Hamprecht, A. J. Cohen, D. J. Trozer, and N. C. Handy, ibid. 109,
+6264 ~1998!.
+31H. L. Schmider and A. D. Becke, J. Chem. Phys. 108, 9624 ~1998!.
+32T. van Voorhis and G. E. Scuseria, J. Chem. Phys. 109, 400 ~1998!.
+33A. D. Becke, J. Chem. Phys. 109, 2092 ~1998!.
+34L. A. Curtiss, K. Raghavachari, G. W. Trucks, and J. A. Pople, J. Chem.
+Phys. 94, 7221 ~1991!.
+35K. Burke, J. P. Perdew, and Y. Wang, in Electronic Density Functional
+Theory: Recent Progress and New Derivations, edited by J. F. Dobson,
+G. Vignale and M. P. Das ~Plenum, New York, 1997!.
+36E. H. Lieb and S. Oxford, Int. J. Quantum Chem. 19, 427 ~1981!.
+37M. Levy and J. P. Perdew, Phys. Rev. A 32, 2010 ~1985!.
+38M. Levy and J. P. Perdew, Phys. Rev. B 48, 11638 ~1993!.
+39J. P. Perdew and Y. Wang, Phys. Rev. B 45, 13244 ~1992!.
+40J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 80, 891
+~1998!.
+41D. L. Novikov, A. J. Freeman, N. E. Christensen, A. Svane, and C. O.
+Rodriguez, Phys. Rev. B 56, 7206 ~1997!.
+42Y. Zhang, W. Pan, and W. Yang, J. Chem. Phys. 107, 7921 ~1997!.
+43D. C. Patton, D. V. Porezag, and M. R. Pederson, Phys. Rev. B 55, 7454
+~1997!.
+44B. Montanari, P. Ballone, and R. O. Jones, J. Chem. Phys. 108, 6947
+~1998!.
+45J. E. Jaffe, Z. Lin, and A. C. Hess, Phys. Rev. B 57, 11834 ~1998!.
+46Y. Zhang and W. Yang, Phys. Rev. Lett. 80, 890 ~1998!.
+47V. Barone, J. Chem. Phys. 101, 6834 ~1994!.
+48J. Baker, J. Andzelm, M. Muir, and P. R. Taylor, Chem. Phys. Lett. 237,
+53 ~1995!.
+49O. Gunnarson and B. I. Lundqvist, Phys. Rev. B 13, 4274 ~1976!.
+50Æ. Frisch and M. J. Frisch, Gaussian 98 User’s Reference ~Gaussian,
+Inc., Pittsburgh, 1998!.
+51A. D. Becke, J. Chem. Phys. 98, 5648 ~1993!.
+52A. D. Becke, J. Chem. Phys. 98, 1372 ~1993!.
+53A. D. Becke, J. Chem. Phys. 104, 1040 ~1996!.
+54K. Burke, M. Ernzerhof, and J. P. Perdew, Chem. Phys. Lett. 265, 155
+~1997!.
+55O. Gritsenko, R. van Leeuwen, and E. J. Baerends, Int. J. Quantum
+Chem. 30, 163 ~1997!.
+56M. Ernzerhof, Chem. Phys. Lett. 263, 499 ~1996!.
+57M. Ernzerhof, in Density Functionals: Theory and Applications, Lecture
+Notes in Physics, edited by D. P. Joubert ~Springer-Verlag, Berlin, 1998!,
+Vol. 500.
+58J. P. Perdew, M. Ernzerhof, and K. Burke, J. Chem. Phys. 105, 9982
+~1996!.
+59C. Adamo and V. Barone, Chem. Phys. Lett. 274, 242 ~1997!.
+60C. Adamo and V. Barone, J. Comput. Chem. 19, 418 ~1998!.
+61M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, M. A. Robb,
+J. R. Cheeseman, V. G. Zakrzewski, J. A. Montgomery, Jr., R. E. Strat-
+mann, J. C. Burant, S. Dapprich, J. M. Millam, A. D. Daniels, K. N.
+Kudin, M. C. Strain, O. Farkas, J. Tomasi, V. Barone, M. Cossi, R.
+Cammi, B. Mennucci, C. Pomelli, C. Adamo, S. Clifford, J. Ochterski, G.
+A. Petersson, P. Y. Ayala, Q. Cui, K. Morokuma, D. K. Malick, A. D.
+Rabuck, K. Raghavachari, J. B. Foresman, J. Cioslowski, J. V. Ortiz, B.
+B. Stefanov, G. Liu, A. Liashenko, P. Piskorz, I. Komaromi, R. Gomp-
+erts, R. L. Martin, D. J. Fox, T. Keith, M. A. Al-Laham, C. Y. Peng, A.
+Nanayakkara, C. Gonzalez, M. Challacombe, P. M. W. Gill, B. Johnson,
+6169
+J. Chem. Phys., Vol. 110, No. 13, 1 April 1999
+C. Adamo and V. Barone
+Downloaded 07 May 2012 to 129.215.149.92. Redistribution subject to AIP license or copyright; see http://jcp.aip.org/about/rights_and_permissions
+
+<<<PAGE 14>>>
+W. Chen, M. W. Wong, J. L. Andres, C. Gonzalez, M. Head-Gordon, E.
+S. Replogle, and J. A. Pople, GAUSSIAN 99 ~Revision A.1! ~Gaussian, Inc.,
+Pittsburgh, PA, 1998!.
+62J. A. Pople, P. M. W. Gill, and B. G. Johnson, Chem. Phys. Lett. 199,
+557 ~1992!.
+63B. G. Johnson, P. M. W. Gill, and J. A. Pople, J. Chem. Phys. 98, 8765
+~1993!.
+64R. Krishnan, J. S. Binkley, R. Seeger, and J. A. Pople, J. Chem. Phys. 72,
+650 ~1980!.
+65L. A. Curtiss, K. Raghavachari, P. C. Redfern, and J. A. Pople, Chem.
+Phys. Lett. 270, 419 ~1997!.
+66M. J. Frisch, J. A. Pople, and J. S. Binkley, J. Chem. Phys. 80, 3265
+~1984!.
+67R. A. Kendall, T. H. Dunning, and R. J. Harrison, J. Chem. Phys. 96,
+6796 ~1992!.
+68D. E. Woon and T. H. Dunning, J. Chem. Phys. 98, 1358 ~1993!.
+69V. Barone, in Recent Advances in Density Functional Methods, Part I,
+edited by D. P. Chong ~World Scientiﬁc, Singapore, 1996!.
+70N. Rega, M. Cossi, and V. Barone, J. Chem. Phys. 105, 11060 ~1996!.
+71N. Rega, M. Cossi, and V. Barone, J. Am. Chem. Soc. 120, 5723 ~1998!.
+72C. Adamo, R. Subra, A. di Matteo, and V. Barone, J. Chem. Phys. 109,
+10244 ~1998!.
+73S. F. Boys and F. Bernardi, Mol. Phys. 19, 553 ~1970!.
+74K. Wolinski, J. F. Hinton, and P. Pulay, J. Am. Chem. Soc. 112, 8251
+~1990!.
+75J. R. Cheeseman, G. W. Trucks, T. A. Keith, and M. J. Frisch, J. Chem.
+Phys. 104, 5497 ~1998!.
+76E. K. U. Gross and W. Kohn, Adv. Quantum Chem. 21, 255 ~1990!.
+77M. K. Casida, C. Jamorski, K. C. Casida, and D. R. Salahub, J. Chem.
+Phys. 108, 4439 ~1998!.
+78R. E. Stratmann, G. E. Scuseria, and M. J. Frisch, J. Chem. Phys. ~in
+press!.
+79J. B. Foresman, M. Head-Gordon, J. A. Pople, and M. J. Frisch, J. Phys.
+Chem. 96, 135 ~1992!.
+80R. Bauernschmitt and R. Ahlrichs, Chem. Phys. Lett. 256, 454 ~1996!.
+81T. J. Lee, C. W. Baushlicher, C. E. Dateo, and J. E. Rice, Chem. Phys.
+Lett. 228, 583 ~1994!.
+82L. S. Sunderlin, D. Wang, and R. R. Squires, J. Am. Chem. Soc. 114,
+2788 ~1992!.
+83A. E. Stevens, C. S. Feigerle, and W. C. Lineberger, J. Am. Chem. Soc.
+104, 5026 ~1982!.
+84R. L. DeKock, Inorg. Chem. 10, 1205 ~1971!.
+85M. Blomberg, U. Brandemark, J. Johansson, P. Siegbahn, and J. Wen-
+nerberg, J. Chem. Phys. 88, 4324 ~1988!.
+86C. Adamo and F. Lelj, J. Chem. Phys. 103, 10605 ~1995!.
+87H. Huber, E. P. Kunding, M. Moskovits, and G. A. Ozin, J. Am. Chem.
+Soc. 97, 2097 ~1975!.
+88C. W. Bauschlicher, J. Chem. Phys. 100, 1215 ~1994!.
+89V. Barone, Chem. Phys. Lett. 233, 129 ~1995!.
+90R. Fournier, J. Chem. Phys. 98, 8041 ~1993!.
+91M. A. Blitz, S. A. Mitchell, and P. A. Hackett, J. Phys. Chem. 95, 8719
+~1991!.
+92M. Dolg, H. Stoll, and H. Preuss, J. Mol. Struct.: THEOCHEM 235, 67
+~1991!.
+93G. Lanza and I. L. Fragala`, Chem. Phys. Lett. 255, 341 ~1996!.
+94C. Adamo and P. Maldivi, Chem. Phys. Lett. 268, 61 ~1997!.
+95L. Joubert, G. Picard, and J. J. Legendre, Inorg. Chem. 37, 1984 ~1998!.
+96C. Adamo and P. Maldivi, J. Phys. Chem. 102, 6812 ~1998!.
+97S. Hargitai, Coord. Chem. Rev. 91, 35 ~1988!.
+98C. E. Myers and D. T. Graves, J. Chem. Eng. Data 22, 436 ~1977!.
+99C. E. Myers, Inorg. Chem. 14, 199 ~1975!.
+100T. R. Cundari and W. J. Stevens, J. Chem. Phys. 98, 5555 ~1993!.
+101W. J. Stevens, M. Krauss, H. Basch, and P. G. Jasien, Can. J. Chem. 70,
+288 ~1992!.
+102J. M. Pe´rez-Jorda` and A. D. Becke, Chem. Phys. Lett. 233, 134 ~1995!.
+103T. A. Wesolowski, O. Parisel, Y. Ellinger, and J. Weber, J. Phys. Chem.
+A 101, 7818 ~1997!.
+104J. F. Ogilvie and F. Y. H. Wang, J. Mol. Struct. 273, 277 ~1992!.
+105G. Chalashinski and M. M. Szczesniak, Chem. Rev. 94, 1723 ~1994!, and
+references therein.
+106C. Adamo and V. Barone, in Recent Advances in Density Functional
+Methods, Part II, edited by D. P. Chong ~World Scientiﬁc, Singapore
+1998!.
+107L. A. Curtiss, D. J. Frurip, and M. Blander, J. Chem. Phys. 71, 2073
+~1979!.
+108J. A. Odutola and T. R. Dyke, J. Chem. Phys. 72, 5062 ~1980!.
+109M. J. Frisch, J. E. Del Bene, J. S. Binkley, and H. F. Schaefer, III, J.
+Chem. Phys. 84, 2279 ~1986!.
+110F. Sim, A. St-Amant, I. Papai, and D. R. Salahub, J. Am. Chem. Soc.
+114, 4391 ~1992!.
+111C. Mijoule, Z. Latajka, and D. Borgis, Chem. Phys. Lett. 244, 432
+~1994!.
+112V. Barone, L. Orlandini, and C. Adamo, Chem. Phys. Lett. 231, 295
+~1994!.
+113D. C. Dayton, K. W. Jucks, and R. E. Miller, J. Chem. Phys. 90, 2631
+~1989!.
+114A. S. Pine and B. Howard, J. Chem. Phys. 84, 590 ~1986!.
+115S. C. Racine and E. R. Davidson, J. Phys. Chem. 97, 6367 ~1993!.
+116G. Chalasinski and M. M. Szczesniak, Chem. Rev. 94, 1723 ~1994!, and
+references therein.
+117S. S. Shaik, H. B. Schlegel, and S. Wolfe, Theoretical Aspects of Physi-
+cal Organic Chemistry. The SN2 Mechanism ~Wiley, New York, 1992!.
+118T. N. Truong and E. V. Stefanovich, J. Phys. Chem. 99, 14700 ~1995!.
+119M. N. Glukhovtsev, A. Pross, and L. Radom, J. Am. Chem. Soc. 117,
+2024 ~1995!.
+120M. N. Glukhovtsev, R. D. Bach, A. Pross, and L. Radom, Chem. Phys.
+Lett. 260, 558 ~1996!.
+121J. W. Larson and T. B. McMahon, J. Am. Chem. Soc. 106, 517 ~1984!.
+122S. E. Barlow, J. M. van Doren, and V. M. Bierbaum, J. Am. Chem. Soc.
+116, 10645 ~1994!.
+123V. Barone, L. Orlandini, and C. Adamo, Int. J. Quantum Chem. 56, 697
+~1995!.
+124C. Mijoule, Z. Latajka, and D. Borgis, Chem. Phys. Lett. 244, 432
+~1994!.
+125R. V. Stanton and K. K. Merz, J. Chem. Phys. 101, 6658 ~1994!.
+126E. I. Proynov, A. Vela, and D. R. Salahub, Int. J. Quantum Chem., Symp.
+29, 61 ~1995!.
+127C. Adamo and V. Barone, in Ref. 106.
+128V. Barone and C. Adamo, Int. J. Quantum Chem. 61, 429 ~1997!.
+129S. Sirois, E. I. Proynov, D. T. Nguyen, and D. R. Salahub, J. Chem. Phys.
+~in press!.
+130V. Barone, C. Minichino, A. Grand, and R. Subra, J. Chem. Phys. 99,
+6787 ~1993!.
+131E. Hirota and C. Yamada, J. Mol. Spectrosc. 96, 175 ~1985!.
+132R. W. Fessenden and R. H. Sahuber, J. Chem. Phys. 39, 2147 ~1963!.
+133R. W. Fesseden, J. Phys. Chem. 71, 79 ~1967!.
+134R. W. Fesseden and R. H. Schuler, J. Chem. Phys. 39, 2147 ~1967!.
+135H. Sekino and R. J. Bartlett, J. Chem. Phys. 82, 4225 ~1985!.
+136V. Barone, Theor. Chim. Acta 91, 113 ~1995!.
+137V. Barone, C. Adamo, and N. Russo, Chem. Phys. Lett. 212, 5 ~1993!.
+138V. Barone and C. Adamo, Chem. Phys. Lett. 224, 432 ~1994!.
+139V. G. Malkin, O. L. Malkina, M. E. Casida, and D. R. Salahub, J. Am.
+Chem. Soc. 116, 5898 ~1994!.
+140G. Schreckenbach and T. Ziegler, J. Phys. Chem. 99, 606 ~1995!.
+141A. M. Lee, N. C. Handy, and S. M. Colwell, J. Chem. Phys. 103, 10095
+~1995!.
+142G. Rauhut, S. Puyear, K. Wolinski, and P. Pulay, J. Phys. Chem. 100,
+6130 ~1996!.
+143M. Kaupp, O. L. Malkina, and V. G. Malkin, J. Chem. Phys. 106, 9201
+~1997!.
+144M. Bu¨hl, Chem. Phys. Lett. 267, 251 ~1997!.
+145J. Gauss and J. F. Stanton, J. Chem. Phys. 104, 2574 ~1996!.
+146I. J. Solomon, J. N. Keith, A. J. Kacmarek, and J. K. Rancy, J. Am.
+Chem. Soc. 90, 5408 ~1968!.
+147A. K. Jameson and C. J. Jameson, Chem. Phys. Lett. 134, 461 ~1987!.
+148C. Adamo and V. Barone, Chem. Phys. Lett. 298, 113 ~1998!.
+149C. Jamorski, M. E. Casida, and D. R. Salahub, J. Chem. Phys. 104, 5134
+~1996!.
+150M. Petersilka and E. K. U. Gross, Int. J. Quantum Chem., Symp. 30, 181
+~1996!.
+151T. H. Dunning and V. McKoy, J. Chem. Phys. 47, 1735 ~1967!.
+152J. B. Foresman, H. Head-Gordon, J. A. Pople, and M. J. Frisch, J. Phys.
+Chem. 96, 135 ~1992!.
+153M. Ernzerhof and G. E. Scuseria ~private communication!; J. Chem.
+Phys. ~submitted!.
+6170
+J. Chem. Phys., Vol. 110, No. 13, 1 April 1999
+C. Adamo and V. Barone
+Downloaded 07 May 2012 to 129.215.149.92. Redistribution subject to AIP license or copyright; see http://jcp.aip.org/about/rights_and_permissions
