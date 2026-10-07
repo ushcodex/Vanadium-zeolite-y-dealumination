@@ -1,0 +1,230 @@
+{
+  "levels": {
+    "B3LYP": {
+      "V-PRC": {
+        "E": -2956.254531846348,
+        "terminated": true,
+        "converged": true,
+        "n_imag": 0,
+        "imag": [],
+        "runtime": "0 days 5 hours 28 minutes 23 seconds 861 msec",
+        "dE": -93.00570768371657,
+        "route": "V",
+        "dG_298.15": -17.04569733668188,
+        "dG_1003.15": 133.39459176001273
+      },
+      "V-I1": {
+        "E": -2956.26305202854,
+        "terminated": true,
+        "converged": true,
+        "n_imag": 0,
+        "imag": [],
+        "runtime": "0 days 4 hours 18 minutes 38 seconds 938 msec",
+        "dE": -115.37544294480747,
+        "route": "V",
+        "dG_298.15": -35.774731014480224,
+        "dG_1003.15": 108.32350617686343
+      },
+      "V-TS2": {
+        "E": -2956.095843864606,
+        "terminated": true,
+        "converged": false,
+        "n_imag": 14,
+        "imag": [
+          -566.6,
+          -411.82,
+          -245.76,
+          -197.29,
+          -173.25,
+          -172.88,
+          -150.89,
+          -130.21,
+          -110.47,
+          -97.12,
+          -79.8,
+          -62.88,
+          -56.03,
+          -24.26
+        ],
+        "runtime": "1 days 4 hours 12 minutes 55 seconds 3 msec",
+        "dE": 323.62953093453365,
+        "route": "V",
+        "dG_298.15": 384.487116008652,
+        "dG_1003.15": 641.861196076773
+      },
+      "V-I2": {
+        "E": -2956.266391730287,
+        "terminated": true,
+        "converged": false,
+        "n_imag": 0,
+        "imag": [],
+        "runtime": "0 days 6 hours 45 minutes 31 seconds 155 msec",
+        "dE": -124.14382867227275,
+        "route": "V",
+        "dG_298.15": null,
+        "dG_1003.15": null
+      },
+      "V-P": {
+        "E": -2956.059304320694,
+        "terminated": false,
+        "converged": false,
+        "n_imag": 0,
+        "imag": [],
+        "runtime": "?",
+        "dE": 419.5640902484714,
+        "route": "V",
+        "dG_298.15": null,
+        "dG_1003.15": null
+      },
+      "W-PRC": {
+        "E": -1785.850554383119,
+        "terminated": true,
+        "converged": true,
+        "n_imag": 0,
+        "imag": [],
+        "runtime": "0 days 3 hours 34 minutes 18 seconds 376 msec",
+        "dE": -78.32050066866667,
+        "route": "W",
+        "dG_298.15": -28.868138532361726,
+        "dG_1003.15": 67.03075622529342
+      },
+      "W-P": {
+        "E": -1785.829873927753,
+        "terminated": true,
+        "converged": true,
+        "n_imag": 0,
+        "imag": [],
+        "runtime": "0 days 4 hours 37 minutes 41 seconds 660 msec",
+        "dE": -24.023972591247077,
+        "route": "W",
+        "dG_298.15": 30.794543235667064,
+        "dG_1003.15": 132.65684034078018
+      }
+    },
+    "PBE0": {
+      "V-PRC": {
+        "E": -2955.251083282212,
+        "terminated": true,
+        "converged": false,
+        "n_imag": 0,
+        "imag": [],
+        "runtime": "0 days 0 hours 7 minutes 13 seconds 924 msec",
+        "dE": -93.06587185334838,
+        "route": "V",
+        "dG_298.15": null,
+        "dG_1003.15": null
+      },
+      "V-I1": {
+        "E": -2955.261392548875,
+        "terminated": true,
+        "converged": false,
+        "n_imag": 0,
+        "imag": [],
+        "runtime": "0 days 0 hours 7 minutes 15 seconds 665 msec",
+        "dE": -120.13284774435537,
+        "route": "V",
+        "dG_298.15": null,
+        "dG_1003.15": null
+      },
+      "V-TS2": {
+        "E": -2955.086361526575,
+        "terminated": true,
+        "converged": false,
+        "n_imag": 0,
+        "imag": [],
+        "runtime": "0 days 0 hours 10 minutes 50 seconds 911 msec",
+        "dE": 339.4110379433741,
+        "route": "V",
+        "dG_298.15": null,
+        "dG_1003.15": null
+      },
+      "V-I2": {
+        "E": -2955.261524727712,
+        "terminated": true,
+        "converged": false,
+        "n_imag": 0,
+        "imag": [],
+        "runtime": "0 days 0 hours 6 minutes 56 seconds 55 msec",
+        "dE": -120.47988323370106,
+        "route": "V",
+        "dG_298.15": null,
+        "dG_1003.15": null
+      },
+      "V-P": {
+        "E": -2955.058281714289,
+        "terminated": true,
+        "converged": false,
+        "n_imag": 0,
+        "imag": [],
+        "runtime": "0 days 0 hours 9 minutes 29 seconds 203 msec",
+        "dE": 413.13457493483924,
+        "route": "V",
+        "dG_298.15": null,
+        "dG_1003.15": null
+      },
+      "W-PRC": {
+        "E": -1785.143710125366,
+        "terminated": true,
+        "converged": false,
+        "n_imag": 0,
+        "imag": [],
+        "runtime": "0 days 0 hours 2 minutes 56 seconds 708 msec",
+        "dE": -78.62389844373506,
+        "route": "W",
+        "dG_298.15": null,
+        "dG_1003.15": null
+      },
+      "W-P": {
+        "E": -1785.122480008438,
+        "terminated": true,
+        "converged": false,
+        "n_imag": 0,
+        "imag": [],
+        "runtime": "0 days 0 hours 3 minutes 0 seconds 613 msec",
+        "dE": -22.884234134884043,
+        "route": "W",
+        "dG_298.15": null,
+        "dG_1003.15": null
+      }
+    }
+  },
+  "states": {},
+  "refs": {
+    "B3LYP": {
+      "cluster": -1709.394093884281,
+      "H2O": -76.426629795556,
+      "H3VO4": -1246.825013958827,
+      "V_zero": -2956.219107843108,
+      "W_zero": -1785.8207236798369
+    },
+    "PBE0": {
+      "cluster": -1708.736038466437,
+      "H2O": -76.377725397537,
+      "H3VO4": -1246.479597897213,
+      "V_zero": -2955.21563636365,
+      "W_zero": -1785.113763863974
+    }
+  },
+  "tier1_reference": {
+    "cluster": -31.34551236,
+    "H3VO4": -19.77512769,
+    "H2O": -5.07054445,
+    "V_zero": -51.12064005,
+    "W_zero": -36.41605681,
+    "accepted": {
+      "V-PRC": -196.9,
+      "V-I1": -385.1,
+      "V-TS2": -224.4,
+      "V-I2": -342.36,
+      "V-P": -82.9,
+      "W-PRC": -69.59,
+      "W-TS": -40.29,
+      "W-P": -65.85
+    },
+    "barriers": {
+      "V-TS2 vs V-I1": 160.7,
+      "W-TS vs W-PRC": 29.29
+    },
+    "source": "simulation/analysis/calculation_register.csv (accepted rows only)"
+  }
+}

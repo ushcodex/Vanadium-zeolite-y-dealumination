@@ -1,0 +1,3 @@
+Reaction paths for a) dealumination and b) desilication combined from five different NEB paths. Black lines: approach A, considering initially isolated water molecules; purple lines: approach B, considering initially adsorbed water molecules. Effective barriers for both approaches are labelled in the upper left corner.
+
+SOURCE: Malola, Svelle, Bleken and Swang (2012), Angewandte Chemie International Edition, 51, 652-655, Figure 2

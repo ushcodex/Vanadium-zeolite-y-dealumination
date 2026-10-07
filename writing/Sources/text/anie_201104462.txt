@@ -1,0 +1,361 @@
+
+<<<PAGE 1>>>
+Zeolites
+DOI: 10.1002/anie.201104462
+Detailed Reaction Paths for Zeolite Dealumination and Desilication
+From Density Functional Calculations**
+Sami Malola, Stian Svelle, Francesca Lønstad Bleken, and Ole Swang*
+Zeolites, which are crystalline microporous aluminosilicates,
+have found widespread industrial application, not least
+because of their combination of porosity and acidity; the
+latter arises from the substitution of silicon atoms by
+aluminum/proton pairs. Zeolites may be partially hydrolyzed
+by steaming, thereby decreasing their crystallinity, but in
+some cases improving their efficiency as catalysts as both pore
+structure and acidity are modified. Zeolite Y, the catalytic
+cracking catalyst used to produce one-third of all gasoline
+fuel, is always steamed. Recently, treatment with dilute alkali
+solution has emerged as an efficient means of introducing
+mesoporosity, leading to enhanced catalyst performance.[1]
+Moreover, zeolite catalysts are exposed to steam during
+regeneration by the oxidation of carbon deposits, which leads
+to a slow degradation process referred to as irreversible
+deactivation. Both kinds of tetrahedral atoms, Al and Si, may
+be hydrolyzed, and both cases have been studied in the
+literature.[2–4] The full hydrolysis of a tetrahedral atom leaves
+a moiety called a hydrogarnet defect or silanol nest, in which
+four hydroxy groups mingle in hydrogen-bonded fashion in
+the void left by the tetrahdral atom.[5] Along with the
+Brønsted acid sites, zeolites may contain Lewis acid sites
+consisting of hydrated Al species residing within the pores.
+Such extra-framework Al (EFAl) compounds have been
+studied extensively[6] and show significant mobility.[7] Atom-
+scale modeling has become an important complement to
+experimental techniques in many areas of chemistry and solid
+state science, and some aspects pertaining to the removal of
+zeolite tetrahedral atoms in steam have been investigated.
+Sokol et al.[8] studied silanol nests and the vicinal disilanol
+species (the latter containing five-coordinate Si) using atom-
+scale modeling. Furthermore, they investigated the dehydra-
+tion/dehydrogenation (with peroxide formation) of silanol
+nests, and suggest possible mechanisms for healing the defect.
+Pascale et al.[9] computed the formation energy of a silanol
+nest with respect to orthosilicic acid (H4SiO4) and reported
+the
+structure
+of
+nests
+from
+different
+computational
+approaches. Lisboa et al.,[10] using semiempirical calculations
+and cluster models, studied a number of reaction intermedi-
+ates for dealumination of a zeolite. Activation and reaction
+energies were not reported, as the chosen method does not
+afford quantitative energies. Thus, very little fundamental
+insight concerning the hydrolysis reaction chain itself is
+available, despite widespread application of steaming and the
+high relevance to understanding the irreversible deactivation
+of zeolite catalysts. Herein, we present unprecedented
+insights for tetrahedral-atom extraction by reaction with
+steam, including first-principles DFT reaction and activation
+energies for all steps of dealumination and desilication of the
+zeolite.
+To address these complex processes in a computationally
+feasible manner, we have chosen as a natural first approach in
+this initial work, to add water molecules sequentially. Thus,
+dealumination is a series of hydration reactions, where at least
+three water molecules are needed to form a silanol nest and
+detach Al in the form of Al(OH)3. Adsorption of a fourth
+water molecule creates a more stable Al(OH)3(H2O) EFAl
+compound (Figure 1). To create a silanol nest via the
+analogous process of desilication, at least four hydration
+reactions are needed, and the extra-framework compound
+after desilication is tetrahedral Si(OH)4 (Figure 1). Adding
+only one water molecule at a time is clearly an approximation
+to the experimental situation in which a significant steady-
+state vapor pressure exists in the pore system. Moreover, we
+do not follow the hydration process beyond the formation of
+extra framework species that are expected to display mobility
+within the pores (see below). Finally, temperature effects are
+not explicitly accounted for.
+We consider two different initial conditions in our
+analyses—the reactant energy for each step can either be
+Figure 1. Final configurations after dealumination (left) and desilica-
+tion (right). O red, Si yellow, H white, Al purple.
+[*] Dr. S. Malola, Prof. Dr. S. Svelle, Dr. F. L. Bleken, Dr. O. Swang
+inGAP Center for Research-Based Innovation
+Department of Chemistry, University of Oslo
+P. O. Box 1033 Blindern, 0315 Oslo (Norway)
+E-mail: ole.swang@sintef.no
+Homepage: http://www.ingap.uio.no
+Dr. O. Swang
+SINTEF Materials and Chemistry, Department of Process Chemistry
+P. O. Box 124 Blindern, 0314 Oslo (Norway)
+[**] Thanks are due to the Norwegian High Performance Computing
+program (http://www.notur.no) for a generous grant of computing
+resources. S.M. acknowledges a postdoctoral fellowship from the
+Research Council of Norway under the KOSK program.
+Supporting information for this article is available on the WWW
+under http://dx.doi.org/10.1002/anie.201104462.
+.
+Angewandte
+Communications
+652
+ 2012 Wiley-VCH Verlag GmbH & Co. KGaA, Weinheim
+Angew. Chem. Int. Ed. 2012, 51, 652 –655
+
+<<<PAGE 2>>>
+calculated for a water molecule in vacuo, or a water molecule
+adsorbed on site, resulting in different relative energies for
+each step (Figure 2). Approach A (black lines in Figure 2)
+take the adsorption of each water molecule explicitly into
+account during the process. Approach B (purple lines) omits
+the energy gain by water adsorption at each step and thus to a
+larger degree resembles a system in which water molecules
+are adsorbed or saturated on the surface of the zeolite before
+initiation of the hydrolysis reactions. Although we do not go
+past four added water molecules, the two abovementioned
+approaches may be regarded as approximate upper and lower
+limits for the reaction energies.
+A reaction proposal is shown in Figure 3. The reaction
+steps for dealumination are:
+0!1: First hydration, including formation of a vicinal
+disilanol defect;
+1!2: Inversion of an OH group and reorientation of the
+bonds;
+2!3: Second hydration, giving four loosely bound OH
+groups as a product: two bound to the Si and two to
+the Al;
+3!4: Third hydration, giving partially bonded Al(OH)3 as a
+product;
+4!5: Adsorption of the fourth H2O molecule, thereby
+detaching the final Al(OH)3(H2O) EFAl compound.
+The final step (4!5) is replaced by a fourth hydration in
+the case of desilication, giving extra-framework Si(OH)4.
+Effective activation energies can be estimated from the
+highest energies of the curves in Figure 2. For the total
+dealumination process, the barrier is 190 kJmol1 with
+approach A and 260 kJmol1 with approach B. For the
+desilication, the energy barrier is 40–50 kJmol1 larger:
+Figure 3. Reaction steps with intermediate configurations shown for
+dealumination (left) and for desilication (right); c covalent bonds;
+g hydrogen bonds. Based on our observations, tetrahedral atoms
+are not at their original sites after step 2!3.
+Figure 2. Reaction paths for a) dealumination and b) desilication com-
+bined from five different NEB paths. Black lines: approach A, consider-
+ing initially isolated water molecules; purple lines: approach B, consid-
+ering initially adsorbed water molecules. Effective barriers for both
+approaches are labeled in the upper left corner. Adsorption energies of
+the water molecules are seen as discontinuous jumps for each
+intermediate state. For state 1 in both processes, adsorption energies
+(shown in parentheses) are calculated only for comparison; water is
+not added at state 1.
+Angewandte
+Chemie
+653
+Angew. Chem. Int. Ed. 2012, 51, 652 –655
+ 2012 Wiley-VCH Verlag GmbH & Co. KGaA, Weinheim
+www.angewandte.org
+
+<<<PAGE 3>>>
+240 kJmol1
+with
+approach A
+and
+300 kJmol1
+with
+approach B. This means that Al is substantially less stable as
+a framework species relative to Si in a steam atmosphere.
+Gratifyingly, this is also the experimental observation. For the
+reverse processes, barriers are 290 kJmol1 and 200 kJmol1
+for alumination and 300 kJmol1 and 240 kJmol1 for silica-
+tion with approaches A and B, respectively. For the total
+hydrolysis processes, the effective barriers (rate-determining
+steps) are defined by OH inversion, step 1!2, for deal-
+umination and by OH inversion together with the third
+hydration reaction, step 3!4, for desilication.
+We now turn to the final states. After the third hydration
+at step (3!4), Al(OH)3 is bound to the framework with two
+hydrogen bonds of lengths 1.37 and 1.88 , and with one
+weak Al-OH-Si bridge including a 2.02  AlO bond. The
+final EFAl product of the dealumination, Al(OH)3(H2O), is
+free from such bridges and bound to the framework with four
+hydrogen bonds (Figure 3) with lengths 1.55, 1.60, 1.70, and
+1.97  and with an energy of 145 kJmol1. Thus, the final
+hydration, coordinating H2O to Al, is necessary for removing
+the EFAl species from the framework. For desilication, the
+adsorption energy of the final extra-framework molecule
+Si(OH)4 is much smaller (77 kJmol1), and the compound is
+bound to the framework with three weak hydrogen bonds
+about 1.8  long. These observations, that is, weak hydrogen
+bonding leading to moderate adsorption energies for the final
+extra-framework species, suggest substantial mobility, espe-
+cially at high temperature in a steam atmosphere such as
+during steaming or regeneration.
+In experimental practice, dealumination is often seen as a
+change in coordination of aluminum, most often using solid-
+state
+27Al NMR spectroscopy,[11–15] but IR spectroscopy,[16]
+XANES,[17] XPS,[18] and TPD-MS[19] have been employed.
+Several experimental studies suggest that steaming leads to
+the formation of octahedrally coordinated aluminum, identi-
+fying this as EFAl species. However, experimental evidence
+for three-coordinate aluminum in zeolites after steaming has
+also been reported.[15–18] Perusal of Figure 3 reveals some
+deviations from fourfold coordination during the process:
+Species 1 is five-coordinate, whereas species 4 might be
+interpreted as being three-coordinate (for dealumination
+only). However, most of the structures proposed for three-
+coordinate aluminum are less hydrolyzed and rather the
+result of dehydroxylation.[17] At this point, it should be noted
+that the calculations presented herein are minimum estimates
+for the coordination of aluminum owing to the sequential
+mode of water addition mentioned above. We anticipate that
+addition of further water molecules to species 5 (Figure 3)
+would straightforwardly lead to the formation of a six-
+coordinate octahedral EFAl species, which has been studied
+in isolated form by others.[6,7] Based on these considerations,
+we identify the investigations of the effects of allowing water
+clusters, rather than single water molecules, to reside within
+the zeolite pores during dealumination and desilication to be
+a high priority issue for further work.
+In conclusion, our results support the experimental
+observations: both Al and Si may be removed by steam, but
+dealumination is the least activated of the two. Several
+systematic differences favor dealumination over desilication.
+Effective barriers are 40–50 kJmol1 lower, and adsorption of
+the water molecules involved in hydration reactions is on
+average stronger. Intermediate configurations are relatively
+more stable for dealumination, compensating the slightly
+higher activation energies of the intermediate reaction steps
+compared to desilication. The differences between Si and Al
+may be explained by the well-known coordination flexibility
+of the latter and the higher polarity of the Al-induced
+Brønsted site. In a recent multitechnique study of deal-
+umination of zeolite Y, Agostini et al.[20] surprisingly found
+that most of the framework Al is removed during cooling,
+concurrent to repopulation of the framework by water. Our
+results might explain this finding, as the effective energy
+barrier for dealumination is close to the barrier needed to
+form the simplest vicinal disilanol defects, and all subsequent
+hydration steps are rapid. Finally, the present study provides a
+reasonable mechanism for the mobility of tetrahedral atoms.
+Understanding the long-term deactivation of silicoalumino-
+phosphates by formation of framework Si islands, leading to
+permanent loss of Brønsted acid sites, is an important issue.[21]
+We suggest that such processes may occur by tetrahedral-
+atom hydrolysis, migration, and reinsertion into another
+silanol nest, which are known to be abundant. Further work
+to elucidate the effects of local tetrahedral-atom environment
+and basicity on the framework extraction process, the
+influence of water clusters, as well as other possible migration
+mechanisms is in progress in our laboratories.
+Experimental Section
+Periodic calculations based on the pseudopotential approximation
+and the Perdew–Burke–Ernzerhof (PBE) density functional[22] were
+carried out with the QUANTUM-ESPRESSO program.[23] The
+nudged elastic band (NEB) approach was used for tracing reaction
+paths, thereby localizing transition states. The 36-atom unit cell of
+chabazite (CHA) was used for the production calculations. Some
+results were re-calculated with larger unit cells to evaluate the effects
+of periodicity. To evaluate the reliability of the PBE functional,
+selected relative energies were calculated with the B3LYP hybrid
+functional[24] using the CASTEP code.[25] The choice of functional or
+unit cell size does not influence the conclusions presented herein.
+Further details can be found in the Supporting Information.
+Received: June 28, 2011
+Revised: October 4, 2011
+Published online: December 6, 2011
+.
+Keywords: density functional calculations ·
+reaction mechanisms · zeolites
+[1] J. C. Groen, L. A. A. Peffer, J. A. Moulijn, J. Prez-Ramrez,
+J. Mater. Chem. 2006, 16, 2121.
+[2] H. K. Beyer, Mol. Sieves 2002, 3, 203.
+[3] R. M. Ravenelle, F. Schussler, A. D’Amico, N. Danalina, J.
+van Bokhoven, J. A. Lercher, C. W. Jones, C. Sievers, J. Phys.
+Chem. C 2010, 114, 19582.
+[4] B. Gil, Ł. Mokrzycki, B. Sulikowski, Z. Olejniczak, S. Walas,
+Catal. Today 2010, 152, 24; J. C. Groen, J. C. Jansen, J. A.
+Moulijn, J. Prez-Ramirez, J. Phys. Chem. B 2004, 108, 13062,
+and references therein.
+.
+Angewandte
+Communications
+654
+www.angewandte.org
+ 2012 Wiley-VCH Verlag GmbH & Co. KGaA, Weinheim
+Angew. Chem. Int. Ed. 2012, 51, 652 –655
+
+<<<PAGE 4>>>
+[5] S. Bordiga, I. Roggero, P. Ugliengo, A. Zecchina, V. Bolis, G.
+Artioli, R. Buzzoni, G. Marra, F. Rivetti, G. Span, C. Lamberti,
+J. Chem. Soc. Dalton Trans. 2000, 3921; S. Bordiga, P. Ugliengo,
+A. Damin, C. Lamberti, G. Spoto, A. Zecchina, G. Span, R.
+Buzzoni, L. Dalloro, F. Rivetti, Top. Catal. 2001, 15, 43.
+[6] S. Li, A. Zheng, Y. Su, H. Zhang, L. Chen, J, Yang, C. Ye, F.
+Deng, J. Am. Chem. Soc. 2007, 129, 11161; Z. Wu, A. Zheng, Q.
+Wang, L. Chen, J.-P. Amoreux, F. Deng, Angew. Chem. 2010, 122,
+8839; Angew. Chem. Int. Ed. 2010, 49, 8657; D. L. Bhering, A.
+Ramirez-Solis, C. J. A. Mota, J. Phys. Chem. B 2003, 107, 4342; S.
+Li, A. Zheng, Y. Su, H. Fang, W. Shen, Z. Yu, L. Chen, F. Deng,
+Phys. Chem. Chem. Phys. 2010, 12, 3895.
+[7] L. Benco, T. Demuth, J. Hafner, F. Hutschka, H. Toulhoat,
+J. Catal. 2002, 209, 480.
+[8] A. Sokol, C. R. A. Catlow, J. M. Garcs, A. Kuperman, J. Phys.
+Chem. B 1998, 102, 10647; A. Sokol, C. R. A. Catlow, J. M.
+Garcs, A. Kuperman, Adv. Mater. 2000, 12, 1801; A. Sokol,
+C. R. A. Catlow, J. M. Garcs, A. Kuperman, J. Phys. Chem. B
+2002, 106, 6163; A. Sokol, C. R. A. Catlow, J. M. Garcs, A.
+Kuperman, J. Phys. Chem. B 2002, 106, 6163; A. Sokol, C. R. A.
+Catlow, J. M. Garcs, A. Kuperman, J. Phys. Condens. Matter
+2004, 16, S2781.
+[9] F. Pascale, P. Ugliengo, B. Civalleri, R. Orlando, P. DArco, R.
+Dovesi, J. Chem. Phys. 2002, 117, 5337.
+[10] O. Lisboa, M. Snchez, F. Ruette, J. Mol. Catal. A 2008, 294, 93.
+[11] B. H. Wouters, T.-H. Chen, P. J. Grobet, J. Am. Chem. Soc. 1998,
+120, 11419.
+[12] A. Omegna, J. A. van Bokhoven, R. Prins, J. Phys. Chem. B
+2003, 107, 8854.
+[13] J. Jiao, J. Kanelloupoulos, S. S. Ray, H. Foerster, D. Freude, M.
+Hunger, Phys. Chem. Chem. Phys. 2005, 7, 3221.
+[14] E. Bourgeat-Lami, P. Massiani, F. di Renzo, P. Espiau, F. Fajula,
+T. des Courires, Appl. Catal. 1991, 72, 139.
+[15] J. Jiao, S. Altwasser, W. Wang, J. Weitkamp, M. Hunger, J. Phys.
+Chem. B 2004, 108, 14305.
+[16]
+A. Zecchina, S. Bordiga, G. Spoto, D. Scarano, G. Petrini, G.
+Leofanti, M. Padovan, C. Otero Are	n, J. Chem. Soc. Faraday
+Trans. 1992, 88, 2959.
+[17] J. A. van Bokhoven, A. M. J. van der Eerden, D. C. Konings-
+berger, J. Am. Chem. Soc. 2003, 125, 7435.
+[18] F. Collignon, P. A. Jacobs, P. Grobet, G. Poncelet, J. Phys. Chem.
+B 2001, 105, 6812.
+[19] M. J. Nash, A. M. Shough, D. W. Fickel, D. J. Doren, R. F. Lobo,
+J. Am. Chem. Soc. 2008, 130, 2460.
+[20] G. Agostini, C. Lamberti, L. Palin, M. Milanesio, N. Danilina, B.
+Xu, M. Janousch, J. A. van Bokhoven, J. Am. Chem. Soc. 2010,
+132, 667.
+[21] G. Sastre, D. W. Lewis, C. R. A. Catlow, J. Phys. Chem. 1996, 100,
+6722.
+[22] J. P. Perdew, K. Burke, M. Ernzerhof, Phys. Rev. Lett. 1996, 77,
+3865.
+[23] P. Giannozzi, S. Baroni, N. Bonini, M. Calandra, R. Car, C.
+Cavazzoni, D. Ceresoli, G. L. Chiarotti, M. Cococcioni, I. Dabo,
+A. Dal Corso, S. de Gironcoli, S. Fabris, G. Fratesi, R. Gebauer,
+U. Gerstmann, C. Gougoussis, A. Kokalj, M. Lazzeri, L. Martin-
+Samos, N. Marzari, F. Mauri, R. Mazzarello, S. Paolini, A.
+Pasquarello, L. Paulatto, C. Sbraccia, S. Scandolo, G. Sclauzero,
+A. P. Seitsonen, A. Smogunov, P. Umari, R. M. Wentzcovitch,
+J. Phys. Condens. Matter 2009, 21, 395502.
+[24] A. D. Becke, J. Chem. Phys. 1993, 98, 5648; C. Lee, W. Yang,
+R. G. Parr, Phys. Rev. B 1988, 37, 785.
+[25] S. J. Clark, M. D. Segall, C. J. Pickard, P. J. Hasnip, M. I. J.
+Probert, K. Refson, M. C. Payne, Z. Kristallogr. 2005, 220, 567.
+Angewandte
+Chemie
+655
+Angew. Chem. Int. Ed. 2012, 51, 652 –655
+ 2012 Wiley-VCH Verlag GmbH & Co. KGaA, Weinheim
+www.angewandte.org

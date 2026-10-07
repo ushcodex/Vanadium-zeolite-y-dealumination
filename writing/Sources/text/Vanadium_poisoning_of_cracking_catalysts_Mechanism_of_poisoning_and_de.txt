@@ -1,0 +1,825 @@
+
+<<<PAGE 1>>>
+JOURNAL 
+OF CATALYSIS 
+100, 
+130-137 (1986) 
+Vanadium Poisoning of Cracking Catalysts: Mechanism of Poisoning 
+and Design of Vanadium Tolerant Catalyst System 
+RICHARD 
+F. WORMSBECHER, 
+ALAN 
+W. PETERS, 
+AND 
+JAMES M. MASELLI 
+Davison 
+Chemical Division, 
+W. R. Grace & Company, 
+7379 Route 32, Columbia, 
+Maryland 
+21044 
+Received August 22, 1985; revised February 15, 1986 
+The mechanism of vanadium poisoning of cracking catalysts is described. Experimental results 
+identify the poison precursor as volatile vanadic acid, HjVOI which is formed under FCC regenera- 
+tor conditions by the reaction V,O&) + 3H,O(v) Z? 2HjVOI(v). The concentration of H3V04 in a 
+typical regenerator (73O”C, 20% H20, 2 atm total pressure) is l-10 ppm. Since H,V04 is a strong 
+acid analogous to HjPOd, it can destroy the zeolite by hydrolysis of the zeolite SiOJA1203 frame- 
+work. A basic solid with reasonable pore structure should be an effective scavenger. Basic alkaline 
+earth oxides such as MgO or CaO are shown to be effective for vanadium scavenging. Microactiv- 
+ity testing shows excellent activity retention when 20% MgO is blended with cracking catalyst at 
+vanadium loadings of 0.67% and 1.34% V by weight on catalyst. However, the SO, in the regenera- 
+tor flue gas can form a sulfate that competes with the formation of the vanadate. The degree of 
+competition will be thermodynamically controlled. Since the formation of the vanadate from the 
+oxide expands the lattice, pore structure effects exist similar to those observed for the reaction of 
+calcium oxide with sulfur oxides. 
+G? 1986 Academic 
+Press. Inc. 
+INTRODUCTION 
+The effects of vanadium and nickel con- 
+taminants on the performance of cracking 
+catalysts are well known (1, 2). In general, 
+a loss of both activity and selectivity is ob- 
+served as metal levels deposited on the cat- 
+alyst increase from 2000 to 10,000 ppm. Re- 
+sidual feedstocks have significant amounts 
+of Ni and V and the presence of these con- 
+taminants represents a major obstacle to 
+processing large amounts of residual oil. 
+The metals are found in the residual oil as 
+complexes with porphyrins (3) or other ma- 
+terial and are deposited quantitatively on 
+the catalyst with the coke during the crack- 
+ing reaction. Fluid catalytic cracking cata- 
+lysts for the production of gasoline are gen- 
+erally composed of a rare earth exchanged 
+Y-type zeolite imbedded in a silica-alumina 
+matrix. Nickel greatly increases the gas 
+(HZ) and coke production of the catalyst, 
+while vanadium reduces both catalyst ac- 
+tivity and selectivity by destroying zeolite 
+crystallinity 
+and producing increased gas 
+(HZ) and coke. 
+Currently, antimony is used to control 
+nickel poisoning in a process developed by 
+Phillips (4). Vanadium poisoning has been a 
+more difficult problem. In an effort to re- 
+duce the poisoning effect of vanadium, 
+some refineries have proposed various 
+hardware changes (5, 6). Tin has been used 
+commercially 
+for processing high-metal 
+feedstocks. Patents which claim the use of 
+tin either deposited on the catalyst from the 
+feedstock or by impregnation (7) or by add- 
+ing a tin-containing diluent to the catalyst 
+inventory (8) have been issued to Gulf. 
+Some common methods of reducing the ef- 
+fect of catalyst poisoning are to increase 
+usage rates or to use a more active, stable 
+catalyst. These methods can be expensive, 
+may involve catalyst disposal problems, 
+and are not especially effective. 
+In this paper a mechanism for vanadium 
+poisoning is proposed, and based on the 
+proposed mechanism, the design of a vana- 
+dium scavenger is described. 
+EXPERIMENTAL 
+The cracking catalyst used in this work is 
+a laboratory-prepared catalyst composed of 
+130 
+0021-9517186 $3.00 
+Copyright 
+Q 1986 by Academic 
+Press, Inc. 
+All rights of reproduction 
+in any form reserved. 
+
+<<<PAGE 2>>>
+VANADIUM 
+POISONING OF CRACKING CATALYSTS 
+131 
+TABLE 1 
+Properties of Catalyst 
+20% REY 
+80% Si02/A1203/Kaolin matrix 
+4203 
+NazO 
+RED3 
+Surface area 
+Pore volume 
+31.7% 
+0.65% 
+3.15% 
+152 m2/g 
+0.22 cm3/g 
+20% zeolite imbedded in 80% Si02-A1203- 
+Kaolin matrix. Typical properties of the 
+catalyst are shown in Table 1. The surface 
+area of the matrix is -30 m2/g with the re- 
+mainder being zeolite as measured by single 
+point BET. The zeolite may be an ultra- 
+stable Y zeolite prepared by procedure A 
+(9, p. 320) or a rare earth exchanged Y zeo- 
+lite (REY) with 3.2% Na?O. The REY may 
+be calcined and exchanged to low NazO 
+(0.9% Na20). The Si02/A1203 ratio of the 
+REYs is 5/l. 
+The metal impregnation procedure used 
+is similar to that described by Mitchell (10). 
+The catalyst is impregnated to appropriate 
+weight percentage V on catalyst to incipient 
+wetness using vanadyl naphthenate with oil 
+as a solvent, or vanadyl oxalate with water 
+as a solvent. The catalyst is then calcined at 
+760°C for 4 h with dry air to burn off the 
+organics. In other experiments V205 pow- 
+der is physically blended with catalyst to 
+give equivalent weight percentage V on cat- 
+alyst. Typically, the catalyst is then given a 
+steam treatment in a fixed bed at 732°C for 8 
+h at 2 atm 100% Hz0 pressure. The activity 
+of the catalyst with or without metal im- 
+pregnation is tested by a MAT test similar 
+to the ASTM-390780 procedure. The con- 
+ditions of the test are 498”C, catalyst-to-oil 
+ratio nominally = 3, WHSV (h-l) = 16, and 
+the feedstock is a West Texas Heavy Gas 
+Oil boiling range 320-500°C. 
+Steaming exposure experiments 
+were 
+performed in a fluid bed high temperature 
+reactor. A schematic of the Inconel tube 
+reactor is shown in Fig. 1. The diameter of 
+FIG. 1. Schematic of flowing tube reactor for expo- 
+sure experiments. 
+the tube reactor is 3.5 in. and is mounted 
+vertically in a tube furnace. The zeolite bed 
+rests on a 20-pm frit. Three heating zones 
+are temperature controlled 
+to +-3°C at 
+750°C. A thermocouple is inserted into the 
+zeolite bed to monitor the bed temperature. 
+The system pressure is controlled by a back 
+pressure regulator and is measured using a 
+Wallace-Tiernan 
+gauge downstream. N2 
+gas is used as the carrier gas and the flow 
+rate of N2 is monitored by a wet test meter 
+located at the discharge of the back pres- 
+sure regulator. HZ0 partial pressure is gen- 
+erated by a heated temperature-controlled 
+H20 vessel upstream from the reactor. N2 
+flow bubbles through the H20 vessel into 
+the reactor. The Hz0 vapor is condensed 
+prior to the back pressure regulator. Figure 
+I shows that V205 can be placed in a cruci- 
+ble and allowed to react with the inlet gas 
+stream prior to flowing through the zeolite 
+bed. The conditions of the exposure experi- 
+ments are shown in Table 2. X-Ray powder 
+TABLE 2 
+Conditions of Exposure Experiments 
+P SYSmn 
+P Hz0 
+T 
+N2 flow 
+Zeolite weight 
+Exposure time 
+2 atm 
+1 atm 
+750°C 
+loo-150 cm)/min 
+1mg 
+72 h 
+
+<<<PAGE 3>>>
+132 
+WORMSBECHER, 
+PETERS, 
+AND MASELLI 
+diffraction spectra of the zeolite after expo- 
+sure are obtained using a Philips diffrac- 
+tometer and the spectra are digitized and 
+stored by a computer. Surface area mea- 
+surements of the zeolite are standard five 
+point BET measurements made in the range 
+PO/P = 0.01-0.6. The zeolite used in these 
+experiments is a calcined REY NH: ex- 
+changed to 0.9% NazO. The zeolite was 
+precalcined for 2 h at 538°C to remove phy- 
+sisorbed Hz0 prior to loading into the reac- 
+tor. 
+Electron microprobe vanadium profiles 
+are obtained by dispersing the Si02-A&O3 
+catalyst powder (28% SiOz, 72% A1203 sur- 
+face area = 300 m2/g) in an epoxy resin 
+disk. The disks are ground to expose cata- 
+lyst cross sections and vapor coated with 
+carbon. The vanadium profiles of the cata- 
+lyst cross sections are obtained on a 
+Cameca MBX wavelength dispersive mi- 
+croprobe using a focused-spot electron 
+beam at 20 keV. 
+MgO used in blending experiments is 
+99.5% pure with a surface area of 30 m*/g. 
+RESULTS AND DISCUSSION 
+Mechanism 
+of Poisoning 
+by Vanadium 
+An examination of the laboratory impreg- 
+nation procedure yields important insights 
+into the mechanism of vanadium poisoning. 
+This laboratory 
+impregnation 
+procedure 
+was first developed by Mitchell 
+(20) to 
+mimic field performance of cracking cata- 
+lysts and with minor variations is used 
+throughout the industry. The catalyst is im- 
+pregnated to incipient wetness with an ap- 
+propriate vanadium compound such as V 
+naphthenate or oxalate. The organics are 
+then burned off at 760°C in dry air. MAT 
+results in Table 3 show that no deactivation 
+occurs after this step and typical activities 
+and selectivities of fresh (not steamed) cat- 
+alyst are observed. Only after a steam treat- 
+ment does deactivation occur. It has been 
+suggested that a RE203-V205 eutectic 
+lowers the melting point of zeolite causing 
+zeolite destruction by sintering (II). 
+One 
+TABLE 3 
+Laboratory Impregnation Procedure 
+Step 1 
+Step 2 
+Step 3 
+Impregnate the catalyst to incipient wetness 
+with vanadyl naphthenates in oil or oxa- 
+late in water with the desired level of V 
+Calcine for 4 h at 760°C in dry air 
+0% v 
+0.34% v 
+MAT (~01% conversion) 
+79 
+79 
+Hz/C (wt%) 
+0.14/10 
+0.4/14.5 
+Calcine for 8 h at 732°C 2 atm Hz0 
+0% v 
+0.34% v 
+MAT (~01% conversion) 
+76 
+40 
+HI/C (wt%) 
+0.0413.2 0.2213.2 
+would expect that catalyst deactivation 
+would occur during a dry air calcination if a 
+eutectic formation was responsible for zeo- 
+lite destruction, since 760°C is well above 
+the melting point of V205 (670°C). This sug- 
+gests that the presence of high temperature 
+Hz0 vapor is necessary for catalyst deacti- 
+vation. 
+This is further demonstrated by an exper- 
+iment where vanadium oxalate is impreg- 
+nated on a 20% zeolite/80% Si02-A120J ma- 
+trix sample and calcined in dry air at 760°C 
+for 2 h. The sample is then split into two 
+parts. One part is steamed at 760°C for 5 h 
+in 100% steam, and the other part is 
+calcined in dry air at 760°C for 5 h. The 
+results in Table 4 show significant differ- 
+ences in deactivation. Catalysts with im- 
+pregnated vanadium have no loss of activ- 
+ity or of zeolite content after calcination in 
+dry air at 760°C. After steaming, all vana- 
+dium-impregnated samples deactivated se- 
+verely, with the higher soda material deac- 
+tivating the most severely. Surface area and 
+XRD measurements show the same result, 
+a nearly complete loss of zeolite in the pres- 
+ence of 0.5% V only under steam condi- 
+tions. The results for a catalyst containing 
+USY are similar to results with rare earth 
+stabilized zeolites, except that without va- 
+
+<<<PAGE 4>>>
+VANADIUM 
+POISONING 
+OF CRACKING 
+CATALYSTS 
+133 
+TABLE 4 
+Vanadium Deactivation of 20% Sieve Catalysts as Measured by Surface 
+Area, MAT Activity, and XRD Peak Height 
+Zeolite 
+Catalyst sample 
+As 
+prepared 
+Deactivated 5 h, 760°C 
+Dry air 
+100% Steam 
+0% v 0.5% v 0% v 0.5% v 
+20% REY” 
+MAT (% Conv.) 
+84 
+86 
+81 
+74 
+22 
+S.A. (m*/g) 
+203 
+- 
+191 
+- 
+51 
+% Crystallinity 
+23 
+- 
+16 
+- 
+0 
+20% Low soda calcined REYb 
+MAT (% Conv.) 
+82 
+8.5 
+83 
+74 
+63 
+S.A. (m*/g) 
+183 
+- 
+191 
+- 
+103 
+% Crystallinity 
+20 
+- 
+16 
+- 
+3 
+20% Low soda USY 
+MAT (% Conv.) 
+83 
+85 
+84 
+72 
+40 
+S.A. (m2/g) 
+175 
+- 
+183 
+- 
+83 
+% Crystallinity 
+20 
+- 
+12 
+- 
+2 
+a % Na20 = 3.7. 
+b % Na20 = 0.9. 
+nadium and with steam the USY deacti- 
+vates by dealumination without a large loss 
+of zeolite, while with 0.5% vanadium a 
+nearly complete loss of zeolite is observed, 
+similar to that of the samples containing the 
+rare earth stabilized zeolite. 
+Steam is also necessary to distribute va- 
+nadium through the catalyst particle. A po- 
+rous silica-alumina 
+particle was prepared 
+with 10% zeolite according to Ref. (12, ex- 
+ample 2). Figure 2 shows a vanadium elec- 
+tron microprobe profile after impregnation 
+with vanadium and subsequent calcination. 
+Figure 3 shows the vanadium profile after 
+steam deactivation. The impregnation pro- 
+cedure using vanadium naphthenate in oil 
+distributes the vanadium throughout the 
+particle. During calcination the vanadium 
+6.3 
+microns 
+FIG. 2. Electron microprobe vanadium profile of a zeolite containing silica alumina catalyst (12) after 
+laboratory impregnation and air calcination, but before steam treatment. 
+
+<<<PAGE 5>>>
+134 
+WORMSBECHER, 
+PETERS, 
+AND MASELLI 
+Ah 
+V 
+BGD 
+6.3 
+microns 
+- 
+L 
+FIG. 3. Electron microprobe vanadium profile of a zeolite containing silica alumina catalyst after 
+laboratory impregnation, air calcination, and steam deactivation, 732°C. 2 atm steam, 8 h. 
+migrates to the outer skin of the porous par- 
+ticle, and only after steam deactivation is 
+the vanadium observed to attack the zeolite 
+throughout the catalyst particle. 
+The importance of the steam treatment 
+for vanadium poisoning is further illus- 
+trated by an alternative deactivation proce- 
+dure. Instead of impregnating the vanadium 
+from a liquid system, VzOs powder is physi- 
+cally blended with the catalyst powder. The 
+data in Table 5 show that the catalyst is 
+deactivated after steam treatment without a 
+prior 
+calcination. 
+Only 0.6 g V205 is 
+blended with 99.4 g of catalyst, with the 
+same percentage V used in the impregna- 
+tion experiment, and after steam treatment 
+deactivation 
+occurs to a similar extent. 
+Only one conclusion can be drawn from 
+these experiments: the poison precursor for 
+vanadium deactivation 
+must be volatile. 
+Liquid wetting or some other liquid- or 
+solid-state reaction cannot account for de- 
+activation 
+from small amounts of VZOS 
+powder, or for the failure of V205 to deacti- 
+vate catalysts after a dry calcination. 
+To prove that zeolite destruction 
+is 
+caused by a volatile 
+vanadium species, 
+steam exposure experiments were carried 
+out in a flowing tube reactor. Figure 4a 
+shows the powder pattern of the REY prior 
+to loading in the reactor. Figure 4b shows 
+the powder pattern after exposure only to 
+H20/N2 (1 atm H20) for 72 h at 750°C (no 
+VZ05 in crucible). Figure 4c shows the pow- 
+der pattern after 72 h exposure when V205 
+is placed in the crucible and HlO/N2 are 
+made to flow under the same conditions as 
+above. As evidenced by Fig. 4c, the zeolite 
+completely loses crystallinity 
+verified by a 
+surface area of 41 m*/g. 
+Hence, the poison precursor for vana- 
+dium poisoning must involve H20 vapor 
+and V20s and must be volatile. Compounds 
+of vanadium with oxidation states lower 
+than +5 are not considered since the condi- 
+tions of the regenerator are highly oxidiz- 
+ing. Two oxyvanadium species are possi- 
+ble. 
+V,Os(s) + HzO(v) * 2V02(OH)(v) 
+(1) 
+V205(s) + 3HzO(v) + 2VO(OH)&/). 
+(2) 
+Reaction (2) is more probable since vana- 
+dium is a transition metal and high coordi- 
+TABLE 5 
+The Result of Steam Deactivation (732”C, 8 h, 
+2 Atm H,O) of a Catalyst (20% REY, 80% 
+Silica-Alumina 
+Clay Matrix) Physically 
+Blended (0.34% V) with V20J Powder 
+0% v 
+0.34% v 
+MAT (~01% Conversion) 
+67 
+40 
+Hz (wt% in feed) 
+0.04 
+0.11 
+C (wt% in feed) 
+2.5 
+3.6 
+
+<<<PAGE 6>>>
+VANADIUM 
+POISONING 
+OF CRACKING 
+CATALYSTS 
+135 
+O 
+10 
+20 
+30 
+40 
+so 
+so 
+28, degrees 
+FIG. 4. X-Ray powder spectra of REY (0.9% Na,O) 
+in exposure experiments (a) after 539°C for 2 h prior to 
+loading in reactor, (b) after 1 atm Hz0 partial pressure 
+(total pressure 2 atm) for 72 h, (c) after 1 atm H20 
+partial pressure (2 atm total pressure) with V20S in 
+crucible for 72 h. 
+nations are favored. There is also thermo- 
+chemical 
+evidence for VO(OH)3 being 
+formed from the reaction of V205 with H20. 
+Yannopoulos (13) has determined the equi- 
+librium vapor pressure of the VZO,--H~O 
+system at various temperatures using a 
+flowing tube reactor. In that work the equi- 
+librium constant for reaction (2) as a func- 
+tion of temperature was measured to be 
+log Kp = 9619.1(-+ 116.0)/T 
+- 0.225 k 0.023. (3) 
+For a typical FCC regenerator temperature 
+at 970 K (1285”F), KP for this reaction is 
+7.22 x lo-“. 
+A typical water partial pres- 
+sure of 0.4 atm (20% steam at 2 atm total 
+pressure) yields an equilibrium vapor pres- 
+sure of 2.15 x 10e6 atm for VO(OH)3 or -1 
+ppm. Since FCC regenerator temperatures 
+vary from 950 to 1000 K the concentration 
+of VO(OH)3 at 20% HZ0 will vary from 1 to 
+10 ppm. 
+It can be inferred by analogy with phos- 
+phoric acid that VO(OH)3 will be a strong 
+acid. We will refer to VO(OHh as vanadic 
+acid with the formula HjV04. Since Y-type 
+zeolites with !$/A1 ratio = 2.5 are known to 
+be unstable to acid (9), it is reasonable that 
+H3V04 destroys zeolite crystallinity 
+(and 
+activity) 
+by high temperature acid-cata- 
+lyzed hydrolysis with the presence of steam 
+in the regenerator. 
+The mechanism of vanadium poisoning 
+of cracking catalysts can be summarized as 
+follows: Vanadium is present in the oil as 
+VO: porphyrins. The vanadium is depos- 
+ited on the catalyst with coke. In the regen- 
+erator the coke is burned off, and the vana- 
+dium is oxidized to V205. Several reactions 
+are possible. V205 may deposit on the cata- 
+lyst matrix and in this form will not destroy 
+zeolite. The V205 can react with Hz0 vapor 
+present in the regenerator, forming vanadic 
+acid. Vanadic acid reacts with the zeolite 
+and destroys crystallinity, 
+reducing catalyst 
+activity. The vanadic acid may also react 
+with the catalyst matrix. After destruction 
+of the zeolite, the VZOs may combine with 
+rare earth compounds left as debris. The 
+formation of rare earth vanadates has been 
+previously described (12). 
+Design of a Vanadium 
+Scavenger 
+A material which will effectively scav- 
+enge H3V04 before it reacts with the zeolite 
+must have a sticking coefficient for reaction 
+with H3V04 that is much greater than that 
+for the reaction with zeolite. Since H3V04 
+is a strong acid the obvious choice is a basic 
+oxide such as alkaline earths. The calcu- 
+lated equilibrium constant from the thermo- 
+chemical data (14) strongly favors the for- 
+mation of vanadates at 677°C (970 K) by 
+reaction of MgO or CaO with H3V04. 
+2MgO(s) + 2HjV04(v) +K(970 
+K, = “j* ’ loI9 ’ 
+Mg2V2WS) 
++ 3H2W) 
+(4) 
+2CaO(s) + 2HjVOd(v) ( 
+K(970 
+K) = 6.78 X IO= 
+l 
+ca2Vzo7(S) 
++ 3&0(V). 
+(5) 
+Alkali oxides are less suitable scavengers 
+for H3V04 because of their well-known del- 
+eterious effects on cracking catalysts (15). 
+Table 6 shows vanadium deactivation MAT 
+
+<<<PAGE 7>>>
+136 
+WORMSBECHER, 
+PETERS, 
+AND MASELLI 
+TABLE 6 
+Performance of MgO Blended with Cracking Catalyst (20% REY, 80% 
+Silica/Clay Matrix) 
+MAT (% conversion) 
+0% MgO 
+20% MgO 
+Coke and gas (Hz) selectivity 
+(wt%) of feed 
+0% MgO 
+20% MgO 
+6 
+Carbon 
+H2 
+Carbon 
+0% v 
+72 
+67 
+0.06 
+2.2 
+0.06 
+2.3 
+0.34% v 
+40 
+- 
+0.11 
+3.2 
+- 
+- 
+0.67% V 
+14 
+55 
+0.22 
+0.8 
+0.05 
+1.8 
+1.34% v 
+- 
+40 
+- 
+- 
+0.11 
+1.5 
+data when MgO powder is physically 
+blended with cracking catalyst. Catalysts 
+blended with 20% MgO at 1.34% vanadium 
+have improved selectivity for gas and coke 
+and have the same activity as the catalyst 
+without MgO at 0.34% vanadium. These 
+results imply that a refiner could quadruple 
+the vanadium level on the catalyst and 
+maintain activities and selectivities. 
+Simply adding MgO or CaO to a FCC 
+unit is not suitable since these particles are 
+inherently soft and light. They would attrit 
+and be elutriated from the unit before rea- 
+sonable levels of MgO could be accumu- 
+lated in the circulating catalyst inventory. 
+Depending on the vanadium level, between 
+5 and 20% of the scavenger is required in 
+inventory to effectively inhibit vanadium 
+poisoning. Consequently, it is required that 
+the catalyst additive be physically 
+hard 
+enough to be retained in a FCC unit. 
+The scavenger also needs to have a high 
+capacity for vanadium, a property related 
+to the pore structure of the material. The 
+partial molar volume of MgO is 11 cm31 
+mole, while the partial molar volume of 
+MgzV207 is approximately 
+86 cm3/mole, 
+based on the pyrochlore structure. This rep- 
+resents an eightfold expansion as the vana- 
+date is formed. If the pores of MgO are 
+small, the pores will quickly plug and de- 
+crease the further reaction of H3V04 with 
+MgO. After the pores are plugged, further 
+reaction of H3V04 is governed by a rela- 
+tively 
+slow solid-state diffusion. 
+Large 
+pores, high pore volume, and high surface 
+area, therefore, favor improved scaveng- 
+ing. Preliminary experiments indicate that 
+MgO must have a pore volume greater than 
+0.1 cm3/g, and that the average pore diame- 
+ter must be greater than 400 A for effective 
+vanadium scavenging at high vanadium lev- 
+els. Similar pore structure effects have 
+been described for the reaction CaO + SO3 
+& CaS04 (16). 
+Poisoning of the scavenger can occur due 
+to the presence of sulfur oxides in the flue 
+gases of the regenerator. The SO3 can react 
+with the alkaline earth oxides to form 
+sulfates in competition with H3V04. The 
+equilibrium constants for the reactions of 
+MgS04 and CaS04 with vanadic acid calcu- 
+lated from thermodynamic data (14) are 
+2CaS04(s) + 2H3V04(v) < K(970 
+K, = 472’5 
+atm3 
++ 
+Ca2V207(s) + 2S03(v) + 3HzO(v) 
+(6) 
+W&M4 
++ 2HjVo&) 
+< 
+K(970 
+K) = 6.675 x ld 
+atm3 + 
+Mg2V20,(s) + 2S03(v) + 3HzO(v). 
+(7) 
+Assuming a worst case in which all the SO, 
+is assumed to be SO3 at a level of 2000 ppm 
+in the regenerator with 20% Hz0 and 1 ppm 
+H3V04 and at the relatively low tempera- 
+ture of 970 K, the quantity (S03)2(H20)3/ 
+
+<<<PAGE 8>>>
+VANADIUM 
+POISONING 
+OF CRACKING 
+CATALYSTS 
+137 
+(HjV0J2 can be calculated as 
+[S0,12[H2013 
+WhVOJ 
+= 2.215 x IO5 atm3 (8) 
+and compared to the equilibrium constant. 
+The equilibrium constant, in the case of cal- 
+cium (Eq. (6)), is much smaller than 
+[S03]Z[H20]3/[H3V04]2 
+and the formation of 
+calcium sulfate is favored. The opposite is 
+true for the case with magnesium (Eq. (7)), 
+and magnesium vanadates are favored. In 
+very high temperature regenerators, 1060 K 
+(1450”F), the formation 
+of Ca2V207 be- 
+comes more favorable, and the perfor- 
+mance of a CaO-based scavenger will im- 
+prove. At current 
+practical 
+regenerator 
+temperatures, 
+Mg2V207 is favored and, 
+consequently, 
+a magnesium oxide-based 
+vanadium scavenger is preferred. 
+An effective vanadium scavenger for use 
+in FCC units must have all the typical phys- 
+ical properties of standard cracking cata- 
+lysts: bulk density, attrition resistance, cor- 
+rect particle size distribution, 
+etc. These 
+properties are not entirely compatible with, 
+for example, the optimum pore structure, 
+and some degree of compromise must be 
+achieved. A material meeting the various 
+requirements has been described (17). 
+REFERENCES 
+1. Ritter, R. E., Rheaume, L., Welsh, W. A., and 
+Magee, J. S., Oil & Gas J., 103 (July 6, 1981). 
+2. Jaras, S., Appl. Cutal. 2, 207 (1982). 
+3. Agrawal, B. B., and Gulati, F. B., Pet. Hydrocar- 
+bons 6, 193 (1972). 
+4. Gall. J. W.. Nielsen, R. H., McKay, D. L., and 
+5. 
+10. 
+II. 
+12. 
+13. 
+Mitchell, N. W., paper presented at 1982 NPRA 
+Annual meeting, San Antonio, Tex.; McKay, D. 
+L. Hydrocarbon 
+Process., 
+97 (Sept. 1977). 
+Zandona, 0. J., Busch, L. E., Hettinger, W. P., 
+Jr., and Krock, R. P., Oil & Gas .I., 82 (March 22, 
+1982). 
+Dean, R., Mauleon, J. L., and Letzsch, W. S., Oil 
+& Gus J.,75 (Oct. 4, 1982); 168 (Oct. 11, 1982). 
+Mitchell, B. R., and Swift, E. S., U.S. Patent 
+4,101,417 (1978). 
+Ocelli, M. L., and Swift, E. S., U.S. Patent 
+4,466,884 (1984). 
+McDaniel, C. V., and Maher, P. K., in “Zeolite 
+Chemistry and Catalysis” (J. A. Rabo, Ed.), ACS 
+Monograph 171. Amer. Chem. Sot., Washington, 
+D.C., 1976. 
+Mitchell, B. R., Ind. Eng. Chem. Prod. Res. Deu. 
+19, 209 (1980). 
+Pompe, R., Jaras, S., and Vannerberg, N-G, Appl. 
+Catal. 13, 171 (1984). 
+Chiang, R. L., and Seese, M. A., U.S. Patent 
+4,499,197 (1985). 
+Yannopoulos, L. N., J. Phys. 
+Chem. 72, 3293 
+(1968). 
+14. Dean, J. A. (Ed.) “Lange’s Handbook of Chemis- 
+try,” 12th ed. McGraw-Hill, 
+New York, 1979. 
+15. Letsch, W. S., and Wallace, D. N., Oil & Gus J., 
+56 (Nov. 29, 1982). 
+16. Bhatia, S. K., and Perlmutter, D. D.. AIChEJ. 
+27, 
+226 (1981). 
+17. Wormsbecher, R. F., Peters, A. W., and Maselli, 
+J. M., paper presented at Ninth North American 
+Catalyst Society Meeting, Houston, Tex., March 
+18-21. 1985. 

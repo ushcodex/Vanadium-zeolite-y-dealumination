@@ -1,0 +1,3 @@
+3D atomistic model of faujasite structure zeolite: (a) with full framework aluminium atoms; (b) with partial framework aluminium atoms.
+
+SOURCE: Etim, Xu, Ullah and Yan (2016), Journal of Colloid and Interface Science, 463, 188-198, Figure 12

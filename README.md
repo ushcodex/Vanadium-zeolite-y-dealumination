@@ -1,49 +1,51 @@
 # Vanadium-zeolite-y-dealumination
 
-> **A Density Functional Theory (DFT) Investigation of the Mechanism of Zeolite Y Deactivation by Vanadium in Residue Fluid Catalytic Cracking (RFCC) Units of Nigerian Refineries**
+> **A Comparative Density Functional Theory Study of Vanadic Acid and Steam
+> Adsorption on the Brønsted Acid Site of Zeolite Y: Evidence for the Mechanism
+> of Vanadium-Promoted Dealumination in Residue Fluid Catalytic Cracking**
 
-**Author:** Ahmad Usman Shehu  
-**Affiliation:** Department of Chemical Engineering, Faculty of Engineering, Ahmadu Bello University, Zaria, Kaduna State, Nigeria  
+**Author:** Ahmad Usman Shehu (U19CE1068)
+**Affiliation:** Department of Chemical Engineering, Faculty of Engineering,
+Ahmadu Bello University, Zaria, Kaduna State, Nigeria
+
+**New here? Read `GUIDE.md` first.** It says which file to open in which program
+and what to export. The thesis is `deliverables/thesis_ABU.docx`, built from the
+chapters in `writing/thesis_src/`. Earlier drafts are in `writing/_superseded/`
+and must not be submitted; the reason is in `writing/_superseded/README.md`.
 
 ---
 
 ## Overview
 
-This repository contains the computational chemistry calculations, structural models, analysis scripts, and dissertation chapters investigating the elementary mechanisms of Zeolite Y (faujasite) hydrothermal deactivation and dealumination under the influence of volatile vanadium species (vanadic acid, $\text{H}_3\text{VO}_4$) compared to a hydrothermal steam-only ($\text{H}_2\text{O}$) baseline.
+This repository contains the computational chemistry calculations, structural
+models, analysis scripts and thesis chapters for a study of the elementary
+mechanism by which zeolite Y (faujasite) is destroyed in a residue fluid
+catalytic cracking regenerator. The study compares the adsorption of volatile
+vanadic acid (H3VO4) on the zeolite Bronsted acid site against the adsorption of
+steam (H2O) on the same site, using semi-empirical (GFN2-xTB) and
+dispersion-corrected hybrid density functional theory (DFT).
 
-The primary goal of this research is to resolve the atomistic pathway through which regenerator-borne vanadium accelerates framework breakdown, identifying transition states, activation barriers, and reaction energetics using semi-empirical (GFN2-xTB) and dispersion-corrected hybrid Density Functional Theory (DFT).
+The principal finding is that vanadic acid binds to the acid site more strongly
+than water by about 14.5 kJ/mol, a margin that two density functionals reproduce
+to within 0.25 kJ/mol. The extraction of framework aluminium was not established
+at the density functional level and is reported as such.
 
 ---
 
-## Repository Structure
+## Repository layout
 
 ```
-├── .gitignore               # Excludes archives and calculation temporary scratch files
-├── README.md                # Project documentation and guide
-├── figures/                 # Rendered figures, reaction profiles, and schematics
-├── simulation/              # Quantum chemical calculation input decks, coordinates, and outputs
-│   ├── 01_models/           # Zeolite Y cluster models and reference structures
-│   ├── 02_tier1/            # Tier 1 stationary points, transition states (V-TS1, V-TS2, V-TS3, W-TS)
-│   ├── analysis/            # Scripts for energy profiling and geometric property analysis
-│   ├── audit/               # Saddle point validation and audit reports
-│   ├── cloud_bus/           # Cloud calculation submission and transfer scripts
-│   ├── cloud_opt/           # Optimization calculation configurations
-│   ├── cloud_results/       # Completed optimization outputs
-│   ├── 03_tier2_completion/ # Resumable completion package: frequencies, counterpoise,
-│   │                        #   PBE0 single points on relaxed geometries, and the eight
-│   │                        #   states the Tier 2 plan never ran. Start at
-│   │                        #   README_RUNBOOK.md; evidence in AUDIT_FINDINGS.md
-│   ├── local_results/       # Local workstation calculations
-│   ├── molfiles/            # Curated molecular structures with explicit covalent connectivity
-│   ├── orca_templates/      # Calculation input templates for ORCA
-│   ├── xyz_seeds/           # Coordinate seeds for ORCA and xTB calculations
-│   ├── README.txt           # Detailed file and protocol guide for simulations
-│   └── verify_tier1.py      # Standard-library audit script for verifying ORCA outputs
-└── writing/                 # Thesis documentation and writeups
-    └── markdown/            # Markdown source chapters (Introduction, Literature Review, References)
+deliverables/          the thesis document
+figures/               original figures, plus figures taken from the literature
+writing/thesis_src/    the chapters the thesis is built from
+writing/Sources/       source PDFs, their extracted text, images and captions
+writing/_superseded/   earlier drafts: do not submit
+simulation/            the calculations
+GUIDE.md               which file to open in which program
 ```
 
 ---
+
 
 ## Key Reaction Pathways
 
@@ -72,6 +74,20 @@ python simulation/verify_tier1.py simulation/02_tier1 --dist
 
 ---
 
-## Citation & License
+## Reproducing the results
 
-This work forms part of a B.Eng. research project submitted to Ahmadu Bello University, Zaria. Please reference this repository and author when citing or utilizing the models and dataset.
+```bash
+python3 simulation/analysis/parse_orca.py     # read every ORCA log into a register
+python3 simulation/analysis/build_tables.py   # rebuild the result tables
+python3 figures/make_figures.py               # redraw the original figures
+python3 build_thesis_abu.py                   # rebuild the thesis document
+```
+
+Every number in the thesis traces back to a log file named in
+`simulation/analysis/RESULTS.md`.
+
+## Citation
+
+This work forms part of a B.Eng. research project submitted to the Department of
+Chemical Engineering, Ahmadu Bello University, Zaria. Please reference the
+repository and the author when citing the models or the dataset.

@@ -1,0 +1,683 @@
+[
+ {
+  "pdf": "1-s2.0-S2666821123001217-main.pdf",
+  "textlayer_captions": 25,
+  "images": [
+   {
+    "page": 3,
+    "xref": 51,
+    "w": 312,
+    "h": 202,
+    "caption": "Fig. 1. A scheme showing the different ionic interaction models evaluated. Analysis of HBD\u2019s C-C bond consistency Computational details Further analysis of the hydrogen bond donors to understand the consistency of their bond lengths irrespective of their levels of calcula\u00ad tion was evaluated to understand the suitability or implications of employing the use of different levels of computation for this kind of application. The semi-empirical, Hartree Fock, and density functional theory calculations were used in the analysis of glycerol as our deep eutectic solvent hydrogen bond donor."
+   },
+   {
+    "page": 4,
+    "xref": 65,
+    "w": 396,
+    "h": 206,
+    "caption": "Table 2 summarizes a list of significant peaks identified from the theoretical calculation approaches and the ones experimentally collected. The spectra patterns shown in Fig. 3 and the respective peaks presented in Table 2 for the glycerol molecule\u2019s PM3, HF, and DFT calculations were generally found to have shown similar trend with one Analysis of the results collected from the study shows an insignificant"
+   },
+   {
+    "page": 5,
+    "xref": 105,
+    "w": 396,
+    "h": 226,
+    "caption": "Fig. 3. IR analysis of glycerol using (a) PM3, (b) HF, and (c) DFT calculation."
+   },
+   {
+    "page": 6,
+    "xref": 130,
+    "w": 420,
+    "h": 111,
+    "caption": "Fig. 4. A scheme showing the consistency obtained for the electronic energy and Cl-N bond length across different ionic interaction models at the different levels of calculations."
+   },
+   {
+    "page": 6,
+    "xref": 126,
+    "w": 360,
+    "h": 285,
+    "caption": "Fig. 5. The optimized geometry of choline chloride (CHL) was obtained from DFT calculation with (A) no bond, (B) generic bond and (C) single bond for the ionic interaction. different modeling approaches for ionic interactions."
+   },
+   {
+    "page": 7,
+    "xref": 149,
+    "w": 216,
+    "h": 141,
+    "caption": "Fig. 6. The optimized geometry of glycerol (GCL) was obtained from DFT calculation. Further analysis of the bond length reports in Table 7 shows the strength of the OH\u2013Cl-HO interaction, which was evident in its bond length obtained for its interaction with OH21-Cl1 and OH12-Cl1, which were found to be relatively low compared to other O\u2013H like OH8 and OH1 that were longer. The bond length implies that there is a weak interaction of Cl with H8 and H1 compared to H21 and H12, which were stronger, in agreement with the literature [49] that established the de\u00ad pendency of bond energy on its bond length. A close range of shorter bond lengths was also found for the case of HO\u2013Cl-OH and CH\u2013Cl-HO, which also show a strong interaction with H21 and H12, unlike the case of other H-atoms (H8 and H1) in other O\u2013H functions. Other in\u00ad teractions like Cl-OH, Cl-CH2, and Cl-HC that were investigated were found to have shown much weaker interaction for all the H-atoms except for the one of the H-atom, which offers a better interaction due to its shorter bond length relatively found in other H-atoms of the alcohol function. So, in the evaluation of the Cl-X (X = HO, OH, CH, HC, CH2, H2C), the OH\u2013Cl-HO shows the best interaction with a stronger binding energy of BEcorr = \u22120.49 eV and shorter bond length for Cl-atom with two other H-atoms of the alcohol (OH) functions in GLC, according to the literature [49]."
+   },
+   {
+    "page": 8,
+    "xref": 180,
+    "w": 420,
+    "h": 161,
+    "caption": "Fig. 7. The most stable geometric structure of the DES for the Cl-X interaction: (A) After geometrical optimization (one view), (B) After geometrical optimization (another view), and (C) Before geometrical optimization (one view)."
+   },
+   {
+    "page": 8,
+    "xref": 176,
+    "w": 396,
+    "h": 136,
+    "caption": "Table 8 Stability of the CHL-GLC deep eutectic solvent via H as a point of interaction using DFT (Note that BEcorr is the BSSE corrected binding energies and BEncorr is the uncorrected binding energies). Label Interact Name BEcorr (eV) BEncorr (eV) Err (eV) OH21-Cl1 (\u00c5) OH12-Cl1 (\u00c5) OH8-Cl1 (\u00c5) OH1-Cl1 (\u00c5) OH\u2013H-HO H X6 \u22120.79 \u22120.95 0.16 5.03 2.16 2.21 2.10 CH-H-HO H X3 \u22120.62 \u22120.73 0.11 5.01 2.15 2.19 2.17 H-OH H X5 \u22120.59 \u22120.68 0.09 2.14 5.39 7.06 2.16 HO-H-OH H X4 \u22120.49 \u22120.56 0.07 2.25 2.28 5.43 2.23 H-CH2 H X1 \u22120.44 \u22120.48 0.04 2.33 5.46 6.92 2.21 H-HC H X2 \u22120.34 \u22120.39 0.05 2.28 5.29 6.11 2.22"
+   },
+   {
+    "page": 9,
+    "xref": 188,
+    "w": 396,
+    "h": 154,
+    "caption": "Fig. 10 presents the geometrical structure of the CHL-GLC deep eutectic solvent (DES) for the optimized or relaxed structure and the unrelaxed structure of best interaction (O\u2013OH) obtained for the investigation. A probe into the optimized structure, as shown in Fig. 10, shows that the strength of the O\u2013OH interaction, which was evident in its bond length obtained for its interaction for OH12-Cl1 and OH1-Cl1, which were found to be relatively low compared to other O\u2013H like Specifically, the points of interaction identified on the HBD (H on GLC) and HBA (Cl on CHL) molecules, as indicated by these maps, did not provide sufficient information to determine the number of hydrogen"
+   },
+   {
+    "page": 10,
+    "xref": 224,
+    "w": 396,
+    "h": 154,
+    "caption": "Table 10 Stability of the CHL-GLY DES via oxygen(O) as a point of interaction using DFT (Note that BEcorr is the BSSE corrected binding energies and BEncorr is the uncorrected binding energies). Label Int Name BEcorr (eV) BEncorr (eV) Err (eV) OH21-Cl1 (\u00c5) OH12-Cl1 (\u00c5) OH8-Cl1 (\u00c5) OH1-Cl1 (\u00c5) O-OH O X5 \u22120.63 \u22120.74 0.11 5.24 2.09 6.75 2.15 CH\u2013O-HO O X3 \u22120.48 \u22120.57 0.09 2.48 3.95 6.30 2.01 O-HC O X2 \u22120.45 \u22120.51 0.06 2.12 5.60 7.08 2.25 HO-O-OH O X4 \u22120.39 \u22120.46 0.07 2.19 4.91 2.16 5.66 O-CH2 O X1 \u22120.27 \u22120.38 0.11 4.61 6.21 3.81 2.10 OH-O-HO O X6 0.09 2.9E-3 0.09 6.36 7.70 10.12 6.95"
+   },
+   {
+    "page": 11,
+    "xref": 239,
+    "w": 360,
+    "h": 276,
+    "caption": "Fig. 11. A scheme showing the different DES formation routes explored the thermodynamically feasible one obtained from our study, including the IR spectra for the CHL:GLC deep eutectic solvent (DES) obtained for the most energetically stable formation routes."
+   },
+   {
+    "page": 11,
+    "xref": 235,
+    "w": 394,
+    "h": 220,
+    "caption": "Fig. 12. A map showing the electrostatic potential interaction for glycerol (HBD) and choline chloride (HBA) for the most stable structures. substantial binding energy (or formation energy), highest exothermi\u00ad city, spontaneity, and exergonicity, leading to the formation of an energetically stable DES from CHL and GLC for any potential applica\u00ad tions. Moreover, the deductions from different levels of calculation explored in our study support the validity of the H-X pathway consistently."
+   }
+  ]
+ },
+ {
+  "pdf": "Carlos A. Trujillo (1997). The Mechanism of Zeolite Y Destruction by Steam in the Presence of Vanadium..pdf",
+  "textlayer_captions": 16,
+  "images": [
+   {
+    "page": 4,
+    "xref": 30,
+    "w": 192,
+    "h": 318,
+    "caption": "FIG. 1. ESR spectra of (a) aqueous vanadyl ion, (b) Z7 imp. 0.4%V calcined at 500\u25e6C."
+   },
+   {
+    "page": 5,
+    "xref": 36,
+    "w": 325,
+    "h": 190,
+    "caption": "FIG. 2. Calibration curve. ESR signal intensity versus vanadium mass. in the supercage and another probably in the \u03b2-cage. For both positions, the vanadium has a distorted tetrahedral or a pyramidic coordinated symetry."
+   },
+   {
+    "page": 6,
+    "xref": 42,
+    "w": 349,
+    "h": 221,
+    "caption": "FIG. 3. Percentage of vanadium IV on the total vanadium in the sample as a function of temperature of calcination for impregnated zeolites. indicate that at 300\u25e6C more than 90% of the original VIV that depends on temperature. At the normal temperatures present in the regenerator of a FCC unit (720\u25e6C), most of the vanadium on the zeolite must exist as VV."
+   },
+   {
+    "page": 6,
+    "xref": 43,
+    "w": 328,
+    "h": 220,
+    "caption": "FIG. 4. Percentage of the ESR signal intensity I remaining after calcination of exchanged zeolites as a function of temperature. I\u25e6is the ESR signal intensity of the fresh exchanged solid."
+   },
+   {
+    "page": 7,
+    "xref": 47,
+    "w": 350,
+    "h": 207,
+    "caption": "FIG. 5. ESR spectra of Z7 imp. 0.4%V calcined in air at 700\u25e6C and then evacuated at 450\u25e6C, 10\u22123 Pa for 8 h. that the ESR signal of the isolated vanadyl ion is now su- perimposed on a very broad signal assigned to amorphous dispersed V2O4. The small peak at the low \ufb01eld superim- posed on the broad signal is due to iron impurity present in the sample."
+   },
+   {
+    "page": 7,
+    "xref": 48,
+    "w": 231,
+    "h": 317,
+    "caption": "Figures 6 and 7 show the DRS spectra of Z6 imp. 0.2%V and Z7 imp. 0.2%V calcined at 300, 500, and 700\u25e6C. The spectra correspond with the observed color of the sam- ples. The impregnated zeolites calcined at 300\u25e6C are brown- yellow; as the calcination temperature increases the color loses intensity and at 500\u25e6C the samples are almost white. The DRS spectra of impregnated zeolites calcined at 300\u25e6C show an intense absorption between 800 and 375 nm. This absorption is strongly reduced and completely disappears in the samples calcined at 500 and 700\u25e6C, respectively. In the UV region the spectra show two peaks: (1) between 212 and 209 nm and (2) between 266 and 258 nm. The higher the calcination temperature, the higher the energy of the absorption, for samples calcined at 300\u25e6C, peak 1 appears at 212 nm and peak 2 at 266 nm, while for samples cal- cined at 700\u25e6C, peak 1 appears at 209 nm and peak 2 at 258 nm."
+   },
+   {
+    "page": 8,
+    "xref": 54,
+    "w": 231,
+    "h": 326,
+    "caption": "FIG. 7. DRS spectra of Z7 imp. 0.2%V calcined at (a) 300\u25e6C, (b) 500\u25e6C, and (c) 700\u25e6C. show a very broad and weak band centered at 750 nm as- signed to vanadyl d\u2013d transitions (22). The features in the UV region are similar, but less intense compared to those found in the calcined samples. Calcination of the exchanged zeolites at 300\u25e6C produces brown solids with strong ab- sorption over the whole range of the visible region and an increase of the absorption in the UV region. At this temper- ature Z6 exc. 0.82%V spectrum presents two well-de\ufb01ned peaks at 219 and 267 nm and Z7 exc. 0.70%V peaked at 212 and 258 nm. Calcination at higher temperatures re- duces the absorption in the visible region in the same way as impregnated samples. The samples calcined at 500\u25e6C are pale beige in color and at higher temperatures they are white."
+   },
+   {
+    "page": 8,
+    "xref": 55,
+    "w": 231,
+    "h": 314,
+    "caption": "FIG. 8. DRS spectra of Z6 exc. 0.82%V (a) fresh and calcined at (b) 300\u25e6C, (c) 500\u25e6C, and (d) 700\u25e6C."
+   },
+   {
+    "page": 9,
+    "xref": 59,
+    "w": 215,
+    "h": 342,
+    "caption": "FIG. 9. DRS spectra of Z7 exc. 0.70%V (a) fresh and calcined at (b) 300\u25e6C, (c) 500\u25e6C, and (d) 700\u25e6C. vanadium compounds in Fig. 12 display two bands between 200 and 300 nm, due to charge transfer transitions of the V\u2013O bond allowed in the three compounds studied. Con- trary to suggestions before (24, 26) it is not possible to dif- ferentiate between VIV and VV for the absorption in the UV region."
+   },
+   {
+    "page": 9,
+    "xref": 60,
+    "w": 230,
+    "h": 312,
+    "caption": "FIG. 10. DRS spectra of 0.2%V on silica calcined at (a) 300\u25e6C, (b) 500\u25e6C, and (c) 700\u25e6C."
+   },
+   {
+    "page": 10,
+    "xref": 64,
+    "w": 231,
+    "h": 314,
+    "caption": "TABLE 2 coordinated in the cationic positions of the zeolites. They also found that acid sites in zeolites act as powerful traps for migrating ions and that the stabilization of VIV requires acid sites stronger than those present in H-(Ga)ZSM-5 (27\u201330)."
+   },
+   {
+    "page": 11,
+    "xref": 68,
+    "w": 423,
+    "h": 242,
+    "caption": "FIG. 12. DRS spectra of some pure vanadium compounds. helps in the migration it is not indispensable. After 500\u25e6C the number of acid sites that can keep vanadium as VIV di- minishes appreciably. For vanadium on silica and alumina, ESR signals decrease with the temperature of calcination until values are just detectable. Silica and alumina do not have the necessary cationic exchange capacity to stabilize V as VIV in oxidizing conditions."
+   },
+   {
+    "page": 11,
+    "xref": 69,
+    "w": 203,
+    "h": 328,
+    "caption": "FIG. 13. DRS spectra of Z6 imp. 0.4%V (a) and Z7 imp. 0.4%V (b), calcined to 700\u25e6C and then evacuated at 450\u25e6C, 10\u22123 Pa."
+   },
+   {
+    "page": 14,
+    "xref": 80,
+    "w": 242,
+    "h": 82,
+    "caption": ""
+   },
+   {
+    "page": 14,
+    "xref": 81,
+    "w": 232,
+    "h": 101,
+    "caption": ""
+   }
+  ]
+ },
+ {
+  "pdf": "DAAEFinalReviewFUEL14December2022.pdf",
+  "textlayer_captions": 15,
+  "images": [
+   {
+    "page": 29,
+    "xref": 134,
+    "w": 511,
+    "h": 467,
+    "caption": "Fig. 4 Reaction pathways using functional additives in RFCC. Reproduced with permission from [96] 511 copyright {2017} Elsevier. 512 29"
+   },
+   {
+    "page": 35,
+    "xref": 152,
+    "w": 743,
+    "h": 306,
+    "caption": "Fig. 5 Mechanisms of the retarding effects of basic nitrogen compounds on the Br\u00f8nsted acid centres. Reproduced with permission from [12] 612 copyright {2008} Elsevier. 613 35"
+   },
+   {
+    "page": 44,
+    "xref": 196,
+    "w": 126,
+    "h": 105,
+    "caption": "Fig. 9 An illustration of the mechanisms of the vanadium poisoning catalysts. 729 44"
+   },
+   {
+    "page": 44,
+    "xref": 195,
+    "w": 272,
+    "h": 151,
+    "caption": ""
+   }
+  ]
+ },
+ {
+  "pdf": "Etim(2015). Effect of vanadium contamination on the framework and micropore structure of ultra stable Y-zeolite..pdf",
+  "textlayer_captions": 18,
+  "images": [
+   {
+    "page": 1,
+    "xref": 238,
+    "w": 138,
+    "h": 184,
+    "caption": ""
+   },
+   {
+    "page": 4,
+    "xref": 17,
+    "w": 185,
+    "h": 182,
+    "caption": "Fig. 1 Structure of Y-zeolite showing average micropore width in the supercage formed by 12- membered ring During FCC process zeolite catalysts are exposed to certain conditions that can modify important physiochemical properties such as aluminum content and acids strength. Such changes in zeolite composition and properties have significant impacts on catalytic activity, selectivity and stability."
+   },
+   {
+    "page": 18,
+    "xref": 89,
+    "w": 146,
+    "h": 118,
+    "caption": "Fig. 8 TEM micrographs of zeolite samples (a) parent-USY; (b) 0.3wt. % V-USY; (c) 0.5wt. % V-USY; (d)-(f) HRTEM of (a), (b) and (c) respectively Vibrational spectroscopies, such as IR spectroscopy of zeolitic systems provide information about the dynamics of zeolite frameworks and interaction of guest species with catalytically active sites, and IR spectroscopic measurements are widely employed in the studies of zeolitic materials [47]. Fig. 9(I) refers to transmittance IR spectra of our contaminated and passivated zeolite samples and parent-USY. The displayed region furnishes information related to v(T-O) vibration consisting both symmetrical (700-850 cm-1) and asymmetrical (1000-1200 cm-1), and aluminosilicate tetrahedral bending vibrations [48]. As can be seen from the figure, the structural disturbance is reflected by marked changes in the intensity of the bands which is indicative of structural/alteration damage. Highly perturbed structures show shift in vibration 17"
+   },
+   {
+    "page": 18,
+    "xref": 91,
+    "w": 146,
+    "h": 118,
+    "caption": ""
+   },
+   {
+    "page": 18,
+    "xref": 93,
+    "w": 146,
+    "h": 118,
+    "caption": ""
+   },
+   {
+    "page": 18,
+    "xref": 90,
+    "w": 146,
+    "h": 118,
+    "caption": ""
+   },
+   {
+    "page": 18,
+    "xref": 92,
+    "w": 146,
+    "h": 118,
+    "caption": ""
+   },
+   {
+    "page": 18,
+    "xref": 94,
+    "w": 146,
+    "h": 118,
+    "caption": ""
+   },
+   {
+    "page": 24,
+    "xref": 209,
+    "w": 134,
+    "h": 132,
+    "caption": "Fig. 12 3D atomistic model of faujasite structure zeolite (a) with full framework aluminum atoms (b) with partial framework aluminum atoms 23"
+   },
+   {
+    "page": 24,
+    "xref": 208,
+    "w": 133,
+    "h": 132,
+    "caption": ""
+   },
+   {
+    "page": 33,
+    "xref": 209,
+    "w": 152,
+    "h": 150,
+    "caption": ""
+   },
+   {
+    "page": 33,
+    "xref": 208,
+    "w": 151,
+    "h": 150,
+    "caption": ""
+   }
+  ]
+ },
+ {
+  "pdf": "L.A. Pine. (1990). Vanadium-catalyzed destruction of USY zeolites.pdf",
+  "textlayer_captions": 11,
+  "images": []
+ },
+ {
+  "pdf": "Metal Contamination of Cracking Catalysts. 1. Synthetic Metals Deposition on Fresh Catalysts..pdf",
+  "textlayer_captions": 3,
+  "images": []
+ },
+ {
+  "pdf": "Occelli, Mario L.. (1991). Vanadium-Zeolite Interactions in Fluidized Cracking Catalysts.pdf",
+  "textlayer_captions": 21,
+  "images": [
+   {
+    "page": 1,
+    "xref": 127,
+    "w": 80,
+    "h": 113,
+    "caption": ""
+   },
+   {
+    "page": 29,
+    "xref": 287,
+    "w": 651,
+    "h": 437,
+    "caption": ""
+   },
+   {
+    "page": 32,
+    "xref": 307,
+    "w": 648,
+    "h": 432,
+    "caption": ""
+   },
+   {
+    "page": 34,
+    "xref": 313,
+    "w": 648,
+    "h": 432,
+    "caption": "FIG. 21. An FCC retention of gasoline make in the presence of V after addition of a metal scavenger: (A) Sepiolite and (B) alumina [7, 81. Y u"
+   }
+  ]
+ },
+ {
+  "pdf": "Pathways for Y Zeolite Destruction The Role of Sodium and Vanadium.pdf",
+  "textlayer_captions": 19,
+  "images": [
+   {
+    "page": 3,
+    "xref": 7,
+    "w": 218,
+    "h": 164,
+    "caption": "TABLE 2 Properties of Steamed USY Zeolite with Respect to Sodium Content"
+   },
+   {
+    "page": 4,
+    "xref": 11,
+    "w": 211,
+    "h": 166,
+    "caption": "TABLE 3"
+   },
+   {
+    "page": 4,
+    "xref": 12,
+    "w": 202,
+    "h": 156,
+    "caption": "TABLE 4 Effect of Na2O Added via Different Compounds Effect of Na2O from NaNO3 on Zeolite Stabilitya on Zeolite Stability Na2O (wt%) Zeolite surface Na precursor area (m2/g) 0.15 0.27 0.29 0.48 0.67 High Si\u2013USY NaHCO3 NaNO3 NaOH Dried at 358 K/16 h \u2014 \u2014 547 \u2014 533 Calcined at 811 K/2 h 559 557 548 557 549 With added watera and 522 463 469 392 234 dried at 358 K/16 h Na2O (wt%) 0.19 0.29 0.67 0.19 Dried at 358 K/16 h ZSA (m2/g) 401 547 533 404 ZSA retention (%) 72.3 98.7 96.3 73.0 Calcined at 811 K/2 h a Incipient wetness."
+   },
+   {
+    "page": 5,
+    "xref": 16,
+    "w": 208,
+    "h": 165,
+    "caption": "FIG. 4. Effect of vanadium on the hydrothermal stability of catalysts: \u0002, 1.19 wt% Na2O/USY; \u0003, 0.03 wt% Na2O/USY; \u0004, \u0005, FCC catalysts A, with 0.52 wt% Na2O and 0.06 wt% Na2O, respectively. Steaming condi- tions: 1060 K, 1 atm, 90% steam/10% air, 4 h. 0.06 wt% Na2O, addition of vanadium has only a small ef- fect on hydrothermal stability. The steamed Y surface area decreases from 80 m2/g with no added vanadium to 54 m2/g with 4000 ppm V, only a 27% decline. By decreasing Na con- tent, the FCC catalyst, even after the addition of 4000 ppm V, has the same steamed surface area as catalyst A contain- ing 0.52 wt% Na2O and no vanadium."
+   },
+   {
+    "page": 6,
+    "xref": 20,
+    "w": 208,
+    "h": 164,
+    "caption": "TABLE 5 Effect of Sodium and Vanadium on the Stability of High Si\u2013USY NH4VO3 NaNO3 NaVO3 Equivalent Na2O (wt%) 0.02 0.51 0.48 Equivalent V (wt%) 0.80 0 0.72 ZSA (m2/g) Dried at 358 K for 16 h 501 547 527 Calcined at 1060 K for 4 h 532 546a 503 Steamed at 1060 K for 4 h 436 188 33 a Sample was calcined at 810 K for 2 h."
+   },
+   {
+    "page": 7,
+    "xref": 24,
+    "w": 216,
+    "h": 158,
+    "caption": "FIG. 7. UV\u2013visible spectra of model vanadium compounds on high Si\u2013USY. (A) Ammonium metavanadate on USY\u2014calcined; (B) ammo- nium metavanadate on USY\u2014steamed; (C) sodium metavanadate on USY\u2014calcined; (D) sodium metavanadate on USY\u2014steamed. (Treat- ment conditions given in Table 5.) wavelengths. This spectral shift indicates that after calcina- tion, the chemical environment of the metavanadates has changed from a pure compound form to a well-dispersed form where interactions of V with its surrounding occur via oxygen bridges. The V\u2013O bond is shortened as a result of this. On steaming, we did not observe any signi\ufb01cant spec- tral changes for the sample made with NH4VO3; it is in hy- drogen form after calcination. However, steaming resulted in spectral changes for the sample made with NaVO3. New bands at about 290 and 480 nm appeared, indicating the formation of V2O5 (10)."
+   }
+  ]
+ },
+ {
+  "pdf": "Probing acid\u2013base sites in vanadium redox zeolites by DFT calculation.pdf",
+  "textlayer_captions": 2,
+  "images": [
+   {
+    "page": 2,
+    "xref": 12,
+    "w": 240,
+    "h": 326,
+    "caption": "Fig. 1. Location of sites A and B in the sodalite framework. 3. Results and discussions Site A (Figs. 1 and 2), the site containing a V(V) vanadyl group, has a protonation energy of \u00033.91 eV considering a proton attack"
+   },
+   {
+    "page": 2,
+    "xref": 13,
+    "w": 338,
+    "h": 265,
+    "caption": "Fig. 2. Protonation of zeolite sites A and B leading to the reorganization of both sites. Both sites have a V in oxidation state +5. A possible conversion path between sites A and B is indicated with a bidirectional arrow."
+   },
+   {
+    "page": 3,
+    "xref": 31,
+    "w": 240,
+    "h": 169,
+    "caption": ""
+   }
+  ]
+ },
+ {
+  "pdf": "Toward reliable density functional methods without adjustable parameters.pdf",
+  "textlayer_captions": 4,
+  "images": [
+   {
+    "page": 1,
+    "xref": 35,
+    "w": 522,
+    "h": 198,
+    "caption": ""
+   },
+   {
+    "page": 8,
+    "xref": 101,
+    "w": 220,
+    "h": 152,
+    "caption": "FIG. 1. Potential-energy curves for the interaction of two He atoms. The curve labeled \u2018\u2018exact\u2019\u2019 has been computed using the analytical expression of Ref. 104. From these data it is quite apparent that both the PBE and PBE0 models predict interaction energies and equilib- rium distances which are suf\ufb01ciently close to the experimen- tal values.104 In particular, the PBE0 functional gives an in- teratomic distance for the He dimer ~2.78 \u00c5! which is slightly lower than the experimental value ~2.97 \u00c5!, while the interaction energy is overestimated ~0.002 vs 0.001 eV!. Anyway, similar small errors are found by the mPW0 proto- col, which has been speci\ufb01cally parameterized to reproduce long-range interactions.29"
+   },
+   {
+    "page": 8,
+    "xref": 100,
+    "w": 230,
+    "h": 155,
+    "caption": "FIG. 2. Potential-energy curves for the interaction of two Ne atoms. The curve labeled \u2018\u2018exact\u2019\u2019 has been computed using the analytical expression of Ref. 104. Downloaded 07 May 2012 to 129.215.149.92. Redistribution subject to AIP license or copyright; see http://jcp.aip.org/about/rights_and_permissions"
+   },
+   {
+    "page": 9,
+    "xref": 108,
+    "w": 233,
+    "h": 167,
+    "caption": "FIG. 3. The intermolecular O\u00afO distance and binding energy of the water dimer obtained by different methods. All values have been corrected for BSSE and ZPE effects ~see the text for details!."
+   },
+   {
+    "page": 9,
+    "xref": 107,
+    "w": 204,
+    "h": 169,
+    "caption": "FIG. 4. The intermolecular F\u00afF distance and binding energy of the hydro- gen \ufb02uoride dimer obtained by different methods. All values have been corrected for BSSE and ZPE effects ~see the text for details!. especially concerning the experimental determination of the binding energy. The currently accepted value is 5.4 60.7 kcal/mol,107 even if re\ufb01ned post-HF computations sug- gest that the interaction energy is close to 4.7 kcal/mol ~see, for instance, the discussion in Ref. 106!. At the same time, the most important geometrical parameter, namely the OO distance, is in\ufb02uenced by strong effects of anharmonicity, which obscure the precise experimental estimate of the equi- librium geometry. The current experimental value, taking into account anharmonicity effects in a model fashion, is 2.952 \u00c5,108 whereas a shorter distance, 2.910 \u00c5 is predicted by re\ufb01ned post-HF methods.109 In Fig. 3 are reported the computed OO intermolecular distances and the correspond- ing binding energies corrected for both ZPE and BSSE ef- fects."
+   }
+  ]
+ },
+ {
+  "pdf": "Vanadium poisoning of cracking catalysts Mechanism of poisoning and design of vanadium tolerant catalyst system.pdf",
+  "textlayer_captions": 10,
+  "images": []
+ },
+ {
+  "pdf": "anie.201104462.pdf",
+  "textlayer_captions": 3,
+  "images": [
+   {
+    "page": 1,
+    "xref": 106,
+    "w": 227,
+    "h": 105,
+    "caption": "Figure 1. Final configurations after dealumination (left) and desilica- tion (right). O red, Si yellow, H white, Al purple. [*] Dr. S. Malola, Prof. Dr. S. Svelle, Dr. F. L. Bleken, Dr. O. Swang inGAP Center for Research-Based Innovation Department of Chemistry, University of Oslo P. O. Box 1033 Blindern, 0315 Oslo (Norway) E-mail: ole.swang@sintef.no Homepage: http://www.ingap.uio.no reactions are needed, and the extra-framework compound after desilication is tetrahedral Si(OH)4 (Figure 1). Adding only one water molecule at a time is clearly an approximation to the experimental situation in which a significant steady- state vapor pressure exists in the pore system. Moreover, we do not follow the hydration process beyond the formation of extra framework species that are expected to display mobility within the pores (see below). Finally, temperature effects are not explicitly accounted for."
+   },
+   {
+    "page": 2,
+    "xref": 3,
+    "w": 235,
+    "h": 406,
+    "caption": "Figure 2. Reaction paths for a) dealumination and b) desilication com- bined from five different NEB paths. Black lines: approach A, consider- ing initially isolated water molecules; purple lines: approach B, consid- ering initially adsorbed water molecules. Effective barriers for both approaches are labeled in the upper left corner. Adsorption energies of the water molecules are seen as discontinuous jumps for each intermediate state. For state 1 in both processes, adsorption energies (shown in parentheses) are calculated only for comparison; water is not added at state 1."
+   },
+   {
+    "page": 2,
+    "xref": 4,
+    "w": 236,
+    "h": 378,
+    "caption": "Figure 3. Reaction steps with intermediate configurations shown for dealumination (left) and for desilication (right); c covalent bonds; g hydrogen bonds. Based on our observations, tetrahedral atoms are not at their original sites after step 2!3. 1!2: Inversion of an OH group and reorientation of the bonds; 2!3: Second hydration, giving four loosely bound OH groups as a product: two bound to the Si and two to the Al; 3!4: Third hydration, giving partially bonded Al(OH)3 as a product; 4!5: Adsorption of the fourth H2O molecule, thereby detaching the final Al(OH)3(H2O) EFAl compound."
+   }
+  ]
+ },
+ {
+  "pdf": "catril_24032016141020.pdf",
+  "textlayer_captions": 16,
+  "images": [
+   {
+    "page": 4,
+    "xref": 10,
+    "w": 219,
+    "h": 139,
+    "caption": "Figure 1 Ammonia TPD profile of FCC catalyst before and after hydrothermal deactivation carried out by the ammonia TPD method. The ammonia TPD profile of prepared FCC catalyst before and after hydro\u00ad thermal deactivation is shown in Figure 1. It can be seen from Figure 1 that the acidic sites are distributed in two regions: one is due to weak acidic sites (Tmax1: ~230\u00baC) and the other is due to strong acidic sites (Tmax1: ~350\u00baC). The total acidity of catalyst prior to hydrothermal deactivation is about 0.706 mmol/g, decreasing to 0.044 mmol/g after steaming. The decrease in acidity (both weak and strong acidic sites) is very rapid in FCC catalyst and the amount of acid sites present in the catalyst are minimal (0.044 mmol/g) after hydrothermal deactivation."
+   },
+   {
+    "page": 5,
+    "xref": 16,
+    "w": 219,
+    "h": 135,
+    "caption": "Figure 2 Ammonia TPD profile of hydrothermally deactivated catalyst with calcium contents from 0 to 10 000 ppm the matrix surface area increased to 77 m2/g from 30 m2/g. The average particle size and attrition index results are within the range of desired specifications."
+   },
+   {
+    "page": 6,
+    "xref": 24,
+    "w": 226,
+    "h": 157,
+    "caption": "Figure 3 Ammonia TPD profile of ZSM-5 additive before and after hydrothermal deactivation Fluid catalytic cracking of hydrotreated VGO on calcium impregnated catalyst/additive Calcium impregnated, steam deactivated catalyst and addi\u00ad tive were evaluated in the ACE at 545\u00b0C using hydrotreated VGO feed. Conversion at a C/O ratio of 8.2 and product selectivities at a conversion level of 76 wt% are shown in Figures 5 to 8. Conversion vs calcium concentration is plotted in Figure 5, which shows that the catalyst has lost its activity by 1 wt% and 1.7 wt% when the calcium level was increased to 5000 ppm and 10 000 ppm, respectively. Escobar et al reported monometallic catalysts containing iron or calcium were less active than a USY-zeolite sample.1 Both iron and calcium favour the olefin to paraffin ratio compared to the metal free sample. These metals increase olefin formation and poison acid sites. The effect of calcium concentration on fuel gas, coke and CSO yields are shown in Figure 6. The results show the decrease in fuel gas yield with increase in calcium"
+   },
+   {
+    "page": 6,
+    "xref": 26,
+    "w": 223,
+    "h": 133,
+    "caption": "Figure 4 Ammonia TPD profile of hydrothermally deactivated ZSM-5 additive with calcium content from 0 to 10 000 ppm 6 Catalysis 2016 www.eptq.com"
+   }
+  ]
+ },
+ {
+  "pdf": "eobe,+JULY_2017_B_23_822_828_OKONKWO.pdf",
+  "textlayer_captions": 8,
+  "images": []
+ },
+ {
+  "pdf": "j.apcata.2018.02.011.pdf",
+  "textlayer_captions": 21,
+  "images": [
+   {
+    "page": 1,
+    "xref": 511,
+    "w": 84,
+    "h": 112,
+    "caption": ""
+   },
+   {
+    "page": 2,
+    "xref": 425,
+    "w": 327,
+    "h": 246,
+    "caption": ""
+   },
+   {
+    "page": 19,
+    "xref": 437,
+    "w": 384,
+    "h": 269,
+    "caption": "Fig. 1 Structural properties of passivator. ACCEPTED MANUSCRIPT"
+   },
+   {
+    "page": 19,
+    "xref": 436,
+    "w": 308,
+    "h": 231,
+    "caption": "Fig. 2 FCC catalyst components under different treatment conditions."
+   },
+   {
+    "page": 20,
+    "xref": 438,
+    "w": 308,
+    "h": 231,
+    "caption": "Fig. 3 Effect of calcination temperature on the mobility of vanadium species. ACCEPTED MANUSCRIPT"
+   },
+   {
+    "page": 21,
+    "xref": 439,
+    "w": 404,
+    "h": 304,
+    "caption": "Fig. 4 XRD patterns of calcined (550 \u00b0C, 6 h) samples containing passivator. (a\u2013d, f) contain 0, 3, 5, 7.5, 10 wt.% passivator incorporated after drying of vanadium impregnated catalyst at 120 \u00b0C for 12 h; (e) 7.5 wt.% passivator incorporated before vanadium impregnation ACCEPTED MANUSCRIPT"
+   },
+   {
+    "page": 22,
+    "xref": 441,
+    "w": 339,
+    "h": 254,
+    "caption": "Fig. 5 XRD patterns of: (b\u2013f) calcined (550 \u00b0C, 6 h) and hydrothermally treated (ST 760 \u00b0C, 5 h) samples with passivator, and (a) sample without passivator treated under similar conditions. Phase alterations/formations due to high temperature and steam treatments and vanadium interaction with ACCEPTED MANUSCRIPT passivator."
+   },
+   {
+    "page": 22,
+    "xref": 440,
+    "w": 308,
+    "h": 258,
+    "caption": ""
+   },
+   {
+    "page": 23,
+    "xref": 442,
+    "w": 468,
+    "h": 429,
+    "caption": "Fig. 6 Phases of compounds formed in the presence of a passivator. ACCEPTED MANUSCRIPT"
+   },
+   {
+    "page": 24,
+    "xref": 443,
+    "w": 468,
+    "h": 352,
+    "caption": "Fig. 7 Comparison of passivation at different treatment conditions. 10 wt.% passivator in catalyst containing 0.75 wt.% V added after (a) calcination 550 \u00b0C 6 h (b) drying at 120 \u00b0C 24 h and (c) drying at 120 \u00b0C 24 h and calcination 550 \u00b0C 6 h. All samples were hydrothermally treated (ST ACCEPTED MANUSCRIPT 760 \u00b0C 5 h)."
+   },
+   {
+    "page": 25,
+    "xref": 445,
+    "w": 360,
+    "h": 272,
+    "caption": "Fig. 8 Effect of passivation on the surface areas of vanadium contaminated catalyst. ACCEPTED MANUSCRIPT"
+   },
+   {
+    "page": 25,
+    "xref": 444,
+    "w": 360,
+    "h": 272,
+    "caption": "Fig. 9 Pore size distribution calculated from adsorption data."
+   },
+   {
+    "page": 26,
+    "xref": 446,
+    "w": 468,
+    "h": 352,
+    "caption": "Fig. 10 Nitrogen adsorption-desorption isotherms of catalyst samples: (a) steam-aged (b) 7.5 wt.% Y-Mg-oxide before metallation (c) 0 wt.% Y-Mg-oxide."
+   },
+   {
+    "page": 27,
+    "xref": 447,
+    "w": 395,
+    "h": 281,
+    "caption": "Fig. 11 Correction between micropores surface area and crystallinity of samples with passivator for 3.0, 5.0, 7.5 and 10 wt.% passivator incorporated after drying for 12 h."
+   },
+   {
+    "page": 28,
+    "xref": 448,
+    "w": 468,
+    "h": 339,
+    "caption": "Fig. 12 SEM micrograph of catalysts with passivator (a, b) 7.5 wt.% Y-Mg-oxide containing catalyst showing passivator particles, (c) Passivator component of the passivated catalyst, (d, e) Magnified portion of passivated catalyst particle containing 5.0 wt.% Y-Mg-oxide. Point analysis ACCEPTED MANUSCRIPT centers on (f) single catalyst microsphere, and (g) grain of passivator particle."
+   },
+   {
+    "page": 31,
+    "xref": 450,
+    "w": 468,
+    "h": 423,
+    "caption": "Fig. 14 High resolution pictures of coked catalysts showing passivator particles. (a) Catalyst without passivator, (b) catalyst sample with passivator added before vanadium impregnation, (c) catalyst containing 7.5 wt.% Y-Mg-oxide containing and (d) catalyst containing 10 wt.% Y-Mg- ACCEPTED MANUSCRIPT oxide."
+   },
+   {
+    "page": 32,
+    "xref": 451,
+    "w": 468,
+    "h": 352,
+    "caption": "Fig. 15 Transmission IR spectra after pyridine adsorption on metal oxides of the passivator. ACCEPTED MANUSCRIPT"
+   }
+  ]
+ }
+]

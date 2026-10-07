@@ -1,0 +1,1528 @@
+
+<<<PAGE 1>>>
+Chemical Engineering Journal Advances 16 (2023) 100564
+Available online 29 September 2023
+2666-8211/© 2023 The Authors. Published by Elsevier B.V. This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-
+nc-nd/4.0/).
+Computational insights into deep eutectic solvent design: Modeling 
+interactions and thermodynamic feasibility using choline chloride 
+& glycerol 
+Maryann I. Uzochukwu a,b, Toyese Oyegoke a,*, Raheem O. Momoh a, Muhammed T. Isa a, 
+Suleiman M. Shuwa a, Baba Y. Jibril a 
+a Chemical Engineering Department, Faculty of Engineering, Ahmadu Bello University Zaria, Kaduna State, Nigeria 
+b Department of Polymer Technology, Directorate of Polymer and Environmental Technology, Nigerian Institute of Leather and Science Technology, Zaria, Kaduna State, 
+Nigeria   
+A R T I C L E I N F O  
+Keywords: 
+Deep eutectic solvent 
+Stability 
+Semi-empirical 
+DFT 
+Materials 
+A B S T R A C T  
+To address climate change and environmental concerns, the chemical process industries are increasingly 
+adopting green technology and exploring eco-friendly waste management practices. Deep Eutectic Solvents 
+(DES) have emerged as promising green solvents with diverse applications in the industries in separation pro­
+cesses, catalysis, drug design, and a lot more. However, the ideal way for modeling ionic interactions within the 
+hydrogen-bond acceptor (HBA) during DES synthesis remains uncertain, and theoretical insight on the formation 
+mechanism of energetically stable DESs from choline chloride (CHL) and urea (URE) is yet to be explored. In this 
+study, we investigate different modeling approaches (no bond, generic bond, or single bond) for ionic in­
+teractions in hydrogen-bond acceptor (HBA) molecules during DES synthesis and the thermodynamic feasibility 
+of forming an energetically stable DES using choline chloride (CHL) and urea (URE) through theoretical cal­
+culations (PM3, HF, and DFT). Our findings indicate that the choice of modeling approach does not significantly 
+affect the outcomes across calculation levels. The H-X DES formation pathway emerges as the most viable route 
+for CHL: GLC DES synthesis, offering strong binding energy and high exothermicity. This pathway provides a 
+robust solution for synthesizing energetically stable DES with potential applications in various industries. Re­
+searchers can consider alternative calculation levels when DFT becomes cost-prohibitive to optimize computa­
+tional costs. Our study contributes valuable insights into DES design and synthesis, promoting environmentally 
+sustainable and cost-effective processes.   
+Introduction 
+As the promotion of green technology continues to gain significant 
+attention with the rising climatic change and global warming, the effort 
+towards the improvement of pollution control and the promotion of 
+environmental friendliness of the different operations in the oil and gas 
+sector is likewise advancing [11,64]. Several areas promoting green 
+technology and environmental friendliness in our respective commu­
+nities are primarily explored in areas of waste management involving 
+the transformation of wastes like agro-wastes, polymeric, and many 
+other kinds of wastes into valuable products like fuels, materials, energy, 
+and many other applications [16,17,38,47,48,57]. Recent studies are 
+exploring the potential of some green solvents as potential solvents that 
+could facilitate the extraction of certain materials of interest from a 
+mixture. The study of the green solvents’ design and synthesis tech­
+niques is significantly gaining better attention across different applica­
+tions in process industries. Some of these processes include lactic acid 
+production [43], gas absorption [24,34,58,65,68], sorption of some 
+heavy metals and dyes [7,22,52,59], petroleum processing, enhanced oil 
+recovery process [20,39], catalysis of chemical processes [61], recycling 
+of wastes lithium batteries [15,33], and a lot more. Examples of such 
+kinds of solvents include the deep eutectic solvent (DES) and ionic liquid 
+(IL) [9,31,35]. However, this report focuses on DES exploration. For the 
+purpose of this report, we focus on the exploration of DES’s potential for 
+varying applications. Some important features of deep eutectic solvent 
+(DES) include less toxicity, high degradability, good biocompatibility, 
+* Corresponding author. 
+E-mail address: OyegokeToyese@gmail.com (T. Oyegoke).  
+Contents lists available at ScienceDirect 
+Chemical Engineering Journal Advances 
+journal homepage: www.sciencedirect.com/journal/chemical-engineering-journal-advances 
+https://doi.org/10.1016/j.ceja.2023.100564    
+
+<<<PAGE 2>>>
+Chemical Engineering Journal Advances 16 (2023) 100564
+2
+non-volatile, non-flammable, good renewability, and many other char­
+acteristics [10]. The application of deep eutectic solvent (DES) is not 
+limited to only separation process but also to catalysis, extraction, 
+electrolytic process, and other processes, which could be applicable to a 
+wide range of process industries like the food, pharmaceutical, cos­
+metics, oil, and gas, and a lot more [5,27,32,60,66]. 
+Some reports have categorized both of the solvents as a green sol­
+vent, while other references like Chen and Mu [9] revisited the subject of 
+the greenness of the solvent. Their report [9] has indicated that more 
+and more evidence in the literature is showing the non-greenness of the 
+solvents due to some characteristics exhibited by some of them, which 
+include instability, volatility, toxicity, flammability, and difficulty in 
+regenerating them for further use. Chen and Mu [9] further suggest the 
+functionalization and modification of the solvent properties to reform 
+their behavior to improve their greenness. Many works in the literature 
+[5,10,27,32,34,59,60,66] have been exploring the suitability of the 
+different forms of DES applications in the different processes. Some of 
+which includes searches focusing on the identification of the stable DES 
+for a potential application. In such a study, a wide range of studies do 
+focus on the screening of hydrogen-bond acceptor (i.e., HBA) and 
+hydrogen-bond donor (i.e., HBD) that would feasibly design a solvent 
+with a defined characteristic of interest for whatever applications. Ex­
+amples of some the HBD components include urea, glycerol, ethylene 
+glycol, glucose, thiourea, acetamide, malonic acid, phenol, citric acid, 
+maleic acid, succinic acid, and a lot more; and the HBA entails choline 
+chloride, ethylammonium chloride, methyltriphenylphosphonium bro­
+mide, betaine, 1,3-butanediol, acetylcholine chloride, choline tetra­
+fluoroborate, triethylmethylammonium chloride, levulinic acid, choline 
+proline and many others, which are used in the formation DES [2,44]. 
+Some of the existing studies have synthesized DES for the sorption of 
+certain pollutants like heavy metals, VOC, and dye [7,22,27,35,52]; the 
+catalysis of some chemical processes [61]; and the promotion of sepa­
+ration process efficiency. Many of these studies reported in the literature 
+have primarily deployed experimental study approaches, while only a 
+few studies have employed a theoretical approach to investigate its 
+synthesis process using a computational approach. Among the few 
+theoretical studies is the work of Naseem et al. [41] who studied the 
+relationship between computed IR spectra for choline chloride-based 
+deep eutectic solvents with ones experimentally collected. From 
+which, the study confirms a good agreement with the experiment one. 
+Ghenaarian et al. [21] studies further established that choline chloride: 
+urea better interacts with palladium nanoparticles than the choline 
+chloride (CHL): ethylene glycol (EGL) deep eutectic solvent (DES). Using 
+a theoretical approach, the use of guanidine hydrochloride (GuHCl): 
+lactic acid (LA) in the ratio of 1:1 has been established to have formed 
+DES that could dissolve hemicellulose due to the higher interaction 
+deduced for it from their studies of lactic acid-based DES [67]. Doherty 
+and Acevedo [14] developed a reliable non-polarizable force field 
+(OPLS-DES) for effective prediction of DES’ density, heat capacity, 
+surface tension, and viscosity, which shows a good agreement with the, 
+experiment. Nicolas et al. [19] also explores the role of DES in enhancing 
+the solubility of desired component present in a mixture during 
+extraction processes. The thermophysical and transport properties were 
+also investigated by Cea-Klapp et al. [8] for the DESs like CHL:EGL and 
+CHL:GLC in presence of methanol using molecular dynamics, while 
+some work [1] investigated the impact of water and HBA on the density 
+and viscosity of a DES for providing insight on the design and re-design 
+of new solvent. Other works like Santra et al. [53] were theoretically 
+able to have a stable geometry of the choline chloride (CHL): urea (URE) 
+deep eutectic solvent (DES) as a measure for understanding the stability 
+of DES formed from the use of HBD (URE) and HBA (CHL). 
+The existing literature review has not yet provided a definitive 
+approach for modeling the ionic interaction within the hydrogen-bond 
+acceptor (HBA) building. It remains unclear whether this interaction 
+should be represented with no bonds, generic bonds, or single bonds. It 
+is imperative to clearly establish whether any of these modeling 
+approaches can influence the outcomes of a study. 
+Furthermore, the computational investigation of the mechanism 
+involved in synthesizing a highly stable choline chloride (CHL): glycerol 
+(GL) deep eutectic solvent (DES) has not been comprehensively explored 
+in the current body of literature. DESs created using polyol-based 
+hydrogen bond donors (HBDs) have gained widespread industrial ap­
+plications, particularly those composed of glycerol and ethylene glycol, 
+owing to their lower freezing points and ability to remain in liquid form 
+below room temperature [12,18,26]. 
+To address the existing research limitations stated earlier in our 
+survey of the literature, we, therefore, explore the different possible 
+approaches to modeling the electrovalent or ionic interaction existing in 
+the hydrogen-bond acceptor (HBA) molecule used in the synthesis of 
+deep eutectic solvent (DES) to understand the agreement and the 
+implication of using either of the approaches (using no bond, generic 
+bond, or single bond) in a study. Furthermore, we investigate the 
+mechanism involved with forming an energetically stable DES from the 
+use of choline chloride (CHL) and glycerol (GLC). In addition, we later 
+investigated the prediction agreement that existed at different levels of 
+calculations like PM3, Hartree Fock (HF), and density functional theory 
+(DFT). Findings made from this study serve as an established strategy for 
+building different stable DES(s) for screening out solvents that best suit a 
+defined application or use to be investigated at a low and high level of 
+computational cost. 
+Methodology 
+In the study, we employed a computational approach via a quantum 
+mechanics calculation. The later section of this report presents 
+comprehensive details on the strategy and computational information 
+deployed in our study. 
+Study strategy 
+In this section, we present the strategies employed in the evaluation 
+of our chosen computational approach strengths and limitations, the 
+assessment of the approaches used in the modeling of ionic bonds, and 
+one used for the identification of feasible pathways leading to the for­
+mation of the deep eutectic solvent and its corresponding formation 
+energy. 
+Evaluation of the des models’ components used in our study 
+We employed an infrared spectroscopy plot computationally gener­
+ated for the hydrogen bond acceptor and hydrogen bond donor to 
+compare with one experimentally obtained from a wet laboratory. We 
+evaluated the similarities and differences visible on their respective plot 
+or spectra. The computationally generated spectra or plot is obtained for 
+different levels of computations and compared with experimentally 
+generated ones to understand the strength and limitations of the 
+different levels of computations evaluated. 
+Evaluation of different ionic bond modeling techniques in HBA 
+With the use of semi-empirical, Hartree Fock, and density functional 
+theory calculations, different approaches to modeling the ionic bonds 
+present in HBA were evaluated. The approaches, which include 
+modeling the ionic interaction without using no bond (that is, space), 
+with the use of single bond, and generic bonds (that is, a type of bond 
+which does not physically distinct bond formation or breaking), were all 
+evaluated as shown in Fig. 1. 
+All the sets of approaches were evaluated at the different levels of 
+computation (semi-empirical, Hartree Fock, and density functional 
+theory calculations [51]), assessing their electronic energies and ionic 
+bond length consistency across the three approaches evaluated. Choline 
+chloride was taken as our HBA component for our deep eutectic solvent. 
+M.I. Uzochukwu et al.                                                                                                                                                                                                                         
+
+<<<PAGE 3>>>
+Chemical Engineering Journal Advances 16 (2023) 100564
+3
+Analysis of HBD’s C-C bond consistency 
+Further analysis of the hydrogen bond donors to understand the 
+consistency of their bond lengths irrespective of their levels of calcula­
+tion was evaluated to understand the suitability or implications of 
+employing the use of different levels of computation for this kind of 
+application. The semi-empirical, Hartree Fock, and density functional 
+theory calculations were used in the analysis of glycerol as our deep 
+eutectic solvent hydrogen bond donor. 
+Evaluation of the DES formation mechanism 
+The study evaluated the different deep eutectic solvent formation 
+mechanisms by analyzing different interaction points on HBA (Cl, H, O, 
+and N) with HBD (O, H, and C) with their corresponding formation re­
+action energy, also known as binding energy. The energies are computed 
+using the expression in Eq. (1).  
+BE = Edes - EHBA – EHBD                                                            
+(1) 
+The Edes is the electronic energies of the DES, EHBA is the electronic 
+energies of the hydrogen bond acceptor, and EHBD is the electronic 
+energies of the hydrogen donor. All the electronic energies are collected 
+in eV. The energy that is most exothermic, shown with the highest 
+negative value, would signify the best and most feasible interaction 
+points. 
+In our study, we calculated both uncorrected and BSSE-corrected 
+binding energies to comprehensively assess their differences and er­
+rors. We have chosen to utilize the corrected binding energies (referred 
+to as BEcorr) for our subsequent analysis concerning the formation route 
+stability of Deep Eutectic Solvents (DES). Detailed information 
+regarding the BSSE correction methodology employed in our energy 
+calculations to derive BEcorr is provided in Section 2.2 under ’Compu­
+tational Details’. 
+Thermodynamic feasibility of the different DES formation pathways 
+The various thermodynamic parameters such as enthalpy, entropy, 
+and Gibbs free energy were all computed use the generic mathematical 
+expression in Eq. (2).  
+dX = Xdes – XHBA – XHBD                                                           
+(2) 
+The subject dX denotes the formation X, where the X could be either 
+H, S or G like dH, dS or dG. Xdes, XHBA, and XHBD terms represent the X 
+values for the DES formed, HBA, and HBD compound. The enthalpy (H), 
+entropy (S), and Gibbs free energy (G) are all computed standard tem­
+perature (298 K) and pressure (1 atm). 
+Computational details 
+Using the Spartan v20 molecular modeling package, we employed 
+three different levels of computations in our study. The levels including 
+semi-empirical calculations, which we utilized to compute infrared 
+spectra, electronic energies, and other relevant properties used in the 
+methods comparison was PM3, Hartree Fock calculation was also 
+employed using 6–31G* basis set in the calculations of infrared spectra, 
+electronic energies, and other properties. Another level of calculations 
+we employed in our study is density functional theory calculations using 
+B3LYP hybrid functional and 6–31 G in calculating infrared spectra, 
+electronic energies, and other relevant parameters, in accordance with 
+literature [25]. A Dell Precision 3520 mobile workstation with RAM of 
+24 GB, a processor capacity of 7 cores, and a storage of 1 TB SSD was 
+employed to run our calculations. 
+To improve on the accuracy of the energies obtained from the ge­
+ometry optimization calculations by correcting the basis set super­
+position error (BSSE), we employed the use of single-point energy 
+calculation using DFT-B3LYP hybrid function and dual basis set (cc- 
+pVTZ [6–31G*], via a combination a correlated corrected basis set [cc- 
+pVTZ] and pople double-eta basis set [6–31G*]) to re-evaluate our 
+binding energies in line with the literature [29,63], which suggests the 
+use of dual basis set as one of measure for correcting the BSSE in our 
+package. The outcome of employing this approach was designated as the 
+BSSE-corrected binding energy (BEcorr), whereas binding energies ob­
+tained without its application were labeled as uncorrected binding en­
+ergies (BEncorr). 
+Results and discussions 
+Here we present the results obtained from our study for the analysis 
+of the hydrogen bond donor (HBD) and the hydrogen bond acceptor 
+(HBA) involved in the formation of CHL:GLC deep eutectic solvent. The 
+validation of the model, analysis of possible interaction mechanisms 
+promoting the formation of DES, and many other results are presented 
+therein. 
+DES model components’ analysis 
+In our study, we further investigate the accuracy of our model via the 
+comparative analysis of the infrared (IR) spectra obtained for the HBA 
+and HBD employed in the formation of our DES using different levels of 
+computation (PM3, HF, and DFT). The computed glycerol (GCL) and 
+Fig. 1. A scheme showing the different ionic interaction models evaluated.  
+M.I. Uzochukwu et al.                                                                                                                                                                                                                         
+
+<<<PAGE 4>>>
+Chemical Engineering Journal Advances 16 (2023) 100564
+4
+choline chloride (CHL) spectra are presented in Figs. 2 and 3. Findings 
+made from the analysis were employed to understand the accuracy of 
+the different level of calculation used for the IR spectra computation in 
+our study. 
+The analysis of the CHL spectra in Fig. 2 reveals that the spectra 
+generally present the peaks found across the different levels of compu­
+tations (PM3, HF, and DFT) and show significant peaks around wave­
+lengths of 2700–3700 and 700–2000 1/cm. However, the wavelength 
+range of 2700–3700 1/cm in the IR spectra computed in Fig. 2 shows 
+that the HF gives a better agreement with DFT peaks, while PM3 shows 
+better agreement or relationship with DFT peaks in the 700–2000 1/cm 
+range. Collection of the significant IR spectra peaks obtainable from the 
+PM3, HF, and DFT calculations in relation to the spectra obtained from 
+an experimental study [3] are presented in Table 1. 
+Further evaluation of the peaks collected for choline chloride (CHL) 
+from the respective calculations in Table 1 reveals the presence of 
+different forms of functions and vibrations like C–H bending, which was 
+obtained in PM3 at 807 and 903 1/cm, HF at 932 1/cm, and DFT at 871 
+1/cm, following the literature [36] that state C–N to have existed 
+within the range of 755–880 1/cm. Other functional vibrations like 
+C–O stretch were obtained in PM3 at 1016 1/cm, HF at 1025 1/cm, and 
+DFT at 1004 1/cm; C–N stretching was observed in PM3 at 1093, 1139 
+1/cm, HF at 1032 1/cm, and DFT at 1113 1/cm; O–H bending observed 
+in PM3 at 1376 1/cm, HF at 1433 1/cm, DFT at 1455 1/cm. Many other 
+peaks found in the respective IR spectra in theoretically computed, and 
+the ones experimentally collected are summarized in Table 1. Moreover, 
+the correlation analysis of the peak values in Table 1 reveals a good 
+agreement between theoretical calculations and the experimentally 
+collected ones [3]. 
+The computed infrared spectra for glycerol (GLC) molecules shown 
+in Fig. 3 were further analyzed. The outcome of the spectra analysis 
+reveals the presence of different peaks across the spectra shown in Fig. 3. 
+The significant peaks identified via the analysis include the O–H 
+stretching at 3877, 3846, and 3676 1/cm; C–O stretching of the pri­
+mary alcohol at 1070, 1017 & 1167, and 1099 1/cm; O–H stretching 
+and bending at 1410, 1531, and 1445 1/cm; and CH2 stretching at 2905, 
+3297–3212, and 3002–3100 1/cm for PM3, HF, and DFT respectively, in 
+accordance with the literature [36,28,56]. 
+Table 2 summarizes a list of significant peaks identified from the 
+theoretical calculation approaches and the ones experimentally 
+collected. The spectra patterns shown in Fig. 3 and the respective peaks 
+presented in Table 2 for the glycerol molecule’s PM3, HF, and DFT 
+calculations were generally found to have shown similar trend with one 
+reported for the experiment as reported in Table 2 for all the levels of the 
+calculations, exception of few peaks that shows different wavelength 
+(650–800 1/cm and 3600 1/cm from experimentally reported spectra 
+[42] but still within the range of wavelength the functional groups for 
+the O–H stretching (3548–3700 1/cm) and C–H bending (755–880 
+1/cm) [36,28,56]. 
+Generally, spectra analysis to validate our chosen model’s accuracy 
+has demonstrated a good relation with those obtained from experi­
+mental studies [3,42]. Using the results of their correlation analysis with 
+the experiment, a trend of their agreement or average correlation co­
+efficient was found to be in the order DFT (0.9991) > HF (0.9980) >
+PM3 (0.9945). The analysis further reveals the DFT method agrees more 
+with the experimental FTIR [3,42] with little disparity, although more 
+expensive than other methods assessed. The findings made for the 
+experimentally collected spectra with the computed spectra confirming 
+a good agreement was similar with what was obtained for the use of 
+similar approach in the report of Oyegoke et al. [45]. An appreciable 
+relationship was obtained for all the computational methods employed 
+in our analysis of the CHL and GLC, where the potential of PM3 and HF 
+approach to complement the use of DFT calculations or management of 
+computational time in the analysis of large structure (that could be 
+expensive to compute) was found to be significantly good and feasible 
+due to the relation of its peaks with ones obtained from the laboratory 
+studies shown in their correlation coefficients (PM3 = 0.9945, HF =
+0.9980) obtained for the methods. 
+Analysis of HBA & its ionic bond modeling strategies 
+In the analysis of CHL as the HBA component of the DES primarily 
+investigated in our study, our survey of the works in the literature has 
+not been able to clearly present a defined insight on how to model best 
+the ionic bond present in the HBA component of a potential DES. In our 
+study, we first investigated the correlation of different approaches to 
+modeling the electrovalent or ionic interaction present in the HBA. The 
+approaches include cases where the ionic interactions in the HBA were 
+modeled without a bond, with a single bond, and a generic bond. In this 
+context, the generic bond signifies an undefined kind of bond, which 
+could be either existing or un-existing. The different bonds were denoted 
+as ’a’ for without bond, ’b’ for with a single bond, and ’c’ for the generic 
+bond, as presented in Tables 3–5. The correlation of the different ap­
+proaches was explored using PM3 semi-empirical, Hartree Fock (HF), 
+and density functional theory (DFT) calculations. 
+Analysis of the results collected from the study shows an insignificant 
+Fig. 2. IR analysis of Choline chloride using (a) PM3, (b) HF, and (c) DFT calculations.  
+M.I. Uzochukwu et al.                                                                                                                                                                                                                         
+
+<<<PAGE 5>>>
+Chemical Engineering Journal Advances 16 (2023) 100564
+5
+difference in the electronic energies irrespective of the computational 
+method employed, as shown in Table 3 for the PM3, Table 4 for the HF, 
+and Table 5 for the DFT calculation indicating electronic energies as 
+−245.74, −21,289.63, and −21,472.47 eV. The respective electronic 
+energies obtained for the different computational methods have similar 
+values except for the PM3, which has a much different value. This was 
+due to the higher level of approximations present in the semi-empirical 
+calculations, in accordance with the literature [51,54]. 
+Despite the difference in the electronic energy values, a consistent 
+trend of having the same energy across the different approaches of 
+modeling ionic interaction (as shown in Fig. 4) in the HBA components 
+was observed at different levels of computations carried out. Fig. 5 
+presents the structure of the DFT-optimized CHL obtained using 
+Fig. 3. IR analysis of glycerol using (a) PM3, (b) HF, and (c) DFT calculation.  
+Table 1 
+Comparison of theoretical calculation with experimental peaks for choline 
+chloride.  
+Peaks [36] 
+PM3 (1/ 
+cm) 
+HF (1/ 
+cm) 
+DFT (1/ 
+cm) 
+Expt. [3] 
+(1/cm) 
+CH bending (755–880) 
+807 
+– 
+– 
+807 
+CH bending (755–880) 
+903 
+932 
+871 
+897 
+C-O stretch (1000–1300) 
+1016 
+1025 
+1004 
+1000 
+C–N stretching (1020–1250)- 
+medium 
+C–N stretching strong 
+(1266–1342) 
+1093 
+1139 
+1032 
+1113 
+1026 
+O-H bending (1395–1440) 
+1376 
+1433 
+1455 
+1423 
+Not available 
+1740 
+1616 
+1572 
+1582 
+CH stretching (3000–3100) 
+3039 
+2919 
+3211 
+3032 
+3012 
+OH stretching broad 
+(3200–2700) 
+– 
+3315 
+3175 
+3258 
+OH stretching broad 
+(3300–2500) 
+– 
+3381 
+– 
+3435 
+Correlation coefficient (X/Expt), 
+where X is PM3, HF, and DFT 
+0.9966 
+0.9980 
+0.9989 
+1 
+0.9943 
+0.9980 
+0.9989 
+1  
+Table 2 
+Comparison of theoretical calculation with experimental peak for glycerol.  
+Peaks (“Infrared 
+spectroscopy correlation 
+table - Wikipedia,” n.d.;  
+[36]) 
+PM3 (1/ 
+cm) 
+HF (1/ 
+cm) 
+DFT (1/ 
+cm) 
+Expt [42] 
+(1/cm) 
+C-H bending (755–880) 
+887–959 
+895 
+848 
+650–800 
+C–O Stretching of primary 
+alcohol (1050–1085) 
+1070 
+1017 
+1167 
+1099 
+1050 
+O-H bending (1395–1440) 
+1410 
+1531 
+1445 
+1400 
+1440 
+C–H stretching 
+(2840–3000) 
+2905 
+3297 
+3212 
+3002–3100 
+2950 
+3000 
+OH-stretching sharp 
+(3584–3700) 
+3877 
+3846 
+3676 
+3600 
+Correlation coefficient (X/ 
+Expt), where X is PM3, HF, 
+and DFT 
+0.9938 
+0.9961 
+0.9989 
+1 
+0.9935 
+0.9999 
+0.9998 
+1  
+Table 3 
+PM3 calculation of electronic energy & bond length (n=no, g=generic, and 
+s=single bond).  
+Label 
+HBA Formula 
+E (kJ/mol) 
+Cl-N bond length (Å) 
+PM3-n 
+Cl.C₅H₁₄NO 
+−245.74 
+3.26292662 
+PM3-g 
+C₅H₁₄ClNO 
+−245.74 
+3.26302198 
+PM3-s 
+C₅H₁₄ClNO 
+−245.74 
+3.26306649  
+Table 4 
+HF calculation of electronic energy & bond length (n=no, g=generic, and 
+s=single bond).  
+Label 
+HBA Formula 
+E (eV) 
+Cl-N bond length (Å) 
+HF-n 
+Cl.C₅H₁₄NO 
+−21,289.63 
+3.61036140 
+HF-g 
+C₅H₁₄ClNO 
+−21,289.63 
+3.61041153 
+HF-s 
+C₅H₁₄ClNO 
+−21,289.63 
+3.61020403  
+Table 5 
+DFT calculation of electronic energy & bond length (n=no, g=generic, and 
+s=single bond).  
+Label 
+HBA Formula 
+E (eV) 
+Cl-N bond length (Å) 
+DFT-n 
+Cl.C₅H₁₄NO 
+−21,472.47 
+3.55827636 
+DFT-g 
+C₅H₁₄ClNO 
+−21,472.47 
+3.55827622 
+DFT-s 
+C₅H₁₄ClNO 
+−21,472.47 
+3.55827630  
+M.I. Uzochukwu et al.                                                                                                                                                                                                                         
+
+<<<PAGE 6>>>
+Chemical Engineering Journal Advances 16 (2023) 100564
+6
+different modeling approaches for ionic interactions. 
+The bond length or atom distance for the anion and cation was found 
+to be relatively close to each, irrespective of the level of the computa­
+tional method employed. Table 3,4,5 indicates that PM3, HF, and DFT 
+calculation predicts an average distance of 3.26, 3.61, and 3.56 Å for the 
+chlorine ion (Cl-) bond or distance with nitrogen ion (N+), showing an 
+approximate value of 3.6 Å for HF/DFT, while 3.3 Å for the use of PM3 
+with a slight difference 0.3 Å (see Fig. 3). The trend of showing better 
+agreement of the DFT prediction with the HF when compared to the PM3 
+agreed with the literature [25]. 
+Analysis of HBD’s C-C bonds’ consistencies 
+Here, we analyzed the glycerol (GLC) as the hydrogen bond donor 
+(HBD) for our potential DES to be formed. The analysis was done using 
+different computational methods like PM3, HF, and DFT. The consis­
+tency of the electronic energies and bond length existing between the 
+different carbon-carbon bonds, including C1-C2 and C2-C3, is presented 
+in Table 6. 
+The analysis of the results presented in Table 6 reveals that the 
+different computational methods/levels assessed gave closely related 
+values for their respective electronic energies, except for the PM3 
+method, which gave a higher value of −6.26 eV. This exceptional case 
+identified for using PM3 could be due to the level of approximation 
+inherent in semi-empirical calculations following existing reports in the 
+literature ([51,54]). However, a probe into the distances between the 
+atom length of the C1-C2 and C2-C3 bonds in the glycerol structure in 
+Fig. 6 shows an insignificant difference in their bond distances for all the 
+computational methods used. HF/DFT gave a bond distance of 1.53 Å for 
+Fig. 4. A scheme showing the consistency obtained for the electronic energy and Cl-N bond length across different ionic interaction models at the different levels of 
+calculations. 
+Fig. 5. The optimized geometry of choline chloride (CHL) was obtained from DFT calculation with (A) no bond, (B) generic bond and (C) single bond for the ionic 
+interaction. 
+Table 6 
+Analysis of glycerol as the HBD for the DES.  
+Label 
+HBD 
+Formula 
+E (eV) 
+C1-C2 bond length 
+(Å) 
+C2-C3 bond length 
+(Å) 
+PM3 
+C₃H₈O₃ 
+−6.26 
+1.54708212 
+1.54304303 
+HF 
+C₃H₈O₃ 
+−9276.88 
+1.52494550 
+1.52000917 
+DFT 
+C₃H₈O₃ 
+−9381.60 
+1.53374476 
+1.52549611  
+M.I. Uzochukwu et al.                                                                                                                                                                                                                         
+
+<<<PAGE 7>>>
+Chemical Engineering Journal Advances 16 (2023) 100564
+7
+the C1-C2 bond with a difference of 0.02 Å for PM3 calculation, and for 
+the C2-C3 bond, there was a difference of 0.01 Å in their bond distance 
+for PM3, HF and DFT methods respectively, which agreed with the 
+literature report [25] for the rating of the methods’ accuracy. 
+Analysis of the CHL-GLC deep eutectic solvent stability 
+In this section, we evaluate the stability of the DES formed by choline 
+chloride (HBA) and glycerol (HBD) by probing the interatomic inter­
+action of the atoms in the HBA (Cl-, H, N+, and O atom) with the HBD 
+and also the HBA and HBD in their unbonded state during their struc­
+tural formation. CHL and GLC, the HBA and HBD component of the DES, 
+whose energetically stable formation mechanism explored in this report 
+shows −21,472.65 and −9381.60 eV electronic energy, respectively. 
+Exploration of DES formation via the Cl-X 
+The analysis of the DES formation from CHL and GLC was evaluated 
+for possible formation via the different interaction routes Cl-X (X = HO, 
+OH, CH, HC, CH2, H2C) involving the Cl- in CHL interacting with other 
+components like O, H, and C present in the GLC (the HBD). In this 
+analysis, several interactions evaluated include OH–Cl-HO (the inter­
+action of Cl- with two H-atoms of two different O–H functions in GLC), 
+HO–Cl-OH (the interaction of Cl- with two O-atoms from two O–H 
+functions of GLC), CH–Cl-HO (that is, the interaction of Cl- with two H- 
+atoms from C–H and O–H functions of GLC), Cl-OH (the interaction of 
+Cl- with one O-atom in O–H functions of GLC), Cl-CH2 (the interaction 
+of Cl- with one C-atoms from H–C-H function of GLC), Cl-HC (the 
+interaction of Cl- with one H-atom from C–H function of GLC), and 
+physisorption without any constraint of a chemical bond in the model. 
+Findings from the study of the aforementioned interaction via the 
+chloride ion have confirmed our study to have consistently restructured 
+into a new geometrical structure, which favors the interaction of Cl- with 
+H-atom on O–H functions. The study reveals that some of the optimized 
+structures for the DES formed via the various interaction routes inves­
+tigated show a single, and some show multiple bonds with the different 
+O–H functions present in GLC. Results shown in Table 7 are presented 
+in the order of their interaction strength, where OH–Cl-HO was found 
+to have shown much stronger interaction compared to other interactions 
+investigated in the study, as seen from its binding energy (BE) value. 
+Fig. 7 presents the geometrical structure of the DES for the optimized or 
+relaxed structure and the unrelaxed structure (that is, the structure 
+before the geometrical optimization) of the best interaction (OH–Cl- 
+HO) obtained for the investigation of Cl-X (X = HO, OH, CH, HC, CH2, 
+H2C). Fig. 7 shows that the OH–Cl-HO bond lengths were shorter before 
+optimization than after being optimized. The increase in the bond length 
+of some interactions with bond lengths greater than 3 Å confirms them 
+as weak interactions, contrary to other interactions that are stronger due 
+to the shorter bond length obtained for the atom pairs, following the 
+report of Pauling [49] that established the dependency of bond energy 
+on its bond length. The strong interactions with bond lengths of around 
+the range of 1.8 to 3 Å [13,30] were confirmed to be hydrogen bonding, 
+while the weaker ones with bond lengths greater than 3 Å [40] were 
+identified to be Van de Waal interaction, following the related reports 
+[13,30,40] in the literature. 
+Further analysis of the bond length reports in Table 7 shows the 
+strength of the OH–Cl-HO interaction, which was evident in its bond 
+length obtained for its interaction with OH21-Cl1 and OH12-Cl1, which 
+were found to be relatively low compared to other O–H like OH8 and 
+OH1 that were longer. The bond length implies that there is a weak 
+interaction of Cl with H8 and H1 compared to H21 and H12, which were 
+stronger, in agreement with the literature [49] that established the de­
+pendency of bond energy on its bond length. A close range of shorter 
+bond lengths was also found for the case of HO–Cl-OH and CH–Cl-HO, 
+which also show a strong interaction with H21 and H12, unlike the case 
+of other H-atoms (H8 and H1) in other O–H functions. Other in­
+teractions like Cl-OH, Cl-CH2, and Cl-HC that were investigated were 
+found to have shown much weaker interaction for all the H-atoms except 
+for the one of the H-atom, which offers a better interaction due to its 
+shorter bond length relatively found in other H-atoms of the alcohol 
+function. So, in the evaluation of the Cl-X (X = HO, OH, CH, HC, CH2, 
+H2C), the OH–Cl-HO shows the best interaction with a stronger binding 
+energy of BEcorr = −0.49 eV and shorter bond length for Cl-atom with 
+two other H-atoms of the alcohol (OH) functions in GLC, according to 
+the literature [49]. 
+Exploration of DES formation via the H-X 
+Further analysis of the interaction via the hydrogen atom of the HBA 
+via the different interaction routes H-X (X = HO, OH, CH, CH2, HC) as 
+presented in Table 8, which favors the interaction of H with H-atom on 
+O–H functions (OH–H-HO) with a binding energy of BEcorr = −0.79 
+eV when compared to other interaction routes and confirmed the sta­
+bility and preference of interaction with H-atom on O–H functions as 
+seen for using Cl- as HBA. Fig. 8 presents the geometrical structure of the 
+DES for the optimized or relaxed structure and the unrelaxed structure of 
+the best and most stable interaction (OH–H-HO). 
+A probe into the optimized structure geometry suggests hydrogen 
+bonding, as seen in the increase in bond length after optimization. Also, 
+the strength of the OH–H-HO interaction in Table 8 was evident in the 
+contribution of the interactions for OH12-Cl1, OH8-Cl1, and OH1-Cl1 in 
+the shorter bond length (that is, stronger interaction) obtained when 
+compared to OH21-Cl1 that shows longer bond length (that is, weaker 
+interaction), in accordance with the literature [13,49]. The resulting 
+Fig. 6. The optimized geometry of glycerol (GCL) was obtained from DFT 
+calculation. 
+Table 7 
+Stability of the CHL-GLC DES via chloride (Cl-) ion as a point of interaction using DFT (Note that BEcorr is the BSSE corrected binding energies and BEncorr is the 
+uncorrected binding energies).  
+Label 
+Interact 
+Name 
+BEcorr (eV) 
+BEncorr (eV) 
+Err (eV) 
+OH21-Cl1 (Å) 
+OH12-Cl1 (Å) 
+OH8-Cl1 (Å) 
+OH1-Cl1 (Å) 
+OH–Cl-HO 
+Cl 
+X6 
+−0.49 
+−0.52 
+0.03 
+2.27 
+2.26 
+6.21 
+6.02 
+HO-Cl-OH 
+Cl 
+X4 
+−0.46 
+−0.49 
+0.03 
+2.34 
+2.42 
+5.82 
+2.17 
+CH-Cl-HO 
+Cl 
+X3 
+−0.44 
+−0.48 
+0.04 
+2.22 
+2.36 
+5.61 
+5.89 
+Cl-OH 
+Cl 
+X5 
+−0.37 
+−0.48 
+0.11 
+2.08 
+5.70 
+6.57 
+4.11 
+Cl-CH2 
+Cl 
+X1 
+−0.35 
+−0.38 
+0.03 
+2.31 
+5.42 
+6.83 
+5.80 
+Cl-HC 
+Cl 
+X2 
+0.04 
+0.05 
+−0.01 
+5.87 
+5.52 
+5.08 
+2.41  
+M.I. Uzochukwu et al.                                                                                                                                                                                                                         
+
+<<<PAGE 8>>>
+Chemical Engineering Journal Advances 16 (2023) 100564
+8
+geometrical structures obtained after the geometry optimization 
+consistently favor the interaction of Cl-atom with H-atoms on the 
+alcohol (OH) functions. 
+The short bond length implies that there is a strong interaction of the 
+Cl with H12, H8 and H1, and the more this number of contributions from 
+the H atom, the stronger the bond, which was evident in the lower 
+binding energy obtained for the best and most stable (OH–Cl-HO) for 
+the H-X interaction (BEcorr = −0.79 eV) when compared to BEcorr =
+0.49 eV which was obtained for the most stable in interaction for Cl-X 
+(OH–Cl-HO) which has two strong interaction at H2 and H12. 
+Fig. 7. The most stable geometric structure of the DES for the Cl-X interaction: (A) After geometrical optimization (one view), (B) After geometrical optimization 
+(another view), and (C) Before geometrical optimization (one view). 
+Table 8 
+Stability of the CHL-GLC deep eutectic solvent via H as a point of interaction using DFT (Note that BEcorr is the BSSE corrected binding energies and BEncorr is the 
+uncorrected binding energies).  
+Label 
+Interact 
+Name 
+BEcorr (eV) 
+BEncorr (eV) 
+Err (eV) 
+OH21-Cl1 (Å) 
+OH12-Cl1 (Å) 
+OH8-Cl1 (Å) 
+OH1-Cl1 (Å) 
+OH–H-HO 
+H 
+X6 
+−0.79 
+−0.95 
+0.16 
+5.03 
+2.16 
+2.21 
+2.10 
+CH-H-HO 
+H 
+X3 
+−0.62 
+−0.73 
+0.11 
+5.01 
+2.15 
+2.19 
+2.17 
+H-OH 
+H 
+X5 
+−0.59 
+−0.68 
+0.09 
+2.14 
+5.39 
+7.06 
+2.16 
+HO-H-OH 
+H 
+X4 
+−0.49 
+−0.56 
+0.07 
+2.25 
+2.28 
+5.43 
+2.23 
+H-CH2 
+H 
+X1 
+−0.44 
+−0.48 
+0.04 
+2.33 
+5.46 
+6.92 
+2.21 
+H-HC 
+H 
+X2 
+−0.34 
+−0.39 
+0.05 
+2.28 
+5.29 
+6.11 
+2.22  
+Fig. 8. The most stable geometric structure of the DES for the H-X interaction: (A) After geometrical optimization (one view), (B) After geometrical optimization 
+(another view), and (C) Before geometrical optimization (one view). 
+Table 9 
+Stability of the CHL-GLC DES via nitrogen (N+) as a point of interaction using DFT (Note that BEcorr is the BSSE corrected binding energies and BEncorr is the 
+uncorrected binding energies).  
+Label 
+Int 
+Name 
+BEcorr (eV) 
+BEncorr (eV) 
+Err (eV) 
+OH21-Cl1 (Å) 
+OH12-Cl1 (Å) 
+OH8-Cl1 (Å) 
+OH1-Cl1 (Å) 
+OH–N-HO 
+N 
+X6 
+−0.67 
+−0.78 
+0.11 
+2.26 
+2.15 
+5.28 
+2.23 
+N-CH2 
+N 
+X1 
+−0.50 
+−0.62 
+0.12 
+4.90 
+2.13 
+5.03 
+2.09 
+HO-N-OH 
+N 
+X4 
+−0.43 
+−0.54 
+0.11 
+4.36 
+7.33 
+9.55 
+2.07 
+N-HC 
+N 
+X2 
+−0.46 
+−0.52 
+0.06 
+2.09 
+6.56 
+7.37 
+4.06 
+N-HO 
+N 
+X5 
+−0.41 
+−0.49 
+0.08 
+2.15 
+2.45 
+5.47 
+2.32 
+CH-N-HO 
+N 
+X3 
+−0.10 
+−0.12 
+0.02 
+7.28 
+6.01 
+7.76 
+2.07  
+M.I. Uzochukwu et al.                                                                                                                                                                                                                         
+
+<<<PAGE 9>>>
+Chemical Engineering Journal Advances 16 (2023) 100564
+9
+Exploration of DES formation via the N-X 
+Exploring N(+) as a point of interaction via the different interaction 
+routes N-X (X = HO, OH, CH, CH2, HC) as presented in Table 9, which 
+are shown in order of their interaction strength. OH–N-HO was found to 
+have a much stronger interaction than other interactions investigated 
+with a binding energy of BEcorr = −0.67 eV. The geometrical structure 
+of the DES for the relaxed and the unrelaxed structure of best interaction 
+at OH–N-HO shows that the relaxed structure had a shorter bond length 
+when compared to the unrelaxed structure. 
+Further analysis of the bond length in Fig. 9 shows that the strength 
+of the OH–N-HO interaction, which was evident in its bond length 
+obtained for its interaction for OH21-Cl1, OH12-Cl1, and OH12-Cl1, 
+which were found to be relatively low compared to OH8-Cl1, which 
+was longer. This bond length implies a weak interaction of Cl with H8, 
+while H21, H12, and H1 exhibited stronger interactions. It is important 
+to note that the three (3) contributions from the H-atoms resulted to the 
+stronger observed at H21, H12, and H1, which gave the strongest 
+binding energy (BEcorr = −0.67 eV) among other cases explored for H-X 
+in the analysis. Other cases were seen to have consistently displayed a 
+much longer bond length, which must have been resulting to their 
+corresponding lower binding energies obtained from the analysis. 
+Our findings further agreed with the existing literature [13,49], 
+indicating the magnitude of the bond distance between two atoms can 
+give insight into the nature of bonding or interaction strength. This was 
+also evident in the stronger binding energy obtained for the interaction 
+via H-X (BEcorr = −0.79 eV), which shows a much shorter bond length 
+for most of its hydrogen bonding atoms compared to N-X (BEcorr =
+−0.67 eV) shows a much longer bond length values with corresponding 
+lower binding strength in Table 8 and 9, respectively. 
+Exploration of DES formation via the O-X 
+The results of exploring the use of O-atom as a point of interaction 
+from the HBA through different interaction routes O-X (X = HO, OH, CH, 
+CH2, HC) of the HBD reveals that the interaction between O–OH was 
+strongest when compared to other investigated interactions with a 
+binding energy of BEcorr = −0.63 eV as presented in Table 10. Despite 
+the best interaction being based on the oxygen, not the H in this case, 
+however, the overall best interaction for the CHL-GLC deep eutectic 
+solvent (DES) studied via Cl-X, H-X, N-X was strongest for H-X (BEcorr =
+−0.79 eV) and through alcohol (HO) function. 
+Fig. 10 presents the geometrical structure of the CHL-GLC deep 
+eutectic solvent (DES) for the optimized or relaxed structure and the 
+unrelaxed structure of best interaction (O–OH) obtained for the 
+investigation. A probe into the optimized structure, as shown in Fig. 10, 
+shows that the strength of the O–OH interaction, which was evident in 
+its bond length obtained for its interaction for OH12-Cl1 and OH1-Cl1, 
+which were found to be relatively low compared to other O–H like 
+OH21 and OH8 that were longer (see Table 10). These bond lengths 
+imply a weak interaction of Cl with H21 and H8 when compared to H12 
+and H1, which were stronger and are also shown in the smaller value of 
+the bond length of 2.09 and 2.15 Å, respectively, in agreement with 
+Pauling [49] report. 
+Thermodynamic analysis of the most stable DES formation pathways 
+The resulting outcome of the various pathways that could lead to the 
+formation of the CHL:GLC deep eutectic solvent reported in Ta­
+bles 7,8,9,10, where the most feasible path across each of the routes for 
+Cl-X, H-X, N-X, and O-X were identified using their binding energies (BE) 
+was employed in the thermodynamic analysis of the paths. Table 11 
+summarizes the best paths across each route studied and their corre­
+sponding outcome from the thermodynamic analysis carried out for the 
+routes. 
+The results show that all the formation pathways interact with two 
+H-atoms except for the H-X and N-X pathways that interact with three H- 
+atoms, which showed higher binding strength for H-X and N-X, 
+excluding the case of physisorption. The analysis further reveals that all 
+the formation routes are spontaneous and exothermic due to the nega­
+tive entropy and enthalpy changes obtained for all the routes, in 
+accordance with the literature [6,23,37,55]. However, the trend of their 
+degree of disorderliness and exothermicity was in the order of H-X 〈N-X 
+< Phys < O-X < Cl-X and H-X 〉Phys > N-X > O-X > Cl-X, confirming 
+DES form via H-X to be the most exothermic and spontaneous formation 
+pathway compared other pathways. With the use of the Gibbs formation 
+energies, the exergonicity of the formation pathways was found to have 
+followed the trend reported for the formation enthalpies in Table 11, in 
+accordance with the literature [6,23,37,55]. The study confirms the H-X 
+DES formation pathway, which involves the interaction of three H-atoms 
+present in the alcohol functions of the HBD molecule (GLC), showing the 
+strongest binding energy (or formation energy), most exothermic, 
+spontaneous, and exergonic pathway leading to the formation of DES 
+from CHL and GCL for any potential applications, in agreement with the 
+literature [4,46,53,62], which shows that report the most negative 
+binding energy to be the strongest interaction in a study. 
+This study’s approach yielded more effective and straightforward 
+findings compared to using maps for HOMO-LUMO energies and elec­
+trostatic potentials, which can be confusing and less precise. The results 
+obtained from the electrostatic potential map (Fig. 12) in our quest to 
+identify potential interaction points on the hydrogen bond donor (HBD), 
+namely GLC, and the hydrogen bond acceptor (HBA), CHL, for the for­
+mation of a stable deep eutectic solvent (CHL:GLC) raised certain 
+limitations. 
+Specifically, the points of interaction identified on the HBD (H on 
+GLC) and HBA (Cl on CHL) molecules, as indicated by these maps, did 
+not provide sufficient information to determine the number of hydrogen 
+Fig 9. The most stable geometric structure of the DES for the N-X interaction: (A) After geometrical optimization (one view), (B) After geometrical optimization 
+(another view), and (C) Before geometrical optimization (one view). 
+M.I. Uzochukwu et al.                                                                                                                                                                                                                         
+
+<<<PAGE 10>>>
+Chemical Engineering Journal Advances 16 (2023) 100564
+10
+bonds in the HBD necessary for stable DES formation. This limitation 
+observed in the use of maps underscores the importance of further 
+research on deep eutectic solvents, considering the strategy employed in 
+our study as a more promising avenue for exploration. 
+In general, the various DES formation pathways explored in our 
+study diagrammatically shown in Fig. 11, which includes the Cl-X, H-X, 
+N-X, and O-X, were confirmed to have all shown better interaction to­
+wards the formation of CHL:GLC via H-atoms of the glycerol (HBD) and 
+Cl-atom of the choline chloride (HBA). The IR spectrum for the resulting 
+CHL:GLC deep eutectic solvent obtained from the most energetically 
+stable formation routes involving the interaction of Cl-atom with three 
+other H-atoms of alcohol functions was also computed. The IR spectrum 
+is presented in Fig. 11. The identified significant peaks in the computed 
+IR include the 3460–3276 1/cm for the stretching of O–H towards Cl, 
+3090–2986 1/cm for the stretching of the C–H bond, and smaller peaks 
+at 1482–591 1/cm, which shows a good agreement with an experiment 
+3291, 3027–2929, 1478–610 1/cm. The IR spectra have been able to 
+validate the findings made for the computed energetically stable ge­
+ometry and formation route for the CHL:GLC investigated, with the good 
+agreement that our computations have shown with the ones reported by 
+Rhamalia et al. [50] in an experiment. 
+Conclusions and recommendations 
+Isn this study, we successfully investigated the implications of using 
+different approaches (using no bond, generic bond, or single bond) to 
+model the electrovalent or ionic interactions present in a hydrogen-bond 
+acceptor (HBA) molecule used in the synthesis of deep eutectic solvent 
+(DES). The study identified a thermodynamically feasible pathway to an 
+energetically stable DES using choline chloride (CHL) and urea (URE). 
+Additionally, we thoroughly assessed the suitability of employing 
+different levels of theoretical calculations like PM3, Hartree Fock (HF), 
+and density functional theory (DFT). 
+Our study revealed that the use of no bond, generic, or single bond 
+for modeling the ionic or electrovalent bonds in HBA molecules did not 
+show any significant difference across the levels (PM3, HF, and DFT) of 
+calculation deployed in our studies. Therefore, any of these approaches 
+can be used in modeling with freedom; however, we recommend 
+maintaining consistency by using only one approach in a particular 
+study. 
+The findings from our study demonstrate that the H-X DES formation 
+pathway, involving the interaction of three H-atoms present in the 
+alcohol functions of the hydrogen bond donor (HBD) molecule (glycerol 
+- GLC) with the chloride ion in the HBA molecule (choline chloride - 
+CHL), has been identified as the thermodynamically feasible path for the 
+CHL:GLC DES formation. The H-X pathway exhibited the most 
+Table 10 
+Stability of the CHL-GLY DES via oxygen(O) as a point of interaction using DFT (Note that BEcorr is the BSSE corrected binding energies and BEncorr is the uncorrected 
+binding energies).  
+Label 
+Int 
+Name 
+BEcorr (eV) 
+BEncorr (eV) 
+Err (eV) 
+OH21-Cl1 (Å) 
+OH12-Cl1 (Å) 
+OH8-Cl1 (Å) 
+OH1-Cl1 (Å) 
+O-OH 
+O 
+X5 
+−0.63 
+−0.74 
+0.11 
+5.24 
+2.09 
+6.75 
+2.15 
+CH–O-HO 
+O 
+X3 
+−0.48 
+−0.57 
+0.09 
+2.48 
+3.95 
+6.30 
+2.01 
+O-HC 
+O 
+X2 
+−0.45 
+−0.51 
+0.06 
+2.12 
+5.60 
+7.08 
+2.25 
+HO-O-OH 
+O 
+X4 
+−0.39 
+−0.46 
+0.07 
+2.19 
+4.91 
+2.16 
+5.66 
+O-CH2 
+O 
+X1 
+−0.27 
+−0.38 
+0.11 
+4.61 
+6.21 
+3.81 
+2.10 
+OH-O-HO 
+O 
+X6 
+0.09 
+2.9E-3 
+0.09 
+6.36 
+7.70 
+10.12 
+6.95  
+Fig. 10. The most stable geometric structure of the DES for the O-X interaction: (A) After geometrical optimization (one view), (B) After geometrical optimization 
+(another view), and (C) Before geometrical optimization (one view). 
+Table 11 
+Thermodynamics analysis of possible interactions in the formation of CHL:GLC DES (Note that BEcorr is the BSSE corrected binding energies and BEncorr is the 
+uncorrected binding energies).  
+Label 
+Interact 
+BEcorr (eV) 
+BEncorr (eV) 
+X in Cl-XO 
+dG◦(eV) 
+dH◦(eV) 
+dS◦(meV/K) 
+OH–CL-HO 
+Cl-X 
+−0.49 
+−0.52 
+H21, H12 
+0.11 
+−0.52 
+−2.11 
+OH-H-HO 
+H-X 
+−0.79 
+−0.95 
+H12, H8, H1 
+−0.25 
+−0.92 
+−2.25 
+Physio 
+N/A 
+−0.78 
+−0.89 
+H21, H12 
+−0.20 
+−0.85 
+−2.20 
+OH-N-HO 
+N-X 
+−0.67 
+−0.78 
+H21, H12, H1 
+−0.08 
+−0.74 
+−2.21 
+O-OH 
+O-X 
+−0.63 
+−0.74 
+H12, H1 
+−0.08 
+−0.73 
+−2.19  
+M.I. Uzochukwu et al.                                                                                                                                                                                                                         
+
+<<<PAGE 11>>>
+Chemical Engineering Journal Advances 16 (2023) 100564
+11
+substantial binding energy (or formation energy), highest exothermi­
+city, spontaneity, and exergonicity, leading to the formation of an 
+energetically stable DES from CHL and GLC for any potential applica­
+tions. Moreover, the deductions from different levels of calculation 
+explored in our study support the validity of the H-X pathway 
+consistently. 
+This study suggests that other levels of calculation can be employed 
+in cases where it is expensive to afford DFT calculation in this kind of 
+study. Our study findings recommend using our evaluation strategy for 
+building different stable DES(s) that could be employed in the screening 
+of DES to best suit a defined application at both low and high levels of 
+computational cost. 
+Funding 
+The project was not funded. 
+CRediT authorship contribution statement 
+Maryann I. Uzochukwu: Formal analysis, Investigation, Software, 
+Fig. 11. A scheme showing the different DES formation routes explored the thermodynamically feasible one obtained from our study, including the IR spectra for the 
+CHL:GLC deep eutectic solvent (DES) obtained for the most energetically stable formation routes. 
+Fig. 12. A map showing the electrostatic potential interaction for glycerol (HBD) and choline chloride (HBA) for the most stable structures.  
+M.I. Uzochukwu et al.                                                                                                                                                                                                                         
+
+<<<PAGE 12>>>
+Chemical Engineering Journal Advances 16 (2023) 100564
+12
+Resources, Visualization, Writing – original draft, Writing – review & 
+editing. Toyese Oyegoke: Conceptualization, Formal analysis, Investi­
+gation, Software, Supervision, Methodology, Resources, Validation, 
+Visualization, Writing – original draft, Writing – review & editing. 
+Raheem O. Momoh: Project administration, Supervision, Validation. 
+Muhammed T. Isa: Project administration, Supervision. Suleiman M. 
+Shuwa: Project administration, Supervision. Baba Y. Jibril: Formal 
+analysis, Investigation, Project administration, Supervision, Validation, 
+Visualization, Writing – review & editing. 
+Declaration of Competing Interest 
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper. 
+Data availability 
+Data will be made available on request. 
+Acknowledgment 
+The authors wish to acknowledge the support of Wavefunction Inc, 
+Irvine, CA 92612 USA for the provision of the Spartan v20 simulation 
+software installer and its license, which was employed in the running of 
+the calculations reported in this study. The research teams and affili­
+ating schools involved in the project are also acknowledged and 
+appreciated. 
+Supplementary materials 
+Supplementary material associated with this article can be found, in 
+the online version, at doi:10.1016/j.ceja.2023.100564. 
+References 
+[1] P. Aravena, E. Cea-Klapp, N.F. Gajardo-Parra, C. Held, J.M. Garrido, R.I. Canales, 
+Effect of water and hydrogen bond acceptor on the density and viscosity of glycol- 
+based eutectic solvents, J. Mol. Liq. 389 (2023), 122856, https://doi.org/10.1016/ 
+J.MOLLIQ.2023.122856. 
+[2] S. Arriaga, A. Aizpuru, Innovative non-aqueous phases and partitioning bioreactor 
+configurations. Advances in Chemical Engineering, Academic Press, 2019, 
+pp. 299–348, https://doi.org/10.1016/BS.ACHE.2018.12.004. 
+[3] F.A. Ashna, A.B. Azeez, M.H. Samir, Physical, Thermal and Structural Properties of 
+Choline Chloride: urea Based Ionic Liquids, Singap. J. Sci. Res. 10 (2020) 417–424. 
+[4] M. Atilhan, T. Altamash, S. Aparicio, Quantum chemistry insight into the 
+interactions between deep eutectic solvents and SO2, Molecules 24 (2019) 2963, 
+https://doi.org/10.3390/MOLECULES24162963. 
+[5] M. Atilhan, S. Aparicio, Molecular dynamics study on the use of deep eutectic 
+solvents for enhanced oil recovery, J. Pet. Sci. Eng. 209 (2022), 109953, https:// 
+doi.org/10.1016/J.PETROL.2021.109953. 
+[6] P.W. Atkins, W. Peter, J. De Paula. Physical Chemistry : Thermodynamics, 
+Structure, and Change, Oxford University Press, NY, USA, 2014. 
+[7] L. Blanco, O. Martínez-Rico, ´A. Domínguez, B. Gonz´alez, Removal of Acid Blue 80 
+from aqueous solutions using chitosan-based beads modified with choline chloride: 
+urea Deep Eutectic Solvent and FeO, Water Resour. Ind. 29 (2023), 100195, 
+https://doi.org/10.1016/J.WRI.2022.100195. 
+[8] E. Cea-Klapp, J.M. Garrido, H. Quinteros-Lama, Insights into the orientation and 
+hydrogen bond influence on thermophysical and transport properties in choline- 
+based deep eutectic solvents and methanol, J. Mol. Liq. 345 (2022), 117019, 
+https://doi.org/10.1016/J.MOLLIQ.2021.117019. 
+[9] Y. Chen, T. Mu, Revisiting greenness of ionic liquids and deep eutectic solvents, 
+Green Chem. Eng. 2 (2021) 174–186, https://doi.org/10.1016/J. 
+GCE.2021.01.004. 
+[10] I. Cichowska-Kopczy´nska, K. Kopczy´nska, B. Nowosielski, D. Warmí Nska, Deep 
+eutectic solvents: properties and applications in CO2 separation, Molecules 28 
+(2023) 5293, https://doi.org/10.3390/MOLECULES28145293, 2023Page 5293 28. 
+[11] L. Cui, J. Zhou, X. Peng, S. Ruan, Y. Zhang, Analyses of air pollution control 
+measures and co-benefits in the heavily air-polluted Jinan city of China, 
+2013–2017, Sci. Rep. 10 (2020) 5423, https://doi.org/10.1038/S41598-020- 
+62475-0. 
+[12] H.K. Cummings, Anti-freeze solutions and compounds on JSTOR, SAE Trans. 21 
+(1926) 687–715. 
+[13] G.R. Desiraju, T. Steiner, Other weak and non-conventional hydrogen bonds. The 
+Weak Hydrogen Bond, Oxford University Press, 2001, pp. 122–292, https://doi. 
+org/10.1093/ACPROF:OSO/9780198509707.003.0003. 
+[14] B. Doherty, O. Acevedo, OPLS force field for choline chloride-based deep eutectic 
+solvents, J. Phys. Chem. B 122 (2018) 9982–9993, https://doi.org/10.1021/ACS. 
+JPCB.8B06647/SUPPL_FILE/JP8B06647_SI_002.XLSX. 
+[15] Y. Elhamarnah, H. Qiblawey, M.S. Nasser, A. Benamor, Thermo-rheological 
+characterization of malic acid based natural deep eutectic solvents, Sci. Total 
+Environ. 708 (2020), 134848, https://doi.org/10.1016/J. 
+SCITOTENV.2019.134848. 
+[16] W.U. Eze, T. Oyegoke, J.D. Gaiya, R. Umunakwe, D.I. Onyemachi, W.U. Eze, 
+T. Oyegoke, J.D. Gaiya, R. Umunakwe, D.I. Onyemachi, Review of personal 
+protective equipment and their associated wastes, life-cycle and effective 
+management during the Covid-19 pandemic in developing nations, Clean Technol. 
+Recycl. 1 (2) (2022) 1–31, https://doi.org/10.3934/CTR.2022001, 20221. 
+[17] W.U. Eze, R. Umunakwe, M.I. Ugbaja, M.K. Yakubu, N.N. Adegboro, A.H. Bayero, 
+M.I. Uzochukwu, W.U. Eze, R. Umunakwe, M.I. Ugbaja, M.K. Yakubu, N. 
+N. Adegboro, A.H. Bayero, M.I. Uzochukwu, Utilization of commodity plastic 
+wastes in flexible pavement: a review, Clean Technol. Recycl. 71 (3) (2023) 71–91, 
+https://doi.org/10.3934/CTR.2023005, 2023 1. 
+[18] H.A. Favre, W.H. Powell, Nomenclature of organic chemistry: IUPAC 
+recommendations and preferred names 2013, nomenclature of organic chemistry, 
+R. Soc. Chem. (2014), https://doi.org/10.1039/9781849733069. 
+[19] N.F. Gajardo-Parra, H.T. Do, M. Yang, J.R. P´erez-Correa, J.M. Garrido, 
+G. Sadowski, C. Held, R.I. Canales, Impact of deep eutectic solvents and their 
+constituents on the aqueous solubility of phloroglucinol dihydrate, J. Mol. Liq. 344 
+(2021), 117932, https://doi.org/10.1016/J.MOLLIQ.2021.117932. 
+[20] D. Ganesan, Z. Hamdi, W.C. Cheong, Effectiveness of deep eutectic solvents for 
+light oil recovery through spontaneous imbibition, IOP Conf. Ser. Earth Environ. 
+Sci. 1151 (2023), 012036, https://doi.org/10.1088/1755-1315/1151/1/012036. 
+[21] H.R. Ghenaatian, M. Shakourian-Fard, V. Alizadeh, G. Kamath, DFT study of 
+interaction of Palladium Pdn (n = 1–6) nanoparticles with deep eutectic solvents, 
+J. Mol. Graph. Model. 110 (2022), 108072, https://doi.org/10.1016/J. 
+JMGM.2021.108072. 
+[22] N. Gissawong, S. Mukdasai, S. Boonchiangma, S. Sansuk, S. Srijaranai, A rapid and 
+simple method for the removal of dyes and organophosphorus pesticides from 
+water and soil samples using deep eutectic solvent embedded sponge, 
+Chemosphere 260 (2020), 127590, https://doi.org/10.1016/J. 
+CHEMOSPHERE.2020.127590. 
+[23] J. Gmehling, M. Kleiber, B. Kolbe, J. Rarey, Chemical Thermodynamics For Process 
+Simulation, n.d., Wiley VCH, 2023. 
+[24] M.B. Haider, D. Jha, R. Kumar, B. Marriyappan Sivagnanam, Ternary hydrophobic 
+deep eutectic solvents for carbon dioxide absorption, Int. J. Greenhouse Gas 
+Control 92 (2020), 102839, https://doi.org/10.1016/J.IJGGC.2019.102839. 
+[25] W.J. Hehre, A Guide to Molecular Mechanics and Quantum Chemical Calculations, 
+2, Wavefunction Inc, Irvine, CA, 2003. 
+[26] J.M. Hollis, F.J. Lovas, P.R. Jewell, L.H. Coudert, Interstellar Antifreeze: ethylene 
+Glycol, Astrophys. J. 571 (2002) L59–L62, https://doi.org/10.1086/341148. 
+[27] Y.C. Hou, C.F. Yao, W.Z. Wu, Deep eutectic solvents: green solvents for separation 
+applications, Wuli Huaxue Xuebao/, Acta Phys. - Chim. Sin. 34 (2018) 873–885, 
+https://doi.org/10.3866/PKU.WHXB201802062. 
+[28] Infrared spectroscopy correlation table - Wikipedia. Retrieved from https://en. 
+wikipedia.org/wiki/Infrared_spectroscopy_correlation_table (accessed 1 August 
+2023) 2023. 
+[29] N.R. Kestnep, J.E. Combarizat, Basis Set Superposition Errors: Theory and Practice, 
+in: Reviews, Computational Chemistry, 1999, pp. 99–132, https://doi.org/ 
+10.1002/9780470125908.ch2. 
+[30] R.N.V. Krishna Deepak, R. Sankararamakrishnan, Unconventional N-H…N 
+hydrogen bonds involving proline backbone nitrogen in protein structures, 
+Biophys. J. 110 (2016) 1967–1979, https://doi.org/10.1016/J.BPJ.2016.03.034. 
+[31] J.R. Lim, L.S. Chua, A.A. Mustaffa, Ionic liquids as green solvent and their 
+applications in bioactive compounds extraction from plants, Process Biochem. 122 
+(2022) 292–306, https://doi.org/10.1016/J.PROCBIO.2022.10.024. 
+[32] Z. Liu, G. Zhao, M. Brewer, Q. Lv, E.J.R. Sudh¨olter, Comprehensive review on 
+surfactant adsorption on mineral surfaces in chemical enhanced oil recovery, Adv. 
+Colloid Interface Sci. 294 (2021), 102467, https://doi.org/10.1016/J. 
+CIS.2021.102467. 
+[33] Y. Luo, C. Yin, L. Ou, Recycling of waste lithium-ion batteries via a one-step process 
+using a novel deep eutectic solvent, Sci. Total Environ. 902 (2023), 166095, 
+https://doi.org/10.1016/J.SCITOTENV.2023.166095. 
+[34] P. Mako´s-Chełstowska, VOCs absorption from gas streams using deep eutectic 
+solvents – a review, J. Hazard. Mater. 448 (2023), 130957, https://doi.org/ 
+10.1016/J.JHAZMAT.2023.130957. 
+[35] K.K. Maniam, S. Paul, Ionic liquids and deep eutectic solvents for CO2 conversion 
+technologies—a review, Materials 14 (2021), https://doi.org/10.3390/ 
+MA14164519. Basel. 
+[36] IR Spectrum Table - Merck. Retrieved from https://www.sigmaaldrich.com/NG 
+/en/technical-documents/technical-article/analytical-chemistry/photometr 
+y-and-reflectometry/ir-spectrum-table (accessed 1 August 2023). 
+[37] H. Metiu, Physical chemistry : Thermodynamics, Taylor & Francis Group, 2006. 
+[38] K. Mishra, S.S. Siwal, S.C. Nayaka, Z. Guan, V.K. Thakur, Waste-to-chemicals: 
+green solutions for bioeconomy markets, Sci. Total Environ. 887 (2023), 164006, 
+https://doi.org/10.1016/J.SCITOTENV.2023.164006. 
+[39] A. Mohsenzadeh, Y. Al-Wahaibi, A. Jibril, R. Al-Hajri, S. Shuwa, The novel use of 
+deep eutectic solvents for enhancing heavy oil recovery, J. Pet. Sci. Eng. 130 
+(2015) 6–15, https://doi.org/10.1016/J.PETROL.2015.03.018. 
+M.I. Uzochukwu et al.                                                                                                                                                                                                                         
+
+<<<PAGE 13>>>
+Chemical Engineering Journal Advances 16 (2023) 100564
+13
+[40] A. Mukhtar, S. Sarfaraz, K. Ayub, Organic transformations in the confined space of 
+porous organic cage CC2; catalysis or inhibition, RSC Adv. 12 (2022) 
+24397–24411, https://doi.org/10.1039/D2RA03399B. 
+[41] Z. Naseem, R. Aqil Shehzad, S. Jabeen, S. Tahir, F. Mushtaq, M. Zahid, J. Iqbal, 
+Quantum chemical investigation of choline chloride-based deep eutectic solvents, 
+Chem. Phys. 571 (2023), 111936, https://doi.org/10.1016/J. 
+CHEMPHYS.2023.111936. 
+[42] NIST, 2018. Glycerin. COBLENTZ Society Report. Retrieved from URL https://we 
+bbook.nist.gov/cgi/cbook.cgi?ID=C56815&Type=IR-SPEC&Index=1 (accessed 1 
+August 2023). 
+[43] J.E. Oguche, A.O. Ameh, T.K. Bello, N.S. Maina, Prospect of deep eutectic solvents 
+in lactic acid production process: a review, J. Chem. Rev. 5 (2023) 96–128, https:// 
+doi.org/10.22034/JCR.2023.349358.1203. 
+[44] K.A. Omar, R. Sadeghi, Database of deep eutectic solvents and their physical 
+properties: a review, J. Mol. Liq. 384 (2023), 121899, https://doi.org/10.1016/J. 
+MOLLIQ.2023.121899. 
+[45] T. Oyegoke, F.N. Dabai, A. Uzairu, B.Y. Jibril, Mechanistic insight into propane 
+dehydrogenation into propylene over chromium (III) oxide by cluster approach and 
+density functional theory calculations, Eur. J. Chem. 11 (2020) 342–350, https:// 
+doi.org/10.5155/eurjchem.11.4.342-350.2045. 
+[46] T. Oyegoke, F.N. Dabai, S.M. Waziri, A. Uzairu, B.Y. Jibril, Impact of Mo and W on 
+CrXO3 (X = Cr, Mo, W) catalytic performance in a propane non-oxidative 
+dehydrogenation process, Kem. Ind. 71 (2022) 583–590, https://doi.org/ 
+10.15255/KUI.2022.006. 
+[47] T. Oyegoke, A. F. Oyegoke, O. Fasanya, A.G. Ibrahim, State of agro-wastes 
+management in Nigeria : status, implications, and way forward. Waste Recovery 
+and Management, CRC Press, 2023, pp. 241–272, https://doi.org/10.1201/ 
+9781003359784-14. 
+[48] T. Oyegoke, E. Obadiah, F. Adah, J.E. Oguche, G.T. Timothy, I.A. Mantu, A.D. Ado, 
+Trends of Progress in Setting up Biorefineries in Developing Countries: a Review of 
+Bioethanol Exploration in Nigeria, J. Renew. Energy Environ. 9 (2022) 37–52, 
+https://doi.org/10.30501/JREE.2021.278037.1197. 
+[49] L. Pauling, The dependence of bond energy on bond length, J. Phys. Chem. 58 
+(1954) 662–666, https://doi.org/10.1021/J150518A015/ASSET/J150518A015. 
+FP.PNG_V03. 
+[50] W. Rahmalia, A. Shofiyani, Y.S.K. Dewi, S. Septiani, Simple green routes for metal- 
+bixin complexes synthesis using glycerol-based deep eutectic solvent, Indones. J. 
+Chem. 22 (2022) 1759–1767, https://doi.org/10.22146/IJC.76759. 
+[51] K.I. Ramachandran, G. Deepa, K. Namboori, Computational Chemistry and 
+Molecular modeling: Principles and applications, Computational Chemistry and 
+Molecular Modeling: Principles and Applications, Springer Berlin Heidelberg, 
+2008, https://doi.org/10.1007/978-3-540-77304-7. 
+[52] S.N. Rashid, H.F. Hizaddin, A. Hayyan, K. Hasikin, S. Abdul Razak, M.I. Mokhtar, 
+M.M. Azizan, Deep eutectic solvents for the removal of lead contaminants in 
+mangrove soil, J. Environ. Chem. Eng. 10 (2022), 107264, https://doi.org/ 
+10.1016/J.JECE.2022.107264. 
+[53] M. Santra, D. Kunzru, D. Rabari, A stability analysis of choline chloride: urea deep 
+eutectic solvent using density functional theory, Comput. Theor. Chem. 1217 
+(2022), 113921, https://doi.org/10.1016/J.COMPTC.2022.113921. 
+[54] Semiempirical Methods, Computational Chemistry and Molecular Modeling, 
+Springer, Berlin, Heidelberg, 2008, pp. 139–154, https://doi.org/10.1007/978-3- 
+540-77304-7_7. 
+[55] J.M. Smith, M. Joseph, H.C. Van Ness, C. Hendrick, M.M. Abbott, Introduction to 
+Chemical Engineering Thermodynamics, McGraw-Hill, 2005. 
+[56] G. Socrates, Infrared and Raman characteristic group frequencies: tables and 
+Charts, J. Raman Spectrosc. (2004). 
+[57] C. Song, C. Zhang, S. Zhang, H. Lin, Y. Kim, M. Ramakrishnan, Y. Du, Y. Zhang, 
+H. Zheng, Dami`a Barcel´o, Thermochemical liquefaction of agricultural and forestry 
+wastes into biofuels and chemicals from circular economy perspectives, Sci. Total 
+Environ. 749 (2020), 141972, https://doi.org/10.1016/J. 
+SCITOTENV.2020.141972. 
+[58] X. Song, J. Yuan, C. Yang, G. Deng, Z. Wang, J. Gao, Carbon dioxide separation 
+performance evaluation of amine-based versus choline-based deep eutectic 
+solvents, Renew. Sustain. Energy Rev. (2023), 113499, https://doi.org/10.1016/J. 
+RSER.2023.113499. 
+[59] P.S. Suresh, P.P. Singh, Anmol, S. Kapoor, Y.S. Padwad, U. Sharma, Lactic acid- 
+based deep eutectic solvent: an efficient green media for the selective extraction of 
+steroidal saponins from Trillium govanianum, Sep. Purif. Technol. 294 (2022), 
+121105, https://doi.org/10.1016/J.SEPPUR.2022.121105. 
+[60] P. Suthar, M. Kaushal, D. Vaidya, M. Thakur, P. Chauhan, D. Angmo, S. Kashyap, 
+N. Negi, Deep eutectic solvents (DES): an update on the applications in food 
+sectors, J. Agric. Food Res. 14 (2023), 100678, https://doi.org/10.1016/J. 
+JAFR.2023.100678. 
+[61] A.E. Ünlü, A. Arlkaya, S. Takaç, Use of deep eutectic solvents as catalyst: a mini- 
+review, Green Process. Synth. 8 (2019) 355–372, https://doi.org/10.1515/GPS- 
+2019-0003/ASSET/GRAPHIC/J_GPS-2019-0003_FIG_018.JPG. 
+[62] S.S.A. Venkataramanan, R. Anantharaj, S.S.A. Venkataramanan, R. Anantharaj, 
+DFT study on interaction of estrone and imidazolium-based hydrophobic ionic 
+liquids. Advances in Quantum Communication and Information, IntechOpen, 
+2019, https://doi.org/10.5772/INTECHOPEN.86821. 
+[63] Wavefun, About Basis Sets, Ivrine, CA, 2023. 
+[64] Y. Ye, P. Geng, A review of air pollution monitoring technology for ports, Appl. Sci. 
+13 (2023) 5049, https://doi.org/10.3390/APP13085049. 
+[65] Y. Zhang, X. Ji, X. Lu, Choline-based deep eutectic solvents for CO2 separation: 
+review and thermodynamic analysis, Renew. Sustain. Energy Rev. 97 (2018) 
+436–455, https://doi.org/10.1016/J.RSER.2018.08.007. 
+[66] Y. Zhou, W. Wu, N. Zhang, O.P. Soladoye, Y. Zhang, Y. Fu, Deep eutectic solvents 
+as new media for green extraction of food proteins: opportunity and challenges, 
+Food Res. Int. 161 (2022), 111842, https://doi.org/10.1016/J. 
+FOODRES.2022.111842. 
+[67] B. Zhu, Y. Xu, H. Ge, S. Wang, W. Wang, B. Li, H. Xu, Theoretical study of lactic 
+acid-based deep eutectic solvents dissociation of hemicellulose with different 
+hydrogen bonding acceptors, Int. J. Biol. Macromol. 244 (2023), 125342, https:// 
+doi.org/10.1016/J.IJBIOMAC.2023.125342. 
+[68] J. Zhu, H. Shao, L. Feng, Y. Lu, H. Meng, C. Li, Absorptive separation of HCl gas by 
+choline chloride-based deep eutectic solvents, J. Mol. Liq. 341 (2021), 116928, 
+https://doi.org/10.1016/J.MOLLIQ.2021.116928. 
+M.I. Uzochukwu et al.                                                                                                                                                                                                                         

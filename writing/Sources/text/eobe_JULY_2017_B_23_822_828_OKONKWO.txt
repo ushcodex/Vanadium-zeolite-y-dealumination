@@ -1,0 +1,1016 @@
+
+<<<PAGE 1>>>
+ 
+* Corresponding author, tel: + 234 – 803 – 451 – 6186  
+                                                    
+ 
+ALUMINA PHASE TRANSFORMATION FROM THERMAL DECOMPOSITION OF 
+AMMONIUM ALUM SYNTHESIZED FROM KANKARA KAOLIN 
+ 
+S. G. Bawa1, A. S. Ahmed2 and P.C. Okonkwo3,* 
+1,2,3 DEPARTMENT OF CHEMICAL ENGINEERING, AHMADU BELLO UNIVERSITY, ZARIA, KADUNA STATE. NIGERIA 
+E-mail addresses: 1sgbawa@gmail.com,  2 asahmed2001@yahoo.com, 3 chemstprom@gmail.com 
+ 
+ABSTRACT 
+Thermal stability of transitional alumina phases produced from ammonium alum using Kankara kaolin as starting 
+material was studied. Wet beneficiation method was employed to purify the starting material, after which it was calcined 
+and dealuminated with sulphuric acid. The elemental composition, mineralogical, and physiological analyses were carried 
+out using X-ray fluorescence (XRF), X-ray diffraction (XRD) and Brunauer-Emmett-Teller (BET) techniques respectively. 
+The ammonium alum was thermally treated by varying the calcination temperature from 700 to 1200°C and varying the 
+time of calcination from 1 to 4 h. The formation of gamma alumina began at calcination temperature of 825°C for 
+calcination time of 3 h, which was found to be lower than reported works of 900°C. It was found to be stable at higher 
+temperature of 1125°C, above which phase transformation to alpha alumina was observed. The observed wide range of 
+thermal stability of the gamma alumina phase gives it good advantage to be used for high temperature applications, such 
+as support for catalyst promoters. Alpha alumina phase formation began at 1150°C and was fully formed at 1200°C. BET 
+specific surface area of 166 m2/g was obtained for the gamma alumina phase which was high enough for it application as 
+support for catalyst, catalyst and adsorbent. 
+ 
+Keywords: Kaolin, ammonium alum, gamma alumina, alpha alumina 
+ 
+1. INTRODUCTION 
+Alumina is one of the major components used as catalyst 
+support, which is especially important with regard to 
+precious-metal catalysts [1]. High surface area aluminas 
+with porous structure have gained importance due to 
+their potential applications as catalysts and catalyst 
+supports as well as adsorptive materials in separation 
+processes. Transitional alumina especially gamma-
+alumina, has been a major catalytic support in 
+automotive and petroleum industries, as well as in 
+adsorption 
+technology. 
+Micro 
+and 
+nanocrystalline 
+aluminas are commonly used for Al2O3-based ceramics 
+[2]. Alumina remains a very important material used as a 
+support for metal catalyst and zeolite catalysts which are 
+used for processing petroleum, gas, petrochemicals and 
+for other applications in the chemical processing 
+industry [3, 4].Alumina is one of the most used and 
+advanced ceramic materials with applications ranging 
+from spark plugs to catalyst materials [5]. Currently and 
+for the foreseeable future, the most important types of 
+nanoparticles which possess high specific surface area 
+are simple oxides such as Al2O3, which are used in 
+established applications [6], and for sapphire crystal 
+growth [7]. Presently, alpha-alumina (α-Al2O3) has many 
+uses in traditional and advanced ceramics. It is an 
+important 
+substrate 
+for 
+the 
+growth 
+of 
+the 
+superconductors and semiconductors by molecular beam 
+[8].Alumina exists both in the transition or metastable 
+and stable forms. Alpha (α) alumina is the only stable 
+phase of alumina while the metastable phases include, 
+chi (χ) phase, eta (η) phase, kappa(κ) phase, theta (θ) 
+phase, delta (δ) phase, and gamma (γ) phase [6, 9]. 
+Transition aluminas may also be formed by pyrolysis of 
+crystalline hydrates of aluminum saltssuch as sulphate, 
+nitrate, ammonium alum and chloride [8]. Conventional 
+methods for synthesizing α-Al2O3 involve solid state 
+thermally driven transformations from the hydrates of 
+aluminum oxide. The extent and total conversion to the 
+corundum structure, which depends on the temperature 
+and the time of thermal treatment occurs on heating 
+above 1230°C [6].Bauxite has been widely used in 
+industry to produce alumina via the Bayer process, while 
+nonbauxitic materials which are more abundant in many 
+countries, have been processed in attempts to develop 
+alternative 
+technologies 
+for 
+alumina 
+production. 
+Examples of such nonbauxitic raw materials include: 
+alunite, sillimanite, and alusite, kyanite, kaolin, mica and 
+fly ash [10]. Due to the decline in bauxite reserve (both 
+Nigerian Journal of Technology (NIJOTECH) 
+Vol. 36, No. 3, July 2017, pp. 822 – 828 
+Copyright© Faculty of Engineering, University of Nigeria, Nsukka,  
+Print ISSN: 0331-8443, Electronic ISSN: 2467-8821 
+www.nijotech.com  
+http://dx.doi.org/10.4314/njt.v36i3.23  
+
+<<<PAGE 2>>>
+ALUMINA PHASE TRANSFORMATION FROM THERMAL DECOMPOSITION OF AMMONIUM ALUM SYNTHESIZED FROM …    S. G. Bawa, et al 
+ 
+Nigerian Journal of Technology 
+ 
+Vol. 36, No. 3, July 2017          823 
+qualitatively and quantitatively) and the need to explore 
+the use of locally sourced raw materials, various research 
+works had been carried out and it has been shown that 
+kaolin clay (which is next to bauxite in alumina content), 
+can be used for alum production [11] and alumina [12]. 
+Ammonium alum (NH4)2 SO4.Al2(SO4)3.24H2O, a white 
+crystalline double sulphate of aluminum is used in water 
+purification, vegetable glues, porcelain cements, natural 
+deodorant and in fire proofing textiles. Ammonium alum 
+(NH4Al(SO4)2.12H2O) is a potential starting material for 
+preparation of high purity reactive alumina [13]. Several 
+works that had been reported on Kankara kaolin include, 
+single alum that had been produced from Kankara kaolin 
+clay and met industrial requirements [14], preliminary 
+investigation of alumina production from single alum 
+[15],production of double alum from Kankara kaolin 
+[11], extraction of alumina from ammonium alum [13, 
+16],gamma alumina from aluminum hydroxide prepared 
+from Kankara kaolin [17].  
+Despite the works carried out on Kankara kaolin, no 
+work has been done to investigate the transitional 
+phases present during the thermal decomposition of 
+ammonium alum prepared from Kankara kaolin. The 
+phase transition temperature from the metastable to 
+stable phase of alumina has not been investigated via 
+thermal decomposition of ammonium alum prepared 
+from Kankara kaolin which is thrust of this study. Thus, 
+this study involves preparation of ammonium alum from 
+the filtrate of dealumination of metakaolin. The effect of 
+thermal treatment of the ammonium alum was closely 
+studied as the calcination temperature and time were 
+varied. The alumina phases transformation was also 
+monitored as the thermal conditions were changed. 
+ 
+2. MATERIALS AND METHOD 
+2.1 Materials 
+The kaolinite clay was sourced from Kankara town of 
+Katsina State, Nigeria. The reproducibility of the alum 
+from the kaolin at Kankara deposit at different sampling 
+point had been proven. Industrial grade concentrated 
+sulphuric acid, 96wt% (Johnson Solomon Chemicals, 
+London) was used for the metakaolin dealumination. 
+Ammonium sulphate Analar grade (BDH, Chemicals LTD, 
+England) was used as the salting agent to obtain the 
+ammonium alum crystals. 
+ 
+2.2 Methods 
+2.2.1 Kaolin purification and calcination 
+Raw kaolinite clay was purified using the wet 
+beneficiation method [18, 19]. The dried beneficiated 
+kaolin was thermally activated in an exposed electric 
+element furnace (Nabertherm; 30–1400°C) at 750°C for 
+calcination time of 2h to obtain metakaolin [20], the 
+reactive phase of disordered kaolin as shown in Equation 
+(1).  
+ 
+2.2.2 Dealumination 
+The alumina content of the amorphous metakaolin was 
+leached in the reaction medium of 60wt% sulphuric acid 
+using the novel method approach of dealumination [20, 
+21]. The dealumination mixture was then filtered using a 
+high vacuum pump (Edwards ES50) filtration set-up. The 
+products obtained was liquid aluminum sulphate and 
+unreacted silica as residue. The reaction is represented 
+in Equation (2).  
+ 
+2.2.3 Crystallization 
+Prior to crystallization, the mixture was diluted with 288 
+cm3of distilled water, reducing the acidic nature of the 
+mixture from 60wt% to 30wt%. This was done to 
+enhance the ease of separation of the excess acid from 
+the alum by taking advantage of the freezing point 
+depression of sulphuric acid solutions on dilution. The 
+filtrate was then cooled at temperature of 0°C for 6 h[22]. 
+Ammonium sulphate was added to the filtrate as a salting 
+agent to produce ammonium alum. Equation (3) shows 
+the crystallization reaction. 
+ 
+================================================================= 
+         (  )  ( )                        ( )     ( )                                                                           ( ) 
+          Kaolin 
+ 
+ 
+                      Metakaolin 
+ 
+         ( )        ( )      ( )           (   ) .     ( )            ( )                                ( ) 
+Metakaolin 
+Sulphuric acid 
+Water   
+ 
+Aluminum sulphate 
+Silica 
+ 
+(   )     ( )               (   )  ( )             ( )                (   )    .   (   ) .     ( )   ( ) 
+Ammonium sulphate    Aluminum sulphate   water      
+ 
+Ammonium alum 
+ 
+     (   ) .                                          (   )                                       ( ) 
+     (   )                                   (   )                                 6            ( ) 
+   (   )                                                                                                       6   9           (6) 
+ 
+
+<<<PAGE 3>>>
+ALUMINA PHASE TRANSFORMATION FROM THERMAL DECOMPOSITION OF AMMONIUM ALUM SYNTHESIZED FROM …    S. G. Bawa, et al 
+ 
+Nigerian Journal of Technology 
+ 
+Vol. 36, No. 3, July 2017          824 
+ 
+2.2.4 Thermal Treatment 
+The wet ammonium alum was heated to 250°C for 4 h to 
+expel the water of crystallization. The dried ammonium 
+alum was calcined in the electric furnace at various 
+temperature ranging from 700 to 1200°C and calcination 
+time ranging from 1 to 4 h. Single alum decomposition 
+begins at about 700°C and alpha alumina is usually 
+obtained at about 1200°C, these findings informed the 
+choice of the calcination temperatures for this study. 
+Equations (4) to (6), show the step-wise thermal 
+decomposition of the ammonium alum. Physicochemical 
+characterization of the products was carried out via 
+different techniques. 
+ 
+2.2.5 Characterization Techniques 
+The elemental composition (in oxide form) of the 
+starting material, intermediate and final products were 
+determined using the XRF machine (Minipal 4, 
+PANalytical). 
+XRD 
+patterns 
+were 
+obtained 
+using 
+Empyreal, PANalytical diffractometer employing Cu Kα 
+radiation with λ= .   nm, the range of the Bragg’s angle 
+for the analysis was from 4 to 75°, operated at 
+continuous 
+scanning, 
+scanning 
+speed 
+of 
+5°/min, 
+generator settings of 10 mA and 40 kV. The textural 
+properties (surface area, pore size and pore volume), of 
+the products were determined using BET method by N2 
+adsorption at -196°C using Tristar 3000 Micrometrics 
+equipment. 
+ 
+3. RESULTS AND DISCUSSION 
+3.1 X-ray Fluorescence 
+The 
+chemical 
+compositions 
+of 
+Kankara 
+kaolin, 
+beneficiated 
+kaolin, 
+metakaolin 
+and 
+the 
+alumina 
+products obtained at calcination temperature of 800°C 
+are presented in Table 1. The alumina content increases 
+steadily with beneficiation, which is the aim of the 
+process.ilica content was observed to also increase 
+numerically, this was not in the same proportion with the 
+alumina. This implies that the materials removed during 
+the beneficiation process were high in silica content, 
+basically, montmorillonite, mica and quartz. The silica to 
+alumina ratio calculated from the XRF analysis result 
+shown in Table 1 for metakaolin was approximately 2, 
+which agreed with the literature value[23]. It was also an 
+indication that at the calcination temperature of 750°C 
+for 2 h, complete conversion of kaolin to metakaolin had 
+occurred. Thermal decomposition of aluminum sulphate 
+had been reported to commerce at 8  °С [24]. The 
+maximum alumina content obtained at this calcination 
+temperature was 39% for 3 h calcination time, this low 
+value and high value of the sulphate content of 59% gave 
+an indication that the desired alumina phase was yet to 
+be formed. Calcination time of 3 h, however was used for 
+further thermal treatment, since within experimental 
+error the average alumina content for 3 h and 4 h were 
+same as observed in Table 1.  
+Steady increase of alumina content was observed from 
+700°C to 800°C, while a rapid increase was observed 
+between 800°C to 850°C, while the same trend was 
+noticed with the sulphate composition in the opposite 
+direction as seen in Table 2. 
+This sudden increase was an indication of phase change 
+of the material. As such the thermal decomposition of 
+aluminum sulphate to alumina would have started 
+between 800 and 850°C. The steady increase continued 
+from 850°C to 1200°C with a steady decrease of the 
+sulphate component as shown graphically in Figure 1. 
+The assertion of phase change from aluminum sulphate 
+to alumina was still subject to further verification. 
+ 
+ 
+ 
+Table 1: XRF analysis for the starting material, intermediate products and preliminary calcination 
+Oxides 
+RK 
+BK 
+MK 
+800°C 
+1h 
+2h 
+3h 
+4h 
+Al2O3 
+33.41 
+37.80 
+42.06 
+30.40 
+29.40 
+39.00 
+38.90 
+SiO2 
+45.10 
+47.48 
+49.90 
+2.20 
+ND 
+ND 
+ND 
+SO3 
+ND 
+ND 
+ND 
+65.02 
+67.44 
+59.21 
+58.97 
+Na2O 
+0.693 
+0.270 
+0.12 
+0.04 
+0.06 
+0.05 
+0.04 
+K2O 
+1.49 
+0.544 
+0.427 
+0.01 
+0.09 
+0.07 
+0.15 
+MgO 
+0.016 
+0.05 
+0.038 
+0.36 
+0.40 
+0.18 
+0.19 
+CaO 
+0.343 
+0.325 
+0.289 
+0.68 
+1.80 
+0.12 
+0.40 
+Fe2O3 
+0.555 
+0.562 
+0.483 
+0.82 
+0.66 
+0.81 
+0.86 
+Others 
+ND 
+ND 
+ND 
+0.43 
+0.23 
+0.28 
+0.49 
+SiO2/ Al2O3 
+2.29 
+2.14 
+2.02 
+NA 
+NA 
+NA 
+NA 
+ 
+RK: Raw kaolin BK: Beneficiated kaolin   MK: Metakaolin   ND: Not detected   NA: Not applicable 
+ 
+ 
+
+<<<PAGE 4>>>
+ALUMINA PHASE TRANSFORMATION FROM THERMAL DECOMPOSITION OF AMMONIUM ALUM SYNTHESIZED FROM …    S. G. Bawa, et al 
+ 
+Nigerian Journal of Technology 
+ 
+Vol. 36, No. 3, July 2017          825 
+Table 2: Chemical composition of alumina calcined at higher temperature at 3h calcination time 
+ 
+700°C 
+750°C 
+800°C 
+850°C 
+900°C 
+950°C 
+1000°C 
+1050°C 
+1100°C 
+1150°C 
+1200°C 
+Al2O3 
+28.40 
+30.10 
+39.00 
+85.02 
+89.20 
+91.90 
+92.30 
+92.60 
+93.10 
+93.50 
+93.90 
+SiO2 
+  1.82 
+ND 
+ND 
+ND 
+ND 
+  0.20 
+  0.21 
+  0.23 
+  0.29 
+  0.11 
+  0.61 
+SO3 
+68.55 
+68.94 
+59.21 
+  7.76 
+  3.55 
+  0.90 
+  0.80 
+  0.74 
+  0.30 
+  0.20 
+  0.17 
+Na2O 
+  0.08 
+  0.03 
+0.05 
+  0.04 
+  0.03 
+  0.10 
+  0.11 
+  0.10 
+  0.12 
+  0.16 
+  0.12 
+K2O 
+  0.15 
+  0.10 
+0.07 
+  0.48 
+  0.28 
+  0.27 
+  0.27 
+  0.26 
+  0.28 
+  0.39 
+  0.22 
+MgO 
+  0.10 
+  0.12 
+0.18 
+  0.10 
+  0.08 
+  0.09 
+  0.09 
+  0.08 
+  0.09 
+  0.08 
+  0.07 
+CaO 
+  0.25 
+  0.10 
+0.12 
+  0.15 
+  0.17 
+  0.25 
+  0.24 
+  0.22 
+  0.23 
+  0.28 
+  0.43 
+Fe2O3 
+  0.58 
+  0.60 
+0.81 
+  2.67 
+  2.87 
+  3.43 
+  2.89   
+  2.62 
+  2.65 
+  1.82 
+  1.44 
+Others 
+  0.32 
+  0.17 
+0.28 
+  3.65 
+  3.63 
+  2.92 
+  3.15 
+  3.09 
+  2.91 
+  3.46 
+  3.61 
+*ND: Not detected 
+ 
+Figure 1: Variation in alumina and sulphur content with 
+temperature of thermally treated ammonium alum 
+ 
+ 
+Figure 3: Ammonium alum calcined at 800°C for varying 
+calcination time 
+ 
+Figure 2: XRD pattern for Kankara kaolin, beneficiated 
+and metakaolin 
+3.2 XRD Analysis 
+The XRD pattern of the raw Kankara kaolin was 
+crystalline as evident by its high intensity counts as seen 
+in Figure 2. The high peak at Bragg angle of about 27.5° 
+was an impurity. It was found to be Microline a 
+potassium rich alkali feldspar. It was not strange because 
+feldspar is one of the impurity that is associated with 
+kaolin among several others. But it was soluble as was 
+observed from the high reduction of the peak after wet 
+beneficiation process, as shown in Figure 2. This was also 
+confirmed by the decrease of the Na2O and K2O contents 
+from the raw to the beneficiated kaolin, from the XRF 
+analysis. From the XRD patterns shown in Figures 2, the 
+characteristics peaks of kaolinite [18, 25] were found 
+which occur at Bragg’s angle of   .  ,  9.89,   . 8, 
+24.88, 35.02,35.95, 36.06, 38.35, and 62.37°. The XRD 
+pattern of metakaolin was observed to be amorphous, 
+owing to the low intensity counts as well as broad peaks 
+(Figure 2). The observation was as expected due to 
+collapse of the structure by the OH group that is in-
+between the plate-like nature of the kaolin, which led to 
+disorderly arrangement. But the fine quart was still 
+present as seen by its characteristic peak at Bragg’s angle 
+of 26.6°. Mica was as an impurity, found in the raw kaolin 
+but also decreased after beneficiation of the raw kaolin. 
+No phase transformation occurred during the thermal 
+treatment of the ammonium alum at 800°C for different 
+calcination time, which was in agreement with the 
+observation of the XRF analysis in Table 1. The product 
+obtained was found to be Millosevichite mineral 
+(anhydrous form of aluminum sulphate), which was 
+crystalline as evident by the sharp peaks and high 
+intensity counts, revealed by the XRD pattern as can be 
+seen in Figure 3. The XRD patterns were similar 
+depicting same product obtained. 
+Further calcination to 825°C confirmed the formation of 
+gamma alumina phase, with its characteristic broad 
+peaks at Bragg’s angle of   . ,  6.  and 66. °, which was 
+amorphous. 
+This 
+observation 
+showed 
+that, 
+the 
+transformation of crystalline aluminum sulphate to 
+gamma alumina began at 825°C as observed in Figure 4, 
+which was lower than 900°C earlier reported [10, 17, 
+24]. Since gamma alumina is not the only transitional 
+700
+800
+900
+1000
+1100
+1200
+20
+30
+40
+50
+60
+70
+80
+90
+100
+ Alumina
+ Sulphate
+Temperature (oC)
+Alumina composition (%)
+-10
+0
+10
+20
+30
+40
+50
+60
+70
+Sulphate composition (%)
+10
+20
+30
+40
+50
+0
+1000
+2000
+3000
+4000
+5000
+6000
+7000
+8000
+m
+m
+m
+m
+m
+m
+Intensity (a.u.)
+2 Theta (o)
+ 1 h
+ 2 h
+ 3 h
+ 4 h
+m
+m: Millosevichite
+0
+10
+20
+30
+40
+50
+60
+70
+80
+0
+10000
+20000
+30000
+40000
+50000
+60000
+K K
+F
+Q
+K
+K
+K
+K
+K
+K
+K
+Intensity (a.u.)
+2 Theta (o)
+ Raw kaolin
+ Beneficiated kaolin
+ Metakaolin
+M
+M: Mica
+K: Kaolin
+Q: Quartz
+F: Feldspar
+
+<<<PAGE 5>>>
+ALUMINA PHASE TRANSFORMATION FROM THERMAL DECOMPOSITION OF AMMONIUM ALUM SYNTHESIZED FROM …    S. G. Bawa, et al 
+ 
+Nigerian Journal of Technology 
+ 
+Vol. 36, No. 3, July 2017          826 
+phase of alumina, calcination at higher temperature was 
+done to investigate the presence of other transitional 
+phases of alumina, but from the XRD pattern which is one 
+of the indicative measures to note other transitional 
+phases did not reveal the formation of any other phase 
+other than the gamma alumina. Among other transitional 
+phases of alumina obtained from thermal transformation 
+of aluminum hydroxide from bauxite [8], gamma alumina 
+has shown good properties especially in terms of the 
+specific surface area, as such it is the most widely used 
+transitional phase of alumina for catalytic applications. 
+Its stability over thermal treatment is of great 
+importance and added advantage.  
+It was observed from the XRD pattern presented in 
+Figure 4, that the gamma alumina phase was stable up to 
+the calcination temperature of 1125°C which was higher 
+than reported value of 1030°C [10]. New peaks were 
+observed at temperature of 1150°C corresponding to 
+Bragg’s angle of   .6.   . ,   .9,   . ,   .6,   .6, 66.  and 
+68.3°, which was fully developed at 1200°C. The XRD 
+pattern at the calcination temperature of 1200°Cshowed 
+a complete phase transformation into the alpha alumina 
+phase [5, 6, 8, 25]. 
+ 
+ 
+3.3 BET analysis 
+Specific surface area is very critical parameter of a 
+porous material when used as a catalyst or catalyst 
+support in which gamma alumina is mostly use. The 
+textural properties (surface area, pore size and pore 
+volume). The highest specific surface area was observed 
+at calcination temperature of 850°C having value of 166 
+m2/g which was higher than previous reported value of 
+gamma alumina synthesized from the same source but 
+via different routes [13, 17]. The specific surface area 
+was gradually being lost as the calcination temperature 
+increases, as can be seen in Figure 5, this could be 
+attributed to gradual internal structural change within 
+the gamma alumina. The low value of the specific surface 
+area of alpha alumina makes it unsuitable for application 
+in catalysis, despite its high stability. The products 
+obtained had relatively large pore sizes (20 nm-30 nm); 
+resistance to mass flow in and out of the pores will be 
+negligible when in use. Large pore volume was observed 
+at calcination temperature of 850°C and 900°C 
+(1.21cm3/g and 1.15cm3/g respectively), as presented in 
+Figure 6. This indicated that diffusion resistance within 
+the pore cavity will not pose a serious challenge. 
+ 
+ 
+Figure 4: XRD patterns of alumina obtained at various calcination temperature 
+ 
+0
+10
+20
+30
+40
+50
+60
+70
+0
+500
+1000
+1500
+2000
+2500
+3000
+3500
+4000
+4500
+5000
+5500
+6000
+6500
+7000
+A
+G
+G
+G
+A
+A
+A
+A
+A
+A
+A
+Intensity (a.u.)
+2 Theta (o)
+ 825oC
+ 850oC
+ 900oC
+ 950oC
+ 1000oC
+ 1025oC
+ 1050oC
+ 1075oC
+ 1100oC
+ 1125oC
+ 1150oC
+ 1175oC
+ 1200oC
+A
+A: Alpha alumina
+G: Gamma alumina
+
+<<<PAGE 6>>>
+ALUMINA PHASE TRANSFORMATION FROM THERMAL DECOMPOSITION OF AMMONIUM ALUM SYNTHESIZED FROM …    S. G. Bawa, et al 
+ 
+Nigerian Journal of Technology 
+ 
+Vol. 36, No. 3, July 2017          827 
+ 
+Figure 5: Alumina specific surface area variation with variation of temperature 
+ 
+ 
+Figure 6: Effect of calcination temperature on alumina pore size and volume 
+ 
+4. CONCLUSION  
+Pure crystalline phase of aluminum sulphate was 
+observed 
+during 
+calcination 
+of 
+ammonium 
+alum 
+prepared from Kankara kaolin at 800°C, irrespective of 
+the calcination time. The formation of gamma alumina 
+from thermal decomposition of ammonium alum began 
+at 825°C. The best temperature for obtaining gamma 
+aluminafrom this investigationwas 850°C having the 
+highest specific surface area of 166 m2/g. The 
+transformation from gamma to alpha alumina occurs 
+between the temperature ranges of 1125 -1175°C. Fully 
+developed alpha alumina phase was developed at 
+1200°C. The highest alumina content was 94% found in 
+the alpha alumina phase. 
+ 
+5. ACKNOWLEDGEMENT 
+The authors are grateful to Petroleum Technology 
+Development Fund, Abuja for their funding. 
+6. REFERENCES 
+[1] Akia, M., Alavi, S. M. and Yan, Z.“Dehygrogenation 
+Catalysts of Higher Normal Paraffins on a 
+Nanocrystalline 
+γ-Al2O3 
+Support: 
+Different 
+Impregnation Sequences” Journal of Petroleum and 
+Gas Engineering. Vol. 2, Number 3, , pp 64-73. 2011. 
+[2] Naik, B. and Ghosh, N. N. “A Review on Chemical 
+Methodologies for Preparation of Mesoporous Silica 
+and Alumina Based Materials”, Recent Patents on 
+Nanotechnology, Vol. 3, , pp 213-224, 2009. 
+700
+800
+900
+1000
+1100
+1200
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+Specific surface area (m
+2/g)
+Temperature (oC)
+700
+800
+900
+1000
+1100
+1200
+18
+20
+22
+24
+26
+28
+30
+ Pore size
+ Pore volume
+Temperature (oC)
+Pore size (nm)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+ Pore volume (cm
+3)
+
+<<<PAGE 7>>>
+ALUMINA PHASE TRANSFORMATION FROM THERMAL DECOMPOSITION OF AMMONIUM ALUM SYNTHESIZED FROM …    S. G. Bawa, et al 
+ 
+Nigerian Journal of Technology 
+ 
+Vol. 36, No. 3, July 2017          828 
+[3] Phung, T. K., Lagazzo, A., Crespo, M. Á. R., Scribano, 
+V.S., Busca, G. “A Study ofCommercial Transition 
+Aluminas and of their Catalytic Activity in the 
+Dehydration of Ethanol”, Journal of Catalysis, Vol. 
+311, pp 102–113, 2014. 
+[4] Zhang, Q., Xu, J., Fan, F., Sun, D., Xu, G., Zhang, S., Zhu, 
+Z.“Application of Porous AnodicAlumina Monolith 
+Catalyst in Steam Reforming of Dimethyl ether: 
+Cu/γ-Al2O3/Al Catalyst Degradation Behaviors and 
+Catalytic 
+Activity 
+Improvement 
+by 
+Pre-
+competitionImpregnation Method”,Fuel Processing 
+Technol. Vol. 119, pp 52–59, 2014. 
+[5] Meor-Yusoff, M. S. and Masliana, M.“Synthesis of 
+Alumina Using the Solvo Thermal Method”, The 
+Malaysian Journal of Analytical Science, Vol. 11, 
+Number 1, pp 262-268, 2007. 
+[6] Cava, S., Tebcherani, S. M., Souza, I. A., Pianaro, S. A., 
+Paskocimas, C. A., Longo, E. and Varela, J. A. 
+“Structural Characterization of Phase Transition of 
+Al2O3Nanopowders 
+Obtained 
+by 
+Polymeric 
+Precursor Method”, Journal of Material Chemistry 
+and Physics, Vol. 103, pp 394-399, 2007.  
+[7] Lee, S. J., Kim, H. S., Park, N., Lee, T. J., Kang, M.“Low 
+temperature synthesis of alpha alumina from 
+aluminum hydroxide hydrothermally synthesized 
+using [Al (C2O4)x (OH)y] complexes”, Chemical 
+Engineering Journal, Vol. 230, pp 351–360, 2013. 
+[8] Santos, P. S., Santos, S. H. and Toledo, S. P. “Standard 
+Transition Aluminas. Electron Microscopy Studies”, 
+Material Resources Journal, Vol. 3 Number 4, 2000. 
+[9] Kloprogge, J. T., Ruan, H. D. and Frost, R. L. “Thermal 
+Decomposition 
+of 
+Bauxite 
+Minerals: 
+Infrared 
+Emission Spectroscopy of Gibbsite, Boehmite and 
+Diaspore”, Journal of Materials Science, Vol. 37, 
+Number 6, pp 1121-1129, 2002. 
+[10] Hosseini, S. A., Niaei, A. and Dariush, S.“Production 
+of γ-Al2O3 from Kaolin”, Open Journal of Physical 
+Chemistry, Vol. 1, pp 23-27, 2011. 
+[11] Edomwonyi-Otu, L. and Aderemi, B. O. “Alums from 
+Kankara 
+Kaolin”, 
+Journal 
+of 
+Research 
+in 
+Engineering, Vol. 6, Number 1, 2009, pp 105-111, 
+2009. 
+[12] Bawa S. G., Ahmed, A. S. and Okonkwo P. C. 
+“Development of nano-sized alpha-alumina (α-
+Al2O3) from indigenous kaolin Source”, Nigerian 
+Society of Chemical Engineers Conference/A.G.M, 
+on Harnessing Water Resources for National 
+Development, Abuja Nigeria, November 15-17, 
+2012. 
+[13] Aderemi, B. O. and Hameed, B. H. “Alumina from 
+Kaolin – Extraction and Characterization” Nigerian 
+Metallurgical Society Conference/A. G. M, 2011. 
+[14] Aderemi, 
+B. 
+O., 
+Ahmed, 
+A.S. 
+and 
+Abdul 
+B.D.“Production of Alum from Kankara Clay”, 
+Journal of Nigerian Society of Chemical Engineers, 
+Vol. 21, Number 1, pp 120-124, 2006. 
+[15] Abdul, B. “Production of Alumina from Kankara 
+Kaolin Clay”, An M.Sc. Thesis Department of 
+Chemical Engineering, Ahmadu Bello University, 
+Zaria, 2005. 
+[16] Ahmed, A. S. and Bawa, S. G. “Development of Large 
+Surface Area Alumina from Kaolin for Zeolite 
+Support”, International Symposium on Zeolites and 
+Micro-Porous Crystals (ZMPC), Hiroshima, Japan, 
+July 28 - August 1, 2012. 
+[17] Salahudeen, N., Ahmed, A. S., Al-Muhtaseb, A. H., 
+Dauda, M., Waziri, S. M. and Jibril, B. Y.“Synthesis of 
+Gamma Alumina from Kankara Kaolin Using a Novel 
+Technique”, Applied Clay Science, Vol.105, pp 170-
+177, 2014. 
+[18] Ahmed, A. S., Salahudeen, N., Ajinomoh, C. S., Hamza, 
+H., and Ohikere, A. “Studies on the Mineral and 
+Chemical Characteristics of Pindiga Bentonitic 
+Clay”, Petroleum Technology Development Journal, 
+(ISSN 1595-9104) Vol. 1, 2012. 
+[19] Ahmed, A. S. and Onaji, P. B.“The Effect of 
+Beneficiation on the Properties of Some Nigerian 
+Refractory Clays” Journal of Nigerian Society of 
+Chemical Engineers, Vol. 6, Number 2, pp 119-129, 
+1987. 
+[20] Aderemi, B. O., Edomwonyi-Otu, L. and Adefila, S. 
+S.“A New Approach to Metakaolin Dealumination”, 
+Australian Journal of Basic and Applied Science. Vol. 
+3, Number 3, pp.2243-2248, 2009. 
+[21] Ajayi, A. O., Atta, A.Y., Aderemi, B. O. and Adefila, S. 
+S. “Novel Method of Metakaolin Dealumination” 
+Journal of Applied Sciences Research, Vol. 6, 
+Number 10, pp 1539-1546, 2010. 
+[22] Aderemi, B. O., Oloro, E.F., Joseph, D. and Oludipe, J. 
+“Kinetics of the Dealumination of Kankara Kaolin 
+Clay”, Nigerian. Journal of Engineering, Vol. 9, 
+Number 1, pp 40-44, 2001. 
+[23] Bustanafruza F., Jafar-Tafreshi M., Fazlib M. “Studies 
+on Thermal Decomposition of Aluminum Sulfate to 
+Produce Alumina Nano Structure”, Journal of 
+Nanostructure, Vol. 2, pp 463-468, 2013. 
+[24] Grim, R. E.  Clay Mineralogy, McGraw-Hill Book Co. 
+Inc., 1953, pp 46, 212. 
+[25] Chen, P., Table of key lines in X-ray powder 
+diffraction patterns of minerals in clays and 
+associated rocks. Bloomington, Indiana, 1977. 
+ 

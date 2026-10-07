@@ -1,0 +1,1575 @@
+
+<<<PAGE 1>>>
+Accepted Manuscript
+Effect of vanadium contamination on the framework and micropore structure of
+ultra stable Y-zeolite
+U.J. Etim, B. Xu, Rooh Ullah, Z. Yan
+PII:
+S0021-9797(15)30294-0
+DOI:
+http://dx.doi.org/10.1016/j.jcis.2015.10.049
+Reference:
+YJCIS 20835
+To appear in:
+Journal of Colloid and Interface Science
+Received Date:
+23 June 2015
+Revised Date:
+3 October 2015
+Accepted Date:
+20 October 2015
+Please cite this article as: U.J. Etim, B. Xu, R. Ullah, Z. Yan, Effect of vanadium contamination on the framework
+and micropore structure of ultra stable Y-zeolite, Journal of Colloid and Interface Science (2015), doi: http://
+dx.doi.org/10.1016/j.jcis.2015.10.049
+This is a PDF file of an unedited manuscript that has been accepted for publication. As a service to our customers
+we are providing this early version of the manuscript. The manuscript will undergo copyediting, typesetting, and
+review of the resulting proof before it is published in its final form. Please note that during the production process
+errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain.
+
+<<<PAGE 2>>>
+  
+1 
+ 
+Effect of vanadium contamination on the framework and micropore structure 
+of ultra stable Y-zeolite 
+U.J.Etim, B.Xu, Rooh Ullah, Z.Yan*  
+College of Chemical Engineering, State Key Laboratory of Heavy Oil Processing, Key 
+Laboratory of Catalysis, CNPC, China University of Petroleum, No. 66 Changjiang West Road, 
+Qingdao 266580, China. 
+*Corresponding author: Tel: +86-532-86981296; e-mail: zfyancat@upc.edu.cn 
+ 
+Abstract 
+Y-zeolites are the main component of fluid catalytic cracking (FCC) catalyst for conversion of 
+crude petroleum to products of high demand including transportation fuel. We investigated 
+effects of vanadium which is present as one of the impurities in FCC feedstock on the framework 
+and micropore structure of ultra-stable (US) Y-zeolite. The zeolite samples were prepared and 
+characterized using standard techniques including: (1) X-ray diffraction, (2) N2 adsorption 
+employing non local density functional theory method, NLDFT, (3) Transmittance and Pyridine 
+FTIR, (4) Transmittance electron microscopy (TEM), and (5) 27Al and 29Si MAS-NMR. Results 
+revealed that in the presence of steam, vanadium caused excessive evolution of non inter-
+crystalline mesopores and structural damage. The evolved mesopore size averaged about 25.0 
+nm at 0.5 wt.% vanadium loading, far larger than mesopore size in zeolitic materials with 
+improved hydrothermal stability and performance for FCC catalyst. A mechanism of mesopore 
+formation based on accelerated dealumination has been proposed and discussed. Vanadium 
+immobilization experiments conducted to mitigate vanadium migration into the framework 
+clearly showed vanadium is mobile at reaction conditions. From the results, interaction of 
+vanadium with the passivator limits and decreases mobility, and acidity of vanadium into inner 
+cavities of the zeolite capable of causing huge structure breakdown and acid sites destruction. 
+This study therefore deepens insight into the causes of alteration in activity and selectivity of 
+
+<<<PAGE 3>>>
+  
+2 
+ 
+vanadium contaminated catalyst and hints on a possible mechanism of passivation in vanadium 
+passivated FCC catalyst.  
+ 
+Keywords: Zeolite, Pore structure, Framework, Dealumination, Passivation 
+   
+1.0 
+Introduction 
+ 
+Zeolites are an important class of microporous, crystalline aluminosilicates with three-
+dimensional pore structure widely used in various applications including catalysts [1-14].  Their 
+use as catalysts for different conversion processes has unarguably underpinned the major 
+application in petroleum refining, petrochemical and allied industries. In the case of petroleum 
+refining, zeolite is quite indispensable. The discovery of zeolite catalyst in the 1960s has 
+remained a major turnaround in the petroleum industry that has resulted in improved production 
+and increased profitability [15]. Zeolite is exclusively responsible for cracking catalyst’s activity 
+and Y-zeolite, having faujasite structure (Fig. 1), with well-defined pore network (7.4 x 7.4 Å) in 
+its pure crystalline form, is the active component of fluid catalytic cracking (FCC) catalyst and it 
+is used in acidic and rare earth forms to increase the yield of gasoline and diesel fuel from 
+feedstock by cracking heavy paraffins into liquid fuels.  
+
+<<<PAGE 4>>>
+  
+3 
+ 
+ 
+Fig. 1 Structure of Y-zeolite showing average micropore width in the supercage formed by 12-
+membered ring  
+ 
+During FCC process zeolite catalysts are exposed to certain conditions that can modify important 
+physiochemical properties such as aluminum content and acids strength. Such changes in zeolite 
+composition and properties have significant impacts on catalytic activity, selectivity and stability. 
+It has been established that the harsh FCC unit conditions, together with impurities present in the 
+feedstock are directly linked with properties alterations [16, 17]. Amongst the impurities are 
+metals including sodium [18], iron and calcium [19] and nickel and vanadium [20, 21]. However, 
+nickel and vanadium are grievously detrimental to FCC catalyst’s performance [22-24].  
+ 
+Specifically, behaviors of zeolites in the presence of steam and metal contaminants; 
+sodium, vanadium and nickel have been studied. For instance, Pine [25] studied vanadium 
+catalyzed destruction of USY zeolite and results showed steam has ability to destroy the zeolite 
+system; however, his study was on siliceous zeolite. Vanadium and nickel interaction in REY 
+had been reported. The authors discovered that during steam treatment in the presence of 
+vanadium, dealumination of framework alumina and partial collapse of REY structure occur; 
+vanadium also promoted coke formation of the zeolite. However, crystallinity of the zeolite 
+7.4 Å
+
+<<<PAGE 5>>>
+  
+4 
+ 
+structure was preserved in the presence of nickel under similar conditions, but coke formation 
+rate was generally on the increase [20, 21]. Tsiatouras and Evmiridis [24], in their study reported 
+a complete structure breakdown of steam treated chromium-exchanged USY zeolite incorporated 
+with vanadium. They authors added structure collapse was nearly proportional to dealumination, 
+and impregnated vanadium selectively removed framework Al atoms. In a study to understand 
+the influence of vanadium on the physiochemical and catalytic properties of USHY zeolite, 
+Torrealba et al. [26] reported that vanadium decreased the stability of the zeolite through 
+decrease in crystallinity and increase of dealumination rate during the hydrothermal treatment, 
+and consequently the activity of the zeolite; but however, this decrease in activity was thought to 
+be due partly to other phenomena, particularly to the exchange of the protonic sites by cationic 
+vanadium species. Generally, vanadium deposited on the surface of the catalyst migrates into the 
+zeolite structure in the presence of steam; however, matters concerning these facts are still 
+debating and no comprehensive report is available in the literature on the action of vanadium on 
+the pore-structure of USY zeolite. In view of the latter, a study of USY zeolite targeting the pore 
+structure in the presence of a contaminating substance such as vanadium becomes necessary to 
+fully comprehend causes of alteration in performance of vanadium contaminated Y-zeolite based 
+catalyst. Results could find application in fabrication of better catalysts and improvement in 
+general FCC catalyst technologies. In this report, we present the effects of vanadium 
+contamination on the framework and micropore structure of USY zeolite using N2 adsorption by 
+non-local density functional theory (NLDFT) method, powder XRD, MAS-NMR, FTIR and 
+TEM. We have also demonstrated, using physiochemical properties, mitigation of vanadium 
+poisoning of zeolite with a novel synthesized material. 
+ 
+
+<<<PAGE 6>>>
+  
+5 
+ 
+2.0 
+Experimental methods 
+2.1 
+Samples preparation 
+ 
+Zeolite sample of this research, with unit cell size of 24.53 Å, Si/Al ratio 2.8 and sodium 
+content (Na2O) of 0.42 wt.% was supplied by a catalyst manufacturing Company in Qingdao, 
+China. Working sample was exchanged twice with 1.0 M NH4NO3 at 80 oC to remove sodium 
+residue and calcined in air at 500 oC for 4 h. Vanadium USY (xV-USY), where “x” is weight 
+percentage (wt.%) of vanadium in a given sample, were prepared by wet impregnation of 
+vanadyl naphthenate dissolved in n-hexane. Excess organic solvent was evaporated freely in air 
+and oven dried at 120 oC overnight. Oven dried samples were calcined in air at 550 °C for 5 h to 
+obtained the test samples. Unless otherwise stated, all samples were steamed treated for 5 h at a 
+temperature of 760 oC. Passivator as a separate particle was added to oven dried samples by 
+physically admixing desirable amount before subjected to hydrothermal treatment. 
+ 
+2.2 
+Preparation of vanadium immobilizer  
+ 
+We used yttrium-magnesium oxide (Y/MgO) as our immobilizer here in referred to as 
+“passivator”. Five (5.0 ) g MgO was dispersed in 40 ml distilled water and stirred for 20 min. 
+Yttrium nitrate (Y(NO3).6H2O) (4.75 g) dissolved in 10 ml distilled water was added and the 
+mixture allowed stirring for another 30 min. After this time the white suspension formed was 
+transferred to a water bath at 101 oC and allowed to stir until evaporation to dryness. The white 
+solid obtained was oven dried overnight at 110 oC and calcined in air at 600 oC for 5 h. 
+ 
+ 
+ 
+
+<<<PAGE 7>>>
+  
+6 
+ 
+2.3 
+Characterizations 
+ 
+Internal structure examination and patterns generation were carried out by powder X-ray 
+diffraction (XRD) of the zeolite samples on a PAN analytical X’pert PRO (Germany), X-ray 
+diffractometer using Cu-Kα radiation generated at 40 kV and 40 mA. A scanning range from 5° 
+to 60° was used at a speed of 0.02° 2  /s. Crystallinity of the samples was determined using 
+XRD according to standard method in ASTM 3906-03. MAS-NMR was measured for 27Al and 
+29Si using a Bruker Advance III-400 MHz spectrometer. 27Al was measured at a frequency of 
+104 MHz at a spinning rate of 12 kHz using a 4-mm probe head, single pulse length of 6 s 
+( /20o) with AlK(SO4)2.H2O as standard. 29Si spectra was acquired at 80.4962 MHz at the same 
+spinning rate with reference to DSS-(4,4-dimethyl-4-silapentane-1-sulfonic acid). Transmittance 
+FTIR and acidity characterization were carried out on FTIR spectrophotometer, equipped with a 
+MCT liquid nitrogen cooled detector and a KBr beam splitter. The spectra of the samples were 
+recorded after 64 scans at 4 cm−1 resolution. Before analysis all samples were vacuum dried for 2 
+h to eliminate adsorbed water and gaseous impurities. Samples for acidity studies were sorbed 
+with pyridine for 24 h and the physisorbed species desorbed by vacuum drying at 150 oC for 2 h 
+before analysis. The microstructure and morphology of the materials were examined by 
+transmission electron microscopy, TEM (JEOL JEM-2100UHR) with an accelerating voltage of 
+200 kV. Textural characterizations including surface area (calculated by BET method, relative 
+pressure (P/Po) = 0.05–0.28) and pore volume (extrapolated from t-plot, P/Po = 0.98) were 
+obtained by nitrogen physisorption method at 77 K following degassing of samples for 6 h at 300 
+oC, using ASAP 2020 and Tristar 3000 surface area/porosity analyzer both from Micromeritics. 
+Pore size distribution of the catalyst samples were calculated by non-local density functional 
+theory (NLDFT) formalism using non-negative regularization. This method developed by 
+
+<<<PAGE 8>>>
+  
+7 
+ 
+Lastoskie et al. [27] for modeling slit-like pores on carbons though, was later extended by Saito 
+and Foley [28, 29] to model cylindrical pores in HZSM-5, Y-zeolite and FCC catalyst using N2 
+adsorption data and has since gained wide application [30-34]. However, because of very low 
+surface area of 1.0 wt.% V-USY sample, Tristar 3000 was used to measure its textural properties 
+and all of passivated samples. 
+ 
+3.0 
+Results and discussion 
+3.1 
+Effect of vanadium 
+ 
+The zeolite samples including parent-USY and steam-aged (ST-USY), for comparison, 
+were analyzed by powder XRD and results are presented in Fig. 2. Obviously, zeolite peaks of 
+samples containing 0.3 and 0.5 wt.% vanadium decrease in intensity and become broadened, 
+while some are completely lost. On the other hand, sample with 1.0 wt.% vanadium completely 
+lose its zeolite phases.  
+10
+20
+30
+40
+50
+ 
+ 
+Intensity
+2 theta, degree
+ Parent-USY
+ ST-USY
+ 0.3wt.% V-USY
+ 0.5wt.% V-USY
+ 1.0wt.% V-USY
+ 
+Fig. 2 XRD patterns of zeolite samples showing phase and crystallinity losses 
+Table 1: Structural properties of zeolite samples  
+
+<<<PAGE 9>>>
+  
+8 
+ 
+ 
+ 
+*not calculated 
+ 
+Table 1 shows properties of the samples obtained from XRD data. Number of aluminum atoms 
+in the unit cell was calculated using Breck-Flanigen’s relation [35] (Eq 1). 
+                         
+ 
+ 
+ 
+(1) 
+Silicon-to-aluminum ratio, Si/Al, was estimated applying Eq. 1 as follows: 
+    
+ 
+  
+   
+       
+ 
+ 
+ 
+ 
+ 
+(2) 
+The parent-USY has properties of a complete non-denatured USY-zeolite [36, 37]. Aluminum 
+removal from the zeolite framework is observed when sample was subjected to steaming, and on 
+vanadium incorporation and thus it is plausible to say that dealumination is cumulative 
+vanadium-steam induced, with vanadium the more disastrous. Dealumination becomes more 
+severe with concentration of vanadium. As shown in Table 1 loss of Al atoms increases with 
+increase in content of contaminant until absolute structure breakdown and transformation from 
+faujasite to mullite (JCPDS card no: 01-089-2645) when vanadium concentration was 1.0 wt.%. 
+Transformation of the structure of an FCC catalyst containing a REY zeolite, impregnated with 
+10,000 ppm (1.0 wt.% ) vanadium, to mullite has been reported [38].  
+Sample 
+Si/Al  
+(XRD) 
+NAl 
+atoms/UC 
+Structure 
+type 
+Parent USY 
+2.82  
+50.24 
+Faujasite 
+ST-USY 
+4.75 
+33.38 
+Faujasite 
+0.3 wt.% V-USY 
+242.0 
+0.79 
+Faujasite 
+0.5 wt.% V-USY 
+* 
+-2.59 
+Faujasite 
+1.0 wt .%V-USY 
+* 
+* 
+Mullite 
+
+<<<PAGE 10>>>
+  
+9 
+ 
+ 
+Textural characterization of materials is one of the most important practices for 
+optimizing their applications. For instance, total surface area and porosity properties are 
+important for catalyst’s performance since they determine accessibility of active sites and often 
+relate to catalyst’s activity (surface area), while the pore structures including pore size 
+distribution and pore volume control transport phenomena and regulate selectivity in catalytic 
+reactions [39]. The effect of vanadium incorporation on the textural structural properties of the 
+catalyst was investigated by analyzing the data from N2 adsorption/desorption isotherms. 
+Nitrogen adsorption/desorption isotherms (Fig. 3(I)) were obtained from ASAP 2020. The 
+isotherms are a combination of types (near-type I & IV); type I, containing cylindrical-narrow 
+pores typical of solids having exclusively micropore size with a quantity of mesopores (a) and 
+type (IV), showing bimodal distribution of pores (micro-mesopores, (c–d)) respectively [31, 39]. 
+The figure (Fig. 3(II)) (bottom) shows an entirely destroyed microporous zeolite material with a 
+near parallel (zero) adsorption at P/Po ≤ 0.45. This represents a case of lost micropores leading to 
+cavitations (large mesopores).  
+
+<<<PAGE 11>>>
+  
+10 
+ 
+ 
+Fig. 3 (I) Nitrogen sorption linear isotherms of the samples; (II) Nitrogen sorption linear 
+isotherm of 1.0 wt.% V-USY and passivated ones; (III) Semilog scale linear isotherms of the 
+samples; (IV) Cumulative pore volume plots obtained by fitting data of DFT model to sorption 
+isotherms. 
+In the Parent-USY, there was intensive pores filling at relative pressure ≤ 0.1, corresponding to 
+primary microspores and due to clean surface for physical interaction with the adsorbate 
+molecules; this behavior is also shown by steam-aged sample to an extent. However, samples 
+containing 0.3 and 0.5 wt.% vanadium exhibit different behaviors at the region of relative 
+pressure greater than 0.8, the hysteresis loop of the isotherms show marked phase transition 
+corresponding to different adsorption behavior in the newly formed mesopores. The loops 
+become more convergent in nature ascribed to capillary condensation effect. Also, the reduction 
+in sorption capacity expressed by the samples represents loss of micropores (crystallinity) and 
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+0
+50
+100
+150
+200
+250
+ 
+Quantity adsorbed, cm
+3/g STP
+Relative pressure, P/Po
+Parent-USY
+0.3wt.% V-USY
+ST-USY
+0.5wt.% V-USY
+(a)
+(b)
+(c)
+(d)
+1E-7
+1E-6
+1E-5
+1E-4
+1E-3
+0.01
+0.1
+0
+50
+100
+150
+200
+250
+ 
+ 
+Quantity adsorbed, cm
+3/g STP
+Relative pressure (P/Po)
+ Parent-USY
+ ST-USY
+ 0.3wt.% V-USY
+ 0.5wt.% V-USY
+1
+10
+100
+0.00
+0.05
+0.10
+0.15
+0.20
+0.25
+0.30
+0.35
+0.40
+0.45
+ 
+ 
+Cummulative pore voulme, cm
+3/g
+Pore width, nm
+ Parent-USY
+ ST-USY
+ 0.5wt.% V-USY
+ 0.3wt.% V-USY
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+0
+20
+40
+60
+80
+100
+120
+140
+ 
+ 
+Quantity adsorbed, cm
+3/g STP
+Relative pressure, P/Po
+10wt% Y/MgO-1.0wt% V-USY
+10wt% (0.2-0.4mm)-Y/MgO-1.0wt% V-USY
+1.0wt% V-USY
+(I)
+(II)
+(III)
+(IV)
+
+<<<PAGE 12>>>
+  
+11 
+ 
+phase transition [40]. As confirmation to formation of larger pores upon vanadium incorporation, 
+semilog scale isotherms are shown (Fig. 3(III)). Apparently, no absorption of gas is feasible at 
+very low pressure region, 1.0  10-7
+ P/Po. Generally, below (P/Po) less than 0.1, absorption was 
+negligible and the isotherm remaining nearly flat, probably due to destruction of the micropore 
+structure of vanadium contaminated samples. Fig. 3(IV) shows plots of cumulative pore volume 
+against pore size, it can be seen that pores filling with diameter (< 1 nm) is dominant in parent 
+and steam-aged samples. However, paradigm shifts appear for contaminated samples, more 
+filling of pores is observed for pores with diameter (> 10 nm) as reflected on the point of 
+inflection and increase in cumulative volume.  The slight increase in pores filling pattern of 
+Parent-USY is due to filling of mesopore constituent introduced during initial processing of 
+zeolite Y to USY.  
+Table 2: Textural properties of zeolite samples 
+Sample 
+SBET, 
+m2/g 
+aMPV, 
+cm3/g 
+TPV, 
+cm3/g 
+DFT report 
+Average MEP 
+width, nm 
+Average MP 
+width, nm 
+Parent-USY 
+625.3 
+0.2870 
+0.3797 
+- 
+0.73 
+0.84 
+1.00 
+1.00 
+- 
+ST-USY 
+451.6 
+0.2265 
+0.3644 
+- 
+0.3%wt.V-USY 
+153.3 
+0.0758 
+0.3190 
+23.80 
+0.5%wt.V-USY 
+138.0 
+0.0514 
+0.2480 
+25.38 
+*1.0%wt.V-USY 
+15.74 
+0.00094 
+0.0930 
+- 
+aDetermined from t-plot; MEP = mesopore; MP = micropore *determined using Tristar 3000. 
+ 
+
+<<<PAGE 13>>>
+  
+12 
+ 
+ 
+Fig. 4 (a) Correlation of micropores volume with crystallinity (b) Relative mesopore volume 
+(Vmeso/Vtotal) of contaminated samples against contaminant concentration after steaming at 760 
+ C for 5 h. 
+ 
+BET surface area (SBET), total pore volume (TPV) and micropore volume (MPV), and other 
+microporous features of the zeolite samples are summarized in Table 2.  The sample containing 
+0.5 wt.% vanadium shows about 80% BET surface area deterioration with a corresponding 
+percentage reduction of 34.7 and 82.1% in TPV and MPV respectively. In the literature, a near 
+total loss of surface area has been reported for zeolite catalyst containing 1.0 wt.% vanadium 
+loading [20, 41]. Loss of micropore volume of a crystalline solid such as zeolite is a measure of 
+crystallinity loss, indicating structural damage (Fig. 4a). However, there is cystallinity retention 
+when the incorporated impurity was 0.3 wt.% as confirmed in Fig. 2. Diminution in textural 
+parameters for vanadium contaminated samples is highly pronounced when compared with the 
+steam-aged sample. As vanadium loading increased to 1.0 wt.%, structural transformation played 
+out, crystalline zeolite (faujasite) structure was transformed to mullite as evidenced with XRD 
+data. Fig. 4b shows the effect of vanadium incorporation on mesopore formation, which 
+increases with content. This result is no surprise; a near total loss of micropores is shown for 1.0 
+wt.% V-USY. Because dealumination severity increases with vanadium presence, it would be 
+reasonable to conclude that mesopores formation is caused by defects created as a result of 
+0
+20
+40
+60
+80
+0.00
+0.05
+0.10
+0.15
+0.20
+0.25
+0.30
+Parent-USY
+ST-USY
+0.3wt. % V-USY
+0.5wt. % V-USY
+ 
+ 
+ Experimental
+ Linear fit
+Regression: Y= 0.00349x + 0.01796
+R
+2 = 0.9939
+Micropore volume loss, cm
+3/g
+Crystallinity loss, %
+1.0wt. % V-USY
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+1.0wt. % V-USY
+0.5wt. % V-USY
+0.3wt. % V-USY
+ 
+ 
+Vmeso/Vtotal
+Vanadium concentration, (wt.%)
+ST-USY
+(a)
+(b)
+
+<<<PAGE 14>>>
+  
+13 
+ 
+framework corrosion by accelerated dealumination. Contact of vanadium with zeolite at cracking 
+conditions in the regenerator had earlier been reported to having serious detrimental effects 
+including loss of crystallinty, degradation of surface area, and micropore volume, and 
+dealumination [9, 42, 43].  
+ 
+Pore size distribution analysis was performed using NLDFT formalism from 
+experimental adsorption (N2 @ -196 oC) isotherms data and a model for cylindrical pores in 
+microporous solids (method: non-negative regularization, medium smoothing with λ = 0.01). Fig. 
+5 and 6 show the pore size distribution for the samples in full and micropore regions respectively. 
+It can be seen for all samples there are peaks indicating pore size with average width less than or 
+equal 1.0 nm in the micropore region. The observed average pore sizes are slightly higher than 
+constitutional average pore size in conventional USY zeolite except in parent-USY which value 
+is in very close agreement. The average pore width of the parent-USY is 0.73 nm as determined 
+from our experiment, closed to 0.74 nm average pore width of the zeolite with faujasite structure. 
+This value increased to 1.00 nm (DFT model) on incorporation of vanadium into the zeolite due 
+to pore expansion. For average pore width less than 0.74 nm, it is not unusual as such 
+observation had been reported by Saito and Foley [29] in their study to assess the value of the 
+cylindrical pore model for predicting zeolite micro-PSD in Y-zeolites; it is indicative of ultra-
+micropores. The magnitude of the peaks decreases and become broaden, corresponding to loss of 
+pore volume and variation in pore size (Fig. 6). Nevertheless, another set of pore distribution 
+(average ~25.3 nm) emerged at the region of pore width between 10 and 60 nm for vanadium 
+poisoned samples, an indicative of presence of pores of larger size (mesopores). The incremental 
+pore volume plots shown in Fig. 5 are in line with the adsorption isotherms in Fig. 3(I), and with 
+the surface area and pore volume distribution data (Tables 2 and 3). These results reveal that 
+
+<<<PAGE 15>>>
+  
+14 
+ 
+presence of the metal (vanadium) in the structure of the zeolite causes restructuring of micro-
+cavity leading to crystallinity losses.  
+1
+10
+0.00
+0.01
+0.02
+0.03
+0.04
+0.05
+0.06
+0.07
+0.08
+ 
+ 
+ Parent-USY
+Incremental pore volume, cm
+3/g 
+1
+10
+0.00
+0.01
+0.02
+0.03
+0.04
+0.05
+0.06
+ 
+ 
+ ST-USY
+1
+10
+100
+0.000
+0.002
+0.004
+0.006
+0.008
+0.010
+0.012
+0.014
+ 
+ 
+ 0.3wt. % V-USY
+Pore width, nm
+1
+10
+100
+0.000
+0.002
+0.004
+0.006
+0.008
+0.010
+ 
+ 
+ 0.5wt. % V-USY
+ 
+Fig. 5 Pore size distribution calculated using NLDFT method (cylindrical pore model). 
+ 
+
+<<<PAGE 16>>>
+  
+15 
+ 
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+0.00
+0.01
+0.02
+0.03
+0.04
+0.05
+0.06
+0.07
+0.08
+ 
+ 
+Differential pore volume, cm
+3/g
+Pore width, nm
+ Parent-USY
+ ST-USY
+ 0.3wt. % V-USY
+ 0.5wt. % V-USY
+ 
+ 
+ 
+Fig. 6 Micropore region pore size distribution showing average pore width  
+ 
+ 
+by NLDFT method. 
+ 
+As expected for microporous materials, all samples show peaks near 0.74 nm, typical of Y-
+zeolitic material. However, this property exhibited for contaminated samples may be due to 
+presence of some portion of micropores but the pores aperture becomes a little wider as shown 
+with DFT pore size distribution model (Fig. 6 and Table 2). Significant pore restructuring is also 
+confirmed with larger pore widths, and differential pore volume decrease marks the quantity of 
+micropores present. To confirm the validity of the model chosen for our analysis, pore volume 
+distribution calculation was taken into account using three different methods as shown in Fig. 7. 
+H-K and DFT models provided best analysis fit, and however, because of the dual porous nature 
+of the samples, the statistical mechanical DFT was selected for further pore volume analysis 
+(Table 3). Obviously, the parent-USY sample contains 82.7% micropore volume. The relatively 
+lower volume may be due to applied treatment for conversion of the zeolite to ultrastable form. 
+The amount decreases to 27.0% when 0.5 wt.% vanadium was incorporated and treated 
+accordingly. Interestingly, as the micropore volume decreased, there was evolution of larger 
+pores comprising low and large mesopores. Low mesopores are “herein” referred to pores with 
+
+<<<PAGE 17>>>
+  
+16 
+ 
+width (2.0 ≤ Ø ≤ 20.0 nm). Samples containing 0.3 and 0.5 wt.% vanadium contain 20.7 and 
+16.7 % of pores in this range, showing the formation of pores of larger sizes. The size and 
+volume of pores  increase with degree of framework crystallinity degradation [44].  
+40
+60
+80
+100
+120
+140
+160
+180
+200
+220
+0.05
+0.10
+0.15
+0.20
+0.25
+0.30
+0.35
+0.40
+ 
+ 
+Micropore volume, cm
+3/g
+Volume of gas adsorbed @ P/Po = 0.1, cm
+3/g STP
+Parent-USY
+ST-USY
+0.3wt.% V-USY
+0.5wt.% V-USY
+ H-K; R
+2 = 0.9999
+ t-plot; R
+2 = 0.9895
+ DFT; R
+2 = 0.9924
+ 
+Fig. 7 Comparison of models for pore volume distribution @ P/Po 0.1 cm3/g 
+ 
+ 
+Table 3: Pore volume distribution 
+Sample 
+Pore volume (%) 
+Ø ≤ 2.0 
+2.0 ≤ Ø ≤ 50.0 
+50.0 ≤ Ø 
+Parent-USY 
+82.7 
+15.8 
+1.4 
+ST-USY 
+66.4 
+26.9 
+6.7 
+0.3wt.% V-USY 
+30.4 
+58.3 (*20.7) 
+11.3 
+0.5wt.% V-USY 
+27.0 
+67.3 (*16.7) 
+5.7 
+where Ø is pore width, nm, and *% pore volume (2.0 ≤ Ø ≤ 20.0) 
+ 
+ 
+Characterization of mesoporosity of materials is most frequently accomplished using N2 
+physisorption that provides micropore and mesopore volumes and pore size distribution, which 
+the mesopores shape can be ascertained from the shape of physisorption isotherms [33]. 
+However, transmission electron microscopy, in addition to elucidating cystallinity and phases, 
+visualizes mesoporosity within a crystal and the bulk material [45, 46]. TEM images (Fig. 8) 
+reveal clearly excessive holes (mesoporosity) in vanadium treated samples. Also indicated are 
+
+<<<PAGE 18>>>
+  
+17 
+ 
+crystallinity losses. However, comparing the contaminated samples, it can be observed that 
+crystalline integrity of the sample with higher vanadium concentration is highly impaired. The 
+pore size obtained from TEM is in close agreement with those obtained from physisorption. 
+ 
+ 
+Fig. 8 TEM micrographs of zeolite samples (a) parent-USY; (b) 0.3wt. % V-USY; (c) 0.5wt. % 
+V-USY; (d)-(f) HRTEM of (a), (b) and (c) respectively 
+ 
+ 
+Vibrational spectroscopies, such as IR spectroscopy of zeolitic systems provide 
+information about the dynamics of zeolite frameworks and interaction of guest species with 
+catalytically active sites, and IR spectroscopic measurements are widely employed in the studies 
+of zeolitic materials [47]. Fig. 9(I) refers to transmittance IR spectra of our contaminated and 
+passivated zeolite samples and parent-USY. The displayed region furnishes information related 
+to v(T-O) vibration consisting both symmetrical (700-850 cm-1) and asymmetrical (1000-1200 
+cm-1), and aluminosilicate tetrahedral bending vibrations [48]. As can be seen from the figure, 
+the structural disturbance is reflected by marked changes in the intensity of the bands which is 
+indicative of structural/alteration damage. Highly perturbed structures show shift in vibration 
+(a)
+(b)
+(c)
+(d)
+(e)
+(f)
+
+<<<PAGE 19>>>
+  
+18 
+ 
+band to higher frequencies due to structural reconstruction of the framework constitutional atoms 
+caused by cumulative hydrothermal treatment and vanadium interaction. A typical Y-zeolite 
+band ca. 1048 cm-1 is visible in parent-USY, however, this band shifts to higher frequency in 
+contaminated samples, due to dealumination of tetrahedral framework aluminum atom [49], 
+giving rise to a characteristic of high silica zeolite [50]. Dealumination has been reported to 
+result in shrinkage of total zeolite framework because of Al-O and Si-O bonds differences [40]. 
+Additionally, v(T-O) bending vibrations at near 460 cm-1 become more intense, an observation 
+Sohn et al. [49] referred to as “orderliness within the framework caused as a result of  
+dealumination by steaming”, but herein however, we refer to as “disorderliness or defect” in the 
+framework caused by accelerated dealumination as revealed by XRD and TEM data. In 1.0 wt.% 
+V-USY sample, there is complete loss of band near 1200 cm-1 present in parent-USY sample and 
+other less contaminated samples, marking Al-O bond breaking. Also, a network of bands in the 
+symmetrical region is redefined. Fig. 10 shows the effect of vanadium on the framework of the 
+zeolite samples. 
+ 
+Adsorption of suitable probe molecules such as pyridine can reveal the amount of 
+acid/basic sites present in a solid catalyst. In this study, the concentrations of Brönsted acid as 
+PyH+ and Lewis acid as PyL were determined by DRIFT spectroscopy after adsorption of 
+pyridine and desorption at 150 oC, in the 1650–1400 cm-1 region of the IR spectra (Fig. 9(II&III). 
+The bands corresponding to Brönsted and Lewis acid sites at 1545 and 1445 cm-1 respectively, 
+are shown. Bands intensities vary with acid sites concentration in the samples. As can be clearly 
+seen, samples with vanadium content diminish intensities as vanadium loading increased, related 
+to decrease density and/or destruction of acids sites. Additional bands at 1490 cm-1 and near 
+
+<<<PAGE 20>>>
+  
+19 
+ 
+1595 cm-1 can be ascribed to pyridine molecules chemisorbed on mixed acid sites and on a 
+second site of Lewis acid, respectively [51].  
+ 
+ 
+Fig. 9 (I) Transmittance FTIR spectroscopy of zeolite samples showing symmetrical and 
+asymmetrical v(T-O) vibration for (a) Parent-USY; (b) 10 wt.% Y/MgO-1.0 wt.% V-USY;          
+(c) 10 wt.% Y/MgO-0.5 wt.% V-USY; (d) 0.3 wt.% V-USY; (e) 10 wt.% Y/MgO-0.3 wt.% V-
+USY;    (f) 0.5 wt.% V-USY, insert is 1.0 wt.% V-USY, (II) FT-IR spectra of PyH+ and PyL 
+bands of the zeolite samples desorped at 150 ◦C for 2 h after adsorption for 24 h (a) 0.3 wt.% V-
+USY; (b) 10 wt.% Y/MgO-0.3 wt.% V-USY; (c) 0.5 wt.% V-USY; (d) 10 wt.% Y/MgO-0.5 wt.% 
+V-USY. (III) FT-IR spectra of PyH+ and PyL bands of the zeolite samples desorped at 150 ◦C for 
+2 h after adsorption for 24 h. (a) 1.0 wt.% V-USY (b) 10 wt.% (0.2-0.4mm)-Y/MgO-1.0 wt.% V-
+USY (c) 10 wt.%Y/MgO-1.0 wt.% V-USY (V) Acid sites probe of passivator before addition to 
+vanadium impregnated catalyst. 
+ 
+ 
+1600
+1550
+1500
+1450
+1400
+ 
+ 
+Intensity
+Wavenumber, cm
+-1
+(a)
+(b)
+(c)
+(d)
+1595 cm
+-1
+1545 cm
+-1
+1490 cm
+-1
+1445 cm
+-1
+1600
+1400
+1200
+1000
+800
+600
+400
+ 
+ 
+Intensity
+Wavenumber, cm
+-1
+(a)
+(b)
+(c)
+(d)
+(e)
+(f)
+1600 1400 1200 1000 800
+600
+400
+2000
+1800
+1600
+1400
+1200
+1000
+800
+ 
+ 
+Intensity
+Wavenumber, cm
+-1
+1714.6 cm
+-1
+1607 cm
+-1
+1514 cm
+-1
+1313 cm
+-1
+1035.6 cm
+-1
+1600
+1550
+1500
+1450
+1400
+ 
+ 
+Intensity
+wavenumber, cm
+-1
+1447 cm
+-1
+1490 cm
+-1
+1545 cm
+-1
+1595 cm
+-1
+(a)
+(b)
+(c)
+(I)
+(II)
+(III)
+(IV)
+
+<<<PAGE 21>>>
+  
+20 
+ 
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+1.1
+1082
+1084
+1086
+1088
+1090
+1092
+1094
+1096
+ 
+ 
+V, cm-
+1
+Vanadium concentration, wt. %
+ 
+Fig. 10 Effect of vanadium on zeolite framework 
+ 
+ 
+Dealumination of zeolite framework suggested by IR, TEM and XRD results was further 
+investigated by MAS-NMR. Fig. 11 (I) shows 29Si MAS-NMR of the samples and parent-USY. 
+As labeled, parent and steam-aged samples exhibit native characteristics of such zeolite samples 
+[52, 53]. However, to confirm migration and probe when severe impairment of zeolite 
+structure/dealumination by vanadium occurs, a sample impregnated with vanadium and calcined 
+(but without steam treatment) was studied, as can be seen, pattern similar to the parent sample is 
+obvious. Vanadium contaminated samples display totally different patterns, an indicative of 
+rearrangement of framework composition atoms. In the steam-aged sample, a siliceous zeolite 
+(Si, 0Al) resonance near -107 ppm is prominent whereas for contaminated samples, merging of 
+aluminum environment peaks, which broadened and shift upfield, is evident. New peaks such as 
+the one at 109.5 ppm develop which Lutz [40] described as disturbance in framework structure 
+and 
+indicate 
+presence 
+of 
+siliceous 
+extra-framework 
+species. 
+It 
+is 
+generated 
+by 
+crystallographically non-equivalent tetrahedral centres arising from silanol group on the zeolite 
+
+<<<PAGE 22>>>
+  
+21 
+ 
+surface. Comparing the characteristic spectra of the treated samples with the parent-USY reveals 
+zeolite has undergone extensive dealumination [53]. 
+ 
+Fig. 11 (I) 29Si MAS-MNR of catalyst samples (II) 27Al MAS-MNR of catalyst samples. 
+ 
+From 27Al MAS-NMR spectra, resonances near 0 and 60 ppm are attributed to Al (VI) and Al 
+(IV) entities, corresponding to non-framework and framework aluminum species respectively. 
+As shown in Fig. 11(II), parent-USY and vanadium impregnated and calcined (but usteamed) 
+USY exhibit spectral features of structurally unimpaired zeolite. This implies steam aids 
+vanadium destructive action. However, the increased peak at 0 ppm for unsteamed sample is an 
+indication of presence of EFAL. Obviously, alteration of aluminum micro-environments is due to 
+combination of treatments, simulating conditions in a typical FCC unit which the samples were 
+subjected to. Excessive dealumination of framework lattice is evidenced by fully coordinated 
+non-lattice center at 0 ppm, compared with parent-USY at about 4 ppm. This is sequel to 
+framework aluminum atoms losses, indicated by upfield peaks shift to about 52 ppm and 
+suggesting the presence of a different aluminum environment. However, investigation of this is 
+beyond the scope of the present work.   Furthermore, the resonance ca. 60 ppm becomes 
+broadened and reduces intensity, an indication of structure disorder. In addition a new peak 
+developed in the steam-aged sample near 30 ppm, is attributed to Al (V) or to distorted Al (VI/IV) 
+-50
+-60
+-70
+-80
+-90
+-100
+-110
+-120
+-130
+-140
+-150
+ 
+ 
+Intensity
+Chemical shift, ppm
+(a)
+(b)
+(c)
+(d)
+(e)
+(a) Parent-USY
+(b) 0.3wt.% V-USY (untseamed)
+(c) 0.3wt.% V-USY 
+(d) 1.0wt. % V-USY
+(e) ST-USY
+109.5 ppm
+150
+100
+50
+0
+-50
+-100
+-150
+ 
+ 
+ 
+Chemical shift, ppm
+Intensity
+(e)
+(a)
+(b)
+(c)
+(d)
+(a) Parent-USY
+(b) 0.3wt.% V-USY (unsteamed)
+(c) ST-UST
+(d) 1.0wt.% V-USY
+(e) 0.3wt.% V-USY
+60 ppm
+52 ppm
+ca. 30 ppm
+(I)
+(II)
+
+<<<PAGE 23>>>
+  
+22 
+ 
+environments [52, 54].  It has been shown that by comparing Al MAS-NMR with Al CP MAS-
+NMR, steam-aged HY has a substantial portion of the resonance attributed to Al (IV) results 
+from the presence of extraframework Al species [55]. Therefore, it is noteworthy to mention the 
+prominence of Al (IV), framework aluminum centre in vanadium contaminated samples may be 
+due to transformation of crystalline aluminosilicate structure to another structure such as mullite 
+material which also present element of framework aluminum atoms. 
+ 
+Based on our experimental results, we have proposed a mechanism for the formation of 
+mesopores in vanadium contaminated zeolite. USY zeolites are designed to be thermally stable. 
+In the presence of steam and some foreign substances the original stability is compromised. 
+Steaming alone extracts few aluminum atoms from the zeolite framework and creates limited 
+vacancies [56, 57]. Portion of the vacancies (cavitations) are healed by silicon mobile species, 
+resulting in the formation of mesopores [58]. However, in the presence of vanadium, 
+excessive/accelerated dealumination of framework aluminum atoms occurs requiring 
+proportionate filling by silicon atoms. The detail is summarized in the equations below:  
+V2O5 + 3H2O   2H3VO4 
+ 
+ 
+ 
+ 
+(3)  
+[≡Si-O]3Al(HO)Si≡ + H3VO4   AlVO4 + 4[≡Si-OH] 
+(4) 
+AlVO4 + 3H2O   H3VO4 + Al(OH)3  
+ 
+ 
+(5) 
+Under FCC regeneration conditions vanadium, which has been reported to exist in (+5) oxidation 
+state [22, 25, 59] (V2O5), undergoes reaction to form mobile vanadic acid (H3VO4) on the surface 
+of the zeolite. Vanadic acid formed undergoes intra-particle migration to the zeolite framework 
+where it attacks and destroys strong acid sites, Si(OH)Al, via extraction of tetrahedral aluminum 
+atoms in the zeolite crystal, causing it to collapse, and forms solid aluminum vandate (AlVO4) 
+solution (Eq. 4). Due to unstable nature of AlVO4 under FCC conditions, it decomposes and 
+
+<<<PAGE 24>>>
+  
+23 
+ 
+H3VO4 acid is re-formed to continue aluminum extraction (dealumination) process in a catalytic 
+fashion (Eq. 5). According to this mechanism, vanadic acid would function as a catalyst since it 
+is not consumed [17]. From the perception of the above mechanism and our XRD data (NAl), 
+excessive dealumination accompanying vanadium contamination leaves much vacancies/defects 
+(silanol nests) which are insufficiently healed by unstable mobile silicon species 
+(dealumination >>> silicon substitution). As a result, cavitations formed from expelled 
+aluminum and silicon mobile species are depicted as mesopores revealed from our TEM data. It 
+is worth noting that the formed mesopores are non-intercrystalline, most of which are spherical, 
+and some few which coalesce to larger pores through micropore openings having variant shapes. 
+The framework dislodgement of aluminum atoms are depicted in Fig. 12 and scheme 1. 
+ 
+Fig. 12 3D atomistic model of faujasite structure zeolite (a) with full framework aluminum atoms 
+(b) with partial framework aluminum atoms  
+ 
+Framework Al vacancy created by Al removal
+(a)
+(b)
+Si
+O
+Al
+
+<<<PAGE 25>>>
+  
+24 
+ 
+Al
+-
+O
+O
+O
+O
+Si
+Si
+Si
+Si
+H
++
+O
+Si
+O
+Si
+O
+Si
+O
+Si
+Al
+-
+Al
+-
+O
+O
+O
+O
+Si
+Si
+Si
+Si
+H
++
+Accelerated dealumination
+100 % steam, VO2
++
+Dealumination
+100 % steam
+OH
+Si
+O
+H
+Si
+OH
+Si
+O
+H
+Si
+O
+Si
+O
+Si
+O
+Si
+O
+Si
+Al
+-
+OH
+Si
+O
+H
+Si
+OH
+Si
+O
+H
+Si
+OH
+Si
+O
+H
+Si
+OH
+Si
+O
+H
+Si
+Formation of silanol nests (limited defects) in 
+framework structure
+Framework tetrahedral centre
+n
+Framework tetrahedral centre
+H
++
+H
++
+O
+Si
+O
+Si
+O
+Si
+O
+Si
+Al
+- H
++
+defect
+defect
+defect
+n
+Formation of more silanol nests (excessive 
+defects) in framework structure
+n - 3
+n - 3
+Scheme 1: Formation of defect/vacancy in framework structure of zeolite by vanadium 
+ 
+3.2 
+Vanadium passivation 
+ 
+In the light of the foregoing results and the literature, experiments were conducted to 
+mitigate migration of vanadium into in the framework of zeolite. Table 4 shows textural results 
+of samples containing passivator. Comparing data in Table 4 with those of Table 1, it is very 
+obvious there are remarkable changes in the properties of contaminated samples containing 
+additive. This test is evaluated essentially of micropore area and volume, and compared to the 
+samples without additive. In the sample containing additive, (60 µm particle size, 10 wt.% 
+Y/MgO) on 1.0 wt.% V-USY, total and micropore surface areas (calculated by BET method) of 
+125.7 and 88.9 m2/g have been obtained against 15.7 and 1.94 m2/g respectively. Micropore 
+volume drastically increased from 0.00094 to 0.0462 cm3/g, it signifies reduced destruction by 
+vanadium. In our vanadium immobilized samples, improved FTIR spectral patterns are also 
+presented (see Fig. 9(I)). Specifically, in 1.0 wt.% V-USY sample the peak at near 1200 cm-1 and 
+other symmetrical peaks which had lost due to dealumination (700–850 cm-1) re-appeared. This 
+
+<<<PAGE 26>>>
+  
+25 
+ 
+is indicative of minimum vanadium destructive action due to addition of passivator which 
+reduced migration of vanadium into the framework of the zeolite sample. 
+Table 4: Phase retention in passivator containing zeolite samples 
+Sample 
+SBET, m2/g 
+MPA, m2/g 
+MPV,cm3/g 
+Y/MgO 
+55.1 
+0.71 
+- 
+5wt.% 60µm  
+Y/MgO/1.0wt.% V-USY 
+30.2 
+8.1 
+0.0041 
+10wt.% 60µm 
+Y/MgO/0.3wt.% V-USY 
+202.3 
+176.7 
+0.0912 
+10wt.% 60µm 
+Y/MgO/0.5wt.% V-USY 
+163.8 
+123.1 
+0.0637 
+10wt.% 60µm 
+Y/MgO/1.0wt.% V-USY 
+125.7 
+88.9 
+0.0462 
+50wt.%/0.2-0.4mm/Y/MgO/ 
+1.0wt.% V-USY 
+28.4 
+6.3 
+0.0032 
+Properties measured with Tristar 3000. 
+5
+10
+15
+20
+25
+30
+35
+40
+ 
+ 
+Intensity
+2 theta, degree
+(a)
+(b)
+(c)
+(d)
+(e)
+(f)
+ 
+Fig. 13 XRD pattern of vanadium passivated zeolite samples showing phase retention (a) 5 wt.% 
+Y/MgO-0.5 wt.% V-USY (b) 10 wt.%Y/MgO-0.3 wt.% V-USY (c) 10 wt.% Y/MgO-0.5 wt.% 
+V-USY (d) 10 wt.% Y/MgO-1.0  wt.% V-USY (e) 5 wt.% Y/MgO-1.0 wt.% V-USY (f) 50 wt.% 
+(0.2-0.4mm) Y/MgO-1.0 wt.% V-USY 
+ 
+ 
+Acidity study was also conducted for the samples with passivator and results are shown 
+(Fig. 9(II & III)). To show that the passivator does not have acid sites capable of cracking, we 
+have presented a spectrum of pyridine sorped passivator (Fig. 9(IV)). Obviously, samples 
+containing passivator retained acidity compared with the samples without passivator. These 
+
+<<<PAGE 27>>>
+  
+26 
+ 
+results prove ability of the passivator to prevent migration of vanadium into the internal structure 
+of zeolite where acid cites are located [60]. It is important to note here that, a 10 wt.% passivator 
+is probably excessive for vanadium concentrations lower than 1.0 wt.%, as confirmed in acid 
+concentration of passivated samples (Fig. 9(III)).   
+ 
+4.0 
+Conclusion  
+ 
+Vanadium in the petroleum feedstock affects catalyst in several ways including loss of 
+micropores, occupies the inner pores of zeolite, acid sites losses, accelerated dealumination 
+leading to the formation of larger mesopores, and destroys the framework structure. Its 
+contamination of a catalyst produced a continuous loss of textural properties, as a function of the 
+quantity of the metal. At vanadium contents above catalyst tolerable level in petroleum 
+feedstocks, excessive loss of crystallinity (microporosity) and introduction of large mesoporosity 
+would result in collapse of zeolite structure. The instability of vanadium poisoned zeolite catalyst 
+at FCC regeneration conditions is related not only to microporosity and framework degradations, 
+but also to the formation of a material with different structure which lacks suitable acid sites and 
+catalytic cracking properties. Vanadium immobilization experiment showed that mitigation of 
+vanadium destructive effects preserved important catalytic properties such as acidity, 
+crystallinity and surface area.  
+ 
+Acknowledgements 
+The authors wish to acknowledge Chinese scholarship Council (CSC) for the award of Chinese 
+government scholarship for research study. 
+ 
+ 
+
+<<<PAGE 28>>>
+  
+27 
+ 
+References 
+ 
+[1] J. Knoll, U. Singh, J. Nicolich, R. Gonzalez, M. Ziebarth, C. Fougret, S. Brandt,  Industrial & 
+Engineering Chemistry Research. 53 (2014) 16270. 
+[2] A. Kovo, O. Hernandez, S. Holmes,  J. Mater. Chem. 19 (2009) 6207. 
+[3] V. Valtchev, L. Tosheva,  Chem. Rev. 113 (2013) 6734. 
+[4] Y. Xia, Z. Yang, R. Mokaya,  Nanoscale. 2 (2010) 639. 
+[5] G. Cruciani,  J. Phys. Chem. Solids. 67 (2006) 1973. 
+[6] D. Serrano, J. Aguado, G. Morales, J. Rodriguez, A. Peral, M. Thommes, J. Epping, B. 
+Chmelka,  Chem. Mater. 21 (2009) 641. 
+[7] J. Liu, G. Jiang, Y. Liu, J. Di, Y. Wang, Z. Zhao, Q. Sun, C. Xu, J. Gao, A. Duan,  Scientific 
+reports. 4 (2014). 
+[8] J. Pérez-Ramírez, D. Verboekend, A. Bonilla, S. Abelló,  Adv. Funct. Mater. 19 (2009) 3972. 
+[9] K. Egeblad, C.H. Christensen, M. Kustova, C.H. Christensen,  Chem. Mater. 20 (2007) 946. 
+[10] K. Mlekodaj, K. Tarach, J. Datka, K. Góra-Marek, W. Makowski,  Microporous 
+Mesoporous Mater. 183 (2014) 54. 
+[11] D. Verboekend, A.M. Chabaneix, K. Thomas, J.-P. Gilson, J. Perez-Ramirez,  
+CrystEngComm. 13 (2011) 3408. 
+[12] D.P. Serrano, J.M. Escola, P. Pizarro,  Chem. Soc. Rev. 42 (2013) 4004. 
+[13] J. Zhou, Z. Hua, W. Wu, Z. Liu, Y. Zhu, Y. Chen, J. Shi,  Dalton Transactions. 40 (2011) 
+12667. 
+[14] M.H. Kox, E. Stavitski, J.C. Groen, J. Pérez‐Ramírez, F. Kapteijn, B.M. Weckhuysen,  
+Chemistry-A European Journal. 14 (2008) 1718. 
+
+<<<PAGE 29>>>
+  
+28 
+ 
+[15] S. Gambicki,  Stud. Surf. Sci. Catal. 130 (2000) 147. 
+[16] G.M. Tonetto, M.L. Ferreira, J.A. Atias, H.I. de Lasa,  AlChE J. 52 (2006) 754. 
+[17] L.E. Sandoval-Diaz, J.M. Martinez-Gil, C.A. Trujillo,  J. Catal. 294 (2012) 89. 
+[18] L.E. Sandoval-Diaz, L.A. Palomeque-Forero, C.A. Trujillo,  Applied Catalysis a-General. 
+393 (2011) 171. 
+[19] A.S. Escobar, M.M. Pereira, H.S. Cerqueira,  Applied Catalysis a-General. 339 (2008) 61. 
+[20] S.-J. Yang, Y.-W. Chen, C. Li,  Applied Catalysis A: General. 117 (1994) 109. 
+[21] S.-J. Yang, Y.-W. Chen, L. Chiuping,  Zeolites. 15 (1995) 77. 
+[22] C.A. Trujillo, U.N. Uribe, P.-P. Knops-Gerrits, P.A. Jacobs,  J. Catal. 168 (1997) 1. 
+[23] E. Tangstad, A. Andersen, E.M. Myhrvold, T. Myrstad,  Applied Catalysis a-General. 346 
+(2008) 194. 
+[24] V.A. Tsiatouras, N.P. Evmiridis,  Industrial & engineering chemistry research. 42 (2003) 
+1137. 
+[25] L.A. Pine,  J. Catal. 125 (1990) 514. 
+[26] M. Torrealba, M.R. Goldwasser, G. Perot, M. Guisnet,  Applied Catalysis A: General. 90 
+(1992) 35. 
+[27] C. Lastoskie, K.E. Gubbins, N. Quirke,  The journal of physical chemistry. 97 (1993) 4786. 
+[28] A. Saito, H.C. Foley,  Microporous Mater. 3 (1995) 543. 
+[29] A. Saito, H. Foley,  AlChE J. 37 (1991) 429. 
+[30] G. Tonetto, J. Atias, H. de Lasa,  Applied Catalysis a-General. 270 (2004) 9. 
+
+<<<PAGE 30>>>
+  
+29 
+ 
+[31] M.L. Occelli, J.P. Olivier, A. Petre, A. Auroux,  J. Phys. Chem. B. 107 (2003) 4128. 
+[32] S.A. Al-Bogami, H.I. de Lasa,  Fuel. 108 (2013) 490. 
+[33] J.C. Groen, L.A.A. Peffer, J. Perez-Ramirez,  Microporous Mesoporous Mater. 60 (2003) 1. 
+[34] S. Lowell, J.E. Shields, M.A. Thomas, M. Thommes, Characterization of porous solids and 
+powders: surface area, pore size and density, Springer Science & Business Media, 2012. 
+[35] D. Breck, E. Flanigen,  Ind., London. 47 (1968). 
+[36] C.H. Liu, Y.Q. Deng, Y.Q. Pan, S.G. Zheng, X.H. Gao,  Applied Catalysis a-General. 257 
+(2004) 145. 
+[37] F. Lonyi, J. Valyon, G. Pal-Borbely,  Microporous Mesoporous Mater. 66 (2003) 273. 
+[38] H. Wang, F. Wang, W. Wu, Effect of vanadium poisoning and vanadium passivation on the 
+structure and properties of FCC catalysts, in:  ABSTRACTS OF PAPERS OF THE AMERICAN 
+CHEMICAL SOCIETY, AMER CHEMICAL SOC 1155 16TH ST, NW, WASHINGTON, DC 
+20036 USA, 2000, pp. U394. 
+[39] M. Thommes, Chapter 15 Textural characterization of zeolites and ordered mesoporous 
+materials by physical adsorption, in: H.v.B.A.C. Jiří Čejka, S. Ferdi (Eds.) Studies in Surface 
+Science and Catalysis, Elsevier, 2007, pp. 495. 
+[40] W. Lutz,  Advances in Materials Science and Engineering. (2014). 
+[41] L.O. Mario, Cracking Metal-Contaminated Oils with Catalysts Containing Metal 
+Scavengers, in:  Fluid Catalytic Cracking, American Chemical Society, 1988, pp. 162. 
+[42] Y. Mathieu, A. Corma, M. Echard, M. Bories,  Applied Catalysis A: General. 469 (2014) 
+451. 
+[43] R.D.M. Pimenta, M.M. Pereira, U. do Nascimento, J. Gorne, E. Bernadete, L.Y. Lau,  Catal. 
+Today. 133 (2008) 805. 
+[44] V. Patzelova, N. Jaeger,  Zeolites. 7 (1987) 240. 
+
+<<<PAGE 31>>>
+  
+30 
+ 
+[45] A.H. Janssen, A.J. Koster, K.P. de Jong,  Angewandte Chemie-International Edition. 40 
+(2001) 1102. 
+[46] J. Zecevic, C.J. Gommes, H. Friedrich, P.E. de Jongh, K.P. de Jong,  Angewandte Chemie-
+International Edition. 51 (2012) 4213. 
+[47] K.S. Smirnov, D. Bougeard,  Catal. Today. 70 (2001) 243. 
+[48] F. Thibault-Starzyk, F. Maugé, Infrared Spectroscopy, in:  Characterization of Solid 
+Materials and Heterogeneous Catalysts, Wiley-VCH Verlag GmbH & Co. KGaA, 2012, pp. 1. 
+[49] J.R. Sohn, S.J. DeCanio, J.H. Lunsford, D.J. O'Donnell,  Zeolites. 6 (1986) 225. 
+[50] J. Scherzer, J.L. Bass,  J. Catal. 28 (1973) 101. 
+[51] P. Matias, J.M. Lopes, P. Ayrault, S. Laforge, P. Magnoux, M. Guisnet, F.R. Ribeiro,  
+Applied Catalysis A: General. 365 (2009) 207. 
+[52] M.L. Occelli, M. Kalwei, A. Wölker, H. Eckert, A. Auroux, S.A.C. Gould,  J. Catal. 196 
+(2000) 134. 
+[53] V.A. Tsiatouras, N.P. Evmiridis,  Industrial & Engineering Chemistry Research. 47 (2008) 
+9288. 
+[54] J. Van Bokhoven, A. Roest, D. Koningsberger, J. Miller, G. Nachtegaal, A. Kentgens,  The 
+Journal of Physical Chemistry B. 104 (2000) 6743. 
+[55] H. Yong, D. Coster, F.R. Chen, J.G. Davis, J.J. Fripiat, Aluminum Coordination and Lewis 
+Acidity in Aluminas and Steamed Zeolites, in: F.S. L. Guczi, T. P (Eds.) Studies in Surface 
+Science and Catalysis, Elsevier, 1993, pp. 1159. 
+[56] A.H. Janssen, A.J. Koster, K.P. de Jong,  J. Phys. Chem. B. 106 (2002) 11905. 
+[57] R. Beyerlein, C. Choi-Feng, J. Hall, B. Huggins, G. Ray,  Top. Catal. 4 (1997) 27. 
+[58] C. Marcilly,  Petroleum Techniques. 328 (1986) 12. 
+
+<<<PAGE 32>>>
+  
+31 
+ 
+[59] R.F. Wormsbecher, A.W. Peters, J.M. Maselli,  J. Catal. 100 (1986) 130. 
+[60] R. Hajjar, Y. Millot, P.P. Man, M. Che, S. Dzwigaj,  The Journal of Physical Chemistry C. 
+112 (2008) 20167. 
+ 
+ 
+ 
+
+<<<PAGE 33>>>
+  
+32 
+ 
+Graphical Abstract 
+ 
+ 
+ 
+ 
+ 
+Al
+-
+O
+O
+O
+O
+Si
+Si
+Si
+Si
+H
++
+Accelerated dealumination
+100 % steam, VO2
++
+OH
+Si
+O
+H
+Si
+OH
+Si
+O
+H
+Si
+OH
+Si
+O
+H
+Si
+OH
+Si
+O
+H
+Si
+O
+Si
+O
+Si
+O
+Si
+O
+Si
+Al
+- H
++
+defect
+defect
+n
+n - 3
+Tetrahedral
+Framework
+Aluminum expulsion from framework
+Tetrahedral center

@@ -1,0 +1,1220 @@
+
+<<<PAGE 1>>>
+JOURNAL OF CATALYSIS 168, 1–15 (1997)
+ARTICLE NO. CA971550
+The Mechanism of Zeolite Y Destruction by Steam in the Presence
+of Vanadium
+Carlos A. Trujillo,∗,1 Uriel Navarro Uribe,† Peter-Paul Knops-Gerrits,‡ Luis Alfredo Oviedo A.,∗
+and Pierre A. Jacobs‡
+∗Laboratorio de Cat´alisis Heterog´enea, Departamento de Qu´ımica, Universidad Nacional de Colombia, Santaf´e de Bogot´a, Colombia; †Instituto
+Colombiano del Petr´oleo, ICP, Bucaramanga, Santander, Colombia; and ‡Centrum voor Oppervlaktechemie en Katalyse,
+KU Leuven, Kardinal Mercierlaan 92, B-3001 Heverlee, Belgium
+Received April 19, 1996; revised November 1, 1996; accepted December 2, 1996
+The mechanism of zeolite Y destruction by steam in the pres-
+ence of vanadium is described. Electron spin resonance, UV–VIS
+diffuse reﬂectance, and sorption measurements are used to un-
+derstand vanadium dynamics on the zeolite. Vanadium deposited
+on the external surface of the zeolite migrates into the channels
+by being heated in oxidizing atmosphere; although water helps
+vanadium reach the acid sites, it is not required. Vanadium is
+stabilized as VO+
+2 cation near the acid sites. The strongest acid
+sites can stabilize V as VO2+ cations, but experimental results
+show that VIV does not play any role in zeolite destruction. Ex-
+traframework aluminum competes with the zeolite for vanadium
+and delays its migration to the acid sites. In the presence of wa-
+ter vanadic acid is formed inside the zeolite according to the reac-
+tion VO+
+2 –Y + 2 H2O ⇀
+↽H+–Y + H3VO4. Since vanadic acid is a
+strong acid, it can destroy the zeolite by hydrolysis of the SiO2/Al2O3
+framework; in this way, vanadium can act as a catalyst for zeolite
+destruction. Synergistic action between sodium and vanadium is ex-
+plained. A detailed mechanism for zeolite dealumination by steam
+is proposed.
+c⃝1997 Academic Press
+INTRODUCTION
+Poisoning and deactivation of the catalyst in ﬂuid cata-
+lytic cracking (FCC) by vanadium contained in the oil feed-
+stock is one of the most prominent problems faced by
+operators of oil reﬁneries. The effects of metal contam-
+inants such as vanadium and nickel on the performance
+of cracking catalysts are well known (1–3). Vanadium and
+nickel, present in the feed as organic complexes and por-
+phyrins (4), are deposited continuously on the catalyst sur-
+face. They promote undesirable dehydrogenation, which
+increases coke and dry gas production at the expense of the
+gasoline yield. Vanadium has the additional effect of reduc-
+ing the catalyst activity and selectivity by destroying zeolite
+crystallinity.
+1 To
+whom
+correspondence
+should
+be
+addressed.
+E-mail:
+ctrujill@ciencias.ciencias.unal.edu.co.
+Although much work has been done in the ﬁeld, the
+mechanism by which zeolite is damaged in the presence
+of vanadium is still a matter of controversy (3–9). Under-
+standing the mechanism of zeolite destruction by vanadium
+isveryimportantandhelpfulinthedesigningofbettervana-
+dium traps. Worsmbecher et al. (5) proposed a mechanism
+for framework collapse in the presence of vanadium. It in-
+volves the hydrolysis of the zeolite SiO2/Al2O3 framework
+by H3VO4 produced by the reaction between V2O5 and
+water. An H3VO4 equilibrium concentration in the regen-
+erator atmosphere between 1 and 10 ppm was calculated.
+Since vanadic acid is a strong acid it can attack the Si–O–Al
+bond by extracting aluminum from the lattice, causing col-
+lapse of the structure. After zeolite destruction vanadium
+pentoxide may combine with rare earth compounds left as
+debris to form rare earth vanadates.
+M. L. Occelli (3, 7) proposed that zeolite is destroyed
+by H4V2O7, according to results on vanadium scavengers
+forming Mg2V2O7. Wormsbecher showed that steam is nec-
+essaryforvanadiumaction,andPine(8)clearlyshowedthat
+vanadium acts as a catalyst for the steam–zeolite reaction;
+therefore, vanadium must interact in some way with steam.
+The controversy over the acid species formed between
+V2O5 and water was solved by Sanchez and Hager (10).
+They established that H3VO4 is the volatile species formed
+between V2O5 and water at high temperatures. The reaction
+was found to be
+V2O5 (l) + 3 H2O(g) ⇀
+↽2 H3 VO4(g),
+[1]
+1G◦(cal/mol) = 48,154.1 + 11.435 T ln T −0.004844 T 2 +
+286,850/T −78.265 T. For a typical FCC regenerator tem-
+perature of 993 K, Kp = 1.772 × 10−10.
+As an example, a normal vanadium concentration in
+the feed to a FCC unit is 3 ppm. With this value, around
+6% (w/w) of the feed is converted to coke with a hydrogen
+content of 8% (11). To burn off the coke produced by 1 kg
+of the feed, using an excess of 2% of air (20% of O2), it is
+necessary to inject into the regenerator 29.98 mol of air (11).
+1
+0021-9517/97 $25.00
+Copyright c⃝1997 by Academic Press
+All rights of reproduction in any form reserved.
+
+<<<PAGE 2>>>
+2
+TRUJILLO ET AL.
+The complete combustion increases gases to 30.78 mol with
+a water content of 7.8% produced by hydrogen burning.
+There is some water contribution from the stripping zone,
+which increases the partial pressure of steam to the typical
+value of 20% (5). Under these conditions the exhaust gases,
+per kilogram of the feed processed, reach 35.48 mol or 1445
+liters at 993 K and 2 atm.
+A steam partial pressure of 20% and 2 atm regen-
+erator pressure yields an equilibrium concentration of
+3.37 × 10−6 atm or 1.7 ppm of H3VO4. To reach the equilib-
+rium it is necessary to volatilize 3.0 mg of vanadium per kilo-
+gram of feed processed. This is the same amount contained
+in 1 kg of the feed considered as an example. Taking into
+account that the regenerator atmosphere is renewed con-
+tinuously, if the equilibrium is reached all vanadium would
+be lost with regenerator exhaust gases. In order to explain
+the observed vanadium accumulation over the catalyst it
+is necessary to accept that vanadic acid bulk concentration
+must be below 1 ppm and not between 1 and 10 ppm as
+proposed by Wormsbecher.
+In the FCC process approximately 5–10% of the sul-
+fur present in the feed is incorporated into the coke and
+transferred to the regenerator, where it is oxidized to SOx
+(90% SO2, 10% SO3) (12). A typical feed contains 1% of
+sulfur (11). Simple calculations will show us that the mini-
+mum concentration of SO3 or sulfuric acid in the regenera-
+tor atmosphere would be around 60 ppm. If the mechanism
+of Y zeolite destruction by vanadium is an acid hydrolysis,
+it is not clear why it would be caused by the weaker acid
+in lower concentration and not by the stronger and more
+abundant sulfuric acid.
+Zeolite destruction by vanadium is real, so if the mech-
+anism is an acid hydrolysis as proposed by Wormsbecher,
+it is necessary the concentration of the vanadium in the ze-
+olite before destruction. To explain the catalytic action of
+vanadium it would be necessary to concentrate it inside the
+zeolite; the destruction either is carried out by acid hydrol-
+ysis or is caused by liquid V2O5 (13).
+Other mechanisms have been proposed; for rare earth
+containing zeolites, it has been shown by high-resolution
+analytical microscopy that vanadium reacts with lanthanum
+in LaY zeolite to form LaVO4. The destabilization of the
+zeolite was attributed to the disappearance of La–O–La
+stabilizing bridges in the sodalite cages (14, 15). However,
+the levels of vanadium used to draw out those conclusions
+were high compared with the values found in equilibrium
+FCC catalysts and do not agree with the observation that
+small amounts of vanadium destroy large amounts of ze-
+olite (8). Further experiments have shown that vanadium
+behaves as a catalyst for zeolite destruction by steam (8).
+If the formation of rare earth vanadates were the cause of
+zeolite destruction, vanadium would be a reactant and the
+amount of vanadium needed for the large activity decays
+observed would be higher. It has been proposed that VO2+
+cations play an important role in calcined rare earth Y ze-
+olite (CREY) (3), USY, and rare earth Y zeolite (REY)
+destruction (8). Anderson et al. (18) ﬁrst concluded that
+when a Eu–Y zeolite is loaded with vanadyl naphthenate,
+octahedral coordinated VO2+ cations are stabilized on the
+zeolite after organic ligand combustion.
+Kinetic measurements of the zeolite destruction in the
+presence and absence of vanadium and sodium were made
+by Pine (8). The results show steam as a reactant in zeolite
+destruction and vanadium and sodium as nearly equally
+active, synergistic catalysts. Rare earth elements do not
+change zeolite vanadium tolerance. Their effect is indirect;
+they change the base steam stability of the zeolite. Pine pro-
+posed that the reaction of hydroxyl groups with the weak
+bases sodium and vanadium would have a destabilizing ef-
+fect on the adjacent Si–O–Si bond and make them more
+amenable to hydrolysis by steam. Occelli showed that vana-
+dium tolerance decreases by increasing framework alu-
+minum content, indicating that the point of attack could
+be the Si–O–Al bond (6). X-ray diffraction shows that the
+zeolite is transformed by heating to a more stable phase like
+mullite and cristoballite; with vanadium this transformation
+occurs at lower temperatures (3). Occelli found that steam
+accelerates and enhances the deleterious effects of V; it was
+proposed that the damage to the catalyst occurs during the
+stripping in the FCC cycle by vanadium volatile acids, which
+can react with the catalyst components (3). However, it is
+unlikely to ﬁnd VV after the strong reducing conditions of
+the cracking reaction and steam-stripping and there are no
+known volatile vanadium acids in lower oxidation states.
+Data from imaging secondary-ion mass spectroscopy
+show that vanadium accumulates throughout FCC catalyst
+particles, but shows a preference for rare-earth-exchanged
+zeolite Y and alumina phases in a composite catalyst (16).
+Torrealba et al. (17) studied the effects of 1% vanadium im-
+pregnation on an ultrastable zeolite (USY) and one FCC
+catalyst. The vanadium is well dispersed on the zeolite ei-
+ther by calcination at 540◦C or by hydrothermal treatment
+at 750◦C. In the FCC catalyst vanadium is present as large
+aggregates (6 to 12 nm). Vanadium decreases the stabil-
+ity and consequently the activity of the zeolite and FCC
+catalyst by increasing the rates of dealumination during the
+hydrothermal treatment. However, the loss in zeolite crys-
+tallinity alone was insufﬁcient to explain the high activity
+decay. Ion exchange of acid protons by cationic vanadium
+species seems responsible for activity loss in the remaining
+USY crystals (17).
+In order to clarify the zeolite destruction mechanism by
+steam in the presence of vanadium, in this research we use
+electron spin resonance (ESR) to quantify the role of VIV
+in the vanadium–Y zeolite interaction. Diffuse reﬂectance
+spectroscopy (DRS) in the UV–VIS region and sorption
+measurements are used in combination with ESR to explain
+V behavior in the zeolite. The effects regarding support
+
+<<<PAGE 3>>>
+ZEOLITE Y DESTRUCTION BY VANADIUM IN STEAM
+3
+type, temperature, and atmosphere (dry–steam, oxidative–
+reductive) over V speciation are investigated. The different
+aspects such as crystallinity loss by lattice destruction and
+activity decrease are discussed.
+EXPERIMENTAL
+For this study two zeolite samples from PQ Corporation
+were selected: references CBV600 and CBV712, hence-
+forth referred to as Z6 and Z7, respectively. Z6 is a normal
+USY with extraframework aluminum (EFAL), bulk Si/Al
+ratio 2.76, unit cell size (Ao) 24.38 ˚A, Na2O 0.18%. Z7 is pro-
+duced by acid extraction of Z6 and contains lower levels of
+EFAL, bulk Si/Al ratio 5.45, Ao 24.32 ˚A, Na2O 0.08%. The
+zeolites were kept in a saturated CaCl2 solution to stabilize
+water content. The total water content was determined by
+weight loss after calcination at 1000◦C.
+Aerosil 200 (Degussa) and alumina were used for com-
+parison. As aerosil is too light to be manipulated into the
+quartz ﬂow cell, handling could be improved by wetting
+25 g with 250 ml of water and drying at 120◦C overnight.
+The dried product was ground in a small agate ball mill.
+The resultant silica has no important changes in surface
+area (Table 2). Alumina was prepared by calcination of
+iron free pseudobohemite at 750◦C. Gases were supplied
+by L’Air Liquid: compressed air, N2 99.9%, and CO 12.5%
+in N2.
+Vanadium was added using a variation of the proce-
+dure published by Mitchell (39) and similar to that used
+by Pine (8). We choose bis[1-phenylbutandionato-(1,3)]-
+oxovanadium (IV) (vanadyl bisbenzoilacetonate (VBzA)
+from Merck) to simulate vanadium deposition under FCC
+conditions. The main part of V compounds in the crude oil
+exists as metal porphyrin or porphyrin-like complexes (4).
+These molecules are larger than the Y zeolite mouth pores
+and when deposited on FCC catalyst the metal can not enter
+directly into the zeolite. The Mitchell procedure uses vana-
+dium naphthenates that are commercially more available
+than porphyrines. Naphthenates are made from naphthenic
+acids with a general formula written as R(CH2)n · COOH,
+where R is a cyclic nucleus composed of one or more rings
+(1). Commercial vanadium naphthenates are an irrepro-
+ducible mixture of different molecular weights and sizes,
+and the smallest members can enter Y zeolite pores during
+the Mitchell procedure. From the data published by Hong
+et al. (41), VBzA was modeled and it was concluded that
+there is not an orientation that let the molecule enter Y
+zeolite pores.
+VBzA dissolved in toluene was added to the fully hy-
+drated supports. Toluene is less polar than methanol (used
+by Pine) and for the size of VBzA and the polarity of the
+solvent the vanadium is deposited on the external surface
+of the zeolites during impregnation, simulating FCC depo-
+sition. The solvent was evaporated in a rotavap under vac-
+uum. The resulting product was calcined in a vertical quartz
+tube, heated at 2◦C/min up to 300◦C for 5 h in an oxygen
+stream. Oxygen atmosphere and a calcination temperature
+lower than that used by Mitchell (air, 537◦C) were chosen
+in order to eliminate organic ligands keeping vanadium on
+zeolite’s external surface. VBzA oxidizes very easily under
+these conditions, probably due to the catalytic action of V
+for organic matter oxidation. Samples precalcined at 300◦C
+in oxygen were calcined at higher temperatures in shallow
+dishes in a mufﬂe oven in air for 5 h unless a different period
+is speciﬁed. The heating rate was 2◦C/min.
+Steaming of the zeolites was performed in a vertically
+mounted quartz tube 3.0 cm in diameter, provided with a
+sintered quartz plate. The lower part of the tube was con-
+nected to a stainless steel (ss) T provided with a septum.
+Water was pumped by a syringe perfusor, in which a nee-
+dle passes through the septum and discharges water into
+the heated part of the tube. In this way liquid water accu-
+mulation and condensation were avoided. The upper part
+of the tube was welded to a Pyrex screw. A Teﬂon male
+screw with an O-ring was placed between the reactor and
+a Pyrex tube 2.6 cm in. diameter connected to a ss T. The
+thermocouple was covered by a 3-mm quartz tube and in-
+serted into the upper T and sealed by Swagelock ﬁttings.
+A nylon pipe connected to the ss T introduced gases into
+the lower part of the reactor, gas ﬂow rates were measured
+by ﬂowmeters. The atmosphere during steaming was 90%
+water, 10% gas unless a different proportion is speciﬁed;
+4.0 ml/h and 10 ml/min (293 K), respectively. The heating
+rate was 5◦C/min in a ﬂow of the corresponding gas. Water
+was added after treatment temperature was reached and
+time measured from this point. The gases leaving the tube
+were conducted via a hose through the condenser. Steam-
+ing, in the presence of ammonia, was done with a solution
+of 0.56 M NH4OH and N2, obtaining an atmosphere of 90%
+water, 1% NH3, and 9% N2.
+To prepare zeolite samples with vanadium located
+mainly on the internal surface, H-USY zeolites were
+exchanged with vanadium. VO2+-USY zeolites were pre-
+pared by ion exchange with aqueous solutions of VOSO4
+(Acros). Henceforth impregnated samples will be referred
+as “imp.”and exchanged zeolites as “exc.” Samples Z6 exc.
+0.82%V and Z7 exc. 0.70%V were prepared by stirring
+10.0 g (dry) of the zeolite in 250 ml of 0.01 M VOSO4
+aqueous solution over 24 h. Sample Z7 exc. 3.9%V was
+prepared by stirring 5.0 g (dry) of Z7 in 200 ml 0.10 M
+VOSO4 for 1 week. To avoid oxidation the exchange was
+performed under a N2 atmosphere. After the exchange,
+samples were centrifuged and washed three times with
+deionized water. To eliminate water excess, zeolites were
+stirred in ethanol and then in acetone. The acetone was
+vacuum evaporated and the samples were allowed to
+rehydrate over saturated CaCl2 solution. Vanadium was
+analyzed after dissolving the hydrated zeolite with HF in
+
+<<<PAGE 4>>>
+4
+TRUJILLO ET AL.
+platinum crucibles. Sulfuric acid was added to the solution
+and HF evaporated. Vanadium was reduced by sodium
+sulﬁte and the excess SO2 was boiled off and the solution
+titrated with a standardized solution of KMnO4 0.010 N.
+Control samples were also used.
+The ESR measurements were collected on a Bruker
+ESP 300E, operated at the X band (9.58 GHz) and cali-
+brated against DPPH. A quartz tube of 2.3 mm internal
+diameter was used as a cell. To perform quantitative mea-
+surements, the ESR signal intensity needs to be propor-
+tional to the VIV mass; it was obtained when the sam-
+ple height in the tube was 1 cm centered in the cavity.
+The best method of comparing signal intensities was to
+use the height of the large central peak in the spectrum
+(g = 2.04). It is less sensitive to base line distortion due
+to iron impurity interference. This distortion introduces
+large uncertainties in the numerical double signal integra-
+tion, especially for low VIV containing samples. The sample
+weight was determined with approximation to the 0.1 mg;
+the signal intensities were normalized to 20.0 mg and gain
+1 × 105 by spectra multiplication with factor f, where f =
+(20.0/mass of the sample) × (1 × 105/gain used to collect the
+spectrum).
+The spectra were collected at 150 K, modulation fre-
+quency 100 kHz, modulation amplitude 10 G, time constant
+0.64 ms, resolution of the ﬁeld axis 2048 points, sweep time
+83.89 s, microwave power 0.020 W. When the microwave
+power was changed comparisons were made keeping in
+mind that the intensity of an ESR signal increases propor-
+tionally to the square root of the microwave power if the
+signal is not saturated. No saturation of the signal was ob-
+served under working conditions. A calibration curve was
+made with frozen aqueous solutions of vanadyl oxalate pre-
+pared by reduction of V2O5 99.9% (Acros) with oxalic acid
+(Merck). An excellent linearity between the signal inten-
+sity and vanadium mass (Fig. 2) was found for solutions
+with 20 to 200 ppm of V, when a mass of around 50 mg of
+solution was used in the cell.
+UV–VIS DRS spectra were collected on a Varian Cary 5
+spectrophotometer with DRS attachment. The spectra
+were taken in the 200- to 800-nm range using the corre-
+sponding solid, without vanadium, treated in the same way
+as the sample as blank.
+To check O2 and atmospheric moisture interference in
+ESR, DRS spectra, and signal intensities, some samples
+were calcined in a quartz ﬂow cell with Suprasil window
+for DRS and side arm for ESR. It was determined that
+the small amount of water adsorbed during manipulation
+and recording of the spectra in an open cell does not af-
+fect the DRS and ESR V/zeolite and V/alumina spectra.
+However, the V/silica DRS spectrum is quite sensitive to
+moisture as previously reported (19). In accordance with
+Huang et al. (20), we did not observe interference of the at-
+mospheric oxygen in the system VO2+–Y zeolite. Zeolites
+and alumina spectra were recorded in open cells and silica
+spectra in the quartz ﬂow cell.
+Adsorption measurements were performed in an Om-
+nisorp 100 system from Coulter. Before adsorption the sam-
+ples were heated to 400◦C under vacuum (10−3 Pa) for at
+least 5 h. The multipoint BET surface area was calculated
+between 0.05 < P/P◦< 0.25. The micropore volume was ob-
+tainedfromaT-plotanalysis(thicknessT-layeramong2and
+9 ˚A) as proposed by Lippens and de Boer (21).
+RESULTS
+Electron Spin Resonance Spectroscopy
+The ESR spectra of the CBV712 (Z7) impregnated with
+0.4%V calcined at 500◦C and the vanadyl ion in aqueous
+solution are compared in Fig. 1. VIV in the zeolite presents
+a hyperﬁne structure characteristic of isolated (not inter-
+acting) vanadyl ions. However, the g⊥tensor is not as well
+resolved as it is in frozen aqueous solution. A complete
+ESR study of vanadium introduced in Y zeolite by calcina-
+tion may be found elsewhere (20). Huang et al. (20) found
+two different positions for vanadyl species in Y zeolite, one
+FIG. 1.
+ESR spectra of (a) aqueous vanadyl ion, (b) Z7 imp. 0.4%V
+calcined at 500◦C.
+
+<<<PAGE 5>>>
+ZEOLITE Y DESTRUCTION BY VANADIUM IN STEAM
+5
+FIG. 2.
+Calibration curve. ESR signal intensity versus vanadium mass.
+in the supercage and another probably in the β-cage. For
+both positions, the vanadium has a distorted tetrahedral or
+a pyramidic coordinated symetry.
+The calibration curve made with frozen aqueous solu-
+tions of vanadyl oxalate is shown in Fig. 2. It is worth
+showing that ESR is a very sensitive technique detecting
+and quantifying amounts of VIV below 1 × 10−6 g. Table 1
+presents the percentage of VIV on the total vanadium (VT)
+for all samples as a function of temperature of calcination
+in the speciﬁed atmosphere.
+For impregnated zeolites the percentage of VIV in the to-
+tal vanadium content (VT) is shown in Fig. 3. The samples
+calcined at 300◦C contain between 1 and 2% of VT as VIV.
+TABLE 1
+Percentage of VIV on the Total Vanadium (VT) Content for Im-
+pregnated or Exchanged Samples as a Function of Calcination
+Temperature in the Speciﬁed Atmosphere
+%VIV/VT
+Sample
+300◦C
+400◦C
+500◦C
+600◦C
+700◦C
+Z6 imp. 0.2%V, air
+1.19
+1.13
+1.25
+1.45
+1.66
+Z6 imp. 0.4%V, air
+0.87
+0.90
+1.49
+1.67
+1.23
+Z7 imp. 0.2%V, air
+1.93
+4.34
+5.35
+4.30
+2.10
+Z7 imp. 0.4%V, air
+1.48
+2.70
+4.21
+2.61
+1.51
+Z7 imp. 0.2%V, air, 72 h
+4.60
+Z6 imp. 0.2%V, 20% H2O/air
+2.84
+1.34
+Z6 imp. 0.4%V, 20% H2O/air
+2.17
+1.01
+Z7 imp. 0.2%V, 20% H2O/air
+6.75
+2.87
+Z7 imp. 0.4%V, 20% H2O/air
+8.25
+2.35
+Z6 exc. 0.82%V, air
+7.97
+10.11
+13.98
+9.21
+5.26
+Z7 exc. 0.70%V, air
+9.97
+9.88
+14.93
+9.74
+4.37
+Silica 0.4%V, air
+1.33
+0.75
+dbnq
+dbnq
+dbnq
+Alumina 0.2%V, air
+0.87
+dnbq
+dnbq
+dnbq
+dnbq
+Note. dbnq, detectable but not quantifyable.
+It is clear that, at this temperature in oxygen atmosphere,
+organic ligands have disappeared, at this stage the color
+of the samples is yellow-brown, indicating that most of the
+vanadium is present as VV, ESR inactive. Further calcina-
+tion of the zeolite in air produces color changes and vari-
+ations in VIV concentration. In Z7 samples amazingly the
+proportion of VIV increases with temperature despite the
+heating made in the oxidizing atmosphere. The proportion
+of VIV for Z7 imp. 0.2%V reaches a maximum of 5.35%
+at 500◦C. At 700◦C, VIV content is almost the same as at
+300◦C. In CVB600 (Z6) impregnated zeolites, VIV concen-
+tration stays almost constant in the range of temperatures
+studied when calcination is made in air.
+In order to check whether 5 h was long enough to estab-
+lish the equilibrium between both oxidation states in the
+zeolite, Z7 imp. 0.2%V was calcined at 500◦C for 3 days.
+The result shows (Table 1) that 5 h is enough time and the
+amount of VIV has a tendency to decrease (instead of in-
+crease) with heating time. To check the effects of water on
+VIV–VV equilibrium, samples of Z6 and Z7 impregnated
+with 0.2 and 0.4%V were calcined in the presence of 20%
+water at 500 and 700◦C for 5 h. Results are shown in Table 1.
+At 500◦C all samples show an increase in VIV content, indi-
+cating that water helps vanadium to reach the sites where
+it can be stabilized as VIV. At 700◦C the proportion of VIV
+is higher in Z7 imp. samples treated with 20% of steam
+than in the samples calcined at the same temperature in air;
+however, Z6 imp. samples contain even lower levels of VIV
+than the corresponding samples treated in air. Water plays
+a role in vanadium displacement but does not seem to affect
+directly VV–VIV equilibrium.
+To check the ability of zeolite Y to stabilize VIV in oxidiz-
+ing atmospheres, exchanged zeolites, Z6 exc. 0.82%V and
+Z7 exc. 0.70%V, were calcined in the same way as impreg-
+nated samples. The results presented in Table 1 and Fig. 4
+
+<<<PAGE 6>>>
+6
+TRUJILLO ET AL.
+FIG. 3.
+Percentage of vanadium IV on the total vanadium in the sample as a function of temperature of calcination for impregnated zeolites.
+indicate that at 300◦C more than 90% of the original VIV
+has been oxidized. The shapes of the curves in Fig. 4 are
+similar to those of the Z7 imp. samples in Fig. 3. Amaz-
+ingly with heating in air at temperatures higher than 300◦C
+a reduction of vanadium is observed until 500◦C, and after
+this temperature VIV is oxidized again. Although the pro-
+portions of VIV with temperature are higher for exchanged
+than for impregnated zeolites, these results show that zeo-
+lite Y can stabilize vanadium as VIV but it is just a fraction
+FIG. 4.
+Percentage of the ESR signal intensity I remaining after calcination of exchanged zeolites as a function of temperature. I◦is the ESR signal
+intensity of the fresh exchanged solid.
+that depends on temperature. At the normal temperatures
+present in the regenerator of a FCC unit (720◦C), most of
+the vanadium on the zeolite must exist as VV.
+During the treatment previous to adsorption measure-
+ments, it was observed that vanadium containing zeolites
+changes its color from white to gray-black. This color
+change indicates VV reduction. Figure 5 presents the ESR
+spectra of the sample Z7 imp. 0.4%V calcined to 700◦C
+and evacuated on heating at 450◦C for 8 h. It can be seen
+
+<<<PAGE 7>>>
+ZEOLITE Y DESTRUCTION BY VANADIUM IN STEAM
+7
+FIG. 5.
+ESR spectra of Z7 imp. 0.4%V calcined in air at 700◦C and then evacuated at 450◦C, 10−3 Pa for 8 h.
+that the ESR signal of the isolated vanadyl ion is now su-
+perimposed on a very broad signal assigned to amorphous
+dispersed V2O4. The small peak at the low ﬁeld superim-
+posed on the broad signal is due to iron impurity present in
+the sample.
+UV–VIS Diffuse Reﬂectance Spectroscopy
+Charge-transfer spectra of vanadium containing samples
+were recorded in the region 200–800 nm using identically
+treated supports without vanadium as reference. In the case
+of pure compounds BaSO4 was the reference. The oxy-
+gen →vanadium charge-transfer absorption band, which is
+correlated with the minimum diffuse reﬂectance, is strongly
+inﬂuenced by the number of ligands surrounding the central
+vanadium ion and thus provides information on its coordi-
+nation.
+Figures 6 and 7 show the DRS spectra of Z6 imp. 0.2%V
+and Z7 imp. 0.2%V calcined at 300, 500, and 700◦C. The
+spectra correspond with the observed color of the sam-
+ples. The impregnated zeolites calcined at 300◦C are brown-
+yellow; as the calcination temperature increases the color
+loses intensity and at 500◦C the samples are almost white.
+The DRS spectra of impregnated zeolites calcined at 300◦C
+show an intense absorption between 800 and 375 nm. This
+absorption is strongly reduced and completely disappears
+in the samples calcined at 500 and 700◦C, respectively. In
+the UV region the spectra show two peaks: (1) between 212
+and 209 nm and (2) between 266 and 258 nm. The higher
+the calcination temperature, the higher the energy of the
+absorption, for samples calcined at 300◦C, peak 1 appears
+at 212 nm and peak 2 at 266 nm, while for samples cal-
+cined at 700◦C, peak 1 appears at 209 nm and peak 2 at
+258 nm.
+The DRS spectra of fresh and calcined samples of Z6
+exc. 0.82%V and Z7 exc. 0.70%V are shown in Figs. 8 and
+9. The freshly exchanged solids are pale blue. The spectra
+FIG. 6.
+DRS spectra of Z6 imp. 0.2%V calcined at (a) 300◦C, (b)
+500◦C, and (c) 700◦C.
+
+<<<PAGE 8>>>
+8
+TRUJILLO ET AL.
+FIG. 7.
+DRS spectra of Z7 imp. 0.2%V calcined at (a) 300◦C,
+(b) 500◦C, and (c) 700◦C.
+show a very broad and weak band centered at 750 nm as-
+signed to vanadyl d–d transitions (22). The features in the
+UV region are similar, but less intense compared to those
+found in the calcined samples. Calcination of the exchanged
+zeolites at 300◦C produces brown solids with strong ab-
+sorption over the whole range of the visible region and an
+increase of the absorption in the UV region. At this temper-
+ature Z6 exc. 0.82%V spectrum presents two well-deﬁned
+peaks at 219 and 267 nm and Z7 exc. 0.70%V peaked at
+212 and 258 nm. Calcination at higher temperatures re-
+duces the absorption in the visible region in the same way
+as impregnated samples. The samples calcined at 500◦C are
+pale beige in color and at higher temperatures they are
+white.
+The lowest UV absorption is shown by the freshly ex-
+changed samples. For calcined samples of exchanged and
+impregnated zeolites the highest reﬂectance is found at
+500◦C. This value coincides with the temperature at which
+the maximum amount of VIV was found in Z7 impregnated
+and Z6 and Z7 exchanged samples after calcination. This
+implies that although the molar absorptivity of VIV in the
+zeolite is smaller than VV, it is not easy to differentiate be-
+tween the two oxidation states from the UV absorption.
+To compare with vanadium on the zeolites, Figs. 10 and
+11, shown the DRS spectra of anhydrous samples of vana-
+dium 0.2% on silica and alumina calcined at 300, 500, and
+700◦C. In these cases the lowest absorption is found at
+700◦C. At 300◦C samples are orange. As the temperature
+increases, vanadium on silica in anhydrous conditions be-
+comes white, while on alumina it keeps the pale beige color
+even on calcination at 700◦C. At 700◦C, vanadium on silica
+shows three peaks: a weak shoulder around 300 nm, the
+main peak at 246 nm, and third one at 219 nm. Vanadium
+on alumina clearly behaves in a different way, at 700◦C a
+single broad absorption band is seen at 287 nm.
+For comparison DRS spectra of different vanadium com-
+pounds are given in Fig. 12. VOSO4xH2O has an octahe-
+dral VIV coordination and absence of V–O–V bonds; its
+d–d transition band appears at 747 nm (22, 33) and two
+bands in the UV at 218 and 267 nm are seen. Similar bands
+in the UV region, at 218 and 285 nm, are shown by poly-
+meric tetrahedral VV in NH4VO3, where no V==O bonds are
+present. Polymeric distorted trigonal bypiramids of VO5 in
+V2O5 show similar bands at 224 and 256 nm. Bands due
+to polymeric vanadium are located between 300 and 500
+nm in accordance with previous studies (24, 25). The three
+FIG. 8.
+DRS spectra of Z6 exc. 0.82%V (a) fresh and calcined at (b)
+300◦C, (c) 500◦C, and (d) 700◦C.
+
+<<<PAGE 9>>>
+ZEOLITE Y DESTRUCTION BY VANADIUM IN STEAM
+9
+FIG. 9.
+DRS spectra of Z7 exc. 0.70%V (a) fresh and calcined at
+(b) 300◦C, (c) 500◦C, and (d) 700◦C.
+vanadium compounds in Fig. 12 display two bands between
+200 and 300 nm, due to charge transfer transitions of the
+V–O bond allowed in the three compounds studied. Con-
+trary to suggestions before (24, 26) it is not possible to dif-
+ferentiate between VIV and VV for the absorption in the
+UV region.
+The effects of evacuation at 450◦C after calcination at
+700◦C for the Z6 and Z7 imp. 0.4%V samples on the DRS
+spectra are shown in Fig. 13. The evacuation of the calcined
+samples produces color changes from white to gray-black;
+the color intensity for the same level of vanadium is higher
+in Z7 than in Z6 zeolite. The spectra show a strong d–d
+transitionabsorptioninthevisibleregionduetoVIVformed
+during the evacuation. From Fig. 13 is clear that the amount
+of VV reduced is greater in Z7 than in Z6 under the same
+conditions.
+Adsorption Measurements
+The results obtained by adsorption measurements on dif-
+ferent samples are shown in Table 2. The remaining crys-
+tallinity %C/C◦is determined by the quotient between the
+micropore volume in the sample and the micropore volume
+in the as-received untreated zeolite without vanadium. The
+result shows that Z7 has a larger micropore volume than
+Z6, as expected due to EFAL presence in Z6. The calci-
+nation in air at 700◦C of the impregnated zeolites at vana-
+dium levels similar to those present in FCC catalysts does
+not appreciably affect the crystallinity of the zeolites. This
+result conﬁrms that steam is necessary for zeolite destruc-
+tion (5, 8). The steaming of 1%V imp. zeolites in 90% H2O,
+10% air causes the destruction of the zeolite with the conse-
+quent reduction in micropore volume; the damage is higher
+in Z7 than in Z6. These results indicate that EFAL reduces
+the vanadium action in the zeolite as previously published
+(3, 13).
+The sample Z7 exc. 3.9%V freshly exchanged shows an
+apparentcrystallinitylossof 4.9%;thisisduetothefactthat
+no corrections were made for vanadium volume and mass
+in the micropore volume determinations. Given the small
+amounts of vanadium used in most samples and the large
+micropore volume decays after treatments, the correction
+was considered unnecessary and the data are reported as
+obtained.
+To evaluate the role played by VIV in lattice attack,
+Z7 imp. 1%V precalcined to 300◦C in air (vanadium located
+FIG. 10.
+DRS spectra of 0.2%V on silica calcined at (a) 300◦C, (b)
+500◦C, and (c) 700◦C.
+
+<<<PAGE 10>>>
+10
+TRUJILLO ET AL.
+TABLE 2
+Adsorption Results on the Fresh and Treated Samples
+BET
+Micropore
+area
+volume
+Sample
+(m2/g)
+(ml/g)
+%C/C◦
+Aerosil fresh
+190.5
+0
+Aerosil wetted and dried
+186.0
+0
+Alumina
+179.6
+0
+Z6 (as received without vanadium)
+0.2252
+100
+Z6 imp. 1%V, 720◦C, steam and air, 16 h
+0.1314
+58.4
+Z7 (as received without vanadium)
+0.2549
+100
+Z7, 720◦C, steam and air, 16 h
+0.2094
+82.2
+Z7 imp. 0.4%V, calc. 700◦C, air, 5 h
+0.2547
+99.9
+Z7 imp. 1%V, 720◦C, air, 16 h
+0.2376
+93.2
+Z7 imp. 1%V, 720◦C, steam and air, 16 h
+0.1211
+47.5
+Z7 imp. 1%V, 720◦C, steam and
+CO/N2, 16 h
+0.2068
+81.1
+Z7 exc. 3.9%V, fresh
+0.2424
+95.1
+Z7 exc. 3.9%V, 720◦C, steam and air, 16 h
+0
+0
+Z7 exc. 3.9%V, 720◦C, steam and
+CO/N2, 16 h
+0.2070
+81.2
+Z7, 720◦C, steam and NH3, N2, 16 h
+0.2022
+79.3
+Note.Theremainingcrystallinity%C/C◦isdeterminedbythequotient
+between the micropore volume in the sample and the micropore volume
+in the untreated (as received) zeolite without vanadium. For details refer
+to the text.
+on the external surface of the zeolite) was steamed with
+90% water 10% a mixture of CO 12.5% in N2. The destruc-
+tion of the zeolite was similar to the damage experienced by
+pure Z7 steamed with 90% water, 10% air. Z7 exc. 3.9%V
+was treated in the same way; in this case vanadium is located
+near the acid sites in the zeolite. The structural collapse was
+again similar to Z7 steamed in 90% water, 10% air with-
+out vanadium. When Z7 exc. 3.9%V was steamed in 90%
+steam, 10% air, framework collapse was complete. This is a
+real proof that vanadium must be present as VV to catalyze
+zeolite destruction.
+When Z7 was steamed in the presence of ammonia the
+lattice damage was of the same order as in the sample
+treated in the absence of ammonia. This result and the
+results obtained by steaming Z7 in the presence of VIV
+indicate that weak bases do not accelerate framework
+hydrolysis.
+DISCUSSION
+Solid ion exchange between HY and vanadium pentox-
+ide has been studied by Huang et al. (20). Their results show
+that vanadium enters into the channels and it is stabilized as
+VIV and VV near the acid sites. Kucherov and Slinkin intro-
+duced V, Cu, Cr, and Mo into H-ZSM-5 and H-mordenite
+by zeolite calcination with metal oxides at temperatures
+ranging from 520 to 820◦C. Their results show that ions mi-
+grate from the outer surface of the zeolite crystal and are
+coordinated in the cationic positions of the zeolites. They
+also found that acid sites in zeolites act as powerful traps
+for migrating ions and that the stabilization of VIV requires
+acid sites stronger than those present in H-(Ga)ZSM-5
+(27–30).
+From the method used here for impregnation, vanadium
+is located on the outer surface of the zeolite. This is due
+to the vanadyl complex with the large organic ligand and
+the polarity of the solvent. ESR results shown in Fig. 3
+indicate that in Z7 imp. samples vanadium migrates from
+the outer surface, where it is located at 300◦C, to the acid
+sites, where it can be stabilized as VO2+. According to
+Kucherov and Slinkin (30), the strongest acid sites obli-
+gate VV to autoreduce. V2O5 has amphoteric behavior but
+its character is more acid than basic, while V2O4 is more
+basic than acid, and it is known that VIV and VV coexist in
+an equilibrium (40):
+2 V2O5 ⇀
+↽2 V2O4 + O2.
+[2]
+In an acid–base reaction with a strong acid site VIV will be
+thermodynamically favored.
+ESR results show that V enters into the channels at tem-
+peratures as low as 500◦C, the displacement of vanadium
+on the surface does not require steam, and although water
+FIG. 11.
+DRS spectra of 0.2%V on alumina calcined at (a) 300◦C, (b)
+500◦C, and (c) 700◦C.
+
+<<<PAGE 11>>>
+ZEOLITE Y DESTRUCTION BY VANADIUM IN STEAM
+11
+FIG. 12.
+DRS spectra of some pure vanadium compounds.
+FIG. 13.
+DRS spectra of Z6 imp. 0.4%V (a) and Z7 imp. 0.4%V (b),
+calcined to 700◦C and then evacuated at 450◦C, 10−3 Pa.
+helps in the migration it is not indispensable. After 500◦C
+the number of acid sites that can keep vanadium as VIV di-
+minishes appreciably. For vanadium on silica and alumina,
+ESR signals decrease with the temperature of calcination
+until values are just detectable. Silica and alumina do not
+have the necessary cationic exchange capacity to stabilize
+V as VIV in oxidizing conditions.
+The differences in vanadium behavior on Z6 and Z7 sam-
+ples (Fig. 3) must be due to EFAL presence in Z6. EFAL
+seems to avoid or delay vanadium migration and competes
+with the zeolite for it. EFAL can act in two ways; com-
+plexing vanadium diminishing its mobility, or neutralizing
+the sites where V can be stabilized as VIV with aluminum
+cationic species. The reduction of vanadium observed in
+Z6 imp. 0.4%V by heating in vacuum (Fig. 13) allows us to
+conclude that both phenomena are present. Vanadium is
+complexed by EFAL and delays its migration; addition-
+ally, the strong acid sites where vanadium can be stabi-
+lized as VIV are occupied by aluminum species not present
+in Z7. As has been pointed out before (3, 13) and con-
+ﬁrmed by our experiments, EFAL increases zeolite resis-
+tance to vanadium action. It is known that AlVO4 is not
+a stable compound under FCC conditions (13); thus vana-
+dium cannot be completely immobilized by alumina. Wa-
+ter seems to facilitate vanadium displacement breaking
+of V–O–Al bridges, allowing it to reach acid sites. This
+would explain the increase in the ESR signal observed
+when Z6 and Z7 impregnated samples were treated in
+20% steam at 500◦C (Table 1). At 700◦C in 20% water
+VIV proportion increases for Z7 samples but decreases
+
+<<<PAGE 12>>>
+12
+TRUJILLO ET AL.
+for Z6 samples, which indicates that water also facilitates
+EFAL movement, and allows it to compete with vana-
+dium for acid site neutralization, protecting in this way the
+zeolite.
+Comparison between Figs. 3 and 4 shows that vanadium-
+impregnated and -exchanged Z7 samples behave analogous
+on calcination. This behavior is conﬁrmed by DRS; how-
+ever, impregnated and exchanged Z6 samples present dif-
+ferences assigned to Z6 higher EFAL content. In Z6 imp.
+aluminum species must neutralize the acid sites where V
+can be stabilized as VIV, while during exchange in water
+solution vanadyl ions can replace them.
+The results shown in Figs. 3, 4, 5, and 13 indicate that in
+Y zeolite there are acid sites with the strength necessary
+to move the equilibrium of Eq. [2] to the right in air at
+relatively low temperatures. Without zeolite this reaction
+moves to the right in air at temperatures higher than 700◦C
+(40). Y zeolites stabilize VIVas VO2+–Y species.
+In addition to VIV, V is stabilized as VV near the acid
+sites. This is demonstrated by the reduction observed
+on vacuum-heated samples (Fig. 5). Reduction of VV on
+zeolites by heating has been previously observed (20, 26,
+28). The same phenomenon has been observed on iron
+III-exchanged zeolites (31, 32). Reduction of vanadium (at
+450◦C, 10−9 Pa) could not be observed when alumina or
+silica are the support.
+Support, Atmosphere, and Temperature Effects
+on Vanadium Speciation
+Vanadium on silica at submonolayer coverages has been
+studied by Scharaml-Marth et al. (19). Only at very low cov-
+erage (0.05%V, w/w) is vanadium present as monomeric
+tetrahedrally coordinated species VO3−
+4 , linked to the sup-
+port by three V–O–Si bridges and showing absorption
+bands at 254 (main band) and 294 nm. At 0.1%V on sil-
+ica, vanadium is present as monomeric and oligomeric
+species and the absorptions are slightly red shifted. With
+increasing vanadium concentration one-dimensional chain-
+like surface species are developed which maintain tetra-
+hedral coordination. At 0.5%V four bands are seen at
+255, 279, and 289 nm and the main peak at 328 nm.
+At 1%V small clusters are formed, vanadium coordina-
+tion increases, and the spectrum is red shifted. When the
+loading reaches 3.7%, small crystallites of V2O5 are de-
+tected and the main peak is located at 350 nm. It is
+clear that on silica as vanadium polymerizes, coordina-
+tion increases, new bands appear, and the spectrum is red
+shifted.
+The spectrum of all samples studied here, impregnated
+or exchanged, calcined to 300◦C, presents a continuous ab-
+sorption in the visible region assigned to polymeric chain
+structures related to V2O5. At 300◦C the color of all sam-
+ples is similar to that of vanadium pentoxide. At 500◦C all
+samples are white or pale yellow. From the spectra and the
+color of the samples it is clear that at 500◦C vanadium pen-
+toxide structure-related compounds have disappeared. The
+temperature breaks chains and vanadium is spread out on
+the surface of the supports.
+At 0.2%V on silica calcined at 700◦C, vanadium must
+be present (19) as tetrahedral monomeric and oligomeric
+species. In Fig. 10, bands at 219 and 246 nm are assigned to
+monomeric species and the presence of some oligomers is
+detected by the shoulder around 300 nm.
+The spectrum of 0.2%V on alumina calcined to 700◦C
+is characterized by a broad peak at 287 nm (Fig. 11). The
+position and shape of this peak suggest that species present
+on alumina have higher molecular weight with wider distri-
+bution than the species present on silica. This assumption
+is consistent with the pale beige color of 0.2%V on alu-
+mina calcined at 700◦C. It has been found that vanadium
+accumulates on alumina as small aggregates in FCC catalyst
+(16, 17).
+Vanadium organic complexes of large organic ligands are
+too large to enter the zeolite pore structure when they are
+deposited by impregnation or in the FCC riser. At 300◦C
+organic ligands of VBzA disappear and according to the
+spectra VV is probably present in polymeric chains on the
+zeolite external surface. Temperature breaks chains and
+VV migrates inside the zeolite, where it reaches acid sites
+as shown by ESR. The DRS spectra of impregnated and
+calcined at 700◦C zeolites show similar bands as 0.2%V
+on silica (Fig. 10); however, the shape of the spectrum
+is different (see Figs. 6–9). The absorption around 300
+nm indicates that some oligomeric tetrahedral species are
+still present. The main band of the spectra is the band
+at 212 nm, while the main band for vanadium on silica
+is located at 246 nm. The highest energy band is blue
+shifted in the spectra of vanadium on zeolites compared
+to vanadium on silica. This indicates that the coordination
+of monomeric species in zeolites is different from that of
+species found on silica. Vanadium in zeolites is present
+as cationic species as shown by ESR, while vanadium on
+silica has been found as anionic species like VO3−
+4
+(19).
+The predominant species of vanadium on zeolites calcined
+to 700◦C is more likely VO+
+2 than VO3+, as the former
+can lose oxygen on heating in vacuum by the following
+reaction:
+4 VO+
+2 Y ⇀
+↽V2O4 + 2 VO2+Y + O2.
+[3]
+V2O4 could be responsible for the gray-black color ob-
+served after evacuation at 450◦C of the samples calcined
+at 700◦C.
+From the spectra of fresh exchanged zeolites in Figs. 8 and
+9, it is deduced that d–d transitions in VIV are too weak to be
+identiﬁed in the calcined samples. The exchanged and cal-
+cined zeolites behave analogously to the impregnated sam-
+ples; however, it is worth noting that even if the vanadium
+is located by ion exchange inside the zeolite, calcination at
+
+<<<PAGE 13>>>
+ZEOLITE Y DESTRUCTION BY VANADIUM IN STEAM
+13
+300◦C in an oxidizing atmosphere makes vanadium aggre-
+gate and polymerize. The reaction can be written as
+2 VO2+–Y + H2O + O2 →V2O5 + 2 H+–Y.
+[4]
+The V2O5 produced is probably expelled to the zeolite ex-
+ternal surface and is responsible for the brown color of the
+exchanged samples calcined to 300◦C.
+A comparison of spectra of the exchanged Z6 and Z7
+zeolites calcined at 700◦C (d spectra in Figs. 8 and 9) indi-
+cates that at this vanadium level there are differences in the
+coordination of the monomeric species present on the ze-
+olites. The peak around 260 nm is more pronounced in Z6
+exc. 0.82%V than in Z7 exc. 0.70%V; this is probably due
+to the presence of VV anionic species on EFAL, conﬁrming
+that EFAL can complex vanadium competing with the ze-
+olite. The competition of EFAL and zeolite for vanadium
+explains the differences in the DRS spectra of Z6 and Z7
+imp. 0.4%V samples calcined at 700◦C and further evacu-
+ated at 450◦C (Fig. 13). The spectra are characterized by
+strong bands in the visible region due to d–d transitions in
+the V2O4 formed. From Fig. 13 it is clear that the amount
+of vanadium reduced in Z6 was inferior to Z7 zeolite with
+the same vanadium content, treated in the same way. VV
+deposited on EFAL in Z6 does not experience reduction
+under working conditions.
+CONCLUSIONS
+Our ESR and DRS results allow us to conclude that when
+vanadium is deposited on the external surface of zeolite Y it
+migrates and neutralizes acid sites. This migration is assisted
+by water, which is helpful but not indispensable. Vanadium
+mobility can be related to the low melting point of V2O5
+(690◦C). In the regenerator of a FCC plant the transporta-
+tion of vanadium must be the result of the contribution of
+two mechanisms: the displacement by surface and gas phase
+transportation as vanadic acid formed according to Eq. [1]
+(10). However, in agreement with the calculus presented in
+the Introduction, the most important mechanism must be
+the migration on the surface.
+At V levels normally found in FCC equilibrium catalyst,
+exchange is probably the ﬁrst step in framework destruc-
+tion. Acid site neutralization by vanadium in FCC catalysts
+has been previously observed (33).
+These results agree very well with the activity measure-
+ments made by Torrealba and Goldwasser (17). They found
+that the high activity decay observed on 1%V impregnated
+zeolites cannot be explained completely by crystallinity re-
+duction. This point is very important because it has been
+claimed that the vanadium problem in FCC can be solved
+byhardwaremodiﬁcationoftheunit(34).Theideahasbeen
+to keep vanadium reduced during hydrogen combustion to
+avoid water and VV contact, preserving zeolite crystallinity.
+We have shown here that before zeolite destruction there is
+ion exchange that probably reduces activity of the catalyst
+without damage to crystallinity.
+The results of the exchanged and impregnated zeolites
+steamed in a reductive atmosphere allow us to conclude
+that VIV does not play an important role in framework hy-
+drolysis and that an oxidizing atmosphere is required for
+the catalytic action of vanadium. The damage of FCC cata-
+lysts must occur during the regeneration of the catalyst and
+not during the stripping, contrary to the proposal of Occelli
+(3). These results agree with those of Hettinger et al. (33),
+who concluded that the equilibrium catalyst is best simu-
+lated when air is introduced with the steam during catalyst
+deactivation in laboratory tests.
+EFAL protects zeolite complexing vanadium as anionic
+species, harmless to the structure, delaying vanadium mi-
+gration to the acid sites.
+Mechanism
+The mechanism for zeolite destruction by steam in the
+presence of vanadium under FCC process conditions can
+be summarized as follows:
+VV as a part of organic molecules is deposited on the
+catalyst external surface in the riser, where it is probably in-
+corporated in the coke and transferred to the regenerator.
+Once in the regenerator the coke is burned off and vana-
+dium is oxidized to V2O5. Vanadium pentoxide is a liquid
+under regenerator conditions. At low concentrations it can
+be easily spread out on the high-surface-area solid losing its
+solvent properties. Water helps vanadium mobilization by
+breakingV–O–AlandV–O–Sibondsandforminghydroxy-
+lated species. VV has amphotheric behavior, so it can be pre-
+sented as a neutral or positively charged species avoiding
+electrostatic repulsion from the negatively charged frame-
+work. In this way vanadium reaches acid sites, where it is
+trapped as cationic VO+
+2 species poisoning the catalyst ac-
+cording to the following reaction:
+V2O5 + 2 H+–Y ⇀
+↽2 VO+
+2 –Y + H2O.
+[5]
+This is a dynamic equilibrium and its extent depends on
+temperature, water concentration, and acid site strength.
+The high temperatures found in the FCC regenerator fa-
+vor the right side, but during hydrogen combustion water
+formed moves the equilibrium to the left and the vana-
+dium pentoxide is able to produce vanadic acid according
+to Eq. [1]. The net reaction can be written as
+VO+
+2 –Y + 2 H2O ⇀
+↽H+–Y + H3VO4.
+[6]
+Vanadic acid is a strong acid, pK = 0.05 (35). It is well
+known that acids catalyze framework hydrolysis, increasing
+the rate of dealumination. In this way the local vanadic acid
+concentration could be several orders of magnitude higher
+than predicted by Wormsbecher. This would explain zeo-
+lite framework hydrolysis by the weaker acid in lower bulk
+
+<<<PAGE 14>>>
+14
+TRUJILLO ET AL.
+concentration than sulfuric acid. This mechanism explains
+how small amounts of vanadium can cause large activity
+decays. In accordance with Pine (8), vanadium acts as a
+catalyst for zeolite framework hydrolysis because it is not
+consumed during zeolite destruction.
+This mechanism explains almost all experimental results
+published in the ﬁeld. VV has a high tendency for polymer-
+ization; at higher concentrations than those currently found
+in FCC catalysts, liquid V2O5 formed can act as a solvent
+for zeolite components. In the presence of rare earths, vana-
+dates can be formed after zeolite destruction. This mecha-
+nism, however, does not explain why two different species
+like sodium and vanadium produce similar effects on the
+zeolite and why both catalysts show synergistic action (8).
+To explain this fact, it is necessary to go further and propose
+a mechanism for zeolite dealumination. Kerr proposed the
+following scheme for zeolite dealumination (36–38):
+A more detailed mechanism can be the electrophillic at-
+tack of the hydronium ion on the negatively charged oxygen
+in the acid site:
+The net effect is the inclusion of a water molecule into
+the structure being catalyzed by the hydronium ion. From
+electronegativity considerations it is clear that if the charge
+compensatingcationisasodiumthenegativechargedensity
+on the oxygen will be higher than if it is a H +. In the pres-
+ence of sodium as a charge compensating cation the rate
+of hydrolysis would be higher and sodium and vanadium
+would present a synergistic effect in framework hydroly-
+sis. Exchange of sodium by hydronium is not discharged;
+however, under FCC regenerator conditions there is not a
+solvent that facilitates it.
+ACKNOWLEDGMENTS
+C. A. Trujillo thanks Professor Pierre Jacobs for the opportunity to stay
+at the COK of the K. U. Leuven as a free researcher and for his invaluable
+help and orientation and also the Universidad Nacional de Colombia for
+the studies commission. P.P.K.G. thanks the National Fund for Scientiﬁc
+Research (NFWO) for a grant as research assistant. This research has been
+partially supported by Colciencias (Institution that promote the scientiﬁc
+and technological development in Colombia) and the Instituto Colom-
+biano del Petr´oleo (ICP); their ﬁnancial support is gratefully appreciated.
+REFERENCES
+1. Jaras, S., Appl. Catal. 2, 207 (1982).
+2. Venuto, P. D., and Habid, E. T., Catal. Rev. Sci. Eng. 18, (1978).
+3. Occelli, M. L., Catal. Rev. Sci. Eng. 33, 241 (1991).
+4. Agrawal, B. B., and Gulati, I. B., Pet. Hydrocarbons 6 (4), 193 (1972).
+5. Wormsbecher, R. F., Peters, A. W., and Maselli, J. M., J. Catal. 100, 130
+(1986).
+6. Occelli, M. L., “Akso Catalyst Symposium,” p. 91. Scheveningen, The
+Netherlands, 1991.
+7. Occelli, M. L., in “Fluid Catalytic Cracking: Role in Modern Reﬁn-
+ing. Vol. 375. ACS Symp. Series” (M. L. Occelli, Ed.), p. 343. ACS,
+Washington DC, 1989.
+8. Pine, L. A., J. Catal. 125, 514 (1990).
+9. Nielsen, R. H., and Doolin, P. K., J. Stud. Surf. Sci. Catal. 76, 339
+(1993).
+10. Sanchez, J. L., and Hager, J. P., in “EDP Congress 1993, Proceedings
+from the Symposium, TMS Annual Meeting” (J. P. Hager, Ed.), p. 655.
+Minerals Metals and Materials Society, Warrendale, PA, 1993.
+11. Typical values for an UOP FCC unit in an Ecopetrol reﬁnery at
+Barrancabermeja, Colombia.
+12. Scherzer, J., “Octane-Enhancing Zeolitic FCC Catalysts. Scientiﬁc and
+Technical Aspects,” p. 171. Dekker, New York, 1990.
+13. Gallezot, P., Feron, B., Bourgogne, M., and Engelhard, Ph., in “Zeo-
+lites: Facts, Figures, Future” (P. A. Jacobs and R. A. Van Santen, Eds.),
+p. 1281. Elsevier, Amsterdam, 1989.
+14. Mauge, F., Courcella, J. C., Engelhard, Ph., Gallezot, P., and
+Grosmangin, J., J. Stud. Surf. Sci. Catal. 28, 803 (1986).
+15. Mauge, F., Courcella, J. C., Engelhard, Ph., Gallezot, P., and
+Grosmangin, J., in “Proceedings, 7th International Zeolite Confer-
+ence” (Y. Murakami, A. Iijima, and J. W. Ward, Eds.), p. 803. Kodan-
+ska, Tokyo, 1986.
+16. Kugler, E. L., and Leta, D. P., J. Catal. 109, 387 (1988).
+17. Torrealba, M., and Golwasser, M. R., Appl. Catal. 90, 35 (1992).
+18. Anderson, M. W., Occelli, M. L., and Suib, S. L., J. Catal. 122, 374
+(1990).
+19. Sharaml-Marth, M., Wokaun, A., Pohl, M., and Krauss, H.-L., J. Chem.
+Soc. Faraday Trans. 87(16), 2635 (1991).
+20. Huang, M., Shang, S., Yuan, C. L., and Wang, Q., Zeolites 10, 772
+(1990).
+21. Lipness, B. C., and de Boer, J. H., J. Catal. 4, 319 (1965).
+22. Ballhausen, C. J., and Gray, B. H., Inorg. Chem. 1, 111 (1962).
+23. Hush, N. S., and Hobbs, J. M., Prog. Inorg. Chem. 10, 277 (1968).
+24. Blasco, T., Concepci´on, P., and L´opez Nieto, J. M., Perez-Pariente,
+J. Catal. 152, 1 (1995).
+25. Lischke, G., Hanke, W., Jerschkewitz, H.-G., and ¨Ohlmann, G.,J. Catal.
+91, 54 (1985).
+26. Centi, G., Perathoner, S., Triﬁr´o, F., Aboukais, A., A¨ıssi, C. F., and
+Guelton, M., J. Phys. Chem. 96, 2617 (1992).
+27. Kucherov, A. V., and Slinkin, A. A., Zeolites 7, 583 (1987).
+28. Kucherov, A. V., and Slinkin, A. A., Zeolites 7, 38 (1987).
+29. Kucherov, A. V., and Slinkin, A. A., Zeolites 8, 110 (1988).
+30. Kucherov, A. V., and Slinkin, A. A., Beyer, G. K., and Borbely, G.,
+J. Chem. Soc. Faraday Trans. 85, 2737 (1989).
+31. Garten, R. L., Delgass, W. N., and Boudart, M., J. Catal. 18, 90
+(1970).
+32. McNicol, B. D., and Pott, G. T., J. Catal. 25, 223 (1972).
+
+<<<PAGE 15>>>
+ZEOLITE Y DESTRUCTION BY VANADIUM IN STEAM
+15
+33. Hettinger, W. P., Jr., Beck, H. W., Cornelius, E. B., Doolin, P. K.,
+Kmecak, R. A., and Kovach, S. M., Am. Chem. Soc. Div. Pet. Chem.
+28(4), 920 (1983).
+34. Myers, G. D., Hettinger, W. P., Jr., Kovach, S. M., and Zandona, O.
+J., US patent 4,432,863 (1984). Tatterson, D. F., and Ford, W. D., US
+patent 4,298,459 (1981).
+35. Pope, M. T., in “Comprehensive Coordination Chemistry” (G.
+Wilkinson, Ed.), Vol. 3, p. 1026. Pergamon, Oxford, 1987.
+36. Kerr, G. T., J. Phys. Chem. 72, 2594 (1968).
+37. Kerr, G. T., J. Catal. 15, 200 (1969).
+38. Kerr, G. T., Adv. Chem. Ser. 121, 219 (1973).
+39. Mitchell, B. R., Ind. Eng. Chem. Prod. Res. Dev. 19, 209 (1980).
+40. Clark, R. J., “The Chemistry of Vanadium and Titanium.” Elsevier,
+1968.
+41. Hong, P.-K., Belford, R. L., and Pﬂuger, C. E., J. Chem. Phys. 43(4),
+1323, (9) 3111 (1965).

@@ -1,0 +1,35 @@
+RESULTS TABLE generated from ORCA outputs
+================================================================================================
+Reference energies (Eh)
+  B3LYP  cluster=-1709.39409388  H2O=-76.42662980  H3VO4=-1246.82501396
+  PBE0   cluster=-1708.73603847  H2O=-76.37772540  H3VO4=-1246.47959790
+
+Level: B3LYP-D3(BJ)/def2-TZVP   (kJ/mol relative to separated reactants)
+  state      term   conv  nimag              E(Eh)         dE   dG(298K)  dG(1003K)    runtime
+  V-PRC      True   True      0     -2956.25453185      -93.0      -17.0      133.4 0 days 5 h
+  V-I1       True   True      0     -2956.26305203     -115.4      -35.8      108.3 0 days 4 h
+  V-TS2      True  False     14     -2956.09584386      323.6      384.5      641.9 1 days 4 h
+  V-I2       True  False      0     -2956.26639173     -124.1          -          - 0 days 6 h
+  V-P       False  False      0     -2956.05930432      419.6          -          -          ?
+  W-PRC      True   True      0     -1785.85055438      -78.3      -28.9       67.0 0 days 3 h
+  W-P        True   True      0     -1785.82987393      -24.0       30.8      132.7 0 days 4 h
+
+Level: PBE0-D3(BJ)/def2-TZVP   (kJ/mol relative to separated reactants)
+  state      term   conv  nimag              E(Eh)         dE   dG(298K)  dG(1003K)    runtime
+  V-PRC      True  False      0     -2955.25108328      -93.1          -          - 0 days 0 h
+  V-I1       True  False      0     -2955.26139255     -120.1          -          - 0 days 0 h
+  V-TS2      True  False      0     -2955.08636153      339.4          -          - 0 days 0 h
+  V-I2       True  False      0     -2955.26152473     -120.5          -          - 0 days 0 h
+  V-P        True  False      0     -2955.05828171      413.1          -          - 0 days 0 h
+  W-PRC      True  False      0     -1785.14371013      -78.6          -          - 0 days 0 h
+  W-P        True  False      0     -1785.12248001      -22.9          -          - 0 days 0 h
+
+Tier 1 (GFN2-xTB) accepted stationary points, kJ/mol vs separated reactants
+  V-PRC       -196.90
+  V-I1        -385.10
+  V-TS2       -224.40
+  V-I2        -342.36
+  V-P          -82.90
+  W-PRC        -69.59
+  W-TS         -40.29
+  W-P          -65.85

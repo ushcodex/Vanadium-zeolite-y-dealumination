@@ -1,0 +1,1158 @@
+
+<<<PAGE 1>>>
+Journal of Catalysis 207, 237–246 (2002)
+doi:10.1006/jcat.2002.3517, available online at http://www.idealibrary.com on
+Pathways for Y Zeolite Destruction: The Role of Sodium and Vanadium
+Mingting Xu, Xinsheng Liu, and Rostam J. Madon1
+Engelhard Corporation, 101 Wood Avenue, Iselin, New Jersey 08830
+Received July 5, 2001; revised January 3, 2002; accepted January 3, 2002
+A large amount of research in ﬂuid catalytic cracking (FCC) has
+focused on understanding the destructive role of vanadium, since
+it is a major issue for catalyst performance during the cracking of
+residuum-containing feeds. Here, we establish a mechanism for the
+destruction of Y zeolite which ties the roles of sodium and vanadium
+together and explains their synergy. Understanding pathways for Y
+destruction is necessary to improve FCC performance. Y zeolite de-
+struction in the presence of steam occurs via two pathways: steam
+hydrolysis of framework Al and direct attack by sodium species.
+For low Na+ Y zeolite, steam hydrolysis of framework Al is the
+main cause of zeolite collapse. In such a pathway, rapid healing
+of framework tetrahedral holes by Si species from silica-enriched
+matrices stabilizes the zeolite. In the second pathway, sodium is re-
+sponsible for zeolite hydrothermal instability. Sodium reacts with
+steam to form an active center, a surface NaOH, for zeolite destruc-
+tion. All our observations are rationalized by proposing that the
+key to destruction lies in the ease of formation and availability of
+NaOH. It is the basic OH−entity that attacks the framework Si–O
+bonds. Vanadium does not engender a new destructive pathway.
+At 970–1100 K in the presence of air and steam, V will be, as sug-
+gested by others, in a surface mobile state in an acidic form. This
+V species reacts with cationic sodium, facilitating its release from
+the Y exchange site. The sodium metavanadate thus formed hy-
+drolyzes in steam to form NaOH and metavanadic acid, which may
+again react with Na+ cations. Here, as in the V-free case, NaOH is
+the destructive agent, with formation of the basic OH−entity again
+being the key. The role of vanadium is to catalyze and facilitate the
+formation of NaOH. And the mechanism of Y destruction, NaOH
+attacking Si–O, remains the same whether V is present or not. With-
+out sodium, V itself has little effect on Y zeolite stability, regardless
+of zeolite unit cell size.
+c⃝2002 Elsevier Science (USA)
+Key Words: ﬂuid catalytic cracking catalysts; USY; Y zeolite sta-
+bility; vanadium; sodium; hydrothermal stability; Y zeolite destruc-
+tion.
+1. INTRODUCTION
+A ﬂuid catalytic cracking (FCC) catalyst is a porous mi-
+crosphere containing Y zeolite, active or inert matrix, and
+a silica or alumina binder. Y zeolite is the rate-controlling
+constituent during catalytic cracking; hence its stability is
+crucial during the rigors of the cracking process. Sodium,
+1 To whom correspondence should be addressed. E-mail: Rostam.
+Madon@Engelhard.com.
+which is associated mainly with the zeolite, and vanadium,
+which is prevalent in heavy feeds, are well-known destruc-
+tive agents for zeolites in the presence of steam. In order to
+improve stability of FCC catalysts, we need to understand
+issues that affect stability and to comprehend mechanisms
+of destruction.
+Sodium reduces catalytic cracking activity by neutraliz-
+ing Brønsted acid sites (1–3) and by irreversibly destroying
+Y zeolite in the presence of steam (4). Sodium also de-
+creases gasoline research octane number (RON) (5, 6),
+but there are some beneﬁcial effects (7, 8). Madon et al.
+(7) showed that an FCC catalyst containing 20% Y zeo-
+lite with 0.73 wt% Na2O retained, after steaming, a higher
+unit cell size and more Brønsted acidity and was there-
+fore more active for gas oil cracking than when the Na+
+was decreased via ammonium exchange to 0.05 wt% Na2O.
+Though steamed Y surface area decreased for the higher
+Na+-containing catalyst, it still had higher activity. It also
+showed a decrease in dry gas and coke yields, and an in-
+crease in gasoline yield but with lower octane number. The
+latter result is consistent with the work of Brown et al. (5)
+and Pine et al. (6). Sodium cations on Y mimic rare earth
+cations in that they slow down dealumination during steam-
+ing. Therefore cationic sodium can affect product selectivity
+due to its inﬂuence on unit cell size (ucs) during steam-
+ing and hence on Brønsted acid site density. Noncationic
+sodium deposited on the catalyst decreases activity with no
+effect on selectivity (7, 8).
+Vanadium species, deposited on FCC catalysts from por-
+phyrin complexes in crude oil during cracking, help destroy
+Y zeolite in FCC regenerators. One hypothesis put forth by
+Wormsbecher et al. (9) suggests that vanadium reacts with
+steam to form volatile vanadic acid in high-temperature
+oxidizing conditions. The consequential acid-catalyzed hy-
+drolysis of framework Al by vanadic acid results in irre-
+versible loss of the zeolite. Trujillo et al. (10) counter this
+argument as follows: a typical FCC feed contains 1 wt%
+sulfur, and about one-fourth of such sulfur is incorporated
+into coke and carried into the regenerator, where it is oxi-
+dized to SOx. Thus the minimum concentration of SO3 or
+sulfuric acid in the regenerator would be about 60 ppm,
+at least an order of magnitude greater than for vanadic
+acid. Trujillo et al. query that if the mechanism of Y zeolite
+237
+0021-9517/02 $35.00
+c⃝2002 Elsevier Science (USA)
+All rights reserved.
+
+<<<PAGE 2>>>
+238
+XU, LIU, AND MADON
+destruction by vanadium is via acid-catalyzed hydrolysis of
+framework aluminum, then why would such hydrolysis be
+caused by a weaker acid in lower concentration and not by
+the stronger and more abundant sulfuric acid? Trujillo et al.
+attribute this phenomenon to high local concentration of
+vanadic acid inside the zeolite.
+This proposed role of vanadic acid is inconsistent with
+some important observations. Pine (11) indicated that there
+was synergy between the destructive actions of sodium and
+vanadium and demonstrated that without sodium, vana-
+dium itself had little effect on zeolite crystallinity. In par-
+ticular, he found that the activation energy for the destruc-
+tive process in the presence of sodium did not depend on
+the presence or absence of vanadium. Pine conducted his
+experiments on USY samples with low unit cell sizes, be-
+tween 24.24 and 24.28 ˚A. Such zeolites have very low levels
+of framework Al, and therefore vanadium acid-catalyzed
+hydrolysis of framework aluminum is less likely to occur.
+One needs to ensure that Pine’s observation is not related
+to unit cell size. We address this in our work. Pine proposed
+that sodium and vanadium both similarly catalyze the steam
+destruction of the zeolite framework. He suggested that, at
+least for zeolites with low ucs, steam destruction pathways
+other than framework Al hydrolysis may be responsible for
+zeolite destruction.
+Our research focuses on and extends the current under-
+standing of the destructive pathways for Y zeolites in the
+presence of sodium and vanadium. We propose two distinct
+pathways for zeolite destruction and establish a mechanism
+for destruction that explains the synergy between sodium
+and vanadium for USY hydrothermal stability.
+2. EXPERIMENTAL METHODS
+Table 1 lists the properties of our starting materials. The
+BET surface area of the entire sample minus the surface
+areaforporeslargerthan2nmindiameter,obtainedasa“t”
+plot, gives a microporous surface area which we assume, for
+convenience, tracks the zeolite surface area (ZSA). We per-
+formed unit cell size (ucs) measurements via X-ray diffrac-
+tion using a Si standard. We measured sodium level by
+TABLE 1
+Physical and Chemical Properties of USY and Catalyst Samples
+FCC catalysts
+High Si–USY
+Property
+Na–H–USY
+(TOSOH)
+A
+B
+Na2O (wt%)
+4.06
+0.02
+0.52
+0.49
+Total surface area (m2/g)
+621
+703
+301
+369
+Zeolite surface area (m2/g)
+551
+555
+115
+249
+Unit cell size (nm)
+2.453
+2.426
+2.463
+2.450
+Framework Al/uca
+30
+2
+42
+28
+Bulk Si/Al (atomic)
+2.63
+162
+0.63
+1.45
+a Calculated using the formula in Ref. (13).
+atomic absorption and bulk Si, Al, and V contents using
+X-ray ﬂuorescence spectroscopy. The USY did not contain
+rare earth cations.
+We measured Y zeolite acidity by pyridine adsorption us-
+ing diffuse reﬂectance Fourier-transform infrared (FTIR)
+spectra. Detailed experimental procedures are described
+elsewhere (12). In this study, we report the number of
+Brønsted acid sites perturbed by pyridine at 453 K.
+On selected V-containing samples, we carried out UV–
+visible diffuse reﬂectance spectroscopy on a Varian Cary
+300 UV–visible spectrophotometer equipped with a diffuse
+reﬂectance attachment. The samples were loaded into a
+2-mm high-quality quartz cuvette using barium sulfate as
+the reference material.
+We made USY samples with different Na+ levels by ex-
+changing a Na–H–USY (properties shown in Table 1) with
+ammonia nitrate solution at a pH of 5. We dried the re-
+sulting materials at 363–373 K overnight followed by dry
+calcination in static air at 881 K for 1 h and studied hy-
+drothermal stability by steaming the samples at 1060 K for
+4 h in 1-atm steam.
+In order to carry out stability studies on a highly siliceous,
+low sodium-containing USY sample, we used a material
+from TOSOH Corporation (Table 1). This material has an
+atomicbulkSi/Alratioof162andaunitcellsizeof2.426nm.
+Because of its few exchange sites, various levels of sodium
+were added via incipient wetness. We used NaOH, NaNO3,
+and NaHCO3 as sodium sources. We measured zeolite sur-
+face area of the samples dried overnight at 358 K, then
+after calcination at 811 K for 2 h in static air, and ﬁnally
+after steaming at 1060 K.
+We used Y-based FCC catalysts which were made us-
+ing calcined kaolin microspheres (14). The ﬁnal catalysts,
+after exchange with ammonium nitrate to remove sodium
+cations, contained 0.49 and 0.53 wt% Na2O, respectively
+(Table 1). They contained no rare earth cations. We also
+made ultra low sodium FCC catalysts by further ammo-
+nium exchange of catalysts A and B and obtained Na2O
+levels of 0.07 and 0.06 wt%, respectively.
+We prepared vanadium-containing samples via incipient
+wetness using a cyclohexane solution of vanadium naph-
+thenate following the procedure described by Mitchell (15).
+Resulting materials were dried and calcined at 894 K for 2 h
+in static air. For the TOSOH samples, we added vanadium
+via incipient wetness using aqueous solutions of NH4VO3
+or NaVO3.
+3. RESULTS
+3.1. Effect of Sodium on the Stability of USY
+In order to study the effect of Na+ on Y zeolite stability,
+we prepared several Y samples with Na2O levels from 0.03
+to 5.5 wt% by exchanging sodium out of or into our start-
+ing Na–H–USY sample containing 4.06% Na2O. To study
+
+<<<PAGE 3>>>
+Y ZEOLITE DESTRUCTION WITH SODIUM AND VANADIUM
+239
+thermal stability, we calcined these samples at 1060 K for 4 h
+in the absence of added water; to study hydrothermal stabil-
+ity, we steamed the samples at 1060 K for 4 h in 100% steam.
+Figure 1A shows that under dry, thermal conditions, in-
+creasing the sodium level does not decrease USY stabil-
+ity; there is actually a slight improvement in stability. The
+small initial decrease in stability is due to the presence of
+adsorbed water on the USY samples. In contrast to ther-
+mal stability, hydrothermal stability of zeolite Y decreases
+rapidly with increasing Na+ loading. We give the results of
+the steamed samples in Table 2 and also show the unit cell
+size trend in Fig. 1B. Samples a to d are labeled in Figs. 1A
+and 1B, and we note that as sodium levels increase, the
+steamed unit cell size is larger. Na+ inhibits dealumination.
+Figure 1B shows that a linear relationship exists between
+steamed ucs and sodium content in a zeolite without other
+multivalent cations, such as rare earth cations. We can use
+this relationship to determine the percentage of sodium in
+the zeolite and matrix of FCC catalysts.
+Na2O, wt%
+0
+1
+2
+3
+4
+5
+6
+% ZSA Retention - Hydrothermal
+0
+20
+40
+60
+80
+100
+% ZSA Retention - Thermal
+0
+20
+40
+60
+80
+100
+A
+a
+b
+c
+d
+FIG. 1.
+(A) Stability of USY decreases with increasing Na+ con-
+tent under hydrothermal conditions but not under thermal conditions.
+Hydrothermal (steaming) conditions: 1 atm, 100% steam, 1060 K, 4 h.
+(B) Unit cell sizes of steamed USY (with no rare earth cations) versus
+Na2O loading. Steaming conditions: 1060 K, 1 atm, 100% steam, 4 h.
+TABLE 2
+Properties of Steamed USY Zeolite with Respect
+to Sodium Content
+Initial
+Steamed
+Brønsted
+Na2O
+Na+/
+Steamed
+Steamed
+ZSA
+acid site
+Sample
+(wt%)
+unit cell
+ucs (nm)
+AlF/uc
+(m2/g)
+(µmol/g)
+a
+0.03
+0.12
+2.4277
+4.2
+457
+58
+b
+1.19
+4.7
+2.4323
+9.1
+394
+146
+c
+1.94
+7.6
+2.4337
+10.6
+305
+163
+d
+2.34
+9.2
+2.4354
+12.4
+275
+184
+e
+4.06a
+16
+—
+—
+35
+29
+a Starting Na–H–USY.
+Sample a has high zeolite surface area retention after
+steaming, but since there is excessive dealumination the
+number of Brønsted acid sites is low. For sample e, at high
+levels of sodium, there is less dealumination but the sur-
+face area decreases dramatically; even though the ZSA is
+13 times lower than that of sample a, the number of
+Brønsted acid sites are only twice as low. An optimum level
+of sodium maximizes Brønsted acidity, since the number
+of Brønsted acid sites per gram of catalyst depends on the
+total number of unit cells (i.e., the zeolite surface area) and
+on the number of framework aluminums (AlF) per unit cell.
+The product of ZSA and number of AlF/uc is roughly pro-
+portional to the number of Brønsted acid sites measured by
+FTIR.
+This study demonstrates that the destruction of USY by
+sodium takes place only in the presence of steam and that
+this destruction is not due to framework dealumination.
+To corroborate these results and to determine the path-
+way via which Na cations destroy USY, we carried out fur-
+ther investigations with a high Si–USY (Table 1) since here
+steam dealumination is no longer a factor for zeolite sta-
+bility. This highly siliceous USY exhibits extremely high
+hydrothermal stability with no loss in surface area when
+steamed at 1060 K for 4 h.
+We added different compounds of sodium, shown in
+Table 3, to high Si–USY via the incipient wetness tech-
+nique. We ﬁrst dried the samples and then calcined them.
+In samples containing sodium bicarbonate and sodium hy-
+droxide, drying at only 358 K was sufﬁcient to destroy ca.
+25% of the zeolite. Further calcination at 811 K did not de-
+stroy any more zeolite. Sodium added via sodium nitrate
+solution was ineffective for Y destruction even at high Na
+levels.
+Next, we varied the level of sodium bicarbonate on high
+Si–USY and calcined the samples under dry conditions (i.e.,
+without added steam) at 811 K for 4 h. Figure 2 shows
+the substantial destruction of USY that occurs with just
+0.78 wt% Na2O. Indeed, 0.25 wt% Na2O, which would cor-
+respond to only approximately 1 Na+/uc, destroys ca. 65%
+of the zeolite crystallinity.
+
+<<<PAGE 4>>>
+240
+XU, LIU, AND MADON
+TABLE 3
+Effect of Na2O Added via Different Compounds
+on Zeolite Stability
+Na precursor
+High Si–USY
+NaHCO3
+NaNO3
+NaOH
+Na2O (wt%)
+0.19
+0.29
+0.67
+0.19
+Dried at 358 K/16 h
+ZSA (m2/g)
+401
+547
+533
+404
+ZSA retention (%)
+72.3
+98.7
+96.3
+73.0
+Calcined at 811 K/2 h
+ZSA (m2/g)
+414
+548
+549
+405
+ZSA retention (%)
+74.7
+98.9
+99.2
+73.1
+In order to understand the differences between the se-
+vere and immediate destruction caused by sodium bicar-
+bonate and the relative ineffectiveness of sodium nitrate,
+we added water via incipient wetness to a calcined high Si–
+USY sample which initially contained NaNO3. Now drying
+this sample at mild conditions of 358 K resulted in Y de-
+struction (Table 4). Zeolite surface area decreased from 548
+to 469 m2/g at a Na2O level of 0.29 wt%, and from 549 to
+234 m2/g at a Na2O level of 0.67 wt%.
+This enhanced effectiveness of NaNO3 may be rational-
+ized as follows. During calcination at 811 K, the sodium ni-
+trate decomposes to a surface oxide. Making the catalyst in-
+cipiently wet allows formation of sodium hydroxide, which
+during the drying process destroys the zeolite. Comparing
+resultsinTables3and4andFig.2,wenotethatmoresodium
+nitrate is needed than NaHCO3 and NaOH to destroy Y
+zeolite; we suggest that some of the surface sodium oxide
+made via NaNO3 decomposition reacts with nonframework
+silica and is hence not available for Y destruction.
+Finally, we examined the effect of adding NaHCO3 via
+aqueous solution to a USY sample containing 0.03 wt%
+FIG. 2.
+Effect of sodium, added in the form of NaHCO3, on the sta-
+bility of high Si–USY. Conditions: dried at 358 K for 16 h followed by
+calcination at 811 K for 2 h.
+TABLE 4
+Effect of Na2O from NaNO3 on Zeolite Stabilitya
+Na2O (wt%)
+Zeolite surface
+area (m2/g)
+0.15
+0.27
+0.29
+0.48
+0.67
+Dried at 358 K/16 h
+—
+—
+547
+—
+533
+Calcined at 811 K/2 h
+559
+557
+548
+557
+549
+With added watera and
+522
+463
+469
+392
+234
+dried at 358 K/16 h
+a Incipient wetness.
+Na2O, which we had steamed at 1060 K for 4 h in 100%
+steam to a ucs of 2.428 nm, similar to that of the high Si–
+USY. Compared to high Si–USY, this steamed sample has a
+large amount of nonframework Al with a bulk Si/Al ratio of
+2.63. And, unlike the high Si–USY, this steamed USY shows
+excellent resistance to destruction via added sodium. For
+example, addition of 0.43 wt% Na2O via NaHCO3 followed
+by drying and calcination has no effect on zeolite stability
+(457 vs 448 m2/g before and after sodium addition). This
+indicates that nonframework Al reacts with sodium and
+mitigates its destructive effects.
+We conclude that the destruction of Y zeolite is related
+to the facility by which NaOH is available. Hydrolysis of
+sodium bicarbonate to the hydroxide takes place readily
+whereasNaNO3 needstobedecomposedbeforeNaOHcan
+form. The availability of the basic entity OH−is essential
+for Y destruction.
+3.2. Effect of Vanadium on the Stability of USY
+In Fig. 3 we show the hydrothermal stability of two USY
+samples containing Na2O levels of 0.03 and 1.19 wt%,
+respectively, in the presence of different levels of vanadium.
+FIG. 3.
+Effect of vanadium on the rates of zeolite destruction at
+Na2O levels of (a) 0.03 wt% and (b) 1.19 wt%. Steaming conditions:
+1060 K, 1 atm, 90% steam/10% air, 4 h. C0 is the zeolite surface area
+before steaming.
+
+<<<PAGE 5>>>
+Y ZEOLITE DESTRUCTION WITH SODIUM AND VANADIUM
+241
+(These USY samples are the precursors to samples a and
+b in Table 2.) We follow hydrothermal stability with differ-
+ent levels of vanadium by plotting ln(C0/C) versus vana-
+dium level, where C0 and C are zeolite surface areas before
+and after steaming; the ordinate, therefore, is a product of
+steaming time and a ﬁrst-order rate constant for zeolite de-
+struction. The larger the rate constant, i.e., the larger the
+slope, the less stable the zeolite.
+For the USY sample containing 1.19 wt% Na2O, the
+addition of vanadium causes a dramatic decrease in hy-
+drothermal stability. The steamed Y surface area decreases
+from 394 m2/g with no added vanadium to 175 m2/g with
+4200 ppm V, a 55% decline. For the sample with 0.03 wt%
+Na2O, the addition of vanadium effects only a small de-
+crease in hydrothermal stability. The steamed Y surface
+area decreases from 457 m2/g with no added vanadium to
+381 m2/g with 4200 ppm V, only a 17% decline. In this sam-
+ple, even after the addition of 4200 ppm V, the Y surface
+area of 381 m2/g is close to that of the steamed 1.19% Na2O
+sample containing no V. The net rate constant of zeolite
+destruction per 1000 ppm vanadium increases by about a
+factor of 5, from 0.01 to 0.05 h−1, as Na2O increases from
+0.03 to 1.19 wt%. [Rate constant k = 1/4 × ln(C0/C), where
+4 is steaming time in hours. The net rate constant at a par-
+ticular sodium content is the rate constant in the presence
+of V minus the rate constant in the absence of V.]
+The amount of sodium on the 1.19% Na2O USY sample
+corresponds to the level found on commercial FCC cata-
+lysts. Since most FCC catalysts contain 20–40 wt% Y zeo-
+lite and 0.3–0.5 wt% Na2O, and if all sodium is associated
+with zeolite, then the Na2O content would correspond to
+1.0–1.5 wt% per g of zeolite. But the location of sodium
+is important, and we use unit cell size as a guide. For ex-
+ample, 1.19 wt% Na2O USY when steamed without any
+vanadium has a ucs of 2.432 nm (8.8 AlF/uc), whereas the
+0.03 wt% Na2O USY, after steaming, has a ucs of 2.4277 nm
+(4 AlF/uc). Since exchanged Na cations decrease hydrother-
+mal dealumination, larger ucs values indicate increased lev-
+els of Na on zeolite exchange sites. Below we use two FCC
+catalysts to examine the importance of sodium content and
+location for the hydrothermal stability of Y in the presence
+of vanadium.
+Table 1 shows the physical properties of the two FCC
+catalysts. In both cases, the sodium level exceeds 1 wt%
+per g of Y zeolite.
+Figure 4 compares hydrothermal deactivation in the pres-
+ence of vanadium for catalyst A and its lower Na analogue.
+For comparison, Fig. 4 also contains plots for the USY sam-
+ples described earlier. Just as in the high-sodium USY case,
+for catalyst A containing 0.52 wt% Na2O, the addition of
+vanadium causes a large decrease in hydrothermal stability.
+The steamed Y surface area decreases from 58 m2/g with
+no added vanadium to 17 m2/g with 4700 ppm V, a 70%
+decline. By lowering the sodium content of catalyst A to
+FIG. 4.
+Effect of vanadium on the hydrothermal stability of catalysts:
+, 1.19 wt% Na2O/USY; , 0.03 wt% Na2O/USY; , , FCC catalysts A,
+with 0.52 wt% Na2O and 0.06 wt% Na2O, respectively. Steaming condi-
+tions: 1060 K, 1 atm, 90% steam/10% air, 4 h.
+0.06 wt% Na2O, addition of vanadium has only a small ef-
+fect on hydrothermal stability. The steamed Y surface area
+decreases from 80 m2/g with no added vanadium to 54 m2/g
+with 4000 ppm V, only a 27% decline. By decreasing Na con-
+tent, the FCC catalyst, even after the addition of 4000 ppm
+V, has the same steamed surface area as catalyst A contain-
+ing 0.52 wt% Na2O and no vanadium.
+The ucs of steamed catalyst A with 0.52 wt% Na2O and no
+vanadium is 2.432 nm, whereas for the 0.06 wt% Na2O ana-
+logue it is 2.4275 nm. This suggests that catalyst A contains a
+signiﬁcant amount of exchanged Na and this consequently
+leads to substantial deactivation in the presence of vana-
+dium. These ucs results are in line with the USY results of
+Fig. 4, indicating that the extent of Na+ exchange on the
+Y zeolite and the deactivation results are consistent for the
+two samples.
+Figure 5 compares hydrothermal deactivation in the pres-
+ence of vanadium for catalyst B and its lower Na ana-
+logue. Again, for comparison, Fig. 5 contains plots for the
+USY samples described earlier. Here, unlike the previous
+cases, catalyst B with 0.49 wt% Na2O does not show any
+substantial decrease in hydrothermal stability in the pres-
+ence of vanadium. The steamed Y surface area decreases
+from 174 m2/g with no added vanadium to 150 m2/g with
+4000 ppm V, only a 14% decline. By lowering the sodium
+content of catalyst B to 0.05 wt% Na2O, there is no fur-
+ther improvement in vanadium tolerance. In this case, the
+steamed Y surface area decreases from 184 m2/g with no
+added vanadium to 161 m2/g with 4000 ppm V, a 13%
+decline.
+Unlike the ucs of the steamed USY sample and catalyst
+A, the ucs of steamed catalyst B with 0.49 wt% Na2O and
+no vanadium is low, 2.4275 nm, and for the 0.05 wt% Na2O
+analogue it is the same. This indicates that for catalyst B, a
+
+<<<PAGE 6>>>
+242
+XU, LIU, AND MADON
+FIG. 5.
+Effect of vanadium on the hydrothermal stability of catalysts:
+, 1.19 wt% Na2O/USY; , 0.03 wt% Na2O/USY; , , FCC catalysts
+B with 0.49 wt% Na2O and 0.05 wt% Na2O, respectively; , 0.95 wt%
+Na2O, after Na+ back-exchanged onto catalyst B (with 0.49% sodium).
+Steaming conditions: same as in Fig. 4.
+substantial portion of the 0.49 wt% Na2O is not on the ze-
+olite exchange sites and is associated with the matrix. Since
+exchanged or available sodium is necessary to allow vana-
+dium to be effective for destruction, we exchanged sodium
+back onto catalyst B. Now we see a distinct and large affect
+of vanadium on Y stability. Increasing Na2O level from 0.49
+to 0.95 wt% via sodium exchange with NaNO3 solution de-
+creases vanadium tolerance (Fig. 5). The surface area drops
+37%, from 156 m2/g at 0 ppm V to 98 m2/g with 4000 ppm V.
+Note once again that the starting surface area of 156 m2/g
+with no V present but after sodium exchange onto cata-
+lyst B is close to the surface areas with ca. 4000 ppm V
+when sodium is not available. These results conﬁrm that for
+vanadium to be effective for Y destruction, sodium must be
+available, for example, on Y exchange sites, and it must not
+be locked in the matrix.
+Besides sodium availability, the effect of vanadium is de-
+termined to a certain extent by whether it is trapped by
+matrix sites. Trujillo et al. (10) have suggested nonframe-
+work Al as being capable of trapping V, and matrices can
+be designed to trap vanadium. However in the presence
+of even small amounts of vanadium, sodium, if available,
+would contribute signiﬁcantly to instability.
+Since alumina-enriched matrix components play a role
+in enhancing stability, we concluded our study by using the
+highly siliceous, low-sodium TOSOH USY to investigate
+via model compounds the synergy between vanadium and
+sodium for zeolite destruction. We added ammonium meta-
+vanadate, sodium nitrate, and sodium metavanadate to the
+high Si–USY to obtain the levels of sodium and vanadium
+shown in Table 5.
+All samples, even with vanadium levels greater than
+7000 ppm, show excellent thermal stability. On steaming,
+the vanadium-only sample retains most of the zeolite sur-
+TABLE 5
+Effect of Sodium and Vanadium on the Stability of High Si–USY
+NH4VO3
+NaNO3
+NaVO3
+Equivalent Na2O (wt%)
+0.02
+0.51
+0.48
+Equivalent V (wt%)
+0.80
+0
+0.72
+ZSA (m2/g)
+Dried at 358 K for 16 h
+501
+547
+527
+Calcined at 1060 K for 4 h
+532
+546a
+503
+Steamed at 1060 K for 4 h
+436
+188
+33
+a Sample was calcined at 810 K for 2 h.
+face area. The sample containing both sodium and vana-
+dium is almost completely destroyed. We checked for V
+and Na retention on the samples and found no loss of vana-
+dium or sodium after steaming. Figure 6 shows zeolite sur-
+face area retention after calcination and after steaming for
+the three samples.
+We carried out UV–visible diffuse reﬂectance spec-
+troscopy on the ammonium metavanadate, and on sodium
+metavanadate containing high Si–USY samples. USY, by it-
+self, has no absorption bands at wavelengths above 350 nm;
+below 350 nm, very weak absorption bands at about 300,
+240, and 205 nm are observed due to framework defects
+(spectra not shown). Figure 7 shows the results for both
+vanadium-containing USY samples after calcination and
+after steaming. The ammonium metavanadate-containing
+sample has absorption bands at 374, 290 (shoulder), 247,
+and 210 nm in its UV–visible spectrum after 1060 K cal-
+cination, while the calcined sample containing NaVO3 has
+absorption bands at 389, 290, 250, and 210 nm. These bands
+are associated with O →V electron transfer (16, 17). Com-
+pared to pure NH4VO3 and NaVO3 compounds, where we
+observe absorption bands around 368, 283, and 216 nm for
+NH4VO3, and 340, 280, and 216 nm for NaVO3, the bands
+for the supported compounds are shifted toward the longer
+0
+20
+40
+60
+80
+100
+NH4VO3
+NaNO3
+NaVO3
+Calcined
+Steamed
+% ZSA Retention
+FIG. 6.
+ZSA retention after thermal (1060 K, 4 h) and hydrother-
+mal treatments (1060 K, 1 atm, 90% steam/10% air, 4 h). High Si–USY
+impregnated with ammonium metavanadate, sodium nitrate, and sodium
+metavanadate.
+
+<<<PAGE 7>>>
+Y ZEOLITE DESTRUCTION WITH SODIUM AND VANADIUM
+243
+FIG. 7.
+UV–visible spectra of model vanadium compounds on high
+Si–USY. (A) Ammonium metavanadate on USY—calcined; (B) ammo-
+nium metavanadate on USY—steamed; (C) sodium metavanadate on
+USY—calcined; (D) sodium metavanadate on USY—steamed. (Treat-
+ment conditions given in Table 5.)
+wavelengths. This spectral shift indicates that after calcina-
+tion, the chemical environment of the metavanadates has
+changed from a pure compound form to a well-dispersed
+form where interactions of V with its surrounding occur via
+oxygen bridges. The V–O bond is shortened as a result of
+this. On steaming, we did not observe any signiﬁcant spec-
+tral changes for the sample made with NH4VO3; it is in hy-
+drogen form after calcination. However, steaming resulted
+in spectral changes for the sample made with NaVO3. New
+bands at about 290 and 480 nm appeared, indicating the
+formation of V2O5 (10).
+4. DISCUSSION
+4.1. Effect of Na+ on Hydrothermal Stability of USY
+Hydrothermal deactivation of steam occurs via the hy-
+drolysis and elimination of Al3+ from a tetrahedral site (18–
+20) of a Y zeolite. A substitution reaction in which available
+Si replaces an Al in the TOT site (19, 20) stabilizes the struc-
+ture; if such a replacement does not take place, the segment
+of the zeolite would collapse. This represents one pathway
+for zeolite destruction, labeled A in Fig. 8. Removal of Al
+from the structure and its replacement by Si is accompanied
+by a shrinking of the unit cell. The destruction of zeolite via
+sodium also requires steam (Fig. 1A) but the mechanism is
+different.
+As shown in Figs. 1A and 1B, there is a rapid decrease
+in zeolite retention for samples having Na+/uc greater than
+ca. 4.7 (Fig. 1A), and the decrease in ucs after steaming is
+inversely proportional to the initial Na+/uc on the starting
+material (Fig. 1B). If dealumination via steam (pathway A)
+was the only process leading to zeolite collapse, one would
+expect the opposite result, i.e., zeolites with high Na/uc
+would be more stable, since the hydrolysis–dealumination
+reaction only takes place at an Al–O–Si site which has a pro-
+ton as the counterion (18). The destructive role of sodium
+is uniquely different from that of steam and is shown as
+pathway B in Fig. 8. In order to understand this pathway,
+we performed model studies with sodium compounds us-
+ing the high Si–USY, where, due to there being only ca.
+2 AlF/uc, pathway A is not viable.
+Results in Tables 3 and 4 and in Fig. 2 may be summa-
+rized as follows. Since sodium bicarbonate, a salt of a strong
+base and a weak acid, hydrolyzes readily at ≤358 K to give
+NaOH, ZSA retention in the presence of NaHCO3 and
+NaOH (Table 3) is identical. Sodium nitrate does not hy-
+drolyze readily and is ineffective. However, after it is de-
+composed at a higher temperature, the resulting surface
+sodium oxide reacts with added water at 358 K to form
+NaOH, and zeolite destruction takes place (Table 4). For-
+mation of NaOH is the necessary step for the destruction of
+Y zeolite to take place via an OH−attacking a Si–O bond
+(pathway B). The facility of attack is evident in that only a
+small amount of sodium is needed to cause signiﬁcant de-
+struction (Fig. 2). The important points therefore are the
+availability of sodium and the ease with which it forms
+NaOH. We need to relate these results to those in Fig. 1A
+and Table 2, i.e., where the deleterious effects of sodium
+occur in a high-temperature steam environment.
+At low temperatures, NaOH in an aqueous phase would
+be solvated, and the presence of ionic species, Na+ and
+OH−, would offer a potent reaction environment for Y de-
+struction. In high-temperature steam, at 1060 K, there is
+no solvation of NaOH and high ionic concentrations would
+be difﬁcult to obtain. And though hydrolysis of a univa-
+lent cation in steam has been suggested (21), formation of
+NaOH via the hydrolysis of Na+Y species with steam may
+also be difﬁcult. Pine (11) found that the apparent activa-
+tion energy of Y destruction with sodium is 79 kcal/mol and
+is independent of the Na concentration. Such a high value
+suggests that one or more kinetically signiﬁcant steps are
+Al
+O
+Si
+Si
+O
+Si O
+Si O
+Si
+O
+Si
+Si
+O
+Si O
+Si O
+O
+Si
+Si
+O
+H
+Si O
+H
+H
+Si O H
++   Al(OH)x 
+n+
+silica migration
+stabilizes structure
+Collapsed
+Zeolite
+No silica migration
+- X+
+Dealumination
+via steam
+X+ = H+
+Destruction
+via NaOH
+X+ = Na+
+A
+B
+FIG. 8.
+Pathways to Y zeolite destruction.
+
+<<<PAGE 8>>>
+244
+XU, LIU, AND MADON
+energetically difﬁcult steps in the reaction sequence. We
+will revisit this point later.
+Before concluding this section, we suggest a second
+complementary pathway for NaOH formation in high-
+temperature steam besides hydrolysis of the cationic Na on
+Y. Rapid destruction of Y takes place when we have, for ex-
+ample, 5 Na+/uc, which corresponds to 16% of the cationic
+sites in the unit cell. The other sites contain protons and
+are subject to dealumination and structural collapse. When
+a portion of the zeolite collapses, Na associated with that
+particular portion is no longer a strongly bonded entity. This
+Na readily reacts with steam to form NaOH. As further de-
+struction takes place and more Na is available for hydroly-
+sis, the destructive process continues. This case is similar to
+the NaNO3 case (Table 4), where the nitrate needed to be
+decomposed before NaOH could form.
+4.2. Effect of V on the Hydrothermal Stability of USY
+The results on USY (Fig. 3) show that reducing Na2O
+content from 1.19 to 0.03 wt% dramatically reduces the
+effect of V on Y stability and are consistent with Pine’s
+results (11). The net rate constant of destruction for our
+1.19 wt% Na2O USY is 0.05 h−1 per 1000 ppm V. Pine (11)
+obtained a net rate constant of 0.025 h−1 per 1000 ppm V
+at 1033 K with an FCC catalyst containing 1.20 wt% Na2O.
+Based on an activation energy of 79 kcal/mol (11), at 1060 K
+this net rate constant is 0.068 h−1 per 1000 ppm V. This value
+is remarkably similar to ours. The AlF/uc of our USY is 30,
+ucs of 2.453 nm, whereas the USY used by Pine had a ucs
+of 2.423 nm with ca. <1AlF/uc. The similar increase in the
+rate constant upon V addition for two USY materials with
+very different AlF/uc indicates that vanadic acid-catalyzed
+hydrolysis of framework Al contributes little, if any, to zeolite
+instability.
+Figures 4 and 5 substantiate our results on USY and show
+that on FCC catalysts, besides the total amount of sodium
+in the catalyst, availability of that sodium is essential for de-
+struction. For example, if sodium reacts with an amorphous
+matrix and is therefore unavailable, V will not play a role
+in Y destruction. For Y catalysts without rare earth cations,
+the unit cell size of steamed Y can indicate the location
+of sodium. In our case, catalyst B with a Na2O content of
+0.49 wt% has a steamed unit cell size of only 2.4275 nm, indi-
+cating that most of the sodium is not in cationic form on the
+zeolite. Its excellent stability in the presence of 4200 ppm
+V attests to the unavailability of sodium.
+In order to construct a mechanism for Y destruction, our
+study using the low-sodium (0.02 wt% Na2O), high Si–USY
+is instructive. This USY is extremely stable and does not
+lose any surface area when steamed at 1060 K. This is in
+line with pathway A in Fig. 8, which requires framework
+aluminum to be present for destruction to occur via steam.
+Addition of model compounds to this USY shows that
+in the absence of steam neither ammonium metavanadate,
+sodium nitrate, nor sodium metavanadate is effective for
+Y destruction even at 1060 K. Ammonium metavanadate
+decomposes to ammonia and metavanadic acid at 473 K;
+the resulting metavanadic acid does not harm the zeolite at
+all in the absence of steam and is only marginally effective
+in steam, with 13% of the Y zeolite destroyed, even in an
+environment with 8000 ppm V. Though it is tempting to
+ascribe this low level of destruction to acid hydrolysis of
+framework Al, we suggest that it is due to the presence of
+the small amount of available Na+ which is released in the
+presence of V.
+Sodium nitrate decomposes to an oxide which again is
+ineffective without steam. In steam, as discussed earlier, the
+Na2O forms NaOH, which is destructive and destroys 66%
+of the Y zeolite. This corresponds to pathway B in Fig. 8.
+After NaNO3 decomposes, not all the sodium is available
+to form NaOH since some sodium reacts with the large
+amount of nonframework silica present on this high Si–Y.
+Sodium metavanadate melts at 903 K, but without steam
+it does not harm the zeolite. The 5% decrease in ZSA dur-
+ing calcination is due to the small amount of steam released
+from the sample. This result refutes a proposal (22, 23) that
+low melting compounds of sodium and vanadium are detri-
+mental to zeolite Y. When steam is present, 94% of the zeo-
+lite is destroyed. This large effect is reminiscent of our study
+(Fig. 2) with NaHCO3, where facile hydrolysis of the bicar-
+bonate to form NaOH was the key to Y destruction. Here
+sodium metavanadate reacts with steam to form NaOH and
+metavanadic acid. Unlike in the NaNO3 case, all the sodium
+here is available to form NaOH; this results in the massive
+loss of zeolite Y. In the presence of sodium metavanadate
+and steam the pathway for Y destruction is pathway B in
+Fig. 8. There is no separate pathway for zeolite destruction
+due to vanadium.
+4.3. The Roles of Vanadium and Sodium in Y Destruction
+Pine (11) proposed that the role of vanadium and sodium
+was to catalyze the well-known destruction of zeolite by
+steam, and that both acted with nearly equal activity and
+with synergy. We have corroborated several of Pine’s results
+and further have shown that the synergy between vanadium
+and sodium is present for both high- and low-ucs Y zeolites.
+To quote Pine: “The challenge is to devise a mechanism
+that can accommodate such chemically different species as
+catalysts to the same reaction and to explain why there is
+synergism between them.”
+Pine showed that the apparent activation energy for Y
+destruction is 76–79 kcal/mol. And though the overall ﬁrst-
+order rate constant increases as either sodium or vanadium
+level increases (Figs. 3–5), the activation energy is not de-
+pendent on the sodium level and is the same whether vana-
+dium is present or not. This latter fact indicates that the ki-
+netically signiﬁcant step for Y destruction does not include
+vanadium. We have proposed that the only destructive
+
+<<<PAGE 9>>>
+Y ZEOLITE DESTRUCTION WITH SODIUM AND VANADIUM
+245
+pathways for Y zeolite are (a) dealumination by steam
+(pathway A) and (b) reaction with NaOH (pathway B).
+Pathway B is enhanced in the presence of vanadium, but
+the kinetic steps that describe this destruction are indepen-
+dent of vanadium.
+The role of vanadium depends on the type of V com-
+pounds that are present at 1060 K in an environment con-
+taining oxygen and steam. There is consensus (9–11) that
+the relevant vanadium species exist in a +5 oxidation state.
+Under reaction conditions, it is reasonable that such species
+are acidic vanadium compounds (9, 10). There is some de-
+bate as to the exact nature of such species, but measure-
+ments in the literature (9, 10, 24–27) only indicate post
+reaction compounds on the catalyst surface devoid of the
+presence of steam and not those present under reaction
+conditions.
+The sequence of steps below is an attempt to describe
+the role of vanadium. Though we do not know the exact
+intermediates at reaction conditions, we show these steps
+to emphasize the key feature of our proposal.
+1. (a) V2O5 + 3H2O ⇄2H3VO4;
+(b) V2O5 + H2O ⇄2HVO3.
+2. (a) ∗[VO2]+ + H2O ⇄HVO3 + ∗H+;
+(b) ∗[VO2]+ + 2H2O ⇄H3VO4 + ∗H+.
+3. H3VO4 ⇄HVO3 + H2O.
+4. HVO3 + Na+Y ⇄NaVO3 + H+Y.
+5. NaVO3 + H2O ⇄HVO3 + NaOH.
+If vanadium is present as V2O5, it will be a liquid at re-
+action conditions and, as indicated elsewhere (9, 28), will
+react in steam to give the hydroxy or acid compound. Sim-
+ilarly, if V is in a +5 oxidation state as an adsorbed sur-
+face *[VO2]+ species, where ∗is a surface site, it can also
+react to form an acid. Though we have written reactions
+to make vanadic and metavanadic acid, the concentrations
+of the two acids would come to an equilibrium value at
+reaction conditions. The critical steps for our mechanism
+are steps 4 and 5. The acid reacts with the sodium cation
+on the Y zeolite to form sodium metavanadate. And the
+sodium metavanadate hydrolyzes in steam to give NaOH
+and metavanadic acid. Again it is immaterial which acid we
+propose and even complex acids such as H4V2O7 (26, 29)
+have been proposed; metavanadic acid offers the simplest
+reaction path attacking one Na cation.
+Metavanadic acid is a catalyst that facilitates the removal
+of sodium from its cationic site by forming the reaction
+intermediate sodium metavanadate, which, as shown in
+Table 5 and Fig. 8, is quite potent for Y destruction. Once
+this intermediate hydrolyzes to NaOH (step 5), Y destruc-
+tion takes place exactly as in the case with no vanadium
+(pathway B). This is reminiscent of the low-temperature
+hydrolysis of NaHCO3 to NaOH with consequential Y de-
+struction.
+Our UV–visible spectroscopy experiments with model
+vanadium compounds substantiate the above proposal. In
+the sodium metavanadate case, we obtain, after steaming,
+bands at 480 and 290 nm, attributed to oxides of vanadium.
+This is a clear indication of the separation of Na from V dur-
+ing the steam treatment and validates our proposed mech-
+anism (step 5) in which NaVO3 reacts with steam to form
+NaOH and HVO3. We do not observe these bands for vana-
+dium in the case where we used ammonium metavanadate.
+Here the spectroscopic results for calcined and steamed
+samples are identical, indicating that the overall vanadium
+surface structure and composition seem to be the same after
+calcination and after steaming. This is consistent with our
+observation that metavanadic–vanadic acid from the am-
+monium metavanadate plays no role in zeolite destruction.
+In the case without vanadium, sodium removal would
+need to take place by hydrolysis of Na+Y.
+6. H2O + Na+Y ⇄NaOH + H+Y.
+This uncatalyzed formation of NaOH we suggest is a dif-
+ﬁcult step. Therefore due to the catalytic action of V de-
+scribed in steps 4 and 5, the concentration of available
+NaOH is always greater when vanadium is present.
+Destruction of Y zeolite.
+The mechanism of pathway
+B for the low temperature case with NaOH and water is
+straightforward. Here NaOH is solvated and distinct ionic
+species Na+ and OH−form, resulting in the base attack on
+framework Si–O. In high-temperature steam, 1060 K, there
+is no solvation or facile formation of ionic species. However
+in order to attack Si–O and destroy the framework, it is
+essential to provide a base. We suggest that step 7 takes
+place with a partial ionization sufﬁcient enough to react in
+a concerted way with Si–O.
+7. NaOH
+steam
+−−→Naδ+OHδ−.
+Steam is essential to the process because without it par-
+tial ionization is not possible. The high activation energy
+of 79 kcal/mol observed by Pine is associated with this se-
+quence of reactions.
+It is debatable to what extent sodium silicate, formed
+after attack of the base on the Si–O bond, will itself hy-
+drolyze to give NaOH and thus continue the destructive
+event.However,thedestructionprocessisterminatedwhen
+sodium reacts with Al in USY to form sodium aluminate.
+We have shown earlier that nonframework Al reacts with
+Na and thus mitigates destruction.
+5. CONCLUDING REMARKS
+Our mechanism will hold for vanadium levels up to ca.
+1 wt%. At higher V levels, one needs to determine if other
+pathways for Y destruction are also present. The work we
+have discussed was carried out on catalysts with no rare
+
+<<<PAGE 10>>>
+246
+XU, LIU, AND MADON
+earth or other multivalent cations. However, the same
+pathways of destruction that we have proposed will be
+effective for rare earth-containing zeolites. For example,
+Occelli and Ritz (23) have reported that V, at a level of
+4000 ppm, has little affect on a calcined REY zeolite, ucs
+of 2.4668 nm, containing 0.06 wt% Na2O. We note that due
+to the low sodium content of the catalyst, steamed zeolite
+surface area decreases from 410 m2/g for vanadium-free
+catalyst to only 394 m2/g, a 96% retention even though
+4000 ppm V is present. However, high levels of rare earth in
+the presence of vanadium may introduce another pathway
+for destruction.
+The V-related destructive pathway discussed by previous
+researchers (9–11) is by hydrolysis of AlF by acidic vana-
+dium. This pathway would be one that enhances pathway
+A, hydrolysis via steam, directly. We have shown this path-
+way to be unimportant. We cannot rule it out completely
+since catalysts with very low levels of sodium (0.02 wt%
+Na2O) still show a small reduction in zeolite surface area
+in the presence of vanadium. This could, of course, also be
+the result of the low amount of sodium still being effective.
+Indeed, one does not need much sodium, if it can be made
+available with the help of V, to have Y destruction.
+Extensive hydrolysis of AlF would lead to a signiﬁcant de-
+crease in the unit cell size. Under our steaming conditions,
+we have not observed differences in ucs when steamed in
+the presence or absence of V. Under more severe steam-
+ing conditions, hydrolysis of AlF may take place as a sec-
+ondary process, since the removal of Na+ via metavanadic
+acid leaves behind a proton (step 4), thus forming a Si–
+O–Al site that can be hydrolyzed. In conclusion, we have
+proposed two distinct pathways leading to Y zeolite de-
+struction. For low Na+ USY, steam hydrolysis of frame-
+work Al is the main cause of zeolite collapse, and there is
+little effect of V. In the second pathway, sodium is directly
+responsible for the hydrothermal instability of the zeolite.
+Sodium from the zeolite combines with steam to generate
+an active center, a surface Naδ+OHδ−, for zeolite destruc-
+tion. When V is present, it facilitates the removal of Na+
+from a zeolite exchange site via an acid–base reaction. The
+sodium vanadate, or sodium metavanadate, hydrolyzes to
+Naδ+OHδ−. Thus in the presence of V, more destructive
+active centers are formed. The actual destruction of the ze-
+olite via Naδ+OHδ−is the same whether V is present or not.
+This substantiates Pine’s (11) observation that the activa-
+tion energy of destruction is the same whether V is present
+or not. This unique role of V is not possible with sulfur
+oxides generated in an FCC regenerator and, as noted by
+Trujillo et al. (10), does not destroy the zeolite.
+ACKNOWLEDGMENT
+The authors thank Eunice Lambert for her assistance with all the steam-
+ing experiments.
+REFERENCES
+1. Beyerlein, R. A., and McVicker, G. B., Stud. Surf. Sci. Catal. 134, 3
+(2001).
+2. Beyerlein, R. A., McVicker, G. B., Yacullo, L. N., and Ziemiak, J. J., in
+“Symposium on Fundamental Chemistry of Promoters and Poisons in
+Heterogeneous Catalysis, New York,” Preprints, Vol. 31, p. 190. Am.
+Chem. Soc., Washington, DC, 1986.
+3. Fritz, P. O., and Lunsford, J. H., J. Catal. 118, 85 (1989).
+4. Scherzer, J., Stud. Surf. Sci. Catal. 76, 145 (1993).
+5. Brown, S. M., Reagan, W. J., and Woltermann, G. M., U. S. Patent
+4,325,813 (1982).
+6. Pine, L. A., Maher, P. J., and Wachter, W. A., J. Catal. 85, 466 (1984).
+7. Madon, R. J., Macaoay, J. M., Koermer, G. S., and Bell, V. A., in “12th
+North American Meeting of the catalysis Society, Lexington, KY,”
+Abstract D33. 1991.
+8. Edwards, G. C., Rajagopalan, K., Peters, A. W., Young, G. W., and
+Creighton, J. E., ACS Symp. Ser. 375, 101 (1988).
+9. Wormsbecher, R. F., Peters, A. W., and Maselli, J. M., J. Catal. 100, 130
+(1986).
+10. Trujillo, C. A., Uribe, U. N., Knops-Gerrits, P.-P., Oviedo, L. A., and
+Jacobs, P. A., J. Catal. 168, 1 (1997).
+11. Pine, L. A., J. Catal. 125, 514 (1990).
+12. Liu, X., Truitt, R. E., and Hodge, G. D., J. Catal. 176, 52 (1998).
+13. Sohn, J. R., DeCanio, S. J., Lunsford, J. H., and O’Donnell, D. J.,
+Zeolites 6, 225 (1986).
+14. Madon, R. J., Koermer, G. S., and Macaoay, J. M., U.S. Patent 5,395,809
+(1993).
+15. Mitchell, B. R., Ind. Eng. Chem. Prod. Res. Dev. 19, 209 (1980).
+16. Centi, G., Perathoner, S., Triﬁro, F., Aboukais, A., Aissi, C. F., and
+Guelton, M., J. Phys. Chem. 96, 2617 (1992).
+17. Dzwigaj, S., Matsuoka, M., Franck, R., Anpo, M., and Che, M., J. Phys.
+Chem. B 102, 6309 (1998).
+18. Gates, B. C., Katzer, J. R., and Schuit, G. C. A., “Chemistry of Catalytic
+Processes.” McGraw-Hill, New York, 1979.
+19. Gelin, P., and Des Courieres, T., Appl. Catal. 72, 179 (1991).
+20. Gelin, P., and Gueguen, C., Appl. Catal. 38, 225 (1988).
+21. Breck, D. W., “Zeolite Molecular Sieves.” Krieger, Melbourne, FL,
+1984.
+22. Occelli, M. L., in “Catalysis in Petroleum Reﬁning and Petrochemical
+Industries” (M. Absi-Halabi, et al., Eds.), p. 1. Elsevier, Amsterdam,
+1996.
+23. Occelli, M. L., and Ritz, P., Appl. Catal. A 183, 53 (1999).
+24. Occelli, M. L., and Stencel, J. M., Stud. Surf. Sci. Catal. 49B, 1311
+(1993).
+25. Catana,G.,Rao,R.R.,Weckhuysen,B.M.,VanDerVoort,P.,Vansant,
+E., and Schoonheydt, R. A., J. Phys. Chem. B 102, 8005 (1998).
+26. Occelli, M. L., Catal. Rev.–Sci. Eng. 33, 241 (1991).
+27. Anderson, M. W., Occelli, M. L., and Suib, S. L., J. Catal. 122, 374
+(1990).
+28. Yannopoulos, L. N., J. Phys. Chem. 72, 3293 (1968).
+29. Glemser, O., and Muller, A., Z. Anorg. Allg. Chem. 325, 220 (1963).

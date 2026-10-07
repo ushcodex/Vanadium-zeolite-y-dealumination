@@ -1,0 +1,1077 @@
+
+<<<PAGE 1>>>
+JOURNAL OF CATALYSIS 125, 514-524 (1990) 
+Vanadium-Catalyzed Destruction of USY Zeolites 
+L. A. PINE 
+Exxon Research and Development Laboratories, P.O. Box 2226, Baton Rouge, Louisiana 70821 
+Received June 21, 1989; revised January 17, 1990 
+Both vanadium and nickel are present in the high boiling fractions of crude oils. When these 
+fractions are used as feed for catalytic cracking units these metals deposit on the catalyst and 
+promote the undesirable side reactions of coke and dry gas formation. Vanadium has the additional 
+effect of reducing catalyst activity and selectivity by destroying zeolite crystallinity. A kinetic study 
+has been made of the interaction of vanadium and steam with several zeolites that are important in 
+catalytic cracking catalysts. Measurements were made for the vanadium-USY system at 1 atm of 
+steam with temperatures ranging from 740 to 800°C, and at vanadium concentrations ranging from 
+0 to 4000 ppm. The effect of ion exchange with sodium, lithium, potassium, and rare earths on the 
+rate of reaction was also investigated. From the experimental results it was concluded that the 
+reaction taking place is the well-known destruction of zeolite by steam. The role of both vanadium 
+and sodium are that of catalysts. Both catalysts are nearly equal in activity and their effects 
+synergistic. To the best of our knowledge, this is the first kinetic proof of a catalyzed solid-state 
+phase transformation. Potassium is essentially equivalent to sodium as a catalyst while lithium is 
+somewhat less active. Rare earths do not change vanadium tolerance. Their effect is an indirect 
+one of changing the base steam stability of the zeolite. It was also found that vanadium easily 
+attacks silicalite. Since this zeolite is essentially alumina free, the experiment shows that the attack 
+by steam can be on a Si-O bond. A mechanism is proposed involving the attack of either vanadium 
+or sodium on surface hydroxyl groups as the step affecting the rate of nucleation, which in turn is 
+the overall rate limiting step of the reaction. 
+© 1990 Academic Press. Inc. 
+INTRODUCTION 
+The effects of vanadium and nickel feed 
+contaminants on the performance of crack- 
+ing catalysts are generally well known (1-3 ). 
+These contaminants deposit on the catalyst 
+from the feed and promote dehydrogenation 
+reactions that increase the yields of coke 
+and dry gas. Vanadium has an additional 
+effect of reducing catalyst activity and selec- 
+tivity by destroying zeolite crystallinity. An- 
+timony passivation is widely practiced to 
+control the effects of nickel (4). The effects 
+of vanadium are being controlled by the use 
+of vanadium scavengers that usually func- 
+tion by binding the vanadium into some sta- 
+ble high melting compound (5, 6). However, 
+to be effective, these scavengers must be 
+added in large concentrations in order to 
+successfully compete with the zeolite for 
+the vanadium. Better understanding of the 
+0021-9517/90 $3.00 
+Copyright © 1990 by Academic Press. Inc. 
+All rights of reproduction in any form reserved. 
+interaction of vanadium with the catalyst 
+is an important step in the development of 
+better technology for the passivation of va- 
+nadium. 
+It is generally agreed that the vanadium 
+first deposits on the outside of the catalyst 
+particles. When the catalyst is carried into 
+the regenerator of the fluid catalytic cracker, 
+the vanadium is oxidized to V2Os. As it is 
+carried back and forth between the reactor 
+and regenerator the vanadium undergoes 
+valence changes between +4 and +5 (7). 
+Researchers at Ashland Petroleum showed 
+that an oxidative atmosphere was necessary 
+for zeolite destruction so most of the dam- 
+age to the zeolite occurs in the regenerator 
+of commercial units (29). If the vanadium 
+remained on the surface of the catalyst parti- 
+cles it would not be much of a problem. 
+However, in the presence of steam, it be- 
+comes mobile and is carried into the interior 
+514 
+
+<<<PAGE 2>>>
+ZEOLITE DESTRUCTION BY VANADIUM 
+515 
+of the particle where it can react with the 
+zeolite crystals. Vanadium does react to 
+some extent with the matrix components but 
+it seems to migrate more selectively to the 
+zeolite particles (1, 8). X-Ray absorbtion 
+studies have shown that after exposure to 
+steam the vanadium is still in the + 5 oxida- 
+tion state but that it is structurally different 
+from bulk V205 (7). 
+Although the means by which the vana- 
+dium reaches the zeolite particle and that its 
+active form is in the + 5 oxidation state is 
+generally agreed on, there is still consider- 
+able controversy about the details of the 
+reaction between vanadium and zeolite. A 
+number of mechanisms have been proposed 
+for the attack on the zeolite crystal. Some 
+of these are flawed as they are based on 
+experimental results that do not duplicate 
+conditions in a commercial unit. The most 
+prevalent deviations are either the use of 
+very high concentrations of vanadium or 
+working with unsteamed zeolites that are 
+representative of fresh rather than equilib- 
+rium catalysts (9-11). A typical catalyst 
+make-up rate for a commercial cracking unit 
+operating with a low metals feed is roughly 
+1% per day. This addition rate is to make up 
+for catalyst lost as fines due to attrition. 
+When operating with a high metals feed, it 
+is common practice to withdraw catalyst in 
+order to moderate the effects of the nickel 
+and vanadium deposited from the feed. The 
+cost of catalyst is such that it is not usually 
+economical for the maximum amount of cat- 
+alyst withdrawn per day tO exceed 3% of the 
+unit inventory. Therefore, the average time 
+that a catalyst particle spends in a commer- 
+cial unit is somewhere between 16 and 50 
+days, depending on the level of metals in 
+the feed. The contaminate metals are being 
+deposited continuously during this period. 
+In the laboratory some form of steaming 
+of fresh or calcined catalysts is used to simu- 
+late the conversion to the equilibrium cata- 
+lyst found in commercial units. These 
+steaming conditions have not been stan- 
+dardized by the industry, but typically range 
+from 700 to 800°C with times from 4 to 16 h. 
+The steam pressure is usually near 1 atm. 
+These laboratory steamings accomplish 
+most of the physical changes in surface area 
+and unit cell size that occur during equilibra- 
+tion in the unit. Since the laboratory steam- 
+ing temperatures and pressures are close to 
+those in the commercial unit regenerator, it 
+is reasonable to expect that at the end of the 
+first day in a commercial unit, a catalyst 
+particle will closely resemble a particle 
+steamed in the laboratory and that this is the 
+type of particle that will be accumulating 
+nickel and vanadium over the next 16 to 50 
+days. In 1980 Mitchell published a method 
+for synthetically adding nickel and vana- 
+dium to fresh cracking catalysts that gave a 
+good simulation of the activity and selectiv- 
+ity that an equilibrium sample of same cata- 
+lyst would have at the same metals loading 
+(15). The key factors in the method were 
+nonaqueous impregnation of the metals pre- 
+cursors as organometallic compounds and 
+some form of post-steaming to deactivate 
+the metals. This was an important and 
+timely contribution as it allowed one to 
+quickly evaluate the metals tolerance of dif- 
+ferent catalyst formulations in the labora- 
+tory. However, while the Mitchell proce- 
+dure is a good laboratory method for 
+preparing a metals-contaminated catalyst 
+from its fresh precursor that mimics an equi- 
+librium catalyst, it is not a good method for 
+studying the pathway from fresh to metal- 
+contaminated equilibrium catalyst. 
+The earliest proposed mechanisms usu- 
+ally involved the formation of some low- 
+melting vanadium-containing eutectic that 
+attacked the zeolite via sintering. Sodium, 
+alumina, and rare earths have all been men- 
+tioned as possible components for these eu- 
+tectics (10, 11). The eutectic proposals can 
+be discarded in view of the evidence that 
+Wormsbecher and co-workers have pro- 
+vided showing that steam is necessary for 
+catalyst deactivation (13). If sintering were 
+the 
+operative 
+mechanism, 
+destruction 
+should take place in dry air. Two similar 
+proposals involving rare earths postulate 
+that the reaction with vanadium effectively 
+
+<<<PAGE 3>>>
+516 
+L.A. PINE 
+removes them from the role of increasing 
+the steam stability of the zeolite. However 
+both of these studies used unsteamed zeo- 
+lites as starting materials so the conclusions 
+are suspect (9, 11). Based on thermody- 
+namic data obtained by Yannopoulos (14), 
+Wormsbecher identified the poison precur- 
+sor as volatile vanadic acid, H3VO 4, which is 
+formed by the reaction of V205 with steam. 
+Vanadic acid would be a strong acid analo- 
+gous to phosphoric which could attack the 
+tetrahedral alumina sites in the zeolite 
+framework. 
+In this paper, the mechanism for vana- 
+dium poisoning was investigated using a ki- 
+netic approach. It is interesting to note that, 
+although a number of reaction mechanisms 
+have been proposed, no one has provided 
+evidence to identify the reaction that is actu- 
+ally taking place. Although kinetic studies 
+cannot be used to prove a reaction mecha- 
+nism, any mechanism proposed must at 
+least be consistent with the kinetic data. It 
+must also be remembered that solid-state 
+kinetic data generally give less information 
+on the chemistry of the reaction than is typi- 
+cally obtained from solution kinetic data. 
+One is really studying the physical parame- 
+ters that control the reaction rather than the 
+chemistry. The limitations on conclusions 
+that can be drawn from solid-state kinetic 
+data are discussed in more detail later in this 
+paper. 
+EXPERIMENTAL 
+Most of the experiments were carried out 
+using Union Carbide's low sodium USY ze- 
+olite, LZ-Y82, as the starting material. The 
+zeolite, as received, contained 0.20 wt% 
+Na20. Prior to adding either vanadium or 
+sodium, the powder was steamed in shallow 
+dishes for 16 h at 760°C. This treatment was 
+designed to simulate the state of the zeolite 
+in an equilibrium catalyst. During steaming 
+the unit cell size decreased from about 24.51 
+to 24.23 A. The latter value is typical of that 
+measured on USY containing equilibrium 
+catalyst samples from commercial units. 
+Vanadium was added using a variation of 
+the procedure published by Mitchell (15). 
+The steamed zeolite was impregnated using 
+a solution of vanadium acetonylacetate in 
+methanol. The methanol was removed by 
+evaporation and the impregnated samples 
+were then calcined 4 h at 538°C in air. All 
+of the time-temperature data were taken in 
+small fixed-bed tube units under 1 atm of 
+steam. The volume of the tubes is 90 cc and 
+the volume of water pumped was 40 cc per 
+h. The changes in the zeolite were followed 
+by both X-ray crystallinity and surface area 
+measurements using the ASTM methods. 
+When additional sodium was needed, it was 
+added to the steamed zeolite by ion ex- 
+change with Na2CO 3 solutions. The sodium- 
+exchanged zeolite was calcined 4 h at 538°C 
+before being impregnated with vanadium. 
+Lithium USY was prepared by exchang- 
+ing the steamed LZ-Y82 with LizCO 3. After 
+calcining, the exchanged sample analyzed 
+0.325 wt% Li20. There was no significant 
+change in the soda level. With the 0.20 wt% 
+Na20 already present this calculated to the 
+molar equivalent of 0.88 wt% Na20 on zeo- 
+lite. The rare-earth-exchanged USY was 
+prepared by exchanging the as-received LZ- 
+Y82 with a solution of mixed rare earth chlo- 
+rides until it contained 5.4 wt% RE203. The 
+sample was then steamed for 16 h at 760°C 
+and impregnated with vanadium using the 
+standard procedure. The steamed zeolite 
+had a unit cell size of 24.30 ,&. Low soda 
+CREY (Calcined Rare Earth Y) was pre- 
+pared by ion exchanging a sample of CREY 
+zeolite with ammoniumnitrate solution until 
+it contained 0.90 wt% Na20. The exchanged 
+sample, which contained 15.8 wt% mixed 
+rare earth oxides, was then steamed and 
+impregnated with 2000-ppm vanadium. The 
+steamed sample had a unit cell size of 24.38 
+A. 
+The sample of silicalite was donated by 
+Union Carbide. Since this material has es- 
+sentially no ion exchange sites, sodium was 
+added by impregnation to incipient wetness 
+using sodium acetate solutions. 
+
+<<<PAGE 4>>>
+ZEOLITE DESTRUCTION BY VANADIUM 
+517 
+• 740°C 
+X 760°C 
+J 
+• 780°C 
+2L 
+~ 800°C 
+tz 
+20 
+40 
+60 
+80 
+100 
+120 
+140 
+160 
+TIME, HR 
+FIG. 1. First-order kinetic data at 0.20 wt% Na20 and 
+no added vanadium. 
+RESULTS AND DISCUSSION 
+A. Destruction of Vanadium Containing 
+Steamed US Y 
+Figure 1 shows typical results obtained 
+with presteamed LZ-Y82 and no added va- 
+nadium. Figure 2 shows results with pre- 
+steamed LZ-Y82 at the same sodium level 
+as in Fig. 1 plus 1000 ppm added vanadium. 
+The data are plotted as the logarithm of the 
+relative zeolite crystallinity versus time. 
+The reaction is clearly first order with no 
+induction period. Figure 3 gives the first- 
+order rate constants that were measured for 
+the destruction of LZ-Y82, presteamed 16 h 
+at 760°C, as a function of both temperature 
+and vanadium concentration. The rate con- 
+3[ 
+• 7400C 
+: ;:00: c 
+e' 
+x 
+0 
+50 
+100 
+150 
+TIME, HR 
+200 
+FIG. 2. First-order kinetic data at 1000 ppm vanadium 
+and 0.20 wt% Na20. 
+.07 
+.<).s- 
+o 
+.06 
+. J - ~ 
+800 C 
+.05 
+JJ 
+h: 
+O/J 
+~ 
+7800C 
+~" .03 
+~ 
+- 
+.02( 
+j 
+_- 
+_~-- 
+_ ~L3~760oC 
+.01 - 
+X 
+. . . . . 
+-e~ 
+o 
+a,a 
+~ 
+, 
+, 740 C 
+1000 
+2000 
+3000 
+4000 
+VANADIUM, PPM 
+5000 
+FIG. 3. Rate constants versus vanadium concentra- 
+tion at 0.20 wt% Na20. 
+stants are directly proportional to the vana- 
+dium concentration. This would be true 
+whether the role of vanadium was that of a 
+reactant or of a catalyst. The fact that very 
+small amounts of vanadium have a large ef- 
+fect on the reaction rate and that it is not 
+consumed is more consistent with vanadium 
+being a catalyst. The catalytic role is also 
+consistent with Wormsbecker's finding that 
+the vanadium can be added to the catalyst 
+as V205, which is the form in which it is 
+usually found after zeolite destruction. The 
+fact that the data taken with added vana- 
+dium can be extrapolated to the rate con- 
+stants taken without vanadium is consistent 
+with the conclusion that the reaction under 
+study is the well-known steam destruction 
+of zeolite. To the best of our knowledge, 
+this is the first proof of two items: First, the 
+identification of the reaction taking place 
+and, second, the first kinetic proof of a cata- 
+lyzed 
+solid-state 
+phase 
+transformation. 
+There was some concern about using zeolite 
+that had been presteamed at 760°C to make 
+kinetic measurements at higher tempera- 
+tures. In Fig. 4, data from samples pre- 
+steamed at 780 and 800°C are compared with 
+the 780 and 800°C lines from Fig. 3 that 
+were measured using LZ-Y82 presteamed 
+at 760°C. It can be seen that there is good 
+agreement between the rate constants mea- 
+sured on the different starting materials. 
+Figure 5 is an Arrhenius plot of the data 
+from Fig. 3. From the slope of the lines, an 
+average activation energy of 79.0 kcal/mole 
+is calculated. 
+
+<<<PAGE 5>>>
+518 
+L.A. PINE 
+.07 
+800"C 
+.06 
+.05 
+~ .04 
+.03 
+7800C 
+.02 
+.01 
+0 
+10100 
+2000 
+3000' 
+40;0 
+5000 
+VANADIUM, PPM 
+FIG. 4. Presteaming temperature has minimal effect 
+on rate measurements. 
+An experiment was made to show that 
+steam is necessary as a reactant. Pre- 
+steamed LZ-Y82 was impregnated with 2000 
+ppm vanadium and then steamed 4 h at 
+760°C. This caused the crystallinity to de- 
+crease by ll% so it should be adequate to 
+disperse the vanadium. The sample was 
+then heated in dry air at 760°C for an addi- 
+tional 100 h. No further change in the crys- 
+tallinity could be detected. From our kinetic 
+measurements we would have predicted the 
+zeolite to be 50% converted in 30 h in the 
+presence of 1 atm of steam. 
+.10 
+u
+~
+ 
+AE = 79.0 KCAL/MOLE 
+\ 
+- 
+\ 
+VANADIUM,. PPM 
+;,\ 
+",~ 
+\ 
+. 
+looo 
+~ 
+~ 
+"N,, 
+0 
+2000 
+*\\ 
+\ 
+-~ 
+• ,ooo 
+T -1 x 10 3 , °K-1 
+FIG. 5. Effect of temperature on reaction rate at 0.20 
+wt% Na20. 
+Most of the theoretical basis for the inter- 
+pretation of solid-state kinetics was devel- 
+oped by Avrami almost 50 years ago 
+(16-18). The theory is based on a model 
+involving nucleation followed by growth. 
+Nucleation is usually considered to be a het- 
+erogeneous process occurring at defects 
+such as impurities and grain boundaries. 
+Once activated the nuclei grow until phase 
+transformation is complete. The process can 
+be visualized as a random distribution of 
+points growing into overlapping spheres lim- 
+ited by the boundaries of the crystal. There 
+are limitations in the original Avrami treat- 
+ment that have been dealt with by Cardew 
+and co-workers (19). This group addressed 
+the effects of crystal size and developed a 
+theory that, under certain circumstances, 
+allows one to obtain kinetic data for both 
+the nucleation and growth parameters and to 
+make meaningful studies on powders. The 
+most information that one can expect from 
+solid-state kinetic data is the relative rates 
+of nucleation and growth. Under the limiting 
+cases where this ratio approaches either in- 
+finity or zero one obtains only the nucleation 
+rate or the growth rate. When the process is 
+nucleation controlled the kinetic data can be 
+displayed as a simple first-order plot. If 
+there is no induction period the line will pass 
+through the origin. The slope of this line, 
+usually called the first-order rate constant, is 
+also equal to the reciprocal of the nucleation 
+time constant. It is important to note that 
+the results will be essentially the same 
+whether the nuclei are randomly distributed 
+on the surface or within the interior of the 
+crystal. Although the kinetic results can 
+identify nucleation as the rate limiting step, 
+they do not yield any information on the 
+mechanism of nucleation. It is very tempting 
+to draw conclusions about reaction mecha- 
+nisms as one would with results from homo- 
+geneous kinetic studies. However, this is 
+not often warranted. It must be remembered 
+that the model for solid-state reactions is 
+not based on transition state theory. Even 
+obedience of the rate data to the Arrhenius 
+equation does not necessarily confirm the 
+
+<<<PAGE 6>>>
+ZEOLITE DESTRUCTION BY VANADIUM 
+519 
+dominance of a single rate controlling step 
+(25). In the present case where the activa- 
+tion energy does not change as vanadium is 
+added to the system and the kinetic results 
+show that the reaction is nucleation limited, 
+it is very tempting to relate the preexponen- 
+tial or frequency factor to the number of 
+nucleation sites. However, the limitations 
+on drawing conclusions on reaction mecha- 
+nisms from solid-state kinetic data are such 
+that this is probably not justified. Refer- 
+ences (25, 26) provide a good introduction 
+for those wishing to read more about this 
+problem. 
+The literature was searched for solid-state 
+reactions analogous to the USY-steam sys- 
+tem that had been studied kinetically. It was 
+hoped that a case would be found where 
+there was kinetic proof of a catalyzed solid- 
+state phase transformation. However, a 
+computer search never found the words cat- 
+alyst and phase transformation linked in any 
+way. Most of the kinetic data in the litera- 
+ture involve either the sintering of two react- 
+ants to make a product or a thermal decom- 
+position with a gaseous byproduct. There is 
+very little data on simple high-temperature 
+phase transitions. The most analogous sys- 
+tem found was the transition of titania from 
+the anatase to the rutile structure. It takes 
+place between 400 and 1000°C and has an 
+activation energy of 90 to 120 kcal/kmole. 
+The value depends on the method of prepa- 
+ration and purity of the starting samples. 
+The system has been extensively studied by 
+Rao and co-workers who found the reaction 
+to be nucleation rate limited (20-22). First- 
+order rate constants at 760°C are about 0. I 
+h-1. Both the rate constants and the activa- 
+tion energies are in the same order of magni- 
+tude as those measured for the USY-steam 
+system. Another system somewhat analo- 
+gous to the USY-steam system is the transi- 
+tion of tetragonal to monoclinic zirconia. 
+The rate of this reaction is influenced by 
+impurities but the kinetic data do not iden- 
+tify any of these as catalysts. In a study 
+using highly purified samples, the rate was 
+found to be nucleation limited above 570°C 
+.10 "I 
+  ooo, ,v 
+• 
+~ 
+1000 PPM V 
+~ 
+500 PPM V 
+0 
+0.5 
+1.0 
+1.5 
+Na20, WT.% 
+FIG. 6. Effect of sodium on reaction rates at constant 
+vanadium. Reaction temperature is 760°C. 
+and growth limited below this temperature 
+(23). The activation energy where the reac- 
+tion is nucleation limited is 138 kcal/mole 
+and is only 17.8 kcal/mole where the reac- 
+tion is growth limited. High activation ener- 
+gies seem to be typical for nucleation-lim- 
+ited phase transitions. These need not 
+always be high temperature reactions as the 
+transformation of grey to white tin, which 
+takes place between 30 and 36°C, can have 
+an activation energy of 60 kcal/mole. Fur- 
+ther refinement of this data to calculate an 
+activation energy for spontaneous nucle- 
+ation yielded a value of 120 kcal/mole (24). 
+The literature search confirmed that the ki- 
+netic results from the present study were 
+reasonable for a nucleation-limited solid- 
+state phase transformation. 
+B. Effect orlon Exchange on Reaction 
+Rates 
+The effect of sodium level on the steam 
+stability of USY was also addressed. The 
+results, plotted in Fig. 6, show that at sev- 
+eral levels of vanadium the rate constants 
+are directly proportional to the sodium 
+level. Extrapolation of the data in Fig. 6 to 
+zero sodium leads to the conclusion that 
+USY with extremely low sodium levels 
+would have very high vanadium tolerance. 
+This must be verified by experiment. Tem- 
+perature response data for two levels of so- 
+dium on vanadium-free zeolite are plotted 
+in Fig. 7. The activation energy is about the 
+same as that measured for the low sodium 
+
+<<<PAGE 7>>>
+520 
+L.A. PINE 
+.101 
+AE = 76.6 KCAL/MOLE 
+n- 
+~ ::;12 WTT:~ N::oO 
+"00!15 
+.96 
+.;7 
+.98 
+.;9 
+1.00 
+1.11 1.02 
+1/T x 10, °K-1 
+FIG. 7. Effect of temperature on vanadium free USY 
+at 0.71 and 1.32 wt% Na20. 
+.10 
+.OB 
+.08 
+.04 
+"7 ~e 
+-r 
+.02 
+.01 
+,008 
+L|-USY 
+I 
+I 
+I 
+.95 
+.96 
+.97 
+1/T x 103 , °K-1 
+FIG. 8. Effect of lithium exchange on reaction rate. 
+LZ-Y82 system with vanadium as the cata- 
+lyst. It is clear that the role of sodium is very 
+similar to that of vanadium. Both catalyze 
+the steam destruction of USY. There is 
+some synergism between the two catalysts. 
+This is evident from Figure 6. If there were 
+no synergism, the slopes of all the lines 
+would be the same and the data would plot 
+as a series of parallel lines. 
+If we compare the slopes of the 0 ppm 
+vanadium line in Fig. 6 with the 760°C line 
+in Fig. 3 we can make an assessment of the 
+relative strength of the two catalysts. The 
+results of such a comparison, given in Table 
+1, show that the two metals have about equal 
+activity. This is true whether the active spe- 
+cies is calculated as the metal or the oxide. 
+Since we do not have a zero sodium example 
+with vanadium, this type of assessment is 
+confounded by any synergy from the 0.20 
+TABLE I 
+Comparison of Sodium and Vanadium 
+as Catalysts 
+Active species 
+K/1000 ppm at 760°C 
+Na 
+0.0027 
+Na20 
+0.0020 
+V 
+0.0038 
+V_~O 5 
+0.0021 
+wt% Na20 that is present. The challenge is 
+to devise a mechanism that can accommo- 
+date such chemically different species as 
+catalysts to the same reaction and to explain 
+why there is synergism between them. 
+The effect that other cations can have on 
+the reaction rate was also investigated. Po- 
+tassium-exchanged USY could not be dis- 
+tinguished from sodium exchanged USY 
+when the results were compared on an equal 
+molar basis. Lithium is slightly less effective 
+than sodium as a catalyst. This is shown in 
+Fig. 8 where the lines are those predicted for 
+USY containing sodium at the same molar 
+equivalent. The points are the actual data 
+from the kinetic measurements using the 
+lithium-exchanged zeolite. Figure 9 shows 
+that rare earth exchange of USY does not 
+change the rate of reaction. The lines in Fig. 
+9 are from the kinetic data obtained for pre- 
+steamed LZ-Y28 containing 0.20 wt% Na20 
+and the points are from the kinetic measure- 
+ments with USY containing 5.4 wt% RE203. 
+CREY was also tested. In order to elimi- 
+nate any effect of sodium, the comparison 
+with USY was made at the same level. The 
+results, shown in Fig. 10, are somewhat sur- 
+prising. At this sodium level, which is typi- 
+cal for CREY in commercial catalysts, 
+CREY is more steam stable than USY. 
+USY-containing catalysts are usually con- 
+
+<<<PAGE 8>>>
+ZEOLITE DESTRUCTION BY VANADIUM 
+521 
+RE-USY 
+TABLE 2 
+.02 
+.01 
+& 
+-I- .008 
+.006 
+.004 
+.002 
+.... 
+iii 
+,95 
+.96 
+.97 
+lIT X 103 , °K-1 
+Steam Stability of Silicalite in the Presence of 
+Sodium and Vanadium 
+wt% 
+0 
+0.5 
+1.0 
+1.5 
+Na,O 
+Surface area (m2/g) 
+Calcined 4 h at 538°C 
+401 
+308 
+227 
+174 
+Steamed 4 h at 760°C 
+354 
+7 
+I 
+4 
+Vanadium 
+Surface area (m2/g) 
+Calcined 4 h at 538°C 
+418 
+430 
+407 
+402 
+Steamed 4 h at 760°C 
+349 
+284 
+211 
+181 
+First-order rate constant, h i 
+0.0414 
+0.104 
+0.164 
+0.200 
+FIG. 9. Effect of rare earth exchange on reaction 
+rate. 
+by product, occurring after the zeolite is 
+destroyed. 
+sidered to be more steam stable than CREY- 
+containing catalysts. This is because, in typ- 
+ical catalysts, USY almost always contains 
+less than 0.9 wt% Na~O. The fact that the 
+slopes of all of the lines in the figure are 
+about the same shows that there is little dif- 
+ference in the vanadium tolerance of the two 
+zeolites. In this comparison CREY appears 
+to be more vanadium tolerant than USY be- 
+cause it is inherently more steam stable at 
+this high sodium level. These results, along 
+with those on USY in Fig. 9, indicate that 
+rare earths do not take a direct part in the 
+reaction between vanadium and Y zeolites. 
+The formation of rare earth vanadates is a 
+.10 
+'T 
+¢~ .05 
+• USY AT 0.90 Na20 
+OCREY AT 0.00 Na20 
+I 
+I 
+1000 
+2000 
+VANADIUM, PPM 
+FIG. 10. Comparison of USY and CREY zeolites at 
+0.90 wt% Na20. 
+C. Steam Stability of Silicalite 
+Data on the stability of silicalite in the 
+presence of both sodium and vanadium are 
+given in Table 2. The concept behind this 
+experiment was to determine the vanadium 
+tolerance of a zeolite that is essentially free 
+of alumina. Faujasites that contain the least 
+amount of framework alumina are usually 
+the most steam stable. From this it is often 
+inferred that steam destabilization is accom- 
+plished via some form of dealumination re- 
+action. Vanadium does not attack silicalite 
+in dry air. The surface areas are essentially 
+unchanged after 4 h at 760°C. However, va- 
+nadium does attack silicalite in the presence 
+of steam. By taking the calcined surface area 
+as being directly proportional to the starting 
+zeolite concentration and the steamed sur- 
+face area as being proportional to the uncon- 
+verted zeolite, one can calculate crude first- 
+order rate constants. These constants are 
+plotted in Fig. 11. As with USY, the rate 
+constants for the vanadium-catalyzed reac- 
+tions extrapolate to the rate constant for 
+the vanadium-free reaction. The slope of the 
+line is almost threefold higher than that in 
+Fig. 3 for USY at the same temperature and 
+vanadium loading. These data show that sili- 
+calite is less tolerant of vanadium than USY 
+and that the attack on a zeolite crystal by 
+
+<<<PAGE 9>>>
+522 
+L.A. PINE 
+.200 
+7 
+-r- 
+~" .100 
+I 
+I 
+5000 
+10,000 
+15,000 
+VANADIUM, PPM 
+Fro. 1 I. Vanadium tolerance of silicalite at 760°C. 
+steam in the presence of vanadium can in- 
+volve a Si-O bond. However, the effect of 
+soda on silicalite is different enough from its 
+effect on Y zeolites that the analogy with 
+vanadium is weakened. Silicalite has con- 
+siderably less sodium resistance than USY 
+in both dry air and steam. The difference is 
+great enough to imply a different mecha- 
+nism. The destruction of silicalite in dry air 
+is consistent with some sort of sintering 
+mechanism. This could be providing a paral- 
+lel path for the destruction silicalite in addi- 
+tion to the vanadium-steam route. 
+D. Proposed Reaction Pathway 
+Examination of LZ-Y82, that had been 
+impregnated with 2 wt% vanadium, by both 
+secondary ion mass spectroscopy (SIMS) 
+and X-ray photoelectron spectroscopy 
+(XPS) showed that the surface concentra- 
+tion of vanadium, both after calcining and 
+after steaming, was about 2 to 3 times higher 
+than would be expected from the bulk con- 
+centration. A surface enrichment of only 
+threefold does not preclude some of the va- 
+nadium migrating into the interior of the zeo- 
+lite particles. However, depth profiling ex- 
+periments with X-ray photoemission and 
+low-energy ion scattering clearly indicate 
+the enrichment of vanadium + 5 on the ex- 
+ternal surface of both the calcined and 
+steamed zeolites. Based on luminescence 
+studies any vanadium on the calcined sam- 
+pie that is inside the zeolite crystal is likely 
+to be present as VO + 2 ions (27). However, 
+after steaming the vanadium is almost all in 
+the + 5 state. If it was in the form of vanadic 
+acid in the presence of steam, the vanadium 
+should now be largely in an anionic form 
+and would have no driving force to penetrate 
+the zeolite. 
+The silicalite experiment shows that 
+steam destruction need not proceed by de- 
+alumination and the kinetic evidence from 
+the Y zeolite studies strongly indicates that 
+the reaction is not proceeding via a dealumi- 
+nation step. The three or four tetrahedral 
+alumina sites per unit cell remaining in 
+steamed USY would presumably be ran- 
+domly distributed throughout the zeolite 
+crystals and be protected from a species that 
+prefers a surface location. Approximately 
+4500 ppm vanadium is needed to provide a 
+vanadium atom for each alumina site per 
+unit cell. Even though the vanadium is quite 
+mobile and we are dealing with average val- 
+ues on the number of sites, it seems unlikely 
+that the rate of reaction would be directly 
+proportional to vanadium concentration at 
+very low levels if nucleation was taking 
+place at the site of framework alumina 
+atoms. The rare-earth-exchanged USY had 
+about 3 times the number of framework alu- 
+minum atoms but had essentially the same 
+reaction rate with steam as LZ-Y82 both in 
+the presence and absence of vanadium. The 
+fact that CREY and USY show the same 
+vanadium tolerance when CREY has almost 
+5 times as many framework aluminum atoms 
+per unit cell is also inconsistent with frame- 
+work alumina being the site of attack by 
+vanadium. 
+In spite of our ignorance about the de- 
+tailed mechanism of the base reaction, it 
+is possible to propose a mechanism that is 
+consistent with the known facts and that 
+can explain why such chemically different 
+species as vanadium and sodium could act 
+the same catalytically. If vanadium has dif- 
+ficulty penetrating the zeolite crystal, it may 
+be limited to primarily taking part in a sur- 
+face reaction. Vanadium, either as oxide or 
+
+<<<PAGE 10>>>
+ZEOLITE DESTRUCTION BY VANADIUM 
+523 
+in some partially hydroxylated form, would 
+be a weak base and could react with the 
+hydroxyl groups on the surface of the zeo- 
+lite. This would have a destabilizing effect 
+on any adjacent Si-O-Si bond which would 
+make it more amenable to hydrolysis by 
+steam. A sodium ion could react with a hy- 
+droxyl group in a similar manner. Even 
+though sodium atoms can move throughout 
+the entire zeolite crystal, there would not be 
+any Si-OH groups in the interior except at 
+the sites of crystal defects which would be 
+potential nucleation sites. The catalytic ef- 
+fects of both vanadium and sodium should 
+be similar because with either material the 
+rate of nucleation would be limited by the 
+number of total hydroxyl groups which are 
+present. Since most of the hydroxyl groups 
+are on the exterior surface, the two metals 
+would have nearly the same catalytic activ- 
+ity. The proposal that Si-OH groups are the 
+sites of attack is also consistent with the 
+reduced steam stability of a small particle Y 
+zeolite which would have a high surface to 
+volume ratio (28). This proposal does not 
+account for the synergism observed be- 
+tween vanadium and sodium as catalysts. 
+The occurrence of either sintering or melting 
+is often a problem in experiments of this 
+type and could give an effect similar to syn- 
+ergism. However, in the experiment to show 
+the necessity of steam, there was no detect- 
+able change in the LZ-Y82 after 100 h at 
+760°C. This indicates that steam is neces- 
+sary for the synergistic effect just as it is for 
+the uncatalyzed reaction and that it is not a 
+melting or sintering phenomena as this 
+would take place in dry air. Understanding 
+synergism is often quite difficult and will 
+require more information than the present 
+study can provide. 
+CONCLUSIONS 
+This study clearly shows that the reaction 
+taking place in the presence of either vana- 
+dium or sodium is the steam destruction of 
+zeolite. Steam is a necessary reactant and 
+the role of vanadium and sodium are that of 
+catalysts. The present study is believed to 
+be the first kinetic proof of a catalyzed solid- 
+state phase transition. Both sodium and va- 
+nadium have about the same activity as cata- 
+lysts and there is some synergism between 
+them. From the solid-state kinetic results 
+we can conclude that both materials en- 
+hance the rate of nucleation but the results 
+do not give any direct information as to how 
+this takes place. As a catalyst, potassium is 
+about equal to sodium and lithium is slightly 
+less active. Rare earths do not change vana- 
+dium tolerance. Their effect is an indirect 
+one of changing the base steam stability of 
+the zeolite. XPS results show that vanadium 
+does not uniformly penetrate the zeolite 
+crystal suggesting that the attack may be 
+predominantly at the surface. This result, 
+along with the poor vanadium tolerance of 
+silicalite and the fact that vanadium toler- 
+ance is not a function of unit cell size, 
+strongly indicates that the point of attack is 
+not at the tetrahedral alumina site in the 
+zeolite framework. A more probable site of 
+attack is at a Si-OH bond. This would also 
+be true in the absence of vanadium and 
+should cause us to reevaluate our thinking 
+on the mechanism of the uncatalyzed reac- 
+tion of zeolites with steam. 
+ACKNOWLEDGMENTS 
+The author acknowledges S. M. Davis for providing 
+the SIMS and XPS results and for many useful discus- 
+sions of the data. I also thank Exxon for giving permis- 
+sion to publish these results. 
+REFERENCES 
+1. Ritter, R. E., Rheaume, L., Welsh, W. A., and 
+Magee, J. S., Oil Gas J. 103 (1981). 
+2. Jaras, S., Appl. Cata/. 2, 207 (1982). 
+3. Venuto, P. B., and Habib, E. T., Catal. Reo. Sci. 
+Eng. 18 (1978). 
+4. Gall, J. W., Nieison, R. H., McKay, D. L., and 
+Mitchell, N. W., in "NPRA Annual Meeting, San 
+Antonio, Texas, 1982." 
+5. Wormsbecher, R. F., UK Patent Application GB 
+2138314A, April 21, 1983. 
+6. Groenenboom, C. J., European Patent Application 
+0194536, September 19, 1986. 
+7. Woolery, G. L., Chin, A. A., Kirker, G. W., and 
+
+<<<PAGE 11>>>
+524 
+L.A. PINE 
+Huss, A., Jr., Amer. Chem. Soc. Div. Pet. Chem. 
+32, 663 (1987). 
+8. Altomare, C. A., Koermer, G. S., Martins, E., and 
+Schubert, P. F., Appl. Catal. 45, 291 (1988). 
+9. Masuda, T., Ogata, M., Ida, T., Takakura, K., and 
+Nishimura, Y., J. Japan. Petrol. Inst. 26(5), 344 
+(1983). 
+10. Upson, L. S., Jaras, S., and Dalin, I., Oil Gas J. 
+137 (1982). 
+11. Mauge, F., Courcella, J. C., Engelhard, Ph., Gal- 
+lezot, P., and Grosmangin, J., Stud. Surf. Sci. Ca- 
+tal. 28, 803 (1986). 
+12. Murphy, J. R., and Treese, S. A., in "American 
+Petroleum Institute Proceedings, 44th Midyear 
+Meeting, May 14-17, 1979." 
+13. Wormsbecher, R. F., Peters, A. W., and Maselli, 
+J. M., J. Catal. 100, 130 (1986). 
+14. Yannopoulos, L. N., J. Phys. Chem. 72, 3293 
+(1968). 
+15. Mitchell, B. R., Ind. Eng. Chem. Prod. Res. Dev. 
+19, 209 (1980). 
+16. Avrami, M., J. Chem. Phys. 7, 1103 (1939). 
+17. Avrami, M., J. Chem. Phys. 8, 212 (1940). 
+18. Avrami, M., J. Chem. Phys. 9, 177 (1941). 
+19. Cardew, P. T,, Davey, R. J., and Ruddick, A. J., 
+J. Chem. Soc., Faraday Trans. 2 80, 659 (1984). 
+20. Czanderna, A. W., Rao, C. N. R., and Honig, 
+J. M., Trans. Faraday Soc. 54, 1069 (1958). 
+21. Rao, C. N. R., Canad. J. Chem. 39, 498 (1961). 
+22. Yoganarsimhan, S. R., and Rao, C. N. R., Trans. 
+Faraday Soc. 58, 1579 (1962). 
+23. Whitney, E. D., Trans. Faraday Soc. 61, 1981 
+(1965). 
+24. Burgers, W. G., and Groen, L. J., Discuss. Fara- 
+day Soc., 183(23) (1957). 
+25. Galwey, A. K., Therm. Anal. Proc. Int. Conf. 7th 
+1982 1, 38 (1982). 
+26. Brown, M. E., and Galwey, A. K., Therm. Anal. 
+Proc. Int. Conf. 7th 1982 1, (1982). 
+27. Anderson, M. W., Occelli, M. L., and Suib, S. C., 
+J. Catal. 118, 31 (1989). 
+28. Camblor, M. A., Corma, A., Martinez, A., Mo- 
+choli, F. A. and Pariente, J. P., Appl. Catal. 55, 65 
+(1989). 
+29. Hettinger, W. P., Beck, H. W., Cornelius, E. B., 
+Doolin, P. K., Kmecak, R. A., and Kovach, S. M., 
+Amer. Chem. Soc. Div. Pet. Chem. 28(4), 920 
+(1983). 

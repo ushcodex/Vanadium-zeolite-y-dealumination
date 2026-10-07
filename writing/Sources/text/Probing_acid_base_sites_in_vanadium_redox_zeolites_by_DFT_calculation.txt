@@ -1,0 +1,278 @@
+
+<<<PAGE 1>>>
+Probing acid–base sites in vanadium redox zeolites by DFT calculation and
+compared with FTIR results
+Frederik Tielens a,b,*, Stanislaw Dzwigaj a,b,*
+a UPMC Univ Paris 06, UMR 7197, Laboratoire de Re´activite´ de Surface, Tour 54-55, 2e`me e´tage - Casier 178, 4, Place Jussieu, F-75005 Paris, France
+b CNRS, UMR 7197, Laboratoire de Re´activite´ de Surface, Tour 54-55, 2e`me e´tage - Casier 178, 4, Place Jussieu, F-75005 Paris, France
+1. Introduction
+Zeolites doped with transition metals ions are an extremely
+important class of catalysts with remarkable properties [1–8]. The
+insertion of transition metal ions into the zeolite framework can
+lead to modify the reactivity of zeolites, either by introduction of
+redox sites and modulation of acid–base properties.
+In particular, introduction of vanadium ions into the zeolite
+allows to obtain catalysts with efﬁcient activity in many selective
+oxidative processes [2,3]. The incorporation of vanadium ions into
+the framework was for a long time a very difﬁcult task. Dzwigaj
+et al. [9–12] have reported that catalytically active vanadium (V)
+sites can be incorporated in the BEA framework by a two-step
+postsynthesis method. This method allows to incorporate V as
+different kinds of tetrahedral V(V) species evidenced by diffuse
+reﬂectance UV–vis, 51V MAS NMR, XAS and photoluminescence
+spectoscopies [4,9–13]. The models of tetrahedral V(V) species and
+their probable location in the structure of BEA zeolite have been
+proposed.
+To conﬁrm these models, ab initio periodic DFT calculations
+have been performed [14,15]. Different vanadium framework site
+models were proposed after a systematic theoretical study of the
+substitution of a tetrahedral framework site (T-site) by vanadium
+atoms. The vanadium framework sites were characterized by their
+calculated geometrical parameters and vibrational frequencies.
+The results obtained were found to be fully consistent with
+experimental data reported earlier by Dzwigaj et al. [13,16] and
+allow to identify the molecular structure of the vanadium sites in
+the zeolite framework.
+Using the acquired knowledge on the molecular structure of V
+sites in zeolites, their reactivity is investigated and more precisely
+their acid–base properties, taken into account our earlier works on
+the acidity and adsorption properties of zeolites [14,15,17–25].
+We report in this paper protonation and deprotonation energies
+of different vanadium sites and a geometry of experimentally
+observed Lewis and Brønsted acid sites is proposed. A inter-
+conversion path is proposed between the vanadyl site and the penta
+coordinated V-OH site. These theoretical results are compared with
+experimental FTIR investigation of pyridine adsorption.
+2. Methodology
+2.1. Computational details
+All calculations are performed using ab initio plane-wave
+pseudopotential calculations implemented in VASP [26,27]. The
+Perdew–Burke–Ernzerhof (PBE) functional [28–30]
+has been
+chosen to perform the periodic DFT calculations with an accuracy
+on the overall convergence tested elsewhere [31–34]. The valence
+electrons are treated explicitly and their interactions with the ionic
+Catalysis Today 152 (2010) 66–69
+A R T I C L E
+I N F O
+Article history:
+Available online 28 October 2009
+Keywords:
+Zeolites
+Vanadium
+Pyridine
+Acidity
+Basicity
+DFT
+FTIR
+A B S T R A C T
+Ab initio periodic DFT calculations in combination with experimental FTIR of adsorption pyridine
+investigations have been used to study the acid–base properties of vanadium doped zeolite materials. It
+is evidenced that VO-H groups of V(V) and V(IV) framework sites are more acidic than SiO-H groups
+present in siliceous zeolites. It is proposed for the ﬁrst time that the protonation of the penta coordinated
+V site can lead to the formation of a stable vanadyl group containing site through proton exchange, which
+is expected to be the inter-conversion path between both sites. We report in this paper protonation and
+deprotonation energies of different vanadium sites, and a geometry of experimentally observed Lewis
+and Brønsted acid sites is proposed.
+ 2009 Elsevier B.V. All rights reserved.
+* Corresponding authors at: UPMC Univ Paris 06, UMR 7197, Laboratoire de
+Re´activite´ de Surface, Tour 54-55, 2e`me e´tage - Casier 178, 4, Place Jussieu, F-75005
+Paris, France.
+E-mail addresses: frederik.tielens@upmc.fr (F. Tielens),
+stanislaw.dzwigaj@upmc.fr (S. Dzwigaj).
+Contents lists available at ScienceDirect
+Catalysis Today
+journal homepage: www.elsevier.com/locate/cattod
+0920-5861/$ – see front matter  2009 Elsevier B.V. All rights reserved.
+doi:10.1016/j.cattod.2009.09.006
+
+<<<PAGE 2>>>
+cores are described by the Projector Augmented-Wave method
+(PAW) [35,36], which allows to use a low energy cut off equal to
+500 eV for the plane-wave basis.
+A (3  3  3) k-point grid is used in the Brillouin-zone sums,
+and the partial occupancies are set for each wave function using
+the tetrahedron method with Blo¨chl et al. corrections [37]. The
+positions of all the atoms in the super cell as well as the cell
+parameters are relaxed, in the potential energy determined by the
+full quantum mechanical electronic structure until the total energy
+differences between the loops decrease below 104 eV. The
+systems with unpaired electrons are calculated taking into account
+their spin state.
+2.2. Description of the models
+The model sites are based on the structures discussed in Refs.
+[14,15]. Vanadium(V)isstabilizedin the zeoliteframework modeled
+by a three dimensional sodalite framework in two different
+tetrahedral sites: one in the form of site A with a stable vanadyl
+group and the other site B possessing an hydroxyl group (Fig. 2).
+Tetrahedral vanadium(IV) sites, in the form, of site B0 (Fig. 3)
+much less stable, are also present with an acidic hydroxyl group.
+In the present work the acidity and basicity is probed by
+calculating deprotonation (Eq. (1)) and protonation energies
+(Eq. (2)) of the most stable sites. The deprotonation energy is
+calculated as follows:
+DEde prot: ¼ EðV ZeolÞ  EðV Zeol HÞ
+(1)
+and the protonation energy as follows:
+DE prot: ¼ EðV Zeol H2
+þÞ  EðV Zeol HÞ
+(2)
+3. Results and discussions
+Site A (Figs. 1 and 2), the site containing a V(V) vanadyl group,
+has a protonation energy of 3.91 eV considering a proton attack
+Fig. 1. Location of sites A and B in the sodalite framework.
+Fig. 2. Protonation of zeolite sites A and B leading to the reorganization of both sites. Both sites have a V in oxidation state +5. A possible conversion path between sites A and B
+is indicated with a bidirectional arrow.
+F. Tielens, S. Dzwigaj / Catalysis Today 152 (2010) 66–69
+67
+
+<<<PAGE 3>>>
+on the vanadyl oxygen atom, and 3.67 eV considering an attack
+on the bridging oxygen atom. The bridging oxygen is, thus, found
+less basic, which was already predicted from the electrostatic
+potential and the electronic Fukui function on the same models
+[17,18]. It should be noted that the protonation of the vanadyl
+oxygen atom was found to be in competition with the protonation
+of silanol oxygen atom, and thus globally less basic in the zeolite
+than the energies show. The same result indicates that vanadium
+sites in zeolites have different chemical behavior than those
+observed for vanadium supported on reducible oxides, such as TiO2
+[38–41]. Indeed, vanadium supported on reducible oxides shows
+more reactive bridging oxygen atoms than vanadyl oxygen atoms.
+If the oxygen of VO-H group is protonated (site B, Fig. 2), a
+hydrated tetrahedral (VO4)+H2O site is formed with protonation
+energy of 5.08 eV, while the protonation of the bridging oxygen,
+with energy of 4.55 eV, leads to the formation of tetrahedral
+hydroxylated (VO4OH)+ site by hydrolysis of the Si–O–V linkage
+and a reorganization of this site (Fig. 1). The latter site might lead to
+the formation of site A (see Fig. 2).
+These results indicate that also for site B the bridging oxygen is
+less basic than the hydroxyl oxygen. Protonation of this site leads
+after reorganization (without energy barrier) to a tetrahedral V+
+Lewis acidsite, which is observed experimentally [10]. Interesting,is
+that the protonation of the bridging oxygen atom of site B can lead to
+the formation of site A (see Fig. 2), with a calculated reaction energy
+gain for this process equal to (4.55  (3.91) eV) 0.64 eV in favor
+of site A. Protonation of site B can thus lead to the site A, without
+taking into account kinetic and structural effects.
+The terminal oxygen atoms, from vanadyl or V-OH groups, are
+in both sites the most reactive atom towards protonation. It was
+found that site A is the most stable site [14], and, protonation of its
+vanadyl oxygen is energetically less favorable than protonation of
+site B.
+Site B (with V(V)) (Fig. 3) and site B0 (with V(IV)) (Fig. 3) have a
+deprotonation energy of 4.68 and 4.86 eV, respectively, which
+suggests that the VO-H groups of both sites are more acidic than
+the SiO-H groups (5.92 eV).
+These theoretical results are in line with experimental FTIR data
+of adsorption pyridine, used as probe molecule for measuring
+acidity of O-H groups in SiBEA and VSiBEA zeolites [14,15].
+Brønsted acidic character of O-H groups in the case of VSiBEA
+zeolites is conﬁrmed by appearance of bands of pyridinium cations
+at 1542 cm1 after adsorption of pyridine at room temperature. In
+contrast, this pyridinium cations IR band is not observed for SiBEA
+sample. In contrast, for both zeolite samples, the bands at 1638,
+1596, 1580, 1490, 1485, 1446 and 1439 cm1 are observed (results
+not shown) corresponding to pyridine interacting with Lewis
+acidic sites and/or physisorbed in line with earlier work [10]. The
+latter bands appear also for VSiBEA zeolite but with much higher
+intensity suggesting higher amounts of Lewis acidic sites than for
+SiBEA zeolite. These experimental results are in agreements with
+theoretical ones discussed above and conﬁrm the formation of the
+tetrahedral V+ Lewis acid site upon incorporation of vanadium ions
+into the framework of zeolite.
+Our theoretical results suggest in good relation with ab initio
+periodic
+DFT
+calculation
+data
+and
+ﬁrst
+approximation
+that
+energetically, the model of tetrahedral V+ Lewis acid site is created
+intheframeworkofV-loadedzeoliteuponprotonation(Fig.2,siteB).
+Moreover, these results show that energetically, more favorable
+process is protonation, indicating that vanadium loaded zeolites
+are more basic than acidic. This result is in agreement with former
+theoretical results of Tielens et al. [17,18] using the theoretical
+reactivity descriptors, such as the electrostatic potential and Fukui
+functions, in group 5 loaded zeolite structures.
+4. Conclusions
+Periodic DFT calculations used in combination with FTIR
+investigations have evidenced that VO-H groups of V(V) and
+V(IV) framework sites are more acidic than SiO-H groups present in
+siliceous zeolites. It is important to mention that experimental
+FTIR measurements with adsorption of pyridine, used as probe
+molecule, allow distinguishing in VSiBEA zeolite both Lewis and
+Brønsted acidic sites. The geometry of Lewis acid site is found to be
+a tetrahedral V+ site, and the Brønsted acid site a penta coordinated
+V sites having an OH group.
+The theoretical calculations suggest that V sites present in V-
+loaded zeolite are more basic than acidic. It is found that the
+protonation of the least stable B site can lead to the formation of
+stable A site containing vanadyl group through proton exchange,
+which can be expected as the inter-conversion path between both
+sites.
+Acknowledgements
+This work was performed using HPC resources from GENCI-
+[CCRT/CINES/IDRIS] (Grant 2009-[x2009082022]) and the CCRE of
+Universite´ Pierre et Marie Curie.
+References
+[1] P.B. Venuto, Micropor. Mesopor. Mater. 2 (1994) 297.
+[2] A. Corma, Chem. Rev. 97 (1997) 2373.
+[3] B. Notari, Adv. Catal. 41 (1996) 253.
+[4] M. Anpo, S. Dzwigaj, M. Che, Adv. Catal. 52 (2009) 1.
+[5] K. Chen, A.T. Bell, E. Iglesia, J. Chem. Phys. B 104 (2000) 1292.
+[6] A. Tavolaro, J. Therm. Anal. 47 (1996) 171.
+[7] A. Clark, Catal. Rev. 3 (1969) 145.
+[8] B.M. Weckhuysen, R. Schoonheydt, Catal. Today 51 (1999) 215.
+[9] S. Dzwigaj, M.J. Peltre, P. Massiani, A. Davidson, M. Che, S. Sen, S. Sivasankar, J.
+Chem. Soc., Chem. Commun. (1998) 87.
+[10] S. Dzwigaj, P. Massiani, A. Davidson, M. Che, J. Mol. Catal. A 155 (2000) 169.
+[11] S. Dzwigaj, M. Matsuoka, M. Anpo, M. Che, J. Phys. Chem. B 104 (2000) 6012.
+[12] K. Gora-Marek, J. Datka, S. Dzwigaj, M. Che, J. Phys. Chem. B 110 (2006) 6763.
+[13] R. Hajjar, Y. Millot, P.P. Man, M. Che, S. Dzwigaj, J. Phys. Chem. C 112 (2008) 20167.
+[14] F. Tielens, M. Calatayud, S. Dzwigaj, M. Che, Micropor. Mesopor. Mater. 119 (2009)
+137.
+[15] F. Tielens, M. Trejda, M. Ziolek, S. Dzwigaj, Catal. Today 139 (2008) 221.
+[16] S. Dzwigaj, E.M. El Malki, M.J. Peltre, P. Massiani, A. Davidson, M. Che, Top. Catal.
+11/12 (2000) 379.
+[17] F. Tielens, J. Comput. Chem. 30 (2009) 1947.
+[18] F. Tielens, J. Mol. Struct. (THEOCHEM) 903 (2009) 23.
+[19] F. Tielens, F. De Proft, P. Geerlings, J. Mol. Struct. (THEOCHEM) 542 (2001) 227.
+[20] F. Tielens, J. Denayer, I. Daems, G.V. Baron, W.J. Mortier, P. Geerlings, J. Phys. Chem.
+B 107 (2003) 11065.
+[21] F. Tielens, P. Geerlings, Int. J. Quant. Chem. 84 (2001) 58.
+[22] F. Tielens, P. Geerlings, J. Mol. Catal. A 166 (2001) 175.
+[23] F. Tielens, P. Geerlings, Chem. Phys. Lett. 354 (2002) 474.
+Fig. 3. Deprotonation of zeolite sites B and B0. The site B has the V and site B0 IV
+oxidation state.
+F. Tielens, S. Dzwigaj / Catalysis Today 152 (2010) 66–69
+68
+
+<<<PAGE 4>>>
+[24] F. Tielens, W. Langenaeker, P. Geerlings, J. Mol. Struct. (THEOCHEM)496 (2000) 153.
+[25] F. Tielens, W. Langenaeker, A.R. Ocakoglu, P. Geerlings, J. Comput. Chem. 21
+(2000) 909.
+[26] G. Kresse, J. Hafner, Phys. Rev. B 49 (1994) 14251.
+[27] G. Kresse, J. Furthmu¨ ller, Comput. Mater. Sci. 6 (1996) 15.
+[28] J.P. Perdew, K. Burke, M. Ernzerhof, Phys. Rev. Lett. 77 (1996) 3865.
+[29] J.P. Perdew, K. Burke, M. Ernzerhof, Phys. Rev. Lett. 78 (1997) 1396.
+[30] Y.K. Zhang, W.T. Yang, Phys. Rev. Lett. 80 (1998) 890.
+[31] X. Gu, M. Ji, S.H. Wei, X.G. Gong, Phys. Rev. B 70 (2004) 205401.
+[32] F. Tielens, J. Andre´s, M. Van Brussel, C. Buess-Herman, P. Geerlings, J. Phys. Chem.
+B 109 (2005) 7624.
+[33] T. Visart de Bocarme´, T.-D. Chau, F. Tielens, J. Andre´s, P. Gaspard, L.R.C. Wang, H.J.
+Kreuzer, N. Kruse, J. Chem. Phys. 125 (2006) 1.
+[34] F. Tielens, J. Andre´s, J. Phys. Chem. C 111 (2007) 10342.
+[35] P.E. Blo¨chl, Phys. Rev. B 50 (1994) 17953.
+[36] G. Kresse, J. Joubert, Phys. Rev. B 59 (1999) 1758.
+[37] P.E. Blo¨chl, O. Jepsen, O.K. Andersen, Phys. Rev. B 49 (1994) 16223.
+[38] M. Calatayud, C. Minot, J. Phys. Chem. B 108 (2004) 15679.
+[39] M. Calatayud, F. Tielens, F. De Proft, Chem. Phys. Lett. 456 (2008) 59.
+[40] M. Calatayud, C. Minot, Top. Catal. 41 (2006) 17.
+[41] G. Deo, A.M. Turek, I.E. Wachs, T. Machej, J. Haber, N. Das, H. Eckert, A.M. Hirt,
+Appl. Catal. A-Gen. 91 (1992) 27.
+F. Tielens, S. Dzwigaj / Catalysis Today 152 (2010) 66–69
+69

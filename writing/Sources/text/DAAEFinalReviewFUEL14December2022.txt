@@ -1,0 +1,5650 @@
+
+<<<PAGE 1>>>
+ 1
+Residue fluid catalytic cracking: A review on the mitigation strategies of metal 
+1 
+poisoning of RFCC catalyst using metal passivators  
+2 
+D. E. Adanenchea,b, *A. Aliyua, A. Y. Atta a, and B. J. El-Yakubua 
+3 
+aDepartment of Chemical Engineering, Ahmadu Bello University, Zaria, P.M.B 
+4 
+1045, Nigeria  
+5 
+bResearch and Development Centre, Dangote Petroleum Refinery and 
+6 
+Petrochemicals, FZE, Union Marble House, Ikoyi, Lagos Nigeria 
+7 
+*Corresponding author (e-mail: auwala@abu.edu.ng) 
+8 
+Abstract  
+9 
+The workhorse residue fluid catalytic cracking catalyst used to process heavy feedstocks, 
+10 
+such as atmospheric residue, has good catalytic activity, selectivity, hydrothermal stability, 
+11 
+fluidability, and coke selectivity. Processing these heavy feedstocks has several challenges 
+12 
+due to heteroatoms such as vanadium, nickel, sodium, iron, sulfur, and nitrogen. To give 
+13 
+perspective on these challenges, motivation for and recent technologies for Residue Fluid 
+14 
+Catalytic Cracking (RFCC) have been reviewed. Also highlighted are the relevance of (i) 
+15 
+multi-zone coordinated-controlled, (ii) two-stage riser (conventional), (iii) two-stage riser (for 
+16 
+propylene production), and (iv) auxiliary riser (gasoline modification) on reactor 
+17 
+performances. These heteroatoms are detrimental to the catalysts as they act to either 
+18 
+permanently or temporarily deactivate them, thereby promoting undesirable reactions such as 
+19 
+dehydrogenation and coke production. Furthermore, the impact of the catalytic cracking 
+20 
+catalyst selectivities on low molecular weight production, especially propylene and other 
+21 
+olefins, has been pointed out. It is, therefore, important to develop a catalyst with improved 
+22 
+metal tolerance while maintaining its intrinsic properties. Antimony, bismuth, boron, 
+23 
+magnesium, tin, and rare earth compound (cerium, lanthanum) have attracted attention 
+24 
+recently due to their abilities to trap and passivate Ni, V, Na, and Fe against their harmful 
+25 
+effects on the catalyst. 
+26 
+Keywords: 
+27 
+Residue fluid catalytic cracking, RFCC Catalyst, Deactivation, Vanadium, Nickel, Passivators 
+28 
+ 
+ 
+
+<<<PAGE 2>>>
+ 2
+1 
+Introduction 
+29 
+Fluid catalytic cracking (FCC) is a secondary conversion process in the petroleum 
+30 
+refining industry used to convert high-molecular-weight, high-boiling fractions of petroleum 
+31 
+to valuable fuels such as gasoline, diesel, olefinic gases, and liquefied petroleum gas (LPG). 
+32 
+Globally, 59 countries have active refineries with FCC and a total refinery FCC unit capacity 
+33 
+of 14,259 mbd in 2020 [1]. The biggest refineries in the world in terms of the refinery FCC 
+34 
+unit capacity in 2020 include Baton Rough (US), Baytown (US), Jamnagar I (India), 
+35 
+Jamnagar II (India), and Texas City III (US) [1]. Some of the largest upcoming refineries 
+36 
+with FCC units in the world during the outlook period of 2021-2025 include the Dangote 
+37 
+refinery, Lagos (Nigeria), Yulong (China), and Turban II (Indonesia) [2]. 
+38 
+The FCC unit is regarded as the most important conversion unit and the cash cow of 
+39 
+the refinery because the fuel produced from this unit alone accounts for 35 to 50% of the total 
+40 
+gasoline produced globally in the petroleum industry [3–6]. However, the world crude oil 
+41 
+supply changes towards heavier crudes, coupled with the quest by refiners to process cheaper 
+42 
+crude to increase refinery margins, and the increasing demand for propylene and 
+43 
+transportation fuel, have led to the development of the residue fluid catalytic (RFCC) process 
+44 
+to convert residue feedstocks. A shared setback established in both the FCC and RFCC units 
+45 
+is the regular decrease of catalytic performance caused by the gradual deposition of 
+46 
+contaminant metals such as Ni, V, Fe, and Na on the catalyst during the processing of heavy 
+47 
+hydrocarbon feedstocks [7–12]. These metals destroy the catalyst and promote undesirable 
+48 
+side reactions, such as producing large amounts of coke and hydrogen. A large quantity of 
+49 
+hydrogen is undesirable because it affects downstream equipment such as wet gas 
+50 
+compressors (WGC). The WGC is volume-limited and not designed to handle gases beyond a 
+51 
+certain volume. Production of a large amount of coke upsets the reactor and regenerator heat 
+52 
+
+<<<PAGE 3>>>
+ 3
+balance as well as affects the main air blower (MAB), which like WGC, is also limited in the 
+53 
+amount of air it takes to burn off the coke in the regenerator during the regeneration process 
+54 
+and leads to a reduction in feed throughput. In addition to upsetting the heat balance and the 
+55 
+MAB, a large amount of coke temporarily deactivates the RFCC catalyst by blocking the 
+56 
+active sites, thereby reducing the catalyst activity. A way to possibly overcome such a 
+57 
+setback is by deploying environmentally friendly passivating agents in the RFCC catalyst 
+58 
+mix.  
+59 
+Over the years, several authors have published reviews on the conventional FCC unit, 
+60 
+including processes, catalyst materials, poisons, and deactivation mechanisms. 
+61 
+Vogt and Weckhuysen, [13] reviewed the developments of FCC, the so-called grand old lady 
+62 
+of zeolite catalysis. The study discussed the general background of the FCC process, 
+63 
+including a short history, process description, chemical reactions, reactor design, and catalyst 
+64 
+material. The study also evaluated the means to improve the stability of zeolite structure, 
+65 
+propylene selectivity, overall catalyst accessibility, and a state-of-the-art micro-spectroscopy 
+66 
+technique for characterising FCC catalysts at the single particle. The findings, however, 
+67 
+suggested that shifts in the availability of feedstocks, including tight oils, and renewables, 
+68 
+coupled with longer-term demand for gasoline, middle distillates, and propylene, require 
+69 
+further developments in both catalysts and process. 
+70 
+Bai et al. [14] reviewed the contamination of fluid catalytic cracking catalysts 
+71 
+describing the status of FCC technology, such as catalysts, the variation in feedstocks, and 
+72 
+the effects of contaminants of the FCC catalysts. The deposition mechanisms of multiple 
+73 
+impurities on cracking catalysts during the FCC process, including nitrogen, sulfur, metals, 
+74 
+and coke originating from the feedstock during the FCC reaction, were also discussed. It was 
+75 
+reported that vanadium, nickel, iron, and sodium are the metal contaminants having the most 
+76 
+harmful effects that can significantly impact the catalyst structure and performance. It was 
+77 
+
+<<<PAGE 4>>>
+ 4
+also found that nitrogen and sulfur are considered less harmful compared to metal 
+78 
+contaminants. Pore blockage by the coking effect of sulfur and acid site neutralization by 
+79 
+nitrogen are serious problems too. 
+80 
+A review of the deactivation of FCC catalysts by cyclic propylene steaming (CPS) 
+81 
+presented some modifications made to the CPS method to further decrease the destructive 
+82 
+effects of vanadium on FCC catalysts during deactivation [15]. The methods comprise (i) 
+83 
+adjusting the ratio of the time the catalyst spends in reducing and oxidising atmospheres 
+84 
+during the CPS cycles and (ii) exposing the metalated catalyst to pre-stabilisation steps with 
+85 
+reduction-oxidation cycles. Comparing the activities and selectivity data of FCC catalysts 
+86 
+with (a) age distribution and (b) CPS revealed that both have similar catalyst rankings. 
+87 
+Moreover, reduction-oxidation cycles were found to simulate the deactivation of FCC 
+88 
+catalysts in the absence of contaminant metals better than traditional deactivation in a 100% 
+89 
+steam atmosphere.  
+90 
+FCC catalyst deactivation was also reviewed by O’Connor and Pouwels [16] with a 
+91 
+focus on the complexity of the inter-relations in catalyst deactivation by (i) ageing, (ii) 
+92 
+poisoning and fouling, (iii) the effect on heat balance and catalyst circulation rate, and (iv) 
+93 
+the quantification and modelling of FCC catalyst deactivation. The findings suggest that for 
+94 
+catalyst poisoning at high metal contents and hydrothermal ageing with low metals, cyclic 
+95 
+deactivation of the catalyst in numerous age fractions is the preferred route for a realistic 
+96 
+simulation and quantification of the deactivation phenomena. 
+97 
+Patrick-Walker and Peterman [17] reviewed how the contemporary residue FCC 
+98 
+(RFCC) units set a new standard for propylene production by exploring the technical 
+99 
+challenges and opportunities in targeting high propylene production from RFCC units. The 
+100 
+study summarised the advances in RFCC operations and reliability. The differences between 
+101 
+RFCC operations and conventional FCC based on the catalysts, feed properties, operating 
+102 
+
+<<<PAGE 5>>>
+ 5
+parameters, and equipment design were also evaluated. The authors pointed out that the 
+103 
+processing of heavily contaminated residue using the Universal Oil Products (UOP) 
+104 
+combustor type regenerators with catalyst coolers is gaining wider acceptance alongside two-
+105 
+stage regenerators with catalyst coolers due to their ability to withstand the high temperature 
+106 
+that results from high Conradson carbon residues present in the residue feedstock. 
+107 
+In an attempt to discuss the catalyst structure suitable for the large molecular weight 
+108 
+feed to the RFCC unit, Ishihara [18] reviewed advances in the preparations and reactivity of 
+109 
+hierarchical zeolite catalysts for the catalytic cracking of carbonaceous materials. The 
+110 
+carbonaceous materials include simple straight-chained and substituted-aromatic 
+111 
+hydrocarbons, heavy molecules in mixtures such as vacuum gas oil (VGO), atmospheric 
+112 
+residue, and biomass like vegetable oil. The study explained the preparation of hierarchical 
+113 
+zeolite catalysts in detail and described how the catalyst matrix pre-cracks the large 
+114 
+molecular weight hydrocarbon feed before it gets into the highly active micropores of the 
+115 
+zeolite for selective cracking into the desired products such as gasoline and olefins. It was 
+116 
+found that hierarchical catalysts with both microporous and mesoporous structures exhibited 
+117 
+a better performance due to the increase in the accessibility and the diffusivity in mesoporous 
+118 
+structure and the high catalytic activity in the microporous zeolite. 
+119 
+Previous review studies focused on the catalytic cracking and catalyst deactivation of 
+120 
+mainly the conventional FCC processes and catalyst poisons. While some of the reviews have 
+121 
+identified the various catalyst poisons and their passivators, to the best of our knowledge, no 
+122 
+work in the open literature adequately reviewed the new developments in the use of effective 
+123 
+and environmentally friendly passivator. Nickel and vanadium have been identified as the 
+124 
+most detrimental poisons of RFCC catalysts as they promote competing reactions such as 
+125 
+dehydrogenation and coke formation. Antimony has been used to mitigate the 
+126 
+
+<<<PAGE 6>>>
+ 6
+dehydrogenating effect of nickel. However, it has been found that antimony causes emission 
+127 
+issues and is unsafe to handle. 
+128 
+For the first time, this review presents an overview of the current RFCC processes and 
+129 
+the various passivators and traps inhibiting the harmful effects of the metals and non-metal 
+130 
+contaminants on RFCC catalysts. The advances in the passivation of RFCC catalysts against 
+131 
+(i) nickel contaminants: using antimony, rare earth metals, bismuth, and boron as 
+132 
+passivators/traps, and those (ii) vanadium contaminants: using tin, rare earth, and basic 
+133 
+alkaline compound as passivators/traps were discussed. The associated challenges and future 
+134 
+research and development based on (i) design of RFCC catalyst, (ii) replacement of antimony 
+135 
+as nickel passivators, (iii) development of RFCC catalyst that incorporates boron as 
+136 
+environmentally friendly nickel passivator, and (iv) insight into the passivation of vanadium, 
+137 
+were highlighted. 
+138 
+2 
+RFCC Technologies 
+139 
+Fluid Catalytic Cracking (FCC) is one of the main processes which gives higher 
+140 
+operational flexibility due to its ability to process a wide range of feedstocks without 
+141 
+sacrificing the feed rate of the unit. FCC is also highly profitable to refiners because the unit 
+142 
+alone accounts for around 35 to 50% of the total gasoline pool in the entire refinery, leading 
+143 
+to an increased refining margin [19]. 
+144 
+The world’s crude supplies have become heavy and dirty due to the decline in the 
+145 
+availability of light and sweet crudes. These heavy and dirty crudes contain a high amount of 
+146 
+Conradson carbon residue (CCR) and metal poisons such as nickel and vanadium. The high 
+147 
+CCR generates a large amount of heat in the regenerator, destroying the cracking catalysts. 
+148 
+These current feed characteristics have rendered the conventional FCC unit unfit for use in 
+149 
+the modern refinery as it cannot handle the high amount of heat generated due to carbon 
+150 
+
+<<<PAGE 7>>>
+ 7
+Table 1: Comparison of Residue Fluid Catalytic Cracking (RFCC) versus Fluid Catalytic Cracking (FCC) [17,20].  
+151 
+Cracking Unit 
+Residue Fluid Catalytic Cracking (RFCC) 
+Fluid Catalytic Cracking (FCC) 
+Feed Characteristics 
+• 
+The feedstock is Atmospheric Residue (AR) 
+• 
+Lower API gravity feedstock compared to vacuum gas oil (VGO) (API < 20) 
+• 
+Higher Conradson carbon residue (CCR) (> 4 wt%) 
+• 
+Heavy metal contaminants such as nickel and vanadium are well concentrated in 
+the feedstock   
+• 
+The feedstock is vacuum gas oil (VGO) and heavy gas oil (HGO) 
+• 
+Higher API gravity and hydrogen content compared to 
+atmospheric residue feedstock (API > 30) 
+• 
+Lower Conradson carbon residue and lower heavy metal contents 
+(< 4 wt%) 
+Operating Condition 
+• 
+Contaminant coke is exclusive to RFCC unit operations. 
+• 
+Conradson carbon in the feedstock predominantly winds up as coke.  
+• 
+Heavy metals in the feedstock typically accumulate on the catalyst particles 
+catalysing the formation of coke 
+• 
+A higher temperature in the regenerator 
+• 
+Lower catalyst circulation rate (< 5kg per kg of feedstocks)  
+• 
+Catalyst/oil ratio (5:1) 
+• 
+Lower coke yield of about 5 wt% on feed compared to residue 
+feedstock with a coke yield higher than 10 wt% on feed. 
+• 
+A lower temperature in the regenerator 
+• 
+Higher catalyst circulation rate (> 5kg per kg of feedstock) 
+• 
+Catalyst/oil ratio (15:1) 
+Equipment Design 
+• 
+Two-stage regenerator with catalyst coolers 
+• 
+Combustor-type regenerator for complete combustion, thereby eliminating the 
+cost of installing a CO incinerator 
+• 
+Single-stage regenerator without catalyst cooler 
+• 
+Bubbling bed regenerator for partial combustion, thereby 
+necessitating the need for a CO incinerator 
+Catalyst 
+• 
+The catalyst must have a hierarchical structure to accommodate the large 
+polycyclic aromatic molecules 
+• 
+Catalyst has to be tolerant of the heavy metal contaminants in the feed, notably 
+vanadium and nickel 
+• 
+Catalyst requires a low delta (∆) coke character to stall the high ∆ coke 
+tendencies of the impurities in the feedstock 
+• 
+Microporous catalyst structure is sufficient to accommodate the 
+molecules of the feedstocks 
+• 
+Catalyst needs a relatively higher delta (∆) coke to drive the 
+reaction 
+
+<<<PAGE 8>>>
+ 8
+Table 2: Different Catalytic Cracking Licensors and Configurations [21,22] 
+152 
+Licensor 
+Cracking Technology 
+Configuration 
+Country 
+Kellog Brown and Root (KBR) 
+Orthoflow FCC  
+Stacked-up 
+USA 
+Universal Oil Products (UOP) 
+FCC and RFCC 
+Side by side 
+USA 
+Axens/Institut Francais du Petrole (IFP) 
+R2R and RFCC 
+Side by side 
+France 
+Shell Global Solutions International 
+FCC  
+Side by side 
+Netherlands 
+Foster Wheeler 
+FCC 
+Side by side 
+United Kingdom 
+Chicago Bridge and Iron Lummus 
+FCC 
+Side by side 
+Netherlands 
+ExxonMobil Research and Engineering (EMRE) 
+FCC 
+Side by side 
+USA 
+ 
+
+<<<PAGE 9>>>
+ 9
+ 
+ 
+(a) 
+(b) 
+ 
+ 
+(c) 
+(d) 
+Fig. 1 Schematic diagrams of residue fluid catalytic cracking (RFCC) technologies: (a) Multi-zone coordinated-controlled, (b) Two-stage riser (conventional), 
+153 
+(c) Two-stage riser (for propylene production), (d) Auxiliary riser (Gasoline modification). Technology licensors - China National Petroleum Corporation 
+154 
+(CNPC) [23]. 
+155 
+Lift gas
+Exit zone
+Striping zone
+Reaction zone
+Feed zone
+Feedstock
+Regenerate 
+catalysts coolant
+Oil vapor
+Oil vapor
+Flue gas 
+The First stage riser
+The Second stage riser
+Fresh feed
+Prelifting steam
+Regenerator
+Cycle oil
+Air
+Separator
+Oil vapor
+Flue gas 
+The First stage riser
+The Second stage riser
+Fresh feed
+Prelifting steam
+Regenerator
+Light naphta
+Air
+Recycled oil
+Separator
+Catalyts cooler and recirculation
+S h
+ti di
+f
+id
+l fl id
+t l ti
+ki
+t
+h
+l
+i
+(d) A
+illi
+i
+(G
+li
+difi
+ti
+Striping zone
+Residue fluid 
+riser reactor
+Residue fluid
+Feedstock
+Cleaning
+medium
+Modified 
+gasoline
+Condensation medium
+Cracked gas
+Rich 
+gas
+Oil slurry
+Diesel oil
+Lift gas
+New type 
+auxilliary reactor
+Main fractionating
+column
+Main fractionaing
+column
+Produced gasoline and gas via 
+catalytic cracking 
+Modified gasoline from catalytic cracking 
+
+<<<PAGE 10>>>
+ 10
+residue and the inability of the catalyst to withstand the high level of metal poisons. 
+156 
+Therefore, there is a need for an improved FCC unit to handle the contemporary feedstock 
+157 
+Residue Fluid Catalytic Cracking (RFCC) is a variation of fluid catalytic cracking that 
+158 
+has been widely applied in recent years in an attempt to solve the problem of proliferation of 
+159 
+heavier and more dirty feedstocks to the conventional FCC unit as a result of the decrease in 
+160 
+the world’s supply of light and sweet crudes [24]. In this case, the feed stream to the process 
+161 
+is the high molecular weight bottom of the atmospheric distillation column, called an 
+162 
+atmospheric residue, with high Conradson carbon residue (CCR) and higher contaminant 
+163 
+content like metals, nitrogen, and sulfur. Due to the feed stream characteristics, the residue 
+164 
+catalytic cracking units require design and optimization changes. The higher levels of CCR in 
+165 
+the feed stream led to higher temperatures in the catalyst regeneration step and a lower 
+166 
+catalyst circulation rate to keep the reactor at a constant temperature. Reduction in the 
+167 
+catalyst/oil ratio, decreasing conversion, and selectivity are some of the adverse effects of 
+168 
+high CCR. The RFCC units, however, normally rely on catalyst coolers to avoid these effects 
+169 
+[21,24]. 
+170 
+Comparison of Residue Fluid Catalytic Cracking (RFCC) versus Fluid Catalytic 
+171 
+Cracking (FCC) for feed characteristics, operational condition, equipment design, and 
+172 
+catalyst selection [17,20] are presented in Table 1. Due to the high proportion of large 
+173 
+molecular weight components, the conventional FCC cannot meet the performance target 
+174 
+regarding olefin yield, gasoline production, and lower coke deposition. The higher the 
+175 
+amount of high molecular weight compounds, the less the capacity of FCC to meet the 
+176 
+performance target. There were several attempts at optimising FCC [25,26]. The FCC unit is 
+177 
+the single largest unit in the modern refinery, with several commercial designs with common 
+178 
+objectives but different mechanical configurations. The various design configurations of the 
+179 
+FCC unit and the major licensors are presented in Table 2.  
+180 
+
+<<<PAGE 11>>>
+ 11
+Improvements have been made to commercial FCC technologies since its inception in 
+181 
+1942, including changes in catalysts, engineering, and facilities. These improvements have 
+182 
+increased the reliability of the unit and its capability to process heavier and lower-value 
+183 
+feedstocks [27]. The newly improved FCC technologies involve the modification of gasoline, 
+184 
+higher liquid yield, higher propylene production, and energy conservation to maximise the 
+185 
+output and quality of targeted products and achieve maximum profit efficiency [28]. A brief 
+186 
+description and the highlight of the RFCC technologies are presented as follows: 
+187 
+2.1 
+Multi-zone coordinated-controlled 
+188 
+The multi-zone coordinated-controlled (MZCC) RFCC technology (Fig. 1a) is designed 
+189 
+based on a high oil-to-catalyst mixing energy reaction to produce liquid and light petroleum 
+190 
+products. The primary benefit of the MZCC RFCC technology is that it increases the yield of 
+191 
+light oil and liquids and reduces the formation of coke and dry gas even when processing 
+192 
+heavy feedstocks. These benefits are high energy back-mixing for the feeding zone and high 
+193 
+effective contact for catalyst and oil. The major disadvantage of this technology is that it 
+194 
+leads to an increased level of nickel and iron [23]. These metals deposit on the catalyst and 
+195 
+promote unfavourable reactions such as coke formation and dehydrogenation [29]. Some of 
+196 
+the technical features of the MZCC RFCC technology [23,28] are: 
+197 
+• High effective contact for oil to the catalyst and high energy back-mixing for the 
+198 
+feeding zone 
+199 
+•  Rapid separation of oil and catalyst for the exit zone 
+200 
+• Chemical stripping for heavy components for the stripping zone 
+201 
+• 
+Orderly proceeding and plug flow for the reaction zone 
+202 
+
+<<<PAGE 12>>>
+ 12
+2.2 
+ Two-stage riser (conventional) 
+203 
+The conventional Two-stage riser (Fig. 1b) technology comprises two separate riser 
+204 
+reactors that can efficiently hinder over-cracking, decrease coke yield and enhance the yield 
+205 
+and properties of light oil. The first reactor is for the fresh feedstock and the second reactor is 
+206 
+for the entry of cycle oil. The two reactors are in contact with high active regenerant. A two-
+207 
+stage riser removes unwanted product distribution due to an over-long riser and reaction 
+208 
+competition in the same reactor between fresh feedstock and cycle oil [30]. 
+209 
+The conventional two-stage riser RFCC technology is also designed to produce light 
+210 
+petroleum products. Its major advantages come from the short contact time between the 
+211 
+catalyst and the hydrocarbon vapour. The brief contact time helps to reduce over-cracking, 
+212 
+which reduces dry gas and coke formation. The major shortcoming of this technology is the 
+213 
+complexity of the process. Some of the technical features of a Two-stage riser (conventional) 
+214 
+[23,30] are: 
+215 
+• Staged reaction: determine reaction condition, and avert competition between cycle 
+216 
+oil and fresh feed 
+217 
+• Catalyst relay: improved overall activity due to two-path catalysts circulation, 
+218 
+preventing a thermal reaction, and increasing catalytic reaction 
+219 
+• Short reaction duration: lower over-cracking of the target product, decreases coke 
+220 
+yield, improves light oil yield, and enhances product distribution 
+221 
+• High catalyst-to-oil ratio: effective increase of the catalyst-to-oil ratio and formation 
+222 
+of a new thermal balance due to two path circulation of catalyst 
+223 
+2.3 
+ Two-stage riser (for propylene production) 
+224 
+The two-stage riser for propylene production (Fig. 1c) technology was developed, 
+225 
+given the demand for higher propylene production. It is highly selective in propylene and 
+226 
+
+<<<PAGE 13>>>
+ 13
+light oil production. This technology is new and comes with two-stage risers and multiple 
+227 
+reaction zones adopted to achieve the following: (i) ideal reaction parameters of integrated 
+228 
+feedstock delivery, (ii) high catalyst fluidising density and an appropriate residence time, and 
+229 
+(iii) high catalyst-to-oil ratio at low temperature [31]. 
+230 
+The Two-stage riser (for propylene production) technology is solely designed to 
+231 
+produce propylene. The benefits of the two-stage riser RFCC technology for propylene 
+232 
+production are the ideal reaction conditions of integrated feedstock delivery, increased 
+233 
+catalyst fluidising density, and a suitable residence time. The major setback of this 
+234 
+technology is the increased production of dry gas when processing heavy residue feedstocks. 
+235 
+This technology applies to the catalytic cracking of paraffin-based feed to maximise 
+236 
+propylene production with the following technical indexes [31] as follow: (i) less than 15 
+237 
+wt% yields of dry gas and coke, (ii) more than 20 wt% of propylene yield and (iii) greater 
+238 
+than 93 of gasoline research octane number (RON). Some of the technical features of this 
+239 
+technology are:  
+240 
+• Prevention of dry gas formation  
+241 
+• Moderate reaction conditions compared to steam cracking  
+242 
+• Decreased temperature  
+243 
+• Short reaction time  
+244 
+• Increased catalyst-to-oil ratio  
+245 
+• High catalyst fluidising density 
+246 
+2.4 
+Auxiliary riser (Gasoline modification) 
+247 
+The auxiliary riser RFCC technology (Fig. 1d) is designed for gasoline production 
+248 
+and is well known for stable product distribution and reducing olefins in gasoline. The 
+249 
+technology has proved to be commercially successful. This technology adds a separate 
+250 
+
+<<<PAGE 14>>>
+ 14
+auxiliary reactor to the conventional cracking unit for gasoline modification. Adding the new 
+251 
+unit decreases olefins by providing a suitable reaction atmosphere for RFCC, ensuring quality 
+252 
+and stable product distribution during the cracking process. 
+253 
+The technical features of auxiliary riser technology [23] are: 
+254 
+• An auxiliary reactor combining a new turbulent and conveying bed on the catalytic 
+255 
+cracking unit 
+256 
+• Auxiliary reactor adopting optimised technological conditions for gasoline 
+257 
+modification 
+258 
+• Flexible regulation for the intensification of reaction conditions leading to a 3 - 6% 
+259 
+increased production of propylene 
+260 
+However, this technology does not negatively impact the RFCC process when 
+261 
+requirements are satisfied. An auxiliary riser for gasoline modification has been applied to 
+262 
+five RFCC units in China with favourable outputs [23]. Table 3 depicts the advantages and 
+263 
+disadvantages of the various RFCC technologies (multi-zone coordinated-controlled, 
+264 
+conventional two-stage riser, two-stage riser for propylene production, and auxiliary riser 
+265 
+(gasoline modification). Nonetheless, the successful commercialization of the various RFCC 
+266 
+technologies discussed above has shown some major advantages compared to the 
+267 
+conventional FCC units. Reduction in gasoline olefins between 20 and 25 v% was attained 
+268 
+while maintaining the octane values to satisfy the environmental regulations strictly [23,28]. 
+269 
+
+<<<PAGE 15>>>
+ 15 
+Table 3: The advantages and disadvantages of various RFCC technologies 
+270 
+RFCC Technology 
+Product 
+Advantages  
+Disadvantages 
+Reference 
+Multi-zone 
+coordinated-
+controlled  
+Liquid and 
+light oil 
+• 
+It increases the yield of liquid products and light oil 
+• 
+Lowers the yield of dry gas and coke 
+Increased Nickel and Iron deposits 
+on the catalyst 
+[30] 
+Two-stage riser 
+(conventional) 
+Light oil 
+• 
+Improves light oil yield and quality, lower over-
+cracking and decreases coke yield 
+Complex technology 
+[23] 
+Two-stage riser  
+(for propylene 
+production) 
+Propylene 
+• 
+Ideal reaction conditions of integrated feedstock 
+delivery, increased catalyst fluidising density, and a 
+suitable residence time 
+High dry gas production while 
+processing very heavy feedstocks 
+such as residue 
+[31] 
+Auxiliary riser  
+Gasoline  
+• 
+Stable product distribution and reduction of olefin in 
+gasoline 
+Expensive and complex technology 
+[32] 
+271 
+
+<<<PAGE 16>>>
+ 16
+Olefin content has become a crucial specification in gasoline because of 
+272 
+environmental legislation. Olefin content in gasoline ought to be lower than 30 v%, 
+273 
+concurring with the new Chinese national standard, GBI 7930-2009 [33]. The new Chinese 
+274 
+standard, however, was achieved with contemporary RFCC technologies. In addition to 
+275 
+reducing the olefin level of gasoline, the RFCC technologies have also shown an increase in 
+276 
+propylene yield by 3-4% while producing less dry gas and coke. These technologies have 
+277 
+helped strengthen the refineries’ competitive ability and yielded remarkable economic and 
+278 
+social benefits [34]. 
+279 
+2.5 
+Limitations of FCC and the development of RFCC technologies 
+280 
+The fluid catalytic cracking (FCC) process is regarded as the most important refinery 
+281 
+process due to its ability to convert the heavy portion of the barrel of crude into more useful 
+282 
+petroleum products. In recent times, there has been a quest by refiners to process cheaper 
+283 
+crudes. More so, coupled with the decline in the production of light and sweet crudes, the 
+284 
+feed to the conventional FCC unit has become heavy and dirty.  
+285 
+Processing heavier feedstocks poses many challenges to the conventional FCC design 
+286 
+due to the heavy metal poisons and coke laydown on the catalyst during the cracking 
+287 
+reactions. Metal poisons such as nickel, vanadium, iron and sodium deposit on the cracking 
+288 
+catalyst and promote a dehydrogenation reaction, thereby shifting the selectivity of the 
+289 
+catalyst from the intended products. In addition to fostering undesirable reactions, the metal 
+290 
+poisons, especially vanadium, acts to destroy the catalyst structure leading to a loss in activity 
+291 
+of the catalyst. A large amount of Conradson carbon residue in the heavy feed leads to a large 
+292 
+amount of coke laydown on the catalyst, leading to a large amount of unwanted heat 
+293 
+generated during regeneration to restore the catalyst’s activity. 
+294 
+
+<<<PAGE 17>>>
+ 17
+These changes cannot be resolved by simple design modifications or changes in the 
+295 
+process conditions. Therefore, RFCC technology was developed to address the shortcomings 
+296 
+of the conventional FCC process. RFCC operations vary from traditional FCC operations in 
+297 
+many significant ways, such as catalyst, operating conditions, feed characteristics, and 
+298 
+equipment design, as presented earlier in Table 1. The feed to the RFCC process is the 
+299 
+atmospheric residue (AR), the heaviest fraction in a barrel of crude oil and boils at the 
+300 
+maximum temperatures. AR contains large quantities of polycyclic aromatics with low API 
+301 
+gravity and Conradson carbon residue (CCR) greater than 4wt%. The catalyst for cracking 
+302 
+AR feedstock should have features beyond the conventional FCC catalyst, which utilizes 
+303 
+vacuum gas oil as feedstock. The catalyst structure needs to accommodate the large 
+304 
+polycyclic aromatic molecules in the AR. Such catalyst structure is achieved by incorporating 
+305 
+matrix components containing large volumes of pores or creating hierarchical catalyst 
+306 
+structures. The catalyst can also be formulated with passivators to take care of the metal 
+307 
+poisons present in the heavy residue feedstock. As part of the modification to the equipment 
+308 
+design, catalyst coolers are installed in the RFCC process to utilize the large amount of heat 
+309 
+generated due to high CCR to produce steam. 
+310 
+3 
+RFCC Catalyst  
+311 
+A catalyst for cracking residue feedstock must have different features from the 
+312 
+catalyst for vacuum gas oil (VGO) feedstock due to the large polycyclic aromatic molecules 
+313 
+in residue feedstock. The uniform micropore distribution of zeolites is responsible for their 
+314 
+high shape selectivity observed in various reactions. However, this feature limits diffusion 
+315 
+when large molecules diffuse in relatively narrow channels. Some active sites are hindered 
+316 
+from contacting reactants due to restricted transport processes [35,36]. Consequently, 
+317 
+developing new materials with a hierarchical porosity architecture is highly needed. The 
+318 
+catalyst for the cracking of residue feedstock has to be designed to tolerate the structure of 
+319 
+
+<<<PAGE 18>>>
+ 18
+the large molecules of residue feedstock because the conventional FCC zeolite catalyst has an 
+320 
+average pore diameter of 0.74 nm. 
+321 
+In comparison, the atmospheric residue that serves as feed to the modern RFCC 
+322 
+process has molecular constituents with diameters of 1.2 to 15 nm, making it impossible for 
+323 
+the large molecules to enter into the zeolite micropores to be cracked directly [37,38]. 
+324 
+Designing a catalyst to accommodate the large-diameter residue feedstock is typically 
+325 
+accomplished by incorporating a matrix component with a significant pore volume. Several 
+326 
+attempts have been made to create RFCC catalysts with large pore volumes by synthesising 
+327 
+hierarchical zeolite-Y catalysts using various methods. These methods include the bottom-up 
+328 
+and top-down approaches [39–44]. In addition, the catalyst should have a low delta (∆) coke 
+329 
+character to stand the high delta (∆) coke tendencies of the contaminated residue feedstock as 
+330 
+a result of the high amount of Conradson carbon residue (CCR), which is usually greater than 
+331 
+4 wt% in the feed [17]. The low delta coke character of the catalyst is accomplished through 
+332 
+specific catalyst design features and targeting an equilibrium catalyst activity more superior 
+333 
+than that associated with the VGO catalyst. Finally, the catalyst must tolerate the metals in 
+334 
+the feed, particularly vanadium and nickel, as these metals are deposited on the cracking 
+335 
+catalyst, destroying the catalyst structure and promoting undesirable reactions. These 
+336 
+unwanted reactions include the production of large amounts of H2 through dehydrogenation 
+337 
+and producing large quantities of coke. The large amounts of H2 are detrimental to the wet 
+338 
+gas compressor because it is volume limited. At the same time, a large amount of coke upsets 
+339 
+the reactor-regenerator heat balance and affects the main air blower, in addition to 
+340 
+temporarily deactivating the catalyst. 
+341 
+Catalysts are continuously being developed for (i) conversion of residue feedstock, 
+342 
+(ii) enhanced propylene production, (iii) reduction of olefins in gasoline, and (iv) functional 
+343 
+additives. Table 4 depicts some of the zeolite catalysts’ physical and chemical indexes to  
+344 
+
+<<<PAGE 19>>>
+ 19 
+Table 4 Physical and chemical indexes of zeolite-Y catalysts [28].  
+345 
+Physical and Chemical Properties 
+Reducing olefins in gasoline 
+Efficient conversion of 
+residue feedstock 
+Improving propylene 
+production 
+Functional additives 
+Al2O3, wt% 
+≥45.0 
+≥48.0 
+≥45.0 
+≥45.0 
+Na2O, wt% 
+≤0.35 
+≤0.30 
+≤0.30 
+≤0.55 
+Specific Surface area, m2/g 
+≥200 
+≥240 
+≥200 
+≥250 
+Pore volume (droplet method), mL/g 
+≥0.32 
+≥0.35 
+≥0.33 
+≥0.42 
+Micro-activity (800oC, 4h), kat 
+≥75 
+≥76 
+≥70 
+- 
+
+<<<PAGE 20>>>
+ 20
+satisfy the various RFCC processes. However, RFCC catalysts are developed according to 
+346 
+the requirements of each refinery to align with operating conditions and the feed 
+347 
+characteristics to achieve the desired product with maximum efficiency. For example:  
+348 
+The catalyst for reducing olefins in gasoline: applied to 1.4 million ton/year RFCC 
+349 
+unit at Dalian Petrochemical Company in China. The reduction in olefin content of gasoline 
+350 
+was recorded to be between 10 - 20% volume ratio, and diesel oil yield increased by over 
+351 
+1.0% mass ratio [28]. 
+352 
+The catalyst for residue fluid conversion: applied to a 3.0 million ton/year RFCC unit 
+353 
+at Lanzhou Petrochemical Company in China. The residue fluid cracking ability and the 
+354 
+overall yield of desired petroleum product both increased by a 0.5% mass ratio [28]. 
+355 
+The catalytic cracking catalyst for improved propylene production: applied to 1.4 
+356 
+million ton/year RFCC unit at Lanzhou Petrochemical Company in China. Propylene 
+357 
+production increased by 1.0%, while research octane number (RON) increased by more than 
+358 
+1.5 [28]. 
+359 
+Functional additives in RFCC: applied to 400,000 ton/year RFCC unit at Lanzhou 
+360 
+Petrochemical Company. Propylene yield increased by 1.0%, and the RON of gasoline 
+361 
+improved by 0.5 with 5wt% addition of additive [28] 
+362 
+3.1 
+Catalyst for the Reduction of Olefins in Gasoline 
+363 
+The residue fluid catalytic cracking (RFCC) gasoline usually contains 20 – 40 wt% of 
+364 
+olefins [45–47]. The presence of olefins in RFCC gasoline is advantageous because it helps 
+365 
+to increase the gasoline octane number. However, the high content of olefinic compounds 
+366 
+affects the engine exhaust emissions and the stability of the fuel under storage conditions. 
+367 
+Olefins react with atmospheric oxygen leading to oxidation and polymerisation products, 
+368 
+
+<<<PAGE 21>>>
+ 21
+forming gum in the gasoline tank [48,49]. According to European Standard EN228, the olefin 
+369 
+content in gasoline is currently limited to 18 vol% [50]. 
+370 
+Several attempts have been made to reduce olefins by hydrogenation [45,51–53] to 
+371 
+improve the stability of RFCC gasoline. However, the process leads to an undesirable 
+372 
+decrease in the gasoline octane, resulting from converting high-octane olefins into low-octane 
+373 
+paraffin [51,52,54,55]. Recently, Dubkov et al. [46] used nitrous oxide (N2O), a greenhouse 
+374 
+gas, to oxidise light-catalytic cracked gasoline. The treatment of the gasoline with N2O was 
+375 
+performed without catalyst in the liquid phase at 200 – 250oC and elevated pressure of 50-70 
+376 
+atm. The findings suggest that N2O selectively oxidises olefinic compounds in the gasoline to 
+377 
+form carbonyl products and molecular nitrogen without affecting the gasoline components, 
+378 
+making N2O a good candidate for olefin reduction in gasoline. 
+379 
+In 1996, the Kashima refinery in Japan revamped its FCC unit by modifying it to a 
+380 
+new UOP RFCC. The modifications include (a) a catalyst cooler, (b) an expanded air blower 
+381 
+and gas compressor, (c) improved atomisation feed nozzles, and (d) a design with a short 
+382 
+contact time (SCT) riser with a cyclone riser directly connected to riser termination. The 
+383 
+revamp allowed the FCC unit to increase throughput from 20,000 to 28,500 bpsd with a 
+384 
+higher intake of residue feedstocks. Modified unit and adjusted feed rate and composition 
+385 
+produced gasoline with high olefin content. A switch to a new catalyst by Akzo Nobel was 
+386 
+designed to reduce olefin content while maintaining the RON of the gasoline. The new 
+387 
+catalyst design for controlling gasoline olefins reduced olefins concentration in gasoline by 
+388 
+more than 5 v% without a significant RON decrease [56]. 
+389 
+3.2 
+Residue fluid conversion catalyst 
+390 
+Due to the increasing scarcity of crude oil resources, the feed to the residue fluid 
+391 
+catalytic cracking unit has become heavier and laden with heavy metals, for example, 
+392 
+
+<<<PAGE 22>>>
+ 22
+vanadium and nickel, which are harmful to the life of the catalyst. For this reason, superior 
+393 
+technology has been developed to improve heavy metal pollution and render the catalyst 
+394 
+matrix less active to the effects of nickel and/or vanadium [30,37,57].  
+395 
+Zeolite-Y, with a uniform microporous structure and an inlet diameter of 0.74 nm, is 
+396 
+the main active component of the catalyst used in the conventional FCC process [38,58,59]. 
+397 
+However, the large molecular diameter (1.2 to 15 nm) of atmospheric residue, which serves 
+398 
+as feed to the modern RFCC process [37], makes it nearly impossible for the large molecules 
+399 
+in heavy oil to access the micropores of the zeolite to be cracked directly [38,60,61]. 
+400 
+Therefore, it is desired that RFCC catalyst for processing heavy residue feedstocks must have 
+401 
+improved diffusion abilities, enhanced acid site accessibilities and tolerance to metal poisons 
+402 
+[62–67]. Much research has been undertaken to introduce meso- and macroporosities into 
+403 
+zeolite crystals through developing hierarchical zeolite materials and synthesising metal-
+404 
+resistant catalysts [68,69]. 
+405 
+Recently, attention has been paid to core-shell structured catalysts because they can 
+406 
+provide concrete reaction pathways and improve the synergy of many active sites on the 
+407 
+formulated catalyst [70,71]. For this reason, many core-shell structured composites that 
+408 
+employ zeolite crystal as core and mesoporous matrix as shell are developed to process 
+409 
+residue feedstocks more efficiently [62,63,65–67]. This core-shell composite may improve 
+410 
+mass transfer limitations, but still, there are challenges concerning metals poisoning. 
+411 
+3.3 
+Catalytic cracking catalyst for improving propylene production 
+412 
+Propylene is an important petrochemical feedstock for producing products such as 
+413 
+acrylonitrile, butyl alcohol, cumene, phenol, polypropylene, and propylene oxide [72]. 
+414 
+Propylene production is broadly categorised into steam and catalytic cracking paths [73]. The 
+415 
+steam cracking path is the highest energy-consuming process in the petrochemical industry. 
+416 
+
+<<<PAGE 23>>>
+ 23
+The type of feedstock and operating conditions considerably impact propylene production in 
+417 
+the steam cracking process. The reaction temperature can reach 800oC for steam cracking by 
+418 
+releasing large amounts of CO2. The catalytic cracking path operates at a lower temperature 
+419 
+of around 500oC and has higher propylene production [74]. 
+420 
+RFCC technology for higher propylene production has drawn much attention because 
+421 
+of its low-cost and abundant feedstock compared with conventional steam cracking 
+422 
+technology [75]. A proper catalyst design and preparation are required for optimal propylene 
+423 
+production. Higher propylene production can be achieved by adjusting the acid quantity, 
+424 
+strength and type of RFCC catalysts [73,76]. 
+425 
+To improve propylene production, Liu et al. [77] investigated an RFCC catalyst for 
+426 
+maximising propylene production by mixing the modified NaY/kaolin composite 
+427 
+microspheres and additive microspheres containing ZSM-5. The characterisation results 
+428 
+showed that the catalyst contained higher meso- and macro-pores, had higher acid sites than 
+429 
+the reference catalyst, and increased propylene production by approximately 1%. In a similar 
+430 
+attempt, Gao et al. [78] investigated phosphorus-modified ZSM-5 prepared via hydrothermal 
+431 
+dispersion in the cracking of light diesel for maximising propylene production. The result 
+432 
+showed that more pronounced cracking activity was obtained on the catalyst containing 
+433 
+phosphorus, and propylene production increased by 3% compared to the reference ZSM-5 
+434 
+catalyst. The increase in propylene production can be attributed to the higher amount of 
+435 
+phosphorus fixed on the zeolite prepared by hydrothermal dispersion and the higher residual 
+436 
+ratio of crystallinity. 
+437 
+Numerous studies have also investigated the suitability of hierarchical ZSM-5 for 
+438 
+improving propylene production [79–82]. Hierarchical ZSM-5 has shown excellent shape-
+439 
+selective catalytic activity owing to its porous structure. It also offers good hydrothermal 
+440 
+stability and strong resistance to coking. The stability of the catalyst is attributed to the 
+441 
+
+<<<PAGE 24>>>
+ 24
+aluminium content and the shape selectivity given by the microporous network of the zeolite 
+442 
+cavities. In contrast, the coke tolerance is attributed to the hierarchical nature of the catalyst, 
+443 
+which makes it difficult for the catalyst pores to be blocked [79–82].  
+444 
+Bulatov and Jirnov [83] investigated the conversion of heavy feed at various 
+445 
+concentrations of ZSM-5 additive between 0 and 40 wt % at a catalyst-to-oil ratio of 28, a 
+446 
+riser outlet pressure, temperature and contact time of 0.0739 Mpa, 566oC, and 1.5 seconds 
+447 
+respectively. An increase in the amount of ZSM-5 to significantly high concentrations, up to 
+448 
+40 wt%, was found to have little effect on propylene production. The propylene yield 
+449 
+increased by around 10% of ZSM-5 crystal concentration in the catalyst inventory. It was 
+450 
+concluded that the decrease in the effectiveness of ZSM-5 at higher concentrations transpired 
+451 
+mainly due to the exhaustion of the gasoline olefin precursor. 
+452 
+Konno et al. [84] studied the effect of zeolite crystal size on ZSM-5 (Si/Al = 150) 
+453 
+catalytic stability in n-hexane under atmospheric pressure at temperatures ranging between 
+454 
+550oC and 650oC. The findings showed that the Si/Al ratio of the zeolite affected the product 
+455 
+selectivity and production of propylene. In the study, ZSM-5 with different Si/Al ratios of 50, 
+456 
+150 and 300 were prepared via hydrothermal synthesis in a water/surfactant/organic solvent. 
+457 
+It was found that ZSM-5 with Si/Al of 150 exhibited the highest propylene production s of 
+458 
+50.4% at 650oC because excessive reactions such as the consumption of light olefins and 
+459 
+BTX formation were suppressed by the low acid density (high Si/Al ratio). It was concluded 
+460 
+that applying ZSM-5 zeolite (Si/Al = 150) to the cracking reaction at a high reaction 
+461 
+temperature of 650oC improved propylene yield. 
+462 
+3.4 
+Functional additives for catalytic cracking 
+463 
+Functional additives are catalyst materials added separately to the base RFCC 
+464 
+catalyst, blended with the catalyst during formulation or even introduced into the feedstock. 
+465 
+
+<<<PAGE 25>>>
+ 25
+The main benefits of these additives are to increase gasoline octane number, increase 
+466 
+propylene production, minimise metals contamination of the catalyst and reduce the number 
+467 
+of pollutants emitted from the RFCC regenerator [85–89]. 
+468 
+The combustion of coke in the RFCC regenerator produces several atmospheric 
+469 
+pollutants that need to be controlled. These pollutants include carbon monoxide (CO), sulfur 
+470 
+oxides (SOx), nitrogen oxides (NOx), and particulate matter (PM). However, additives are 
+471 
+customised with particular properties based on requirements without altering product 
+472 
+distribution. 
+473 
+A practical approach toward NOx emission mitigation from fluid catalytic cracking 
+474 
+units was investigated by reviewing options for cost-efficient and pragmatic emissions 
+475 
+mitigation using optimal amounts of precious metals while evaluating the potential benefits 
+476 
+of typical promoter dopant packages [90]. The findings suggest that at the present catalyst 
+477 
+development level, the refinery is no longer forced to make a promoter selection based on 
+478 
+preconceived notions regarding precious metal activity but can rather make decisions based 
+479 
+on the best total cost financial impact to the operation without measurable loss of the 
+480 
+CO/NOx emission selectivity. 
+481 
+Mo et al. [91] studied SOx reduction additives for partial burn FCC by employing a 
+482 
+commercially available SOx reduction additive and an additive developed by JM Savannah. 
+483 
+The authors found that among other SOx reduction technologies, the use of additives in FCC 
+484 
+units provides a simple and cost-effective method and has been found essential by most 
+485 
+refiners. It was also pointed out that the reduction of SOx by additives was achieved via SOx 
+486 
+capture in the regenerator and the release of H2S after being transferred to the riser.  
+487 
+Chester et al. [92] carried out a study on CO combustion promoter additives in FCC 
+488 
+regenerator unit by employing CO promoter containing various noble metals (platinum (Pt), 
+489 
+Palladium (Pd), Iridium (Ir), Rhodium (Rh), Osborne (Os) and Rubidium (Ru)). The findings 
+490 
+
+<<<PAGE 26>>>
+ 26
+suggest that when 10 ppm of Pt, Pd and Rh were used, oxidation activity (CO2/CO) were 49, 
+491 
+36 and 26, respectively and when 5 ppm of Ir, Ru and Os were used, CO2/CO were 43, 8.6 
+492 
+and 2.2 respectively. It was concluded that CO combustion promoters containing Pt are the 
+493 
+best at oxidising CO to CO2, meaning that CO promoters containing Pt should be employed 
+494 
+when controlling the burning problem in the FCC regenerator after considering the cost. 
+495 
+3.5 
+Reaction pathways of the RFCC process 
+496 
+The pathways of the reduction of olefins in gasoline are via (i) aromatisation of 
+497 
+olefins in the absence of hydrogen and (ii) hydroisomerisation and aromatisation of olefins in 
+498 
+an excess hydrogen atmosphere (Fig. 2). Fig. 2 (a) shows the aromatisation of olefins in the 
+499 
+absence of hydrogen. Here, the initial intermediates are dienes, and the subsequent 
+500 
+intermediates are cyclo-olefins. Based on the viewpoint of the hydrocarbon, the dienes 
+501 
+conversion into cyclo-olefins is more likely than the direct conversion of n-olefins into cyclo-
+502 
+olefins. The phenomenon, however, suggests that the formation of cyclo-olefins from dienes 
+503 
+is too fast to be tracked. Fig. 2 (b) depicts the hydroisomerisation and aromatisation of olefins 
+504 
+in an excess hydrogen atmosphere as convened in FCC gasoline hydro-upgrading.  
+505 
+
+<<<PAGE 27>>>
+ 27 
+ 
+ (a) 
+(b) 
+ 
+Fig. 2 Reaction pathways for the RFCC processes for Reduction of Olefins in Gasoline (a) aromatization of olefins over HZSM-5 and Ga/HZSM-5 catalysts in 
+506 
+the absence of hydrogen and (b) hydroisomerization and aromatization of olefins over Ni-Mo/modified HZSM-5 + Al2O3 catalyst in the presence 
+507 
+of hydrogen. Reproduced with permission from [93] Copyright {2009} American Chemical Society.
+508 
+Olefins (C2= – C5=)
+Olefins (C6= – C10=)
+Dienes (C6
+= – C10
+=)
+Cracking (H+)
+Oligomerization (H+)
+Dehydrogenation
+Hydrogen transfer (H+)
+Cyclization (H+)
+Dehydrogenation
+Hydrogen transfer 
+(H+)
+Dehydrogenation
+Hydrogen transfer 
+(H+)
+Cyclic olefins (C6 =– C10=)
+Cyclic dienes (C6 =– C10=)
+Alkyl benzene (C6 – C10)
+(I)
+(II)
+(III)
+(IV)
+(V)
+Feedstock 
+(Olefin)
+Intermediary
+product
+Final 
+product
+Hydrogen
+atom cation
+Hydrogen
+atom anion
+Ionization of H2
+on metal sites
+Keys for Figure 2
+Paths
+(I)-(IV)
+A
+B
+Pathway of 
+paraffin production
+Pathway of alkyl
+aromatic production
+n-Olefins
+Secondary carbenium
+Diene
+Tertiary carbenium
+i-Pafaffin
+Cyclic olefins
+Alkyl aromatics
+Acid sites
+Acid sites
+Hydrogen transfer (H+)
+Acid sites
+Acid sites
+Acid sites
+Cyclization
+Acid sites
+Hydrogen transfer 
+(acid sites)
+Dehydrogenation
+(metal sites)
+H2
+Metal sites
+H+
++  
+H-
+A-(I)
+A-(II)
+A-(III)
+B-(I)
+B-(II)
+B-(III)
+
+<<<PAGE 28>>>
+ 28 
+(a) 
+(b) 
+Fig. 3 Reaction pathways for the RFCC processes for (a) residue conversion catalysts. Reproduced from [94] Springer nature {2013}, (b) improving polypropylene 
+509 
+production. Reproduced with permission from [95] copyright {1980} Elsevier.
+510 
+Residue feedstock
+Carbonium ion
+Carbenium ion
+Carbenium ion
+Paraffin (Product)
+Oleifin (Product)
+Paraffin (Product)
+Oleifin (Product)
+Paraffin (Product)
+Pyrolytic 
+Cracking 
+β-Scission
++ Alkane
++H+
+Strong Bronsted
+-H-
+Strong Lewis
+Initiation
+Propagartion
+Termination
+Initial reaction
+Chain reaction
+-H+
+Reform Bronsted
+Reform Lewis
++H-
+CH3OH
+CH3+  +  H2O
+Aromatics
+Paraffins
+H+
+C2=
+C2+
+C3=
+C3+
+C4=
+C4+
+C5=
+C5+
+C6=
+C6+
+C7=
+C7+
+H+
+H+
+H+
+H+
+H+
+H+
+Aromatization
+Methylation
+Cracking
+- C3=
+- C4=
+- C3=
+- C2=
+Methanol as olefin precusor
+Methylation
+Aromatization
++
+Cracking
+Light olefins
+
+<<<PAGE 29>>>
+ 29
+Fig. 4 Reaction pathways using functional additives in RFCC. Reproduced with permission from [96] 
+511 
+copyright {2017} Elsevier. 
+512 
+
+<<<PAGE 30>>>
+ 30
+First is the absorption of olefin molecules on the acid sites of the catalyst 
+513 
+(bifunctional). A portion of the olefin molecules is transformed into carbenium ions via a 
+514 
+combination with H+ ions spilt over from the metal sites. However, the residual olefins are  
+515 
+converted into dienes via a hydrogen transfer on the acid sites. Afterwards, the carbenium 
+516 
+ions formed are converted to i-paraffins by isomerisation, rearrangement, and hydrogen spill-
+517 
+over. Simultaneously, the dienes are transformed into aromatics and cyclo-olefins by 
+518 
+cyclisation, hydrogen transfer, and hydrogen transfer/dehydrogenation [97]. 
+519 
+Catalytic cracking is catalysed by Bronsted and Lewis acid sites of zeolites and 
+520 
+involves breaking up of C-C bond forming of carbonium and carbenium ions. Fig. 3 (a) 
+521 
+illustrates the reaction pathway of cracking residue feedstock via carbonium and carbenium 
+522 
+ion intermediates. It includes an initiation on any acid Bronsted site by protonation or the 
+523 
+Lewis site hydrogen abstraction. Subsequently, propagation follows with hydride transfer and 
+524 
+cracking via b-scission. Termination reactions are followed by the reaction of a carbenium 
+525 
+ion as follows: 
+526 
+(i) a Bronsted base forms a paraffin. 
+527 
+(ii) a Lewis base or Bronsted acid site creates paraffin and reforms a Lewis acid. 
+528 
+(iii) a hydride ion derived from coke forms a paraffin. 
+529 
+Likewise, initiation and cracking can arise via paraffin's reaction and a Bronsted acid 
+530 
+site creating a carbonium ion, which can subsequently react via b-scission to a carbenium ion 
+531 
+and smaller paraffin or undertake H2 elimination to a large carbenium ion. Fig. 3 (b) 
+532 
+illustrates the main reaction pathway forming light (C2 – C4) olefins from methanol 
+533 
+conversion at steady-state operation over an H-ZSM-5 catalyst. After the initial olefins are 
+534 
+formed during the induction period, the olefins are consecutively methylated to form higher 
+535 
+olefin homologues, which subsequently crack to form lighter olefins such as ethylene and 
+536 
+
+<<<PAGE 31>>>
+ 31
+propylene. Hydrogen transfer and cyclisation reactions lead to the formation of paraffins and 
+537 
+aromatics as end products [98,99].  
+538 
+The reaction pathway of the RFCC process using functional additives (Fig. 4) shows 
+539 
+the mechanism of the SOx removal additive [96]. Typically, a SOx additive comprises 
+540 
+multiple active constituents, including vanadium oxide, cerium oxide, and magnesium oxide. 
+541 
+The relative quantities of the main components are optimised for the best performance. Sulfur 
+542 
+is oxidised to form sulfur dioxide through coke combustion in the regenerator. In the first 
+543 
+step, sulfur dioxide is oxidised to sulfur trioxide, which reacts with the magnesium oxide (in 
+544 
+the additive), forming magnesium sulfate. In the second step, the additive gets to the riser, 
+545 
+and the magnesium sulfate is reduced by reducing gases such as hydrogen, methane and other 
+546 
+volatile organic compounds to regenerate the magnesium oxide and produce magnesium 
+547 
+sulfide. Finally, in the stripper, the magnesium sulfide undergoes hydrolysis in the presence 
+548 
+of vanadium pentoxide and steam to form magnesium oxide. An efficient SOx additive 
+549 
+should (i) oxidise sulfur dioxide to sulfur trioxide, (ii) form a stable magnesium oxide, and 
+550 
+(iii) effectively liberate sulfate species to regenerate the activity of the additive. Spinel, a 
+551 
+mineral composed of magnesium aluminium oxide (MgAl2O4) and hydrotalcite, a layered 
+552 
+double hydroxide, is the commonly used commercial SOx additive [96]. 
+553 
+4 
+RFCC Catalyst Deactivation  
+554 
+Refineries frequently find an opportunity to buy low-value or lower-cost crude 
+555 
+feedstocks to reduce operating costs. Although these opportunity feeds can help improve 
+556 
+profit margins, they usually have serious consequences. These consequences include the 
+557 
+destruction of catalysts and the production of a large amount of hydrogen and coke at the 
+558 
+expense of gasoline due to unspecified concentrations of impurities in the feed [14,100–102]. 
+559 
+Therefore, it is vital to be aware of such impurities to avoid surprises, such as catalyst 
+560 
+
+<<<PAGE 32>>>
+ 32
+deactivation and high coke deposition, which can cause indiscriminate product distribution 
+561 
+and shorten the cycle length of cracking catalysts. 
+562 
+Modern RFCC cracking catalyst deactivates rapidly at temperatures above 730-745°C 
+563 
+due to hydrothermal deactivation caused by high temperatures and a steam environment. The 
+564 
+high temperature is responsible for the catalyst's sintering (melts and collapses) [103]. 
+565 
+Cracking catalyst also deactivates by the sodium and vanadium that accumulates on 
+566 
+the catalyst. Sodium neutralises some of the acid sites within the zeolite structure, rendering 
+567 
+those acid sites permanently inactive. Sodium poisoning is usually caused by sodium chloride 
+568 
+that enters the crude unit during a desalter upset. However, it is well controlled in most 
+569 
+refineries using double desalters in the crude unit. The fresh catalyst typically has 2000 to 
+570 
+3000 ppm sodium left from manufacturing. Additive sodium beyond 5000 ppm on an 
+571 
+equilibrium catalyst can cause a rapid decline in catalyst activity [104]. 
+572 
+Vanadium, when deposited on the catalyst particle surface, oxidises in the regenerator 
+573 
+to V2O5, which in the presence of steam becomes mobile vanadic acid (H3VO4) that migrates 
+574 
+throughout the catalyst particle and then destroys the zeolite silica-alumina framework 
+575 
+[105,106]. Vanadium is organically bound within organometallic molecules and tends to 
+576 
+concentrate in the heaviest fraction of the feedstock. Modern vanadium trapping technology 
+577 
+allows concentrations of up to 7000 ppm vanadium on equilibrium catalyst to be tolerated 
+578 
+while maintaining suitable catalyst activity [107–109].  
+579 
+Nickel is also organically bound within organometallic molecules and tends to 
+580 
+concentrate in the heaviest fraction of the feedstock. Nickel is a dehydrogenation agent and 
+581 
+catalyses the formation of H2 and coke. However, nickel deposits on the surface of the 
+582 
+catalyst particle and, once deposited, tend to be stationary. The signature symptom of nickel 
+583 
+poisoning is high H2 formation, which results in high dry gas production. The formation of a 
+584 
+high amount of hydrogen can be countered by modern nickel trapping technology, lift gas  
+585 
+
+<<<PAGE 33>>>
+ 33 
+Table 5: Effects of Non-Metal and Metal Contaminants on RFCC Catalyst.  
+586 
+Types 
+Contaminants 
+Effects on RFCC Catalyst 
+Causes 
+References 
+Non-
+metals 
+Nitrogen 
+• Blocks catalyst pores  
+• Increase coke formation 
+• Poisons acid sites 
+•  Reduces activity  
+Adsorption of basic nitrogen compounds 
+(pyridine, quinolones, acridine and 
+phenanthridine) on the active sites of the 
+catalyst 
+[100,110–
+113] 
+Sulfur 
+• Decreases activity  
+• Increase coke formation 
+• Destroys acid sites 
+Formation of thiophenes that neutralises the 
+Bronsted acid sites 
+[114–116] 
+Metals  
+Iron 
+• Blocks catalyst pores   
+• Obstructs reactants’ access to active sites 
+Improper desalting of feedstock to RFCC 
+unit, the resulting product of corrosion from 
+storage equipment 
+[117,118] 
+Sodium 
+• Neutralisation of acid sites  
+• Destruction of the zeolite framework 
+Lowering the melting point of the catalyst, 
+thereby making it susceptible to sintering at 
+high temperature 
+[104–106] 
+Nickel 
+• Nickel does not affect the catalyst structure but 
+promotes undesirable reactions and unwanted 
+products 
+Covering the catalyst surface with nickel 
+makes the surface thicker and forms 
+crystalline sulfides that migrate into the 
+porous structure 
+[102,119] 
+Vanadium 
+• Surface area loss, 
+• Dealumination 
+• Unit cell size shrinkage 
+• Acid sites destruction 
+Hydrolysis of silica-alumina framework by 
+volatile and mobile vanadic acid 
+[15,101,120–
+122] 
+587 
+
+<<<PAGE 34>>>
+ 34
+and antimony to passivate the dehydrogenation impact of the nickel. New nickel will deposit 
+588 
+on top of the old nickel, rendering the old nickel inactive. H2 production tends to rise rapidly 
+589 
+with the initial nickel deposits but then tapers off with further increases in nickel. Incremental 
+590 
+nickel levels above 8000 ppm produce little incremental H2 [17]. Table 5 summarises the 
+591 
+effects and causes of the various non-metals and metals contaminants on RFCC catalysts. 
+592 
+4.1 
+Nitrogen poisoning 
+593 
+Over the years, the poisoning effect of basic nitrogen has been extensively published 
+594 
+[100,111,112,123–125]. Recently, there has been a shift in crude oil supply towards heavier 
+595 
+crudes. Heavy crude contains a high concentration of nitrogen (8000 ppm and above) 
+596 
+compared to lighter crude (0 – 5000 ppm). This shift necessitates the need to devise a means 
+597 
+of dealing with this sharp increase in nitrogen content in the processing of the heavy crude 
+598 
+feedstock. High-nitrogen crudes have nitrogen content greater than 0.25 wt%, and nitrogen-
+599 
+poor crudes with nitrogen content lower than 0.25 wt% [126]. In the lighter fractions of crude 
+600 
+oil, nitrogen is mainly in the form of basic compounds (pyridines, quinolines and 
+601 
+benzoquinolines). On the contrary, the nitrogen sources in heavy crude oil are in the form of 
+602 
+non-basic compounds such as indoles, pyrroles and carbazoles [110]. 
+603 
+Two mechanisms have been used to explain the retarding effects of basic nitrogen 
+604 
+compounds [111,127]. First, the basic nitrogen compounds reversibly absorb on the Brønsted 
+605 
+or Lewis acid centres and then poison the acid centres hindering the hydrocarbon cracking 
+606 
+ability of the FCC catalyst. Second, because of their big size and aromatic nature, the basic 
+607 
+nitrogen compounds may be the precursors of coke. Li et al. [113] found that the retarding 
+608 
+effects of non-basic compounds and condensed aromatics in coker gas oil catalytic cracking 
+609 
+are less serious than those of basic nitrogen compounds. Fig. 5 depicts the proposed 
+610 
+mechanism for the inductive partial poisoning effect of nitrogen on neighbouring acid sites  
+611 
+
+<<<PAGE 35>>>
+ 35 
+ 
+Fig. 5 Mechanisms of the retarding effects of basic nitrogen compounds on the Brønsted acid centres. Reproduced with permission from [12] 
+612 
+copyright {2008} Elsevier. 
+613 
+
+<<<PAGE 36>>>
+ 36 
+ 
+Fig. 6 Mechanism of thiophene hydrogenation and H2S production. Reproduced with permission from [93,128,129] Copyright {2006}. Elsevier 
+614 
+S
+C
+C
+C
+C
++
+HZ
++
+Z-
+H
+H
+H
+S
+C
+C
+C
+C
+H
+H
+Step I
+Step II
+Step III
++
+S
+C
+C
+C
+C
+H
+H
++
++
+R1-CH2-CH2-R2
++
+Carbenium ion
+S
+C
+C
+C
+C
+H
+H
+Hydrocarbon of 4 
+or less carbon atoms
+H
+H
+H
+H
+H
+H
+H
+H
++ R1-CH2-CH-R2
+S
+C
+C
+C
+C
+H
+H
+R1
+H2S
++
++
+Carbenium ion
+H
+H
+H
+H
+H
+H
+H
+H
+
+<<<PAGE 37>>>
+ 37
+ 
+(a) 
+ 
+(b) 
+ 
+(c) 
+Fig. 7 The three major sulphur deactivation mechanisms of catalysts. (a) Sulfidation, (b) Alteration, and (c)) 
+615 
+Coke formation. Reproduced with permission from [93,129] Copyright {2019} Elsevier. 
+616 
+M
+Support
+S
+H
+H
+Support
+S
+H
+H
+S
+H
+H
+S
+S
+H
+H
+H
+H
+S
+S
+Support
+H
+H
+H
+H
+M
+M
+M
+Sulphur adsorption 
+on metal site
+Sulphur chemisorption
+at high potential
+Formation of metal
+sulphide and hydrogen
+Active site for prefereed 
+and side reaction
+Sulphur deactivation of
+prefered catalytic site
+Change in catalysts
+functions and activities
+H
+H
+S
+H
+H
+M
+M
+M
+A & B – Reactants; C & D prefereed product, and E & F – side reaction product
+Support
+M
+S
+M
+A + B
+A + B
+C + D
+A + B
+E + F
+E + F
+Support
+A + B
+A + B
+A + B
+E + F
+E + F
+A + B
+Support
+S
+Active site for preferred reaction
+Active site forside reactions
+Key
+M
+M
+M
+M
+Active site for preferred reaction
+Active site for side reactions
+Active site for preferred side 
+reactions
+Sulfur deactivation of 
+preferred catalysts site
+Thiophene adsorbtion
+onto metal site
+Alkylation of thiophene
+increases molecular weight
+Dehydrogenation leading
+to coke formation
+Support
+S
+C
+C
+C
+C
+H
+H
+H
+H
+C
+C
+C
+C C
+S
+H
+H
+Support
+H
+H
+H
+H
+M
+C
+C
+C
+C
+C
+C
+C
+C
+Support
+S
+C
+C
+C
+C
+H
+H
+H
+H
+C
+C
+C
+C
+C
+C
+C
+C
+H
+H
+H
+H
+H
+H
+H
+H
+H
+H
+M
+M
+H
+H
+H
+H
+H
+H
+H
+H
+H
+H
+
+<<<PAGE 38>>>
+ 38
+by strong basic nitrogen compounds such as 2,6-dimethylpyridine relative to quinoline and 
+617 
+pyridine. 2,6-Dimethylpyridine seemed to induce stronger deactivation than quinoline and 3-
+618 
+methylpyridine, which are less basic. However, due to steric constraints, 2,6-
+619 
+dimethylpyridine is only adsorbed on the reactive Bronsted acid sites, which could also 
+620 
+explain the higher poisoning strength [12]. 
+621 
+4.2 
+Sulfur poisoning 
+622 
+Sulfur is regarded as the amplest heteroatom in crude oil. In most cases, the 
+623 
+concentration of sulfur in crude increases with a decrease in API gravity, which means that 
+624 
+the heavier the crude, the greater the concentration of sulfur [115,116,130]. RFCC catalyst 
+625 
+sulfur comes mainly from the cracking of long alkyl chain thiophenes. The mechanisms of 
+626 
+thiophene hydrogenation and H2S production are presented in Fig. 6. 
+627 
+Alkylated thiophenes, benzothiophenes and dibenzothiophenes are the major sulfur 
+628 
+compounds in typical RFCC feeds [12,45]. The deactivation mechanism of RFCC catalyst by 
+629 
+sulfur molecules occurs through interaction with acid sites and condensation reactions of 
+630 
+their unsaturated rings leading to coke formation [12,131]. The coke formed can poison the 
+631 
+acid sites or block the pore structure. 
+632 
+Sulfur is present in hydrocarbon feedstock in the form of hydrogen sulfide, sulfur 
+633 
+dioxide, thiophene, and its derivatives. These sulfur compounds contribute significantly to 
+634 
+catalyst poisoning. However, it is thought that the poisoning mechanisms of sulfur 
+635 
+compounds are different and lead to a reduction in catalyst performance through different 
+636 
+deactivation pathways. Fig. 7 illustrates the three major sulfur deactivation mechanisms 
+637 
+commonly encountered in hydrocarbon processing. The mechanisms include the sulfidation, 
+638 
+alteration and coke formation mechanisms[129]. 
+639 
+
+<<<PAGE 39>>>
+ 39
+The sulfidation step (Fig. 7a) involves the direct interactions between sulfur and 
+640 
+catalyst active sites. These include the adsorption of sulfur compounds and the formation of 
+641 
+sulfides. Catalysts exposed to low H2S concentrations are typically deactivated via the 
+642 
+adsorption of sulfur onto the catalyst surfaces, thereby blocking off access of the reactants to 
+643 
+the active metal sites. The adsorption is usually reversible, and catalytic activity can be 
+644 
+regenerated by raising the temperature or lowering the feed sulfur content to desorb the sulfur 
+645 
+from the poisoned surfaces. At higher H2S concentrations, sulfur's chemical potential 
+646 
+increases, favouring the chemisorption of sulfur into the catalyst material, leading to 
+647 
+subsequent sulfidation reactions to give metal sulfides. The sulfidation reactions of transition 
+648 
+metal active sites are generally irreversible and can result in permanent loss in activity of the 
+649 
+catalyst, as demonstrated in Fig. 7b. 
+650 
+In the alteration step (Fig. 7b), sulfur compounds interact with the active sites of the 
+651 
+catalyst and deactivate the preferred catalyst sites, thereby leading to a change in catalyst 
+652 
+functions and activities. This poisoning can alter the functionality of catalysts by affecting the 
+653 
+affinity, selectivity and reaction pathways of adsorbed reactants on the surface of the metal 
+654 
+sites. The coke formation step (Fig. 7c) involves the role of sulfur compounds in the growth 
+655 
+and deposition of carbonaceous coke on the catalyst, thereby reducing the activity of the 
+656 
+catalyst. Various studies have suggested that coke formation is accelerated for sulphur-
+657 
+poisoned catalysts due to preferential interactions of alkyl radicals with the sulphur atoms to 
+658 
+form R-S species. The R-S species then rapidly dehydrogenate to give indirectly-bonded coke 
+659 
+deposits on the surface of the catalysts’ active sites, which are very stable [132,133]. 
+660 
+4.3 
+Iron poisoning 
+661 
+Iron deposits on the RFCC catalyst as organic iron from the feed or inorganic iron 
+662 
+from equipment corrosion. When deposited on the RFCC catalyst, this Fe promotes 
+663 
+
+<<<PAGE 40>>>
+ 40
+undesirable dehydrogenation reaction and catalyst circulation problems due to the formation 
+664 
+of nodules on the catalyst surface. Rainer et al. [134] suggested that when the RFCC catalyst 
+665 
+was contaminated with Fe, analysis using Atomic Force Microscopy (AFM) indicated a 
+666 
+bumpy and nodulated appearance on the surface of the RFCC catalyst, leading to catalyst 
+667 
+circulation problems. Similarly, Psarras et al. [135] noted that as the level of iron increases on 
+668 
+the surface of the RFCC catalyst, the sintering phenomenon results in the imposition of 
+669 
+diffusional barriers to the migration of heavy molecules of a hydrocarbon feedstock to the 
+670 
+active site of the catalyst and this led to poor performance of the RFCC unit. The relationship 
+671 
+between RFCC unit performance and iron contamination is well-established in the literature 
+672 
+[136,137]. For example, it has been well-established that iron deposits on FCC catalysts form 
+673 
+a dense layer on the catalysts’ surface, and the dense layer stops reactants from diffusing to 
+674 
+the inner structures of the catalyst. This causes adverse effects on the catalyst's ability to 
+675 
+convert heavy oil and could greatly reduce gasoline yield while increasing yields of dry gas 
+676 
+and coke. The reaction performance of the catalyst would be severely affected when the iron 
+677 
+content on the equilibrium catalyst exceeds 8000 ppm [29,138]. 
+678 
+4.4 
+Sodium poisoning 
+679 
+Sodium is an important heteroatom that is part of the hydrocarbon structure. It may 
+680 
+also be from salty water. It is a deleterious cause of poisoning to watch out for in the RFCC 
+681 
+feed. Sodium comes from various sources, including naturally contaminated oil feedstocks, a 
+682 
+remnant from oil extraction due to a faulty desalter, or a residual material from catalyst 
+683 
+preparation. Sodium is well known to cause the destruction of zeolite framework, participate 
+684 
+in the ionic exchange and reduce the amount of Bronsted acid sites [104,105,139]. Oliveira et 
+685 
+al. [140] and Xu et al. [141] reported that Na and V could interact synergistically with steam 
+686 
+
+<<<PAGE 41>>>
+ 41
+to yield NaOH. The NaOH formed migrates into the zeolite structure and readily dissolves 
+687 
+crystalline components, negatively affecting the catalyst‘s activity and selectivity. 
+688 
+4.5 
+Nickel poisoning  
+689 
+The deactivation of RFCC catalysts by nickel occurs by catalysing unwanted side 
+690 
+reactions and degrading any residual material in which it may be isolated. The nickel, acting 
+691 
+as a catalyst for dehydrogenation, leads to more dehydrogenation activity than 
+692 
+vanadium. However, nickel does not contribute to zeolite destruction [11,122]. Equation 1 
+693 
+presents the typical dehydrogenation reaction of cyclohexane to benzene in the presence of a 
+694 
+nickel catalyst, as Al-Ayed and Kunzru reported [142].  
+695 
+𝐶6𝐻12
+𝑁𝑖𝑐𝑘𝑒𝑙
+→    𝐶6𝐻6 + 3𝐻2 
+Equation 2 
+The dehydrogenation, however, affects the performance of the RFCC unit due to the 
+696 
+excessive formation of coke and hydrogen by shifting the selectivity from the desired cracked 
+697 
+products. The coke derived from the catalysed dehydrogenation by contaminant metals such 
+698 
+as nickel and iron is called contaminant coke. 
+699 
+The mechanism of nickel deactivation of RFCC catalysts is illustrated in Fig. 8. In the 
+700 
+reactor during cracking, nickel in the form of porphyrin in the feed is first deposited on the 
+701 
+catalyst surface, possibly in an amorphous state, deactivating it locally by covering the 
+702 
+surface. Secondly, the surface layer of the nickel deposit gets thicker with time via the 
+703 
+formation of crystalline sulfides migrating into the porous structure. The sulfides eventually 
+704 
+destroy and deactivate the catalyst pores leading to undesired reactions such as 
+705 
+dehydrogenation and coke formation. 
+706 
+
+<<<PAGE 42>>>
+ 42 
+ 
+Fig. 8 An illustration of the mechanisms of the nickel poisoning catalysts. 
+707 
+Reduing
+environment
++
+Coke deposit
+Nickel Porphyrin attack
+Nickel Porphyrin 
+Coke
+Catalysts particle
+A
+A
+N
+i
+N
+N
+N
+N
+COOH
+HOOC
+COOH
+HOOC
+N
+i
+N
+N
+N
+N
+COOH
+HOOC
+COOH
+HOOC
+N
+i
+N
+N
+N
+N
+COOH
+HOOC
+COOH
+HOOC
+N
+i
+N
+N
+N
+N
+COOH
+HOOC
+COOH
+HOOC
+N
+i
+N
+N
+N
+N
+COOH
+HOOC
+COOH
+HOOC
+N
+i
+N
+N
+N
+N
+COOH
+HOOC
+COOH
+HOOC
+N
+i
+N
+N
+N
+N
+COOH
+HOOC
+COOH
+HOOC
+N
+i
+N
+N
+N
+N
+COOH
+HOOC
+COOH
+HOOC
+N
+i
+N
+N
+N
+N
+COOH
+HOOC
+COOH
+HOOC
+N
+i
+N
+N
+N
+N
+COOH
+HOOC
+COOH
+HOOC
+N
+i
+N
+N
+N
+N
+COOH
+HOOC
+COOH
+HOOC
+N
+i
+N
+N
+N
+N
+COOH
+HOOC
+COOH
+HOOC
+N
+i
+N
+N
+N
+N
+COOH
+HOOC
+COOH
+HOOC
+N
+i
+N
+N
+N
+N
+COOH
+HOOC
+COOH
+HOOC
+N
+i
+N
+N
+N
+N
+COOH
+HOOC
+COOH
+HOOC
+N
+i
+N
+N
+N
+N
+COOH
+HOOC
+COOH
+HOOC
+A
+Side reaction
+Desired reaction 
+H2
+H2
+H2
+H2
+H2
+H2
+H2
+H2
+H2
+H2
+H2
+H2
+H2
+H2
+H2
+H2
+H2
+Ni
+N
+N
+N
+N
+COOH
+HOOC
+COOH
+HOOC
++
+Nickel Porphyrin 
+Gasoline (C5-C9)
+C
+C
+C
+C
+C
+C
+C
+H
+H
+H
+H
+H
+H
+H
+H
+H
+H
+H
+H
+H
+H
+H
+C
+H
+H
+H
+
+<<<PAGE 43>>>
+ 43
+4.6 
+Vanadium poisoning 
+708 
+Numerous studies have proposed various means of vanadium attack on the RFCC 
+709 
+catalysts [15,16,120–122,143]. One of the routes was a study of several catalysts and 
+710 
+characterisation techniques such as BET, XRD, and electron microprobe [101,143]. The 
+711 
+mechanism of vanadium deactivation of RFCC catalysts is illustrated in Fig. 9. In the reactor, 
+712 
+during cracking, vanadium in the form of porphyrin in the feed is first deposited throughout 
+713 
+the catalyst particle and reduced to vanadium. Secondly, in the regenerator, it is oxidised to 
+714 
+vanadium pentoxide (Equation 3 ), which in the presence of steam, forms a highly mobile 
+715 
+vanadic acid (Equation 4). H3VO4 is a strong acid with a dissociation constant (pKa) of 0.05 
+716 
+[144]. 
+717 
+4𝑉+ 5𝑂2 →2𝑉2𝑂5 
+Equation 3 
+𝑉2𝑂5 + 3𝐻2𝑂→2𝐻3𝑉𝑂4 
+Equation 4 
+This acid causes the mobility of vanadium and the subsequent attack on the zeolite 
+718 
+structure. The vanadic migrates into the zeolite structure and causes hydrolysis of the silicon-
+719 
+aluminium bond leading to the collapse of the zeolite structure.  
+720 
+It is costly to design a catalyst regeneration system to prevent the formation of 
+721 
+vanadic acid. Hence, the effect of vanadium destruction on RFCC catalyst can be controlled 
+722 
+by developing appropriate additives to trap the vanadic acid. Appropriate traps are designed 
+723 
+based on the principle of acid-base chemistry, which allows for the immobilisation of the 
+724 
+active vanadium species [145]. 
+725 
+In addition to destroying the catalyst structure, vanadium also promotes 
+726 
+dehydrogenation reactions like nickel, leading to the formation of a large amount of hydrogen 
+727 
+and coke [146]. Etim et al. [147] reported that the dehydrogenation effect of  
+728 
+
+<<<PAGE 44>>>
+ 44 
+ 
+ 
+A -Vanadium porphyrin 
+ 
+B -Vanadium (v) oxide 
+ 
+C -Vanadic acid 
+Fig. 9 An illustration of the mechanisms of the vanadium poisoning catalysts. 
+729 
+Reducing
+environment
++
+Coke deposit
+Vanadium Porphyrin attack
+Vanadium Porphyrin 
+N
+N
+N
+X
+R
+X
+R
+X
+X
+R
+X
+R
+X
+N
+O
+N
+N
+N
+X
+R
+X
+R
+X
+X
+R
+X
+R
+X
+N
+O
+N
+N
+N
+X
+R
+X
+R
+X
+X
+R
+X
+R
+X
+N
+O
+N
+N
+N
+X
+R
+X
+R
+X
+X
+R
+X
+R
+X
+N
+O
+N
+N
+N
+X
+R
+X
+R
+X
+X
+R
+X
+R
+X
+N
+O
+N
+N
+N
+X
+R
+X
+R
+X
+X
+R
+X
+R
+X
+N
+O
+N
+N
+N
+X
+R
+X
+R
+X
+X
+R
+X
+R
+X
+N
+O
+V
+V
+V
+V
+V
+V
+V
+Regeneration
+Coke deposit burnt off
+Vanadium (v) oxide
+Steaming
+N
+N
+N
+X
+R
+X
+R
+X
+X
+R
+X
+R
+X
+N
+O
+N
+N
+N
+X
+R
+X
+R
+X
+X
+R
+X
+R
+X
+N
+O
+N
+N
+N
+X
+R
+X
+R
+X
+X
+R
+X
+R
+X
+N
+O
+N
+N
+N
+X
+R
+X
+R
+X
+X
+R
+X
+R
+X
+N
+O
+N
+N
+N
+X
+R
+X
+R
+X
+X
+R
+X
+R
+X
+N
+O
+N
+N
+N
+X
+R
+X
+R
+X
+X
+R
+X
+R
+X
+N
+O
+N
+N
+N
+X
+R
+X
+R
+X
+X
+R
+X
+R
+X
+N
+O
+V
+V
+V
+V
+V
+V
+V
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+Vanadic acid
+Catalysts particle
+Intra-particle  movement
+Inter-particle  movement
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+V
+O
+OH
+O
+OH
+Inter and Intra
+particle movement
+A
+B
+C
+C
+A
+V
+O
+OH
+O
+OH
+-
+V 
+V 
+O 
+O 
+O 
+O 
+O 
+
+<<<PAGE 45>>>
+ 45 
+Table 6: Mitigation Strategies of Metal Poisons 
+730 
+Feed Metal 
+Deposition Method 
+Primary Effect 
+Secondary Effect 
+Problems 
+Solutions 
+References 
+Iron 
+Peripheral deposition. Low 
+mobility between particles 
+Creates nodules on the 
+surface of the particle at very 
+high levels 
+Dehydrogenation agent, 
+CO promotion and  
+Catalyst circulation 
+problems 
+ 
+• 
+Circulation issues and lower 
+ABD 
+• 
+Over-promotion in partial burn 
+units 
+• 
+Slightly increased SOx emissions 
+• 
+Flush catalyst 
+• 
+Catalyst change 
+[134,135] 
+Sodium 
+Deposits evenly and does not 
+migrate 
+Permanent catalyst poison 
+Forms eutectic with 
+vanadium 
+• 
+Decreased catalyst activity 
+• 
+Flush catalyst 
+• 
+Catalyst change 
+• 
+Optimise desalter 
+operation 
+[140,141] 
+Nickel 
+Peripheral deposition. Does 
+not migrate 
+Dehydrogenation agent 
+(promotes coke and H2 
+production) 
+-- 
+• 
+Increased H2 and coke production • 
+Antimony injection 
+• 
+Catalyst change 
+• 
+Flush catalyst 
+[122,148] 
+Vanadium 
+Deposits evenly and 
+migrates in the regenerator 
+Permanent catalyst poison 
+Dehydrogenation agent 
+• 
+Increased H2 and coke production 
+• 
+Decreased catalyst activity 
+• 
+V-trap additives 
+such as Tin 
+compounds 
+• 
+Flush catalyst 
+[101,145] 
+ 
+
+<<<PAGE 46>>>
+ 46
+vanadium is one-fourth that of nickel when vanadium and nickel are deposited in equal 
+731 
+amounts on the cracking catalyst. It was suggested by Tangstad et al. [149] that vanadium in 
+732 
++4 and +5 oxidation states have similar dehydrogenation activities, while vanadium in +3 or 
+733 
+lower oxidation states has almost no dehydrogenating effects. 
+734 
+5 
+Mitigation Strategies of Metal Poisons  
+735 
+The mitigation strategies for metal (iron, sodium, nickel and vanadium) poisoning are 
+736 
+presented in Table 6. As can be seen, the deposition methods, the primary and secondary 
+737 
+effects, and the challenges associated with these metals vary. A detailed description of the 
+738 
+metal poisons’ mitigation processes is given in 5.1 to 5.4. 
+739 
+5.1 
+Iron mitigation  
+740 
+To mitigate the effect of iron, the refiner should employ a fresh catalyst with 
+741 
+optimised surface porosity. A minimal catalyst surface pores will usually lead to poor 
+742 
+diffusion of feed, while optimised catalyst surface pores have excellent feed diffusion. In 
+743 
+minimal catalyst surface pores, the threshold for added iron is usually low in the range of 0.3 
+744 
+wt% compared to optimised catalyst surface pores, with a threshold of added iron of 1.5 wt% 
+745 
+and above. These optimised catalyst pores make the catalyst withstand the harmful effect of 
+746 
+iron by providing additional pores to accommodate the pore-blocking effect of iron. Another 
+747 
+way to mitigate the detrimental impact of iron is to increase the fresh catalyst additions into 
+748 
+the regenerator to flush iron out of the circulating inventory. This method is usually very 
+749 
+expensive to practice due to the high cost of catalysts, as it consumes a lot of cracking 
+750 
+catalysts [150,151]. Typically, catalyst consumption is 1200 tons/day, but using this method, 
+751 
+the consumption could be as high as 2000 tons/day. Therefore, this approach must be 
+752 
+
+<<<PAGE 47>>>
+ 47
+optimised with iron poisoning as a potential objective function and catalyst cost as a 
+753 
+constraint [152]. 
+754 
+5.2 
+Sodium mitigation 
+755 
+Sodium acts as a permanent catalyst poison; therefore, a fresh catalyst with low 
+756 
+sodium should be employed to mitigate the effect of sodium. Another reliable way to reduce 
+757 
+the sodium effect is to improve and optimise desalter operations to remove sodium from the 
+758 
+feed. Refineries such as the Dangote petroleum refinery and petrochemicals in Nigeria 
+759 
+employ a double desalter in their crude distillation unit to tackle the sodium effect. Sodium 
+760 
+can also be mitigated by increasing the catalyst addition to flush sodium out of the circulating 
+761 
+inventory. This increases fresh catalyst activity to combat activity loss from sodium. 
+762 
+However, this method is not sustainable as it is very expensive to practice due to the high 
+763 
+cost of catalysts [153].  
+764 
+5.3 
+Nickel mitigation  
+765 
+Ni becomes a concern at an equilibrium catalyst concentration greater than 800 ppm 
+766 
+[154]. Some refiners have used antimony (Sb) injection to passivate the harmful effect of 
+767 
+nickel. However, antimony has been found to increase NOx emissions, bottom fouling and 
+768 
+cause some environmental concerns regarding the safe handling of antimony [154]. 
+769 
+A more reliable way to control nickel’s effect is using speciality alumina, bismuth and 
+770 
+rare earth compounds. Alumina and bismuth passivate nickel by forming nickel alloy on the 
+771 
+catalyst surface, which is difficult to reduce to more detrimental elemental nickel. While 
+772 
+these have proved successful to some extent, speciality alumina and bismuth are immobile 
+773 
+under RFCC conditions. They cannot migrate to the nickel that deposits peripherally on the 
+774 
+catalyst’s surface, reducing their effectiveness. Rare earth compounds, on the other hand, are 
+775 
+
+<<<PAGE 48>>>
+ 48
+very expensive for application in the refinery despite their success at mitigating the harmful 
+776 
+effect of nickel. 
+777 
+The shortcomings of antimony, speciality alumina, bismuth and rare earth compounds 
+778 
+are overcome using boron-based technology, identified as the most reliable technology to 
+779 
+mitigate the effect of nickel on RFCC catalysts. Boron is mobile under RFCC conditions, 
+780 
+migrating to the nickel and occupying the interstitial spaces forming Ni-B alloy. This Ni-B 
+781 
+alloy is difficult to reduce to a detrimental form under riser conditions, thereby mitigating the 
+782 
+dehydrogenating effect of nickel. Nickel does not increase NOx emissions and is safe to 
+783 
+handle and environmentally friendly [155]. 
+784 
+5.4 
+Vanadium mitigation 
+785 
+Vanadium typically becomes a concern at an equilibrium catalyst concentration 
+786 
+greater than 1500 ppm [155]. Refiners can use vanadium additives to mitigate the harmful 
+787 
+effect of vanadium. These additives include rare earth oxides (REO), calcium and 
+788 
+magnesium-based. Tin has also been identified as having the potential to mitigate vanadium 
+789 
+poisons. It is important to note that these additives are added separately or blended into the 
+790 
+catalyst formulation during the synthesis. 
+791 
+Low sodium fresh catalyst should be employed to mitigate the effect of vanadium 
+792 
+because the harmful impact of vanadium is exaggerated in the presence of sodium. Another 
+793 
+way to mitigate the effect of vanadium is to increase fresh catalyst additions into the 
+794 
+regenerator or use purchased catalysts to flush out the vanadium in the circulating 
+795 
+inventory. While this method is successful, it is not advisable to practice because it is very 
+796 
+expensive [155]. 
+797 
+
+<<<PAGE 49>>>
+ 49
+5.5 
+Passivators for the simultaneous mitigation of nickel and vanadium poisons 
+798 
+The various passivators and mitigation strategies of the individual metal contaminants 
+799 
+(sodium, iron, nickel and vanadium) that affect the RFCC catalyst have been discussed in 5.1 
+800 
+to 5.4. Some metal passivators can also be combined into a single catalyst to utilise their 
+801 
+synergistic effects for mitigating multiple metal poisons. Despite the importance of using a 
+802 
+single passivator to address the deleterious effect of nickel and vanadium, far too little 
+803 
+attention has been paid to this area of research. Hoffer et al. [6] studied heavy metal 
+804 
+passivators/traps for the FCC process by combining antimony (Sb) and iron (Fe). The authors 
+805 
+reported that when Sb/Fe passivator was incorporated into an FCC catalyst contaminated 
+806 
+with nickel, H2 production was reduced by 15%. When the same combination was 
+807 
+incorporated in the FCC catalyst deactivated with vanadium, H2 production declined by 20%. 
+808 
+Finally, when these metals combination was used to passivate FCC catalyst co-deactivated 
+809 
+with nickel and vanadium, H2 and coke production was reduced by 30%. The authors 
+810 
+concluded that the combination of Sb and Fe successfully mitigated the deleterious effects of 
+811 
+nickel and vanadium. However, Fe is a dehydrogenating poison and is unsuitable for 
+812 
+mitigating the dehydrogenation effect of nickel and vanadium. 
+813 
+ In a similar vein, Hayes and Castillo [156] used Sb/Sn to passivate nickel and 
+814 
+vanadium-contaminated cracking catalysts. The findings suggested that H2 yield decreased by 
+815 
+17% compared to 10% when Sb alone was used. It was concluded that a combination of Sb 
+816 
+and Sn produces even better passivation than Sb when used alone. However, Sb as a 
+817 
+passivator was found to increase NOx emission and causes fouling of downstream 
+818 
+equipment. 
+819 
+
+<<<PAGE 50>>>
+ 50
+6 
+Metal Passivators (Traps) for the Inhibition of Nickel and Vanadium on RFCC Catalyst 
+820 
+Overall, amongst the metals and non-metal contaminants presented earlier in Table 5, 
+821 
+nickel and vanadium are more harmful because when they are deposited on the catalyst, they 
+822 
+interact with the catalyst to change the main reaction pathways and establish parallel 
+823 
+reactions such as dehydrogenation, causing a shift in the catalyst selectivity (Fig. 8 and Fig. 
+824 
+9). These metals actions, therefore, become challenging in petroleum refining relying on the 
+825 
+RFCC process and so, negatively impact the refining cost. 
+826 
+It should be noted that “passivator” and “trap” are not used interchangeably and that 
+827 
+the mixture of metal oxides comprises components that either passivate or trap the metal 
+828 
+impurities. “Passivator” is a structure that decreases the activity of undesirable metals such as 
+829 
+nickel and vanadium. A “trap” is a composition that immobilises contaminant metals that  
+830 
+have both intra-particle and inter-particle mobility in the RFCC catalyst mixture [6]. Such 
+831 
+mobile metals include vanadium and sodium. A passivator may not necessarily immobilise 
+832 
+vanadium, and a trap certainly may not passivate vanadium. The passivation process works 
+833 
+by forming a thin film layer of oxides on the catalyst’s surface, which prevents the catalyst’s 
+834 
+ability to produce contaminant H2 and coke in the presence of contaminant metals during the 
+835 
+RFCC process.  
+836 
+The process descriptions and key findings of various passivators of vanadium and 
+837 
+nickel contaminants in the RFCC process are presented in Table 7. The main passivators of 
+838 
+vanadium poisoning are tin compounds, rare earth compounds and alkaline earth compounds, 
+839 
+whereas typical nickel poisons are antimony oxide, cerium oxide, bismuth, and boron. 
+840 
+Detailed discussions on the effect of these passivators on nickel and vanadium are given in 
+841 
+Table 7 and discussed in sections 6.1 and 6.2 below. 
+842 
+ 
+843 
+
+<<<PAGE 51>>>
+ 51 
+Table 7: Nickel and vanadium contaminants and their passivators/traps. 
+844 
+Contaminants 
+Passivators 
+Process conditions 
+Key findings  
+Ref 
+Nickel  
+Antimony  
+Compounds 
+Materials: FCC catalyst; nickel Naphthenate; Antimony oxide 
+Drying: Temp: 204oC, Time: 1 hr. 
+Calcination: Temp-677oC, Time- 3 hrs. 
+Steaming: Type - 100% steam, Temp - 732oC, Time - 8 hrs. 
+ 
+Impregnation with Nickel 
+• 
+Decrease in gasoline yield 
+• 
+Increase in H2 and coke 
+Passivation with Antimony 
+• 
+Decrease in surface nickel atoms 
+• 
+Reduction in coke and dry gas 
+• 
+Formation of Ni-Sb alloy 
+[154] 
+Materials: REY-zeolite; nickel Naphthenate; Antimony oxide 
+Nickel loading: 0.1 – 1.0 wt% 
+Drying: Temp- 100oC, Time - 1 hr. 
+Calcination: Temp - 590oC, Time - 14 hrs. 
+• 
+Increase in H2 and coke yield with increasing nickel loading up to 1% 
+• 
+The addition of antimony reinstates the transformation and production of H2 
+and coke otherwise obtained with an unpoisoned catalyst 
+• 
+A strong decrease in percentage conversion on the addition of nickel to the 
+catalyst 
+[7] 
+Materials: FCC catalyst; Nickel naphthenate; vanadium naphthenate; 
+antimony compound 
+Steaming: Type – 100% steam, Temp – 766oC, Time -18 hrs. 
+Calcination: Temp – 677oC, Time – 2 hrs. 
+• 
+30% loss of catalyst surface area after steaming 
+• 
+All catalysts with metal traps showed a boost in gas oil conversion 
+• 
+The presence of a metal trap increases the research octane number (RON) of 
+the gasoline 
+• 
+Decrease in H2 and coke for catalysts with metal traps 
+[157] 
+Rare Earth  
+Compounds 
+Materials: FCC catalyst; nickel naphthenate; rare earth oxides  
+Drying: Temp: 80oC, Time - 1 hr. 
+Calcination: Temp: 600oC, Time - 2 hrs. 
+Steaming: Type - 100% steam, Temp - 800oC, Time: 10 hrs. 
+ 
+• 
+Nickel alone does not affect zeolite surface area loss 
+• 
+3000 ppm of vanadium decreases the zeolite surface area 
+• 
+There was 59% preservation in zeolite surface area with the introduction of 
+rare earth oxides 
+• 
+44% surface area preservation by rare earth oxides when the catalyst was 
+poisoned by both vanadium and nickel 
+• 
+The presence of nickel reduces the effectiveness of rare earth oxides. 
+[120] 
+Materials: FCC catalyst; nickel compound; cerium octoate 
+Equilibration: Temp: 649oC, Time: 0.5 hr. 
+Calcination: Temp: 649oC, Time: 1 hr. 
+Steaming: Temp - 788oC, Time: 6.5 hrs. 
+• 
+Nickel poisoning causes a high yield of H2 gas 
+• 
+The addition of cerium to the catalyst greatly decreases the amount of 
+hydrogen produced 
+• 
+The catalysts passivated with cerium resulted in lower coke values when 
+steamed at 732oC or 788oC 
+[158] 
+Bismuth 
+Materials: Nickel compound, vanadium compound, and bismuth 
+compound 
+Riser: Temp – 593oC, Pressure: 3.50 kg/cm2 Contact Time: 15 sec. 
+Catalyst-to-oil ratio: 4:1 
+Regenerator: Temp – 682oC, Time: 3 – 30 mins. 
+• 
+Decrease in conversion and gasoline yield with nickel and vanadium poisons 
+• 
+Increase in H2 and coke yield with nickel and vanadium poisons 
+• 
+Decrease in yield of H2 and coke upon introduction of bismuth 
+• 
+Conversion and gasoline yield increase with the addition of bismuth 
+[159] 
+Materials: FCC catalyst; nickel naphthenate; bismuth compound; 
+antimony compound 
+Drying: Temp: 120oC, Time - 1 hr. 
+Calcination: Temp - 550oC, Time: 5 hrs. 
+• 
+Bismuth and antimony suppress the harmful effect of nickel 
+• 
+Replacement of antimony with bismuth eliminates hazardous material. 
+[160] 
+
+<<<PAGE 52>>>
+ 52 
+Boron 
+Materials: USY-Zeolite; nickel octoate; boron oxide 
+Drying: Temp - 100oC, Time: 1 hr. 
+Calcination: Temp - 650oC, Time: 3 hrs. 
+ 
+• 
+Characterisation of boron is difficult because of its low atomic weight. 
+• 
+CO DRIFT with three pretreatment temperatures can characterise the impact 
+of boron on the catalyst 
+• 
+Boron-based technology passivates nickel by decreasing its reducibility under 
+typical FCC conditions at less than 600oC. 
+[161] 
+Materials: FCC catalyst; nickel naphthenate; vanadium naphthenate; 
+boron compound 
+Drying Temp - 80oC, Time - 2 hrs. 
+Calcination: Temp - 550oC, Time - 5 hrs. 
+Steaming Temp: 760oC, Time: 6 hrs. 
+• 
+Operating H2/CH4 decreased with boron at constant equivalent Ni 
+• 
+Increase in operating gasoline yield with boron at constant conversion 
+• 
+3% LPG and gasoline yields, higher conversion with boron 
+• 
+26% reduction of unwanted hydrogen with boron 
+• 
+16% coke reduction with boron 
+[155] 
+Vanadium 
+Tin  
+compounds 
+Materials: Zeolite-Y; vanadyl naphthenate; tetraphenyl Tin. 
+Drying Temp.: 100oC 
+Calcination Temp: 540oC 
+Steam: 95% 
+Steaming Temp.: 730oC 
+ 
+ 
+Impregnation with vanadium 
+• 
+Spectroscopic studies showed mobile V species on the zeolite surface 
+• 
+V2O5 was formed in large amounts after hydrothermal treatment 
+• 
+Irreversible loss of crystallinity leading to the collapse of the zeolite 
+framework 
+Passivation with Lanthanum 
+• 
+Retention of crystallinity on the addition of tetraphenyl tin after steam-ageing 
+• 
+Tin limits vanadium-zeolite interactions 
+[162] 
+Materials: NH4-Zeolite-Y; vanadyl naphthenate; tetraphenyl Tin. 
+Drying Temp: 100oC 
+Calcination Temp.: 575oC 
+Calcination Time: 12 hrs. 
+Steam: 95% 
+Steaming Temp.: 730oC 
+Steaming Time: 10 hrs. 
+• 
+Vanadium deposited on the catalyst does not migrate initially until after 
+steaming. 
+• 
+ The order of deposition of vanadium and tin on the zeolite catalyst is 
+irrelevant 
+• 
+The presence of tin removes the zeolite-vanadium interaction by forming a 
+tin-vanadium complex 
+• 
+Excess tin is to be avoided when using it to passivate vanadium 
+[163] 
+Materials: NH4-Zeolite-Y; vanadyl naphthenate; tetraphenyl Tin. 
+Drying Temp.: 100oC 
+Calcination Temp.: 575oC 
+Calcination Time: 12 hrs. 
+Steam/N2: 95% steam & 5% N2 
+Steaming Temp.: 730oC 
+Steaming Time: 10 hrs. 
+Flow rate of water: 4ml/hr. 
+• 
+Vanadium present as free VO2+ cations favours the breakdown of zeolite 
+lattice 
+• 
+The order of deposition of tin and vanadium has little effect on the nature of 
+the resulting species 
+[164] 
+Basic alkaline  
+earth compounds 
+Materials: FCC catalyst; vanadyl naphthenate; Calcium Chloride. 
+Drying Temp.: 110oC 
+Drying Time: 3 hrs. 
+Calcination Temp.: 540oC 
+Calcination Time: 2 hrs. 
+Steam/Argon: 4% steam & 96% Argon 
+Steaming Temp.: 760oC 
+Steaming Time: 5 hrs. 
+• 
+The addition of vanadium to the FCC catalyst destroys the structure of the 
+zeolite and reduces its activity 
+• 
+The addition of calcium decreases the yield of coke and gas with increasing 
+gasoline selectivity 
+[165] 
+
+<<<PAGE 53>>>
+ 53 
+Materials: zeolite catalyst; vanadyl naphthenate; magnesium acetate  
+Drying Temp.: 200oC 
+Drying Time: 1 hr. 
+Calcination Temp.: 720oC 
+Calcination Time: 1 hr. 
+Steam/Air: 60% steam & 40% air 
+Steaming Temp.: 760oC 
+Steaming Time: 2 hrs. 
+• 
+Increase in coke and gas factor after impregnation of the catalyst with 
+vanadium 
+• 
+The introduction of Mg leads to a reduction in coke and an increase in 
+gasoline 
+• 
+The introduction of Mg leads to the preservation of the zeolite crystal 
+structure. 
+ 
+[143] 
+Rare Earth  
+Compounds 
+Materials: FCC catalyst; vanadium naphthenate; Lanthanum octoate 
+Equilibration Temp.: 770oC 
+Equilibration Time: 15 hrs. 
+Steam: 100% 
+Impregnation Temp.: 60oC 
+Calcination Temp.: 600oC 
+Heating rate: 2oC/min. 
+Calcination Time: 5 hrs. 
+Impregnation with vanadium 
+• 
+Shrink in zeolite unit cell size from 24.58 to 24.26 Angstroms due to 
+dealumination 
+• 
+vanadium is mostly concentrated on zeolite, which is transformed into mullite 
+and cristobalite after hydrothermal treatments. 
+Passivation with Lanthanum 
+• 
+Zeolite crystal was kept higher than 90% 
+Zeolite and the entire matrix were preserved from the effect of vanadium 
+[166] 
+Materials: USY-Zeolite; ammonium vanadate; lanthanum oxide. 
+Drying Temp.: 80oC 
+Drying time:  24 hrs. 
+Calcination Temp.: 500oC 
+Calcination Time: 2 hrs. 
+Steaming Temp.: 800oC 
+Steaming Time: 4 hrs. 
+Impregnation with vanadium 
+• 
+Higher vanadium deposition (1.12 wt%) induced intense damage to the 
+zeolite crystal structure. 
+• 
+Catalyst acidity decreases with an increase in vanadium content. 
+• 
+The residue conversion decreased sharply between 86.7 wt% and 70.4 wt% 
+with a change in the concentration of vanadium contaminant from 0 ppm to 
+5000 ppm. 
+• 
+The yield of target products (LPG + cracked gasoline) declined by 18.68 wt%, 
+and the light cycle oil (LCO) increased significantly. 
+Passivation with Lanthanum 
+• 
+The by-product yield, including coke, dry gas, and cycle oils, nearly stayed 
+the same, besides cracked gasoline and LPG yields 
+• 
+Adding cerium oxide and lanthanum oxide increased the catalysts' surface 
+area and feed conversion. 
+• 
+The introduction of lanthanum oxide into the catalyst mix impeded the 
+destruction by highly deposited vanadium 
+ 
+[167] 
+
+<<<PAGE 54>>>
+ 54
+6.1 
+Passivators for nickel poisoning 
+845 
+6.1.1 Antimony (Sb) as nickel passivator 
+846 
+The use of antimony compounds as nickel passivator has been studied by several 
+847 
+authors, as detailed in Table 7 [7,154,157]. In general, the source poison is nickel in the form 
+848 
+of naphthenates, while antimony oxide is employed as the passivating compound. During the 
+849 
+impregnation process of antimony compounds on the FCC catalyst, the drying temperature 
+850 
+has been established to range between 100 – 204oC for 1 hour, calcination temperature in the 
+851 
+range of 590 – 677oC for 2 – 14 hours and all catalysts are steam treated in 100% steam 
+852 
+environment at a temperature ranging between 732 – 766oC for 8 – 18 hours. 
+853 
+Corma et al. [154] studied nickel passivation on fluidised cracking catalysts with 
+854 
+different antimony complexes by impregnating the FCC catalyst with nickel naphthenates 
+855 
+and impregnating the same with antimony oxide as passivator. The authors reported that 
+856 
+when FCC catalyst was impregnated with nickel naphthenates, gasoline yield decreased by 5 
+857 
+wt% while H2 and coke increased by 0.5 wt%. Upon passivation of the nickel-deactivated 
+858 
+catalyst with antimony oxide, the formation of Ni-Sb alloy led to a decrease in coke and dry 
+859 
+gas production of 16% and 8%, respectively. 
+860 
+Goldwasser et al. [7] studied Ni-Sb interaction in a rare earth Y zeolite by 
+861 
+impregnating FCC catalyst with nickel naphthenate and passivating the nickel-deactivated 
+862 
+catalyst with antimony oxide. It was reported that there was an increase in H2 and coke yield 
+863 
+with increasing nickel loading of 1%. A strong decrease in percentage conversion was also 
+864 
+observed with the addition of nickel to the catalyst. The addition of an antimony compound 
+865 
+reinstated the transformation and production of H2 and coke otherwise obtained with an 
+866 
+active unpoisoned catalyst. 
+867 
+
+<<<PAGE 55>>>
+ 55
+Antimony, when used as a nickel-passivator, demonstrated a substantial decrease in 
+868 
+the nickel poisoning of an RFCC/FCC catalyst [16]. The interaction of antimony with nickel 
+869 
+has been studied extensively in the past four decades. FCC catalysts with a nickel loading 
+870 
+range of 1.9 and 4.4% weight and Sb to Ni ratios between 0.00 and 0.41 were examined 
+871 
+[168]. The X-ray diffraction findings suggested that Ni-Sb solid matrices are formed with an 
+872 
+increased level of Sb appearing on the nickel surface. In explaining the results, however, 
+873 
+geometric and electronic effects were reported as follows:  
+874 
+(i) 
+Alteration of nickel surface atoms: the electronic properties of nickel surface 
+875 
+atoms were altered by antimony, so their catalytic activity decreased significantly. 
+876 
+(ii) 
+Quantity of antimony available for passivation: the equilibrium between the 
+877 
+interaction of antimony, nickel and support determines the amount of antimony 
+878 
+available to passivate nickel.  
+879 
+(iii) 
+Blockage of nickel sites: antimony geometrically blocks nickel sites in the 
+880 
+catalyst. 
+881 
+The interaction between nickel and antimony was studied in a Rare-Earth (Lanthanum 
+882 
+oxide)-exchanged zeolite-Y [7]. Furthermore, the influence of the addition of antimony on 
+883 
+the structure of nickel and chemosorptive properties and structure of nickel was investigated 
+884 
+through temperature programmed reduction (TPR) studies. It was found that the addition of 
+885 
+antimony intensely lowered the chemisorption of H2 due to the formation of nickel-antimony 
+886 
+alloy, which is difficult to reduce to more detrimental elemental nickel under the riser 
+887 
+condition of RFCC operation. 
+888 
+It was found by Keeley et al. [169] that apart from passivating nickel, antimony will 
+889 
+also poison carbon monoxide (CO) combustion promoters and can increase nitrogen oxide 
+890 
+(NOx) emissions. There are also environmental and safe handling concerns for antimony. For 
+891 
+
+<<<PAGE 56>>>
+ 56
+these reasons, antimony is not permitted in some countries. In addition, there is also the 
+892 
+concern of slurry circuit fouling due to antimony injection.  
+893 
+6.1.2 Rare earth compounds as nickel passivator  
+894 
+Rare-earth compounds have been employed to passivate the deleterious effect of 
+895 
+nickel [120,134]. Nickel naphthenates are the major sources of nickel poison, and rare-earth 
+896 
+oxides such as cerium oxide and lanthanum oxide are the passivators used to mitigate the 
+897 
+harmful effect of nickel. The operating conditions are similar to those used in antimony 
+898 
+mitigation of nickel poisons. Drying temperature ranges from 80 – 100oC for 1 hour, 
+899 
+calcination temperature ranges from 600 – 649oC for 1 – 2 hours, while steam treatment is 
+900 
+carried out in a 100% steam environment at a temperature between 788 – 800oC for 6.5 – 10 
+901 
+hours. 
+902 
+Escobar et al. [120] investigated the interaction between Ni and V with ultra-stable-Y 
+903 
+and rare-earth-Y zeolite during hydrothermal deactivation by impregnating FCC catalyst with 
+904 
+nickel naphthenate and passivating same with rare-earth oxides. It was observed that nickel 
+905 
+alone does not affect the loss in zeolite surface area except in the presence of vanadium. 
+906 
+There was 59% preservation in zeolite surface area with the introduction of rare earth oxides 
+907 
+and 44% surface area preservation by rare earth oxides when the catalyst was poisoned by 
+908 
+both vanadium and nickel. It was concluded that the presence of nickel reduces the 
+909 
+effectiveness of rare earth oxides. 
+910 
+An investigation into the passivation of FCC catalysts showed that when 3000 ppm of 
+911 
+cerium oxide was used to passivate FCC catalysts contaminated with 3000 ppm of vanadium 
+912 
+and 1500 ppm of nickel, hydrogen production increased by 2% instead of an expected 
+913 
+decrease. In contrast, when 3000 ppm of cerium octoate was used to passivate the FCC 
+914 
+catalyst, the production decreased by 6%. It was concluded that cerium in organic form 
+915 
+(octoate) significantly reduced the amount of hydrogen produced, which is attributed to 
+916 
+
+<<<PAGE 57>>>
+ 57
+nickel contamination [158]. However, cerium is highly expensive and hence not cost-
+917 
+effective. This limits its potential use.  
+918 
+6.1.3 Bismuth as nickel passivator 
+919 
+Due to the environmental challenges associated with antimony and the high cost of 
+920 
+rare earth compounds as nickel passivators, bismuth was used as a replacement for both 
+921 
+antimony and rare earth compounds to passivate the harmful effect of nickel. During the 
+922 
+deactivation and passivation process, the drying and calcination temperatures are kept at 
+923 
+120oC for 1 hour and 550oC for 5 hours, respectively. The regenerator temperature was 
+924 
+682oC for 3 – 30 minutes, a catalyst-to-oil ratio of 4:1 and riser temperature, pressure and 
+925 
+contact time were kept at 593oC, 3.50 kg/cm2 and 15 seconds, respectively. 
+926 
+Bismuth compounds developed by Gulf petroleum have been reported as effective 
+927 
+nickel passivating agents [103]. To the best of our knowledge, there is no published 
+928 
+information on the chemistry of the interaction of bismuth with nickel. However, various 
+929 
+reports have been published on the commercial benefits of bismuth additives compared to 
+930 
+antimony [103]. Bismuth has been chosen as a preferred nickel passivating agent because it is 
+931 
+less toxic than antimony, as the United States Environmental Protection Agency does not list 
+932 
+it as a hazardous chemical.  
+933 
+Ramamoorthy and Krishna. [159] in their patent studied the method of suppressing 
+934 
+metal contaminants' harmful effects on cracking catalysts in FCC by contacting a nickel-
+935 
+contaminated hydrocarbon feedstock with a cracking catalyst associated with a bismuth-
+936 
+containing metal passivating agent. The findings suggest that the suppression of nickel 
+937 
+poisoning can be accomplished with a proportionally smaller amount of bismuth. In contrast, 
+938 
+higher amounts of bismuth are less effective and provide adverse effects such as poor 
+939 
+deposition efficiencies on the catalyst. Meanwhile, high bismuth levels can end up in cracked 
+940 
+cycle oil products. These, in turn, can cause adverse effects on the downstream 
+941 
+
+<<<PAGE 58>>>
+ 58
+hydroprocessing catalysts when the cycle oils are processed further. It was deduced that the 
+942 
+best weight ratio of bismuth to nickel equivalents should be in the range of 0.01:1 to 1:1 in 
+943 
+the feed to be effective [159]. 
+944 
+6.1.4 Boron-based technology as nickel passivator 
+945 
+The deposition profile of nickel follows a particular gradient: nickel deposits 
+946 
+peripherally on the catalyst's surface. Therefore, it requires a mobile passivator under RFCC 
+947 
+conditions to migrate to the catalyst's surface and effectively passivate nickel. In addition to 
+948 
+being environmentally friendly, boron is mobile under RFCC conditions, migrating to the 
+949 
+nickel and occupying the interstitial positions in Ni-B alloy [169]. This alloy is difficult to 
+950 
+reduce to a more detrimental nickel in the RFCC riser. Therefore, it passivates the harmful 
+951 
+effect of nickel. Similar to the previous process conditions of other nickel passivators, the 
+952 
+drying temperature is kept at 80 – 100oC for 1 – 2 hours. Calcination temperature and time of 
+953 
+540 – 550oC and 5 hours, respectively, while the steam treatment is done at 760oC for 6 hours 
+954 
+in a 100% steam environment. 
+955 
+Boron-based catalysts can overcome the (i) NOx emissions of antimony, (ii) high cost 
+956 
+of cerium and (iii) immobility of bismuth. Boron is mobile under RFCC conditions, which 
+957 
+makes it more efficient as it migrates within the catalyst to passivate nickel. BASF, a well-
+958 
+known catalyst manufacturing company, has studied boron chemistry to evaluate the Ni 
+959 
+passivation mechanism. Based on multiple spectroscopic studies using boron-based 
+960 
+technology, Ni can be kept in a less reducible state, which inhibits dehydrogenation reactions. 
+961 
+Thus, it lowers the formation of hydrogen and contaminant coke. A boron-based technology 
+962 
+as an innovative solution for RFCC performance improvement was studied [155].  
+963 
+A catalyst (BoroCat) was designed, and upon application of the catalyst to the RFCC 
+964 
+unit, there was a 26% reduction in unwanted hydrogen, 16% coke reduction and a 3% 
+965 
+increase in LPG and gasoline yields at higher conversion. A new spectroscopic methodology 
+966 
+
+<<<PAGE 59>>>
+ 59
+was used in characterising the impact of boron interaction on RFCC catalysts contaminated 
+967 
+with nickel via trend analysis of carbon monoxide diffuse reflective infrared Fourier 
+968 
+transform spectroscopy (CO DRIFTS) [161]. The findings suggest that the characterisation of 
+969 
+boron is difficult due to its low atomic weight. CO DRIFTS with three pre-treatment 
+970 
+temperatures can be used to characterise the impact of boron on the catalyst. It was concluded 
+971 
+that boron-based technology passivates nickel by decreasing its reducibility under typical 
+972 
+RFCC conditions at a temperature of less than 600oC. 
+973 
+6.2 
+Passivators for vanadium poisoning  
+974 
+6.2.1 Tin compounds as vanadium passivator 
+975 
+Tin compounds have been identified as the most common passivators of the harmful 
+976 
+effects of vanadium [162-164]. The source of vanadium poison and passivator has been 
+977 
+established to be vanadyl naphthenate and tetraphenyl tin, respectively. The operating 
+978 
+conditions for vanadium deactivation and passivation of FCC catalyst are within the same 
+979 
+range as those of nickel, except that most of the steam treatments were carried out at 95% 
+980 
+steam, with the remaining percentage being either N2 or Argon. 
+981 
+Anderson et al. [164] in their study of tin passivation of vanadium in a metal-
+982 
+contaminated fluid cracking catalyst, carried out steaming in a 95% steam environment and 
+983 
+5% N2 instead of 100% steam. The 5% inert medium makes the reactor system partially inert 
+984 
+to prevent side reactions that will interfere with the steaming process. It was found that 
+985 
+vanadium present as free VO2+ cations favour the breakdown of zeolite lattice. The order of 
+986 
+deposition of tin and vanadium was found to exhibit a little effect on the nature of the 
+987 
+resulting species that passivates the deleterious effect of vanadium. 
+988 
+Bradley et al. [162] carried out a spectroscopic study of tin passivation of vanadium 
+989 
+contaminants in a model fluid cracking catalyst. It was observed that an irreversible loss of 
+990 
+
+<<<PAGE 60>>>
+ 60
+crystallinity led to the collapse of the zeolite framework. Retention of crystallinity was 
+991 
+detected after adding tetraphenyl tin after steam-ageing, and that tin was found to limit 
+992 
+vanadium-zeolite interactions.  
+993 
+The passivation of vanadium using tin in metal-contaminated fluid cracking catalysts 
+994 
+was conducted using tin Mossbauer spectroscopy. The work investigated the role of tin in the 
+995 
+passivation of vanadium contaminants in model systems comprising aluminosilicate gel, EuY 
+996 
+and EuY-gel mixtures [163]. Tin was added to the catalyst as tetraphenyl tin (Sn(Ph)4) and 
+997 
+remained predominantly intact on the zeolite. However, it formed oxygen ligands on the gel 
+998 
+replacing one or two phenyl groups. On the zeolite, a portion of the tin is left over on the 
+999 
+surface while some portion migrates to internal sites. In the zeolite-gel mixture, tin is 
+1000 
+favourably adsorbed by the zeolite. It was observed that Sn (II), metallic tin, and vanadium-
+1001 
+tin alloys were not produced at all stages of catalyst pre-treatment. Nonetheless, calcination 
+1002 
+and steaming formed vanadium/tin oxide complexes built over oxygen bridges in which tin is 
+1003 
+in the +4-oxidation state. The formation of Sn4+-O-V5+ linkages is possibly liable for the 
+1004 
+passivation of V by tetraphenyl tin deposition. 
+1005 
+6.2.2 Rare-earth compounds as vanadium passivator  
+1006 
+In addition to being able to passivate nickel, rare earth compounds such as lanthanum 
+1007 
+octoate, dysprosium and samarium naphthenates have proven successful at passivating the 
+1008 
+deleterious effect of vanadium [166,167]. The high cost of these metals may limit their 
+1009 
+potential use. The operating conditions for deactivation and passivation of FCC catalyst by 
+1010 
+vanadium and rare earth compounds are similar, as depicted in Table 7. The drying 
+1011 
+temperature is maintained at 80 – 100oC for 24 hours, calcination temperature of 500 – 600oC 
+1012 
+for 2 – 5 hours and finally, steam treatment is carried out in 100% steam for 4 hours.  
+1013 
+A study on vanadium passivation with rare-earth compounds soluble in feedstock by 
+1014 
+impregnating FCC catalyst with rare-earth compounds such as lanthanum octoate, 
+1015 
+
+<<<PAGE 61>>>
+ 61
+dysprosium and samarium naphthenates at the same time with vanadium naphthenates was 
+1016 
+conducted [166]. Adsorption measurements exhibited that more than 90% of the zeolite 
+1017 
+structure is preserved after high-temperature hydrothermal treatment when La/V = 1. It was 
+1018 
+found that high-resolution analytical microscopy showed that rare-earth vanadates (LaVO4 
+1019 
+and SmVO4) in the form of small particles are made on the surface of the catalyst grains on 
+1020 
+the catalyst matrix. These rare-earth vanadates were found both on the external surface and in 
+1021 
+the mesopores of the zeolite. The micro activity test indicated that gasoline yield was high, 
+1022 
+and coke and hydrogen yields remained higher than those of unpoisoned catalysts. The high 
+1023 
+gasoline level was due to the presence of rare-earth compounds to passivate the destructive 
+1024 
+effect of vanadium, while the high amounts of hydrogen and coke were due to the presence of 
+1025 
+vanadium which causes dehydrogenation and coke formation.  
+1026 
+6.2.3 Basic alkaline earth compounds as vanadium passivator 
+1027 
+Basic alkaline earth compounds such as calcium chloride and magnesium acetate have 
+1028 
+been investigated and found effective at scavenging vanadium [143,165]. The operating 
+1029 
+conditions are similar to those previously discussed for vanadium passivation using rare-earth 
+1030 
+compounds in 6.2.2, except that, in this case, the steam treatment was carried out in a 4% 
+1031 
+steam environment and 96% Argon. A small percentage of steam is employed, possibly 
+1032 
+because the cracking catalyst has undergone a certain level of deactivation before being used 
+1033 
+for this purpose. Therefore, it did not require a high percentage of steam. The Argon was 
+1034 
+used to provide an inert environment for the deactivation process. 
+1035 
+An investigation was conducted into the mechanism and poisoning of vanadium-
+1036 
+tolerant catalysts [143]. The findings show that basic alkaline earth oxides such as MgO and 
+1037 
+CaO are effective for vanadium scavenging. The micro-activity testing exhibited excellent 
+1038 
+activity retention when 20% MgO is blended with a cracking catalyst at vanadium loadings 
+1039 
+of 0.67% and 1.34% by volume on the catalyst. It was, however, concluded that the SOx in 
+1040 
+
+<<<PAGE 62>>>
+ 62
+the regenerator flue gas can form a sulphate competing with vanadate formation. The degree 
+1041 
+of the competition is thermodynamically controlled since vanadate formation from the oxide 
+1042 
+expands the lattice and pores. This is similar to the observation in the case of the reaction of 
+1043 
+calcium oxide with sulfur oxides.  
+1044 
+Chao et al. [165] investigated vanadium passivation using calcium by imaging 
+1045 
+secondary ion mass spectroscopy. Fresh FCC catalyst was impregnated with 2300 ppm of 
+1046 
+nickel and 4500 ppm of vanadium using a cyclohexane solution of nickel and vanadyl 
+1047 
+naphthenates. Calcium and clay were introduced into the Ni and V-loaded catalyst and tested. 
+1048 
+The performance test showed that adding Ca/clay to the catalyst decreases the yields of coke 
+1049 
+and gas with increasing gasoline selectivity. The findings also indicated that calcium, an 
+1050 
+alkaline-earth metal, can passivate the deleterious effect of vanadium. This may be due to the 
+1051 
+ability of alkaline earth metals to form a stable complex with vanadium and helps prevent the 
+1052 
+deleterious effect of vanadium. 
+1053 
+7 
+Challenges and Prospects  
+1054 
+7.1 Challenges and future research and development 
+1055 
+Residue fluid catalytic cracking (RFCC) technology is the key to processing crude oil 
+1056 
+and unconventional feedstocks due to its ability to handle heavy crudes and maximise 
+1057 
+gasoline and propylene production. However, processing heavy and dirty crudes come with 
+1058 
+some challenges due to heavy metals, predominantly nickel, vanadium, sodium and iron. 
+1059 
+These heavy metals contribute to the following challenges: 
+1060 
+(i) 
+Destruction of catalyst and the promotion of competing and undesirable side 
+1061 
+reactions: leads to the production of a large amount of hydrogen and coke.  
+1062 
+(ii) 
+Production of a large amount of hydrogen: puts too much stress on the wet gas 
+1063 
+compressor in the RFCC unit, which is volume limited. 
+1064 
+
+<<<PAGE 63>>>
+ 63
+(iii) 
+Production of a large amount of coke: this upsets the reactor and regenerator heat 
+1065 
+balance and affects the main air blower in addition to blocking the catalyst’s active 
+1066 
+sites, thereby reducing the activity of the catalyst.  
+1067 
+Based on our analysis, future research and development should focus on the 
+1068 
+following: 
+1069 
+(i) 
+Design of RFCC catalyst: RFCC catalysts that can withstand the action of metal 
+1070 
+poisons present in heavy crude oils should be properly designed. Vanadium destroys 
+1071 
+the framework of the conventional FCC catalyst by hydrolysis of the silicon and 
+1072 
+aluminium bonds in the zeolite structure. Nickel promotes undesirable side reactions, 
+1073 
+and sodium neutralises the acid sites of the catalyst, which is responsible for cracking 
+1074 
+the hydrocarbon feedstocks. 
+1075 
+(ii) 
+Replacement of antimony as nickel passivator: Antimony has been employed to 
+1076 
+mitigate the harmful effects of nickel poison due to its ability to form Ni-Sb alloy, 
+1077 
+which is difficult to reduce to a more deleterious elemental nickel. However, 
+1078 
+antimony has recently been identified to cause NOx emissions. This constrained it due 
+1079 
+to stringent environmental regulations. In addition to antimony being responsible for 
+1080 
+the corrosion of downstream equipment due to its excessive injection, there are also 
+1081 
+safe handling concerns of antimony due to its toxicity. 
+1082 
+(iii) 
+Developing an RFCC catalyst that incorporates boron as a nickel passivator: Unlike 
+1083 
+antimony, boron is mobile under RFCC conditions and can migrate to the immobile 
+1084 
+nickel on the catalyst, effectively passivating the harmful effect of nickel. Also, boron 
+1085 
+does not cause NOx emissions and is environmentally friendly and safe to handle. 
+1086 
+These positive attributes of boron make it suitable as a nickel passivator and can 
+1087 
+therefore be incorporated into the catalyst mix during the synthesis process. 
+1088 
+
+<<<PAGE 64>>>
+ 64
+(iv) 
+More research into the passivation of vanadium. Vanadium is regarded as the most 
+1089 
+harmful of all catalyst poisons. In addition to promoting dehydrogenation reactions, 
+1090 
+vanadium causes hydrolysis of the silicon and aluminium bond of the zeolite catalyst, 
+1091 
+which leads to the collapse of the catalyst structure. To date, tin-based compounds 
+1092 
+have been identified as having the ability to mitigate the harmful effect of vanadium, 
+1093 
+but there has not been much research in this area. Therefore, more research focus is 
+1094 
+needed in the area. 
+1095 
+8 
+Conclusions  
+1096 
+The Fluid Catalytic Cracking (FCC) process has been an area of interest to petroleum 
+1097 
+refiners due to its ability to convert the bottom of the barrel into more useful products leading 
+1098 
+to an increase in refinery margins. The change in crude oil quality towards heavier and 
+1099 
+unconventional crudes has necessitated the invention of Residue Fluid Catalytic Cracking 
+1100 
+(RFCC) technology along with its associated catalysts, which can withstand the high coke 
+1101 
+precursor (Conradson Carbon Residue) and heavy metals such as vanadium and nickel that 
+1102 
+come with the heavy and dirty crudes. Conradson Carbon Residue (CCR) generates a large 
+1103 
+amount of coke, leading to high temperature in the regenerator when this coke is burnt off the 
+1104 
+catalyst during the regeneration process. Nickel and vanadium promote undesirable side 
+1105 
+reactions such as dehydrogenation and destruction of the cracking catalyst by hydrolysis of 
+1106 
+the silica-alumina bond, respectively. This review summarises nickel and vanadium 
+1107 
+mitigation strategies, the most important metals that affect the cracking catalyst. The 
+1108 
+advantages and drawbacks of nickel and vanadium mitigation strategies were evaluated. 
+1109 
+Antimony has been extensively reported to be successful at mitigating the harmful effect of 
+1110 
+nickel. Still, it causes NOx emission and corrosion of equipment due to excessive injection. 
+1111 
+There are also safe handling concerns. Bismuth and transition alumina have been used as 
+1112 
+replacements for antimony, but bismuth is not very effective, and transition alumina is not 
+1113 
+
+<<<PAGE 65>>>
+ 65
+mobile under RFCC conditions. The mitigation of vanadium has not been widely studied. 
+1114 
+However, tin-based compounds have been proven to successfully mitigate vanadium's effect. 
+1115 
+As a result of the existing challenges of nickel mitigation, as discussed in this review, boron 
+1116 
+has been identified as an environmentally benign and economically effective mitigation 
+1117 
+strategy for a nickel. Boron does not cause NOx emission. It is safe to handle and mobile 
+1118 
+under RFCC conditions, making it a promising alternative for mitigating nickel poisoning. 
+1119 
+Credit author statement 
+Daniel Edoh Adananche: Investigation, Data curation, Writing-Original draft, Funding 
+1120 
+acquisition, Auwal Aliyu: Conceptualization, Validation, Writing-Original draft, Writing- 
+1121 
+reviewing and editing, Visualization, Resources, Abdulazeez Yusuf Atta: Writing- 
+1122 
+reviewing and editing, Resources, Baba Jibril El-Yakubu: Writing – reviewing and editing, 
+1123 
+Resources, Supervision. 
+1124 
+Acknowledgment 
+1125 
+The authors acknowledge Dangote Petroleum Refining and Petrochemicals, Nigeria, 
+1126 
+for the financial support (Grant number: NEFZA/0660) and the Petroleum Technology 
+1127 
+Development Fund (PTDF) for partial support. 
+1128 
+References  
+1129 
+[1] 
+GlobalData. US leads globally with highest operational refinery FCCU capacity - 
+1130 
+Offshore Technology Focus | Issue 83 | June 2021. Offshore Technology Focus 2021. 
+1131 
+https://offshore.h5mag.com/offshore_technology_focus_jun21/us_refinery_fccu_capac
+1132 
+ity (accessed September 6, 2022). 
+1133 
+[2] 
+Global Refinery Fluid Catalytic Cracking Units Outlook to 2025-Capacity and Capital 
+1134 
+Expenditure Outlook with Details of All Operating and Planned Fluid Catalytic 
+1135 
+Cracking Units. 2021. 
+1136 
+[3] 
+Scherzer J. Designing FCC catalysts with high-silica Y zeolites. Applied Catalysis 
+1137 
+1991;75:1–32. https://doi.org/10.1016/S0166-9834(00)83119-X. 
+1138 
+[4] 
+Meirer F, Kalirai S, Morris D, Soparawalla S, Liu Y, Mesu G, et al. Life and death of a 
+1139 
+single catalytic cracking particle. Sci Adv 2015;1:e1400199. 
+1140 
+https://doi.org/10.1126/sciadv.1400199. 
+1141 
+[5] 
+Marie O, Bazin P, Daturi M. Vibrational spectroscopic studies of catalytic processes 
+1142 
+on oxide surfaces. In: Yarwood J, Douthwaite R, Duckett S, editors. Spectroscopic 
+1143 
+Properties of Inorganic and Organometallic Compounds, vol. 42, Cambridge: Royal 
+1144 
+
+<<<PAGE 66>>>
+ 66
+Society of Chemistry; 2011, p. 34–103. https://doi.org/10.1039/9781849732833-
+1145 
+00034. 
+1146 
+[6] 
+Hoffer BW, Stockwell DM. Heavy metal passivator/trap for FCC processes. 
+1147 
+US8632674B2, 2014. 
+1148 
+[7] 
+Goldwasser MR, Rojas D, Goldwasser J. A study of the Ni-Sb interaction in a rare-
+1149 
+earth Y-zeolite. Journal of Catalysis 1992;135:596–608. https://doi.org/10.1016/0021-
+1150 
+9517(92)90056-N. 
+1151 
+[8] 
+Bayraktar O, Kugler EL. Temperature-programmed reduction of metal-contaminated 
+1152 
+fluid catalytic cracking (FCC) catalysts. Applied Catalysis A: General 2004;260:125–
+1153 
+32. https://doi.org/10.1016/j.apcata.2003.10.013. 
+1154 
+[9] 
+Harding RH, Peters AW, Nee JRD. New developments in FCC catalyst technology. 
+1155 
+Applied Catalysis A: General 2001;221:389–96. https://doi.org/10.1016/S0926-
+1156 
+860X(01)00814-6. 
+1157 
+[10] Mathieu Y, Corma A, Echard M, Bories M. Single and combined Fluidized Catalytic 
+1158 
+Cracking (FCC) catalyst deactivation by iron and calcium metal–organic contaminants. 
+1159 
+Applied Catalysis A: General 2014;469:451–65. 
+1160 
+https://doi.org/10.1016/j.apcata.2013.10.007. 
+1161 
+[11] Tangstad E, Andersen A, Myhrvold EM, Myrstad T. Catalytic behaviour of nickel and 
+1162 
+iron metal contaminants of an FCC catalyst after oxidative and reductive thermal 
+1163 
+treatments. Applied Catalysis A: General 2008;346:194–9. 
+1164 
+https://doi.org/10.1016/j.apcata.2008.05.022. 
+1165 
+[12] Cerqueira HS, Caeiro G, Costa L, Ramôa Ribeiro F. Deactivation of FCC catalysts. 
+1166 
+Journal of Molecular Catalysis A: Chemical 2008;292:1–13. 
+1167 
+https://doi.org/10.1016/j.molcata.2008.06.014. 
+1168 
+[13] Vogt ETC, Weckhuysen BM. Fluid catalytic cracking: recent developments on the 
+1169 
+grand old lady of zeolite catalysis. Chem Soc Rev 2015;44:7342–70. 
+1170 
+https://doi.org/10.1039/C5CS00376H. 
+1171 
+[14] Bai P, Etim UJ, Yan Z, Mintova S, Zhang Z, Zhong Z, et al. Fluid catalytic cracking 
+1172 
+technology: current status and recent discoveries on catalyst contamination. Catalysis 
+1173 
+Reviews 2019;61:333–405. https://doi.org/10.1080/01614940.2018.1549011. 
+1174 
+[15] Wallenstein D, Roberie T, Bruhin T. Review on the deactivation of FCC catalysts by 
+1175 
+cyclic propylene steaming. Catalysis Today 2007;127:54–69. 
+1176 
+https://doi.org/10.1016/j.cattod.2007.05.023. 
+1177 
+[16] O’Connor P, Pouwels AC. FCC Catalyst Deactivation: A Review and Directions for 
+1178 
+further Research. Studies in Surface Science and Catalysis, vol. 88, Elsevier; 1994, p. 
+1179 
+129–44. https://doi.org/10.1016/S0167-2991(08)62734-2. 
+1180 
+[17] Patrick Walker, Peterman R. RFCC units set new standard for propylene production 
+1181 
+2012:11. 
+1182 
+[18] Ishihara A. Preparation and reactivity of hierarchical catalysts in catalytic cracking. 
+1183 
+Fuel Processing Technology 2019;194:106116. 
+1184 
+https://doi.org/10.1016/j.fuproc.2019.05.039. 
+1185 
+[19] Rong’an X, Huaiyuan L, Kai W. Optimising FCC profitability 2005:5. 
+1186 
+[20] Sadeghbeigi R. Fluid catalytic cracking handbook: design, operation, and 
+1187 
+troubleshooting of FCC facilities. 2nd ed. Houston: Gulf; 2000. 
+1188 
+[21] Habib ET, Zhao X, Yaluris, Cheng WC, Boock LT. Chapter 5; Advances in Fluid 
+1189 
+Catalytic Cracking. Zeolites for Cleaner Technologies, vol. 3, Imperial College Press; 
+1190 
+2005, p. 105–30. 
+1191 
+[22] Fletcher WH, Abraham MA, Matthews MA, editors. Innovations in Industrial and 
+1192 
+Engineering Chemistry: A Century of Achievements and Prospects for the New 
+1193 
+
+<<<PAGE 67>>>
+ 67
+Millennium. vol. 1000. Washington, DC: American Chemical Society; 2008. 
+1194 
+https://doi.org/10.1021/bk-2009-1000. 
+1195 
+[23] Cheng Y, Wei F, Jin Y, editors. Multiphase Reactor Engineering for Clean and Low-
+1196 
+Carbon Energy Applications. Hoboken, NJ, USA: John Wiley & Sons, Inc.; 2017. 
+1197 
+https://doi.org/10.1002/9781119251101. 
+1198 
+[24] Dehghani A, Sattarin M, Bridjanian H, Mohamadbeigy K. Investigation on 
+1199 
+Effectiveness Parameters in Residue Upgrading Methods. Petroleum & Coal 
+1200 
+2009;51:229–36. 
+1201 
+[25] Sakakura K. Introduction of Residue Fluid Catalytic Cracking Process. Japanese 
+1202 
+Journal of Multiphase Flow 2014;28:444–8. https://doi.org/10.3811/jjmf.28.444. 
+1203 
+[26] Mustafa M, Atilhan M. Investigation on the Deactivation of Residue Fluid Catalytic 
+1204 
+Cracking (FCC) Catalyst. International Journal of Materials Chemistry and Physics 
+1205 
+2015;1:146–55. 
+1206 
+[27] Treese SA, Pujadó PR, Jones DSJ, editors. Handbook of Petroleum Processing. Cham: 
+1207 
+Springer International Publishing; 2015. https://doi.org/10.1007/978-3-319-14529-7. 
+1208 
+[28] China National Petroleum Corporation. Residue Fluid Catalytic Cracking Technology 
+1209 
+and Catalysts 2011. 
+1210 
+[29] Liao Y, Liu T, Du X, Gao X. Distribution of Iron on FCC Catalyst and Its Effect on 
+1211 
+Catalyst Performance. Frontiers in Chemistry 2021;9. 
+1212 
+[30] Zhang J, Shan H, Chen X, Li C, Yang C. Multifunctional Two-Stage Riser Catalytic 
+1213 
+Cracking of Heavy Oil. Ind Eng Chem Res 2013;52:658–68. 
+1214 
+https://doi.org/10.1021/ie302650t. 
+1215 
+[31] Li C, Yang C, Shan H. Maximizing Propylene Yield by Two-Stage Riser Catalytic 
+1216 
+Cracking of Heavy Oil. Ind Eng Chem Res 2007;46:4914–20. 
+1217 
+https://doi.org/10.1021/ie061420l. 
+1218 
+[32] Flank WH, Abraham MA, Matthews MA, editors. Innovations in Industrial and 
+1219 
+Engineering Chemistry: A Century of Achievements and Prospects for the New 
+1220 
+Millennium. vol. 1000. Washington, DC: American Chemical Society; 2008. 
+1221 
+https://doi.org/10.1021/bk-2009-1000. 
+1222 
+[33] https://www.chinesestandard.net. GB/T 24782-2009: Translated English of Chinese 
+1223 
+Standard (GBT 24782-2009, GB/T24782-2009, GBT24782-2009): Decision Method 
+1224 
+of Persistent, Bioaccumulative and Toxic Substances, and Very Persistent and Very 
+1225 
+Bioaccumulative Substances. National Standard of the Peoples Republic of China; 
+1226 
+2017. 
+1227 
+[34] Hajbabaei M, Karavalakis G, Miller JW, Villela M, Xu KH, Durbin TD. Impact of 
+1228 
+olefin content on criteria and toxic emissions from modern gasoline vehicles. Fuel 
+1229 
+2013;107:671–9. https://doi.org/10.1016/j.fuel.2012.12.031. 
+1230 
+[35] Zhao L, Shen B, Gao J, Xu C. Investigation on the mechanism of diffusion in 
+1231 
+mesopore structured ZSM-5 and improved heavy oil conversion. Journal of Catalysis 
+1232 
+2008;258:228–34. https://doi.org/10.1016/j.jcat.2008.06.015. 
+1233 
+[36] Ruthven DM, Post MFM. Chapter 12 Diffusion in zeolite molecular sieves. Studies in 
+1234 
+Surface Science and Catalysis, vol. 137, Elsevier; 2001, p. 525–77. 
+1235 
+https://doi.org/10.1016/S0167-2991(01)80254-8. 
+1236 
+[37] Chen W, Han D, Sun X, Li C. Studies on the preliminary cracking of heavy oils: 
+1237 
+Contributions of various factors. Fuel 2013;106:498–504. 
+1238 
+https://doi.org/10.1016/j.fuel.2012.12.090. 
+1239 
+[38] Meng Q, Liu B, Piao J, Liu Q. Synthesis of the composite material Y/ASA and its 
+1240 
+catalytic performance for the cracking of n-decane. Journal of Catalysis 2012;290:55–
+1241 
+64. https://doi.org/10.1016/j.jcat.2012.03.002. 
+1242 
+
+<<<PAGE 68>>>
+ 68
+[39] Ishihara A. Preparation and reactivity of hierarchical catalysts in catalytic cracking. 
+1243 
+Fuel Processing Technology 2019;194:106116. 
+1244 
+https://doi.org/10.1016/j.fuproc.2019.05.039. 
+1245 
+[40] Jia X, Khan W, Wu Z, Choi J, Yip ACK. Modern synthesis strategies for hierarchical 
+1246 
+zeolites: Bottom-up versus top-down strategies. Advanced Powder Technology 
+1247 
+2019;30:467–84. https://doi.org/10.1016/j.apt.2018.12.014. 
+1248 
+[41] Khan W, Jia X, Wu Z, Choi J, Yip A. Incorporating Hierarchy into Conventional 
+1249 
+Zeolites for Catalytic Biomass Conversions: A Review. Catalysts 2019;9:127. 
+1250 
+https://doi.org/10.3390/catal9020127. 
+1251 
+[42] Petushkov A, Yoon S, Larsen SC. Synthesis of hierarchical nanocrystalline ZSM-5 
+1252 
+with controlled particle size and mesoporosity. Microporous and Mesoporous 
+1253 
+Materials 2011;137:92–100. https://doi.org/10.1016/j.micromeso.2010.09.001. 
+1254 
+[43] Qin Z, Shen B, Yu Z, Deng F, Zhao L, Zhou S, et al. A defect-based strategy for the 
+1255 
+preparation of mesoporous zeolite Y for high-performance catalytic cracking. Journal 
+1256 
+of Catalysis 2013;298:102–11. https://doi.org/10.1016/j.jcat.2012.11.023. 
+1257 
+[44] Qin Z, Shen W, Zhou S, Shen Y, Li C, Zeng P, et al. Defect-assisted mesopore 
+1258 
+formation during Y zeolite dealumination: The types of defect matter. Microporous 
+1259 
+and Mesoporous Materials 2020;303:110248. 
+1260 
+https://doi.org/10.1016/j.micromeso.2020.110248. 
+1261 
+[45] Brunet S, Mey D, Pérot G, Bouchy C, Diehl F. On the hydrodesulfurization of FCC 
+1262 
+gasoline: a review. Applied Catalysis A: General 2005;278:143–72. 
+1263 
+https://doi.org/10.1016/j.apcata.2004.10.012. 
+1264 
+[46] Dubkov KA, Semikolenov SV, Ivanov DP, Kharitonov AS. Reducing the Olefin 
+1265 
+Content in Light Fluid Catalytic Cracking Gasoline by Treatment with Nitrous Oxide. 
+1266 
+Ind Eng Chem Res 2021;60:12783–91. https://doi.org/10.1021/acs.iecr.1c02354. 
+1267 
+[47] Ramnäs O, Östermark U, Petersson G. Characterization of sixty alkenes in a cat-
+1268 
+cracked gasoline naphtha by gas chromatography. Chromatographia 1994;38:222–6. 
+1269 
+https://doi.org/10.1007/BF02290340. 
+1270 
+[48] Pereira R, Pasa V. Effect of mono-olefins and diolefins on the stability of automotive 
+1271 
+gasoline. Fuel 2006;85:1860–5. https://doi.org/10.1016/j.fuel.2006.01.022. 
+1272 
+[49] Pradelle F, Braga SL, Martins ARFA, Turkovics F, Pradelle RNC. Gum Formation in 
+1273 
+Gasoline and Its Blends: A Review. Energy Fuels 2015;29:7753–70. 
+1274 
+https://doi.org/10.1021/acs.energyfuels.5b01894. 
+1275 
+[50] Abdellatief TMM, Ershov MA, Kapustin VM, Ali Abdelkareem M, Kamil M, Olabi 
+1276 
+AG. Recent trends for introducing promising fuel components to enhance the anti-
+1277 
+knock quality of gasoline: A systematic review. Fuel 2021;291:120112. 
+1278 
+https://doi.org/10.1016/j.fuel.2020.120112. 
+1279 
+[51] Liu H, Qiu Z, Pan H, Guo A, Jiao S, Wang F, et al. Molybdenum Carbide and Sulfide 
+1280 
+Nanoparticles as Selective Hydrotreating Catalysts for FCC Slurry Oil to Remove 
+1281 
+Olefins and Sulfur. Nanomaterials 2021;11:2721. 
+1282 
+https://doi.org/10.3390/nano11102721. 
+1283 
+[52] Miller JT, Reagan WJ, Kaduk JA, Marshall CL, Kropf AJ. Selective 
+1284 
+Hydrodesulfurization of FCC Naphtha with Supported MoS2 Catalysts: The Role of 
+1285 
+Cobalt. Journal of Catalysis 2000;193:123–31. https://doi.org/10.1006/jcat.2000.2873. 
+1286 
+[53] University of Glasgow, United Kingdom, Garba MD, Galadima A, Center for 
+1287 
+Research Federal University Gusau, Nigeria. Catalytic Hydrogenation of 
+1288 
+Hydrocarbons for Gasoline Production. JPS 2018;29:153–76. 
+1289 
+https://doi.org/10.21315/jps2018.29.2.10. 
+1290 
+
+<<<PAGE 69>>>
+ 69
+[54] Plantenga FL, Leliveld RG. Sulfur in fuels: more stringent sulfur specifications for 
+1291 
+fuels are driving innovation. Applied Catalysis A: General 2003;248:1–7. 
+1292 
+https://doi.org/10.1016/S0926-860X(03)00133-9. 
+1293 
+[55] Viswanadham N, Negi BS, Garg MO, Sundaram M, Sairam B, Agarwal AK. 
+1294 
+Reformulation of FCC gasoline. Fuel 2007;86:1290–7. 
+1295 
+https://doi.org/10.1016/j.fuel.2006.09.016. 
+1296 
+[56] Katoh S, Nakamura M, Skocpol B, Katoh S, Nakamura M, Skocpol B. Reduction of 
+1297 
+Olefins in FCC Gasoline. Studies in Surface Science and Catalysis, vol. 134, Elsevier; 
+1298 
+2001, p. 141–52. https://doi.org/10.1016/S0167-2991(01)82316-8. 
+1299 
+[57] Pan M, Zheng J, Liu Y, Ning W, Tian H, Li R. Construction and practical application 
+1300 
+of a novel zeolite catalyst for hierarchically cracking of heavy oil. Journal of Catalysis 
+1301 
+2019;369:72–85. https://doi.org/10.1016/j.jcat.2018.10.032. 
+1302 
+[58] García-Martínez J, Li K, Krishnaiah G. A mesostructured Y zeolite as a superior FCC 
+1303 
+catalyst--lab to refinery. Chemical Communications (Cambridge, England) 2012;48. 
+1304 
+https://doi.org/10.1039/c2cc35659g. 
+1305 
+[59] Al-khattaf S. The influence of Y-zeolite unit cell size on the performance of FCC 
+1306 
+catalysts during gas oil catalytic cracking. Applied Catalysis A-General 2002;231:293–
+1307 
+306. https://doi.org/10.1016/S0926-860X(02)00071-6. 
+1308 
+[60] Jia L, Sun X, Ye X, Zou C, Gu H, Huang Y, et al. Core–shell composites of 
+1309 
+USY@Mesosilica: Synthesis and application in cracking heavy molecules with high 
+1310 
+liquid yield. Microporous and Mesoporous Materials 2013;176:16–24. 
+1311 
+https://doi.org/10.1016/j.micromeso.2013.03.029. 
+1312 
+[61] Lv Y, Qian X, Tu B, Zhao D. Generalized synthesis of core–shell structured nano-
+1313 
+zeolite@ordered mesoporous silica composites. Catalysis Today 2013;204:2–7. 
+1314 
+https://doi.org/10.1016/j.cattod.2012.09.031. 
+1315 
+[62] Hamdy MS, Mul G. TUD-1-Encapsulated HY Zeolite: A New Hierarchical 
+1316 
+Microporous/Mesoporous Composite with Extraordinary Performance in Benzylation 
+1317 
+Reactions. ChemCatChem 2013;5:3156–63. https://doi.org/10.1002/cctc.201300457. 
+1318 
+[63] Ishihara A, Kimura K, Owaki A, Inui K, Hashimoto T, Nasu H. Catalytic cracking of 
+1319 
+VGO by hierarchical ZSM-5 zeolite containing mesoporous silica–aluminas using a 
+1320 
+Curie point pyrolyzer. Catalysis Communications 2012;28:163–7. 
+1321 
+https://doi.org/10.1016/j.catcom.2012.08.023. 
+1322 
+[64] Jiao W, Wu X, Li G, Xue T, Wang Y, Tang Y. Core-Shell Zeolite Y@γ-Al 2 O 3 
+1323 
+Nanorod Composites: Optimized Fluid Catalytic Cracking Catalyst Assembly for 
+1324 
+Processing Heavy Oil. ChemCatChem 2017;9:2574–83. 
+1325 
+https://doi.org/10.1002/cctc.201700029. 
+1326 
+[65] Waller P, Shan Z, Marchese L, Tartaglione G, Zhou W, Jansen JC, et al. Zeolite 
+1327 
+Nanocrystals Inside Mesoporous TUD-1: A High-Performance Catalytic Composite. 
+1328 
+Chem Eur J 2004;10:4970–6. https://doi.org/10.1002/chem.200400343. 
+1329 
+[66] Wang Y, Cui D, Li Q. Synthesis, characterization and influence parameters on the 
+1330 
+overgrowth of micro/mesoporous Y-zeolite-MCM-41 composite material under acidic 
+1331 
+conditions. Microporous and Mesoporous Materials 2011;142:503–10. 
+1332 
+https://doi.org/10.1016/j.micromeso.2010.12.034. 
+1333 
+[67] Zhao Q, Mao Y, Yan L, Lu L, Jiang T, Yin H. Stability of Y/MCM-48 composite 
+1334 
+molecular sieve with mesoporous and microporous structures. Journal of Asian 
+1335 
+Ceramic Societies 2014;2:347–56. https://doi.org/10.1016/j.jascer.2014.07.003. 
+1336 
+[68] Möller K, Bein T. Mesoporosity – a new dimension for zeolites. Chem Soc Rev 
+1337 
+2013;42:3689. https://doi.org/10.1039/c3cs35488a. 
+1338 
+
+<<<PAGE 70>>>
+ 70
+[69] Valtchev V, Majano G, Mintova S, Pérez-Ramírez J. Tailored crystalline microporous 
+1339 
+materials by post-synthesis modification. Chem Soc Rev 2013;42:263–90. 
+1340 
+https://doi.org/10.1039/C2CS35196J. 
+1341 
+[70] Phienluphon R, Pinkaew K, Yang G, Li J, Wei Q, Yoneyama Y, et al. Designing core 
+1342 
+(Cu/ZnO/Al2O3)–shell (SAPO-11) zeolite capsule catalyst with a facile physical way 
+1343 
+for dimethyl ether direct synthesis from syngas. Chemical Engineering Journal 
+1344 
+2015;270:605–11. https://doi.org/10.1016/j.cej.2015.02.071. 
+1345 
+[71] Yang G, Xing C, Hirohama W, Jin Y, Zeng C, Suehiro Y, et al. Tandem catalytic 
+1346 
+synthesis of light isoparaffin from syngas via Fischer–Tropsch synthesis by newly 
+1347 
+developed core–shell-like zeolite capsule catalysts. Catalysis Today 2013;215:29–35. 
+1348 
+https://doi.org/10.1016/j.cattod.2013.01.010. 
+1349 
+[72] Kubo K, Iida H, Namba S, Igarashi A. Comparison of steaming stability of Cu-ZSM-5 
+1350 
+with those of Ag-ZSM-5, P/H-ZSM-5, and H-ZSM-5 zeolites as naphtha cracking 
+1351 
+catalysts to produce light olefin at high temperatures. Applied Catalysis A: General 
+1352 
+2015;489:272–9. https://doi.org/10.1016/j.apcata.2014.10.041. 
+1353 
+[73] Wu L, Su H, Sun X, Sun L, Zhao L, Qi C. Catalytic Cracking for Propylene Production 
+1354 
+over Au Catalyst Supported by External Surface-Modified ZSM-5 Zeolite. Catalysts 
+1355 
+2022;12:418. https://doi.org/10.3390/catal12040418. 
+1356 
+[74] Wu et al. - 2022 - Catalytic Cracking for Propylene Production over A.pdf n.d. 
+1357 
+[75] Siddiqui MAB, Aitani AM, Saeed MR, Al-Yassir N, Al-Khattaf S. Enhancing 
+1358 
+propylene production from catalytic cracking of Arabian Light VGO over novel 
+1359 
+zeolites as FCC catalyst additives. Fuel 2011;90:459–66. 
+1360 
+https://doi.org/10.1016/j.fuel.2010.09.041. 
+1361 
+[76] Konno H, Tago T, Nakasaka Y, Ohnaka R, Nishimura J, Masuda T. Effectiveness of 
+1362 
+nano-scale ZSM-5 zeolite and its deactivation mechanism on catalytic cracking of 
+1363 
+representative hydrocarbons of naphtha. Microporous and Mesoporous Materials 
+1364 
+2013;175:25–33. https://doi.org/10.1016/j.micromeso.2013.03.016. 
+1365 
+[77] Liu H, Zhao H, Gao X, Ma J. A novel FCC catalyst synthesized via in situ overgrowth 
+1366 
+of NaY zeolite on kaolin microspheres for maximizing propylene yield. Catalysis 
+1367 
+Today 2007;125:163–8. https://doi.org/10.1016/j.cattod.2007.05.005. 
+1368 
+[78] Gao X, Tang Z, Ji D, Zhang H. Modification of ZSM-5 zeolite for maximizing 
+1369 
+propylene in fluid catalytic cracking reaction. Catalysis Communications 
+1370 
+2009;10:1787–90. https://doi.org/10.1016/j.catcom.2009.04.022. 
+1371 
+[79] Batonneau-Gener I, Sachse A. Determination of the Exact Microporous Volume and 
+1372 
+BET Surface Area in Hierarchical ZSM-5. J Phys Chem C 2019;123:4235–42. 
+1373 
+https://doi.org/10.1021/acs.jpcc.8b11524. 
+1374 
+[80] Dong X, Shaikh S, Vittenet J, Wang J, Liu Z, Bhatte KD, et al. Fine tuning the 
+1375 
+diffusion length in hierarchical ZSM-5 to maximize the yield of propylene in catalytic 
+1376 
+cracking of hydrocarbons 2018:28. 
+1377 
+[81] Wang C, Zhang L, Huang X, Zhu Y, Li G (Kevin), Gu Q, et al. Maximizing sinusoidal 
+1378 
+channels of HZSM-5 for high shape-selectivity to p-xylene. Nat Commun 
+1379 
+2019;10:4348. https://doi.org/10.1038/s41467-019-12285-4. 
+1380 
+[82] Wattanapaphawong P, Reubroycharoen P, Mimura N, Sato O, Yamaguchi A. Effect of 
+1381 
+carbon number on the production of propylene and ethylene by catalytic cracking of 
+1382 
+straight-chain alkanes over phosphorus-modified ZSM-5. Fuel Processing Technology 
+1383 
+2020;202:106367. https://doi.org/10.1016/j.fuproc.2020.106367. 
+1384 
+[83] Bulatov R.M., Jirnov B.S. FCC Process of heavy feedstock with improved yield of 
+1385 
+light olefins. Electron Sci J Oil and Gas Bus 2009:1–10. 
+1386 
+[84] Konno H, Okamura T, Kawahara T, Nakasaka Y, Tago T, Masuda T. Kinetics of n -
+1387 
+hexane cracking over ZSM-5 zeolites – Effect of crystal size on effectiveness factor 
+1388 
+
+<<<PAGE 71>>>
+ 71
+and catalyst lifetime. Chemical Engineering Journal 2012;207–208:490–6. 
+1389 
+https://doi.org/10.1016/j.cej.2012.06.157. 
+1390 
+[85] Baillie C, Grace WR. FCC additive technology for SOx reduction 2019:6. 
+1391 
+[86] Genç M, Gül A, Dalg EB. Taking steps to reduce FCC NOX emissions 2018:12. 
+1392 
+[87] Lissianski VV, Maly PM, Zamansky VM, Gardiner WC. Utilization of Iron Additives 
+1393 
+for Advanced Control of NO  x  Emissions from Stationary Combustion Sources. Ind 
+1394 
+Eng Chem Res 2001;40:3287–93. https://doi.org/10.1021/ie010019q. 
+1395 
+[88] Talmadge M, Butterfield R, Evans M, Matthey J. NOx control additives continue to 
+1396 
+reduce emissions 2019:2. 
+1397 
+[89] Nemati Kharat A, Zafari R. Application of Zeolitic Additives in the Fluid Catalytic 
+1398 
+Cracking (FCC). Journal of Nanostructures 2013;3:209–17. 
+1399 
+https://doi.org/10.7508/jns.2013.02.009. 
+1400 
+[90] Vjunov A, Kharas KC, Komvokis V, Dundee A, Yilmaz B. Practical Approaches 
+1401 
+towards NOx Emission Mitigation from Fluid Catalytic Cracking (FCC) Units. 
+1402 
+Catalysts 2021;11:1146. https://doi.org/10.3390/catal11101146. 
+1403 
+[91] Mo X, Herring N, Tang Y, Allahverdi M, Graaf BD, Diddams P. SOx Reduction 
+1404 
+Additives for Partial Burn FCC 2017:1. 
+1405 
+[92] Chester AW. Chapter 6 CO combustion promoters: past and present. Studies in Surface 
+1406 
+Science and Catalysis, vol. 166, Elsevier; 2007, p. 67–77. 
+1407 
+https://doi.org/10.1016/S0167-2991(07)80189-3. 
+1408 
+[93] Fan Y, Yin J, Shi G, Liu H, Bao X. Mechanistic Pathways for Olefin 
+1409 
+Hydroisomerization and Aromatization in Fluid Catalytic Cracking Gasoline Hydro-
+1410 
+upgrading. Energy Fuels 2009;23:3016–23. https://doi.org/10.1021/ef900030h. 
+1411 
+[94] Feng R, Qiao K, Wang Y, Yan Z. Perspective on FCC catalyst in China. Appl 
+1412 
+Petrochem Res 2013;3:63–70. https://doi.org/10.1007/s13203-013-0030-1. 
+1413 
+[95] Derouane EG, Vedrine JC. On the role of shape selectivity in the catalytic conversion 
+1414 
+of alcohols and simple hydrocarbons molecules on zeolite ZSM-5. Journal of 
+1415 
+Molecular Catalysis 1980;8:479–83. https://doi.org/10.1016/0304-5102(80)80088-5. 
+1416 
+[96] Clough M, Pope JC, Xin Lin LT, Komvokis V, Pan SS, Yilmaz B. Nanoporous 
+1417 
+materials forge a path forward to enable sustainable growth: Technology 
+1418 
+advancements in fluid catalytic cracking. Microporous and Mesoporous Materials 
+1419 
+2017;254:45–58. https://doi.org/10.1016/j.micromeso.2017.03.063. 
+1420 
+[97] Fan Y, Yin J, Shi G, Liu H, Bao X. Mechanistic Pathways for Olefin 
+1421 
+Hydroisomerization and Aromatization in Fluid Catalytic Cracking Gasoline Hydro-
+1422 
+upgrading. Energy Fuels 2009;23:3016–23. https://doi.org/10.1021/ef900030h. 
+1423 
+[98] Martínez-Espín JS, De Wispelaere K, Janssens TVW, Svelle S, Lillerud KP, Beato P, 
+1424 
+et al. Hydrogen Transfer versus Methylation: On the Genesis of Aromatics Formation 
+1425 
+in the Methanol-To-Hydrocarbons Reaction over H-ZSM-5. ACS Catal 2017;7:5773–
+1426 
+80. https://doi.org/10.1021/acscatal.7b01643. 
+1427 
+[99] Müller S, Liu Y, Kirchberger FM, Tonigold M, Sanchez-Sanchez M, Lercher JA. 
+1428 
+Hydrogen Transfer Pathways during Zeolite Catalyzed Methanol Conversion to 
+1429 
+Hydrocarbons. J Am Chem Soc 2016;138:15994–6003. 
+1430 
+https://doi.org/10.1021/jacs.6b09605. 
+1431 
+[100] Li Z, Gao J, Wang G, Shi Q, Xu C. Influence of Nonbasic Nitrogen Compounds and 
+1432 
+Condensed Aromatics on Coker Gas Oil Catalytic Cracking and Their 
+1433 
+Characterization. Ind Eng Chem Res 2011;50:9415–24. 
+1434 
+https://doi.org/10.1021/ie2003973. 
+1435 
+[101] Pimenta RDM, Pereira MM, Nascimento U do, Gorne J, Bernadete E, Lau LY. Effect 
+1436 
+of vanadium contamination on H-ZSM-5 zeolite deactivation. Catalysis Today 
+1437 
+2008;133–135:805–8. https://doi.org/10.1016/j.cattod.2007.12.098. 
+1438 
+
+<<<PAGE 72>>>
+ 72
+[102] Tatterson DF, Mieville RL. Nickel/vanadium interactions on cracking catalyst. Ind Eng 
+1439 
+Chem Res 1988;27:1595–9. https://doi.org/10.1021/ie00081a007. 
+1440 
+[103] Nielson R, Doolin P. Chapter 10 Metals passivation. Fluid Catalytic Cracking: Science 
+1441 
+and Technology  Studies in Surface Science and Catalysis, vol. 76, Elsevier; 1993. 
+1442 
+[104] Fritz P. The effect of sodium poisoning on dealuminated Y-type zeolites. Journal of 
+1443 
+Catalysis 1989;118:85–98. https://doi.org/10.1016/0021-9517(89)90303-5. 
+1444 
+[105] Sandoval-Díaz L-E, Palomeque-Forero L-A, Trujillo CA. Towards understanding 
+1445 
+sodium effect on USY zeolite. Applied Catalysis A: General 2011;393:171–7. 
+1446 
+https://doi.org/10.1016/j.apcata.2010.11.038. 
+1447 
+[106] Sandoval-Díaz L-E, Martínez-Gil J-M, Trujillo CA. The combined effect of sodium 
+1448 
+and vanadium contamination upon the catalytic performance of USY zeolite in the 
+1449 
+cracking of n-butane: Evidence of path-dependent behavior in Constable–Cremer 
+1450 
+plots. Journal of Catalysis 2012;294:89–98. https://doi.org/10.1016/j.jcat.2012.07.009. 
+1451 
+[107] Catana G, Grünert W, Van Der Voort P, Vansant EF, Schoonheydt RA, Weckhuysen 
+1452 
+BM. AlO  x  Coating of Ultrastable Zeolite Y: A Possible Method for Vanadium 
+1453 
+Passivation of FCC Catalysts. J Phys Chem B 2000;104:9195–202. 
+1454 
+https://doi.org/10.1021/jp001021i. 
+1455 
+[108] Etim UJ, Bai P, Ullah R, Subhan F, Yan Z. Vanadium contamination of FCC catalyst: 
+1456 
+Understanding the destruction and passivation mechanisms. Applied Catalysis A: 
+1457 
+General 2018;555:108–17. https://doi.org/10.1016/j.apcata.2018.02.011. 
+1458 
+[109] Mitchell BR. Metal Contamination of Cracking Catalysts. 1. Synthetic Metals 
+1459 
+Deposition on Fresh Catalysts. Ind Eng Chem Prod Res Dev 1980;19:209–13. 
+1460 
+https://doi.org/10.1021/i360074a015. 
+1461 
+[110] Bobkova TV, Doronin VP, Potapenko OV, Sorokina TP, Ostrovskii NM. Poisoning 
+1462 
+effect of nitrogen compounds on the transformation of model hydrocarbons and real 
+1463 
+feed under catalytic cracking conditions. Catal Ind 2014;6:218–22. 
+1464 
+https://doi.org/10.1134/S2070050414030040. 
+1465 
+[111] Caeiro G, Costa AF, Cerqueira HS, Magnoux P, Lopes JM, Matias P, et al. Nitrogen 
+1466 
+poisoning effect on the catalytic cracking of gasoil. Applied Catalysis A: General 
+1467 
+2007;320:8–15. https://doi.org/10.1016/j.apcata.2006.11.031. 
+1468 
+[112] Fu C-M, Schaffer AM. Effect of Nitrogen Compounds on Cracking Catalysts. Journal 
+1469 
+of Industrial and Engineering Chemistry Product Research and Development 
+1470 
+1985;24:69–75. 
+1471 
+[113] Li N, Chen C, Wang B, Li S, Yang C, Chen X. Retardation effect of nitrogen 
+1472 
+compounds and condensed aromatics on shale oil catalytic cracking processing and 
+1473 
+their characterization. Appl Petrochem Res 2015;5:285–95. 
+1474 
+https://doi.org/10.1007/s13203-015-0131-0. 
+1475 
+[114] Hernández-Beltrán F, Quintana-Solórzano R, Sánchez-Valente J, Pedraza-Archila F, 
+1476 
+Figueras F. Effect of highly reactive sulfur species on sulfur reduction in cracking 
+1477 
+gasoline. Applied Catalysis B: Environmental 2003;42:145–54. 
+1478 
+https://doi.org/10.1016/S0926-3373(02)00237-0. 
+1479 
+[115] Leflaive P, Lemberton JL, Pérot G, Mirgain C, Carriat JY, Colin JM. On the origin of 
+1480 
+sulfur impurities in fluid catalytic cracking gasoline—Reactivity of thiophene 
+1481 
+derivatives and of their possible precursors under FCC conditions. Applied Catalysis 
+1482 
+A: General 2002;227:201–15. https://doi.org/10.1016/S0926-860X(01)00936-X. 
+1483 
+[116] Ruiz-Martínez J, Buurmans ILC, Knowles WV, van der Beek D, Bergwerff JA, Vogt 
+1484 
+ETC, et al. Microspectroscopic insight into the deactivation process of individual 
+1485 
+cracking catalyst particles with basic sulfur components. Applied Catalysis A: General 
+1486 
+2012;419–420:84–94. https://doi.org/10.1016/j.apcata.2012.01.016. 
+1487 
+
+<<<PAGE 73>>>
+ 73
+[117] Bayraktar O, Kugler EL. Visualization of the Equilibrium FCC Catalyst Surface by 
+1488 
+AFM and SEM–EDS. Catalysis Letters 2003;90:155–60. 
+1489 
+https://doi.org/10.1023/B:CATL.0000004110.98820.d9. 
+1490 
+[118] Rainer DR, Rautiainen E, Nelissen B, Imhof P, Vadovic C. Simulating iron-induced 
+1491 
+FCC accessibility losses in lab-scale deactivation. Studies in Surface Science and 
+1492 
+Catalysis, vol. 149, Elsevier; 2004, p. 165–76. https://doi.org/10.1016/S0167-
+1493 
+2991(04)80761-4. 
+1494 
+[119] Corma A, Grande MS, Iglesias M, del Pino C, Rojas RM. Nickel passivation on 
+1495 
+fluidised cracking catalysts with different antimony complexes. Applied Catalysis A: 
+1496 
+General 1992;85:61–71. https://doi.org/10.1016/0926-860X(92)80129-Z. 
+1497 
+[120] Escobar A, Pereira M, Pimenta R, Lau L, Cerqueira H. Interaction between Ni and V 
+1498 
+with USHY and rare earth HY zeolite during hydrothermal deactivation. Applied 
+1499 
+Catalysis A: General 2005;286:196–201. https://doi.org/10.1016/j.apcata.2005.03.002. 
+1500 
+[121] Ray GJ, Meyers BL, Marshall CL. 29Si and 27AI n.m.r study of steamed faujasites- 
+1501 
+evidence for non-framework tetrahedrally bound aluminium 1986:4. 
+1502 
+[122] Wallenstein D, Farmer D, Knoell J, Fougret CM, Brandt S. Progress in the deactivation 
+1503 
+of metals contaminated FCC catalysts by a novel catalyst metallation method. Applied 
+1504 
+Catalysis A: General 2013;462–463:91–9. 
+1505 
+https://doi.org/10.1016/j.apcata.2013.02.002. 
+1506 
+[123] Hughes R, Hutchings GJ, Koon CL, McGhee B, Snape CE, Yu D. Deactivation of 
+1507 
+FCC catalysts using n-hexadecane feed with various additives. Applied Catalysis A: 
+1508 
+General 1996;144:269–79. https://doi.org/10.1016/0926-860X(96)00106-8. 
+1509 
+[124] Corma A, Mocholí FA. New silica-alumina-magnesia FCC active matrix and its 
+1510 
+possibilities as a basic nitrogen passivating compound. Applied Catalysis A: General 
+1511 
+1992;84:31–46. https://doi.org/10.1016/0926-860X(92)80337-C. 
+1512 
+[125] Barth J-O, Jentys A, Lercher JA. On the Nature of Nitrogen-Containing Carbonaceous 
+1513 
+Deposits on Coked Fluid Catalytic Cracking Catalysts. Ind Eng Chem Res 
+1514 
+2004;43:2368–75. https://doi.org/10.1021/ie034163i. 
+1515 
+[126] Prado GHC, Rao Y, de Klerk A. Nitrogen Removal from Oil: A Review. Energy Fuels 
+1516 
+2017;31:14–36. https://doi.org/10.1021/acs.energyfuels.6b02779. 
+1517 
+[127] Caeiro G, Magnoux P, Lopes JM, Ribeiro FR. Deactivating effect of quinoline during 
+1518 
+the methylcyclohexane transformation over H-USY zeolite. Applied Catalysis A: 
+1519 
+General 2005;292:189–99. https://doi.org/10.1016/j.apcata.2005.06.016. 
+1520 
+[128] Valla JA, Lappas AA, Vasalos IA. Catalytic cracking of thiophene and 
+1521 
+benzothiophene: Mechanism and kinetics. Applied Catalysis A: General 2006;297:90–
+1522 
+101. https://doi.org/10.1016/j.apcata.2005.08.049. 
+1523 
+[129] Yeo TY, Ashok J, Kawi S. Recent developments in sulphur-resilient catalytic systems 
+1524 
+for syngas production. Renewable and Sustainable Energy Reviews 2019;100:52–70. 
+1525 
+https://doi.org/10.1016/j.rser.2018.10.016. 
+1526 
+[130] Schulz H, Bohringer W, Ousmanov F, Waller P. Refractory sulfur compounds in gas 
+1527 
+oils 1999:37. 
+1528 
+[131] Hernández-Beltrán F, Quintana-Solórzano R, Sánchez-Valente J, Pedraza-Archila F, 
+1529 
+Figueras F. Effect of highly reactive sulfur species on sulfur reduction in cracking 
+1530 
+gasoline. Applied Catalysis B: Environmental 2003;42:145–54. 
+1531 
+https://doi.org/10.1016/S0926-3373(02)00237-0. 
+1532 
+[132] Gillan C, Fowles M, French S, Jackson SD. Ethane Steam Reforming over a 
+1533 
+Platinum/Alumina Catalyst: Effect of Sulfur Poisoning. Ind Eng Chem Res 
+1534 
+2013;52:13350–6. https://doi.org/10.1021/ie401999t. 
+1535 
+
+<<<PAGE 74>>>
+ 74
+[133] Cimino S, Lisi L, Mancino G. Effect of phosphorous addition to Rh-supported 
+1536 
+catalysts for the dry reforming of methane. International Journal of Hydrogen Energy 
+1537 
+2017;42:23587–98. https://doi.org/10.1016/j.ijhydene.2017.04.264. 
+1538 
+[134] Rainer DR, Rautiainen E, Nelissen B, Imhof P, Vadovic C. Simulating iron-induced 
+1539 
+FCC accessibility losses in lab-scale deactivation. Studies in Surface Science and 
+1540 
+Catalysis, vol. 149, Elsevier; 2004, p. 165–76. https://doi.org/10.1016/S0167-
+1541 
+2991(04)80761-4. 
+1542 
+[135] Psarras AC, Iliopoulou EF, Nalbandian L, Lappas AA, Pouwels C. Study of the 
+1543 
+accessibility effect on the irreversible deactivation of FCC catalysts from contaminant 
+1544 
+feed metals. Catalysis Today 2007;127:44–53. 
+1545 
+https://doi.org/10.1016/j.cattod.2007.05.021. 
+1546 
+[136] Jiang H, Livi KJ, Kundu S, Cheng W-C. Characterization of iron contamination on 
+1547 
+equilibrium fluid catalytic cracking catalyst particles. Journal of Catalysis 
+1548 
+2018;361:126–34. https://doi.org/10.1016/j.jcat.2018.02.025. 
+1549 
+[137] Arakawa S, Teshima K, Watabe M. Effect of Iron Compound Accumulation on 
+1550 
+Apparent Bulk Density and Catalyst Activity of FCC Catalyst. J Jpn Petrol Inst 
+1551 
+2011;54:258–65. https://doi.org/10.1627/jpi.54.258. 
+1552 
+[138] Liu Z, Zhang Z, Liu P, Zhai J, Yang C. Iron Contamination Mechanism and Reaction 
+1553 
+Performance Research on FCC Catalyst. Journal of Nanotechnology 2015;2015:1–6. 
+1554 
+https://doi.org/10.1155/2015/273859. 
+1555 
+[139] Occelli ML. Vanadium-Zeolite Interactions in Fluidized Cracking Catalysts. Catalysis 
+1556 
+Reviews 1991;33:241–80. https://doi.org/10.1080/01614949108020301. 
+1557 
+[140] Oliveira HMT, Herbst MH, Cerqueira HS, Pereira MM. Vanadium effect on HUSY 
+1558 
+zeolite deactivation during hydrothermal treatment and cyclohexane model reaction. 
+1559 
+Applied Catalysis A: General 2005;292:82–9. 
+1560 
+https://doi.org/10.1016/j.apcata.2005.05.043. 
+1561 
+[141] Xu M, Liu X, Madon RJ. Pathways for Y Zeolite Destruction: The Role of Sodium and 
+1562 
+Vanadium. Journal of Catalysis 2002;207:237–46. 
+1563 
+https://doi.org/10.1006/jcat.2002.3517. 
+1564 
+[142] Al-Ayed OS, Kunzru D. Cyclohexane dehydrogenation on a nickel catalyst: Kinetics 
+1565 
+and catalyst fouling. J Chem Technol Biotechnol 2007;43:23–38. 
+1566 
+https://doi.org/10.1002/jctb.280430104. 
+1567 
+[143] Wormsbecher R. Vanadium poisoning of cracking catalysts: Mechanism of poisoning 
+1568 
+and design of vanadium tolerant catalyst system. Journal of Catalysis 1986;100:130–7. 
+1569 
+https://doi.org/10.1016/0021-9517(86)90078-3. 
+1570 
+[144] Akah A. Application of rare earths in fluid catalytic cracking: A review. Journal of 
+1571 
+Rare Earths 2017;35:941–56. https://doi.org/10.1016/S1002-0721(17)60998-0. 
+1572 
+[145] Fiorentino A, Panariti P, van Turnhout L, Spronck M, Klein A, Schmitz S, et al. 
+1573 
+Immobilization of [VCl 3 (N-2,6-Me 2 C 6 H 3 )] Complex on Silica Supports: 
+1574 
+Synthesis and Catalytic Testing for Ethylene Polymerization. Ind Eng Chem Res 
+1575 
+2020;59:12710–8. https://doi.org/10.1021/acs.iecr.0c01908. 
+1576 
+[146] Souza NLA, Tkach I, Morgado E, Krambrock K. Vanadium poisoning of FCC 
+1577 
+catalysts: A quantitative analysis of impregnated and real equilibrium catalysts. 
+1578 
+Applied Catalysis A: General 2018;560:206–14. 
+1579 
+https://doi.org/10.1016/j.apcata.2018.05.003. 
+1580 
+[147] Etim UJ, Bai P, Liu X, Subhan F, Ullah R, Yan Z. Vanadium and nickel deposition on 
+1581 
+FCC catalyst: Influence of residual catalyst acidity on catalytic products. Microporous 
+1582 
+and Mesoporous Materials 2019;273:276–85. 
+1583 
+https://doi.org/10.1016/j.micromeso.2018.07.011. 
+1584 
+
+<<<PAGE 75>>>
+ 75
+[148] Reynolds J. NICKEL IN PETROLEUM REFINING. Petroleum Science and 
+1585 
+Technology 2001;19:979–1007. https://doi.org/10.1081/LFT-100106915. 
+1586 
+[149] Tangstad E, Myrstad T, Spjelkavik AI, Stöcker M. Vanadium species and their effect 
+1587 
+on the catalytic behavior of an FCC catalyst. Applied Catalysis A: General 
+1588 
+2006;299:243–9. https://doi.org/10.1016/j.apcata.2005.10.058. 
+1589 
+[150] Foskett SJ, Rautiainen E. Control iron contamination in resid FCC. Hydrocarbon 
+1590 
+Processing 2001;80:71-74+77. 
+1591 
+[151] Lü Y. Poisoning of FCC catalyst by iron and countermeasures 2002;32:42–6. 
+1592 
+[152] Silvy RP. Future trends in the refining catalyst market. Applied Catalysis A: General 
+1593 
+2004;261:247–52. https://doi.org/10.1016/j.apcata.2003.11.019. 
+1594 
+[153] Gazulla MF, Andreu C, Rodrigo M, Orduña M, Ventura MJ, Montolío FJ. New 
+1595 
+methodology for the determination of sodium in light and heavy petroleum products. 
+1596 
+Journal of Petroleum Science and Engineering 2019;179:321–7. 
+1597 
+https://doi.org/10.1016/j.petrol.2019.04.088. 
+1598 
+[154] Corma A, Grande MS, Iglesias M, del Pino C, Rojas RM. Nickel passivation on 
+1599 
+fluidised cracking catalysts with different antimony complexes. Applied Catalysis A: 
+1600 
+General 1992;85:61–71. https://doi.org/10.1016/0926-860X(92)80129-Z. 
+1601 
+[155] BASF. Boron-Based Technology: An Innovative Solution for Resid FCC Unit 
+1602 
+Performance Improvement. Presentation 2018. 
+1603 
+[156] Hayes JC, Castillo C. Passivation of metal contaminants on cracking catalyst 1984. 
+1604 
+[157] Farag H, Ng S, de Lasa H. Kinetic modeling of catalytic cracking of gas oils using in 
+1605 
+situ traps (FCCT) to prevent metal contaminant effects. Ind Eng Chem Res 
+1606 
+1993;32:1071–80. https://doi.org/10.1021/ie00018a013. 
+1607 
+[158] Forester D R. Passivation of FCC Catalysts. US4913801, 1990. 
+1608 
+[159] Ramamoorthy P, Krishna A. Method for Supressing the Poisoning Effects of 
+1609 
+Contaminant Metals on Cracking Catalysts in Fluid Catalytic Cracking. US4784752A, 
+1610 
+1988. 
+1611 
+[160] Heite RS, English AR, Smith GA. Bismuth nickel passivation effective in FCCU. Oil 
+1612 
+and Gas Journal 1990;88:23. 
+1613 
+[161] Zhang CC, Shi J, Hartlaub S, Palamara JP, Petrovic I, Yilmaz B. In-situ diffuse 
+1614 
+reflective infrared Fourier transform spectroscopy (DRIFTS) study on Ni passivation 
+1615 
+in FCC catalysts from boron-based technology. Catalysis Communications 
+1616 
+2021;150:106273. https://doi.org/10.1016/j.catcom.2020.106273. 
+1617 
+[162] Bradley SA, Gattuso MJ, Bertolacini RJ, editors. Characterization and Catalyst 
+1618 
+Development: An Interactive Approach. vol. 411. Washington, DC: American 
+1619 
+Chemical Society; 1989. https://doi.org/10.1021/bk-1989-0411. 
+1620 
+[163] Anderson M. Luminescence probes of vanadium-contaminated fluid cracking catalysts. 
+1621 
+Journal of Catalysis 1989;118:31–42. https://doi.org/10.1016/0021-9517(89)90298-4. 
+1622 
+[164] Anderson M. Tin passivation of vanadium in metal-contaminated fluid-cracking 
+1623 
+catalysts: Electron paramagnetic resonance studies. Journal of Catalysis 
+1624 
+1990;122:374–83. https://doi.org/10.1016/0021-9517(90)90291-Q. 
+1625 
+[165] Chao K-J, Lin L-H, Ling Y-C, Hwang J-F, Hou L-Y. Vanadium passivation of 
+1626 
+cracking catalysts by imaging secondary ion mass spectrometry. Applied Catalysis A: 
+1627 
+General 1995;121:217–29. https://doi.org/10.1016/0926-860X(94)00217-7. 
+1628 
+[166] Fe´ron B, Gallezot P, Bourgogne M. Hydrothermal aging of cracking catalystsV. 
+1629 
+Vanadium passivation by rare-earth compounds soluble in the feedstock. Journal of 
+1630 
+Catalysis 1992;134:469–78. https://doi.org/10.1016/0021-9517(92)90335-F. 
+1631 
+[167] Liu Q, Zhang M, Sun L, Su H, Zou X, Qi C. The Performance of Catalytic Conversion 
+1632 
+of ZSM-5 Comodified with Gold and Lanthanum for Increasing Propylene Production. 
+1633 
+Ind Eng Chem Res 2019;58:14695–704. https://doi.org/10.1021/acs.iecr.9b02612. 
+1634 
+
+<<<PAGE 76>>>
+ 76
+[168] Dreiling M. Interaction of antimony with reduced supported nickel catalysts. Journal of 
+1635 
+Catalysis 1979;56:130–3. https://doi.org/10.1016/0021-9517(79)90097-6. 
+1636 
+[169] Keeley C, Komvokis V, Shackleford A, Srikantharajah S, O’Berry B, Yilmaz B. 
+1637 
+Catalyst technologies for improved FCC yields. Digital Refining Processing, 
+1638 
+Operations, and Maintenance 2017:5. 
+1639 
+ 
