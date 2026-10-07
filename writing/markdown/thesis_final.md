@@ -188,9 +188,10 @@ In Tier 2, the structures were re-optimised and their energetics refined using h
 
 ### 3.2.1 Zeolite Y Cluster Model
 
-To model the Bronsted acid site of zeolite Y (faujasite framework), a cluster approach was employed. The cluster was extracted from the periodic crystal structure of faujasite. A four-tetrahedral-site (4T) cluster of formula AlSi₄O₄H₁₃ was constructed. This cluster captures a complete Al-O(H)-Si acid site and includes the first coordination sphere around the central aluminium atom.
+To model the Bronsted acid site of zeolite Y (faujasite framework), a cluster approach was employed. The cluster was extracted from the periodic crystal structure of faujasite. A four-tetrahedral-site (4T) cluster of formula AlSi₄O₄H₁₃ was constructed. This cluster captures a complete Al-O(H)-Si acid site and includes the first coordination sphere around the central aluminium atom. The visual representation of this cluster model is shown in Figure 3.1.
 
-![Figure 3.1: Cluster Model of the Zeolite Y Bronsted Acid Site](../../figures/fig3_1_cluster.png)
+![Cluster Model](../../figures/fig3_1_cluster.png)
+*Figure 3.1: Cluster Model of the Zeolite Y Bronsted Acid Site*
 
 To satisfy the valency requirements at the boundaries of the cluster where it was cleaved from the extended lattice, the dangling silicon and aluminium bonds were terminated with hydrogen atoms, with the Si-H bond lengths fixed to standard values (approximately 1.48 angstroms). During all structural optimisations, the positions of these terminal boundary hydrogen atoms were frozen (constrained) to their crystallographic coordinates. This constraint mimics the rigidity imposed by the surrounding continuous zeolite framework, preventing the small cluster from undergoing unrealistic structural collapse during the simulation. The central Al-O(H)-Si bridge and its immediate oxygen neighbours were fully relaxed.
 
@@ -291,9 +292,10 @@ The core of this investigation is the mapping of the elementary steps following 
 
 ### 4.2.1 Adsorption Energetics: Vanadic Acid vs. Steam
 
-The initial interaction between the dealuminating agent and the zeolite framework dictates the concentration of the reactive species at the active site. The computed electronic adsorption energies reveal a significant disparity between vanadic acid and steam. At the B3LYP level, vanadic acid binds with an energy of -93.0 kJ/mol, whereas water binds at -78.3 kJ/mol. The PBE0 functional corroborates this difference, predicting binding energies of -93.1 kJ/mol and -78.6 kJ/mol, respectively.
+The initial interaction between the dealuminating agent and the zeolite framework dictates the concentration of the reactive species at the active site. The computed electronic adsorption energies reveal a significant disparity between vanadic acid and steam. As illustrated in Figure 4.1, at the B3LYP level, vanadic acid binds with an energy of -93.0 kJ/mol, whereas water binds at -78.3 kJ/mol. The PBE0 functional corroborates this difference, predicting binding energies of -93.1 kJ/mol and -78.6 kJ/mol, respectively.
 
-![Figure 4.1: Adsorption Energy of H3VO4 and H2O on the FAU Cluster Model](C:/Users/PC/.gemini/antigravity-ide/brain/9a259048-d274-4584-92bc-3518a31f5431/adsorption_comparison_1791361848441.jpg)
+![Adsorption Energy](../../figures/fig4_1_adsorption.png)
+*Figure 4.1: Adsorption Energy of H3VO4 and H2O on the FAU Cluster Model*
 
 This ΔΔE of approximately 15 kJ/mol in favour of vanadic acid is a critical finding. It indicates that under the competitive conditions of the FCC regenerator, vanadic acid possesses a much higher affinity for the Bronsted acid sites than the vastly more abundant steam. The stronger binding of H₃VO₄ can be attributed to its ability to form a more extensive and cooperative hydrogen-bonding network with the framework compared to the single water molecule.
 
@@ -307,9 +309,10 @@ The final state mapped in this study is the dealuminated product (V-P), where th
 
 ### 4.2.3 Comparison with the Steam Baseline
 
-The steam baseline provides a stark contrast. The hydrolysis of the framework by water to form the product W-P (representing a single Al-O bond cleavage, the established first step of hydrothermal dealumination) results in a state with a relative electronic energy of -24.0 kJ/mol. This is substantially more stable than the final extracted state in the vanadium pathway. However, as established by Pine (1990) and Trujillo (1997), the overall rate and extent of zeolite destruction by vanadium far exceeds that by steam. 
+The steam baseline provides a stark contrast. The hydrolysis of the framework by water to form the product W-P (representing a single Al-O bond cleavage, the established first step of hydrothermal dealumination) results in a state with a relative electronic energy of -24.0 kJ/mol. This is substantially more stable than the final extracted state in the vanadium pathway. However, as established by Trujillo et al. (1997), the overall rate and extent of zeolite destruction by vanadium far exceeds that by steam. The electronic reaction profiles for both pathways are compared in Figure 4.2.
 
-![Figure 4.2: Electronic Reaction Profile at B3LYP-D3(BJ)/def2-TZVP](C:/Users/PC/.gemini/antigravity-ide/brain/9a259048-d274-4584-92bc-3518a31f5431/energy_profile_tier2_1791361820537.jpg)
+![Electronic Reaction Profile](../../figures/fig4_2_energy_profile.png)
+*Figure 4.2: Electronic Reaction Profile at B3LYP-D3(BJ)/def2-TZVP*
 
 The computed electronic energies suggest that while the ultimate thermodynamic state of full aluminium extraction by vanadium is highly endothermic (in this specific cluster model), the intermediate chemisorption states (V-I₁, V-I₂) provide deep energetic sinks that may facilitate a complex, multi-step extraction mechanism driven by high temperatures, effectively validating the necessity of considering vanadium as an active catalytic driver rather than just a passive observer to steam hydrolysis.
 
@@ -330,9 +333,10 @@ Electronic energies describe the potential energy surface at absolute zero. To u
 
 At standard room temperature (298 K), the adsorption of both vanadic acid and water is spontaneous (negative ΔG). The chemisorbed vanadic acid intermediate (V-I₁) is the most thermodynamically stable state at this temperature (-35.7 kJ/mol).
 
-However, at the FCC regenerator temperature of 1003 K, the large entropic penalty associated with a gas-phase molecule binding to a solid surface dominates the free energy equation. The TΔS term becomes large and positive, driving the ΔG of adsorption for both species into the positive (non-spontaneous) regime.
+However, at the FCC regenerator temperature of 1003 K, the large entropic penalty associated with a gas-phase molecule binding to a solid surface dominates the free energy equation. The TΔS term becomes large and positive, driving the ΔG of adsorption for both species into the positive (non-spontaneous) regime, as illustrated in Figure 4.3.
 
-![Figure 4.3: Gibbs Free Energy of Adsorption at 298 K and 1003 K](C:/Users/PC/.gemini/antigravity-ide/brain/9a259048-d274-4584-92bc-3518a31f5431/gibbs_temperature_1791361884324.jpg)
+![Gibbs Free Energy of Adsorption](../../figures/fig4_3_gibbs.png)
+*Figure 4.3: Gibbs Free Energy of Adsorption at 298 K and 1003 K*
 
 At 1003 K, the formation of the V-PRC complex requires +133.4 kJ/mol, while the W-PRC complex requires +67.0 kJ/mol. The chemisorbed state V-I₁ sits at +108.4 kJ/mol. The fact that dealumination occurs rapidly at these temperatures despite the unfavourable free energy of adsorption indicates that the reaction is driven by the continuous removal of products (irreversible framework collapse) and the high concentration of steam (and consequently, volatile vanadic acid) in the regenerator, which pushes the equilibrium forward according to Le Chatelier's principle.
 
