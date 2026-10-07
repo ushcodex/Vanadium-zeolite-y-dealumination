@@ -367,7 +367,7 @@ def build_docx(md_path, docx_path):
 
 if __name__ == "__main__":
     src_md = "writing/thesis/thesis_final.md"
-    out_docx = "writing/thesis/thesis_final.docx"
+    out_docx = "writing/thesis/thesis_final_v2.docx"
     build_docx(src_md, out_docx)
     
     # Also compile to thesis_master.docx and work.docx
