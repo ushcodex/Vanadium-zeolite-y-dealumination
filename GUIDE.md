@@ -48,7 +48,7 @@ Chapter-level headings are formatted as `1.0 INTRODUCTION`, `2.0 LITERATURE REVI
 
 ## 4. Figures and tables
 
-Figure captions and table captions are written in the chapter Markdown using `[FIG: ...]` and `[TBL: ...]` directives. The builder uses these captions to create the document's lists and page references. Chapter Four presents the adsorption energies and harmonic thermochemistry in tables, without repeating the values in plots. The convergence and vibrational checks for the candidate structures are also summarised in a table; failed structures are not treated as validated stationary points.
+Figure captions and table captions are written in the chapter Markdown using `[FIG: ...]` and `[TBL: ...]` directives. The builder uses these captions to create the document's lists and page references. Chapter Four presents geometries, adsorption energies, pathway checks, harmonic Gibbs energies, and a formal competitive-site estimate in tables rather than duplicating numerical data in plots. The site-occupation result is conditional on the ideal-gas harmonic and single-site assumptions. The Tier 1 GFN2-xTB saddle-point candidate is distinguished from the unvalidated DFT refinement.
 
 Figures generated from the ORCA coordinates are under `figures/`. Literature figures are under `figures/from_sources/`; their source is stated in each caption. Source papers and extracted text are under `writing/Sources/`.
 
@@ -56,7 +56,14 @@ Figures generated from the ORCA coordinates are under `figures/`. Literature fig
 
 The calculation inputs, output logs, geometries and registers are under `simulation/`. The ORCA output logs are the source of the reported energies and vibrational frequencies. The current conclusions distinguish converged minima from unconverged or interrupted jobs; failed jobs are retained for audit but are not treated as validated stationary points.
 
-For a summary of the calculations, see `simulation/analysis/RESULTS.md`. To audit a Tier 1 result register, run:
+For the calculation summary and formal site-occupation estimate, see `simulation/analysis/RESULTS.md` and `writing/markdown/_results_table.txt`. After changing calculation logs or registers, refresh the machine-readable results and the audit summary with:
+
+```bash
+python3 tools/build_results_table.py
+python3 simulation/analysis/build_tables.py
+```
+
+To audit a Tier 1 result register, run:
 
 ```bash
 python3 simulation/verify_tier1.py simulation/02_tier1

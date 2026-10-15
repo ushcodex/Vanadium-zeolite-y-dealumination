@@ -649,11 +649,30 @@ def validate_sources(source_texts):
     if actual != expected_chapters:
         raise ValueError(f"Unexpected chapter heading sequence: {actual}")
 
+    prelims = source_texts["00_prelims.md"]
+    expected_title = (
+        "DENSITY FUNCTIONAL THEORY EVALUATION OF VANADIC ACID ZEOLITE Y "
+        "DEALUMINATION IN RESIDUE FLUID CATALYTIC CRACKING REGENERATOR"
+    )
+    title_block = prelims.split("[TITLEPAGE]", 1)[1].split("[/TITLEPAGE]", 1)[0]
+    title = next(line.strip() for line in title_block.splitlines() if line.strip())
+    if title != expected_title:
+        raise ValueError("The title page must retain the supervisor's quoted title")
+    abstract_match = re.search(r"^# ABSTRACT\s+(.*?)(?=^# |\Z)", prelims, re.S | re.M)
+    if not abstract_match:
+        raise ValueError("Preliminary pages must contain an Abstract")
+    abstract_paragraphs = [p.strip() for p in abstract_match.group(1).split("\n\n") if p.strip()]
+    if len(abstract_paragraphs) != 1:
+        raise ValueError("The abstract must be a single paragraph")
+    abstract_words = len(abstract_paragraphs[0].split())
+    if abstract_words >= 200:
+        raise ValueError(f"The abstract must remain under 200 words; found {abstract_words}")
+
     chapter_one = source_texts["01_chapter1.md"]
     objective_section = re.search(
-        r"## 1\.4 Objectives of the Study\s+(.*?)(?=\n## )", chapter_one, re.S)
+        r"## 1\.3 Aim and Objectives of the Study\s+(.*?)(?=\n## )", chapter_one, re.S)
     if not objective_section:
-        raise ValueError("Chapter One must contain Section 1.4, Objectives of the Study")
+        raise ValueError("Chapter One must contain Section 1.3, Aim and Objectives of the Study")
     objectives = re.findall(r"^\d+\.\s+(.+)$", objective_section.group(1), re.M)
     if len(objectives) != 4:
         raise ValueError(f"Expected four objectives, found {len(objectives)}")

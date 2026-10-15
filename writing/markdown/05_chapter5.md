@@ -2,26 +2,29 @@
 
 ## 5.1 Summary of the Study
 
-This study compared vanadic acid and water adsorption at a model Zeolite Y Brønsted acid site. A local AlSi₄O₄H₁₃ cluster was screened with GFN2-xTB and refined with B3LYP-D3(BJ)/def2-TZVP. PBE0-D3(BJ)/def2-TZVP single-point calculations checked the relative adsorption energies, while harmonic frequencies supplied thermochemical corrections.
-
-The adsorption complexes and several reference structures passed the geometry and frequency checks. The calculated electronic energies favoured vanadic acid, but the harmonic free energies did not support a reliable estimate of competitive site occupancy at regenerator temperature. The candidate density-functional structure for framework bond cleavage failed the transition-state checks, so the study did not establish an activation barrier or a complete dealumination mechanism.
+This study compared vanadic acid and water at a model Zeolite Y Brønsted acid site. A 22-atom AlSi₄O₄H₁₃ cluster was screened with GFN2-xTB and refined with B3LYP-D3(BJ)/def2-TZVP; PBE0 single-point calculations checked the electronic-energy comparison. The study also assessed a GFN2-xTB transition-state candidate and calculated harmonic Gibbs energies and a conditional site-occupation estimate.
 
 ## 5.2 Conclusions
 
-1. A local Zeolite Y cluster with one Brønsted acid site was constructed and optimised, and converged adsorption complexes were obtained for vanadic acid and water. The cluster was suitable for comparing local electronic adsorption energies. It did not represent the full zeolite pore or its long-range electrostatic environment.
+The conclusions follow the four objectives in the order used in the methodology and results chapters:
 
-2. B3LYP-D3(BJ)/def2-TZVP gave electronic adsorption energies of −93.0 kJ mol⁻¹ for vanadic acid and −78.3 kJ mol⁻¹ for water. PBE0 single-point calculations gave −93.1 and −78.6 kJ mol⁻¹, respectively. The resulting electronic-energy difference favoured vanadic acid by 14.7 kJ mol⁻¹ at B3LYP and 14.4 kJ mol⁻¹ at PBE0, while GFN2-xTB substantially overestimated that difference.
+1. A local cluster containing one framework aluminium atom and four silicon atoms represented the Zeolite Y acid site. Optimised vanadic-acid and water complexes were obtained at this site, and selected aluminium–oxygen distances showed distinct local geometries for the two adsorbates.
 
-3. The harmonic Gibbs free energies did not support a quantitative estimate of competitive site occupancy under RFCC regenerator conditions. At 1003.15 K, the calculated gas-phase adsorption free energies were positive for both pre-reaction complexes, and the water complex was less unfavourable than the vanadic-acid complex. These values depended on an ideal-gas harmonic treatment that omitted pore confinement, so they could not be interpreted as reliable adsorption equilibria in an operating catalyst.
+2. B3LYP-D3(BJ)/def2-TZVP predicted that vanadic acid had a more negative electronic adsorption energy than water, with a relative preference of 14.69 kJ mol⁻¹. PBE0 single-point calculations gave a similar preference of 14.44 kJ mol⁻¹, while GFN2-xTB predicted a much larger difference. The two DFT estimates therefore supported a modest, method-consistent electronic binding preference for vanadic acid in this cluster model.
 
-4. The calculations did not establish a validated vanadic-acid pathway for framework Al–O bond cleavage. The candidate V-TS2 structure had fourteen imaginary frequencies, V-I2 did not converge, and the V-P calculation did not terminate normally. No density-functional activation barrier was therefore reported, and the adsorption-energy comparison alone did not confirm or reject the full vanadic-acid mechanism.
+3. The GFN2-xTB search produced an accepted screening-level saddle-point candidate for the first vanadic-acid Al–O cleavage step, with a barrier of 160.70 kJ mol⁻¹ above V-I1. Its DFT refinement did not retain first-order saddle-point character, and the water-path candidate failed the two-sided displacement check. The calculations therefore did not establish a validated DFT activation barrier or permit a DFT rate comparison.
 
-## 5.3 Recommendations and Further Work
+4. Harmonic Gibbs energies favoured water over vanadic acid at both 298.15 K and 1003.15 K, reversing the electronic adsorption-energy ordering. Under the assumed regenerator partial pressures, the formal ideal-gas single-site calculation gave a water-to-vanadic-acid occupation ratio of about 5.7 × 10⁷ to 5.7 × 10⁸. This result was conditional on the gas-phase harmonic and Langmuir assumptions and was not a definitive prediction of real catalyst occupancy.
 
-1. Recalculate the adsorption complexes with a larger or periodic Zeolite Y model that includes pore confinement and the framework electrostatic field. Include explicit water molecules or a suitable reference state for adsorbed water before using free energies to estimate site occupancy.
+Overall, the study established an electronic binding preference for vanadic acid but did not demonstrate that vanadic acid was the principal cause of framework dealumination. The thermochemical estimate highlighted the importance of steam abundance and thermal corrections, while the pathway assessment showed that DFT transition-state validation remained necessary before reaction rates could be compared.
 
-2. Complete the basis-set-superposition correction for both adsorbates with a consistent set of converged fragment calculations. The corrected values should be reported alongside the uncorrected energies before either value is used to screen vanadium traps.
+## 5.3 Contribution to Knowledge
 
-3. Repeat the framework bond-cleavage search with a larger model or a less restrictive boundary. Accept a transition state only after a converged optimisation, one chemically meaningful imaginary frequency, and a two-sided displacement or reaction-path check.
+The study provided a like-for-like DFT comparison of vanadic-acid and water adsorption at the same local Zeolite Y acid site. It separated electronic adsorption energies from harmonic Gibbs energies and showed that the two measures gave different relative preferences. It also reported a conditional competitive-site calculation and distinguished a GFN2-xTB screening saddle point from a validated DFT activation barrier.
 
-4. Add sodium to the model to test the competing sodium-mediated explanation. A direct comparison of the vanadic-acid and sodium pathways would address a key limitation of the present cluster model.
+## 5.4 Recommendations
+
+1. Expand the cluster or use a periodic Zeolite Y model that includes pore confinement, explicit water, and the local electrostatic environment. This would improve the structural basis for the adsorption comparison and the thermochemical site-occupation estimate.
+2. Complete a consistent counterpoise correction for both adsorbates and compare the corrected and uncorrected adsorption energies. This would establish how much basis-set-superposition error affects the electronic-energy margin.
+3. Refine the accepted GFN2-xTB saddle-point candidate with improved DFT starting geometries and verify the resulting mode by two-sided displacement or a reaction-path calculation. Search for and validate the corresponding water-path transition state using the same acceptance criteria.
+4. Include exchangeable sodium and other relevant vanadium species in a follow-up model and compare the resulting predictions with measurements on steamed, vanadium-contaminated catalyst. Recalculate the formal site-occupation estimate using the improved model before treating it as a prediction for catalyst operation.

@@ -64,6 +64,19 @@ Thermal corrections are the G-E(el) and H-E(el) terms printed by ORCA in the
 frequency run of each job. The reference is the separated cluster plus the free
 molecule, each at its own optimised geometry.
 
+### Conditional single-site occupation estimate at 1003.15 K
+
+| Species or ratio | K° (dimensionless) | Partial pressure / p° | Calculated fraction or ratio |
+|---|---|---|---|
+| H3VO4 | 1.13e-07 | 2×10^-6 to 2×10^-5 | 2.27e-13 to 2.27e-12 |
+| H2O | 0.000323 | 0.4 | 0.000129 |
+| theta(H2O) / theta(H3VO4) | - | - | 5.71e+07 to 5.71e+08 |
+
+Pressure assumptions: 20% steam at 2 atm total pressure and 1-10 ppm H3VO4
+(Wormsbecher et al., 1986). The estimate assumes a 1 atm standard pressure, one
+equivalent site, no adsorbate interactions, and ideal-gas harmonic thermochemistry.
+It is conditional and is not a pore-aware experimental coverage prediction.
+
 ### PBE0-D3(BJ)/def2-TZVP single points on the Tier 2 geometries
 
 | state | log file | E / Eh |
@@ -100,12 +113,16 @@ PBE0 margin, vanadic acid over steam: -14.44 kJ/mol.
 
 ### Tier 1 barrier summary (GFN2-xTB)
 
-| step | barrier / kJ/mol | imaginary mode / cm-1 |
+| step | candidate barrier / kJ/mol | imaginary mode / cm-1 |
 |---|---|---|
-| V-PRC -> V-TS2 (first Al-O cleavage via V-I1) | 160.70 (from V-I1) | -78.21 |
+| V-I1 -> V-I2 (first Al-O cleavage) | 160.70 (from V-I1) | -78.21 |
 | W-PRC -> W-TS (steam hydrolysis) | 29.29 (from W-PRC) | -226.10 |
 
-V-I1 lies -188.20 kJ/mol below V-PRC at Tier 1.
+V-TS2 passed the Tier 1 frequency and two-sided displacement checks. The W-TS
+candidate was not accepted: both displaced structures returned to W-PRC, so
+its reported energy difference is not a validated activation barrier.
+
+V-I1 lies 188.20 kJ/mol below V-PRC at Tier 1.
 V-I2 lies 42.73 kJ/mol above V-I1 at Tier 1.
 
 ### Cluster reference check
