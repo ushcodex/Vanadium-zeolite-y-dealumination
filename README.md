@@ -14,9 +14,9 @@
 
 ## Study summary
 
-The project compared vanadic acid and water adsorption at a local model of a Zeolite Y Brønsted acid site. B3LYP-D3(BJ)/def2-TZVP gave electronic adsorption energies of −93.0 kJ mol⁻¹ for vanadic acid and −78.3 kJ mol⁻¹ for water. PBE0 single-point calculations gave −93.1 and −78.6 kJ mol⁻¹, respectively. These are uncorrected electronic energies; the harmonic gas-phase calculations did not support a reliable site-occupancy estimate at regenerator temperature.
+The project compared vanadic acid and water adsorption at a local model of a Zeolite Y Brønsted acid site. B3LYP-D3(BJ)/def2-TZVP gave electronic adsorption energies of −93.01 kJ mol⁻¹ for vanadic acid and −78.32 kJ mol⁻¹ for water; the PBE0 single-point comparison gave a similar relative preference. Harmonic Gibbs energies reversed that ordering. A formal single-site estimate using reported regenerator partial pressures favoured water occupation by about 5.7 × 10⁷ to 5.7 × 10⁸, but the ideal-gas harmonic model was not a definitive prediction of occupancy in a zeolite pore.
 
-The proposed density-functional transition state for framework Al–O cleavage had fourteen imaginary frequencies. The study therefore reports no validated activation barrier and does not claim to establish the full dealumination mechanism.
+GFN2-xTB produced an accepted screening-level candidate for one Al–O cleavage step, with a barrier of 160.70 kJ mol⁻¹ above V-I1. The DFT refinement had fourteen imaginary frequencies, so no validated DFT activation barrier was obtained and the full dealumination mechanism was not established.
 
 ## Repository layout
 

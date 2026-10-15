@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""Build the result tables used in the thesis directly from the ORCA outputs.
+"""Build the auditable calculation summary from the ORCA result register.
 
-Every number printed here is read out of a log file listed by name, so each
-table row can be re-derived from the repository. No value is typed in by hand.
-Outputs:
-  analysis/RESULTS.md      - the tables, in markdown
-  analysis/results.csv     - the same numbers, machine readable
+The electronic and harmonic thermochemical values are read from the register
+produced by parse_orca.py from the ORCA logs. The script also derives a formal
+single-site occupation estimate from those Gibbs energies using the explicitly
+stated temperature and partial-pressure assumptions below.
+
+Output: simulation/analysis/RESULTS.md (Markdown tables and assumptions).
 """
-import csv, os, json
+import csv, math, os
 
-ROOT = "/home/user/Vanadium-zeolite-y-dealumination/simulation"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REG = os.path.join(ROOT, "analysis", "orca_register.csv")
 HARTREE = 2625.4996394799  # kJ/mol per Eh, CODATA 2018
 
@@ -178,6 +179,39 @@ w("frequency run of each job. The reference is the separated cluster plus the fr
 w("molecule, each at its own optimised geometry.")
 w("")
 
+# Formal competitive-site estimate using the harmonic Gibbs energies and the
+# partial pressures discussed by Wormsbecher et al. (1986). This is a
+# conditional ideal-gas, single-site scenario, not a pore-aware coverage model.
+site_T = 1003.15
+R_KJ = 0.00831446261815324
+p0_atm = 1.0
+p_h2o = 0.4
+p_h3vo4 = [2.0e-6, 2.0e-5]
+k_v = math.exp(-va[-1] / (R_KJ * site_T))
+k_w = math.exp(-wa[-1] / (R_KJ * site_T))
+site_rows = []
+for pv in p_h3vo4:
+    qv = k_v * pv / p0_atm
+    qw = k_w * p_h2o / p0_atm
+    denominator = 1.0 + qv + qw
+    tv, tw = qv / denominator, qw / denominator
+    site_rows.append((pv, tv, tw, tw / tv))
+w("### Conditional single-site occupation estimate at 1003.15 K")
+w("")
+w("| Species or ratio | K° (dimensionless) | Partial pressure / p° | Calculated fraction or ratio |")
+w("|---|---|---|---|")
+w("| H3VO4 | %.3g | 2×10^-6 to 2×10^-5 | %.3g to %.3g |" %
+  (k_v, site_rows[0][1], site_rows[1][1]))
+w("| H2O | %.3g | 0.4 | %.3g |" % (k_w, site_rows[0][2]))
+w("| theta(H2O) / theta(H3VO4) | - | - | %.3g to %.3g |" %
+  (site_rows[1][3], site_rows[0][3]))
+w("")
+w("Pressure assumptions: 20% steam at 2 atm total pressure and 1-10 ppm H3VO4")
+w("(Wormsbecher et al., 1986). The estimate assumes a 1 atm standard pressure, one")
+w("equivalent site, no adsorbate interactions, and ideal-gas harmonic thermochemistry.")
+w("It is conditional and is not a pore-aware experimental coverage prediction.")
+w("")
+
 w("### PBE0-D3(BJ)/def2-TZVP single points on the Tier 2 geometries")
 w("")
 w("| state | log file | E / Eh |")
@@ -211,14 +245,18 @@ w("")
 
 w("### Tier 1 barrier summary (GFN2-xTB)")
 w("")
-w("| step | barrier / kJ/mol | imaginary mode / cm-1 |")
+w("| step | candidate barrier / kJ/mol | imaginary mode / cm-1 |")
 w("|---|---|---|")
-w("| V-PRC -> V-TS2 (first Al-O cleavage via V-I1) | %.2f (from V-I1) | %s |" % (
+w("| V-I1 -> V-I2 (first Al-O cleavage) | %.2f (from V-I1) | %s |" % (
     kJ(E(T1_JOBS["V-TS2"]) - E(T1_JOBS["V-I1"])), rows[T1_JOBS["V-TS2"]]["imag_cm"]))
 w("| W-PRC -> W-TS (steam hydrolysis) | %.2f (from W-PRC) | %s |" % (
     kJ(E(T1_JOBS["W-TS"]) - E(T1_JOBS["W-PRC"])), rows[T1_JOBS["W-TS"]]["imag_cm"]))
 w("")
-w("V-I1 lies %.2f kJ/mol below V-PRC at Tier 1." % kJ(E(T1_JOBS["V-I1"]) - E(T1_JOBS["V-PRC"])))
+w("V-TS2 passed the Tier 1 frequency and two-sided displacement checks. The W-TS")
+w("candidate was not accepted: both displaced structures returned to W-PRC, so")
+w("its reported energy difference is not a validated activation barrier.")
+w("")
+w("V-I1 lies %.2f kJ/mol below V-PRC at Tier 1." % kJ(E(T1_JOBS["V-PRC"]) - E(T1_JOBS["V-I1"])))
 w("V-I2 lies %.2f kJ/mol above V-I1 at Tier 1." % kJ(E(T1_JOBS["V-I2"]) - E(T1_JOBS["V-I1"])))
 w("")
 

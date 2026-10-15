@@ -205,26 +205,139 @@
       "W_zero": -1785.113763863974
     }
   },
+  "site_occupation": {
+    "temperature_K": 1003.15,
+    "standard_pressure_atm": 1.0,
+    "gas_constant_kJ_mol_K": 0.00831446261815324,
+    "partial_pressure_atm": {
+      "H2O": 0.4,
+      "H3VO4_range": [
+        2e-06,
+        2e-05
+      ]
+    },
+    "dG_1003.15_kJ_mol": {
+      "H3VO4": 133.39459176001273,
+      "H2O": 67.03075622529342
+    },
+    "K_standard_dimensionless": {
+      "H3VO4": 1.1329137500139544e-07,
+      "H2O": 0.0003233964712742182
+    },
+    "site_fraction_ranges": {
+      "H3VO4": [
+        2.2655344336908333e-13,
+        2.2655344336862144e-12
+      ],
+      "H2O": [
+        0.0001293418570293337,
+        0.00012934185702959743
+      ]
+    },
+    "water_to_vanadic_acid_occupation_ratio": [
+      57091101.81957538,
+      570911018.1957539
+    ],
+    "pressure_source": "Wormsbecher et al. (1986), 20% steam at 2 atm total pressure and 1-10 ppm H3VO4",
+    "assumptions": [
+      "ideal-gas standard states at 1 atm",
+      "one equivalent adsorption site",
+      "no interactions between adsorbed molecules",
+      "harmonic Gibbs energies used as a conditional model input"
+    ],
+    "calculation_rows": [
+      {
+        "p_H3VO4_atm": 2e-06,
+        "Kp_H3VO4": 2.2658275000279085e-13,
+        "Kp_H2O": 0.0001293585885096873,
+        "theta_H3VO4": 2.2655344336908333e-13,
+        "theta_H2O": 0.00012934185702959743,
+        "theta_H2O_over_H3VO4": 570911018.1957539
+      },
+      {
+        "p_H3VO4_atm": 2e-05,
+        "Kp_H3VO4": 2.265827500027909e-12,
+        "Kp_H2O": 0.0001293585885096873,
+        "theta_H3VO4": 2.2655344336862144e-12,
+        "theta_H2O": 0.0001293418570293337,
+        "theta_H2O_over_H3VO4": 57091101.81957538
+      }
+    ]
+  },
   "tier1_reference": {
-    "cluster": -31.34551236,
-    "H3VO4": -19.77512769,
-    "H2O": -5.07054445,
-    "V_zero": -51.12064005,
-    "W_zero": -36.41605681,
-    "accepted": {
-      "V-PRC": -196.9,
-      "V-I1": -385.1,
-      "V-TS2": -224.4,
-      "V-I2": -342.36,
-      "V-P": -82.9,
-      "W-PRC": -69.59,
-      "W-TS": -40.29,
-      "W-P": -65.85
+    "reference_energies_Eh": {
+      "V": -51.120640050000006,
+      "W": -36.41605681
     },
-    "barriers": {
-      "V-TS2 vs V-I1": 160.7,
-      "W-TS vs W-PRC": 29.29
+    "accepted_minima": {
+      "V-PRC": {
+        "job_id": "V-PRC_canonical",
+        "energy_Eh": -51.19563631,
+        "relative_to_separated_kJ_mol": -196.9,
+        "status": "Accepted",
+        "verified": "yes"
+      },
+      "V-I1": {
+        "job_id": "V-I1-T1-V01",
+        "energy_Eh": -51.26731716,
+        "relative_to_separated_kJ_mol": -385.1,
+        "status": "Accepted",
+        "verified": "yes"
+      },
+      "V-I2": {
+        "job_id": "V-I2-T1-V04",
+        "energy_Eh": -51.25104052,
+        "relative_to_separated_kJ_mol": -342.36,
+        "status": "Accepted",
+        "verified": "yes"
+      },
+      "V-P": {
+        "job_id": "V-P-T1-V01",
+        "energy_Eh": -51.15221675,
+        "relative_to_separated_kJ_mol": -82.9,
+        "status": "Accepted",
+        "verified": "yes"
+      },
+      "W-PRC": {
+        "job_id": "W-PRC-T1-V02",
+        "energy_Eh": -36.44256091,
+        "relative_to_separated_kJ_mol": -69.59,
+        "status": "Accepted",
+        "verified": "yes"
+      },
+      "W-P": {
+        "job_id": "W-P-T1-V01",
+        "energy_Eh": -36.44113826,
+        "relative_to_separated_kJ_mol": -65.85,
+        "status": "Accepted",
+        "verified": "yes"
+      }
     },
-    "source": "simulation/analysis/calculation_register.csv (accepted rows only)"
+    "accepted_saddle_point_candidate": {
+      "state": "V-TS2",
+      "job_id": "V-TS2-T1-V05",
+      "energy_Eh": -51.20610884,
+      "relative_to_separated_kJ_mol": -224.4,
+      "barrier_from_V-I1_kJ_mol": 160.7024220025846,
+      "imaginary_mode_cm-1": -78.21,
+      "status": "Accepted",
+      "verified": "yes",
+      "notes": "OptTS continuation 2 CONVERGED (+160.70 kJ/mol vs V-I1); 1 imag (-78.21 cm-1); A1-A5 passed"
+    },
+    "water_path_candidate_not_accepted": {
+      "state": "W-TS",
+      "job_id": "W-TS-T1-V04",
+      "energy_Eh": -36.43140308,
+      "relative_to_separated_kJ_mol": -40.29,
+      "barrier_from_W-PRC_kJ_mol": 29.29487862585193,
+      "imaginary_mode_cm-1": -226.1,
+      "status": "Candidate (pending A4)",
+      "verified": "no",
+      "displacement_checks": [
+        "Mode 6 +0.01nm displacement converged to W-PRC well (+1.35 kJ/mol vs W-PRC, 0 imag)",
+        "Mode 6 -0.01nm displacement converged to W-PRC well (+1.34 kJ/mol vs W-PRC, 0 imag)"
+      ]
+    },
+    "source": "simulation/analysis/calculation_register.csv (job IDs and status) and named ORCA logs"
   }
 }

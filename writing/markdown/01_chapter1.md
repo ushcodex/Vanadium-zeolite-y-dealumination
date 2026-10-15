@@ -2,57 +2,47 @@
 
 ## 1.1 Background of the Study
 
-Residue fluid catalytic cracking (RFCC) converts heavy petroleum fractions into lighter products. Its circulating catalyst contains zeolite Y, which provides much of the catalytic activity. Metals in residue feedstocks, including vanadium, build up on the catalyst during operation. Vanadium is associated with faster loss of zeolite activity during regeneration (Adanenche et al., 2023; Wormsbecher, Peters, & Maselli, 1986).
+Residue fluid catalytic cracking (RFCC) converts heavy refinery feedstocks into lighter products. Its catalyst contains Zeolite Y, whose acid sites support the cracking reactions. Metals carried in residue feed, including vanadium, accumulate on the catalyst during operation and are associated with loss of zeolite activity during regeneration (Adanenche et al., 2023; Wormsbecher, Peters, & Maselli, 1986).
 
-Zeolite Y is a crystalline aluminosilicate with the faujasite structure. Its framework contains aluminium and silicon atoms linked by oxygen atoms. A framework aluminium atom creates a Brønsted acid site, which helps crack hydrocarbons. When aluminium leaves the framework, the process is called dealumination, and the number of acid sites decreases (Malola, Svelle, Lønstad Bleken, & Swang, 2012).
+Steam can remove aluminium from the Zeolite Y framework during regeneration. Each framework aluminium atom is associated with a Brønsted acid site, so removal of framework aluminium reduces the number of sites available for cracking. This loss of framework aluminium is called dealumination (Malola, Svelle, Lønstad Bleken, & Swang, 2012).
 
-Steam can remove framework aluminium during regeneration. Researchers disagree about the additional role of vanadium. Wormsbecher et al. (1986) proposed that vanadium pentoxide reacts with steam to form volatile vanadic acid, which then promotes framework damage. Trujillo et al. (1997) developed this explanation and proposed that vanadic acid concentrates inside the zeolite.
+Researchers have proposed different explanations for the additional damage associated with vanadium. Wormsbecher et al. (1986) proposed that vanadium oxide reacts with steam to form volatile vanadic acid, which then attacks the zeolite. Pine (1990) argued that steam drives the destruction and that vanadium acts as a catalyst. Xu, Liu, and Madon (2002) proposed a sodium-mediated route in which vanadium helps release sodium that forms sodium hydroxide. The proposed mechanisms therefore assign different roles to vanadic acid, steam, and sodium.
 
-Other studies questioned whether vanadic acid directly causes dealumination. Pine (1990) found that vanadium also damaged silicalite, which contains little aluminium, and reported a similar activation energy with and without vanadium. Xu, Liu, and Madon (2002) proposed that vanadium releases sodium from the catalyst and that sodium hydroxide attacks the framework. These explanations leave an important question: how strongly does vanadic acid bind to a Zeolite Y acid site compared with water?
-
-This project examined that question with a local computational model. It compared the calculated adsorption energies of vanadic acid and water at the same Brønsted acid site. The calculation was also used to assess whether the available thermochemical and reaction-path results could support conclusions about dealumination.
+Wormsbecher et al. (1986) estimated that vanadic acid was present at low parts-per-million levels under the regenerator conditions they considered. Their estimate was made for a system with high steam content and a total pressure of about 2 atm. This large difference in gas abundance makes it important to compare vanadic acid and water at the same model acid site, while recognising that adsorption energy alone cannot establish a reaction rate.
 
 ## 1.2 Statement of the Problem
 
-Vanadium contamination reduces the activity of Zeolite Y catalysts, but the molecular cause remains disputed. One proposed explanation assigns a direct role to vanadic acid, while another assigns the main framework attack to steam and sodium. A comparison of vanadic acid and water adsorption energies at the same model acid site provides a focused test of the first step in the vanadic-acid explanation. This project addressed that comparison and assessed whether the calculations supported conclusions about later framework bond cleavage.
+Vanadium is associated with accelerated loss of Zeolite Y activity, but the molecular mechanism remains disputed. A direct vanadic-acid mechanism requires vanadic acid to interact with the framework and proceed through bond cleavage, while steam is present at much higher concentration. A sodium-mediated mechanism provides a different explanation that does not require vanadic acid to dominate acid-site occupation.
 
-## 1.3 Aim of the Study
+The literature reviewed here did not provide a like-for-like density functional theory (DFT) comparison of vanadic acid and water adsorption at one Zeolite Y Brønsted acid site. Such a comparison can clarify the electronic and thermochemical preference of the model site. It cannot, on its own, establish the mechanism operating in a catalyst particle or determine the rate of dealumination.
 
-The aim of this study was to evaluate vanadic acid adsorption on a model Zeolite Y Brønsted acid site and compare its calculated adsorption energy with that of water under conditions relevant to an RFCC regenerator.
+## 1.3 Aim and Objectives of the Study
 
-## 1.4 Objectives of the Study
+The aim of this study was to compare vanadic acid and water at a model Zeolite Y Brønsted acid site and assess what the calculated adsorption, pathway, and thermochemical results implied for the proposed dealumination mechanism. The work was organised around four objectives:
 
-The objectives were to:
+1. construct and optimise a local Zeolite Y cluster model and initial vanadic-acid and water adsorption structures in ORCA;
+2. refine the accepted structures and quantify the electronic adsorption energies of both adsorbates;
+3. determine whether transition-state searches yielded validated candidates for the first framework Al–O cleavage steps in the vanadic-acid and water routes; and
+4. calculate harmonic Gibbs energies at 298.15 K and 1003.15 K and evaluate conditional competitive site occupation using RFCC gas partial pressures from the literature.
 
-1. construct and optimise a local Zeolite Y cluster model with one Brønsted acid site and vanadic-acid and water adsorption structures in ORCA;
-2. refine the accepted structures and quantify the relative adsorption energies of vanadic acid and water;
-3. assess the calculated thermochemical corrections at 298.15 K and 1003.15 K and determine whether they supported a quantitative estimate of competitive site occupancy; and
-4. test whether the calculations established a validated vanadic-acid pathway for framework Al–O bond cleavage.
+## 1.4 Scope of the Study
 
-## 1.5 Scope of the Study
+The calculations used a gas-phase cluster with formula AlSi₄O₄H₁₃. The cluster represented one framework aluminium atom, four neighbouring silicon atoms, the bridging oxygen atoms, terminal hydrogen atoms, and one Brønsted acid proton. Vanadic acid, H₃VO₄, and water, H₂O, were compared at the same model site. GFN2-xTB was used to screen structures. Accepted geometries were refined with B3LYP-D3(BJ)/def2-TZVP, and PBE0-D3(BJ)/def2-TZVP single-point calculations were used to check the electronic adsorption comparison.
 
-The study used a gas-phase cluster model, AlSi₄O₄H₁₃, containing one framework aluminium atom and four silicon atoms. It compared vanadic acid, H₃VO₄, and water, H₂O, at one Brønsted acid site. GFN2-xTB calculations in ORCA were used to screen initial geometries, which were then refined with B3LYP-D3(BJ)/def2-TZVP; PBE0-D3(BJ)/def2-TZVP single-point calculations checked the adsorption-energy comparison. Harmonic-frequency calculations supplied thermochemical corrections at 298.15 K and 1003.15 K.
+Harmonic Gibbs energies were evaluated at 298.15 K and 1003.15 K. A formal competitive-site estimate was made at 1003.15 K using the reported partial pressures of steam and vanadic acid. This estimate was treated as conditional on the ideal-gas harmonic model and the assumed single-site equilibrium expression. Candidate transition states were searched for in the vanadic-acid route and a water-hydrolysis control.
 
-The calculations did not include a full Zeolite Y crystal, pore confinement, explicit sodium, the surrounding catalyst matrix, or a liquid vanadium pentoxide phase. The RFCC gas composition was used to interpret the calculations but was not represented explicitly in the cluster model. Candidate structures beyond adsorption were examined, but the model did not produce a validated density-functional transition state for framework Al–O cleavage. No experimental measurements were included.
+The study did not include a periodic Zeolite Y crystal, explicit pore confinement, sodium, nickel, or the wider catalyst matrix. It also did not include experimental measurements. The calculations were therefore limited to a local model and did not represent the complete RFCC regenerator environment.
 
-## 1.6 Significance of the Study
+## 1.5 Justification of the Study
 
-This study provides a direct comparison of vanadic acid and water adsorption energies at the same model acid site. It also separates conclusions supported by converged calculations from those that remain uncertain because of failed geometry or frequency tests. The results can guide later calculations that include the Zeolite Y pore, sodium, and the high steam concentration in an RFCC regenerator.
+A direct comparison at the same model acid site isolates one part of the proposed vanadic-acid mechanism: how the electronic adsorption and harmonic thermochemistry of vanadic acid compare with those of water. The comparison provides a basis for interpreting the relative roles of the two molecules without assuming that stronger electronic binding necessarily means faster dealumination.
 
-## 1.7 Limitations of the Study
+The results also help define the next computational steps. A local cluster can identify whether the proposed species interact with the acid site, while transition-state validation and a larger pore model are needed to assess framework damage. The distinction is relevant to studies of vanadium tolerance and passivation in RFCC catalysts (Adanenche et al., 2023; Etim et al., 2018).
 
-The small cluster represented only the local acid site and omitted long-range electrostatic effects and pore confinement. The terminal hydrogen atoms were fixed during geometry optimisation, which may have affected the motion of the cluster boundary. No complete basis-set-superposition correction was obtained, so the absolute adsorption energies remained uncorrected. The harmonic gas-phase treatment also did not provide a reliable quantitative estimate of adsorption-site occupancy at regenerator temperature.
+## 1.6 Limitations of the Study
 
-## 1.8 Definition of Terms
+The cluster represented only the local acid site, and its terminal hydrogen atoms were fixed during optimisation. The absolute DFT adsorption energies were not counterpoise-corrected because the attempted fragment calculations did not produce a complete correction. The high-temperature thermochemical and site-occupation estimates used an ideal-gas harmonic treatment that omitted pore confinement and local concentration effects. GFN2-xTB produced a candidate saddle point for one vanadic-acid step, but its DFT refinement did not pass the vibrational test; no DFT activation barrier was therefore established.
 
-**Zeolite Y:** A crystalline aluminosilicate with the faujasite structure, used as an active component of fluid catalytic cracking catalysts.
+## 1.7 Organisation of the Thesis
 
-**Brønsted acid site:** A proton attached to an oxygen atom between framework aluminium and silicon; it provides acidity for hydrocarbon cracking.
-
-**Dealumination:** Removal of aluminium from the zeolite framework, which reduces the number of framework acid sites.
-
-**Adsorption energy:** The energy change when a molecule binds to a surface or model site; a negative value indicates that the adsorbed structure has lower electronic energy than the separated species.
-
-**Stationary point:** A structure at which the calculated energy gradient is zero. A minimum has no meaningful imaginary vibrational frequencies, while a first-order saddle point has one.
-
-**Imaginary frequency:** A negative calculated vibrational frequency that indicates instability along a particular structural motion.
+Chapter Two reviews Zeolite Y, steam dealumination, vanadium-related mechanisms, and previous computational studies. Chapter Three describes the cluster model, electronic-structure calculations, pathway searches, and thermochemical site-occupation calculation. Chapter Four presents and discusses the resulting geometries, adsorption energies, transition-state assessments, and thermochemistry in objective order. Chapter Five gives the conclusions and recommendations.

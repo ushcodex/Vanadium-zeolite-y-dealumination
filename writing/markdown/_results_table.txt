@@ -24,12 +24,23 @@ Level: PBE0-D3(BJ)/def2-TZVP   (kJ/mol relative to separated reactants)
   W-PRC      True  False      0     -1785.14371013      -78.6          -          - 0 days 0 h
   W-P        True  False      0     -1785.12248001      -22.9          -          - 0 days 0 h
 
-Tier 1 (GFN2-xTB) accepted stationary points, kJ/mol vs separated reactants
+Conditional single-site occupation estimate at 1003.15 K
+  standard pressure: 1.0 atm; p(H2O)=0.4 atm; p(H3VO4)=2e-06 to 2e-05 atm
+  K°(H3VO4)=1.13e-07; K°(H2O)=0.000323
+  p(H3VO4)=2e-06 atm: theta(H3VO4)=2.27e-13; theta(H2O)=0.000129; theta(H2O)/theta(H3VO4)=5.71e+08
+  p(H3VO4)=2e-05 atm: theta(H3VO4)=2.27e-12; theta(H2O)=0.000129; theta(H2O)/theta(H3VO4)=5.71e+07
+  Assumptions: ideal-gas harmonic thermochemistry, one equivalent site, no adsorbate interactions.
+  This is a conditional model estimate, not a pore-aware experimental coverage prediction.
+
+Tier 1 (GFN2-xTB) accepted minima, kJ/mol vs separated reactants
   V-PRC       -196.90
   V-I1        -385.10
-  V-TS2       -224.40
   V-I2        -342.36
   V-P          -82.90
   W-PRC        -69.59
-  W-TS         -40.29
   W-P          -65.85
+Accepted GFN2-xTB saddle-point candidate: V-TS2
+  barrier above V-I1: 160.70 kJ/mol; one imaginary mode at -78.21 cm-1
+Water-path candidate W-TS was not accepted
+  barrier above W-PRC: 29.29 kJ/mol; one imaginary mode at -226.10 cm-1
+  both two-sided displacement checks returned to W-PRC

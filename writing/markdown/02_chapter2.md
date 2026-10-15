@@ -2,88 +2,57 @@
 
 ## 2.1 Zeolite Y in Residue Fluid Catalytic Cracking
 
-Residue fluid catalytic cracking processes heavy feedstocks that contain metals and other contaminants. The catalyst circulates between the reactor and the regenerator. Coke burns off in the regenerator, where air and steam contact the catalyst at high temperature. Vanadium carried in the feed can accumulate on the catalyst and is associated with loss of zeolite activity (Adanenche et al., 2023).
+Residue fluid catalytic cracking processes heavy refinery feeds that contain metals and other contaminants. The catalyst circulates between a reactor and a regenerator, where coke is burned off in air and steam. Zeolite Y supplies many of the catalyst's cracking sites, and vanadium carried in the feed can accumulate on the catalyst during operation (Adanenche et al., 2023; Mitchell, 1980).
 
-Zeolite Y is the main cracking component in many fluid catalytic cracking catalysts. Its faujasite framework contains interconnected cages and channels, including a large supercage where hydrocarbon reactions occur. Figure 2.1 shows the structure of Zeolite Y and the supercage openings. A framework aluminium atom creates a negative charge that is balanced by a proton on a nearby oxygen, forming a Brønsted acid site.
+Zeolite Y has the faujasite framework, a crystalline network of silicon, aluminium, and oxygen atoms. A framework aluminium atom introduces a negative charge that is balanced by a proton on a neighbouring oxygen, forming a Brønsted acid site. Figure 2.1 shows the supercage structure and its twelve-membered-ring opening. When framework aluminium is removed, the associated acid site is lost and neighbouring framework oxygens can form silanol groups (Malola et al., 2012).
 
 [FIG: from_sources/etim2016_fig1_y_zeolite.png | Figure 2.1: Structure of Zeolite Y showing the supercage and its twelve-membered-ring opening | Source: Etim, Xu, Ullah and Yan (2016), Figure 1]
 
-The Brønsted acid site helps convert large hydrocarbon molecules into smaller products. Removal of framework aluminium eliminates the associated acid site. The remaining framework oxygens can form hydroxyl groups known as a silanol nest. This process is called dealumination and is one cause of permanent catalyst deactivation.
+## 2.2 Dealumination by Steam
 
-## 2.2 Steam Dealumination
-
-Steam can hydrolyse aluminium–oxygen bonds in the zeolite framework. In the simplified overall reaction below, water supplies hydroxyl groups to the aluminium and leaves silanol groups on the framework:
-
-Al(OSi)₄H + 3 H₂O ⇌ Al(OH)₃ + 4 ≡Si–OH
-(2.1)
-
-The aluminium hydroxide can then bind another water molecule and form a hydrated extra-framework species:
-
-Al(OH)₃ + H₂O ⇌ Al(OH)₃(H₂O)
-(2.2)
-
-Malola et al. (2012) used periodic density functional theory to calculate a stepwise dealumination pathway. They reported that at least three water molecules were needed to release aluminium as Al(OH)₃, while a fourth water molecule stabilised Al(OH)₃(H₂O). Their calculated effective barriers were about 190 kJ mol⁻¹ when incoming water was referenced to the gas phase and about 260 kJ mol⁻¹ when it was referenced to an adsorbed state. Figure 2.2 shows the calculated reaction paths.
+Steam can hydrolyse framework Al–O–Si bonds during catalyst regeneration. Density functional theory calculations by Malola et al. (2012) described dealumination as a sequence of water-assisted bond-cleavage steps. Their calculated effective barriers depended on the reference state used for the incoming water, showing that reaction energetics depend on how adsorption is represented. Figure 2.2 reproduces their calculated reaction paths for dealumination and desilication.
 
 [FIG: from_sources/malola2012_fig2_paths.png | Figure 2.2: Calculated reaction paths for dealumination and desilication using gas-phase and adsorbed water references | Source: Malola, Svelle, Lønstad Bleken and Swang (2012), Figure 2]
 
-Silaghi et al. (2016) extended the calculations to several zeolite frameworks, including faujasite. They found a common sequence in which water approached aluminium and hydrolysed framework aluminium–oxygen bonds in stages. Their results supported steam hydrolysis as a baseline process that occurs without vanadium. Any explanation for the additional effect of vanadium therefore needs to identify a step that differs from this water-driven route.
+Silaghi et al. (2016) examined dealumination in several zeolite frameworks and discussed how extra-framework aluminium could remain confined within the pores. Their work supported a stepwise description of hydrolysis rather than a single bond-cleavage event. Steam hydrolysis therefore provides the baseline reaction against which any additional effect of vanadium must be assessed.
 
-## 2.3 Vanadium in the Regenerator
+## 2.3 Vanadium under Regenerator Conditions
 
-Vanadium enters the refinery in metal-containing compounds in the heavy feed. During cracking and regeneration, the organic material is removed and vanadium-containing species remain on the catalyst. Vanadium pentoxide is mobile at typical regenerator temperatures, which can help vanadium move across the catalyst. This movement brings vanadium into contact with the zeolite (Mitchell, 1980; Trujillo et al., 1997).
+Vanadium in a regenerated catalyst is commonly associated with oxidised species, including vanadium pentoxide. Wormsbecher et al. (1986) proposed that vanadium pentoxide reacts with steam to form volatile vanadic acid:
 
-Wormsbecher et al. (1986) proposed that vanadium pentoxide reacts with steam to produce volatile vanadic acid:
+V₂O₅(s) + 3 H₂O(g) ⇌ 2 H₃VO₄(g)
+(2.1)
 
-V₂O₅ + 3 H₂O(g) ⇌ 2 H₃VO₄(g)
-(2.3)
+Wormsbecher et al. (1986) discussed regenerator conditions near 730 °C, with about 20% steam at a total pressure of 2 atm, and estimated vanadic-acid concentrations in the low-parts-per-million range. Trujillo et al. (1997) considered the same high-steam environment and calculated an H₃VO₄ partial pressure of about 3.37 × 10⁻⁶ atm, corresponding to approximately 1.7 ppm at 2 atm. These estimates show why a comparison with abundant water is important, although the bulk gas composition does not by itself determine the local concentration inside a zeolite pore.
 
-They estimated a bulk vanadic-acid concentration of about 1–10 ppm under the regenerator conditions they considered. They argued that vanadic acid could hydrolyse the zeolite framework because it is an acid. Their work also showed that basic oxides, including magnesia, could capture vanadium and reduce catalyst damage.
-
-Trujillo et al. (1997) examined vanadium species in steamed zeolites. They found that oxidising conditions were important and proposed that vanadium could first occupy acid sites and then be released as vanadic acid in the presence of steam. The authors also noted a concentration problem: steam is present at a much higher concentration than vanadic acid. They proposed that vanadic acid could reach a higher local concentration inside the zeolite than in the surrounding gas, but that local concentration was not quantified by the adsorption calculations in the present study.
+Occelli (1991) reviewed the interactions of vanadium species with cracking catalysts and described changes in vanadium speciation during steaming and hydrolysis. Trujillo et al. (1997) proposed that vanadium could reach acid sites and form vanadic acid in the presence of water. They also discussed the possibility that vanadic acid becomes locally concentrated within the zeolite, an effect that a small gas-phase cluster cannot represent directly.
 
 ## 2.4 Proposed Explanations for Vanadium-Related Damage
 
-Three explanations have been used to describe vanadium-related damage to Zeolite Y. The first assigns the damage to steam alone, with vanadium acting as a spectator or a minor accelerator. The second proposes that vanadic acid promotes hydrolysis of framework aluminium–oxygen bonds. The third proposes that vanadium releases sodium and that sodium hydroxide attacks the framework; Figure 2.3 summarises these alternatives.
+Three explanations are central to the discussion of vanadium-related damage. The vanadic-acid explanation assigns a direct role to H₃VO₄ in framework hydrolysis. The steam-dominated explanation assigns the main attack to water and treats vanadium as a catalyst or secondary influence. The sodium-mediated explanation proposes that vanadium mobilises sodium, after which sodium hydroxide damages the framework. Table 2.1 summarises the main claims and the studies on which they were based.
+
+[TBL: Table 2.1: Proposed explanations for vanadium-related damage to Zeolite Y | Proposed mechanism;Proposed role of vanadium;Evidence discussed in the literature | Vanadic-acid route;H₃VO₄ directly promotes framework hydrolysis;Vanadium species in steamed catalysts and proposed acid-site chemistry, Wormsbecher et al. (1986) and Trujillo et al. (1997) | Steam-dominated route;Steam hydrolyses the framework and vanadium is secondary or catalytic;Similar apparent activation energies with and without vanadium and damage to silicalite, Pine (1990) | Sodium-mediated route;Vanadium helps mobilise sodium and steam enables NaOH attack;Dependence of destruction on sodium availability and experiments with sodium vanadate, Xu et al. (2002)]
+
+Pine (1990) reported that vanadium loading did not change the measured apparent activation energy for destruction of ultra-stable Y zeolite under his test conditions. He also reported damage to silicalite, which contains little framework aluminium. These observations challenged an explanation based only on direct attack by vanadic acid at aluminium-containing sites, but they did not establish that vanadium was inactive under all catalyst conditions.
+
+Xu et al. (2002) proposed that vanadium and sodium could act together. In their mechanism, vanadium-containing species mobilised sodium, and steam then enabled formation of sodium hydroxide, which attacked the zeolite framework. This explanation predicts a strong dependence on sodium content and differs from a mechanism in which vanadic acid directly hydrolyses framework Al–O bonds. Figure 2.3 presents these competing explanations and the adsorption comparison addressed in this study.
 
 [FIG: fig2_1_dispute.png | Figure 2.3: Proposed explanations for vanadium-related damage to Zeolite Y and the adsorption comparison examined in this study | Source: author, based on Malola et al. (2012), Silaghi et al. (2016), Wormsbecher et al. (1986), Trujillo et al. (1997), Pine (1990), and Xu et al. (2002)]
 
-The vanadic-acid explanation began with Wormsbecher et al. (1986) and was developed by Trujillo et al. (1997). Trujillo et al. proposed that vanadium could bind at a zeolite acid site and then form vanadic acid in the presence of steam. They represented the proposed steps as:
+The mechanisms are not mutually exclusive. Steam is present in the regenerator, while the role of vanadium may depend on sodium content, oxidation conditions, and the distribution of vanadium within the catalyst. A comparison of adsorption energies addresses only one part of this debate and cannot by itself distinguish the complete reaction mechanisms.
 
-V₂O₅ + 2 H⁺–Y ⇌ 2 VO₂⁺–Y + H₂O
-(2.4)
+## 2.5 Evidence of Damage and Mitigation
 
-VO₂⁺–Y + 2 H₂O ⇌ H⁺–Y + H₃VO₄
-(2.5)
-
-In this account, vanadium can move through the catalyst and promote damage without being consumed in each dealumination event. However, the proposed mechanism must explain how a low concentration of vanadic acid affects the framework in a regenerator containing much more steam. It must also explain why other acids present in the regenerator do not produce the same effect.
-
-Pine (1990) measured zeolite destruction over a range of vanadium loadings and found a similar activation energy with and without vanadium. He also reported damage to silicalite, which contains little framework aluminium. These results led him to argue that vanadium did not control the rate-determining step and that the damage was not restricted to aluminium sites. His findings therefore challenged a mechanism that depends only on direct attack at aluminium-containing acid sites.
-
-Xu et al. (2002) proposed that vanadium acts through exchangeable sodium. In their experiments, reducing the sodium content reduced the effect of vanadium, while sodium-containing compounds caused damage in the presence of steam. They proposed that vanadium mobilises sodium and that the resulting sodium hydroxide attacks the framework. Their simplified sequence was:
-
-HVO₃ + Na⁺–Y ⇌ NaVO₃ + H⁺–Y
-(2.6)
-
-NaVO₃ + H₂O ⇌ HVO₃ + NaOH
-(2.7)
-
-NaOH ⇌ Naᵟ⁺OHᵟ⁻
-(2.8)
-
-The sodium mechanism does not require vanadic acid to outcompete steam for an acid site. It instead predicts that sodium content should strongly affect the extent of damage. The model in this study did not contain sodium, so it could not test that mechanism directly.
-
-## 2.5 Evidence of Damage and Methods of Protection
-
-Etim et al. (2016) studied vanadium-contaminated ultra-stable Y zeolite after steaming. They reported changes in the pore structure and a large loss of surface area at higher vanadium loading. Figure 2.4 shows transmission electron micrographs from their study. These measurements confirm that vanadium and steam can cause substantial structural damage, but they do not by themselves identify the elementary reaction that causes it.
+Etim et al. (2016) examined vanadium-contaminated ultra-stable Y zeolite after steaming and reported changes in the framework and micropore structure. Figure 2.4 shows transmission electron micrographs from their study. Such structural measurements establish that the combined treatment can damage zeolite, but they do not alone identify which elementary step caused the damage.
 
 [FIG: from_sources/etim2016_fig8_tem.png | Figure 2.4: Transmission electron micrographs of ultra-stable Y zeolite before and after vanadium contamination and steaming | Source: Etim, Xu, Ullah and Yan (2016), Figure 8]
 
-Researchers have tested metal traps and passivators to reduce vanadium contact with the zeolite. Wormsbecher et al. (1986) reported that magnesia protected catalyst activity under their test conditions. Etim et al. (2018) examined magnesium–yttrium oxide and reported vanadium capture as yttrium vanadate. Faghani et al. (2024) reported improved structural retention with barium titanate. These studies show that vanadium immobilisation is a practical mitigation route, although the performance of a trap depends on the catalyst and operating conditions.
+Researchers have also investigated additives that capture or passivate vanadium. Wormsbecher et al. (1986) reported catalyst protection by basic oxides under their test conditions, while Etim et al. (2018) evaluated a magnesium–yttrium oxide trap and linked vanadium capture to formation of immobile yttrium vanadate. These studies demonstrate the practical importance of controlling vanadium, while leaving open the detailed molecular pathway by which it affects the zeolite framework.
 
-## 2.6 Computational Studies and the Research Gap
+## 2.6 Computational Studies and Research Gap
 
-Density functional theory has been used to examine zeolite dealumination and vanadium-containing zeolites. Malola et al. (2012) and Silaghi et al. (2016) calculated water-driven dealumination pathways. Tielens and Dzwigaj (2010) used calculations to study acid sites in vanadium-containing zeolites. These studies provide methods and mechanisms relevant to the present work, but they did not compare vanadic acid and water adsorption at the same Zeolite Y acid site.
+Periodic DFT has been used to calculate water-driven dealumination pathways in zeolites (Malola et al., 2012; Silaghi et al., 2016). Tielens and Dzwigaj (2010) studied acid-base sites in vanadium redox zeolites, but their model concerned vanadium incorporated within a zeolite rather than an external vanadic-acid molecule attacking a framework bond. The studies reviewed here did not provide a direct comparison of vanadic acid and water adsorption at the same Zeolite Y Brønsted acid site.
 
-Semi-empirical methods such as GFN2-xTB can screen structures at lower computational cost than density functional theory (Bannwarth, Ehlert, & Grimme, 2019). Hybrid functionals such as B3LYP and PBE0 provide a more detailed estimate of electronic energies (Becke, 1993; Lee, Yang, & Parr, 1988; Adamo & Barone, 1999). Dispersion corrections and suitable basis sets are also important when comparing adsorbed structures (Grimme, Ehrlich, & Goerigk, 2011; Weigend & Ahlrichs, 2005).
+The present comparison used GFN2-xTB to screen structures and hybrid DFT to refine accepted geometries and calculate electronic energies. GFN2-xTB is a semi-empirical method designed for efficient calculations on larger molecular systems (Bannwarth, Ehlert, & Grimme, 2019). B3LYP and PBE0 are hybrid density functionals, while dispersion corrections and triple-zeta basis sets improve the treatment of intermolecular interactions (Becke, 1993; Lee, Yang, & Parr, 1988; Adamo & Barone, 1999; Grimme, Ehrlich, & Goerigk, 2011; Weigend & Ahlrichs, 2005).
 
-The literature therefore leaves a specific comparison unresolved: the relative adsorption energies of vanadic acid and water at one model Zeolite Y Brønsted acid site. This project made that comparison using the same cluster and density-functional levels for both adsorbates. It also examined thermochemical corrections and attempted to validate candidate structures beyond adsorption, while treating failed calculations as limitations rather than as evidence for a reaction barrier.
+This study addressed the adsorption comparison and evaluated the thermochemistry and candidate pathway structures produced by the calculations. It did not treat a failed optimisation as evidence for a reaction barrier. The calculations therefore provide a focused model comparison rather than a complete validation of any one mechanism.

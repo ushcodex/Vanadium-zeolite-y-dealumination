@@ -8,13 +8,13 @@ Bannwarth, C., Ehlert, S., & Grimme, S. (2019). GFN2-xTB: An accurate and broadl
 
 Becke, A. D. (1993). Density-functional thermochemistry. III. The role of exact exchange. *The Journal of Chemical Physics, 98*(7), 5648–5652. https://doi.org/10.1063/1.464913
 
-Etim, U. J., Bai, P., Ullah, R., Subhan, F., & Yan, Z. (2018). Vanadium contamination of FCC catalyst: Understanding the destruction and passivation mechanisms. *Applied Catalysis A: General, 555*, 108–117. https://doi.org/10.1016/j.apcata.2018.02.011
-
 Etim, U. J., Xu, B., Ullah, R., & Yan, Z. (2016). Effect of vanadium contamination on the framework and micropore structure of ultra stable Y-zeolite. *Journal of Colloid and Interface Science, 463*, 188–198. https://doi.org/10.1016/j.jcis.2015.10.049
 
-Faghani, M. H., Mohammadipour, E., Tarighi, S., Naderifar, A., & Habibzadeh, S. (2024). High vanadium tolerant FCC catalyst by barium titanate as metal trap and passivator. *Fuel, 375*, 132531. https://doi.org/10.1016/j.fuel.2024.132531
+Etim, U. J., Bai, P., Ullah, R., Subhan, F., & Yan, Z. (2018). Vanadium contamination of FCC catalyst: Understanding the destruction and passivation mechanisms. *Applied Catalysis A: General, 555*, 108–117. https://doi.org/10.1016/j.apcata.2018.02.011
 
 Grimme, S., Ehrlich, S., & Goerigk, L. (2011). Effect of the damping function in dispersion corrected density functional theory. *Journal of Computational Chemistry, 32*(7), 1456–1465. https://doi.org/10.1002/jcc.21759
+
+Henkelman, G., & Jónsson, H. (2000). Improved tangent estimate in the nudged elastic band method for finding minimum energy paths and saddle points. *The Journal of Chemical Physics, 113*(22), 9978–9985.
 
 Lee, C., Yang, W., & Parr, R. G. (1988). Development of the Colle-Salvetti correlation-energy formula into a functional of the electron density. *Physical Review B, 37*(2), 785–789. https://doi.org/10.1103/PhysRevB.37.785
 
@@ -23,6 +23,8 @@ Malola, S., Svelle, S., Lønstad Bleken, F., & Swang, O. (2012). Detailed reacti
 Mitchell, B. R. (1980). Metal contamination of cracking catalysts. 1. Synthetic metals deposition on fresh catalysts. *Industrial & Engineering Chemistry Product Research and Development, 19*(2), 209–213. https://doi.org/10.1021/i360074a015
 
 Neese, F. (2025). Software update: The ORCA program system: Version 6.0. *Wiley Interdisciplinary Reviews: Computational Molecular Science, 15*, e70019. https://doi.org/10.1002/wcms.70019
+
+Occelli, M. L. (1991). Vanadium-zeolite interactions in fluidized cracking catalysts. *Catalysis Reviews: Science and Engineering, 33*(3–4), 241–280. https://doi.org/10.1080/01614949108020301
 
 Pine, L. A. (1990). Vanadium-catalyzed destruction of USY zeolites. *Journal of Catalysis, 125*(2), 514–524. https://doi.org/10.1016/0021-9517(90)90323-C
 

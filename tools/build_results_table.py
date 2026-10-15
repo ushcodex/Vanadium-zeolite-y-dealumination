@@ -2,21 +2,27 @@
 """
 build_results_table.py
 
-Single source of truth for every number that appears in Chapters 4 and 5.
+Auditable source for the reported electronic and harmonic thermochemical data.
 
 It parses the ORCA outputs in simulation/03_tier2_completion/results/ (the
-completion campaign) and simulation/02_tier1/ (the laptop campaign) and writes
-writing/markdown/_results.json plus a human-readable table.
+completion campaign) and combines them with the audited Tier 1 register at
+simulation/analysis/calculation_register.csv, which records the laptop ORCA
+logs and acceptance status. It writes writing/markdown/_results.json plus a
+human-readable table. It also derives a
+conditional single-site occupation estimate from the harmonic Gibbs energies
+and stated regenerator partial pressures. Geometry distances are taken from the
+saved optimised XYZ structures and are listed separately in the thesis.
 
-Nothing here is typed in by hand: energies, imaginary-mode counts, zero-point
-energies and thermal corrections are all read out of the .out files.  If the
-thesis and this script disagree, this script is right.
+Energies, imaginary-mode counts, zero-point energies and thermal corrections
+are read from the .out files. If the thesis and this script disagree on those
+values, the script output should be checked against the named ORCA logs.
 
 Run:  python3 tools/build_results_table.py
 """
 
 import csv
 import json
+import math
 import os
 import re
 
@@ -43,13 +49,10 @@ def parse(path):
     d["converged"] = "THE OPTIMIZATION HAS CONVERGED" in t
     e = re.findall(r"FINAL SINGLE POINT ENERGY\s+(-?\d+\.\d+)", t)
     d["E"] = float(e[-1]) if e else None
-    ims = []
-    for blk in t.split("VIBRATIONAL FREQUENCIES")[1:]:
-        for m in re.finditer(r"\*\*\*imaginary mode\*\*\*", blk):
-            pass
-    # imaginary modes: take them from the last frequency block only
+    # Imaginary modes: take them from the last frequency block only
     i = t.rfind("VIBRATIONAL FREQUENCIES")
     vib = t[i:] if i >= 0 else ""
+    ims = []
     for line in vib.splitlines():
         if "imaginary mode" in line:
             m = re.match(r"\s*\d+:\s+(-?\d+\.\d+)", line)
@@ -156,24 +159,154 @@ def main():
                     row["dG_%g" % T] = None
             table["levels"][lvl][st] = row
 
+    # ---------- Conditional competitive-site estimate ----------------------
+    # This is a formal ideal-gas, single-site calculation using the harmonic
+    # Gibbs energies and RFCC partial pressures discussed by Wormsbecher et al.
+    # (1986). It is not a pore-aware prediction of experimental coverage.
+    site_T = 1003.15
+    gas_R = 0.00831446261815324  # kJ mol-1 K-1
+    p_standard_atm = 1.0
+    p_h2o_atm = 0.4
+    p_h3vo4_range_atm = (2.0e-6, 2.0e-5)
+    dg_v = table["levels"]["B3LYP"]["V-PRC"]["dG_1003.15"]
+    dg_w = table["levels"]["B3LYP"]["W-PRC"]["dG_1003.15"]
+    k_v = math.exp(-dg_v / (gas_R * site_T))
+    k_w = math.exp(-dg_w / (gas_R * site_T))
+    site_rows = []
+    for p_v in p_h3vo4_range_atm:
+        q_v = k_v * (p_v / p_standard_atm)
+        q_w = k_w * (p_h2o_atm / p_standard_atm)
+        denominator = 1.0 + q_v + q_w
+        theta_v = q_v / denominator
+        theta_w = q_w / denominator
+        site_rows.append({
+            "p_H3VO4_atm": p_v,
+            "Kp_H3VO4": q_v,
+            "Kp_H2O": q_w,
+            "theta_H3VO4": theta_v,
+            "theta_H2O": theta_w,
+            "theta_H2O_over_H3VO4": theta_w / theta_v,
+        })
+    table["site_occupation"] = {
+        "temperature_K": site_T,
+        "standard_pressure_atm": p_standard_atm,
+        "gas_constant_kJ_mol_K": gas_R,
+        "partial_pressure_atm": {
+            "H2O": p_h2o_atm,
+            "H3VO4_range": list(p_h3vo4_range_atm),
+        },
+        "dG_1003.15_kJ_mol": {"H3VO4": dg_v, "H2O": dg_w},
+        "K_standard_dimensionless": {"H3VO4": k_v, "H2O": k_w},
+        "site_fraction_ranges": {
+            "H3VO4": [site_rows[0]["theta_H3VO4"], site_rows[1]["theta_H3VO4"]],
+            "H2O": [min(row["theta_H2O"] for row in site_rows),
+                    max(row["theta_H2O"] for row in site_rows)],
+        },
+        "water_to_vanadic_acid_occupation_ratio": [
+            site_rows[1]["theta_H2O_over_H3VO4"],
+            site_rows[0]["theta_H2O_over_H3VO4"],
+        ],
+        "pressure_source": "Wormsbecher et al. (1986), 20% steam at 2 atm total pressure and 1-10 ppm H3VO4",
+        "assumptions": [
+            "ideal-gas standard states at 1 atm",
+            "one equivalent adsorption site",
+            "no interactions between adsorbed molecules",
+            "harmonic Gibbs energies used as a conditional model input",
+        ],
+        "calculation_rows": site_rows,
+    }
+
     # ---------- Tier 1 (GFN2-xTB) ----------
-    t1 = {}
     with open(T1, newline="", encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            t1[row["Job ID"]] = row
+        t1_rows = list(csv.DictReader(f))
+    t1 = {row["Job ID"]: row for row in t1_rows}
+
+    def t1_energy(job_id):
+        return float(t1[job_id]["Energy (Eh)"])
+
+    def t1_relative(job_id, reference):
+        registered = t1[job_id].get("Rel Energy (kJ/mol)", "")
+        if registered not in ("", "-"):
+            return float(registered)
+        return (t1_energy(job_id) - reference) * EH
+
+    cluster_t1 = t1_energy("cluster-T1-V02")
+    h3vo4_t1 = t1_energy("h3vo4-T1-V01")
+    h2o_t1 = t1_energy("h2o-T1-V01")
+    v_zero_t1 = cluster_t1 + h3vo4_t1
+    w_zero_t1 = cluster_t1 + h2o_t1
+
+    minima_ids = {
+        "V-PRC": "V-PRC_canonical",
+        "V-I1": "V-I1-T1-V01",
+        "V-I2": "V-I2-T1-V04",
+        "V-P": "V-P-T1-V01",
+        "W-PRC": "W-PRC-T1-V02",
+        "W-P": "W-P-T1-V01",
+    }
+    minima = {}
+    for state, job_id in minima_ids.items():
+        row = t1[job_id]
+        if row["Status"] != "Accepted" or row["Verified"].lower() != "yes":
+            raise ValueError(f"Tier 1 minimum {job_id} is not marked accepted and verified")
+        reference = v_zero_t1 if state.startswith("V") else w_zero_t1
+        minima[state] = {
+            "job_id": job_id,
+            "energy_Eh": t1_energy(job_id),
+            "relative_to_separated_kJ_mol": t1_relative(job_id, reference),
+            "status": row["Status"],
+            "verified": row["Verified"],
+        }
+
+    v_ts_id = "V-TS2-T1-V05"
+    v_ts_row = t1[v_ts_id]
+    if v_ts_row["Status"] != "Accepted" or v_ts_row["Verified"].lower() != "yes":
+        raise ValueError("Tier 1 vanadic-acid saddle-point candidate is not marked accepted")
+    v_ts_mode = re.search(r"\((-?\d+\.\d+)\s*cm-1\)", v_ts_row["Notes"])
+    if not v_ts_mode:
+        raise ValueError("Could not read the accepted V-TS2 imaginary-mode frequency")
+    v_ts_barrier = (t1_energy(v_ts_id) - t1_energy("V-I1-T1-V01")) * EH
+
+    w_ts_id = "W-TS-T1-V04"
+    w_ts_row = t1[w_ts_id]
+    w_ts_mode = re.search(r"\((-?\d+\.\d+)\s*cm-1\)", w_ts_row["Notes"])
+    if not w_ts_mode:
+        raise ValueError("Could not read the water-path candidate imaginary-mode frequency")
+    w_ts_barrier = (t1_energy(w_ts_id) - t1_energy("W-PRC-T1-V02")) * EH
+    w_displacements = [
+        row["Notes"] for row in t1_rows
+        if row["State"] == "W-TS" and row["Status"] == "Diagnostic run"
+        and "Mode 6" in row["Notes"]
+    ]
+    if len(w_displacements) != 2 or not all("W-PRC well" in note for note in w_displacements):
+        raise ValueError("Water-path transition-state displacement checks did not both return to W-PRC")
+
     table["tier1_reference"] = {
-        "cluster": -31.34551236, "H3VO4": -19.77512769, "H2O": -5.07054445,
-        "V_zero": -51.12064005, "W_zero": -36.41605681,
-        "accepted": {
-            "V-PRC": -196.90, "V-I1": -385.10, "V-TS2": -224.40,
-            "V-I2": -342.36, "V-P": -82.90,
-            "W-PRC": -69.59, "W-TS": -40.29, "W-P": -65.85,
+        "reference_energies_Eh": {"V": v_zero_t1, "W": w_zero_t1},
+        "accepted_minima": minima,
+        "accepted_saddle_point_candidate": {
+            "state": "V-TS2",
+            "job_id": v_ts_id,
+            "energy_Eh": t1_energy(v_ts_id),
+            "relative_to_separated_kJ_mol": t1_relative(v_ts_id, v_zero_t1),
+            "barrier_from_V-I1_kJ_mol": v_ts_barrier,
+            "imaginary_mode_cm-1": float(v_ts_mode.group(1)),
+            "status": v_ts_row["Status"],
+            "verified": v_ts_row["Verified"],
+            "notes": v_ts_row["Notes"],
         },
-        "barriers": {
-            "V-TS2 vs V-I1": 160.70,
-            "W-TS vs W-PRC": 29.29,
+        "water_path_candidate_not_accepted": {
+            "state": "W-TS",
+            "job_id": w_ts_id,
+            "energy_Eh": t1_energy(w_ts_id),
+            "relative_to_separated_kJ_mol": t1_relative(w_ts_id, w_zero_t1),
+            "barrier_from_W-PRC_kJ_mol": w_ts_barrier,
+            "imaginary_mode_cm-1": float(w_ts_mode.group(1)),
+            "status": w_ts_row["Status"],
+            "verified": w_ts_row["Verified"],
+            "displacement_checks": w_displacements,
         },
-        "source": "simulation/analysis/calculation_register.csv (accepted rows only)",
+        "source": "simulation/analysis/calculation_register.csv (job IDs and status) and named ORCA logs",
     }
 
     os.makedirs(os.path.dirname(OUTJSON), exist_ok=True)
@@ -202,9 +335,30 @@ def main():
                       r["dE"], f2(r.get("dG_298.15")), f2(r.get("dG_1003.15")),
                       r["runtime"].split("  ")[0][:10]))
     L.append("")
-    L.append("Tier 1 (GFN2-xTB) accepted stationary points, kJ/mol vs separated reactants")
-    for k, v in table["tier1_reference"]["accepted"].items():
-        L.append("  %-8s %10.2f" % (k, v))
+    L.append("Conditional single-site occupation estimate at %.2f K" % site_T)
+    L.append("  standard pressure: %.1f atm; p(H2O)=%.3g atm; p(H3VO4)=%.3g to %.3g atm" %
+             (p_standard_atm, p_h2o_atm, p_h3vo4_range_atm[0], p_h3vo4_range_atm[1]))
+    L.append("  K°(H3VO4)=%.3g; K°(H2O)=%.3g" % (k_v, k_w))
+    for row in site_rows:
+        L.append("  p(H3VO4)=%.3g atm: theta(H3VO4)=%.3g; theta(H2O)=%.3g; theta(H2O)/theta(H3VO4)=%.3g" %
+                 (row["p_H3VO4_atm"], row["theta_H3VO4"], row["theta_H2O"],
+                  row["theta_H2O_over_H3VO4"]))
+    L.append("  Assumptions: ideal-gas harmonic thermochemistry, one equivalent site, no adsorbate interactions.")
+    L.append("  This is a conditional model estimate, not a pore-aware experimental coverage prediction.")
+    L.append("")
+    t1_summary = table["tier1_reference"]
+    L.append("Tier 1 (GFN2-xTB) accepted minima, kJ/mol vs separated reactants")
+    for state, row in t1_summary["accepted_minima"].items():
+        L.append("  %-8s %10.2f" % (state, row["relative_to_separated_kJ_mol"]))
+    v_ts = t1_summary["accepted_saddle_point_candidate"]
+    L.append("Accepted GFN2-xTB saddle-point candidate: V-TS2")
+    L.append("  barrier above V-I1: %.2f kJ/mol; one imaginary mode at %.2f cm-1" %
+             (v_ts["barrier_from_V-I1_kJ_mol"], v_ts["imaginary_mode_cm-1"]))
+    w_ts = t1_summary["water_path_candidate_not_accepted"]
+    L.append("Water-path candidate W-TS was not accepted")
+    L.append("  barrier above W-PRC: %.2f kJ/mol; one imaginary mode at %.2f cm-1" %
+             (w_ts["barrier_from_W-PRC_kJ_mol"], w_ts["imaginary_mode_cm-1"]))
+    L.append("  both two-sided displacement checks returned to W-PRC")
     with open(OUTTXT, "w", encoding="utf-8") as f:
         f.write("\n".join(L) + "\n")
     print("\n".join(L))
