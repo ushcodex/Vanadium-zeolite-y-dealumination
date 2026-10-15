@@ -1,42 +1,54 @@
 #!/usr/bin/env python3
-"""Build the ABU-formatted thesis .docx from the markdown source in writing/markdown/.
+"""Build the ABU undergraduate thesis from writing/markdown/*.md.
 
-Formatting: A4, 3.8 cm left margin (binding) and 2.5 cm elsewhere,
-Times New Roman 12 pt body with double line spacing, 11 pt with 1.15 spacing
-for tables and references, APA references with a hanging indent.
+The builder applies the supplied department format and the supervisor's specific
+heading correction: chapter headings use a left-aligned ``x.0 TITLE`` format.
+It also creates a dynamic table of contents and figure/table lists with page
+reference fields. Update Word fields before printing (Ctrl+A, then F9).
 
-Directives understood in the markdown:
+Run from any directory with:
+    python3 tools/build_thesis_docx.py
 
-    [TITLEPAGE] ... [/TITLEPAGE]   centred title page block
-    [FIG: image | caption]         centred image with an 11 pt caption below
-    [TBL: caption | a;b;c | ...]   bordered table with an 11 pt caption above
-    # / ## / ###                   headings
-    **bold**, *italic*             inline emphasis
-    lines like  (3.1)              right-aligned equation number
-
-Unicode sub- and superscripts in the source are converted into real Word
-sub- and superscript runs so that chemical formulae render properly.
+Outputs:
+    deliverables/thesis_ABU.docx
+    deliverables/Ahmad_Usman_Shehu_U19CE1068_Thesis.docx (identical compatibility copy)
 """
 
-import os
+from __future__ import annotations
+
 import re
+import shutil
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Iterable
+
 from docx import Document
-from docx.shared import Pt, Cm
-from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK, WD_LINE_SPACING
 from docx.enum.table import WD_TABLE_ALIGNMENT
-from docx.oxml.ns import qn
+from docx.enum.text import (
+    WD_ALIGN_PARAGRAPH,
+    WD_BREAK,
+    WD_TAB_ALIGNMENT,
+    WD_LINE_SPACING,
+)
+from docx.shared import Cm, Pt, RGBColor
 from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
+from PIL import Image
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MD = os.path.join(ROOT, "writing", "markdown")
-FIG = os.path.join(ROOT, "figures")
-OUT = os.path.join(ROOT, "deliverables", "Ahmad_Usman_Shehu_U19CE1068_Thesis.docx")
+ROOT = Path(__file__).resolve().parents[1]
+SOURCE_DIR = ROOT / "writing" / "markdown"
+FIGURE_DIR = ROOT / "figures"
+DELIVERABLE_DIR = ROOT / "deliverables"
+OUT = DELIVERABLE_DIR / "thesis_ABU.docx"
+COMPAT_OUT = DELIVERABLE_DIR / "Ahmad_Usman_Shehu_U19CE1068_Thesis.docx"
 
-BODY_FONT = "Times New Roman"
-BODY_SIZE = Pt(12)
-SMALL_SIZE = Pt(11)
-TEXT_WIDTH = Cm(14.7)
-MAX_FIG_H = Cm(20.0)
+FONT = "Times New Roman"
+BODY_SIZE = 12
+PAGE_WIDTH_CM = 21.0
+LEFT_MARGIN_CM = 3.5
+RIGHT_MARGIN_CM = 2.5
+TEXT_WIDTH_CM = PAGE_WIDTH_CM - LEFT_MARGIN_CM - RIGHT_MARGIN_CM
+MAX_FIGURE_HEIGHT_CM = 20.0
 
 FILES = [
     "00_prelims.md",
@@ -48,489 +60,657 @@ FILES = [
     "06_references.md",
 ]
 
-SUB = {
-    "0": "₀", "1": "₁", "2": "₂", "3": "₃", "4": "₄",
-    "5": "₅", "6": "₆", "7": "₇", "8": "₈", "9": "₉",
-    "+": "₊", "-": "₋", "=": "₌", "(": "₍", ")": "₎",
-    "a": "ₐ", "e": "ₑ", "h": "ₕ", "k": "ₖ", "l": "ₗ", "m": "ₘ",
-    "n": "ₙ", "o": "ₒ", "p": "ₚ", "s": "ₛ", "t": "ₜ", "x": "ₓ",
+HEADING_RE = re.compile(r"^(#{1,4})\s+(.*)$")
+FIGURE_RE = re.compile(r"^\[FIG:\s*([^|]+?)\s*\|\s*(.+?)\s*\]$")
+TABLE_RE = re.compile(r"^\[TBL:\s*(.+?)\s*\]$")
+TABLE_ROW_RE = re.compile(r"^\|([^|].*\|)+$")
+EQUATION_NUMBER_RE = re.compile(r"^\(\d+\.\d+\)$")
+
+SUBSCRIPT = {
+    "₀": "0", "₁": "1", "₂": "2", "₃": "3", "₄": "4",
+    "₅": "5", "₆": "6", "₇": "7", "₈": "8", "₉": "9",
+    "₊": "+", "₋": "-", "₌": "=", "₍": "(", "₎": ")",
+    "ₐ": "a", "ₑ": "e", "ₕ": "h", "ₖ": "k", "ₗ": "l",
+    "ₘ": "m", "ₙ": "n", "ₒ": "o", "ₚ": "p", "ₛ": "s",
+    "ₜ": "t", "ₓ": "x",
 }
-SUP = {
-    "0": "⁰", "1": "¹", "2": "²", "3": "³", "4": "⁴",
-    "5": "⁵", "6": "⁶", "7": "⁷", "8": "⁸", "9": "⁹",
-    "+": "⁺", "-": "⁻", "=": "⁼", "(": "⁽", ")": "⁾",
-    "n": "ⁿ", "i": "ⁱ", "d": "ᵈ", "t": "ᵗ", "o": "ᵒ", "s": "ˢ",
+SUPERSCRIPT = {
+    "⁰": "0", "¹": "1", "²": "2", "³": "3", "⁴": "4",
+    "⁵": "5", "⁶": "6", "⁷": "7", "⁸": "8", "⁹": "9",
+    "⁺": "+", "⁻": "-", "⁼": "=", "⁽": "(", "⁾": ")",
+    "ⁿ": "n", "ⁱ": "i", "ᵈ": "d", "ᵗ": "t", "ᵒ": "o", "ˢ": "s",
 }
-REV_SUB = {v: k for k, v in SUB.items()}
-REV_SUP = {v: k for k, v in SUP.items()}
-# characters that may legitimately appear next to a sub/superscript
-NEUTRAL = set("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-              "+-=()[]{}·.,;:*/%<>=~⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿⁱᵈᵗᵒˢ"
-              "₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₕₖₗₘₙₒₚₛₜₓ")
 
 
-# --------------------------------------------------------------------------
-# low level helpers
-# --------------------------------------------------------------------------
-def set_run_font(run, size=BODY_SIZE, bold=False, italic=False,
+@dataclass(frozen=True)
+class CaptionRecord:
+    kind: str
+    caption: str
+    bookmark: str
+
+
+def set_run_font(run, *, size=BODY_SIZE, bold=False, italic=False,
                  sub=False, sup=False):
-    run.font.name = BODY_FONT
-    run.font.size = size
+    run.font.name = FONT
+    run.font.size = Pt(size)
     run.font.bold = bold
     run.font.italic = italic
+    run.font.color.rgb = RGBColor(0, 0, 0)
     rpr = run._element.get_or_add_rPr()
     rfonts = rpr.find(qn("w:rFonts"))
     if rfonts is None:
         rfonts = OxmlElement("w:rFonts")
         rpr.append(rfonts)
     for attr in ("w:ascii", "w:hAnsi", "w:cs", "w:eastAsia"):
-        rfonts.set(qn(attr), BODY_FONT)
+        rfonts.set(qn(attr), FONT)
     if sub or sup:
-        vt = OxmlElement("w:vertAlign")
-        vt.set(qn("w:val"), "subscript" if sub else "superscript")
-        rpr.append(vt)
+        vert = rpr.find(qn("w:vertAlign"))
+        if vert is None:
+            vert = OxmlElement("w:vertAlign")
+            rpr.append(vert)
+        vert.set(qn("w:val"), "subscript" if sub else "superscript")
+    return run
 
 
-def para_spacing(par, size=BODY_SIZE, double=True, before=0, after=0,
-                 left=0, hanging=0, first=0):
-    pf = par.paragraph_format
-    if double:
-        pf.line_spacing_rule = WD_LINE_SPACING.DOUBLE
-    else:
-        pf.line_spacing = 1.15
-    pf.space_before = Pt(before)
+def set_style_font(style, *, size=BODY_SIZE, bold=False, italic=False):
+    style.font.name = FONT
+    style.font.size = Pt(size)
+    style.font.bold = bold
+    style.font.italic = italic
+    style.font.color.rgb = RGBColor(0, 0, 0)
+    rpr = style.element.get_or_add_rPr()
+    rfonts = rpr.find(qn("w:rFonts"))
+    if rfonts is None:
+        rfonts = OxmlElement("w:rFonts")
+        rpr.append(rfonts)
+    for attr in ("w:ascii", "w:hAnsi", "w:cs", "w:eastAsia"):
+        rfonts.set(qn(attr), FONT)
+
+
+def configure_document(doc):
+    section = doc.sections[0]
+    section.page_width = Cm(PAGE_WIDTH_CM)
+    section.page_height = Cm(29.7)
+    section.left_margin = Cm(LEFT_MARGIN_CM)
+    section.right_margin = Cm(RIGHT_MARGIN_CM)
+    section.top_margin = Cm(2.5)
+    section.bottom_margin = Cm(2.5)
+    section.different_first_page_header_footer = True
+
+    normal = doc.styles["Normal"]
+    set_style_font(normal)
+    normal.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+    normal.paragraph_format.line_spacing_rule = WD_LINE_SPACING.DOUBLE
+    normal.paragraph_format.space_before = Pt(0)
+    normal.paragraph_format.space_after = Pt(12)
+    normal.paragraph_format.first_line_indent = Cm(0)
+    normal.paragraph_format.widow_control = True
+
+    heading_specs = {
+        1: (True, False, 18, 12, WD_ALIGN_PARAGRAPH.LEFT),
+        2: (True, False, 12, 6, WD_ALIGN_PARAGRAPH.LEFT),
+        3: (False, False, 8, 4, WD_ALIGN_PARAGRAPH.LEFT),
+        4: (False, True, 8, 4, WD_ALIGN_PARAGRAPH.LEFT),
+    }
+    for level, (bold, italic, before, after, alignment) in heading_specs.items():
+        style = doc.styles[f"Heading {level}"]
+        set_style_font(style, bold=bold, italic=italic)
+        pf = style.paragraph_format
+        pf.alignment = alignment
+        pf.line_spacing_rule = WD_LINE_SPACING.SINGLE
+        pf.space_before = Pt(before)
+        pf.space_after = Pt(after)
+        pf.first_line_indent = Cm(0)
+        pf.keep_with_next = True
+        pf.keep_together = True
+        pf.widow_control = True
+
+    # Keep headings black and disable Word's automatic blue heading colour.
+    settings = doc.settings.element
+    update_fields = settings.find(qn("w:updateFields"))
+    if update_fields is None:
+        update_fields = OxmlElement("w:updateFields")
+        settings.append(update_fields)
+    update_fields.set(qn("w:val"), "true")
+
+    footer = section.footer.paragraphs[0]
+    footer.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    footer.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+    footer.paragraph_format.space_after = Pt(0)
+    add_field(footer, "PAGE", placeholder="1")
+
+
+def add_field(paragraph, instruction, *, placeholder=""):
+    """Insert a Word field with an updateable result."""
+    run = paragraph.add_run()
+    begin = OxmlElement("w:fldChar")
+    begin.set(qn("w:fldCharType"), "begin")
+    run._r.append(begin)
+
+    run = paragraph.add_run()
+    instr = OxmlElement("w:instrText")
+    instr.set(qn("xml:space"), "preserve")
+    instr.text = instruction
+    run._r.append(instr)
+
+    run = paragraph.add_run()
+    separate = OxmlElement("w:fldChar")
+    separate.set(qn("w:fldCharType"), "separate")
+    run._r.append(separate)
+
+    if placeholder:
+        set_run_font(paragraph.add_run(placeholder), size=BODY_SIZE)
+
+    run = paragraph.add_run()
+    end = OxmlElement("w:fldChar")
+    end.set(qn("w:fldCharType"), "end")
+    run._r.append(end)
+    return paragraph
+
+
+def inline_tokens(text):
+    """Yield (text, bold, italic) segments from a small Markdown subset."""
+    text = text.replace("&amp;", "&")
+    pos = 0
+    for match in re.finditer(r"\*\*(.+?)\*\*|\*(?!\s)(.+?)(?<!\s)\*", text):
+        if match.start() > pos:
+            yield text[pos:match.start()], False, False
+        if match.group(1) is not None:
+            yield match.group(1), True, False
+        else:
+            yield match.group(2), False, True
+        pos = match.end()
+    if pos < len(text):
+        yield text[pos:], False, False
+
+
+def render_inline(paragraph, text, *, size=BODY_SIZE, base_bold=False,
+                  base_italic=False):
+    for chunk, bold, italic in inline_tokens(text):
+        idx = 0
+        plain = []
+        mode = None
+
+        def flush():
+            nonlocal plain, mode
+            if not plain:
+                return
+            value = "".join(plain)
+            rendered = "".join(SUBSCRIPT.get(c, c) for c in value) if mode == "sub" else value
+            rendered = "".join(SUPERSCRIPT.get(c, c) for c in rendered) if mode == "sup" else rendered
+            run = paragraph.add_run(rendered)
+            set_run_font(run, size=size, bold=base_bold or bold,
+                         italic=base_italic or italic,
+                         sub=mode == "sub", sup=mode == "sup")
+            plain = []
+
+        while idx < len(chunk):
+            char = chunk[idx]
+            next_mode = "sub" if char in SUBSCRIPT else "sup" if char in SUPERSCRIPT else None
+            if next_mode != mode:
+                flush()
+                mode = next_mode
+            plain.append(char)
+            idx += 1
+        flush()
+    return paragraph
+
+
+def set_body_paragraph(paragraph, *, references=False, single=False,
+                       after=12, left_indent=0, hanging=0):
+    pf = paragraph.paragraph_format
+    pf.line_spacing_rule = WD_LINE_SPACING.SINGLE if single else WD_LINE_SPACING.DOUBLE
+    pf.space_before = Pt(0)
     pf.space_after = Pt(after)
-    pf.left_indent = Cm(left)
-    if hanging:
-        pf.first_line_indent = Cm(-hanging)
-    elif first:
-        pf.first_line_indent = Cm(first)
-    return par
+    pf.first_line_indent = Cm(-hanging) if hanging else Cm(0)
+    pf.left_indent = Cm(left_indent)
+    pf.alignment = WD_ALIGN_PARAGRAPH.LEFT if references else WD_ALIGN_PARAGRAPH.JUSTIFY
+    pf.widow_control = True
+    return paragraph
 
 
-def add_field(paragraph, code):
-    r1 = paragraph.add_run()
-    fld = OxmlElement("w:fldChar")
-    fld.set(qn("w:fldCharType"), "begin")
-    r1._element.append(fld)
-    r2 = paragraph.add_run()
-    it = OxmlElement("w:instrText")
-    it.set(qn("xml:space"), "preserve")
-    it.text = code
-    r2._element.append(it)
-    r3 = paragraph.add_run()
-    fld2 = OxmlElement("w:fldChar")
-    fld2.set(qn("w:fldCharType"), "separate")
-    r3._element.append(fld2)
-    placeholder = paragraph.add_run("-")
-    r4 = paragraph.add_run()
-    fld3 = OxmlElement("w:fldChar")
-    fld3.set(qn("w:fldCharType"), "end")
-    r4._element.append(fld3)
-    return placeholder
+def add_bookmark(paragraph, name, bookmark_id):
+    start = OxmlElement("w:bookmarkStart")
+    start.set(qn("w:id"), str(bookmark_id))
+    start.set(qn("w:name"), name)
+    end = OxmlElement("w:bookmarkEnd")
+    end.set(qn("w:id"), str(bookmark_id))
+    ppr = paragraph._p.pPr
+    if ppr is not None:
+        ppr.addnext(start)
+    else:
+        paragraph._p.insert(0, start)
+    paragraph._p.append(end)
 
 
-def add_page_break(doc):
-    doc.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
+def bookmark_name(kind, caption):
+    match = re.search(r"(Figure|Table)\s+(\d+)\.(\d+)", caption)
+    if match:
+        return f"{match.group(1)}_{match.group(2)}_{match.group(3)}"
+    safe = re.sub(r"[^A-Za-z0-9_]", "_", caption)[:24]
+    return f"{kind}_{safe}"
 
 
-def figure_key(caption):
-    """Sort 'Figure 4.10: ...' after 'Figure 4.9: ...'."""
-    m = re.match(r"(Figure|Table)\s+(\d+)\.(\d+)", caption)
-    if not m:
-        return (0, 0, 0)
-    return (int(m.group(2)), int(m.group(3)), 0)
+def strip_source(caption):
+    return caption.split("| Source:", 1)[0].strip()
 
 
-def short_caption(caption):
-    """Drop the '| Source: ...' tail for the list of figures and tables."""
-    return caption.split("|")[0].strip()
+def caption_records(source_texts):
+    records = []
+    used = set()
+    for name in FILES:
+        text = source_texts[name]
+        for raw in text.splitlines():
+            line = raw.strip()
+            fig = FIGURE_RE.match(line)
+            tbl = TABLE_RE.match(line)
+            if fig:
+                caption = fig.group(2).strip()
+                kind = "Figure"
+            elif tbl:
+                fields = [field.strip() for field in tbl.group(1).split("|")]
+                caption = fields[0]
+                kind = "Table"
+            else:
+                continue
+            mark = bookmark_name(kind, caption)
+            if mark in used:
+                raise ValueError(f"Duplicate caption bookmark: {mark}")
+            used.add(mark)
+            records.append(CaptionRecord(kind, caption, mark))
+    return records
 
 
-def add_page_number_footer(section):
-    footer = section.footer
-    p = footer.paragraphs[0] if footer.paragraphs else footer.add_paragraph()
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    set_run_font(p.add_run("- "), size=SMALL_SIZE)
-    add_field(p, "PAGE")
-    set_run_font(p.add_run(" -"), size=SMALL_SIZE)
+def split_table_row(line):
+    return [cell.strip() for cell in line.strip().strip("|").split("|")]
 
 
 def set_table_borders(table):
-    tbl = table._tbl
-    pr = tbl.tblPr
     borders = OxmlElement("w:tblBorders")
     for edge in ("top", "left", "bottom", "right", "insideH", "insideV"):
-        el = OxmlElement(f"w:{edge}")
-        el.set(qn("w:val"), "single")
-        el.set(qn("w:sz"), "4")
-        el.set(qn("w:space"), "0")
-        el.set(qn("w:color"), "000000")
-        borders.append(el)
-    pr.append(borders)
+        item = OxmlElement(f"w:{edge}")
+        item.set(qn("w:val"), "single")
+        item.set(qn("w:sz"), "4")
+        item.set(qn("w:space"), "0")
+        item.set(qn("w:color"), "000000")
+        borders.append(item)
+    table._tbl.tblPr.append(borders)
 
 
-def no_row_cant_split(table):
+def prevent_row_split(table):
     for row in table.rows:
         trpr = row._tr.get_or_add_trPr()
-        el = OxmlElement("w:cantSplit")
-        trpr.append(el)
+        cant_split = OxmlElement("w:cantSplit")
+        trpr.append(cant_split)
 
 
-# --------------------------------------------------------------------------
-# inline text rendering
-# --------------------------------------------------------------------------
-def render_inline(par, text, size=BODY_SIZE, base_bold=False, base_italic=False):
-    """Write `text` into `par`, handling **bold**, *italic* and Unicode
-    sub/superscripts, which are promoted to real Word sub/superscript runs."""
-    # tokenise on emphasis markers
-    tokens = []
-    pos = 0
-    for m in re.finditer(r"\*\*(.+?)\*\*|\*(?!\s)(.+?)(?<!\s)\*", text):
-        if m.start() > pos:
-            tokens.append(("plain", text[pos:m.start()]))
-        if m.group(1) is not None:
-            tokens.append(("bold", m.group(1)))
-        else:
-            tokens.append(("italic", m.group(2)))
-        pos = m.end()
-    if pos < len(text):
-        tokens.append(("plain", text[pos:]))
+def mark_repeat_header(row):
+    trpr = row._tr.get_or_add_trPr()
+    table_header = OxmlElement("w:tblHeader")
+    table_header.set(qn("w:val"), "true")
+    trpr.append(table_header)
 
-    for kind, chunk in tokens:
-        parts = re.split(r"([₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₕₖₗₘₙₒₚₛₜₓ]+|"
-                         r"[⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿⁱᵈᵗᵒˢᵟ]+)", chunk)
-        for part in parts:
-            if not part:
+
+class ThesisBuilder:
+    def __init__(self):
+        self.doc = Document()
+        configure_document(self.doc)
+        self.bookmark_id = 1
+        self.caption_lookup = {}
+        self.last_paragraph = None
+        self.in_title = False
+        self.title_lines = []
+
+    def add_paragraph(self, text="", *, style=None, alignment=None, after=12,
+                      single=False, references=False, left_indent=0, hanging=0,
+                      size=BODY_SIZE, bold=False, italic=False):
+        paragraph = self.doc.add_paragraph(style=style)
+        set_body_paragraph(paragraph, references=references, single=single,
+                           after=after, left_indent=left_indent, hanging=hanging)
+        if alignment is not None:
+            paragraph.alignment = alignment
+        if text:
+            render_inline(paragraph, text, size=size, base_bold=bold,
+                          base_italic=italic)
+        self.last_paragraph = paragraph
+        return paragraph
+
+    def add_title_page(self, lines):
+        for raw in lines:
+            text = raw.strip()
+            if not text:
+                spacer = self.doc.add_paragraph()
+                spacer.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                spacer.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+                spacer.paragraph_format.space_after = Pt(14)
+                self.last_paragraph = spacer
                 continue
-            if part[0] in REV_SUB:
-                r = par.add_run("".join(REV_SUB[c] for c in part))
-                set_run_font(r, size=size, bold=base_bold or kind == "bold",
-                             italic=base_italic or kind == "italic", sub=True)
-            elif part[0] in REV_SUP:
-                mapped = "".join(REV_SUP.get(c, c) for c in part)
-                r = par.add_run(mapped)
-                set_run_font(r, size=size, bold=base_bold or kind == "bold",
-                             italic=base_italic or kind == "italic", sup=True)
-            else:
-                r = par.add_run(part)
-                set_run_font(r, size=size, bold=base_bold or kind == "bold",
-                             italic=base_italic or kind == "italic")
-    return par
+            p = self.doc.add_paragraph()
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+            p.paragraph_format.space_after = Pt(6)
+            p.paragraph_format.keep_together = True
+            render_inline(p, text, size=BODY_SIZE,
+                          base_bold=(text.isupper() or text.startswith("BY")))
+            self.last_paragraph = p
 
-
-# --------------------------------------------------------------------------
-# block renderers
-# --------------------------------------------------------------------------
-def render_titlepage(doc, lines):
-    for i, raw in enumerate(lines):
-        line = raw.strip()
-        if not line:
-            continue
-        p = doc.add_paragraph()
-        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        para_spacing(p, before=0, after=6)
-        r = p.add_run(line)
-        if i == 0:
-            set_run_font(r, size=Pt(14), bold=True)
-        elif line.isupper() and len(line) > 25:
-            set_run_font(r, size=Pt(12), bold=True)
+    def add_heading(self, text, level):
+        paragraph = self.doc.add_paragraph(style=f"Heading {level}")
+        if level == 1:
+            paragraph.paragraph_format.page_break_before = True
+            paragraph.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            render_inline(paragraph, text.upper(), size=BODY_SIZE, base_bold=True)
+        elif level == 2:
+            paragraph.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            render_inline(paragraph, text, size=BODY_SIZE, base_bold=True)
+        elif level == 3:
+            paragraph.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            render_inline(paragraph, text, size=BODY_SIZE)
         else:
-            set_run_font(r, size=BODY_SIZE, bold=line.startswith(("BY", "Ahmad")))
-    add_page_break(doc)
+            paragraph.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            render_inline(paragraph, text, size=BODY_SIZE, base_italic=True)
+        self.last_paragraph = paragraph
+        return paragraph
 
+    def render_title_if_needed(self):
+        self.add_title_page(self.title_lines)
+        self.title_lines = []
+        self.in_title = False
 
-def render_figure(doc, path, caption):
-    full = os.path.join(FIG, path)
-    if not os.path.exists(full):
-        full = os.path.join(ROOT, path)
-    p = doc.add_paragraph()
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    para_spacing(p, double=False, before=6, after=4)
-    if os.path.exists(full):
-        from PIL import Image
-        with Image.open(full) as im:
-            w, h = im.size
-        width_cm = w / 96 * 2.54
-        height_cm = h / 96 * 2.54
-        scale = min(1.0, TEXT_WIDTH.cm / width_cm, MAX_FIG_H.cm / height_cm)
-        p.add_run().add_picture(full, width=Cm(width_cm * scale))
-    else:
-        r = p.add_run(f"[missing image: {path}]")
-        set_run_font(r, size=SMALL_SIZE, italic=True)
-    cap = doc.add_paragraph()
-    cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    para_spacing(cap, double=False, before=0, after=12)
-    render_inline(cap, caption, size=SMALL_SIZE)
-    return caption
+    def render_figure(self, relative_path, caption):
+        image_path = (FIGURE_DIR / relative_path).resolve()
+        if not image_path.is_file():
+            raise FileNotFoundError(f"Missing thesis figure: {image_path}")
+        with Image.open(image_path) as image:
+            width_px, height_px = image.size
+        width_cm = width_px / 96 * 2.54
+        height_cm = height_px / 96 * 2.54
+        scale = min(1.0, TEXT_WIDTH_CM / width_cm,
+                    MAX_FIGURE_HEIGHT_CM / height_cm)
+        width_cm *= scale
 
+        figure_par = self.doc.add_paragraph()
+        figure_par.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        figure_par.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+        figure_par.paragraph_format.space_before = Pt(6)
+        figure_par.paragraph_format.space_after = Pt(4)
+        figure_par.paragraph_format.keep_together = True
+        figure_par.paragraph_format.keep_with_next = True
+        figure_par.add_run().add_picture(str(image_path), width=Cm(width_cm))
+        self.last_paragraph = figure_par
 
-def render_table(doc, caption, rows):
-    cap = doc.add_paragraph()
-    para_spacing(cap, double=False, before=12, after=4)
-    cap.alignment = WD_ALIGN_PARAGRAPH.LEFT
-    render_inline(cap, caption, size=SMALL_SIZE)
+        cap = self.add_paragraph(strip_source(caption), alignment=WD_ALIGN_PARAGRAPH.CENTER,
+                                 after=12)
+        cap.paragraph_format.keep_together = True
+        record = self.caption_lookup[bookmark_name("Figure", caption)]
+        add_bookmark(cap, record.bookmark, self.bookmark_id)
+        self.bookmark_id += 1
 
-    ncols = max(len(r) for r in rows)
-    table = doc.add_table(rows=0, cols=ncols)
-    table.alignment = WD_TABLE_ALIGNMENT.CENTER
-    table.autofit = True
-    set_table_borders(table)
-    no_row_cant_split(table)
+    def render_table(self, caption, rows):
+        caption_text = strip_source(caption)
+        cap = self.add_paragraph(caption_text, alignment=WD_ALIGN_PARAGRAPH.LEFT,
+                                 after=4)
+        cap.paragraph_format.keep_with_next = True
+        cap.paragraph_format.keep_together = True
+        record = self.caption_lookup[bookmark_name("Table", caption)]
+        add_bookmark(cap, record.bookmark, self.bookmark_id)
+        self.bookmark_id += 1
 
-    for ri, row in enumerate(rows):
-        cells = table.add_row().cells
-        for ci in range(ncols):
-            txt = row[ci] if ci < len(row) else ""
-            cell = cells[ci]
-            cell.text = ""
-            p = cell.paragraphs[0]
-            para_spacing(p, double=False, before=2, after=2)
-            render_inline(p, txt, size=SMALL_SIZE, base_bold=(ri == 0))
-    # column widths
-    total = TEXT_WIDTH.cm
-    for ci in range(ncols):
-        for row in table.rows:
-            row.cells[ci].width = Cm(total / ncols)
-    doc.add_paragraph().paragraph_format.space_after = Pt(6)
-    return caption
+        ncols = max(len(row) for row in rows)
+        table = self.doc.add_table(rows=0, cols=ncols)
+        table.alignment = WD_TABLE_ALIGNMENT.CENTER
+        table.autofit = True
+        set_table_borders(table)
+        for row_index, values in enumerate(rows):
+            cells = table.add_row().cells
+            for col_index in range(ncols):
+                cell = cells[col_index]
+                cell.text = ""
+                paragraph = cell.paragraphs[0]
+                set_body_paragraph(paragraph, single=False, after=2)
+                paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
+                value = values[col_index] if col_index < len(values) else ""
+                render_inline(paragraph, value, size=BODY_SIZE,
+                              base_bold=(row_index == 0))
+            if row_index == 0:
+                mark_repeat_header(table.rows[-1])
+        for col_index in range(ncols):
+            width = Cm(TEXT_WIDTH_CM / ncols)
+            for row in table.rows:
+                row.cells[col_index].width = width
+        prevent_row_split(table)
+        self.doc.add_paragraph().paragraph_format.space_after = Pt(8)
+        self.last_paragraph = self.doc.paragraphs[-1]
 
+    def add_equation_number(self, number):
+        if self.last_paragraph is not None:
+            self.last_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            self.last_paragraph.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+            self.last_paragraph.paragraph_format.space_after = Pt(0)
+        p = self.doc.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+        p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+        p.paragraph_format.space_after = Pt(12)
+        render_inline(p, number, size=BODY_SIZE)
+        self.last_paragraph = p
 
-# --------------------------------------------------------------------------
-# main
-# --------------------------------------------------------------------------
-def build():
-    doc = Document()
+    def render_line(self, path, line, lines, index):
+        if not line:
+            return index
 
-    st = doc.styles["Normal"]
-    st.font.name = BODY_FONT
-    st.font.size = BODY_SIZE
-    st.element.rPr.rFonts.set(qn("w:eastAsia"), BODY_FONT)
+        # A figure directive.
+        figure = FIGURE_RE.match(line)
+        if figure:
+            self.render_figure(figure.group(1).strip(), figure.group(2).strip())
+            return index
 
-    sec = doc.sections[0]
-    sec.page_width = Cm(21.0)
-    sec.page_height = Cm(29.7)
-    sec.left_margin = Cm(3.8)
-    sec.right_margin = Cm(2.5)
-    sec.top_margin = Cm(2.5)
-    sec.bottom_margin = Cm(2.5)
-    add_page_number_footer(sec)
+        # A table directive: following pipe rows contain the header and body.
+        table_match = TABLE_RE.match(line)
+        if table_match:
+            fields = [field.strip() for field in table_match.group(1).split("|")]
+            caption, rows = fields[0], []
+            for field in fields[1:]:
+                row = [cell.strip() for cell in field.split(";")]
+                # An optional Markdown separator row is ignored.
+                if row and all(re.fullmatch(r"[-: ]+", cell or " ") for cell in row):
+                    continue
+                rows.append(row)
+            self.render_table(caption, rows)
+            return index
 
-    figures, tables = [], []
+        # Equations are stored on their own line followed by a right-aligned number.
+        if EQUATION_NUMBER_RE.fullmatch(line):
+            self.add_equation_number(line)
+            return index
 
-    for fname in FILES:
-        path = os.path.join(MD, fname)
-        with open(path, encoding="utf-8") as fh:
-            text = fh.read()
+        # Standard Markdown headings.
+        heading = HEADING_RE.match(line)
+        if heading:
+            level = len(heading.group(1))
+            self.add_heading(heading.group(2).strip(), level)
+            return index
+
+        # Ordered and unordered lists retain their numbering without a paragraph first-line indent.
+        ordered = re.match(r"^(\d+)\.\s+(.*)$", line)
+        if ordered:
+            p = self.doc.add_paragraph()
+            set_body_paragraph(p, after=6, left_indent=0.45)
+            render_inline(p, f"{ordered.group(1)}. {ordered.group(2)}")
+            self.last_paragraph = p
+            return index
+        if line.startswith("- "):
+            p = self.doc.add_paragraph()
+            set_body_paragraph(p, after=6, left_indent=0.45)
+            render_inline(p, "– " + line[2:])
+            self.last_paragraph = p
+            return index
+
+        # References use a standard hanging indent and remain double-spaced.
+        is_reference = path.name == "06_references.md" and bool(re.match(r"^[A-Z][A-Za-zÀ-ž-]+,", line))
+        if is_reference:
+            p = self.add_paragraph(line, references=True, after=12,
+                                   left_indent=1.27, hanging=1.27)
+            return index
+
+        # Ordinary prose. Markdown hard-wrapped lines are joined until a blank line.
+        paragraph_lines = [line]
+        j = index + 1
+        while j < len(lines):
+            nxt = lines[j].strip()
+            if (not nxt or HEADING_RE.match(nxt) or FIGURE_RE.match(nxt)
+                    or TABLE_RE.match(nxt) or EQUATION_NUMBER_RE.fullmatch(nxt)
+                    or re.match(r"^(\d+)\.\s+", nxt) or nxt.startswith("- ")):
+                break
+            paragraph_lines.append(nxt)
+            j += 1
+        text = " ".join(paragraph_lines)
+        self.add_paragraph(text)
+        return j - 1
+
+    def render_source(self, filename, text):
+        path = SOURCE_DIR / filename
         lines = text.splitlines()
-        in_title = False
-        title_buf = []
-        i = 0
-        prev_par = None
-        while i < len(lines):
-            raw = lines[i]
+        index = 0
+        while index < len(lines):
+            raw = lines[index]
             line = raw.strip()
-            i += 1
-
             if line == "[TITLEPAGE]":
-                in_title = True
-                title_buf = []
+                self.in_title = True
+                self.title_lines = []
+                index += 1
                 continue
             if line == "[/TITLEPAGE]":
-                render_titlepage(doc, title_buf)
-                in_title = False
+                self.render_title_if_needed()
+                index += 1
                 continue
-            if in_title:
-                title_buf.append(raw)
+            if self.in_title:
+                self.title_lines.append(raw)
+                index += 1
                 continue
+            index = self.render_line(path, line, lines, index) + 1
 
-            if not line:
-                continue
+    def add_front_matter_lists(self, records):
+        # The dynamic TOC uses Heading 1–4 styles. The list headings themselves
+        # use direct formatting so they do not appear inside their own TOC.
+        self.add_front_heading("TABLE OF CONTENTS", page_break=True)
+        toc = self.doc.add_paragraph()
+        toc.paragraph_format.line_spacing_rule = WD_LINE_SPACING.DOUBLE
+        toc.paragraph_format.space_after = Pt(0)
+        add_field(toc, r'TOC \o "1-4" \h \z \u')
+        self.last_paragraph = toc
 
-            if line.startswith("# REFERENCES"):
-                add_page_break(doc)
-                p = doc.add_paragraph()
-                p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-                para_spacing(p, before=0, after=12)
-                set_run_font(p.add_run("REFERENCES"), size=Pt(14), bold=True)
-                continue
+        self.add_front_heading("LIST OF TABLES", page_break=True)
+        self.add_caption_list([record for record in records if record.kind == "Table"])
 
-            # ---- headings -------------------------------------------------
-            if line.startswith("### "):
-                p = doc.add_paragraph()
-                para_spacing(p, before=10, after=6)
-                render_inline(p, line[4:], base_bold=True)
-                prev_par = None
-                continue
-            if line.startswith("## "):
-                p = doc.add_paragraph()
-                para_spacing(p, before=14, after=6)
-                render_inline(p, line[3:], base_bold=True)
-                prev_par = None
-                continue
-            if line.startswith("# "):
-                add_page_break(doc)
-                head = line[2:]
-                p = doc.add_paragraph()
-                p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-                para_spacing(p, before=24, after=10)
-                set_run_font(p.add_run(head), size=Pt(14), bold=True)
-                prev_par = None
-                continue
+        self.add_front_heading("LIST OF FIGURES", page_break=True)
+        self.add_caption_list([record for record in records if record.kind == "Figure"])
 
-            # ---- figures --------------------------------------------------
-            m = re.match(r"^\[FIG:\s*([^\|]+?)\s*\|\s*(.+?)\s*\]$", line)
-            if m:
-                cap = render_figure(doc, m.group(1).strip(),
-                        m.group(2).strip().replace(" | Source:", ". Source:"))
-                figures.append(cap)
-                prev_par = None
-                continue
+    def add_front_heading(self, text, *, page_break):
+        p = self.doc.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+        p.paragraph_format.space_before = Pt(18)
+        p.paragraph_format.space_after = Pt(12)
+        p.paragraph_format.keep_with_next = True
+        p.paragraph_format.page_break_before = page_break
+        render_inline(p, text, size=BODY_SIZE, base_bold=True)
+        self.last_paragraph = p
 
-            # ---- tables ---------------------------------------------------
-            m = re.match(r"^\[TBL:\s*(.+?)\s*\]$", line)
-            if m:
-                fields = [f.strip() for f in m.group(1).split("|")]
-                caption = fields[0]
-                rows = [[c.strip() for c in f.split(";")] for f in fields[1:]]
-                cap = render_table(doc, caption, rows)
-                tables.append(cap)
-                prev_par = None
-                continue
-
-            # ---- equation numbers ----------------------------------------
-            if re.fullmatch(r"\(\d+\.\d+\)", line):
-                if prev_par is not None:
-                    prev_par.alignment = WD_ALIGN_PARAGRAPH.CENTER
-                    prev_par.paragraph_format.space_after = Pt(0)
-                p = doc.add_paragraph()
-                p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-                para_spacing(p, before=0, after=12)
-                set_run_font(p.add_run(line))
-                prev_par = None
-                continue
-
-            # ---- lists ----------------------------------------------------
-            m = re.match(r"^(\d+)\.\s+(.*)$", line)
-            if m:
-                p = doc.add_paragraph()
-                para_spacing(p, after=6, left=1.27, hanging=0.63)
-                render_inline(p, f"{m.group(1)}. {m.group(2)}")
-                prev_par = p
-                continue
-            if line.startswith("- "):
-                p = doc.add_paragraph()
-                para_spacing(p, after=6, left=1.27, hanging=0.63)
-                render_inline(p, "- " + line[2:])
-                prev_par = p
-                continue
-
-            # ---- references (hanging indent, 11 pt, 1.15) ------------------
-            if path.endswith("06_references.md") and re.match(r"^[A-Z][a-z]+,", line):
-                p = doc.add_paragraph()
-                para_spacing(p, double=False, after=6, left=1.27, hanging=1.27)
-                render_inline(p, line, size=SMALL_SIZE)
-                prev_par = p
-                continue
-
-            # ---- ordinary paragraph ---------------------------------------
-            p = doc.add_paragraph()
-            para_spacing(p, after=10, first=1.27)
-            p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-            render_inline(p, line)
-            prev_par = p
-
-    return doc, figures, tables
+    def add_caption_list(self, records):
+        for record in records:
+            p = self.doc.add_paragraph()
+            p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.DOUBLE
+            p.paragraph_format.space_after = Pt(4)
+            p.paragraph_format.left_indent = Cm(0)
+            p.paragraph_format.first_line_indent = Cm(0)
+            p.paragraph_format.tab_stops.add_tab_stop(Cm(TEXT_WIDTH_CM), WD_TAB_ALIGNMENT.RIGHT)
+            p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            render_inline(p, strip_source(record.caption), size=BODY_SIZE)
+            p.add_run("\t")
+            add_field(p, f"PAGEREF {record.bookmark} \\h")
+            self.last_paragraph = p
 
 
-def build_final():
-    doc, figures, tables = build()
+def validate_sources(source_texts):
+    expected_chapters = [
+        "# 1.0 INTRODUCTION",
+        "# 2.0 LITERATURE REVIEW",
+        "# 3.0 METHODOLOGY",
+        "# 4.0 RESULTS AND DISCUSSION",
+        "# 5.0 CONCLUSIONS AND RECOMMENDATIONS",
+    ]
+    actual = []
+    for filename in FILES[1:6]:
+        headings = [line.strip() for line in source_texts[filename].splitlines()
+                    if re.match(r"^# ", line.strip())]
+        if len(headings) != 1:
+            raise ValueError(f"{filename} must contain one chapter-level heading; found {headings}")
+        actual.append(headings[0])
+    if actual != expected_chapters:
+        raise ValueError(f"Unexpected chapter heading sequence: {actual}")
 
-    # Move everything after the title page down, then write contents.
-    # python-docx has no insert-at-index, so build the front matter into a
-    # second document body fragment by manipulating XML directly.
-    body = doc.element.body
-    # locate end of title page = first page-break paragraph after title page
-    # Simplest robust approach: find the paragraph containing the first
-    # page break following the title page block, then insert before it.
-    W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}br"
-    br_paras = []
-    for p in doc.paragraphs:
-        for r in p.runs:
-            if r._element.findall(W):
-                br_paras.append(p)
-                break
+    chapter_one = source_texts["01_chapter1.md"]
+    objective_section = re.search(
+        r"## 1\.4 Objectives of the Study\s+(.*?)(?=\n## )", chapter_one, re.S)
+    if not objective_section:
+        raise ValueError("Chapter One must contain Section 1.4, Objectives of the Study")
+    objectives = re.findall(r"^\d+\.\s+(.+)$", objective_section.group(1), re.M)
+    if len(objectives) != 4:
+        raise ValueError(f"Expected four objectives, found {len(objectives)}")
+    for forbidden in ("faujasite", "report"):
+        if any(forbidden in objective.lower() for objective in objectives):
+            raise ValueError(f"Objectives must not contain the term {forbidden!r}")
+    if "entirely computational" in source_texts["03_chapter3.md"].lower():
+        raise ValueError("Remove the unnecessary 'entirely computational' statement from methodology")
 
-    def make_front():
-        """Create the contents/list pages as a list of elements."""
-        els = []
+    # Ensure that figure/table caption numbers are unique.
+    records = caption_records(source_texts)
+    captions = []
+    for record in records:
+        match = re.search(r"\d+\.\d+", record.caption)
+        if match:
+            captions.append(f"{record.kind} {match.group()}")
+    if len(captions) != len(set(captions)):
+        raise ValueError("Duplicate figure/table caption numbers found")
 
-        def heading(text):
-            p = doc.add_paragraph()
-            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-            para_spacing(p, before=0, after=12)
-            set_run_font(p.add_run(text), size=Pt(14), bold=True)
-            els.append(p._element)
 
-        lead = doc.add_paragraph()
-        lead.add_run().add_break(WD_BREAK.PAGE)
-        els.append(lead._element)
+def build():
+    source_texts = {}
+    for filename in FILES:
+        file_path = SOURCE_DIR / filename
+        if not file_path.is_file():
+            raise FileNotFoundError(f"Missing thesis source: {file_path}")
+        source_texts[filename] = file_path.read_text(encoding="utf-8")
+    validate_sources(source_texts)
+    records = caption_records(source_texts)
 
-        def spacer(pts=6):
-            p = doc.add_paragraph()
-            para_spacing(p, before=0, after=pts)
-            els.append(p._element)
+    builder = ThesisBuilder()
+    title_block = source_texts[FILES[0]].split("[TITLEPAGE]", 1)[1].split("[/TITLEPAGE]", 1)[0]
+    project_title = next(line.strip() for line in title_block.splitlines() if line.strip())
+    builder.doc.core_properties.title = project_title
+    builder.doc.core_properties.author = "Ahmad Usman Shehu"
+    builder.doc.core_properties.subject = "B.Eng. Chemical Engineering undergraduate research project"
+    builder.doc.core_properties.last_modified_by = "Ahmad Usman Shehu"
+    builder.caption_lookup = {record.bookmark: record for record in records}
+    builder.render_source(FILES[0], source_texts[FILES[0]])
+    builder.add_front_matter_lists(records)
+    for filename in FILES[1:]:
+        builder.render_source(filename, source_texts[filename])
 
-        heading("TABLE OF CONTENTS")
-        p = doc.add_paragraph()
-        add_field(p, r'TOC \o "1-2" \h \z \u')
-        els.append(p._element)
-        note = doc.add_paragraph()
-        note.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        set_run_font(note.add_run("If no page numbers appear, right-click the "
-                                  "field above and choose Update Field."),
-                     size=SMALL_SIZE, italic=True)
-        els.append(note._element)
-        spacer()
+    DELIVERABLE_DIR.mkdir(parents=True, exist_ok=True)
+    builder.doc.save(OUT)
+    shutil.copyfile(OUT, COMPAT_OUT)
+    print(f"Wrote {OUT}")
+    print(f"Wrote identical compatibility copy {COMPAT_OUT}")
+    print(f"  Chapter-level headings: 5")
+    print(f"  Objectives: 4")
+    print(f"  Figures: {sum(r.kind == 'Figure' for r in records)}")
+    print(f"  Tables: {sum(r.kind == 'Table' for r in records)}")
 
-        heading("LIST OF FIGURES")
-        for cap in sorted(figures, key=figure_key):
-            p = doc.add_paragraph()
-            para_spacing(p, before=0, after=4)
-            render_inline(p, short_caption(cap), size=SMALL_SIZE)
-            els.append(p._element)
-        spacer()
 
-        heading("LIST OF TABLES")
-        for cap in sorted(tables, key=figure_key):
-            p = doc.add_paragraph()
-            para_spacing(p, before=0, after=4)
-            render_inline(p, short_caption(cap), size=SMALL_SIZE)
-            els.append(p._element)
-
-        return els
-
-    front = make_front()
-    # insert the contents pages between the abstract and CHAPTER ONE
-    anchor = None
-    for p in doc.paragraphs:
-        if p.text.strip() == "CHAPTER ONE":
-            anchor = p._element.getprevious()
-            break
-    if anchor is None:
-        anchor = br_paras[-1]._element
-    for el in front:
-        anchor.addprevious(el)
-    # put a page break between the front matter and the declaration
-    pb = doc.add_paragraph()
-    pb.add_run().add_break(WD_BREAK.PAGE)
-    anchor.addprevious(pb._element)
-
-    os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    doc.save(OUT)
-    print(f"wrote {OUT}")
-    print(f"  figures: {len(figures)}   tables: {len(tables)}")
+def main():
+    build()
 
 
 if __name__ == "__main__":
-    build_final()
+    main()

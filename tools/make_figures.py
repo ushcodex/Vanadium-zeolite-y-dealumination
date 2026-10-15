@@ -2,19 +2,13 @@
 """
 make_figures.py
 
-Draws every "own work" figure in the thesis with matplotlib, reading the numbers
-straight out of writing/markdown/_results.json (produced by
-tools/build_results_table.py, which in turn reads the ORCA .out files).
-
-No figure in this thesis was produced by an image generator.  Every curve and
-bar below traces back to a number in the repository, and the molecular pictures
-are rendered from the optimised Cartesian coordinates in
-simulation/03_tier2_completion/results/geom/.
+Draws author-produced explanatory figures and molecular structures used in the
+thesis. The molecular pictures are rendered from the optimised Cartesian
+coordinates in simulation/03_tier2_completion/results/geom/.
 
 Run:  python3 tools/make_figures.py
 """
 
-import json
 import os
 
 import matplotlib
@@ -26,11 +20,7 @@ from matplotlib.patches import FancyArrowPatch, FancyBboxPatch, Rectangle
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FIG = os.path.join(ROOT, "figures")
 GEOM = os.path.join(ROOT, "simulation", "03_tier2_completion", "results", "geom")
-DATA = os.path.join(ROOT, "writing", "markdown", "_results.json")
-
 os.makedirs(FIG, exist_ok=True)
-with open(DATA, encoding="utf-8") as f:
-    R = json.load(f)
 
 # ---------------------------------------------------------------- styling
 plt.rcParams.update({
@@ -52,15 +42,7 @@ C = {
     "W": "#1F5C99",      # steam route
     "V2": "#E08B86",
     "W2": "#8FB6DC",
-    "grey": "#6B6B6B",
-    "light": "#D9D9D9",
-    "ok": "#2E7D32",
-    "bad": "#C62828",
-    "warn": "#EF8C00",
 }
-
-ACCEPTED = ["V-PRC", "V-I1", "W-PRC", "W-P"]
-NOT_ACCEPTED = ["V-TS2", "V-I2", "V-P"]
 
 
 def save(fig, name):
@@ -231,14 +213,14 @@ def figure_workflow():
     ax.text(50, 96, "Two-tier computational workflow", ha="center",
             fontsize=12.5, fontweight="bold")
 
-    box(6, 78, 40, 12, "Build the 4T cluster\nAlSi$_4$O$_4$H$_{13}$ and the\n"
+    box(6, 78, 40, 12, "Build a local Zeolite Y cluster\nAlSi$_4$O$_4$H$_{13}$ and the\n"
                        "adsorbates H$_3$VO$_4$, H$_2$O", "#EDEDED", bold=True)
     box(56, 78, 38, 12, "Spartan / Avogadro for\nediting; XYZ files carry the\n"
                         "atom order into ORCA", "#F7F7F7")
 
     ax.add_patch(Rectangle((3, 40), 88, 33, facecolor="#FBF3F3",
                            edgecolor=C["V"], linewidth=1.4, ls="--"))
-    ax.text(5, 70.5, "TIER 1  -  Dell Latitude E6430, 16 GB RAM, SSD, ORCA 6.1, 1 core",
+    ax.text(5, 70.5, "TIER 1  -  Dell Latitude E6430, 16 GB RAM, SSD, ORCA 6.1.0, 1 core",
             fontsize=9.4, fontweight="bold", color=C["V"])
     box(6, 43, 25, 22, "GFN2-xTB\noptimisations\nof reactants,\ncomplexes",
         "#F5D8D6")
@@ -253,7 +235,7 @@ def figure_workflow():
 
     ax.add_patch(Rectangle((3, 2), 88, 31, facecolor="#EEF3FA",
                            edgecolor=C["W"], linewidth=1.4, ls="--"))
-    ax.text(5, 30.0, "TIER 2  -  cloud virtual machine, ORCA 6.1, 4 MPI ranks",
+    ax.text(5, 30.0, "TIER 2  -  cloud virtual machine, ORCA 6.1.1, 4 MPI ranks",
             fontsize=9.4, fontweight="bold", color=C["W"])
     box(6, 5, 25, 20, "B3LYP-D3(BJ)\ndef2-TZVP\nopt + frequency",
         "#D8E4F2")
@@ -267,221 +249,8 @@ def figure_workflow():
     save(fig, "fig3_1_workflow.png")
 
 
-# ================================================================ Chapter 4
-def figure_energy_profile():
-    b3 = R["levels"]["B3LYP"]
-    fig, ax = plt.subplots(figsize=(9.2, 5.0))
-
-    # vanadium route
-    xs = [0, 1, 2, 3, 4, 5]
-    labs = ["Reactants\nclusters + H$_3$VO$_4$", "V-PRC", "V-I1",
-            "V-TS2\n(not accepted)", "V-I2\n(not accepted)", "V-P\n(not accepted)"]
-    ys = [0.0, b3["V-PRC"]["dE"], b3["V-I1"]["dE"], b3["V-TS2"]["dE"],
-          b3["V-I2"]["dE"], b3["V-P"]["dE"]]
-    acc = [True, True, True, False, False, False]
-
-    ax.plot(xs[:3], ys[:3], "-o", color=C["V"], lw=2.2, ms=8, zorder=3)
-    ax.plot(xs[2:6], ys[2:6], "--o", color=C["V"], lw=1.6, ms=8, mfc="white",
-            zorder=3, alpha=0.85)
-    for i, (x, y, a) in enumerate(zip(xs, ys, acc)):
-        ax.annotate("%+.1f" % y, (x, y), textcoords="offset points",
-                    xytext=(0, 11 if y > 0 else -17), ha="center",
-                    fontsize=9.5, color=C["V"], fontweight="bold")
-
-    # steam route, drawn on the same axis using an offset baseline label
-    xs2 = [0, 1.0]
-    ys2 = [0.0, b3["W-PRC"]["dE"]]
-    ax.plot([0, 1, 2.0], [0.0, b3["W-PRC"]["dE"], b3["W-P"]["dE"]], "-s",
-            color=C["W"], lw=2.2, ms=7, zorder=3)
-    ax.annotate("%+.1f" % b3["W-PRC"]["dE"], (1, b3["W-PRC"]["dE"]),
-                textcoords="offset points", xytext=(0, -17), ha="center",
-                fontsize=9.5, color=C["W"], fontweight="bold")
-    ax.annotate("%+.1f" % b3["W-P"]["dE"], (2.0, b3["W-P"]["dE"]),
-                textcoords="offset points", xytext=(0, 11), ha="center",
-                fontsize=9.5, color=C["W"], fontweight="bold")
-
-    ax.axhline(0, color="#999999", lw=1.0)
-    ax.set_xticks(xs)
-    ax.set_xticklabels(labs, fontsize=9)
-    ax.set_ylabel("Relative electronic energy, $\\Delta E$ (kJ mol$^{-1}$)")
-    ax.set_title("Stationary points at B3LYP-D3(BJ)/def2-TZVP, relative to the "
-                 "separated reactants", fontsize=10.5)
-    ax.grid(axis="y", alpha=0.28, lw=0.7)
-    ax.set_axisbelow(True)
-
-    handles = [plt.Line2D([], [], color=C["V"], lw=2.2, marker="o",
-                          label="Vanadic acid route (H$_3$VO$_4$)"),
-               plt.Line2D([], [], color=C["W"], lw=2.2, marker="s",
-                          label="Steam route (H$_2$O)"),
-               plt.Line2D([], [], color="#555555", lw=1.6, ls="--", marker="o",
-                          mfc="white", label="Not accepted: geometry failed the "
-                                             "stationary-point tests")]
-    ax.legend(handles=handles, loc="upper left", fontsize=9, framealpha=0.95)
-    ax.text(0.02, 0.03, "V-P and W-P use different reference zeros; the two routes "
-                        "are not on a common scale.",
-            transform=ax.transAxes, fontsize=8.2, style="italic", color="#555555")
-    fig.tight_layout()
-    save(fig, "fig4_2_energy_profile.png")
-
-
-def figure_adsorption():
-    b3, pbe = R["levels"]["B3LYP"], R["levels"]["PBE0"]
-    t1 = R["tier1_reference"]["accepted"]
-    fig, axes = plt.subplots(1, 2, figsize=(9.4, 3.9))
-
-    # panel a: three levels of theory
-    ax = axes[0]
-    labels = ["GFN2-xTB\n(Tier 1)", "B3LYP-D3(BJ)\n(Tier 2)", "PBE0-D3(BJ)\n(single point)"]
-    v = [t1["V-PRC"], b3["V-PRC"]["dE"], pbe["V-PRC"]["dE"]]
-    w = [t1["W-PRC"], b3["W-PRC"]["dE"], pbe["W-PRC"]["dE"]]
-    x = np.arange(3)
-    ax.bar(x - 0.19, v, 0.38, color=C["V"], label="H$_3$VO$_4$")
-    ax.bar(x + 0.19, w, 0.38, color=C["W"], label="H$_2$O")
-    for xi, vv in zip(x - 0.19, v):
-        ax.text(xi, vv - 8, "%0.1f" % vv, ha="center", fontsize=9, color="white",
-                fontweight="bold")
-    for xi, ww in zip(x + 0.19, w):
-        ax.text(xi, ww - 8, "%0.1f" % ww, ha="center", fontsize=9, color="white",
-                fontweight="bold")
-    ax.set_xticks(x)
-    ax.set_xticklabels(labels, fontsize=8.8)
-    ax.set_ylabel("Adsorption energy, $\\Delta E$ (kJ mol$^{-1}$)")
-    ax.set_title("(a) Adsorption at three levels of theory", fontsize=10.5)
-    ax.legend(fontsize=9)
-    ax.grid(axis="y", alpha=0.28, lw=0.7)
-    ax.set_axisbelow(True)
-
-    # panel b: the margin between the two adsorbates
-    ax = axes[1]
-    marg = [t1["V-PRC"] - t1["W-PRC"],
-            b3["V-PRC"]["dE"] - b3["W-PRC"]["dE"],
-            pbe["V-PRC"]["dE"] - pbe["W-PRC"]["dE"]]
-    bars = ax.bar(x, marg, 0.45, color=["#B0B0B0", C["V"], "#7A9E7A"])
-    for xi, m in zip(x, marg):
-        ax.text(xi, m - 6, "%0.1f" % m, ha="center", fontsize=9.5, color="white",
-                fontweight="bold")
-    kt = 8.314 * 1003.15 / 1000.0
-    ax.axhline(-kt, color=C["warn"], ls=":", lw=1.4)
-    ax.text(2.42, -kt + 3, "$k_BT$ at 1003 K = %.1f kJ mol$^{-1}$" % kt,
-            fontsize=8.4, color=C["warn"], ha="right")
-    ax.set_xticks(x)
-    ax.set_xticklabels(labels, fontsize=8.8)
-    ax.set_ylabel("$\\Delta\\Delta E$ (H$_3$VO$_4$ minus H$_2$O), kJ mol$^{-1}$")
-    ax.set_title("(b) How much stronger does vanadic acid bind?", fontsize=10.5)
-    ax.grid(axis="y", alpha=0.28, lw=0.7)
-    ax.set_axisbelow(True)
-    fig.tight_layout()
-    save(fig, "fig4_3_adsorption.png")
-
-
-def figure_gibbs():
-    b3 = R["levels"]["B3LYP"]
-    labels = ["V-PRC", "V-I1", "W-PRC", "W-P"]
-    g298 = [b3[k]["dG_298.15"] for k in labels]
-    g1003 = [b3[k]["dG_1003.15"] for k in labels]
-    x = np.arange(len(labels))
-    fig, ax = plt.subplots(figsize=(8.4, 4.1))
-    ax.bar(x - 0.19, g298, 0.38, color=C["W2"], label="298.15 K (25 $^\\circ$C)")
-    ax.bar(x + 0.19, g1003, 0.38, color=C["V2"], label="1003.15 K (730 $^\\circ$C)")
-    for xi, a in zip(x - 0.19, g298):
-        ax.text(xi, a + (5 if a > 0 else -12), "%+.1f" % a, ha="center",
-                fontsize=9, fontweight="bold", color=C["W"])
-    for xi, a in zip(x + 0.19, g1003):
-        ax.text(xi, a + 5, "%+.1f" % a, ha="center", fontsize=9,
-                fontweight="bold", color=C["V"])
-    ax.axhline(0, color="#444444", lw=1.1)
-    ax.set_xticks(x)
-    ax.set_xticklabels(labels)
-    ax.set_ylabel("Gibbs free energy relative to separated\\nreactants, "
-                  "$\\Delta G$ (kJ mol$^{-1}$)")
-    ax.set_title("Thermochemistry of the accepted minima at "
-                 "B3LYP-D3(BJ)/def2-TZVP", fontsize=10.5)
-    ax.legend(fontsize=9)
-    ax.grid(axis="y", alpha=0.28, lw=0.7)
-    ax.set_axisbelow(True)
-    fig.tight_layout()
-    save(fig, "fig4_4_gibbs.png")
-
-
-def figure_imag():
-    im = R["levels"]["B3LYP"]["V-TS2"]["imag"]
-    fig, ax = plt.subplots(figsize=(8.4, 3.4))
-    y = np.arange(len(im))
-    ax.barh(y, im, color=[C["bad"] if abs(v) > 50 else C["warn"] for v in im])
-    ax.set_yticks(y)
-    ax.set_yticklabels(["%d" % (i + 7) for i in range(len(im))], fontsize=8)
-    ax.set_xlabel("Imaginary frequency (cm$^{-1}$)")
-    ax.set_ylabel("Vibrational mode number")
-    ax.set_title("V-TS2 carries %d imaginary modes; a true first-order saddle "
-                 "carries exactly one" % len(im), fontsize=10.5)
-    ax.grid(axis="x", alpha=0.28, lw=0.7)
-    ax.set_axisbelow(True)
-    fig.tight_layout()
-    save(fig, "fig4_5_imaginary.png")
-
-
-def figure_competition():
-    """Langmuir two-site competition between steam and vanadic acid."""
-    b3 = R["levels"]["B3LYP"]
-    ddE = b3["V-PRC"]["dE"] - b3["W-PRC"]["dE"]          # kJ/mol, negative
-    Rg = 8.314e-3                                         # kJ/mol/K
-    T = np.array([1003.15])
-    K = np.exp(-ddE / (Rg * T))[0]                        # > 1, favours H3VO4
-    pW = 0.20 * 2.0                                       # atm, 20% steam at 2 atm
-    ppm = np.logspace(-3, 3, 400)                         # ppm(v) H3VO4
-    pV = ppm * 1e-6 * 2.0
-    theta = K * pV / (pW + K * pV)                        # fraction of sites
-    fig, ax = plt.subplots(figsize=(8.4, 4.0))
-    ax.semilogx(ppm, theta * 100, color=C["V"], lw=2.2)
-    for xv, lab, col in ((1.7, "Trujillo et al. (1997)\n1.7 ppm", "#444444"),
-                         (10.0, "Wormsbecher et al. (1986)\n1-10 ppm", C["W"])):
-        ax.axvline(xv, color=col, ls="--", lw=1.3)
-        ax.annotate(lab, (xv, 0.55), fontsize=8.6, color=col,
-                    rotation=90, va="bottom", ha="right")
-    ax.annotate("at 10 ppm: %.3f%% of sites" % (np.interp(10, ppm, theta * 100)),
-                (10, np.interp(10, ppm, theta * 100)),
-                textcoords="offset points", xytext=(-140, 40), fontsize=9.5,
-                color=C["V"], fontweight="bold",
-                arrowprops=dict(arrowstyle="->", color=C["V"], lw=1.2))
-    ax.set_xlabel("Vanadic acid in the regenerator gas (ppm by volume)")
-    ax.set_ylabel("Brønsted sites held by H$_3$VO$_4$ (%)")
-    ax.set_title("Two-site Langmuir competition at 1003 K, 20 vol%% steam, 2 atm\n"
-                 "(binding-constant ratio $K_V/K_W$ = %.1f from this work)" % K,
-                 fontsize=10)
-    ax.grid(alpha=0.28, lw=0.7)
-    ax.set_ylim(0, 1.0)
-    ax.set_axisbelow(True)
-    fig.tight_layout()
-    save(fig, "fig4_6_competition.png")
-
-
-def figure_method_gap():
-    t1 = R["tier1_reference"]["accepted"]
-    b3 = R["levels"]["B3LYP"]
-    fig, ax = plt.subplots(figsize=(8.0, 3.6))
-    labels = ["GFN2-xTB\n(Tier 1)", "B3LYP-D3(BJ)\n(Tier 2)"]
-    vals = [t1["V-PRC"] - t1["W-PRC"], b3["V-PRC"]["dE"] - b3["W-PRC"]["dE"]]
-    bars = ax.bar(labels, vals, 0.42, color=["#B0B0B0", C["V"]])
-    for b, v in zip(bars, vals):
-        ax.text(b.get_x() + b.get_width() / 2, v - 4, "%.1f" % v, ha="center",
-                fontsize=11, color="white", fontweight="bold")
-    ax.set_ylabel("$\\Delta\\Delta E$ (H$_3$VO$_4$ minus H$_2$O), kJ mol$^{-1}$")
-    ax.set_title("The semi-empirical screen exaggerates the gap between the two "
-                 "adsorbates by about nine times", fontsize=10)
-    ax.grid(axis="y", alpha=0.28, lw=0.7)
-    ax.set_axisbelow(True)
-    fig.tight_layout()
-    save(fig, "fig4_7_method_gap.png")
-
-
 if __name__ == "__main__":
     print("building figures")
     figure_models()
     figure_dispute()
     figure_workflow()
-    figure_energy_profile()
-    figure_adsorption()
-    figure_gibbs()
-    figure_imag()
-    figure_competition()
-    figure_method_gap()

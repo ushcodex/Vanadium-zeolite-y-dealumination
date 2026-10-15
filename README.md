@@ -1,93 +1,52 @@
-# Vanadium-zeolite-y-dealumination
+# Vanadium and Zeolite Y
 
-> **A Comparative Density Functional Theory Study of Vanadic Acid and Steam
-> Adsorption on the Brønsted Acid Site of Zeolite Y: Evidence for the Mechanism
-> of Vanadium-Promoted Dealumination in Residue Fluid Catalytic Cracking**
+> **Density Functional Theory Evaluation of Vanadic Acid Zeolite Y Dealumination in Residue Fluid Catalytic Cracking Regenerator**
 
 **Author:** Ahmad Usman Shehu (U19CE1068)
-**Affiliation:** Department of Chemical Engineering, Faculty of Engineering,
-Ahmadu Bello University, Zaria, Kaduna State, Nigeria
 
-**New here? Read `GUIDE.md` first.** It says which file to open in which program
-and what to export. The thesis is `deliverables/thesis_ABU.docx`, built from the
-chapters in `writing/thesis_src/`. Earlier drafts are in `writing/_superseded/`
-and must not be submitted; the reason is in `writing/_superseded/README.md`.
+**Department:** Chemical Engineering, Ahmadu Bello University, Zaria
 
----
+## Start here
 
-## Overview
+- **Thesis:** `deliverables/thesis_ABU.docx` (the compatibility copy is `deliverables/Ahmad_Usman_Shehu_U19CE1068_Thesis.docx`). Both are generated from the same source and contain the same document.
+- **Editable thesis source:** `writing/markdown/00_prelims.md` and `writing/markdown/01_chapter1.md` through `06_references.md`.
+- **Build and formatting guide:** `GUIDE.md`.
 
-This repository contains the computational chemistry calculations, structural
-models, analysis scripts and thesis chapters for a study of the elementary
-mechanism by which zeolite Y (faujasite) is destroyed in a residue fluid
-catalytic cracking regenerator. The study compares the adsorption of volatile
-vanadic acid (H3VO4) on the zeolite Bronsted acid site against the adsorption of
-steam (H2O) on the same site, using semi-empirical (GFN2-xTB) and
-dispersion-corrected hybrid density functional theory (DFT).
+## Study summary
 
-The principal finding is that vanadic acid binds to the acid site more strongly
-than water by about 14.5 kJ/mol, a margin that two density functionals reproduce
-to within 0.25 kJ/mol. The extraction of framework aluminium was not established
-at the density functional level and is reported as such.
+The project compared vanadic acid and water adsorption at a local model of a Zeolite Y Brønsted acid site. B3LYP-D3(BJ)/def2-TZVP gave electronic adsorption energies of −93.0 kJ mol⁻¹ for vanadic acid and −78.3 kJ mol⁻¹ for water. PBE0 single-point calculations gave −93.1 and −78.6 kJ mol⁻¹, respectively. These are uncorrected electronic energies; the harmonic gas-phase calculations did not support a reliable site-occupancy estimate at regenerator temperature.
 
----
+The proposed density-functional transition state for framework Al–O cleavage had fourteen imaginary frequencies. The study therefore reports no validated activation barrier and does not claim to establish the full dealumination mechanism.
 
 ## Repository layout
 
 ```
-deliverables/          the thesis document
-figures/               original figures, plus figures taken from the literature
-writing/thesis_src/    the chapters the thesis is built from
-writing/Sources/       source PDFs, their extracted text, images and captions
-writing/_superseded/   earlier drafts: do not submit
-simulation/            the calculations
-GUIDE.md               which file to open in which program
+deliverables/          generated thesis documents
+writing/markdown/      active chapter and front-matter sources
+writing/Sources/       source papers and extracted text
+figures/               figures used by the thesis
+simulation/             ORCA inputs, outputs, geometries and audit registers
+tools/                  document, figure and results builders
+GUIDE.md                how to edit, build and check the thesis
 ```
 
----
+## Rebuild the thesis
 
-
-## Key Reaction Pathways
-
-1. **Vanadic Acid Attack Pathway:**
-   - Adsorption complex ($\text{V-PRC}$) & Reactant state ($\text{V-R}$)
-   - First $\text{Al}-\text{O}$ bond cleavage transition state ($\text{V-TS1}$) & intermediate ($\text{V-I1}$)
-   - Second $\text{Al}-\text{O}$ bond cleavage transition state ($\text{V-TS2}$) & intermediate ($\text{V-I2}$)
-   - Third $\text{Al}-\text{O}$ bond cleavage transition state ($\text{V-TS3}$) leading to framework dealuminated product ($\text{V-P}$)
-2. **Steam Hydrolysis Baseline:**
-   - Comparison with water-mediated hydrolytic bond cleavage ($\text{W-PRC} \rightarrow \text{W-TS} \rightarrow \text{W-P}$)
-
----
-
-## Simulation Verification
-
-To verify the convergence, imaginary frequency mode count, and electronic energies across all Tier 1 stationary points and transition state candidates, run:
+Install the document dependencies, then run:
 
 ```bash
-python simulation/verify_tier1.py simulation/02_tier1
+python3 -m pip install python-docx Pillow
+python3 build_thesis_abu.py
 ```
 
-For supermolecular distance and fragment separation auditing:
-```bash
-python simulation/verify_tier1.py simulation/02_tier1 --dist
-```
+The script writes both thesis filenames in `deliverables/`. It applies A4 paper, Times New Roman 12 pt, double-spaced body text, 3.5 cm left and 2.5 cm remaining margins, left-aligned `x.0 TITLE` chapter headings, and unindented body paragraphs. The table of contents and figure/table lists use Word fields. In Microsoft Word, update all fields before printing by selecting the document with **Ctrl+A** and pressing **F9**.
 
----
-
-## Reproducing the results
+The figure script requires `matplotlib` and `numpy`; it regenerates author-produced structure, workflow, and background illustrations from the ORCA geometries and project sources:
 
 ```bash
-python3 simulation/analysis/parse_orca.py     # read every ORCA log into a register
-python3 simulation/analysis/build_tables.py   # rebuild the result tables
-python3 figures/make_figures.py               # redraw the original figures
-python3 build_thesis_abu.py                   # rebuild the thesis document
+python3 -m pip install matplotlib numpy
+python3 tools/make_figures.py
+python3 build_thesis_abu.py
 ```
 
-Every number in the thesis traces back to a log file named in
-`simulation/analysis/RESULTS.md`.
-
-## Citation
-
-This work forms part of a B.Eng. research project submitted to the Department of
-Chemical Engineering, Ahmadu Bello University, Zaria. Please reference the
-repository and the author when citing the models or the dataset.
+The ORCA output files and calculation registers are retained under `simulation/`. The thesis does not treat unconverged structures as validated results.
