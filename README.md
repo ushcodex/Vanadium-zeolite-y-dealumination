@@ -9,14 +9,14 @@
 ## Start here
 
 - **Thesis:** `deliverables/thesis_ABU.docx` (the compatibility copy is `deliverables/Ahmad_Usman_Shehu_U19CE1068_Thesis.docx`). Both are generated from the same source and contain the same document.
-- **Editable thesis source:** `writing/markdown/00_prelims.md` and `writing/markdown/01_chapter1.md` through `06_references.md`.
+- **Editable thesis source:** `writing/markdown/00_prelims.md`, `writing/markdown/01_chapter1.md`–`05_chapter5.md`, `writing/markdown/06_references.md`, and `writing/markdown/07_appendices.md`.
 - **Build and formatting guide:** `GUIDE.md`.
 
 ## Study summary
 
-The project compared vanadic acid and water adsorption at a local model of a Zeolite Y Brønsted acid site. B3LYP-D3(BJ)/def2-TZVP gave electronic adsorption energies of −93.01 kJ mol⁻¹ for vanadic acid and −78.32 kJ mol⁻¹ for water; the PBE0 single-point comparison gave a similar relative preference. Harmonic Gibbs energies reversed that ordering. A formal single-site estimate using reported regenerator partial pressures favoured water occupation by about 5.7 × 10⁷ to 5.7 × 10⁸, but the ideal-gas harmonic model was not a definitive prediction of occupancy in a zeolite pore.
+The project compared vanadic acid and water adsorption at a local model of a Zeolite Y Brønsted acid site. B3LYP-D3(BJ)/def2-TZVP gave electronic adsorption energies of −93.01 kJ mol⁻¹ for vanadic acid and −78.32 kJ mol⁻¹ for water; the PBE0 single-point comparison gave a similar relative preference. Harmonic Gibbs energies favoured water at 298.15 K and 1003.15 K. A conditional single-site estimate using reported regenerator partial pressures gave a water-to-vanadic-acid occupation ratio of about 5.7 × 10⁷ to 5.7 × 10⁸.
 
-GFN2-xTB produced an accepted screening-level candidate for one Al–O cleavage step, with a barrier of 160.70 kJ mol⁻¹ above V-I1. The DFT refinement had fourteen imaginary frequencies, so no validated DFT activation barrier was obtained and the full dealumination mechanism was not established.
+GFN2-xTB produced a screening-level candidate for the first Al–O cleavage step, with a barrier of 160.70 kJ mol⁻¹ above V-I1. Appendix A records the DFT frequency and water-path displacement assessments; Appendix B gives the numerical substitutions for the reported energies and site fractions.
 
 ## Repository layout
 
@@ -49,4 +49,4 @@ python3 tools/make_figures.py
 python3 build_thesis_abu.py
 ```
 
-The ORCA output files and calculation registers are retained under `simulation/`. The thesis does not treat unconverged structures as validated results.
+The ORCA output files and calculation registers are retained under `simulation/`; Appendix A summarises the selected job outcomes.
