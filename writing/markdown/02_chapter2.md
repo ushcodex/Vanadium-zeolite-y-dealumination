@@ -23,7 +23,7 @@ Vanadium in a regenerated catalyst is commonly associated with oxidised species,
 V₂O₅(s) + 3 H₂O(g) ⇌ 2 H₃VO₄(g)
 (2.1)
 
-Equation (2.1) represents the gas-phase vanadic-acid source in the proposed route. Wormsbecher et al. (1986) discussed regenerator conditions near 730 °C, with about 20% steam at a total pressure of 2 atm, and estimated vanadic-acid concentrations in the low-parts-per-million range. Trujillo et al. (1997) considered the same high-steam environment and calculated an H₃VO₄ partial pressure of about 3.37 × 10⁻⁶ atm, corresponding to approximately 1.7 ppm at 2 atm. Appendix B.1 shows the pressure conversion used for the reported gas composition.
+Equation (2.1) represents the gas-phase vanadic-acid source in the proposed route. Wormsbecher et al. (1986) discussed regenerator conditions near 730 °C, with about 20% steam at a total pressure of 2 atm, and estimated vanadic-acid concentrations in the low-parts-per-million range. Trujillo et al. (1997) considered the same high-steam environment and calculated an H₃VO₄ partial pressure of about 3.37 × 10⁻⁶ atm, corresponding to approximately 1.7 ppm at 2 atm. Table B.1 shows the pressure conversion used for the reported gas composition.
 
 Occelli (1991) reviewed interactions of vanadium species with cracking catalysts and described changes in vanadium speciation during steaming and hydrolysis. Trujillo et al. (1997) proposed that vanadium could reach acid sites and form vanadic acid in the presence of water. Their local-enrichment proposal provides a pore-scale context for the acid-site comparison in this study.
 

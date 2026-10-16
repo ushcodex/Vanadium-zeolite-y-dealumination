@@ -4,7 +4,7 @@ DENSITY FUNCTIONAL THEORY EVALUATION OF VANADIC ACID ZEOLITE Y DEALUMINATION IN 
 
 BY
 
-Ahmad Usman Shehu
+Usman Shehu AHMAD
 U19CE1068
 
 A RESEARCH PROJECT SUBMITTED TO THE DEPARTMENT OF CHEMICAL ENGINEERING,
@@ -20,7 +20,7 @@ NOVEMBER, 2026
 I declare that this project, entitled “Density Functional Theory Evaluation of Vanadic Acid Zeolite Y Dealumination in Residue Fluid Catalytic Cracking Regenerator,” was carried out by me in the Department of Chemical Engineering, Ahmadu Bello University, Zaria. Sources used in the work have been acknowledged in the text and listed in the references. This project has not been submitted, in whole or in part, for another degree or diploma at this or any other institution.
 
 _______________________________
-Ahmad Usman Shehu
+Usman Shehu AHMAD
 (Student)
 
 _______________________________
@@ -28,16 +28,17 @@ Date
 
 # CERTIFICATION
 
-This project, entitled “Density Functional Theory Evaluation of Vanadic Acid Zeolite Y Dealumination in Residue Fluid Catalytic Cracking Regenerator,” was carried out by Ahmad Usman Shehu (U19CE1068). It is submitted to the Department of Chemical Engineering, Ahmadu Bello University, Zaria, in partial fulfilment of the requirements for the award of the degree of Bachelor of Engineering in Chemical Engineering.
+This project, entitled “Density Functional Theory Evaluation of Vanadic Acid Zeolite Y Dealumination in Residue Fluid Catalytic Cracking Regenerator,” was carried out by Usman Shehu AHMAD (U19CE1068). It is submitted to the Department of Chemical Engineering, Ahmadu Bello University, Zaria, in partial fulfilment of the requirements for the award of the degree of Bachelor of Engineering in Chemical Engineering.
 
 _______________________________
-Project Supervisor                         Date
+Prof. A. Y. Atta
+Project Supervisor
+Date: ______________________
 
 _______________________________
-Head of Department                         Date
-
-_______________________________
-External Examiner                          Date
+Prof. Sabiu Bilal
+Head of Department
+Date: ______________________
 
 # DEDICATION
 
@@ -45,9 +46,15 @@ This work is dedicated to my parents for their support throughout my education.
 
 # ACKNOWLEDGEMENTS
 
-I thank my project supervisor for guidance and for the detailed comments that improved this work. I also thank the Head of Department and the academic and technical staff of the Department of Chemical Engineering, Ahmadu Bello University, Zaria, for their support during my studies.
+First and foremost, *Alhamdulillahillahi Rabbil Alameen*. I am grateful to Allah for the strength, patience, and guidance that enabled me to complete this project.
 
-I am grateful to my family and colleagues for their encouragement. I acknowledge the researchers whose published work informed this project and provided the scientific background for the study.
+My sincere gratitude goes to my supervisor, Prof. A. Y. Atta, for guiding and encouraging me to pursue my interest in catalysis and computational work. His support for my participation in training programmes and conferences helped me develop the skills needed for this research, and his high standards taught me to aim beyond mediocrity.
+
+I thank my parents for their financial and moral support and for serving as enduring role models. Their encouragement, advice, and readiness to help made them trusted resource persons throughout my studies.
+
+I acknowledge the ORCA development team and the developers and maintainers of Python, Avogadro, and NumPy, whose tools made the computational work possible. I am grateful to Microsoft Azure for the USD 100 cloud credit that supported the Tier 2 calculations, and to the management of Ahmadu Bello University for providing student email access. I also thank Mahmud Sani Madobi, Ahmad Yahaya, and Muhammad Mukhtar Bardi for encouraging me to access high-level computational resources.
+
+Finally, I thank Aliyu, Mahmud, Muhammad, Halima, Ibrahim, Aisha, Qanit, Rayyan, Arfat, Usman Adnan, and Ibrahim Umar for their financial, moral, and emotional support throughout my studies.
 
 # ABSTRACT
 

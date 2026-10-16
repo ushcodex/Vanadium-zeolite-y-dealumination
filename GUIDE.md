@@ -24,15 +24,15 @@ The builder applies A4 paper, Times New Roman 12 pt, double-spaced paragraphs, 3
 
 Before printing or exporting to PDF, update the Word fields: select the whole document with **Ctrl+A**, then press **F9**. This refreshes the table of contents, page numbers, and figure/table lists. Check the final pagination after updating fields.
 
-If a figure changes, rebuild the figures before the document:
+The Chapter Four Gibbs-energy and site-fraction plots are generated independently so the existing figures remain unchanged:
 
 ```bash
 python3 -m pip install matplotlib numpy
-python3 tools/make_figures.py
+python3 tools/make_chapter4_plots.py
 python3 build_thesis_abu.py
 ```
 
-The figure script recreates the author-produced workflow, background, and molecular-structure illustrations. It reads the ORCA geometries under `simulation/03_tier2_completion/results/geom/`; the reported values remain traceable to the calculation logs and result registers under `simulation/`.
+The separate `tools/make_figures.py` script recreates the author-produced workflow, background, and molecular-structure illustrations from the ORCA geometries under `simulation/03_tier2_completion/results/geom/`. Run it only when one of those existing illustrations needs regeneration. The reported values remain traceable to the calculation logs and result registers under `simulation/`.
 
 ## 3. Chapters and structure
 
@@ -50,13 +50,13 @@ Chapter-level headings include a centered label (`CHAPTER ONE`, `CHAPTER TWO`, a
 
 ## 4. Figures and tables
 
-Figure captions and table captions are written in the chapter Markdown using `[FIG: ...]` and `[TBL: ...]` directives. The builder uses these captions to create the document's lists and page references. Chapter Four presents geometries, adsorption energies, pathway assessment, harmonic Gibbs energies, and the competitive-site estimate in tables. Appendix A contains the calculation register; Appendix B contains worked numerical substitutions. The site-occupation result uses ideal-gas harmonic thermochemistry and a single-site model.
+Figure captions and table captions are written in the chapter Markdown using `[FIG: ...]` and `[TBL: ...]` directives. The builder uses these captions to create the document's lists and page references. Chapter Four uses tables for exact geometries, electronic energies, and pathway status, and trend plots for temperature-dependent Gibbs energies and conditional site fractions. Appendix A places the numerical input/source register before the calculation-status register; Appendix B gives one general equation per calculation type followed by sourced numerical substitutions. The site-occupation result uses ideal-gas harmonic thermochemistry and a conditional single-site model.
 
 Figures generated from the ORCA coordinates are under `figures/`. Literature figures are under `figures/from_sources/`; their source is stated in each caption. Source papers and extracted text are under `writing/Sources/`.
 
 ## 5. Calculation records
 
-The calculation inputs, output logs, geometries and registers are under `simulation/`. The ORCA logs provide the reported energies and vibrational frequencies. Appendix A summarises the selected job statuses and directs readers to the full calculation files.
+The calculation inputs, output logs, geometries and registers are under `simulation/`. The ORCA logs provide the reported energies and vibrational frequencies. Appendix A begins with source-traceable numerical inputs and follows with DFT, counterpoise, and Tier 1 status evidence; the full calculation files remain under `simulation/`.
 
 For the calculation summary and formal site-occupation estimate, see `simulation/analysis/RESULTS.md` and `writing/markdown/_results_table.txt`. After changing calculation logs or registers, refresh the machine-readable results and the audit summary with:
 
