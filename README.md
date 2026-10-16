@@ -39,7 +39,7 @@ python3 -m pip install python-docx Pillow
 python3 build_thesis_abu.py
 ```
 
-The script writes both thesis filenames in `deliverables/`. It applies A4 paper, Times New Roman 12 pt, double-spaced body text, 3.5 cm left and 2.5 cm remaining margins, left-aligned `x.0 TITLE` chapter headings, and unindented body paragraphs. The table of contents and figure/table lists use Word fields. In Microsoft Word, update all fields before printing by selecting the document with **Ctrl+A** and pressing **F9**.
+The script writes both thesis filenames in `deliverables/`. It applies A4 paper, Times New Roman 12 pt, double-spaced body text, 3.5 cm left and 2.5 cm remaining margins, centered `CHAPTER ONE` labels above left-aligned `x.0 TITLE` chapter headings, and unindented body paragraphs. The title page is unnumbered, preliminary pages use lower-case Roman numerals, and the main text starts at `01`. The table of contents and figure/table lists use updateable Word fields. In Microsoft Word, refresh all fields before printing by selecting the document with **Ctrl+A** and pressing **F9**.
 
 The figure script requires `matplotlib` and `numpy`; it regenerates author-produced structure, workflow, and background illustrations from the ORCA geometries and project sources:
 

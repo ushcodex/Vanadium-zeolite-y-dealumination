@@ -29,7 +29,7 @@ Occelli (1991) reviewed interactions of vanadium species with cracking catalysts
 
 ## 2.4 Proposed Explanations for Vanadium-Related Damage
 
-Three explanations are central to vanadium-related damage. The vanadic-acid route assigns H₃VO₄ a direct role in framework hydrolysis. The steam-dominated route assigns the principal attack to water and a catalytic or secondary role to vanadium. The sodium-mediated route proposes that vanadium mobilises sodium, after which sodium hydroxide attacks the framework. Table 2.1 compares the mechanisms and their supporting studies; Figure 2.3 shows their proposed sequence alongside the adsorption comparison examined here.
+Three explanations are central to vanadium-related damage. The vanadic-acid route assigns H₃VO₄ a direct role in framework hydrolysis. The steam-dominated route assigns the principal attack to water and a catalytic or secondary role to vanadium. The sodium-mediated route proposes that vanadium mobilises sodium, after which sodium hydroxide attacks the framework. Table 2.1 summarises these proposed mechanisms and the studies supporting them.
 
 [TBL: Table 2.1: Proposed explanations for vanadium-related damage to Zeolite Y | Proposed mechanism;Proposed role of vanadium;Evidence discussed in the literature | Vanadic-acid route;H₃VO₄ directly promotes framework hydrolysis;Vanadium species in steamed catalysts and proposed acid-site chemistry, Wormsbecher et al. (1986) and Trujillo et al. (1997) | Steam-dominated route;Steam hydrolyses the framework and vanadium is secondary or catalytic;Similar apparent activation energies for vanadium-loaded and control catalysts, and damage to silicalite, Pine (1990) | Sodium-mediated route;Vanadium helps mobilise sodium and steam enables NaOH attack;Dependence of destruction on sodium availability and experiments with sodium vanadate, Xu et al. (2002)]
 
@@ -37,15 +37,11 @@ Pine (1990) reported similar apparent activation energies for destruction of ult
 
 Xu et al. (2002) proposed that vanadium and sodium act together. In their mechanism, vanadium-containing species mobilise sodium, and steam enables sodium hydroxide formation and framework attack. This pathway makes sodium availability a relevant variable alongside the vanadic-acid and steam routes in Table 2.1.
 
-[FIG: fig2_1_dispute.png | Figure 2.3: Proposed explanations for vanadium-related damage to Zeolite Y and the adsorption comparison examined in this study | Source: author, based on Malola et al. (2012), Silaghi et al. (2016), Wormsbecher et al. (1986), Trujillo et al. (1997), Pine (1990), and Xu et al. (2002)]
-
-Steam, vanadium speciation, sodium content, and conditions within the catalyst can contribute together to framework damage. The adsorption comparison addresses the molecular interaction component of the mechanisms illustrated in Figure 2.3, while the reaction-path calculations assess the first model Al–O cleavage step. The combined view connects molecular adsorption to the wider catalyst environment.
-
 ## 2.5 Evidence of Damage and Mitigation
 
-Etim et al. (2016) examined vanadium-contaminated ultra-stable Y zeolite after steaming and reported changes in the framework and micropore structure. Figure 2.4 presents transmission electron micrographs from their study. These structural observations establish damage under the combined treatment and motivate molecular studies of the elementary steps.
+Etim et al. (2016) examined vanadium-contaminated ultra-stable Y zeolite after steaming and reported changes in the framework and micropore structure. Figure 2.3 presents transmission electron micrographs from their study. These structural observations establish damage under the combined treatment and motivate molecular studies of the elementary steps.
 
-[FIG: from_sources/etim2016_fig8_tem.png | Figure 2.4: Transmission electron micrographs of ultra-stable Y zeolite before and after vanadium contamination and steaming | Source: Etim, Xu, Ullah and Yan (2016), Figure 8]
+[FIG: from_sources/etim2016_fig8_tem.png | Figure 2.3: Transmission electron micrographs of ultra-stable Y zeolite before and after vanadium contamination and steaming | Source: Etim, Xu, Ullah and Yan (2016), Figure 8]
 
 Wormsbecher et al. (1986) reported catalyst protection by basic oxides under their test conditions. Etim et al. (2018) evaluated a magnesium–yttrium oxide trap and linked vanadium capture to formation of immobile yttrium vanadate. These studies demonstrate the practical importance of vanadium control and connect molecular speciation with catalyst performance.
 
@@ -53,4 +49,4 @@ Wormsbecher et al. (1986) reported catalyst protection by basic oxides under the
 
 Periodic DFT studies have calculated water-driven dealumination pathways in zeolites (Malola et al., 2012; Silaghi et al., 2016). Tielens and Dzwigaj (2010) studied acid-base sites in vanadium redox zeolites, focusing on vanadium incorporated within the framework. The present comparison complements these studies by evaluating an external vanadic-acid molecule and water at the same Zeolite Y Brønsted acid site.
 
-Together, the literature describes steam-assisted hydrolysis, vanadium–zeolite interactions, and sodium-mediated damage as relevant parts of RFCC catalyst chemistry. Table 2.1 and Figure 2.3 organise these mechanisms for comparison with the adsorption, pathway, and thermochemical results in Chapter Four. The comparison distinguishes adsorbate preference from the broader explanations of catalyst damage.
+Together, these studies describe steam-assisted hydrolysis, vanadium–zeolite interactions, and sodium-mediated damage as relevant parts of RFCC catalyst chemistry. These mechanisms provide context for the adsorption, pathway, and thermochemical comparisons in Chapter Four.

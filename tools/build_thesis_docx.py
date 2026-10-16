@@ -2,9 +2,10 @@
 """Build the ABU undergraduate thesis from writing/markdown/*.md.
 
 The builder applies the supplied department format and the supervisor's specific
-heading correction: chapter headings use a left-aligned ``x.0 TITLE`` format.
-It also creates a dynamic table of contents and figure/table lists with page
-reference fields. Update Word fields before printing (Ctrl+A, then F9).
+heading correction: chapter headings retain a left-aligned ``x.0 TITLE`` line
+beneath a centered ``CHAPTER ONE`` label. It creates separately numbered
+preliminary and main-text sections, plus dynamic contents and caption lists.
+Update Word fields before printing (Ctrl+A, then F9).
 
 Run from any directory with:
     python3 tools/build_thesis_docx.py
@@ -24,9 +25,9 @@ from typing import Iterable
 
 from docx import Document
 from docx.enum.table import WD_TABLE_ALIGNMENT
+from docx.enum.section import WD_SECTION
 from docx.enum.text import (
     WD_ALIGN_PARAGRAPH,
-    WD_BREAK,
     WD_TAB_ALIGNMENT,
     WD_LINE_SPACING,
 )
@@ -66,6 +67,7 @@ FIGURE_RE = re.compile(r"^\[FIG:\s*([^|]+?)\s*\|\s*(.+?)\s*\]$")
 TABLE_RE = re.compile(r"^\[TBL:\s*(.+?)\s*\]$")
 TABLE_ROW_RE = re.compile(r"^\|([^|].*\|)+$")
 EQUATION_NUMBER_RE = re.compile(r"^\((?:\d+|[A-Z])\.\d+\)$")
+SCRIPT_RE = re.compile(r"([_^])\{([^{}]+)\}")
 
 SUBSCRIPT = {
     "₀": "0", "₁": "1", "₂": "2", "₃": "3", "₄": "4",
@@ -73,7 +75,7 @@ SUBSCRIPT = {
     "₊": "+", "₋": "-", "₌": "=", "₍": "(", "₎": ")",
     "ₐ": "a", "ₑ": "e", "ₕ": "h", "ₖ": "k", "ₗ": "l",
     "ₘ": "m", "ₙ": "n", "ₒ": "o", "ₚ": "p", "ₛ": "s",
-    "ₜ": "t", "ₓ": "x",
+    "ₜ": "t", "ₓ": "x", "ᵢ": "i", "ⱼ": "j",
 }
 SUPERSCRIPT = {
     "⁰": "0", "¹": "1", "²": "2", "³": "3", "⁴": "4",
@@ -178,14 +180,29 @@ def configure_document(doc):
     footer.alignment = WD_ALIGN_PARAGRAPH.CENTER
     footer.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
     footer.paragraph_format.space_after = Pt(0)
-    add_field(footer, "PAGE", placeholder="1")
+
+
+def set_section_page_numbering(section, number_format, start=1):
+    """Set the page-number format and restart value for a document section."""
+    sect_pr = section._sectPr
+    page_numbering = sect_pr.find(qn("w:pgNumType"))
+    if page_numbering is None:
+        page_numbering = OxmlElement("w:pgNumType")
+        children = list(sect_pr)
+        insert_at = next((i for i, child in enumerate(children)
+                          if child.tag in {qn("w:cols"), qn("w:titlePg"),
+                                           qn("w:docGrid")}), len(children))
+        sect_pr.insert(insert_at, page_numbering)
+    page_numbering.set(qn("w:fmt"), number_format)
+    page_numbering.set(qn("w:start"), str(start))
 
 
 def add_field(paragraph, instruction, *, placeholder=""):
-    """Insert a Word field with an updateable result."""
+    """Insert an updateable Word field and mark it dirty for recalculation."""
     run = paragraph.add_run()
     begin = OxmlElement("w:fldChar")
     begin.set(qn("w:fldCharType"), "begin")
+    begin.set(qn("w:dirty"), "true")
     run._r.append(begin)
 
     run = paragraph.add_run()
@@ -227,7 +244,9 @@ def inline_tokens(text):
 
 def render_inline(paragraph, text, *, size=BODY_SIZE, base_bold=False,
                   base_italic=False):
-    for chunk, bold, italic in inline_tokens(text):
+    def render_plain(chunk, bold, italic):
+        if not chunk:
+            return
         idx = 0
         plain = []
         mode = None
@@ -254,6 +273,18 @@ def render_inline(paragraph, text, *, size=BODY_SIZE, base_bold=False,
             plain.append(char)
             idx += 1
         flush()
+
+    for chunk, bold, italic in inline_tokens(text):
+        position = 0
+        for match in SCRIPT_RE.finditer(chunk):
+            render_plain(chunk[position:match.start()], bold, italic)
+            run = paragraph.add_run(match.group(2))
+            set_run_font(run, size=size, bold=base_bold or bold,
+                         italic=base_italic or italic,
+                         sub=match.group(1) == "_",
+                         sup=match.group(1) == "^")
+            position = match.end()
+        render_plain(chunk[position:], bold, italic)
     return paragraph
 
 
@@ -361,6 +392,25 @@ class ThesisBuilder:
         self.last_paragraph = None
         self.in_title = False
         self.title_lines = []
+        self.suppress_next_heading_page_break = False
+
+    def start_page_numbered_section(self, number_format, field_instruction):
+        section = self.doc.add_section(WD_SECTION.NEW_PAGE)
+        section.different_first_page_header_footer = False
+        section.header.is_linked_to_previous = False
+        section.footer.is_linked_to_previous = False
+        set_section_page_numbering(section, number_format, start=1)
+
+        footer = section.footer.paragraphs[0]
+        for run in list(footer.runs):
+            footer._p.remove(run._r)
+        footer.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        footer.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+        footer.paragraph_format.space_after = Pt(0)
+        footer.paragraph_format.first_line_indent = Cm(0)
+        add_field(footer, field_instruction)
+        self.suppress_next_heading_page_break = True
+        return section
 
     def add_paragraph(self, text="", *, style=None, alignment=None, after=12,
                       single=False, references=False, left_indent=0, hanging=0,
@@ -396,20 +446,46 @@ class ThesisBuilder:
             self.last_paragraph = p
 
     def add_heading(self, text, level):
-        paragraph = self.doc.add_paragraph(style=f"Heading {level}")
         if level == 1:
-            paragraph.paragraph_format.page_break_before = True
-            paragraph.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
-            render_inline(paragraph, text.upper(), size=BODY_SIZE, base_bold=True)
-        elif level == 2:
-            paragraph.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
-            render_inline(paragraph, text, size=BODY_SIZE, base_bold=True)
-        elif level == 3:
-            paragraph.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
-            render_inline(paragraph, text, size=BODY_SIZE)
+            chapter = re.match(r"^([1-5])\.0\b", text.strip())
+            if chapter:
+                chapter_names = {
+                    "1": "ONE", "2": "TWO", "3": "THREE",
+                    "4": "FOUR", "5": "FIVE",
+                }
+                label = self.doc.add_paragraph()
+                label.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                label.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+                label.paragraph_format.space_before = Pt(0)
+                label.paragraph_format.space_after = Pt(0)
+                label.paragraph_format.first_line_indent = Cm(0)
+                label.paragraph_format.page_break_before = not self.suppress_next_heading_page_break
+                label.paragraph_format.keep_with_next = True
+                label.paragraph_format.keep_together = True
+                render_inline(label, f"CHAPTER {chapter_names[chapter.group(1)]}",
+                              size=BODY_SIZE, base_bold=True)
+
+                paragraph = self.doc.add_paragraph(style="Heading 1")
+                paragraph.paragraph_format.page_break_before = False
+                paragraph.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+                paragraph.paragraph_format.space_before = Pt(0)
+                render_inline(paragraph, text.upper(), size=BODY_SIZE, base_bold=True)
+                self.suppress_next_heading_page_break = False
+            else:
+                paragraph = self.doc.add_paragraph(style="Heading 1")
+                paragraph.paragraph_format.page_break_before = not self.suppress_next_heading_page_break
+                paragraph.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+                render_inline(paragraph, text.upper(), size=BODY_SIZE, base_bold=True)
+                self.suppress_next_heading_page_break = False
         else:
+            paragraph = self.doc.add_paragraph(style=f"Heading {level}")
             paragraph.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
-            render_inline(paragraph, text, size=BODY_SIZE, base_italic=True)
+            if level == 2:
+                render_inline(paragraph, text, size=BODY_SIZE, base_bold=True)
+            elif level == 3:
+                render_inline(paragraph, text, size=BODY_SIZE)
+            else:
+                render_inline(paragraph, text, size=BODY_SIZE, base_italic=True)
         self.last_paragraph = paragraph
         return paragraph
 
@@ -484,16 +560,30 @@ class ThesisBuilder:
         self.last_paragraph = self.doc.paragraphs[-1]
 
     def add_equation_number(self, number):
-        if self.last_paragraph is not None:
-            self.last_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
-            self.last_paragraph.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
-            self.last_paragraph.paragraph_format.space_after = Pt(0)
-        p = self.doc.add_paragraph()
-        p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-        p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
-        p.paragraph_format.space_after = Pt(12)
-        render_inline(p, number, size=BODY_SIZE)
-        self.last_paragraph = p
+        if self.last_paragraph is None:
+            raise ValueError(f"Equation number {number} has no preceding equation")
+        paragraph = self.last_paragraph
+        paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        paragraph.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+        paragraph.paragraph_format.space_after = Pt(12)
+        paragraph.paragraph_format.left_indent = Cm(0)
+        paragraph.paragraph_format.right_indent = Cm(0)
+        paragraph.paragraph_format.first_line_indent = Cm(0)
+        paragraph.paragraph_format.keep_together = True
+        paragraph.paragraph_format.tab_stops.add_tab_stop(
+            Cm(TEXT_WIDTH_CM / 2), WD_TAB_ALIGNMENT.CENTER)
+        paragraph.paragraph_format.tab_stops.add_tab_stop(
+            Cm(TEXT_WIDTH_CM), WD_TAB_ALIGNMENT.RIGHT)
+
+        leading_tab = paragraph.add_run("\t")._r
+        paragraph._p.remove(leading_tab)
+        if paragraph._p.pPr is not None:
+            paragraph._p.pPr.addnext(leading_tab)
+        else:
+            paragraph._p.insert(0, leading_tab)
+        paragraph.add_run("\t")
+        render_inline(paragraph, number, size=BODY_SIZE)
+        self.last_paragraph = paragraph
 
     def render_line(self, path, line, lines, index):
         if not line:
@@ -519,7 +609,7 @@ class ThesisBuilder:
             self.render_table(caption, rows)
             return index
 
-        # Equations are stored on their own line followed by a right-aligned number.
+        # Equation numbers attach to the preceding display paragraph on the same line.
         if EQUATION_NUMBER_RE.fullmatch(line):
             self.add_equation_number(line)
             return index
@@ -582,6 +672,8 @@ class ThesisBuilder:
                 continue
             if line == "[/TITLEPAGE]":
                 self.render_title_if_needed()
+                if filename == "00_prelims.md":
+                    self.start_page_numbered_section("lowerRoman", r"PAGE \* roman")
                 index += 1
                 continue
             if self.in_title:
@@ -628,7 +720,7 @@ class ThesisBuilder:
             p.alignment = WD_ALIGN_PARAGRAPH.LEFT
             render_inline(p, strip_source(record.caption), size=BODY_SIZE)
             p.add_run("\t")
-            add_field(p, f"PAGEREF {record.bookmark} \\h")
+            add_field(p, f"PAGEREF {record.bookmark} \\h \\# \"00\"")
             self.last_paragraph = p
 
 
@@ -721,6 +813,8 @@ def build():
     builder.render_source(FILES[0], source_texts[FILES[0]])
     builder.add_front_matter_lists(records)
     for filename in FILES[1:]:
+        if filename == "01_chapter1.md":
+            builder.start_page_numbered_section("decimal", r'PAGE \# "00"')
         builder.render_source(filename, source_texts[filename])
 
     DELIVERABLE_DIR.mkdir(parents=True, exist_ok=True)

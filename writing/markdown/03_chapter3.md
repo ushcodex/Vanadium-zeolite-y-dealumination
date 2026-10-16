@@ -20,12 +20,12 @@ The isolated cluster, vanadic acid, and water were optimised with GFN2-xTB. Adso
 
 The electronic adsorption energy was calculated using Eq. (3.1):
 
-ΔEₐdₛ = E(complex) − [E(cluster) + E(adsorbate)]
+ΔE_{ads} = E(complex) − [E(cluster) + E(adsorbate)]
 (3.1)
 
-Equation (3.1) defines the separated cluster and optimised adsorbate as the reference state. A negative ΔEₐdₛ indicates that the complex has lower electronic energy than the separated species. The relative adsorption-energy difference was calculated using Eq. (3.2):
+Equation (3.1) defines the separated cluster and optimised adsorbate as the reference state. A negative ΔE_{ads} indicates that the complex has lower electronic energy than the separated species. The relative adsorption-energy difference was calculated using Eq. (3.2):
 
-ΔΔE = ΔEₐdₛ(H₃VO₄) − ΔEₐdₛ(H₂O)
+ΔΔE_{ads} = ΔE_{ads}(H₃VO₄) − ΔE_{ads}(H₂O)
 (3.2)
 
 Equation (3.2) assigns negative values to an electronic preference for vanadic acid. Appendix B.2 shows the numerical substitutions for both DFT levels. The adsorption energies reported in Chapter Four are direct electronic values; Appendix A.2 records the counterpoise fragment calculations.
@@ -40,17 +40,17 @@ Acceptance required a converged optimisation, one chemically meaningful imaginar
 
 Harmonic Gibbs energies were obtained from ORCA frequency calculations at 298.15 K and 1003.15 K. The higher temperature represents an RFCC regenerator condition of about 730 °C. The Gibbs energy of adsorption was calculated using Eq. (3.3):
 
-ΔG°ₐdₛ = G(complex) − G(cluster) − G(adsorbate)
+ΔG^{°}_{ads} = G^{°}(complex) − G^{°}(cluster) − G^{°}(adsorbate)
 (3.3)
 
 Equation (3.3) evaluates the complex against the separated cluster and isolated molecule at the same temperature. The calculations used ideal-gas, rigid-rotor, harmonic-oscillator thermochemistry at a standard pressure of 1 atm. Appendix B.4 shows the temperature-dependent substitutions for the two pre-reaction complexes.
 
 A conditional competitive-site estimate was calculated at 1003.15 K using the RFCC gas partial pressures reported by Wormsbecher et al. (1986). At 2 atm total pressure, 20% steam gave a water partial pressure of 0.4 atm. At the same pressure, 1–10 ppm vanadic acid corresponded to partial pressures of 2 × 10⁻⁶ to 2 × 10⁻⁵ atm. Appendix B.1 shows these conversions. The dimensionless standard equilibrium constant for each adsorbate was calculated using Eq. (3.4). Equation (3.5) gives the fraction of sites occupied by each adsorbate:
 
-K°ᵢ = exp[−ΔG°ᵢ/(RT)]
+K_{i}^{°} = exp[−ΔG^{°}_{i,ads}/(RT)]
 (3.4)
 
-θᵢ = K°ᵢ(pᵢ/p°) / [1 + Σⱼ K°ⱼ(pⱼ/p°)]
+θ_{i} = K_{i}^{°}(p_{i}/p^{°}) / [1 + Σ_{j} K_{j}^{°}(p_{j}/p^{°})]
 (3.5)
 
 The leading 1 in Eq. (3.5) represents an unoccupied site. The estimate used one equivalent site, ideal-gas standard states, and independent adsorbates. Equations (3.4) and (3.5) define a conditional model calculation for the stated gas composition. Appendix B.5 provides each numerical substitution and the resulting site fractions.

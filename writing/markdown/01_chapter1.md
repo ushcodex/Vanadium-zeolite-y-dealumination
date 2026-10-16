@@ -2,7 +2,7 @@
 
 ## 1.1 Background of the Study
 
-Residue fluid catalytic cracking (RFCC) converts heavy refinery feedstocks into lighter products. Its catalyst contains Zeolite Y, whose Brønsted acid sites support cracking reactions. Vanadium and other metals in residue feed accumulate on the catalyst during operation. Their accumulation is associated with loss of Zeolite Y activity during regeneration (Adanenche et al., 2023; Wormsbecher, Peters, & Maselli, 1986).
+In residue fluid catalytic cracking (RFCC), the catalyst repeatedly moves between a reactor and a hot regenerator. Each cycle exposes Zeolite Y to heavy-feed contaminants and steam, placing its aluminium-bearing framework and acid sites under stress. Vanadium accumulates on the catalyst and is linked to a loss of cracking activity, but the molecular route from metal deposition to framework damage remains uncertain.
 
 Steam hydrolyses framework Al–O–Si bonds during regeneration and removes framework aluminium. Each framework aluminium atom is associated with a Brønsted acid site; dealumination therefore reduces the number of sites available for cracking (Malola, Svelle, Lønstad Bleken, & Swang, 2012). This loss of acid sites links framework damage to catalyst activity.
 
