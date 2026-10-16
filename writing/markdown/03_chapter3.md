@@ -2,7 +2,7 @@
 
 ## 3.1 Computational Workflow and Resources
 
-The calculations modelled vanadic acid and water at one Zeolite Y Brønsted acid site. They evaluated optimised structures, electronic adsorption energies, candidate reaction paths, and harmonic thermochemistry. GFN2-xTB calculations were run with ORCA 6.1.0 on a Dell Latitude E6430 laptop with 16 GB of memory and one processor core. DFT calculations were run with ORCA 6.1.1 on a cloud virtual machine using four MPI processes (Neese, 2025). Molecular structures were prepared and checked with Spartan and Avogadro; Python scripts processed ORCA outputs and calculation registers. Figure 3.1 summarises the structure-screening, DFT, pathway, and thermochemistry stages.
+The calculations modelled vanadic acid and water at one Zeolite Y Brønsted acid site. They evaluated optimised structures, electronic adsorption energies, candidate reaction paths, and harmonic thermochemistry. GFN2-xTB provided the Tier 1 screening calculations, which were run with ORCA 6.1.0 on a Dell Latitude E6430 laptop with 16 GB of memory and one processor core. Tier 2 DFT calculations were run with ORCA 6.1.1 on a cloud virtual machine using four MPI processes (Neese, 2025). Molecular structures were prepared and checked with Spartan and Avogadro; Python scripts processed ORCA outputs and calculation registers. Figure 3.1 summarises the structure-screening, DFT, pathway, and thermochemistry stages.
 
 [FIG: fig3_1_workflow.png | Figure 3.1: Structure-screening, DFT, pathway, and thermochemistry workflow | Source: author]
 
@@ -32,9 +32,9 @@ Equation (3.2) assigns negative values to an electronic preference for vanadic a
 
 ## 3.4 Transition-State Searches
 
-Candidate reaction paths were explored for the vanadic-acid route and a water-hydrolysis control. GFN2-xTB nudged elastic band calculations were followed by eigenvector-following transition-state optimisations (Henkelman & Jónsson, 2000). Frequency calculations and displacements in both directions along each candidate imaginary mode assessed the connection between neighbouring minima.
+Candidate reaction paths were explored for the vanadic-acid route and a water-hydrolysis control. GFN2-xTB nudged elastic band calculations were followed by eigenvector-following transition-state optimisations (Henkelman & Jónsson, 2000). For each candidate, frequency analysis located the imaginary mode; structures displaced in both directions along that mode were reoptimised to test whether the candidate connected different minima. The pre-reaction complexes are denoted V-PRC (vanadic acid) and W-PRC (water). V-I1 and V-I2 denote successive vanadic-acid pathway states, W-P denotes the water-path post-adsorption minimum, and V-TS2 and W-TS label the transition-state candidates for the two routes.
 
-Acceptance required a converged optimisation, one chemically meaningful imaginary mode, and two displaced structures that relaxed towards different minima. The accepted Tier 1 candidate for the first framework Al–O cleavage step was assessed against these criteria. Appendix A.3 records the candidate frequencies, displacement destinations, and final pathway classifications.
+Acceptance required a converged optimisation, one chemically meaningful imaginary mode, and two displaced structures that relaxed towards different minima. The V-TS2 candidate for the first framework Al–O cleavage step met these Tier 1 criteria. Appendix A.3 records the candidate frequencies, displacement destinations, and final pathway classifications.
 
 ## 3.5 Gibbs Energies and Conditional Site Occupation
 
@@ -45,7 +45,7 @@ Harmonic Gibbs energies were obtained from ORCA frequency calculations at 298.15
 
 Equation (3.3) evaluates the complex against the separated cluster and isolated molecule at the same temperature. The calculations used ideal-gas, rigid-rotor, harmonic-oscillator thermochemistry at a standard pressure of 1 atm. Appendix B.4 shows the temperature-dependent substitutions for the two pre-reaction complexes.
 
-A conditional competitive-site estimate was calculated at 1003.15 K using the RFCC gas partial pressures discussed by Wormsbecher et al. (1986). Twenty per cent steam at 2 atm total pressure gives a water partial pressure of 0.4 atm; 1–10 ppm vanadic acid gives a partial-pressure range of 2 × 10⁻⁶ to 2 × 10⁻⁵ atm. Appendix B.1 shows these conversions. The dimensionless standard equilibrium constant was calculated using Eq. (3.4), and Eq. (3.5) gives the competitive site fraction:
+A conditional competitive-site estimate was calculated at 1003.15 K using the RFCC gas partial pressures reported by Wormsbecher et al. (1986). At 2 atm total pressure, 20% steam gave a water partial pressure of 0.4 atm. At the same pressure, 1–10 ppm vanadic acid corresponded to partial pressures of 2 × 10⁻⁶ to 2 × 10⁻⁵ atm. Appendix B.1 shows these conversions. The dimensionless standard equilibrium constant for each adsorbate was calculated using Eq. (3.4). Equation (3.5) gives the fraction of sites occupied by each adsorbate:
 
 K°ᵢ = exp[−ΔG°ᵢ/(RT)]
 (3.4)
@@ -53,7 +53,7 @@ K°ᵢ = exp[−ΔG°ᵢ/(RT)]
 θᵢ = K°ᵢ(pᵢ/p°) / [1 + Σⱼ K°ⱼ(pⱼ/p°)]
 (3.5)
 
-The estimate used one equivalent site, ideal-gas standard states, and independent adsorbates. Equations (3.4) and (3.5) define a conditional model calculation for the stated gas composition. Appendix B.5 provides each numerical substitution and the resulting site fractions.
+The leading 1 in Eq. (3.5) represents an unoccupied site. The estimate used one equivalent site, ideal-gas standard states, and independent adsorbates. Equations (3.4) and (3.5) define a conditional model calculation for the stated gas composition. Appendix B.5 provides each numerical substitution and the resulting site fractions.
 
 ## 3.6 Data Handling and Acceptance Criteria
 

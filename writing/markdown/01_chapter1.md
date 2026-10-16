@@ -2,7 +2,7 @@
 
 ## 1.1 Background of the Study
 
-Residue fluid catalytic cracking (RFCC) converts heavy refinery feedstocks into lighter products. Its catalyst contains Zeolite Y, whose Brønsted acid sites support cracking reactions. Vanadium and other metals carried in residue feed accumulate on the catalyst during operation and are associated with loss of zeolite activity during regeneration (Adanenche et al., 2023; Wormsbecher, Peters, & Maselli, 1986).
+Residue fluid catalytic cracking (RFCC) converts heavy refinery feedstocks into lighter products. Its catalyst contains Zeolite Y, whose Brønsted acid sites support cracking reactions. Vanadium and other metals in residue feed accumulate on the catalyst during operation. Their accumulation is associated with loss of Zeolite Y activity during regeneration (Adanenche et al., 2023; Wormsbecher, Peters, & Maselli, 1986).
 
 Steam hydrolyses framework Al–O–Si bonds during regeneration and removes framework aluminium. Each framework aluminium atom is associated with a Brønsted acid site; dealumination therefore reduces the number of sites available for cracking (Malola, Svelle, Lønstad Bleken, & Swang, 2012). This loss of acid sites links framework damage to catalyst activity.
 
@@ -18,7 +18,7 @@ The present work examined these adsorbates at one Zeolite Y Brønsted acid site 
 
 ## 1.3 Aim and Objectives of the Study
 
-The aim of this study was to compare vanadic acid and water at a model Zeolite Y Brønsted acid site and assess the implications of their adsorption, pathway, and thermochemical results for dealumination.
+The aim was to compare vanadic acid and water at a model Zeolite Y Brønsted acid site and assess their implications for dealumination.
 
 The objectives were to:
 
