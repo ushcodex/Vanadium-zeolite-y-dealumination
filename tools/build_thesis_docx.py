@@ -806,9 +806,9 @@ def build():
     title_block = source_texts[FILES[0]].split("[TITLEPAGE]", 1)[1].split("[/TITLEPAGE]", 1)[0]
     project_title = next(line.strip() for line in title_block.splitlines() if line.strip())
     builder.doc.core_properties.title = project_title
-    builder.doc.core_properties.author = "Ahmad Usman Shehu"
+    builder.doc.core_properties.author = "Usman Shehu AHMAD"
     builder.doc.core_properties.subject = "B.Eng. Chemical Engineering undergraduate research project"
-    builder.doc.core_properties.last_modified_by = "Ahmad Usman Shehu"
+    builder.doc.core_properties.last_modified_by = "Usman Shehu AHMAD"
     builder.caption_lookup = {record.bookmark: record for record in records}
     builder.render_source(FILES[0], source_texts[FILES[0]])
     builder.add_front_matter_lists(records)
