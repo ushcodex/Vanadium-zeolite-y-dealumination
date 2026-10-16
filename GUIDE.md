@@ -5,7 +5,7 @@
 | Task | File | Program |
 |---|---|---|
 | Read, edit, or print the thesis | `deliverables/thesis_ABU.docx` | Microsoft Word or LibreOffice Writer |
-| Edit thesis wording | `writing/markdown/00_prelims.md` and `writing/markdown/01_chapter1.md`–`06_references.md` | VS Code or another text editor |
+| Edit thesis wording | `00_prelims.md`, `01_chapter1.md`–`05_chapter5.md`, `06_references.md`, and `07_appendices.md` under `writing/markdown/` | VS Code or another text editor |
 | Build the Word document | `build_thesis_abu.py` or `tools/build_thesis_docx.py` | Python 3 |
 | Rebuild the author-produced figures | `tools/make_figures.py` | Python 3 with matplotlib and numpy |
 
@@ -44,17 +44,19 @@ The active thesis source follows the five-chapter undergraduate project structur
 4. Results and Discussion
 5. Conclusions and Recommendations
 
+The references and appendices follow Chapter Five. Appendix A contains the calculation register, and Appendix B contains worked calculations.
+
 Chapter-level headings are formatted as `1.0 INTRODUCTION`, `2.0 LITERATURE REVIEW`, and so on. Subheadings use decimal numbering. The Word builder applies left alignment to Heading 1, title case and bold to Heading 2, regular sentence case to Heading 3, and italic sentence case to Heading 4.
 
 ## 4. Figures and tables
 
-Figure captions and table captions are written in the chapter Markdown using `[FIG: ...]` and `[TBL: ...]` directives. The builder uses these captions to create the document's lists and page references. Chapter Four presents geometries, adsorption energies, pathway checks, harmonic Gibbs energies, and a formal competitive-site estimate in tables rather than duplicating numerical data in plots. The site-occupation result is conditional on the ideal-gas harmonic and single-site assumptions. The Tier 1 GFN2-xTB saddle-point candidate is distinguished from the unvalidated DFT refinement.
+Figure captions and table captions are written in the chapter Markdown using `[FIG: ...]` and `[TBL: ...]` directives. The builder uses these captions to create the document's lists and page references. Chapter Four presents geometries, adsorption energies, pathway assessment, harmonic Gibbs energies, and the competitive-site estimate in tables. Appendix A contains the calculation register; Appendix B contains worked numerical substitutions. The site-occupation result uses ideal-gas harmonic thermochemistry and a single-site model.
 
 Figures generated from the ORCA coordinates are under `figures/`. Literature figures are under `figures/from_sources/`; their source is stated in each caption. Source papers and extracted text are under `writing/Sources/`.
 
 ## 5. Calculation records
 
-The calculation inputs, output logs, geometries and registers are under `simulation/`. The ORCA output logs are the source of the reported energies and vibrational frequencies. The current conclusions distinguish converged minima from unconverged or interrupted jobs; failed jobs are retained for audit but are not treated as validated stationary points.
+The calculation inputs, output logs, geometries and registers are under `simulation/`. The ORCA logs provide the reported energies and vibrational frequencies. Appendix A summarises the selected job statuses and directs readers to the full calculation files.
 
 For the calculation summary and formal site-occupation estimate, see `simulation/analysis/RESULTS.md` and `writing/markdown/_results_table.txt`. After changing calculation logs or registers, refresh the machine-readable results and the audit summary with:
 

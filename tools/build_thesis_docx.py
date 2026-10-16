@@ -58,13 +58,14 @@ FILES = [
     "04_chapter4.md",
     "05_chapter5.md",
     "06_references.md",
+    "07_appendices.md",
 ]
 
 HEADING_RE = re.compile(r"^(#{1,4})\s+(.*)$")
 FIGURE_RE = re.compile(r"^\[FIG:\s*([^|]+?)\s*\|\s*(.+?)\s*\]$")
 TABLE_RE = re.compile(r"^\[TBL:\s*(.+?)\s*\]$")
 TABLE_ROW_RE = re.compile(r"^\|([^|].*\|)+$")
-EQUATION_NUMBER_RE = re.compile(r"^\(\d+\.\d+\)$")
+EQUATION_NUMBER_RE = re.compile(r"^\((?:\d+|[A-Z])\.\d+\)$")
 
 SUBSCRIPT = {
     "₀": "0", "₁": "1", "₂": "2", "₃": "3", "₄": "4",
@@ -676,17 +677,23 @@ def validate_sources(source_texts):
     objectives = re.findall(r"^\d+\.\s+(.+)$", objective_section.group(1), re.M)
     if len(objectives) != 4:
         raise ValueError(f"Expected four objectives, found {len(objectives)}")
-    for forbidden in ("faujasite", "report"):
-        if any(forbidden in objective.lower() for objective in objectives):
+    for forbidden in ("faujasite", "report", "refine"):
+        if any(re.search(rf"\b{forbidden}\b", objective.lower()) for objective in objectives):
             raise ValueError(f"Objectives must not contain the term {forbidden!r}")
+    if "## 1.7" in chapter_one:
+        raise ValueError("Remove the organisation-of-thesis section")
     if "entirely computational" in source_texts["03_chapter3.md"].lower():
         raise ValueError("Remove the unnecessary 'entirely computational' statement from methodology")
+    appendix = source_texts.get("07_appendices.md", "")
+    for required in ("Appendix A", "Appendix B", "calculation register", "substitution"):
+        if required.lower() not in appendix.lower():
+            raise ValueError(f"Appendices must include {required!r}")
 
-    # Ensure that figure/table caption numbers are unique.
+    # Ensure that figure/table caption numbers are unique across chapters and appendices.
     records = caption_records(source_texts)
     captions = []
     for record in records:
-        match = re.search(r"\d+\.\d+", record.caption)
+        match = re.search(r"(?:[A-Z]|\d+)\.\d+", record.caption)
         if match:
             captions.append(f"{record.kind} {match.group()}")
     if len(captions) != len(set(captions)):
