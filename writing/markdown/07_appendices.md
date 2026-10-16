@@ -52,12 +52,12 @@ Using Eq. (3.1), the B3LYP adsorption energy for vanadic acid was calculated fro
 E(reference, H₃VO₄) = −1709.394093884 − 1246.825013959 = −2956.219107843 Eh
 (B.4)
 
-ΔEₐdₛ(H₃VO₄, B3LYP) = −2956.254531846 − (−2956.219107843) = −0.035424003 Eh
+ΔE_{ads}(H₃VO₄, B3LYP) = −2956.254531846 − (−2956.219107843) = −0.035424003 Eh
 (B.5)
 
 Conversion of Eq. (B.5) to kJ mol⁻¹ is shown in Eq. (B.6):
 
-ΔEₐdₛ = −0.035424003 × 2625.499638 = −93.0057 kJ mol⁻¹
+ΔE_{ads} = −0.035424003 × 2625.499638 = −93.0057 kJ mol⁻¹
 (B.6)
 
 The water reference sum and W-PRC difference are shown in Eqs. (B.7) and (B.8); Eq. (B.9) gives the converted energy:
@@ -65,15 +65,15 @@ The water reference sum and W-PRC difference are shown in Eqs. (B.7) and (B.8); 
 E(reference, H₂O) = −1709.394093884 − 76.426629796 = −1785.820723680 Eh
 (B.7)
 
-ΔEₐdₛ(H₂O, B3LYP) = −1785.850554383 − (−1785.820723680) = −0.029830703 Eh
+ΔE_{ads}(H₂O, B3LYP) = −1785.850554383 − (−1785.820723680) = −0.029830703 Eh
 (B.8)
 
-ΔEₐdₛ = −0.029830703 × 2625.499638 = −78.3205 kJ mol⁻¹
+ΔE_{ads} = −0.029830703 × 2625.499638 = −78.3205 kJ mol⁻¹
 (B.9)
 
 The B3LYP relative preference from Eq. (3.2) is calculated in Eq. (B.10):
 
-ΔΔE(B3LYP) = −93.0057 − (−78.3205) = −14.6852 kJ mol⁻¹
+ΔΔE_{ads}(B3LYP) = −93.0057 − (−78.3205) = −14.6852 kJ mol⁻¹
 (B.10)
 
 The same Eq. (3.1) was applied to the PBE0 single-point values using their own cluster and isolated-molecule references. Equations (B.11)–(B.13) show the vanadic-acid calculation, and Eqs. (B.14)–(B.16) show the water calculation:
@@ -81,27 +81,27 @@ The same Eq. (3.1) was applied to the PBE0 single-point values using their own c
 E(reference, H₃VO₄, PBE0) = −1708.736038466 − 1246.479597897 = −2955.215636364 Eh
 (B.11)
 
-ΔEₐdₛ(H₃VO₄, PBE0) = −2955.251083282 − (−2955.215636364) = −0.035446919 Eh
+ΔE_{ads}(H₃VO₄, PBE0) = −2955.251083282 − (−2955.215636364) = −0.035446919 Eh
 (B.12)
 
-ΔEₐdₛ = −0.035446919 × 2625.499638 = −93.0659 kJ mol⁻¹
+ΔE_{ads} = −0.035446919 × 2625.499638 = −93.0659 kJ mol⁻¹
 (B.13)
 
 E(reference, H₂O, PBE0) = −1708.736038466 − 76.377725398 = −1785.113763864 Eh
 (B.14)
 
-ΔEₐdₛ(H₂O, PBE0) = −1785.143710125 − (−1785.113763864) = −0.029946261 Eh
+ΔE_{ads}(H₂O, PBE0) = −1785.143710125 − (−1785.113763864) = −0.029946261 Eh
 (B.15)
 
-ΔEₐdₛ = −0.029946261 × 2625.499638 = −78.6239 kJ mol⁻¹
+ΔE_{ads} = −0.029946261 × 2625.499638 = −78.6239 kJ mol⁻¹
 (B.16)
 
 Equation (B.17) gives the PBE0 preference using Eq. (3.2):
 
-ΔΔE(PBE0) = −93.0659 − (−78.6239) = −14.4420 kJ mol⁻¹
+ΔΔE_{ads}(PBE0) = −93.0659 − (−78.6239) = −14.4420 kJ mol⁻¹
 (B.17)
 
-The substitutions in Eqs. (B.4)–(B.17) produce the DFT entries in Table 4.3. For GFN2-xTB, the separated references are E(reference, H₃VO₄) = −31.34551236 − 19.77512769 = −51.12064005 Eh and E(reference, H₂O) = −31.34551236 − 5.07054445 = −36.41605681 Eh. Applying Eq. (3.1) gives ΔEₐdₛ(V-PRC) = [−51.19563631 − (−51.12064005)] × 2625.499638 = −196.90 kJ mol⁻¹ and ΔEₐdₛ(W-PRC) = [−36.44256091 − (−36.41605681)] × 2625.499638 = −69.59 kJ mol⁻¹. Their difference from Eq. (3.2) is −196.90 − (−69.59) = −127.31 kJ mol⁻¹.
+The substitutions in Eqs. (B.4)–(B.17) produce the DFT entries in Table 4.3. For GFN2-xTB, the separated references are E(reference, H₃VO₄) = −31.34551236 − 19.77512769 = −51.12064005 Eh and E(reference, H₂O) = −31.34551236 − 5.07054445 = −36.41605681 Eh. Applying Eq. (3.1) gives ΔE_{ads}(V-PRC) = [−51.19563631 − (−51.12064005)] × 2625.499638 = −196.90 kJ mol⁻¹ and ΔE_{ads}(W-PRC) = [−36.44256091 − (−36.41605681)] × 2625.499638 = −69.59 kJ mol⁻¹. Their difference from Eq. (3.2) is −196.90 − (−69.59) = −127.31 kJ mol⁻¹.
 
 ### B.3 Relative energies of post-adsorption minima
 
@@ -129,45 +129,45 @@ The corresponding B3LYP calculations appear in Eqs. (B.20) and (B.21), and the P
 
 ### B.4 Harmonic Gibbs-energy substitutions
 
-For each state, the adsorption Gibbs energy was calculated from Eq. (3.3). The harmonic thermal correction is the difference between ΔGₐdₛ and the corresponding electronic ΔEₐdₛ. Table B.1 lists the B3LYP electronic energies, thermal corrections, and Gibbs energies for the four states in Table 4.6:
+For each state, the adsorption Gibbs energy was calculated from Eq. (3.3). The harmonic thermal correction is the difference between ΔG^{°}_{ads} and the corresponding electronic ΔE_{ads}. Table B.1 lists the B3LYP electronic energies, thermal corrections, and Gibbs energies for the four states in Table 4.6:
 
-[TBL: Table B.1: Electronic and harmonic Gibbs-energy terms for accepted DFT states (kJ mol⁻¹) | State;Electronic ΔEₐdₛ;Thermal correction at 298.15 K;ΔGₐdₛ at 298.15 K;Thermal correction at 1003.15 K;ΔGₐdₛ at 1003.15 K | V-PRC;−93.0057;+75.9600;−17.0457;+226.4003;+133.3946 | V-I1;−115.3754;+79.6007;−35.7747;+223.6989;+108.3235 | W-PRC;−78.3205;+49.4524;−28.8681;+145.3513;+67.0308 | W-P;−24.0240;+54.8185;+30.7945;+156.6808;+132.6568]
+[TBL: Table B.1: Electronic and harmonic Gibbs-energy terms for accepted DFT states (kJ mol⁻¹) | State;Electronic ΔE_{ads};Thermal correction at 298.15 K;ΔG^{°}_{ads} at 298.15 K;Thermal correction at 1003.15 K;ΔG^{°}_{ads} at 1003.15 K | V-PRC;−93.0057;+75.9600;−17.0457;+226.4003;+133.3946 | V-I1;−115.3754;+79.6007;−35.7747;+223.6989;+108.3235 | W-PRC;−78.3205;+49.4524;−28.8681;+145.3513;+67.0308 | W-P;−24.0240;+54.8185;+30.7945;+156.6808;+132.6568]
 
 The temperature-dependent values in Table B.1 follow the substitutions in Eqs. (B.24) and (B.25):
 
-ΔGₐdₛ(V-PRC, 298.15 K) = −93.0057 + 75.9600 = −17.0457 kJ mol⁻¹
+ΔG^{°}_{ads}(V-PRC, 298.15 K) = −93.0057 + 75.9600 = −17.0457 kJ mol⁻¹
 (B.24)
 
-ΔGₐdₛ(V-PRC, 1003.15 K) = −93.0057 + 226.4003 = +133.3946 kJ mol⁻¹
+ΔG^{°}_{ads}(V-PRC, 1003.15 K) = −93.0057 + 226.4003 = +133.3946 kJ mol⁻¹
 (B.25)
 
-ΔGₐdₛ(W-PRC, 298.15 K) = −78.3205 + 49.4524 = −28.8681 kJ mol⁻¹
+ΔG^{°}_{ads}(W-PRC, 298.15 K) = −78.3205 + 49.4524 = −28.8681 kJ mol⁻¹
 (B.26)
 
-ΔGₐdₛ(W-PRC, 1003.15 K) = −78.3205 + 145.3513 = +67.0308 kJ mol⁻¹
+ΔG^{°}_{ads}(W-PRC, 1003.15 K) = −78.3205 + 145.3513 = +67.0308 kJ mol⁻¹
 (B.27)
 
-Applying Eq. (3.3) to the two post-adsorption minima gives ΔGₐdₛ(V-I1, 298.15 K) = −115.3754 + 79.6007 = −35.7747 kJ mol⁻¹ and ΔGₐdₛ(V-I1, 1003.15 K) = −115.3754 + 223.6989 = +108.3235 kJ mol⁻¹. For W-P, the corresponding substitutions are ΔGₐdₛ(W-P, 298.15 K) = −24.0240 + 54.8185 = +30.7945 kJ mol⁻¹ and ΔGₐdₛ(W-P, 1003.15 K) = −24.0240 + 156.6808 = +132.6568 kJ mol⁻¹, as listed in Table B.1.
+Applying Eq. (3.3) to the two post-adsorption minima gives ΔG^{°}_{ads}(V-I1, 298.15 K) = −115.3754 + 79.6007 = −35.7747 kJ mol⁻¹ and ΔG^{°}_{ads}(V-I1, 1003.15 K) = −115.3754 + 223.6989 = +108.3235 kJ mol⁻¹. For W-P, the corresponding substitutions are ΔG^{°}_{ads}(W-P, 298.15 K) = −24.0240 + 54.8185 = +30.7945 kJ mol⁻¹ and ΔG^{°}_{ads}(W-P, 1003.15 K) = −24.0240 + 156.6808 = +132.6568 kJ mol⁻¹, as listed in Table B.1.
 
 The water-favouring differences at 298.15 K and 1003.15 K are calculated in Eqs. (B.28) and (B.29):
 
-ΔG(V-PRC) − ΔG(W-PRC), 298.15 K = −17.0457 − (−28.8681) = +11.8224 kJ mol⁻¹
+ΔG^{°}_{ads}(V-PRC) − ΔG^{°}_{ads}(W-PRC), 298.15 K = −17.0457 − (−28.8681) = +11.8224 kJ mol⁻¹
 (B.28)
 
-ΔG(V-PRC) − ΔG(W-PRC), 1003.15 K = 133.3946 − 67.0308 = +66.3638 kJ mol⁻¹
+ΔG^{°}_{ads}(V-PRC) − ΔG^{°}_{ads}(W-PRC), 1003.15 K = 133.3946 − 67.0308 = +66.3638 kJ mol⁻¹
 (B.29)
 
 ### B.5 Competitive-site equilibrium constants and fractions
 
 Equation (3.4) was evaluated with R = 0.008314462618 kJ mol⁻¹ K⁻¹ and T = 1003.15 K. The substitutions in Eqs. (B.30) and (B.31) give the standard equilibrium constants:
 
-K°(H₃VO₄) = exp[−133.3945918 / (0.008314462618 × 1003.15)] = 1.1329138 × 10⁻⁷
+K_{H₃VO₄}^{°} = exp[−133.3945918 / (0.008314462618 × 1003.15)] = 1.1329138 × 10⁻⁷
 (B.30)
 
-K°(H₂O) = exp[−67.0307562 / (0.008314462618 × 1003.15)] = 3.2339647 × 10⁻⁴
+K_{H₂O}^{°} = exp[−67.0307562 / (0.008314462618 × 1003.15)] = 3.2339647 × 10⁻⁴
 (B.31)
 
-The pressure-weighted terms qᵢ = K°ᵢ(pᵢ/p°) used in Eq. (3.5) are calculated in Eqs. (B.32)–(B.34):
+The pressure-weighted terms q_{i} = K_{i}^{°}(p_{i}/p^{°}) used in Eq. (3.5) are calculated in Eqs. (B.32)–(B.34):
 
 q(H₂O) = 3.2339647 × 10⁻⁴ × (0.4/1.0) = 1.2935859 × 10⁻⁴
 (B.32)
@@ -200,16 +200,21 @@ D = 1 + 2.2658275 × 10⁻¹² + 1.2935859 × 10⁻⁴ = 1.0001293586
 θ(H₂O)/θ(H₃VO₄), 10 ppm = 1.2934186 × 10⁻⁴ / 2.2655344 × 10⁻¹² = 5.7091102 × 10⁷
 (B.40)
 
-Equations (B.30)–(B.40) reproduce the ranges in Table 4.7 under the standard-pressure, single-site, ideal-gas harmonic assumptions stated in Section 3.5.
+At the H₃VO₄ partial pressure reported by Trujillo et al. (1997), the pressure-weighted acid term and conditional occupation ratio are:
+
+q_{H₃VO₄, Trujillo} = 1.1329138 × 10⁻⁷ × (3.37 × 10⁻⁶/1.0) = 3.8179195 × 10⁻¹³; θ(H₂O)/θ(H₃VO₄) = 1.2935859 × 10⁻⁴ / 3.8179195 × 10⁻¹³ = 3.3882 × 10⁸
+(B.41)
+
+Equations (B.30)–(B.41) reproduce the range in Table 4.7 and the Trujillo-pressure comparison under the standard-pressure, single-site, ideal-gas harmonic assumptions stated in Section 3.5.
 
 ### B.6 Tier 1 candidate barrier substitutions
 
-The GFN2-xTB candidate barrier was calculated from the candidate and starting-minimum energies in the Tier 1 register. Equation (B.41) shows the accepted V-TS2 result; Eq. (B.42) shows the water-path candidate energy difference recorded in Table 4.5.
+The GFN2-xTB candidate barrier was calculated from the candidate and starting-minimum energies in the Tier 1 register. Equation (B.42) shows the V-TS2 result; Eq. (B.43) shows the water-path candidate energy difference recorded in Table 4.5.
 
 ΔE‡(V-I1 → V-I2) = [−51.20610884 − (−51.26731716)] × 2625.499638 = 160.7024 kJ mol⁻¹
-(B.41)
-
-ΔE‡(W-PRC → W-TS candidate) = [−36.43140308 − (−36.44256091)] × 2625.499638 = 29.2949 kJ mol⁻¹
 (B.42)
 
-The W-TS energy difference in Eq. (B.42) is a candidate value; its displacement record and classification are given in Table A.3.
+ΔE‡(W-PRC → W-TS candidate) = [−36.43140308 − (−36.44256091)] × 2625.499638 = 29.2949 kJ mol⁻¹
+(B.43)
+
+The W-TS energy difference in Eq. (B.43) is a candidate value; its displacement record and classification are given in Table A.3.

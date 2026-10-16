@@ -20,7 +20,7 @@ python3 -m pip install python-docx Pillow
 python3 build_thesis_abu.py
 ```
 
-The builder applies A4 paper, Times New Roman 12 pt, double-spaced paragraphs, 3.5 cm left and 2.5 cm top, bottom, and right margins. Body paragraphs are justified and have no first-line indent. Chapter headings use the supervisor-requested, left-aligned `x.0 TITLE` format. The builder also creates a table of contents and lists of tables and figures with page-reference fields.
+The builder applies A4 paper, Times New Roman 12 pt, double-spaced paragraphs, 3.5 cm left and 2.5 cm top, bottom, and right margins. Body paragraphs are justified and have no first-line indent. Each chapter has a centered `CHAPTER ONE` label above the supervisor-requested, left-aligned `x.0 TITLE` heading. The title page is unnumbered; preliminary pages use lower-case Roman numerals, and Chapter One begins at `01`. The builder creates a table of contents and lists of tables and figures with updateable page-reference fields.
 
 Before printing or exporting to PDF, update the Word fields: select the whole document with **Ctrl+A**, then press **F9**. This refreshes the table of contents, page numbers, and figure/table lists. Check the final pagination after updating fields.
 
@@ -46,7 +46,7 @@ The active thesis source follows the five-chapter undergraduate project structur
 
 The references and appendices follow Chapter Five. Appendix A contains the calculation register, and Appendix B contains worked calculations.
 
-Chapter-level headings are formatted as `1.0 INTRODUCTION`, `2.0 LITERATURE REVIEW`, and so on. Subheadings use decimal numbering. The Word builder applies left alignment to Heading 1, title case and bold to Heading 2, regular sentence case to Heading 3, and italic sentence case to Heading 4.
+Chapter-level headings include a centered label (`CHAPTER ONE`, `CHAPTER TWO`, and so on) followed by a left-aligned numbered title such as `1.0 INTRODUCTION`. Subheadings use decimal numbering. The Word builder applies left alignment to numbered chapter titles and Heading 1, title case and bold to Heading 2, regular sentence case to Heading 3, and italic sentence case to Heading 4.
 
 ## 4. Figures and tables
 
