@@ -10,7 +10,7 @@ Zeolite Y has the faujasite framework, a crystalline network of silicon, alumini
 
 ## 2.2 Dealumination by Steam
 
-Steam hydrolyses framework Al–O–Si bonds during catalyst regeneration. Density functional theory calculations by Malola et al. (2012) described dealumination as a sequence of water-assisted bond-cleavage steps. Their calculated effective barriers depended on the reference state for incoming water, demonstrating the role of adsorption thermochemistry in reaction energetics. Figure 2.2 presents their calculated reaction paths for dealumination and desilication.
+Steam hydrolyses framework Al–O–Si bonds during catalyst regeneration. Density functional theory (DFT) calculations by Malola et al. (2012) described dealumination as a sequence of water-assisted bond-cleavage steps. Their calculated effective barriers depended on the reference state for incoming water, demonstrating the role of adsorption thermochemistry in reaction energetics. Figure 2.2 presents their calculated reaction paths for dealumination and desilication.
 
 [FIG: from_sources/malola2012_fig2_paths.png | Figure 2.2: Calculated reaction paths for dealumination and desilication using gas-phase and adsorbed water references | Source: Malola, Svelle, Lønstad Bleken and Swang (2012), Figure 2]
 

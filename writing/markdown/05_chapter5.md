@@ -10,9 +10,9 @@ The study compared vanadic acid and water at a model Zeolite Y Brønsted acid si
 
 2. B3LYP-D3(BJ)/def2-TZVP predicted an electronic adsorption preference of 14.69 kJ mol⁻¹ for vanadic acid over water. The PBE0 single-point comparison gave 14.44 kJ mol⁻¹, while GFN2-xTB gave a larger screening-level difference. These values establish a modest, consistent DFT electronic-binding preference for vanadic acid in the cluster model.
 
-3. The pathway search produced an accepted GFN2-xTB candidate for the first vanadic-acid Al–O cleavage step, with a barrier of 160.70 kJ mol⁻¹ above V-I1. Appendix A records the DFT frequency assessment and the water-path displacement outcome.
+3. The GFN2-xTB search yielded a screening-level candidate barrier of 160.70 kJ mol⁻¹ above V-I1 for the first Al–O cleavage step in the vanadic-acid route. Appendix A records the separate DFT frequency and water-path assessments.
 
-4. Harmonic Gibbs energies favoured water over vanadic acid by 11.82 kJ mol⁻¹ at 298.15 K and 66.36 kJ mol⁻¹ at 1003.15 K. For the stated regenerator partial pressures, the formal single-site estimate gave a water-to-vanadic-acid occupation ratio of 5.7 × 10⁷ to 5.7 × 10⁸. Appendix B provides the calculation substitutions and model assumptions.
+4. Harmonic Gibbs energies favoured water over vanadic acid by 11.82 kJ mol⁻¹ at 298.15 K and 66.36 kJ mol⁻¹ at 1003.15 K. Under the stated regenerator partial pressures, the conditional single-site model gave a water-to-vanadic-acid site-fraction ratio of 5.7 × 10⁷ to 5.7 × 10⁸. Appendix B provides the calculation substitutions and model assumptions.
 
 The combined results distinguish electronic binding, temperature-dependent site competition, and pathway energy. They provide a model-level basis for comparing the vanadic-acid route with steam-dominated and sodium-mediated explanations of Zeolite Y dealumination. Pore-aware calculations and catalyst measurements can test the relative contributions of these factors.
 
